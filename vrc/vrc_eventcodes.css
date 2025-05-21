@@ -1,0 +1,62 @@
+:root {
+    --tm-blue:#024ddf;
+    --tm-black:#121212;
+    --tm-dgrey:#1f262d;
+    --tm-lgrey:#646464;        
+  }
+  html{height:100%;}
+  body{background:#fff;margin:0;font-family: "Averta", sans-serif, fallback;}	
+  *{font-family: "Averta", sans-serif, fallback;}	
+/*data content*/  
+#vrcDataContent{background:#fff;width:100%;height:100%;margin:0px;padding:0px;z-index:20;display:flex;align-items: flex-start;justify-content: center;}
+#vrcDataMod{background:var(--tm-blue);width:100%;max-width:1100px;height:auto;margin:20px auto;padding:50px;box-sizing:border-box;display:block;border-radius:20px;}
+#vrcDataHeader{width:100%;height:auto;}
+#vrcDataForms{width:100%;height:auto;display:block;margin:0;padding:0;position:relative;}
+#vrcDataMod h1{font-size:50px;line-height:50px;font-weight:900;text-align: left;color:#fff;margin:0px;padding:0px;}
+#vrcDataMod h2{font-size:35px;line-height:35px;font-weight:900;text-align: left;color:#fff;margin:0px;padding:0px;}
+
+.aoField input, .aoFieldx2 input{height:24px;font-size:18px;font-weight:normal;color:var(--tm-black);margin:5px 0px 5px 0px;display:inline-block;border-radius:5px;outline:0;border:0;padding:10px;box-sizing:border-box;}
+/*buttons*/
+.vrcBtnWrap{width:100%;max-width:1100px;height:auto;margin:0px auto;padding:25px 0px;box-sizing:border-box;display:flex;flex-wrap:nowrap;justify-content: flex-start;box-sizing: border-box;column-gap: 10px;}
+.vrcDataBtn{width:auto;height:auto;color:#fff;font-size:16px;font-weight:normal;padding:4px 20px 5px 20px;background:var(--tm-dgrey);display:inline-block;cursor:pointer;border-radius:5px;box-sizing: border-box;transition:ease-in-out .3s all;user-select:none;}
+.vrcDataBtn:hover{opacity:.9;}
+#vrcDataLive{padding:4px 20px 5px 35px;background:url("https://s1.ticketm.net/tm/en-au/img/static/dataproject/generate_ico.svg") no-repeat,var(--tm-dgrey);background-size:15px;background-position:left 10px top 8px;box-sizing: border-box;}
+#vrcDataSb{padding:4px 20px 5px 35px;background:url("https://s1.ticketm.net/tm/en-au/img/static/dataproject/generate_ico.svg") no-repeat,var(--tm-dgrey);background-size:15px;background-position:left 10px top 8px;box-sizing: border-box;}
+#vrcDataCopy{padding:4px 20px 5px 35px;background:url("https://s1.ticketm.net/tm/en-au/img/static/dataproject/copy_ico.svg") no-repeat,var(--tm-dgrey);background-size:15px;background-position:left 10px top 8px;box-sizing: border-box;}
+
+
+#aoCloseBtn{padding:4px 20px 5px 35px;background:url("https://s1.ticketm.net/tm/en-au/img/static/dataproject/close_ico.svg") no-repeat,var(--tm-dgrey);background-size:15px;background-position:left 10px top 8px;box-sizing: border-box;float: right;border:1px solid #fff}
+
+/*output*/
+#vrcDataOutput{width:100%;max-width:1100px;height:auto;margin:0px auto;padding:0px;box-sizing:border-box;display:block;}
+#vrcDataOutput input{height:100px;width:100%;font-size:18px;font-weight:normal;color:var(--tm-black);margin:0px 0px;display:inline-block;border-radius:5px;outline:0;border:1px solid var(--tm-black);padding:10px;box-sizing:border-box;}  
+#vrcOutput{height:auto;min-height:46px;width:100%;font-size:18px;font-weight:normal;color:var(--tm-black);background:#fff;margin:10px 0px;display:inline-block;border-radius:5px;outline:0;border:1px solid var(--tm-black);padding:10px;box-sizing:border-box;} 
+.vrcDataObj,.vrcDataSbObj{width:100%;height:auto;}
+.vrcDataObj h3, .vrcDataSbObj h3{font-size:20px;line-height:20px;font-weight:900;text-align: left;color:var(--tm-black) !important;margin:0px;padding:0px;}
+.vrcDataObj p, .vrcDataSbObj p{word-wrap: break-word;}
+
+/*light box*/
+.vrcDataLbWrap{width:100%;height:100%;background:rgba(0,0,0,.75);z-index:100;position: fixed;top:0;left:0;right:0;margin:0 auto;flex-wrap: wrap;justify-content: center;align-items: center;align-content: center;display:none;}
+.vrcDataLbCont{width:250px;height:250px;background:var(--tm-dgrey);box-sizing: border-box;border-radius:250px;}
+.vrcDataLbCont h1{font-size:28px;line-height:30px;font-weight:900;color:#fff;margin:20px auto 0px;padding:0px;text-align: center;}
+.vrcDataLbCont h1::after{animation:workingdotdotdot 3s linear infinite;font-size:28px;line-height:30px;font-weight:900;color:#fff;display:block;}
+.vrcDataLbCont h1::after{content:"WORKING";}
+.vrcDataLoading{width:250px;height:250px;padding:20px;background:url("https://s1.ticketm.net/tm/en-au/img/static/dataproject/generate_ico.svg") no-repeat,var(--tm-dgrey);background-size:250px;background-position:left 0px top 0px;box-sizing: border-box;border-radius:250px;transition:ease-in-out all; animation:rotateAnim linear 3s infinite;}
+@keyframes rotateAnim{
+    0%{transform:rotate(0deg);}
+    20%{transform:rotate(10deg);}
+    40%{transform:rotate(0deg);}
+    60%{transform:rotate(10deg);}
+    80%{transform:rotate(0deg);}
+    100%{transform:rotate(10deg);}
+}
+@keyframes workingdotdotdot{
+    0%{content: "WORKING";}
+    12.5%{content: "WORKING.";}
+    25%{content: "WORKING..";}
+    37.5%{content: "WORKING...";}
+    50%{content: "WORKING";}
+    62.6%{content: "WORKING.";}
+    75%{content: "WORKING..";}
+    100%{content: "WORKING...";}
+}   
