@@ -1,0 +1,1340 @@
+[% # text to be displayed within <title></title>
+page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ticketmaster Site" %]
+[% static_has_responsive_header_footer = 1; enable_leader_board = 0; force_disable_nav_paypal_branding = 1;%]
+[% PROCESS "layout/frame/top.tt" %]
+
+<!--libs--->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://s1.ticketm.net/tm/en-au/img/static/jqueryui/jquery-ui.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<link href="https://s1.ticketm.net/tm/en-au/img/static/fonts/averta.css" type="text/css" rel="stylesheet" />
+<!--AFC Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/fonts/afc_numerals.css" type="text/css" rel="stylesheet" />
+
+<style type="text/css">
+	:root{
+		--wac-pur:#7D194C;
+		--wac-lgre:#43A035;		
+		--wac-dgre:#00713C;		
+		--wac-red:#DE0B21;		
+		--wac-yel:#FFD100;		
+		--wac-orn:#F26B21;		
+		--wac-lblu:#34AED6;		
+		--wac-dblu:#1B3F92;		
+		--wac-grey:#D9D9D9;		
+		--wac-lgrey:#f0f0f0;
+		--wac-dgrey:#3f3f3f;		
+		--wac-char:#212121;	
+		--wac-silv:#C9CBD7;
+		--wac-dsilv:#73748A;
+	}
+@media only screen and (min-width: 0px) and (max-width: 999px){	
+	.frame{width: 100% !important;background-color: #f2f2f2 !important} /*FIX FOR TM HEADER CODE*/ 
+	#mainContent {background-color:#f2f2f2 !important;padding: 0px 0px 0px 0px !important}
+	body{padding:0;}
+}
+@media only screen and (min-width: 1000px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE */ 
+	#mainContent {padding: 0px 0px 0px 0px !important;background-color:#f2f2f2 !important;}
+	body{background-color: #f2f2f2;margin:0;}
+}	
+
+#mainContent {background-color:#f2f2f2 !important;}
+@media only screen and (min-width: 1000px){
+	/*AO CONTENT*/
+	#wacContent{width:100%; position:relative;text-align: center; background:#fff;margin:0px auto 0px ;display:block;box-sizing: border-box !important}
+	#aoPubWrapper{display:none;}
+	/*Public Header   */
+	#wacHeader{width:100%;height:400px;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_afc_text_tile_img.svg') center center repeat-x, var(--wac-char);background-size:auto 90%;box-sizing: border-box !important;}
+	#wacLogo{width:500px;height:auto;padding:0px;margin:30px auto 0px;display:block;z-index:20;position: relative;border-radius:0px;}
+	#wacLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
+
+	/*menu*/ /* {font-family:;font-size:;line-height:;font-weight:;text-align:;color:;margin:0px;padding:0px;}*/
+	#wacSearchBar{width:auto/*clamped for body click*/;height:80px;display:block;margin:0px auto;padding:1px 0px 0px 0px;position: relative;z-index:100;background:none;}
+	.wacSelectBtn{width:170px;height:80px;display:inline-block;overflow:visible;position: relative;box-sizing: border-box !important;}
+	.wacSelectBtn:nth-child(2){margin:0px 10px;}	
+	.wacSelectBtn h1{font-family:"Noto Sans","Averta",fallback;font-size:24px;line-height:24px;font-weight:900;color:#fff;text-align:center;margin:0px 0px;padding:13px 0px;user-select:none;}
+	.wacSelectBtn h2{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;color:var(--wac-char);text-align:center;margin:0px 0px 0 25px;padding:0px 0px;display:block;user-select:none;}
+	.wacSelectLable{width:100%;height:30px;background:#fff;cursor:pointer;text-align: center;display:flex;justify-content: flex-start;align-items: center;border-radius:10px 10px 0px 0px;position: relative;}
+	.wacSelectTitle{width:100%;height:50px;background:var(--wac-dgrey);cursor:pointer;text-align: center;border-radius:0px 0px 10px 10px;box-sizing: border-box !important;position: relative;border-bottom:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;}
+	.wacSelectIco{width:40px;height:30px;margin:0px 0px;display:inline-block;border-radius:10px 0px 0px 0px;border-left:1px solid #fff;border-top:1px solid #fff;box-sizing: border-box !important;}
+	.wacCalIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_char_ico.svg") center center no-repeat, var(--wac-grey);background-size:20px 20px;}
+	.wacVenueIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_pin_char_ico.svg") center center no-repeat, var(--wac-grey);background-size:20px 20px;}
+	.wacTeamIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_team_char_ico.svg") center center no-repeat, var(--wac-grey);background-size:20px 20px;}
+	.wacMenuVertDivDark{width:2px;height:20px;background:var(--wac-pur);right:2px;top:5px;position: absolute;}
+	.wacMenuVertDivLight{width:2px;height:30px;background:#fff;right:2px;top:10px;position: absolute;}
+	.wacMenuDownArrow{width:10px;height:auto;right:20px;top:22px;position: absolute;}
+	.wacMenuDownArrow img{width:100%;height:auto;}
+	/*menu icons*/
+
+	/*calendar*/
+	#wacCalendarMenu{width:285px;height:auto;padding:5px 5px 10px 5px;border-radius:10px;display:none;background:var(--wac-lgrey);position:absolute;top:85px;left:-55px;box-sizing:border-box !important;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;user-select:none;}
+	#wacCalHeader{width:100%;height:auto;padding:5px;border-radius:5px;background:#fff;border:1px solid var(--wac-grey);display:flex;flex-wrap: nowrap;justify-content: space-between;align-content: center;align-items: center;box-sizing:border-box !important;}
+	#wacCalHeader h3{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;text-align:left;color:#000;margin:0px;padding:0px;}
+	.wacCalWrap{width:100%;height:auto;margin:5px 0px;display:flex;flex-wrap:nowrap;justify-content: space-between;align-items: center;}
+	.wacCalDay{width:35px;height:auto;font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:#000;}
+	.wacDay{width:35px;height:35px;box-sizing:border-box;border-radius:20px;box-sizing:border-box !important;cursor:pointer;}
+	.wacCalDayOff{background:#fff;box-shadow:inset 0px 0px 0px 2px var(--wac-char);font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);padding:10px 0px;box-sizing:border-box !important}
+	.wacCalDayOn{background:var(--wac-dsilv);font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:center;color:#fff;padding:10px 0px;box-sizing:border-box !important}
+	.wacNoEventDay{background:#D9D9D9;cursor:default !important;}
+	/*drop down & buttons*/
+	.wacDropDownMenu{width:auto;height:auto;background:var(--wac-lgrey);position: absolute;top:85px;left:-52.5px;padding:0px 0px 12px 0px;border-radius:10px;text-align: left;display:inline-block;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;}
+	.wacDropDownBtn{width:calc(100% - 4px);height:25px;background:#fff;margin:2px;padding:2px 5px;border-radius:5px;border:1px solid var(--wac-grey);display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;}
+	.wacDropDownBtn h3{font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#000;margin:0;padding:0;display:inline-block;}	
+	.wacDropDownBtn h4{font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0;display:inline-block;}	
+	.wacDropDownSubHead{width:calc(100% - 4px);height:25px;background:var(--wac-dgrey);margin:2px;padding:2px 5px;border-radius:5px;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;}
+	.wacDropDownSubHead h4{font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
+	.wacDropDownLid{width:100%;padding:10px 15px;height:auto;display:flex;flex-wrap:nowrap;align-items: center;justify-content: space-between;box-sizing:border-box !important;}
+	.wacDropDownLid h3{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:left;color:var(--wac-char);margin:0;padding:0;display:inline-block;}
+	.wacClearMenuBtn{display:inline-block;font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:12px;font-weight:bold;text-align:left;color:var(--wac-char);margin:0;padding:0;text-decoration: underline;cursor:pointer;}
+
+	.wacVenueMapIco{width:20px;height:auto;display:inline-block; margin:0px 5px 0px 0px;}
+	.wacVenueMapIco img{width:100%;height:auto;}	
+	.wacCheckBox{width:15px;height:15px;display:inline-block;margin:0px 5px 0px 0px;padding:0px;box-sizing:border-box !important;}
+	.wacCheckBoxOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_checkbox_tick_img.svg")center right no-repeat,var(--wac-dsilv);background-size:12px;}
+	.wacCheckBoxOff{background:#fff;border:2px solid var(--wac-silv);}
+	.wacDropDownFlag{height:15px;width:23px;display:inline-block;background:var(--wac-dblu);margin:0px 5px 0px 0px;}
+	.wacDropDownDot{height:5px;width:5px;display:inline-block;background:var(--wac-lgrey);margin:0px 5px;border-radius:5px;}
+	.wacDropDownHorDiv{width:90%;height:2px;background:var(--wac-dgrey);margin:5px auto;}
+	#wacVenueMenu{width:275px;display:none;}
+	#wacTeamMenu{width:275px;display:none;}
+	#wacStageMenu{width:185px;display:none;}
+	#wacTicketMenu{width:170px;display:none;}
+	.wacMenuBotLid{width:100%;height:10px;background:var(--wac-silv);bottom:0px;left:0px;right:0px;border-radius:0px 0px 5px 5px;position: absolute;}
+	/*event stream styles*/
+	#wacEvents{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;padding:1px ;position: relative; box-sizing:border-box !important;}
+	#wacEventStream{margin:0px auto;padding:16px 0px;position:relative;display:flex;flex-wrap: wrap;flex-direction: row;align-content: flex-start;justify-content: space-around;column-gap: 24px;row-gap: 24px;}
+
+	/*error message*/
+	#wacEventErrors{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;padding:16px 0px 0px 0px;position: relative; box-sizing:border-box !important;display:none;flex-wrap: nowrap;justify-content: space-between;flex-direction: row;}
+	.wacErrorMessage{width:100%;height:auto;margin:0px;border-radius:4px;background:var(--ao-blue);display: none;}
+	.wacErrorMessage img{width:100%;height:auto;margin:0px;}
+	.wacErrorMessage h1{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:22px;line-height:22px;font-weight:700;color:#fff;padding:24px 0px 16px 0px;margin:0px;box-sizing:border-box !important;}
+	.wacErrorMessage p{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:16px;font-weight:400;color:#fff;padding:0px 0px 0px 0px;margin:0px;box-sizing:border-box !important;line-height: 24px;}
+	.wacErrorResetBtn{width:145px;height:46px;display:block;padding:16px 0px;margin:26px auto 46px;background:#fff;color:var(--ao-blue);font-family:"poppins","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:700;border-radius:4px;box-sizing:border-box !important;cursor:pointer;}
+	/*event counter*/
+	#wacounterWrap{display:flex;}
+	#wacCounter{width:auto;display:inline-block;background:var(--wac-grey);border-radius:10px;padding:10px 15px;margin:10px 0px 10px 0px;}
+	#wacEventCount{font-family:"Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;text-align:center;color:#000;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+	#wacEventCountTotal{font-family:"Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:center;color:#000;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+	#wacCounter p{display:inline-block;font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#4d4d4d;text-transform:uppercase;margin:0;padding:0px;}
+
+	/*event card*/
+	.wacEventCard{width:300px;height:auto;background:#fff;padding:0px 0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:10px;user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;justify-content: space-between;box-sizing: border-box !important;overflow:visible;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;}
+	.wacCardWrap{width:100%;height:auto;display: block;}
+	.wacTicketType{width:calc(100% - 100px);height:40px;font-family:"Noto Sans","Averta",fallback;font-size:18px;line-height:18px;font-weight:900;text-align:left;color:#fff;text-transform:uppercase;margin:0;padding:11px 0px 11px 40px;border-radius:10px 0px 0px 0px;display:inline-block;box-sizing:border-box !important;}
+	.wacPackageTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	.wacSingleMatchTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_single_w_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	.wacCardState{height:40px;width:100px;font-family:"Noto Sans","Averta",fallback;font-size:18px;line-height:18px;font-weight:500;text-align:left;color:#fff;text-transform:uppercase;margin:0;padding:11px 0px 11px 43px;border-radius:0px 10px 0px 0px;display:inline-block;box-sizing:border-box !important;}
+	.wacCardStateWA{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-char);background-size:24px;background-position:left 10px top 8px;}
+	.wacCardStateNSW{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg") no-repeat,var(--wac-char);background-size:24px;background-position:left 10px top 8px;}
+	.wacCardStateQLD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg") no-repeat,var(--wac-char);background-size:24px;background-position:left 10px top 8px;}
+	.wacCardHero{width:300px;height:150px;overflow:hidden;margin:0 auto;padding:0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_afc_heroPH_img.svg') no-repeat center center,var(--wac-pur);z-index:49;position:relative;box-sizing: border-box !important;}
+	.wacCardHero img{width:100%;height:auto;position:relative;z-index:50}
+	.wacCardType{width:100%;height:auto;min-height:60px;font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:center;color:var(--wac-char);text-transform:uppercase;margin:0;padding:5px 10px;display: flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
+	.wacCardTeams{width:100%;height:auto;margin:0px auto;bottom:5px;left:4px;right:4px;position:absolute;z-index:51}
+	.wacCardTeamWrap{width:290px;height:auto;display:flex;flex-wrap: wrap;align-content: center;align-items: center;justify-content: space-between;padding:0px;margin:0px ;border-radius:0px;background:transparent;box-sizing:border-box !important;}
+	.wacCardTeamWrap h2{font-family:"Noto Sans","Averta",fallback;font-size:18px;line-height:18px;font-weight:900;text-align:center;color:var(--wac-char);text-transform:uppercase;margin:5px 5px 0px 5px;padding:0px 0px;transform: translateY(-3px);display:inline-block;}
+	.wacCardTeamWrap p{width:22px;height:22px;border-radius:20px;font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:12px;font-weight:700;text-align:center;color:var(--wac-char);text-transform:uppercase;background:rgba(255, 255, 255, .75);margin:0;padding:5px 0px;box-sizing:border-box !important;}
+	.wacCardMultiTeamWrap{height:35px;width:95px;padding:5px;background:rgba(255, 255, 255, .85);border-radius:20px;display:flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;box-sizing:border-box !important;}
+	.wacCardMultiTeamWrap p{font-family:"Noto Sans","Averta",fallback;font-size:8px !important;line-height:8px;font-weight:bold;text-align:center;color:var(--wac-char);background:none;text-transform:uppercase;margin:0;padding:8px 0px;}
+	.wacTeamHome, .wacTeamAway{height:35px;width:90px;padding:5px;background:rgba(255, 255, 255, .85);border-radius:20px;display:flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;box-sizing:border-box !important;}
+	.wacMultiTeamHome, .wacMultiTeamAway{height:25px;width:25px;padding:0px;border-radius:20px;display:flex;align-items: center;justify-content: center;flex-wrap: nowrap;box-sizing:border-box !important;}
+	.wacHomeFlag,.wacAwayFlag{width:25px;height:25px;display:inline-block;background:var(--wac-dblu);}
+	/*card mid*/
+	.wacCardVenue{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:var(--wac-char);background:#fff;margin:5px auto 5px auto;padding:0px 0px;border:1px solid var(--wac-grey);border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
+	.wacCardVenueIco,.wacCardDateIco{width:30px;height:30px;margin:0px 5px 0px 0px;border-radius:5px 0px 0px 5px;background:var(--wac-grey);display:inline-block;}
+	.wacCardVenueIco img,.wacCardDateIco img{width:20px;height:auto;padding:5px;}
+	.wacCardDownArrow{width:10px;height:auto;right:10px;top:11px;position: absolute;transition: ease-in-out .3s all;}
+	.wacCardDownArrow img{width:100%;height:auto;}
+	.wacCardArrowRot{transform: rotate(180deg);}
+	.wacCardDate{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:var(--wac-char);background:#fff;margin:0px auto 5px auto;padding:0px 0px;border:1px solid var(--wac-grey);border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
+	.wacCardDateMulti{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:var(--wac-char);background:#fff;margin:0px auto 5px auto;padding:0px 0px;border:1px solid var(--wac-grey);border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:50;}
+	.wacCardVenueMulti{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:var(--wac-char);background:#fff;margin:5px auto 5px auto;padding:0px 0px;border:1px solid var(--wac-grey);border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:51;}
+	.wacCardDateCount,.wacCardVenueCount{width:20px;height:20px;background:var(--wac-grey);display:inline-block;font-family:/*"afc num",*/"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:900;text-align:center;color:var(--wac-char);margin:0px 5px 0px 0px;padding:3px 0px;border-radius:25px;box-sizing:border-box !important;}
+	.wacCardDateMultiWrap,.wacCardVenueMultiWrap{width:280px;left:-1px;top:32px;border-radius:5px;display:none;overflow:hidden;background:#efefef;border:1px solid var(--wac-grey);box-shadow:rgba(0, 0, 0, .15) 0px 2px 5px 0;position: absolute;box-sizing:border-box !important;}
+	.wacCardDateMultiWrap .wacCardDate,.wacCardVenueMultiWrap .wacCardVenue{margin:0px !important;border-radius:0px;padding:0px 0px 0px 30px;border:none !important;}
+	.wacCardDateMultiWrap .wacCardDate:nth-child(even),.wacCardVenueMultiWrap .wacCardVenue:nth-child(even){background:#efefef;}
+	.wacundefinedDate,.wacundefinedVenue,.wacundefinedteam{display:none;}
+	/*card bot*/
+	.wacCardBotWrap{width:100%;height:auto;margin:40px 0px 0px 0px;background:var(--wac-lgrey);border-radius:0px 0px 10px 10px;display: block;}
+	.wacCardInfoWrap{width:100%;height:auto;display: flex;flex-wrap: nowrap;align-items: center;justify-content: space-between;}
+	.wacCardPrice{width:49%;height:auto;margin:20px 0px 20px 10px;display:flex;flex-wrap:wrap;align-items: flex-start;justify-content: flex-start;flex-direction: column;flex-grow: 1;box-sizing:border-box !important;}
+	.wacCardPrice p{font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:12px;font-weight:bold;text-align:center;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px;display:block;}
+	.wacCardPrice h1{font-family:"afc num","Averta",fallback;font-size:26px;line-height:26px;font-weight:normal;text-align:center;color:var(--wac-dgrey);margin:0px 0px 0px 0px;padding:0px 0px;display:block;}
+	.wacPriceDiv{width:0;height:14px; margin:0px 0px;background:none;border-right:2px solid var(--wac-dgrey);flex-grow: 1;}
+	.wacCardInfoBtn{width:49%;height:auto;padding:5px;margin:0px 10px 0px 0px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:900;text-align:center;color:var(--wac-dgrey);background:none;cursor:pointer;flex-grow: 1;box-sizing:border-box !important;}
+	.wacCardTicketBtn{width:280px;height:40px;padding:12px 0px;margin:0px auto 10px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-dgrey);border-radius:5px;box-sizing:border-box !important;}
+	.wacEventCard a{text-decoration: none;}
+	.wacCardMenuOn{}
+	.wacCardMenuOff{}
+	/*flags*/
+	.wacAUSFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_aus_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacJPNFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_jpn_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacPRKFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_prk_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacCHNFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_chn_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacKORFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_kor_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacIRNFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_irn_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacJORFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_jor_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacTHAFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tha_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacMYAFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_mya_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacTPEFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tpe_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacVIEFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_vie_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacHKGFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_hkg_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacUZBFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_uzb_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacPHIFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_phi_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacINDFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_ind_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacTBCFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tbc_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacTBC_HFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tbc_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacTBC_AFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tbc_rec_img.svg') no-repeat center center;background-size:cover;}
+
+	.wacAUSCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_aus_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacJPNCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_jpn_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacPRKCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_prk_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacCHNCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_chn_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacKORCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_kor_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacIRNCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_irn_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacJORCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_jor_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacTHACircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tha_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacMYACircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_mya_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacTPECircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tpe_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacVIECircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_vie_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacHKGCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_hkg_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacUZBCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_uzb_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacPHICircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_phi_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacINDCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_ind_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacTBCCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tbc_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacTBC_HCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tbc_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacTBC_ACircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tbc_circ_img.svg') no-repeat center center;background-size:cover;}
+}
+	
+/*mobile & tablet */
+@media only screen and (min-width: 0px) and (max-width: 999.9px){	
+	
+
+
+}
+/*headers*/
+/*1440 - 4k
+@media only screen and (min-width: 1440px){	
+    #wacHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('') top center no-repeat, var();background-size:cover;box-sizing: border-box !important}			
+	}*/	
+/*1000 - 1440	
+@media only screen and (min-width: 1000px) and (max-width: 1439.99px){
+ 	#wacHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('') top center no-repeat, var();background-size:1440px 564px;box-sizing: border-box !important}	
+	}*/	
+/*tablet	
+@media only screen and (min-width: 769px) and (max-width: 1000px){	
+    #wacHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('') top center no-repeat, var();background-size:100% auto;box-sizing: border-box !important}	
+	}
+ @media only screen and (min-width: 449.99px) and (max-width: 768.99px){
+    #wacHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('') top center no-repeat, var();background-size:768px 700px;box-sizing: border-box !important}	
+	}*/	
+/*mobile	
+@media only screen and (min-width:0px ) and (max-width: 450px){
+    #wacHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('') top center no-repeat, var();background-size:450px auto;box-sizing: border-box !important}	
+	}*/	
+/*mobile cal*/
+
+</style>
+
+<!--AO main content--->
+<div id="wacContent">
+
+<div id="wacWrapper">
+	
+	<div id="wacHeader">
+	
+		<div id="wacLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_AsianCup_w_grad_logo.svg" alt="AFC Womens Asia Cup"></div>
+
+	<!---Search Bar--->
+	<div id="wacSearchBar">
+		<!--calendar selection--->
+		<div id="wacSelectDate" class="wacSelectBtn">
+			<div class="wacSelectLable"><div class="wacSelectIco wacCalIco"></div> <h2>Select</h2></div>
+			<div class="wacSelectTitle"><h1>DATE</h1><div class='wacMenuDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_arrow_down_w_ico.svg'></div></div>
+			
+		<!---session selected--->
+		<!--cal--><div id="wacCalendarMenu">
+			<div id="wacCalHeader">
+				<h3>March 2026</h3><div id="clearDayFilters" class="wacClearMenuBtn">clear</div>		
+						
+			</div><!--cal date list--->
+				<div class="wacCalWrap"><div class="wacCalDay">MON</div><div class="wacCalDay">TUE</div><div class="wacCalDay">WED</div><div class="wacCalDay">THU</div><div class="wacCalDay">FRI</div><div class="wacCalDay">SAT</div><div class="wacCalDay">SUN</div></div>
+				<!--week 1-->
+				<div class="wacCalWrap"><div class="wacDay wacNoEventDay"></div><div class="wacDay wacNoEventDay"></div><div class="wacDay wacNoEventDay"></div><div class="wacDay wacNoEventDay"></div><div class="wacDay wacNoEventDay"></div><div class="wacDay wacNoEventDay"></div><div data-filterdate="2026-03-01"  data-filterbtn="mar01" class="wacDay wacCalDayOff">01</div></div>
+				<!--week 2-->
+				<div class="wacCalWrap"><div data-filterdate="2026-03-02"  data-filterbtn="mar02" class="wacDay wacCalDayOff">02</div><div data-filterdate="2026-03-03"  data-filterbtn="mar03" class="wacDay wacCalDayOff">03</div><div  data-filterdate="2026-03-04"  data-filterbtn="mar04" class="wacDay wacCalDayOff">04</div><div data-filterdate="2026-03-05"  data-filterbtn="mar05" class="wacDay wacCalDayOff">05</div><div  data-filterdate="2026-03-06"  data-filterbtn="mar06" class="wacDay wacCalDayOff">06</div><div data-filterdate="2026-03-07"  data-filterbtn="mar07" class="wacDay wacCalDayOff">07</div><div  data-filterdate="2026-03-08"  data-filterbtn="mar08" class="wacDay wacCalDayOff">08</div></div>
+				<!--week 3--><div class="wacCalWrap"><div data-filterdate="2026-03-09"  data-filterbtn="mar09" class="wacDay wacCalDayOff">09</div><div  data-filterdate="2026-03-10"  data-filterbtn="mar10" class="wacDay wacCalDayOff">10</div><div  data-filterdate="2026-03-11"  data-filterbtn="mar11" class="wacDay wacCalDayOff">11</div><div  data-filterdate="2026-03-12"  data-filterbtn="mar12" class="wacDay wacCalDayOff">12</div><div  data-filterdate="2026-03-13"  data-filterbtn="mar13" class="wacDay wacCalDayOff">13</div><div  data-filterdate="2026-03-14"  data-filterbtn="mar14" class="wacDay wacCalDayOff">14</div><div data-filterdate="2026-03-15"  data-filterbtn="mar15" class="wacDay wacCalDayOff">15</div></div>
+				<!--week 4-->
+				<div class="wacCalWrap"><div data-filterdate="2026-03-16"  data-filterbtn="mar16" class="wacDay wacCalDayOff">16</div><div data-filterdate="2026-03-17"  data-filterbtn="mar17" class="wacDay wacCalDayOff">17</div><div data-filterdate="2026-03-18"  data-filterbtn="mar18" class="wacDay wacCalDayOff">18</div><div data-filterdate="2026-03-19"  data-filterbtn="mar19" class="wacDay wacCalDayOff">19</div><div  data-filterdate="2026-03-20"  data-filterbtn="mar20" class="wacDay wacCalDayOff">20</div><div  data-filterdate="2026-03-21"  data-filterbtn="mar21" class="wacDay wacCalDayOff">21</div><div class="wacDay wacNoEventDay"></div></div>
+				<div class="wacMenuBotLid"></div>
+		</div>
+		</div><!--venue / state selection---><div id="wacSelectVenue" class="wacSelectBtn">
+			<div class="wacSelectLable"><div class="wacSelectIco wacVenueIco"></div> <h2>Select</h2></div>
+			<div class="wacSelectTitle"><h1>VENUE</h1><div class='wacMenuDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_arrow_down_w_ico.svg'></div></div>		
+		<!--Venue Menu---><div id="wacVenueMenu" class="wacDropDownMenu">
+			<div class="wacDropDownLid"><h3>Select A Venue</h3><div class="wacClearMenuBtn">clear</div></div>
+			<div id="venueFilterAllBtn" data-filterbtn="All" class="wacDropDownBtn wacFilterBtnOff wacVenueFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><h4>Show All</h4></div>
+			<div class="wacDropDownSubHead"><div class="wacVenueMapIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg"></div><h4>Sydney</h4><span class="wacDropDownDot"></span><h4>New South Wales</h4></div>
+			<div data-filterbtn="StadiumAustralia" class="wacDropDownBtn wacFilterBtnOn wacVenueFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Stadium Australia</h4></div>
+			<div data-filterbtn="WesternSydneyStadium" class="wacDropDownBtn wacFilterBtnOn wacVenueFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Western Sydney Stadium</h4></div>
+			<div class="wacDropDownSubHead"><div class="wacVenueMapIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg"></div><h4>Gold Coast</h4><span class="wacDropDownDot"></span><h4>Queensland</h4></div>
+			<div data-filterbtn="GoldCoastStadium" class="wacDropDownBtn wacFilterBtnOn wacVenueFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Gold Coast Stadium</h4></div>
+			<div class="wacDropDownSubHead"><div class="wacVenueMapIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg"></div><h4>Perth</h4><span class="wacDropDownDot"></span><h4>Western Australia</h4></div>
+			<div data-filterbtn="PerthRectangular" class="wacDropDownBtn wacFilterBtnOn wacVenueFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Perth Rectangular Stadium</h4></div>
+			<div data-filterbtn="PerthStadium" class="wacDropDownBtn wacFilterBtnOn wacVenueFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Perth Stadium</h4></div>
+			<div class="wacMenuBotLid"></div>
+		</div>
+		</div><!--Team select---><div id="wacSelectTeam" class="wacSelectBtn">
+			<div class="wacSelectLable"><div class="wacSelectIco wacTeamIco"></div> <h2>Select</h2><!--<div class="wacMenuVertDivDark"></div>---></div>
+			<div class="wacSelectTitle"><h1>TEAM</h1><div class='wacMenuDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_arrow_down_w_ico.svg'></div><!-- ---></div>		
+		<!--Team Menu--->
+		<div id="wacTeamMenu" class="wacDropDownMenu">
+			<div class="wacDropDownLid"><h3>Select A Team / Country</h3><div class="wacClearMenuBtn">clear</div></div>
+			<div id="teamFilterAllBtn" data-filterFull="All" data-filterbtn="All" class="wacDropDownBtn wacFilterBtnOff wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><h4>Show All</h4></div>
+				<div class="wacDropDownHorDiv"></div>
+			<div data-filterFull="Australia" data-filterbtn="AUS" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacAUSFlag"></div><h3>AUS</h3><span class="wacDropDownDot"></span><h4>Australia</h4></div>
+			<div data-filterFull="Japan" data-filterbtn="JPN" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacJPNFlag"></div><h3>JPN</h3><span class="wacDropDownDot"></span><h4>Japan</h4></div>
+			<div data-filterFull="DPRKorea" data-filterbtn="PRK" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacPRKFlag"></div><h3>PRK</h3><span class="wacDropDownDot"></span><h4>DPR Korea</h4></div>
+			<div data-filterFull="ChinaPR" data-filterbtn="CHN" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacCHNFlag"></div><h3>CHN</h3><span class="wacDropDownDot"></span><h4>China PR</h4></div>			
+			<div data-filterFull="KoreaRepublic" data-filterbtn="KOR" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacKORFlag"></div><h3>KOR</h3><span class="wacDropDownDot"></span><h4>Korea Republic</h4></div>			
+			<div data-filterFull="Iran" data-filterbtn="IRN" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacIRNFlag"></div><h3>IRN</h3><span class="wacDropDownDot"></span><h4>IR Iran</h4></div>
+			<div data-filterFull="Jordan" data-filterbtn="JOR" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacJORFlag"></div><h3>JOR</h3><span class="wacDropDownDot"></span><h4>Jordan</h4></div>
+			<div data-filterFull="Thailand" data-filterbtn="THA" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacTHAFlag"></div><h3>THA</h3><span class="wacDropDownDot"></span><h4>Thailand</h4></div>
+			<div data-filterFull="Myanmar" data-filterbtn="MYA" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacMYAFlag"></div><h3>MYA</h3><span class="wacDropDownDot"></span><h4>Myanmar</h4></div>
+			<div data-filterFull="ChineseTaipei" data-filterbtn="TPE" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacTPEFlag"></div><h3>TPE</h3><span class="wacDropDownDot"></span><h4>Chinese Taipei</h4></div>
+			<div data-filterFull="Vietnam" data-filterbtn="VIE" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacVIEFlag"></div><h3>VIE</h3><span class="wacDropDownDot"></span><h4>Vietnam</h4></div>
+			<div data-filterFull="HongKong" data-filterbtn="HKG" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacHKGFlag"></div><h3>HKG</h3><span class="wacDropDownDot"></span><h4>Hong Kong, China</h4></div>
+			<div data-filterFull="Uzbekistan" data-filterbtn="UZB" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacUZBFlag"></div><h3>UZB</h3><span class="wacDropDownDot"></span><h4>Uzbekistan</h4></div>
+			<div data-filterFull="Philippines" data-filterbtn="PHI" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacPHIFlag"></div><h3>PHI</h3><span class="wacDropDownDot"></span><h4>Philippines</h4></div>
+			<div data-filterFull="India" data-filterbtn="IND" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacINDFlag"></div><h3>IND</h3><span class="wacDropDownDot"></span><h4>India</h4></div>
+			<div class="wacDropDownHorDiv"></div>
+			<div data-filterFull="Guam" data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacINDFlag"></div><h3></h3><span class="wacDropDownDot"></span><h4>Guam</h4></div>		
+			<div data-filterFull="Iraq" data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacINDFlag"></div><h3></h3><span class="wacDropDownDot"></span><h4>Iraq</h4></div>				
+			<div data-filterFull="Indonesia" data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacINDFlag"></div><h3></h3><span class="wacDropDownDot"></span><h4>Indonesia</h4></div>	
+			<div data-filterFull="Laos" data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacINDFlag"></div><h3></h3><span class="wacDropDownDot"></span><h4>Laos</h4></div>				
+			<div data-filterFull="Lebanon" data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacINDFlag"></div><h3></h3><span class="wacDropDownDot"></span><h4>Lebanon</h4></div>				
+			<div data-filterFull="Kuwait" data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacINDFlag"></div><h3></h3><span class="wacDropDownDot"></span><h4>Kuwait</h4></div>	
+			<div data-filterFull="Kyrgyzstan" data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacINDFlag"></div><h3></h3><span class="wacDropDownDot"></span><h4>Kyrgyzstan</h4></div>			
+			<div data-filterFull="TBC" data-filterbtn="TBC" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacTBCFlag"></div><h3>TBC</h3><span class="wacDropDownDot"></span><h4>To Be Confirmed</h4></div>
+			<div data-filterFull="TBC_Home" data-filterbtn="TBC_Home" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacTBCFlag"></div><h3>TBC</h3><span class="wacDropDownDot"></span><h4>TBC_Home</h4></div>
+			<div data-filterFull="TBC_Away" data-filterbtn="TBC_Away" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacTBCFlag"></div><h3>TBC</h3><span class="wacDropDownDot"></span><h4>TBC_Away</h4></div>
+			<div class="wacMenuBotLid"></div>
+		</div>
+		</div><!--Stage select---<div id="wacSelectStage" class="wacSelectBtn">
+			<div class="wacSelectLable"><div class="wacSelectIco wacStageIco"></div> <h2>Select</h2></div>
+			<div class="wacSelectTitle"><h1>STAGE</h1></div>
+		<!--Stage Menu---
+		<div id="wacStageMenu" class="wacDropDownMenu">		
+			<div data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacStageFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Group Stage</h4></div>
+			<div data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacStageFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Quarter Final</h4></div>
+			<div data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacStageFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><h4>Semi Final</h4></div>
+			<div data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacStageFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><h4>Preliminary Final</h4></div>			
+			<div data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacStageFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><h4>Final</h4></div>		
+		</div>
+		</div>---><!--Ticket Type select---<div id="wacSelectTicket" class="wacSelectBtn">
+			<div class="wacSelectLable"><div class="wacSelectIco wacStageIco"></div><h2>TYPE OF</h2></div>
+			<div class="wacSelectTitle"><h1>TICKET</h1></div>
+		<!--Ticket Type Menu---
+		<div id="wacTicketMenu" class="wacDropDownMenu">		
+			<div data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacTicketFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Single Match</h4></div>
+			<div data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacTicketFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Double Header</h4></div>
+			<div data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacTicketFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><h4>3 Match Pack</h4></div>	
+		</div>
+		</div>--->
+	</div><!----end search bar ---->	
+
+	</div><!---end header--->
+
+	<div id="wacEvents">	
+		<!--counter and date sort-->
+		<div id="wacounterWrap">
+			<div id="wacCounter"><div id="wacEventCount"></div><p>/</p><div id="wacEventCountTotal"></div><p>&nbsp; events shown</p></div>
+			<!--<div id="aoPubDateSort"><p>Sort By &nbsp;</p><div id="aoPubSelectDateSort">Earliest Date</div>-->
+			<!--sort by date
+			<div id="aoPubDateMenu">			
+					<div data-filterbtnlab="Earliest Date" class="aoFilterBtnOn sortRadioBtn" id="pubDateEarliestSortBtn"><div class="aoRadioBtnActive"></div><h4>Earliest Date</h4></div>	
+					<div data-filterbtnlab="Latest Date" class="aoFilterBtnOff sortRadioBtn" id="pubDateLatestSortBtn"><div class="aoRadioBtn"></div><h4>Furthest Date</h4></div>
+			</div>-->	
+		</div>
+
+		<!--error span-->
+		<div id="wacEventErrors">
+			<!--error message-->
+			<div class="wacErrorMessage">
+				<h1>Offside?</h1>
+				<p>Your search didn&rsquo;t land within the lines of our available tickets.
+					<br />Adjust your filters to see what tickets are available.</p>
+				<div class="aoErrorResetBtn">RESET FILTERS</div>
+			</div>
+		</div>
+      	<div id="wacEventStream"> 
+			<!--base card--
+			<div data-tickettype='' data-venues="+venueMulti+" data-dates="+event.event_date+" data-teams="+discoTeams+" class='wacEventCard'><div class='wacCardWrap'><div class='wacTicketType wac"+tickettype+"Ticket'>"+event.ticket_type_category+"</div><div class='wacCardState wacCardState"+locMapper(event.host_state)+"'>"+locMapper(event.host_state)+"</div><div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Woemsn Asian Cup'><div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"Flag'></div><h2>"+eventTeam01+"</h2></div><p>vs.</p><div class='wacTeamAway'><h2>"+eventTeam02+"</h2><div class='wacAwayFlag wac"+eventTeam02+"Flag'></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div><div class='wacCardWrap'><div class='wacCardVenue'><div class='wacCardVenueIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_pin_purp_ico.svg'></div>"+event.venue_name_discovery+"</div><div class='wacCardDate'><div class='wacCardDateIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_purp_ico.svg'></div>"+eventDateShort+"</div></div><div class='wacCardWrap'><div class='wacCardPrice'><p>from:</p><h1>$"+event.price_from+"</h1></div><div class='wacCardInfoBtn'>MORE INFO</div><a href='"+event.buy_link+"'><div class='wacCardTicketBtn'>"+event.button_text+"</div></a></div></div>
+
+			<!--one team--
+			<div data-tickettype='' data-venues="+venueMulti+" data-dates="+event.event_date_discovery+" data-teams="+discoTeams+" class='wacEventCard'><div class='wacCardWrap'><div class='wacTicketType wac"+tickettype+"Ticket'>"+event.ticket_type_category+"</div><div class='wacCardState wacCardState"+locMapper(event.host_state)+"'>"+locMapper(event.host_state)+"</div><div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Woemsn Asian Cup'>
+			
+			<div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"Flag'></div><h2>"+eventTeam01+"</h2></div><p>vs.</p><div class='wacTeamAway'><h2>"+eventTeam02+"</h2><div class='wacAwayFlag wac"+eventTeam02+"Flag'></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div>
+
+			<!--multi team--
+			<div data-tickettype='' data-venues="+venueMulti+" data-dates="+event.event_date_discovery+" data-teams="+discoTeams+" class='wacEventCard'><div class='wacCardWrap'><div class='wacTicketType wac"+tickettype+"Ticket'>"+event.ticket_type_category+"</div><div class='wacCardState wacCardState"+locMapper(event.host_state)+"'>"+locMapper(event.host_state)+"</div><div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Woemsn Asian Cup'>
+			
+			<div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacCardMultiTeamWrap wac"+eventTeam01+"team'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"Flag'></div></div><p>vs.</p><div class='wacTeamAway'><div class='wacAwayFlag wac"+eventTeam02+"Flag''></div></div></div><div class='wacTeamVertDiv'></div><div class='wacCardMultiTeamWrap wac"+eventTeam03+"team'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam03+"Flag'></div></div><p>vs.</p><div class='wacTeamAway'><div class='wacAwayFlag wac"+eventTeam04+"Flag''></div></div></div><div class='wacTeamVertDiv wac"+eventTeam05+"team''></div><div class='wacCardMultiTeamWrap wac"+eventTeam05+"team'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam05+"Flag'></div></div><p>vs.</p><div class='wacTeamAway'><div class='wacAwayFlag wac"+eventTeam06+"Flag''></div></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div>
+
+
+			<div class='wacCardVenueMulti'><div class='wacCardVenueIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_pin_purp_ico.svg'></div><div class='wacCardVenueCount'>"+eventVenueCardCount+"</div>Multiple Locations<div class='wacCardDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_arrow_down_w_ico.svg'></div><div class='wacCardVenueMultiWrap wacCardMenuOff'><div class='wacCardVenue wac"+eventVenue01+"Venue'>"+eventVenue01+"</div><div class='wacCardVenue wac"+eventVenue02+"Venue'>"+eventVenue02+"</div><div class='wacCardVenue wac"+eventVenue03+"Venue'>"+eventVenue03+"</div><div class='wacCardVenue wac"+eventVenue04+"Venue'>"+eventVenue04+"</div></div>
+
+			<div class='wacCardDateMulti'><div class='wacCardDateIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_purp_ico.svg'></div><div class='wacCardDateCount'>"+eventDateCardCount+"</div>Multiple Dates <div class='wacCardDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_arrow_down_w_ico.svg'></div><div class='wacCardDateMultiWrap wacCardMenuOff'><div class='wacCardDate wac"+eventDate01+"Date'>"+eventDate01+"</div><div class='wacCardDate wac"+eventDate02+"Date'>"+eventDate02+"</div><div class='wacCardDate wac"+eventDate03+"Date'>"+eventDate03+"</div><div class='wacCardDate wac"+eventDate04+"Date'>"+eventDate04+"</div></div></div></div>
+
+			<div class='wacCardWrap'><div class='wacCardPrice'><p>from:</p><h1>$"+event.price_from+"</h1></div><div class='wacCardInfoBtn'>MORE INFO</div><a href='"+event.buy_link+"'><div class='wacCardTicketBtn'>"+event.button_text+"</div></a></div></div>
+			-->
+		<!--
+		wac cards		
+		-->
+		<!--single match--
+		<div class="wacEventCard">
+			<div class="wacTicketType">SINGLE MATCH</div>
+			<div class="wacCardHero"><img src="https://placehold.co/300x150" alt="AFC Woemsn Asian Cup"></div>
+			<div class="wacCardType">C2 v C3</div>
+			<div class="wacCardTeams">
+				<div class="wacCardTeamWrap">
+					<div class="wacTeamHome"><div class="wacHomeFlag"></div><h2>AUS</h2></div><p>vs.</p><div class="wacTeamAway"><div class="wacAwayFlag"></div><h2>JAP</h2></div>
+				</div>
+			</div>
+			<div class="wacCardVenue">PERTH RECTANGULAR STADIUM</div>
+			<div class="wacCardDate">SAT MARCH 21</div>
+
+			<div class="wacCardPrice"><p>from:</p>$999</div>
+			<div class="wacCardInfoBtn">MORE INFO</div>			
+			<a href=""><div class="wacCardTicketBtn">+button text+</div></a>
+		</div>-->
+		<!--double header-->
+
+		<!--3x package-->
+		</div>
+	</div>
+	<!--end  wrapper-->
+</div>
+</div>
+<!--footer--->
+
+
+<!--END OF BODY-->
+
+
+<!---js scripts--->
+<script type="text/javascript">
+	//notes: date filtering and counters next, 
+	$j = jQuery.noConflict();
+	//the server name could change so I put it here so it was easy to find
+	let availLocation = "https://d1qeon7qw4jcrw.cloudfront.net/awac";
+	//sandbox link >>> https://d1qeon7qw4jcrw.cloudfront.net/awac_sandbox
+
+	let dates;
+	experienceTypeList = [];
+	fullPubExperienceTypeList = [];
+
+	dateList = ["mar01","mar02","mar03","mar04","mar04","mar05","mar06","mar07","mar08","mar09","mar10","mar11","mar12","mar13","mar14","mar15","mar16","mar17","mar18","mar19","mar20","mar21"];
+	dateListNum = ["2026-03-01","2026-03-02","2026-03-03","2026-03-04","2026-03-04","2026-03-05","2026-03-06","2026-03-07","2026-03-08","2026-03-09","2026-03-10","2026-03-11","2026-03-12","2026-03-13","2026-03-14","2026-03-15","2026-03-16","2026-03-17","2026-03-18","2026-03-19","2026-03-20","2026-03-21"]
+	teamList = ["Australia","Japan","DPRKorea","ChinaPR","KoreaRepublic","Iran","Jordan","Thailand","Myanmar","ChineseTaipei","Vietnam","Uzbekistan","Philippines","India","Guam","TBC_Home","TBC_Away","Iraq","Indonesia","Laos","Lebanon","Kuwait","Kyrgyzstan","HongKong","TBC"]
+	venueList = ["PerthStadium","PerthRectangular","GoldCoastStadium","StadiumAustralia","WesternSydneyStadium"];
+	discoveryFilterArr = [];
+	//const allUrlVars = getUrlVars();
+	//eventCount = 0;
+	eventCountTotal = 0;
+	//currentTarget = 1;
+
+	$j(document).ready(function () {
+
+		//load the divs that we will be working with
+		let calendarDiv = $j("#wacCalendarMenu");		
+		let eventListDiv = $j("#wacEventStream");
+		let minPrice = 0;
+		let maxPrice = 1000;
+
+		teamSet = new Set();
+
+		//load json data 
+		let loadData = function () {
+			$j.ajax({
+				type: 'GET',
+				url: availLocation,
+				dataType: 'html',
+				success: function (data) { //if the data is successfully retrieved then we run this
+					let displayDates = [];
+					//turn the data into objects
+					dates = JSON.parse(data);
+
+					//step through each object and add it to the div
+					$j.each(dates, function (key, events) {
+						displayDates.push(key);
+
+						//if (isValidDayForEvents(key)) { //ADD THIS BACK IN BEFORE 2025 < it filters dates based on current day
+							//step each event that is for a date
+							$j.each(events, function (eventKey, event) {
+							
+							//push exp filters to array
+							let tickettype = event.ticket_type_category.replace(/\s/g, '');
+							//let sessionType = event.session_type.replace(/\s/g, '');//removes spaces
+							//let sessionTypeCase = event.session_type.toLowerCase();
+							let eventdate = new Date(event.event_date)
+							let options = { weekday: 'short', day: '2-digit', month: 'short', year: 'numeric' ,  timeZone: "Australia/Melbourne"};
+							let eventDateShort = new Intl.DateTimeFormat('en-AU', options).format(eventdate).replace(',', '');
+							let eventDateMulti = event.event_date_discovery.split(',');
+							let venueMulti = event.venue_name_discovery.split(',');
+							let discoTeams = event.teams_discovery.replace(/\s/g, '')
+							let eventTeams = event.teams_discovery.split(',');
+							let eventTeam01 = teamMapper(eventTeams[0]);
+							let eventTeam02 = teamMapper(eventTeams[1]);
+							let eventTeam03 = teamMapper(eventTeams[2]);
+							let eventTeam04 = teamMapper(eventTeams[3]);
+							let eventTeam05 = teamMapper(eventTeams[4]);
+							let eventTeam06 = teamMapper(eventTeams[5]);		
+		
+							//let eventDatesMapped = eventDateMulti.forEach(dateMapper);
+							
+							//let recSort = event.event_date.replace('-', '').replace('-', '').replace('202501','')+aoSortMapper(sessionType)+event.arena_sort_no;
+							//let dateSort = event.event_date.replace('-', '').replace('-', '');
+							//let expFilter = event.experience_filter.replace(/\s/g, '');
+							//let discoFilter = event.experience_filter.replace(/\s/g, '');
+							//let ticketType = event.ticket_offer_desc.replace(/[^\w\s]/gi, '');
+							//let offerTag = event.ticket_offer_desc.replace(/\s/g, '');
+							//experienceTypeSet.add(event.experience_filter)
+
+							//build card - single match
+							if(tickettype == "SingleMatch"){ 
+							let newEvent = $j("<div data-tickettype='' data-venues="+venueMulti+" data-dates="+event.event_date+" data-teams="+discoTeams+" class='wacEventCard'><div class='wacCardWrap'><div class='wacTicketType wac"+tickettype+"Ticket'>"+event.ticket_type_category+"</div><div class='wacCardState wacCardState"+locMapper(event.host_state)+"'>"+locMapper(event.host_state)+"</div><div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Woemsn Asian Cup'><div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"CircFlag'></div><h2>"+eventTeam01+"</h2></div><p>vs</p><div class='wacTeamAway'><h2>"+eventTeam02+"</h2><div class='wacAwayFlag wac"+eventTeam02+"CircFlag'></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div><div class='wacCardWrap'><div class='wacCardVenue'><div class='wacCardVenueIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_pin_char_ico.svg'></div>"+event.venue_name_discovery+"</div><div class='wacCardDate'><div class='wacCardDateIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_char_ico.svg'></div>"+dateMapper(event.event_date)+"</div></div><div class='wacCardBotWrap'><div class='wacCardInfoWrap'><div class='wacCardPrice'><p>FROM:</p><h1>$"+event.price_from+"</h1></div><div class='wacPriceDiv'></div><div class='wacCardInfoBtn'>MORE INFO</div></div><a href='"+event.buy_link+"'><div class='wacCardTicketBtn'>"+event.button_text+"</div></a></div></div>");
+							//append to div
+							eventListDiv.append(newEvent);
+							eventCountTotal ++
+							}
+							//build card - packages
+							if(tickettype == "Package"){
+								let newEvent = $j("<div data-tickettype='' data-venues="+venueMulti+" data-dates="+event.event_date_discovery+" data-teams="+discoTeams+" class='wacEventCard'><div class='wacCardWrap'><div class='wacTicketType wac"+tickettype+"Ticket'>"+event.ticket_type_category+"</div><div class='wacCardState wacCardState"+locMapper(event.host_state)+"'>"+locMapper(event.host_state)+"</div>");	
+								
+								//single match
+								if(eventTeams.length==2){	
+									eventTeamSpan = $j("<div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Woemsn Asian Cup'><div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"CircFlag'></div><h2>"+eventTeam01+"</h2></div><p>vs</p><div class='wacTeamAway'><h2>"+eventTeam02+"</h2><div class='wacAwayFlag wac"+eventTeam02+"CircFlag'></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div>")
+								}
+								//multi match
+								if(eventTeams.length>=3){	
+									eventTeamSpan = $j("<div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Woemsn Asian Cup'><div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacCardMultiTeamWrap wac"+eventTeam01+"team'><div class='wacMultiTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"CircFlag'></div></div><p>vs</p><div class='wacMultiTeamAway'><div class='wacAwayFlag wac"+eventTeam02+"CircFlag''></div></div></div><div class='wacCardMultiTeamWrap wac"+eventTeam03+"team'><div class='wacMultiTeamHome'><div class='wacHomeFlag wac"+eventTeam03+"CircFlag'></div></div><p>vs</p><div class='wacMultiTeamAway'><div class='wacAwayFlag wac"+eventTeam04+"CircFlag''></div></div></div><div class='wacCardMultiTeamWrap wac"+eventTeam05+"team'><div class='wacMultiTeamHome'><div class='wacHomeFlag wac"+eventTeam05+"CircFlag'></div></div><p>vs</p><div class='wacMultiTeamAway'><div class='wacAwayFlag wac"+eventTeam06+"CircFlag''></div></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div>")
+								}
+								//single venue
+								if(venueMulti.length==1){										
+									eventVenueSpan = $j("<div class='wacCardWrap'><div class='wacCardVenue'><div class='wacCardVenueIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_pin_char_ico.svg'></div>"+event.venue_name_discovery+"</div>")
+								}
+								//multi venue
+								if(venueMulti.length>1){
+									let eventVenueCardCount = venueMulti.length;									
+									let eventVenue01 =  venueMulti[0];
+									let eventVenue02 =  venueMulti[1];
+									let eventVenue03 =  venueMulti[2];
+									let eventVenue04 =  venueMulti[3];
+									eventVenueSpan = $j("<div class='wacCardVenueMulti'><div class='wacCardVenueIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_pin_char_ico.svg'></div><div class='wacCardVenueCount'>"+eventVenueCardCount+"</div>Multiple Locations<div class='wacCardDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_down_arrow_char_img.svg'></div><div class='wacCardVenueMultiWrap wacCardMenuOff'><div class='wacCardVenue wac"+eventVenue01+"Venue'>"+eventVenue01+"</div><div class='wacCardVenue wac"+eventVenue02+"Venue'>"+eventVenue02+"</div><div class='wacCardVenue wac"+eventVenue03+"Venue'>"+eventVenue03+"</div><div class='wacCardVenue wac"+eventVenue04+"Venue'>"+eventVenue04+"</div></div>")
+								}
+								//single date
+								if(eventDateMulti.length==1){
+									eventDateSpan = $j("<div class='wacCardDate'><div class='wacCardDateIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_char_ico.svg'></div>"+eventDateShort+"</div>")
+								}//multi date
+								if(eventDateMulti.length>1){
+									let eventDateCardCount = eventDateMulti.length;									
+									let eventDate01 = eventDateMulti[0];
+									let eventDate02 = eventDateMulti[1];
+									let eventDate03 = eventDateMulti[2];
+									let eventDate04 = eventDateMulti[3];																										
+									 eventDateSpan = $j("<div class='wacCardDateMulti'><div class='wacCardDateIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_char_ico.svg'></div><div class='wacCardDateCount'>"+eventDateCardCount+"</div>Multiple Dates <div class='wacCardDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_down_arrow_char_img.svg'></div><div class='wacCardDateMultiWrap wacCardMenuOff'><div class='wacCardDate wac"+eventDate01+"Date'>"+dateMapper(eventDate01)+"</div><div class='wacCardDate wac"+eventDate02+"Date'>"+dateMapper(eventDate02)+"</div><div class='wacCardDate wac"+eventDate03+"Date'>"+dateMapper(eventDate03)+"</div><div class='wacCardDate wac"+eventDate04+"Date'>"+dateMapper(eventDate04)+"</div></div></div></div>")
+								}	
+							//button span							
+							let eventBotSpan = $j("<div class='wacCardBotWrap'><div class='wacCardInfoWrap'><div class='wacCardPrice'><p>FROM:</p><h1>$"+event.price_from+"</h1></div><div class='wacPriceDiv'></div><div class='wacCardInfoBtn'>MORE INFO</div></div><a href='"+event.buy_link+"'><div class='wacCardTicketBtn'>"+event.button_text+"</div></a></div></div>");		
+						
+							//combine elements
+							newEvent.append(eventTeamSpan,eventVenueSpan,eventDateSpan,eventBotSpan);
+							//append to div
+							eventListDiv.append(newEvent);
+							eventCountTotal ++
+							}
+							})
+						//}
+					});
+	//call functions
+	emptyFullListsOnLoad();
+	cardsToDisplay()
+
+
+	//	defaultSortPublic();
+	
+	//getUrlVars()
+	//parseUrl()
+
+	//imageLoader()
+
+				},
+				error: function (xhr, ajaxOptions, thrownError) { //if the retrieve is unsuccessful then we need to handle that somehow
+					let errorMessage = "We're having trouble connecting to our servers. Please try reloading this page.";
+					displayError(errorMessage)
+				}
+			})
+		};
+		//this retrieves the data when the page is loaded
+		loadData();
+
+//ADD DID FOR PRESALES - TBC ? 
+/*
+		let addDidBrandToken = function (url,did){
+			if (did.trim()) {
+				//if the did has any value then we add the did to the link
+				return url.trim() + '';
+			}
+			return url;
+		};
+		*/
+//error
+		let displayError = function (message){
+			//throw error
+			let newEvent = $j("<div class='wacErrorMessage' style='display:block;'><img src='https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_error_background_v2_img.svg'><h1>error message update</h1><p style='padding:0px 0px 40px 0px;'>" + message + ".</p></div>");
+			eventListDivGP.append(newEvent);
+
+		}
+
+//toogle lightboxs - TBC
+/*
+	$j(document).on('click', '.eventIncBtn', function () {
+		$j(this).parent(".eventBtnWrap").siblings(".aoEventLightBox").fadeIn(500).css("display","flex");
+	});
+	$j(document).on('click', '.aoLbClose', function () {
+		$j(".aoEventLightBox").fadeOut(50);
+	});			
+	//click anywhere except lightbox
+	$j(document).on('click', '.aoEventLightBox', function (e) {
+			if (($j(e.target).closest('.aoEventLbContent').length !== 0) && !($j(e.target).closest('.aoEventLbContent a').length !== 0)) 
+			{
+				return false;
+			}
+			$j(".aoEventLightBox").fadeOut(50);
+		});
+*/
+
+	
+	}); //end doc ready >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+///conditionals for event cards
+function cardsToDisplay(){
+
+	eventCountPlus = 0;
+	eventCountMinus = 0;
+
+	//run through each card and check against filters
+	$j('.wacEventCard').each(function () {
+		eventDate = $j(this).data('dates').split(",");
+		venueType = $j(this).data('venues').split(",");
+		teamType = $j(this).data('teams').split(",");
+		if((matchEventDate() === true) || (dateListNum.length == 0) && //date 
+		((matchEvenVenue() === true) || jQuery.inArray("All", venueList) != -1) && //venue
+		((matchEventTeams() === true) || jQuery.inArray("All", teamList) != -1) //team		
+		){				
+				$j(this).fadeIn(500);		
+				eventCountPlus ++;
+		} else {
+				$j(this).fadeOut(250);
+				eventCountMinus ++;
+		}		
+		});
+		eventCounter();
+		//jQuery.inArray(eventDate, dateListNum) != -1 || (dateListNum.length == 0)
+		//console.log(dateListNum)
+}
+matchEventDate = function(){
+		dateFound = false;
+		dateListNum.forEach(function(currentDate){
+				if(jQuery.inArray(currentDate, eventDate) != -1){dateFound = true;}			
+			/*if(jQuery.inArray(currentDate, dateListNum) != -1){
+				console.log(currentDate, "true")
+				return true}
+
+				const findDate = eventDate.some(x => x.includes(currentDate))
+				if(findDate == true)
+				*/
+		})
+		return dateFound;	
+}
+matchEvenVenue = function(){
+		venueFound = false;
+		venueList.forEach(function(currentVenue){
+				if(jQuery.inArray(currentVenue, venueType) != -1){venueFound = true;}			
+		})
+		return venueFound;	
+}
+matchEventTeams = function(){
+		teamFound = false;
+		teamList.forEach(function(currentTeam){
+				if(jQuery.inArray(currentTeam, teamType) != -1){teamFound = true;}			
+		})
+		return teamFound;	
+}
+//counters
+let eventCounter = function(){
+
+
+	document.getElementById('wacEventCount').innerHTML = eventCountPlus.toString();
+	document.getElementById('wacEventCountTotal').innerHTML = eventCountTotal.toString();
+
+	if((eventCountPlus == 0)){
+		$j("#wacErrorMessage").fadeIn(500)
+	} 
+	if((eventCountPlus >= 1)){
+		$j("#wacErrorMessage").fadeOut(0)	
+	} 
+
+
+}
+// click functions for Menus
+//change the class on the checkbox's when they have been checked  wacCheckBoxOn
+$j(document).on('click', '.wacDropDownBtn', function () {
+			if ($j(this).hasClass('wacFilterBtnOff')) {
+				$j(this).removeClass('wacFilterBtnOff').addClass('wacFilterBtnOn');
+				$j(this).children('.wacCheckBox').removeClass('wacCheckBoxOff').addClass('wacCheckBoxOn');
+			} else if ($j(this).hasClass('wacFilterBtnOn')) {
+				$j(this).removeClass('wacFilterBtnOn').addClass('wacFilterBtnOff');
+				$j(this).children('.wacCheckBox').removeClass('wacCheckBoxOn').addClass('wacCheckBoxOff');
+			}
+		});
+//calendar clicks 
+$j(document).on('click', '.wacDay', function () {
+			if ($j(this).hasClass('wacCalDayOff')) {
+				$j(this).removeClass('wacCalDayOff').addClass('wacCalDayOn');
+			} else if ($j(this).hasClass('wacCalDayOn')) {
+				$j(this).removeClass('wacCalDayOn').addClass('wacCalDayOff');
+			}
+		});
+//click anywhere menu
+	$j(document).on('click', 'body', function (e) {
+			if (($j(e.target).closest('#wacSearchBar').length !== 0)) 
+			{return false;}
+			$j("#wacCalendarMenu").fadeOut(50);
+			$j("#wacTeamMenu").fadeOut(50);
+			$j("#wacVenueMenu").fadeOut(50);
+
+		});
+	$j(document).on('click', '#wacSelectDate', function (e) {
+			if ($j(e.target).closest('#wacCalendarMenu').length !== 0)
+			{return false;}
+			$j("#wacCalendarMenu").fadeIn(500);
+			//fade out menues			
+			//$j("#wacCalendarMenu").fadeOut(0);
+			$j("#wacVenueMenu").fadeOut(0);
+			$j("#wacTeamMenu").fadeOut(0);
+			$j("#wacStageMenu").fadeOut(0);
+			$j("#wacTicketMenu").fadeOut(0);
+		});
+	$j(document).on('click', '#wacSelectVenue', function (e) {
+			if ($j(e.target).closest('#wacVenueMenu').length !== 0)
+			{return false;}
+			$j("#wacVenueMenu").fadeIn(500);
+			//fade out menues			
+			$j("#wacCalendarMenu").fadeOut(0);
+			//$j("#wacVenueMenu").fadeOut(0);
+			$j("#wacTeamMenu").fadeOut(0);
+			$j("#wacStageMenu").fadeOut(0);
+			$j("#wacTicketMenu").fadeOut(0);
+		});
+	$j(document).on('click', '#wacSelectTeam', function (e) {
+			if ($j(e.target).closest('#wacTeamMenu').length !== 0)
+			{return false;}
+			$j("#wacTeamMenu").fadeIn(500);
+			//fade out menues			
+			$j("#wacCalendarMenu").fadeOut(0);
+			$j("#wacVenueMenu").fadeOut(0);
+			//$j("#wacTeamMenu").fadeOut(0);
+			$j("#wacStageMenu").fadeOut(0);
+			$j("#wacTicketMenu").fadeOut(0);
+		});
+	$j(document).on('click', '#wacSelectStage', function (e) {
+			if ($j(e.target).closest('#wacStageMenu').length !== 0)
+			{return false;}
+			$j("#wacStageMenu").fadeIn(500);
+			//fade out menues			
+			$j("#wacCalendarMenu").fadeOut(0);
+			$j("#wacVenueMenu").fadeOut(0);
+			$j("#wacTeamMenu").fadeOut(0);
+			//$j("#wacStageMenu").fadeOut(0);
+			$j("#wacTicketMenu").fadeOut(0);
+		});
+	$j(document).on('click', '#wacSelectTicket', function (e) {
+			if ($j(e.target).closest('#wacTicketMenu').length !== 0)
+			{return false;}
+			$j("#wacTicketMenu").fadeIn(500);
+			//fade out menues			
+			$j("#wacCalendarMenu").fadeOut(0);
+			$j("#wacVenueMenu").fadeOut(0);
+			$j("#wacTeamMenu").fadeOut(0);
+			$j("#wacStageMenu").fadeOut(0);
+			//$j("#wacTicketMenu").fadeOut(0);
+		});
+//click for multi date / venue / team cards
+	$j(document).on('click', '.wacCardDateMulti', function (e) {
+			if($j(this).children(".wacCardDateMultiWrap").hasClass("wacCardMenuOff")){
+				$j(this).children(".wacCardDateMultiWrap").fadeIn(200);
+				$j(this).children(".wacCardDownArrow").addClass("wacCardArrowRot");
+				$j(this).children(".wacCardDateMultiWrap").addClass("wacCardMenuOn").removeClass("wacCardMenuOff");
+			} else if($j(this).children(".wacCardDateMultiWrap").hasClass("wacCardMenuOn")){
+				$j(this).children(".wacCardDateMultiWrap").fadeOut(0);
+				$j(this).children(".wacCardDownArrow").removeClass("wacCardArrowRot");
+				$j(this).children(".wacCardDateMultiWrap").addClass("wacCardMenuOff").removeClass("wacCardMenuOn");
+			}
+		});
+	$j(document).on('click', '.wacCardVenueMulti', function (e) {
+			if($j(this).children(".wacCardVenueMultiWrap").hasClass("wacCardMenuOff")){
+				$j(this).children(".wacCardVenueMultiWrap").fadeIn(200);
+				$j(this).children(".wacCardDownArrow").addClass("wacCardArrowRot");
+				$j(this).children(".wacCardVenueMultiWrap").addClass("wacCardMenuOn").removeClass("wacCardMenuOff");
+			} else if($j(this).children(".wacCardVenueMultiWrap").hasClass("wacCardMenuOn")){
+				$j(this).children(".wacCardVenueMultiWrap").fadeOut(0);
+				$j(this).children(".wacCardDownArrow").removeClass("wacCardArrowRot");
+				$j(this).children(".wacCardVenueMultiWrap").addClass("wacCardMenuOff").removeClass("wacCardMenuOn");
+			}
+		});
+//click anywhere except mutli menu
+	$j(document).on('click', 'body', function (e) {
+			if (($j(e.target).closest('.wacCardDateMulti').length !== 0)) 
+			{return false;}
+			$j(".wacCardDateMultiWrap").fadeOut(50);
+			$j('.wacCardDateMulti').children(".wacCardDownArrow").removeClass("wacCardArrowRot");
+			$j(".wacCardDateMultiWrap").addClass("wacCardMenuOff").removeClass("wacCardMenuOn");
+		});
+//click anywhere except mutli menu
+	$j(document).on('click', 'body', function (e) {
+			if (($j(e.target).closest('.wacCardVenueMulti').length !== 0)) 
+			{return false;}
+			$j(".wacCardVenueMultiWrap").fadeOut(50);
+			$j('.wacCardVenueMulti').children(".wacCardDownArrow").removeClass("wacCardArrowRot");
+			$j(".wacCardVenueMultiWrap").addClass("wacCardMenuOff").removeClass("wacCardMenuOn");
+		});
+
+
+//reset buttons
+/*
+let resetGP = function(){
+	//reset arrays
+	fullPubSessionTypeList.length = 0;
+	fullPubSessionTypeList.push("Any")	
+	fullPubExperienceTypeList.length = 0;
+	fullPubExperienceTypeList.push("Any")
+	pubDateList.length = 0
+	//reset buttons
+	$j('#aoPubSessionMenu').children('.sessionFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff')
+	$j('#aoPubSessionMenu').children('.sessionFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
+	$j('#aoPubTicketMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
+	$j('#aoPubTicketMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
+	$j('#pub-date-list-div').children('.wacCalWrap').children('.datelistActive').removeClass('datelistActive').addClass('datelist')
+	//turn on any buttons
+	$j('#sessionPubAnyFilterBtn').removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn')
+	$j('#sessionPubAnyFilterBtn').children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive')	
+	$j('#ticketPubAnyFilterBtn').removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn')
+	$j('#ticketPubAnyFilterBtn').children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive')	
+	pubCardsToDisplay()
+	pubDateCounter();
+	pubExperienceCounter();
+	pubSessionCounter();
+};	
+$j(document).on('click', '.aoErrorResetGP', function () {
+		resetGP()
+		});
+$j(document).on('click', '#aoClearMenuPub, #aoClearMenuMobPub', function () {	
+		resetGP()
+		});		
+*/		
+//toggle buttons for menu clicks
+//Dates Filter Check
+$j(document).on('click', ".wacDay ", function () {
+var toggleDate = $j(this).data('filterdate');
+//dateList (readable) dateListNum (numeric)	
+		if((jQuery.inArray(toggleDate, dateListNum ) != -1)){
+			//unselect
+			dateListNum.splice($j.inArray(toggleDate, dateListNum), 1 );					
+		} else {
+			//select
+			dateListNum.push(toggleDate)	
+			//$j(this).siblings("#sessionPubAnyFilterBtn").children(".aoCheckBoxActive").removeClass("aoCheckBoxActive").addClass("aoCheckBox");
+			//$j(this).siblings("#sessionPubAnyFilterBtn").removeClass("aoFilterBtnOn").addClass("aoFilterBtnOff");
+		}					
+		cardsToDisplay();
+
+	})
+//venue Filter Check
+$j(document).on('click', "#wacVenueMenu .wacVenueFilterBtn", function () {
+var toggleVenue = $j(this).data('filterbtn');
+		
+		if((jQuery.inArray(toggleVenue, venueList ) != -1)){
+			//unselect
+			venueList.splice($j.inArray(toggleVenue, venueList ), 1 );		
+		} else {
+			//select
+			venueList.push(toggleVenue)	
+			//$j(this).siblings("#sessionPubAnyFilterBtn").children(".aoCheckBoxActive").removeClass("aoCheckBoxActive").addClass("aoCheckBox");
+			//$j(this).siblings("#sessionPubAnyFilterBtn").removeClass("aoFilterBtnOn").addClass("aoFilterBtnOff");
+		}					
+		cardsToDisplay();
+	})
+//venue any/all
+$j(document).on('click', "#wacVenueMenu .wacVenueFilterBtn", function () {
+			let btnTarget = $j(this).data('filterbtn');				
+			//select
+				if(btnTarget == "All" && $j("#venueFilterAllBtn").hasClass('wacFilterBtnOn')){ //the target all button classes are reversed because the main toggle happens first.
+					$j(this).siblings(".wacVenueFilterBtn").removeClass('wacFilterBtnOn').addClass('wacFilterBtnOff');
+					$j(this).siblings(".wacVenueFilterBtn").children('.wacCheckBox').removeClass('wacCheckBoxOn').addClass('wacCheckBoxOff');
+					venueList.length = 0;
+					venueList.push("All")
+				}
+				//unselect
+				else if ((btnTarget != "All") && ($j(this).hasClass('wacFilterBtnOn'))){
+					$j("#venueFilterAllBtn").removeClass('wacFilterBtnOn').addClass('wacFilterBtnOff');
+					$j("#venueFilterAllBtn").children('.wacCheckBox').removeClass('wacCheckBoxOn').addClass('wacCheckBoxOff');
+					venueList = jQuery.grep(venueList, function(value) {
+						return value != "All";				
+					});
+				}
+				cardsToDisplay();
+});
+//team Filter Check
+$j(document).on('click', "#wacTeamMenu .wacTeamFilterBtn ", function () {
+var toggleTeam = $j(this).data('filterfull');
+		
+		if((jQuery.inArray(toggleTeam, teamList) != -1)){
+			//unselect
+			teamList.splice($j.inArray(toggleTeam, teamList ), 1 );		
+		} else {
+			//select
+			teamList.push(toggleTeam)
+			//$j(this).siblings("#sessionPubAnyFilterBtn").children(".aoCheckBoxActive").removeClass("aoCheckBoxActive").addClass("aoCheckBox");
+			//$j(this).siblings("#sessionPubAnyFilterBtn").removeClass("aoFilterBtnOn").addClass("aoFilterBtnOff");
+		}					
+		cardsToDisplay();
+	})
+
+//teams any/all
+$j(document).on('click', "#wacTeamMenu .wacTeamFilterBtn", function () {
+			let btnTarget = $j(this).data('filterfull');
+			//select
+				if(btnTarget == "All" && $j("#teamFilterAllBtn").hasClass('wacFilterBtnOn')){ //the target all button classes are reversed because the main toggle happens first.
+					$j(this).siblings(".wacTeamFilterBtn").removeClass('wacFilterBtnOn').addClass('wacFilterBtnOff');
+					$j(this).siblings(".wacTeamFilterBtn").children('.wacCheckBox').removeClass('wacCheckBoxOn').addClass('wacCheckBoxOff');
+					teamList.length = 0;
+					teamList.push("All")
+				}
+				//unselect
+				else if ((btnTarget != "All") && ($j(this).hasClass('wacFilterBtnOn'))){
+					$j("#teamFilterAllBtn").removeClass('wacFilterBtnOn').addClass('wacFilterBtnOff');
+					$j("#teamFilterAllBtn").children('.wacCheckBox').removeClass('wacCheckBoxOn').addClass('wacCheckBoxOff');
+					teamList = jQuery.grep(teamList, function(value) {
+						return value != "All";				
+					});
+				}
+				cardsToDisplay();
+});
+
+
+
+//sticky menu and search bar behavior
+/*
+$j(document).scroll(function() {
+    var pageTop = $j(document).scrollTop();
+    var scollTarget = $j("#aoPubSessions").offset().top;
+    if ((pageTop > scollTarget) && (!$j("#aoSearchBar").hasClass("aoSeachBarToggle"))) {
+		$j("#aoMiniSearchBar").removeClass("aoSeachBarHide").addClass("aoSeachBarShow");
+    } else if ((pageTop < scollTarget) && $j("#aoSearchBar").hasClass("aoSeachBarToggle")){
+		$j("#aoMiniSearchBar").removeClass("aoSeachBarShow").addClass("aoSeachBarHide");
+		$j("#aoSearchBar").removeClass("aoSeachBarToggle");
+		$j("#aoMiniSearchContBtn").fadeOut(100);
+    } else {
+		$j("#aoMiniSearchBar").removeClass("aoSeachBarShow").addClass("aoSeachBarHide");
+
+	}
+});	
+$j(document).on('click', "#aoMiniSearchBar", function () {
+	if (window.matchMedia('(max-width:1000px)').matches) {
+				$j('html, body').animate({ scrollTop: $j("#aoSearchBar").offset().top}, 1000);
+			} else {
+				$j(this).removeClass("aoSeachBarShow").addClass("aoSeachBarHide");
+				$j("#aoSearchBar").addClass("aoSeachBarToggle")
+				$j("#aoMiniSearchContBtn").fadeIn(100);
+			}
+	})
+$j(document).on('click', "#aoMiniSearchContBtn", function () {
+
+				$j("#aoMiniSearchBar").removeClass("aoSeachBarHide").addClass("aoSeachBarShow");
+				$j("#aoSearchBar").removeClass("aoSeachBarToggle")
+				$j("#aoMiniSearchContBtn").fadeOut(100);
+
+	})
+
+*/
+//URL token filtering
+/*
+function getUrlVars(){	
+    urlVars = [];
+	aoURLs = [];
+	aoFilterList = ["URL","seshType","expType","dateInc","buyFlowPremium","seshTypePX","expTypePX","dateIncPX", ]
+
+	// finally got the filtering to work and not slow down when tracking paramaters were present by restricting it to numbers (so as long as an event name doesnt include a number? we good)
+	var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split("=").join('&').split('&').filter(hashes => /[a-zA-Z]/.test(hashes));
+
+    for(var i = 0; i < hashes.length; i++)
+    {
+
+	    hash = hashes[i].split('&').filter(hashes =>  hashes !== undefined);
+        urlVars.push(hash[0]);
+        urlVars[hash[0]] = hash[1];	
+    }
+
+	let search = (cleanURL) =>  cleanURL.filter(Boolean)
+
+	aoURLs = search(urlVars, 'URL');
+
+	//seshType = search(urlVars, 'raceDay');
+	expTypeFound = search(urlVars, 'expType');
+	seshTypeFound = search(urlVars, 'seshType');
+	dateIncludeFound = search(urlVars, 'dateInc');	
+	expTypePXFound = search(urlVars, 'expTypePX');
+	seshTypePXFound = search(urlVars, 'seshTypePX');
+	dateIncludePXFound = search(urlVars, 'dateIncPX');	
+	buyFlowFound = search(urlVars, 'buyFlowPremium');	
+}
+let parseUrl = function(){
+
+	checkURLArray()
+	//parse array for triggers, run relevant function when trigger found
+	function checkURLArray(){
+		if(jQuery.inArray("expType", expTypeFound) != -1){
+			parseExpTypeURL()
+			}
+		if(jQuery.inArray("seshType", seshTypeFound) != -1){
+			parseSeshTypeURL()
+			}
+		if(jQuery.inArray("dateInc", dateIncludeFound) != -1){
+			parseDateIncURL()
+			}
+		if(jQuery.inArray("buyFlowPremium", buyFlowFound) != -1){
+			switchToPrem()
+			}
+			if(jQuery.inArray("expTypePX", expTypePXFound) != -1){
+			parseExpTypePXURL()
+			}
+		if(jQuery.inArray("seshTypePX", seshTypePXFound) != -1){
+			parseSeshTypePXURL()
+			}
+		if(jQuery.inArray("dateIncPX", dateIncludePXFound) != -1){
+			parseDateIncPXURL()
+			}			
+	}; 
+
+}
+let parseExpTypeURL = function(){
+	var urlExpTypeFilter = []
+	urlPubExperienceTypeList = Array.from(urlExperienceTypeSet);
+	//reset buttons
+	$j('#aoPubTicketMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
+	$j('#aoPubTicketMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
+	//run through URL vars and match with the race day set
+	$j.grep(aoURLs, function(urlFound){
+		if(jQuery.inArray( urlFound, urlPubExperienceTypeList) != -1){
+			//match arrays - remove URL from end of current found variable
+			urlExpeTypeFound = urlFound.replace('URL','')
+			//push match to new array
+			urlExpTypeFilter.push(urlExpeTypeFound);
+			
+			//activate checkbox
+			$j("#"+urlExpeTypeFound+"FilterBtn").removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn');
+			$j("#"+urlExpeTypeFound+"FilterBtn").children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive');
+	}
+	});
+	//clear array, push found filter array into global array
+	fullPubExperienceTypeList.length = 0;
+	fullPubExperienceTypeList = urlExpTypeFilter
+	pubCardsToDisplay();
+	pubExperienceCounter();
+}
+let parseExpTypePXURL = function(){
+	var urlExpTypePXFilter = []
+	urlPremExperienceTypeList = Array.from(urlExperienceTypeSet);
+	//reset buttons
+	$j('#aoPremTicketMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
+	$j('#aoPremTicketMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
+	//run through URL vars and match with the race day set
+	$j.grep(aoURLs, function(urlFound){
+		if(jQuery.inArray( urlFound, urlPremExperienceTypeList) != -1){
+			//match arrays - remove URL from end of current found variable
+			urlExpeTypePXFound = urlFound.replace('URL','')
+			//push match to new array
+			urlExpTypePXFilter.push(urlExpeTypePXFound);
+			
+			//activate checkbox
+			$j("#"+urlExpeTypePXFound+"FilterBtn").removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn');
+			$j("#"+urlExpeTypePXFound+"FilterBtn").children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive');
+	}
+	});
+	//clear array, push found filter array into global array
+	fullPremExperienceTypeList.length = 0;
+	fullPremExperienceTypeList = urlExpTypePXFilter
+	premCardsToDisplay();
+	premExperienceCounter();
+}
+let parseSeshTypeURL = function(){
+	var urlSeshTypeFilter = []
+	urlPubSessionTypeList = urlSessionTypeList;
+	//reset buttons
+	$j('#aoPubSessionMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
+	$j('#aoPubSessionMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
+	//run through URL vars and match with the race day set
+	$j.grep(aoURLs, function(urlFound){
+		if(jQuery.inArray( urlFound, urlPubSessionTypeList) != -1){
+			//match arrays - remove URL from end of current found variable
+			urlSeshTypeFound = urlFound.replace('URL','')
+			//push match to new array
+			urlSeshTypeFilter.push(urlSeshTypeFound);
+			
+			//activate checkbox
+			$j("#"+urlSeshTypeFound+"FilterBtn").removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn');
+			$j("#"+urlSeshTypeFound+"FilterBtn").children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive');
+	}
+	});
+	//clear array, push found filter array into global array
+	fullPubSessionTypeList.length = 0;
+	fullPubSessionTypeList = urlSeshTypeFilter
+	pubCardsToDisplay();
+	pubSessionCounter();
+}
+let parseSeshTypePXURL = function(){
+	var urlSeshTypePXFilter = []
+	urlPremSessionTypeList = urlSessionTypeList;
+	//reset buttons
+	$j('#aoPremSessionMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
+	$j('#aoPremSessionMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
+	//run through URL vars and match with the race day set
+	$j.grep(aoURLs, function(urlFound){
+		if(jQuery.inArray( urlFound, urlPremSessionTypeList) != -1){
+			//match arrays - remove URL from end of current found variable
+			urlSeshTypePXFound = urlFound.replace('URL','')
+			//console.log(urlFound)
+			//push match to new array
+			urlSeshTypePXFilter.push(urlSeshTypePXFound);
+			
+			//activate checkbox
+			$j("#"+urlSeshTypePXFound+"FilterBtn").removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn');
+			$j("#"+urlSeshTypePXFound+"FilterBtn").children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive');
+	}
+	});
+	//clear array, push found filter array into global array
+	fullPremSessionTypeList.length = 0;
+	fullPremSessionTypeList = urlSeshTypePXFilter
+	premCardsToDisplay();
+	premSessionCounter();
+}
+let parseDateIncURL = function(){
+	var urlDateIncFilter = []
+	urlDateIncList = dateNameList;
+	//reset buttons
+
+	//run through URL vars and match with the race day set
+	$j.grep(aoURLs, function(urlFound){
+		if(jQuery.inArray( urlFound, urlDateIncList) != -1){
+
+			//match arrays - remove URL from end of current found variable
+			urlDateIncFound = dayMapper(urlFound)
+			//push match to new array
+			urlDateIncFilter.push(urlDateIncFound);
+			
+			//activate day btn
+			$j("#pub-date-list-div").children('.wacCalWrap').children('#'+urlDateIncFound).removeClass('datelist').addClass('datelistActive');
+	}
+	});
+	//clear array, push found filter array into global array
+	pubDateList.length = 0;
+	pubDateList = urlDateIncFilter
+	pubCardsToDisplay();
+	pubDateCounter();
+}
+let parseDateIncPXURL = function(){
+	var urlDateIncPXFilter = []
+	urlDateIncPXList = dateNameList;
+	//reset buttons
+
+	//run through URL vars and match with the race day set
+	$j.grep(aoURLs, function(urlFound){
+		if(jQuery.inArray( urlFound, urlDateIncPXList) != -1){
+
+			//match arrays - remove URL from end of current found variable
+			urlDateIncPXFound = dayMapper(urlFound)
+			//push match to new array
+			urlDateIncPXFilter.push(urlDateIncPXFound);
+			
+			//activate day btn
+			$j("#prem-date-list-div").children('.wacCalWrap').children('#'+urlDateIncPXFound).removeClass('datelist').addClass('datelistActive');
+	}
+	});
+	//clear array, push found filter array into global array
+	premDateList.length = 0;
+	premDateList = urlDateIncPXFilter
+	premCardsToDisplay();
+	premDateCounter();
+}
+*/
+//end parse url function
+//empty all the arrays for the 4 drop down filters
+let emptyFullListsOnLoad = function(){
+	dateList.length = 0;
+	dateListNum.length = 0;
+	//venueList.length = 0;
+	//venueList.push("All")
+	//fullPubSessionTypeList.length = 0;
+	//fullPubSessionTypeList.push("Any")	
+
+}
+//data switches for filters etc
+function wacClassMapper(data){
+	switch (data){
+			default:return ""
+			case "undefinied":return "wacUndefinedHide";
+	}
+}
+function teamMapper(data){
+	switch (data){
+			
+			case "Australia":return "AUS";
+			case "Japan":return "JPN";
+			case "DPR Korea":return "PRK";
+			case "China PR":return "CHN";
+			case "Korea Republic":return "KOR";
+			case "Iran":return "IRN";
+			case "Jordan":return "JOR";
+			case "Thailand":return "THA";
+			case "Myanmar":return "MYA";
+			case "Chinese Taipei":return "TPE";
+			case "Vietnam":return "VIE";
+			case "Uzbekistan":return "UZB";
+			case "Philippines":return "PHI";
+			case "India":return "IND";			
+			case "Hong Kong":return "HKG";
+			case "Guam":return "TBC";
+			//case "Nepal":return "";
+			//case "Lebanon":return "";			
+			case "TBC_Home":return "TBC_H";
+			case "TBC_Away":return "TBC_A";
+			case "undefined":return "undefined";
+			//temporary teams
+			case "Iraq":return "IRQ";	
+			case "Indonesia":return "IND";				
+			case "Laos":return "LAO";					
+			case "Lebanon":return "LEB";
+			case "Kuwait":return "KUW";			
+			case "Kyrgyzstan":return "KRG";			
+
+
+			//default:return ""
+	}
+}
+function dateMapper(data){
+	switch (data){			
+			case "2026-03-01":return "Sun 01 March, 2026";
+			case "2026-03-02":return "Mon 02 March, 2026";
+			case "2026-03-03":return "Tue 03 March, 2026";
+			case "2026-03-04":return "Wed 04 March, 2026";
+			case "2026-03-05":return "Thu 05 March, 2026";
+			case "2026-03-06":return "Fri 06 March, 2026";
+			case "2026-03-07":return "Sat 07 March, 2026";
+			case "2026-03-08":return "Sun 08 March, 2026";
+			case "2026-03-09":return "Mon 09 March, 2026";
+			case "2026-03-10":return "Tue 10 March, 2026";
+			case "2026-03-11":return "Wed 11 March, 2026";
+			case "2026-03-12":return "Thu 12 March, 2026";
+			case "2026-03-13":return "Fri 13 March, 2026";
+			case "2026-03-14":return "Sat 14 March, 2026";
+			case "2026-03-15":return "Sun 15 March, 2026";
+			case "2026-03-16":return "Mon 16 March, 2026";
+			case "2026-03-17":return "Tue 17 March, 2026";
+			case "2026-03-18":return "Wed 18 March, 2026";
+			case "2026-03-19":return "Thu 19 March, 2026";
+			case "2026-03-20":return "Fri 19 March, 2026";		
+			case "2026-03-21":return "Sat 21 March, 2026";
+			//default:return ""
+	}
+}
+function dateMapperShort(data){
+	switch (data){			
+			case "2026-03-01":return "mar01";
+			case "2026-03-02":return "mar02";
+			case "2026-03-03":return "mar03";
+			case "2026-03-04":return "mar04";
+			case "2026-03-05":return "mar05";
+			case "2026-03-06":return "mar06";
+			case "2026-03-07":return "mar07";
+			case "2026-03-08":return "mar08";
+			case "2026-03-09":return "mar09";
+			case "2026-03-10":return "mar10";
+			case "2026-03-11":return "mar11";
+			case "2026-03-12":return "mar12";
+			case "2026-03-13":return "mar13";
+			case "2026-03-14":return "mar14";
+			case "2026-03-15":return "mar15";
+			case "2026-03-16":return "mar16";
+			case "2026-03-17":return "mar17";
+			case "2026-03-18":return "mar18";
+			case "2026-03-19":return "mar19";
+			case "2026-03-21":return "mar21";
+			//default:return ""
+	}
+}
+function locMapper(data){
+	switch (data){			
+			case "Queensland":return "QLD";
+			case "New South Wales":return "NSW";
+			case "Western Australia":return "WA";
+
+			//default:return ""
+	}
+}
+//lazy image loading
+let imageLoader = function(){
+	//set targets
+	const lazyImagesHero = document.querySelectorAll(".eventHero img")
+
+	let options ={
+		root: null, //set viewport as root
+		rootMargin: '0px' //we can tweak this + or - if we want, i guess to preload before scroll etc if we want
+		
+	};
+	const handleIntersection = (entries, observer) => {
+ 		entries.forEach((entry) => {
+ 
+   		if (entry.isIntersecting) {
+      		const img = entry.target;
+      		const src = img.getAttribute("data-src");
+      		// Replace the placeholder with the actual image source
+      		img.src = src;
+      		// Stop observing the image
+      	observer.unobserve(img);
+   		 }
+ 	 });
+	};
+	//call the observer browser API
+	const observer = new IntersectionObserver(handleIntersection, options);
+	//interate through target(s) when obvserved
+	lazyImagesHero.forEach((image) => {
+ 		 observer.observe(image);
+	});
+} 
+/*
+window.addEventListener("load", (event) => {
+		
+});*/
+</script>
+
+
+
+
+
