@@ -661,7 +661,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 
 	dateList = ["mar01","mar02","mar03","mar04","mar04","mar05","mar06","mar07","mar08","mar09","mar10","mar11","mar12","mar13","mar14","mar15","mar16","mar17","mar18","mar19","mar20","mar21"];
 	dateListNum = ["2026-03-01","2026-03-02","2026-03-03","2026-03-04","2026-03-04","2026-03-05","2026-03-06","2026-03-07","2026-03-08","2026-03-09","2026-03-10","2026-03-11","2026-03-12","2026-03-13","2026-03-14","2026-03-15","2026-03-16","2026-03-17","2026-03-18","2026-03-19","2026-03-20","2026-03-21"]
-	teamList = ["Australia","A2","A3","A4","B1","B2","B3","B4","D2","D3","D4","C1","C2","C3","C4",]
+	teamList = ["Australia","A2","A3","A4","B1","B2","B3","B4","D2","D3","D4","C1","C2","C3","C4","TBC"]
 	//teamList = ["Australia","Japan","DPRKorea","ChinaPR","KoreaRepublic","Iran","Jordan","Thailand","Myanmar","ChineseTaipei","Vietnam","Uzbekistan","Philippines","India","Guam","TBC_Home","TBC_Away","Iraq","Indonesia","Laos","Lebanon","Kuwait","Kyrgyzstan","HongKong","TBC"]
 	venueList = ["PerthStadium","PerthRectangularStadium","GoldCoastStadium","StadiumAustralia","WesternSydneyStadium"];
 	discoveryFilterArr = [];
@@ -859,8 +859,8 @@ function cardsToDisplay(){
 		venueType = $j(this).data('venues').split(",");
 		teamType = $j(this).data('teams').split(",");
 		if((matchEventDate() === true) || (dateListNum.length == 0) && //date 
-		((matchEvenVenue() === true) || jQuery.inArray("All", venueList) != -1) && //venue
-		((matchEventTeams() === true) || jQuery.inArray("All", teamList) != -1) //team		
+		((matchEvenVenue() === true) || jQuery.inArray("All", venueList) != -1) //&& venue
+		//((matchEventTeams() === true) || jQuery.inArray("All", teamList) != -1) //team		
 		){				
 				$j(this).fadeIn(500);		
 				eventCountPlus ++;
