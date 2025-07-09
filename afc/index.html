@@ -48,27 +48,39 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	#wacContent{width:100%; position:relative;text-align: center; background:#fff;margin:0px auto 0px ;display:block;box-sizing: border-box !important}
 	#aoPubWrapper{display:none;}
 	/* Header */
-	#wacHeader{width:100%;height:400px;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_afc_text_tile_img.svg') center center repeat-x, var(--wac-char);background-size:auto 90%;box-sizing: border-box !important;}
-	#wacLogo{width:500px;height:auto;padding:0px;margin:30px auto 0px;display:block;z-index:20;position: relative;border-radius:0px;}
+	#wacHeader{width:100%;height:400px;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_header_players.png') bottom center no-repeat,url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_header_pattern.png") no-repeat center left,  linear-gradient(37deg,rgba(52, 174, 214, 1) 0%, rgba(43, 152, 189, 1) 100%);background-size:1200px auto,50% auto, 100% 100%;box-sizing: border-box !important;}
+	#wacLogo{width:600px;height:auto;padding:0px;margin:40px auto 100px;display:block;z-index:20;position: relative;border-radius:0px;}
 	#wacLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
-
+	#wacHeaderStrip{width:100%;height:35px;background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_afc_text_tile_white_img.svg") repeat-x,var(--wac-dblu);background-size:contain;margin:0px auto;position: relative;}
 	/*menu*/ /* {font-family:;font-size:;line-height:;font-weight:;text-align:;color:;margin:0px;padding:0px;}*/
 	#wacSearchBar{width:auto/*clamped for body click*/;height:80px;display:block;margin:0px auto;padding:1px 0px 0px 0px;position: relative;z-index:100;background:none;}
 	.wacSelectBtn{width:170px;height:80px;display:inline-block;overflow:visible;position: relative;box-sizing: border-box !important;}
 	.wacSelectBtn:nth-child(2){margin:0px 10px;}	
 	.wacSelectBtn h1{font-family:"Noto Sans","Averta",fallback;font-size:24px;line-height:24px;font-weight:900;color:#fff;text-align:center;margin:0px 0px;padding:13px 0px;user-select:none;}
-	.wacSelectBtn h2{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;color:var(--wac-char);text-align:center;margin:0px 0px 0 25px;padding:0px 0px;display:block;user-select:none;}
-	.wacSelectLable{width:100%;height:30px;background:#fff;cursor:pointer;text-align: center;display:flex;justify-content: flex-start;align-items: center;border-radius:10px 10px 0px 0px;position: relative;}
-	.wacSelectTitle{width:100%;height:50px;background:var(--wac-dgrey);cursor:pointer;text-align: center;border-radius:0px 0px 10px 10px;box-sizing: border-box !important;position: relative;border-bottom:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;}
-	.wacSelectIco{width:40px;height:30px;margin:0px 0px;display:inline-block;border-radius:10px 0px 0px 0px;border-left:1px solid #fff;border-top:1px solid #fff;box-sizing: border-box !important;}
-	.wacCalIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_char_ico.svg") center center no-repeat, var(--wac-grey);background-size:20px 20px;}
-	.wacVenueIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_pin_char_ico.svg") center center no-repeat, var(--wac-grey);background-size:20px 20px;}
-	.wacTeamIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_team_char_ico.svg") center center no-repeat, var(--wac-grey);background-size:20px 20px;}
+	.wacSelectBtn h2{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;color:#fff;text-align:center;margin:0px 0px 0 0px;padding:0px 0px;display:block;user-select:none;}
+	.wacSelectLable{width:100%;height:30px;background:var(--wac-lblu);cursor:pointer;text-align: center;display:flex;justify-content: center;align-items: center;border-radius:10px 10px 0px 0px;position: relative;border-top:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;box-sizing: border-box !important}
+	.wacSelectTitle{width:100%;height:50px;background:var(--wac-dblu);cursor:pointer;text-align: center;border-radius:0px 0px 10px 10px;box-sizing: border-box !important;position: relative;border-bottom:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;}
 	.wacMenuVertDivDark{width:2px;height:20px;background:var(--wac-pur);right:2px;top:5px;position: absolute;}
 	.wacMenuVertDivLight{width:2px;height:30px;background:#fff;right:2px;top:10px;position: absolute;}
 	.wacMenuDownArrow{width:10px;height:auto;right:20px;top:22px;position: absolute;transition: ease-in-out all .5s;}
 	.wacMenuDownArrow img{width:100%;height:auto;}
+	/*feature tiles*/
+	#wacFeatureEvents{width:100%;height:150px;display:flex;margin:0px auto;white-space:nowrap;flex-wrap: nowrap;flex-direction: row;align-items:safe center;justify-content:safe center;column-gap: 10px;position:relative;}
+	.wacFeatureEvent{width:170px;height:115px;background:var(--wac-dblu);border-radius:5px;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;border:1px solid #fff;position:relative;overflow:hidden;cursor:pointer;user-drag: none; -webkit-user-drag: none;user-select: none;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
+	.wacFeatureEvent img{width:100%;height:auto;}
+	.wacFeatureEvent a{user-drag: none; -webkit-user-drag: none;user-select: none;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
+	.wacFeatureEvent:hover{box-shadow:rgb(0 0 0 / 30%) 0px 4px 6px 2px;opacity:.95;}
+	.wacFeaturePh{background:rgba(0,0,0,.2);}
+
+
+	#wacFeatEventPips{display:none;}
 	/*menu icons*/
+	.wacSelectIco{width:40px;height:30px;margin:0px 0px 0px -15px;display:inline-block;border-radius:10px 0px 0px 0px;box-sizing: border-box !important;}
+	.wacCalIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_w_ico.svg") center center no-repeat;background-size:20px 20px;}
+	.wacVenueIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_pin_w_ico.svg") center center no-repeat;background-size:20px 20px;}
+	.wacTeamIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_team_w_lblu_ico.svg") center center no-repeat;background-size:20px 20px;}
+	/*menu counters*/
+	.wacMenuCounter{width:22px;height:22px;border-radius:20px;background:#fff;font-family:"afc num","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;color:var(--wac-dblu);text-align:center;margin:5px 9px;padding:4px 0px;display:none;box-sizing:border-box !important;}
 
 	/*calendar*/
 	#wacCalendarMenu{width:285px;height:auto;padding:5px 5px 10px 5px;border-radius:10px;display:none;background:var(--wac-lgrey);position:absolute;top:85px;left:-55px;box-sizing:border-box !important;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;user-select:none;}
@@ -130,22 +142,29 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	.wacErrorResetBtn{width:145px;height:auto;display:block;padding:16px 5px;margin:26px auto 46px;background:var(--wac-dgrey);color:#fff;font-family:"poppins","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:700;border-radius:4px;box-sizing:border-box !important;cursor:pointer;}
 	/*event counter*/
 	#wacounterWrap{display:flex;justify-content: space-between;}
-	#wacCounter{width:auto;display:inline-block;background:var(--wac-grey);border-radius:10px;padding:10px 15px;margin:10px 0px 10px 0px;}
-	#wacEventCount{font-family:"Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;text-align:center;color:#000;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
-	#wacEventCountTotal{font-family:"Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:center;color:#000;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
-	#wacCounter p{display:inline-block;font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#4d4d4d;text-transform:uppercase;margin:0;padding:0px;}
+	#wacCounter{width:auto;display:inline-block;background:var(--wac-grey);border-radius:10px;padding:5px 15px;margin:10px 0px 10px 0px;}
+	#wacEventCount{font-family:"Averta",fallback;font-size:12px;line-height:12px;font-weight:bold;text-align:center;color:#000;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+	#wacEventCountTotal{font-family:"Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#000;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+	#wacCounter p{display:inline-block;font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:500;text-align:center;color:#4d4d4d;text-transform:uppercase;margin:0;padding:0px;}
 
 	/*event card*/
 	.wacEventCard{width:300px;height:auto;background:#fff;padding:0px 0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:10px;user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;justify-content: space-between;box-sizing: border-box !important;overflow:visible;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;}
 	.wacCardWrap{width:100%;height:auto;display: block;}
-	.wacTicketType{width:calc(100% - 100px);height:40px;font-family:"Noto Sans","Averta",fallback;font-size:18px;line-height:18px;font-weight:900;text-align:left;color:#fff;text-transform:uppercase;margin:0;padding:11px 0px 11px 40px;border-radius:10px 0px 0px 0px;display:inline-block;box-sizing:border-box !important;}
+	.wacCardTopWrap{width:100%;height:auto;margin:0px 0px 0px 0px;background:var(--wac-dgrey);border-radius:10px 10px 0px 0px;display: flex;flex-wrap: nowrap;justify-content:space-between;;}
+	.wacTicketType{width:auto;height:40px;font-family:"Noto Sans","Averta",fallback;font-size:18px;line-height:18px;font-weight:900;text-align:left;color:#fff;text-transform:uppercase;margin:0;padding:11px 0px 11px 40px;border-radius:10px 0px 0px 0px;display:inline-block;box-sizing:border-box !important;}
 	.wacPackageTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
 	.wacSingleMatchTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_single_w_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
-	.wacCardState{height:40px;width:100px;font-family:"Noto Sans","Averta",fallback;font-size:18px;line-height:18px;font-weight:500;text-align:left;color:#fff;text-transform:uppercase;margin:0;padding:11px 0px 11px 43px;border-radius:0px 10px 0px 0px;display:inline-block;box-sizing:border-box !important;}
+	.wacCardState{height:40px;min-width:100px;width:auto;font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:left;color:#fff;text-transform:uppercase;margin:0;padding:13px 10px 13px 43px;border-radius:0px 10px 0px 0px;display:inline-block;box-sizing:border-box !important;}
 	.wacCardStatePER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateGLD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
-	.wacCardHero{width:300px;height:150px;overflow:hidden;margin:0 auto;padding:0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_afc_heroPH_img.svg') no-repeat center center,var(--wac-pur);z-index:49;position:relative;box-sizing: border-box !important;}
+	.wacCardStateGLDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
+	.wacCardStateSYDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
+	.wacCardStateSYDGLDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_aus_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
+	.wacCardStateGLDSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_nsw_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
+
+
+	.wacCardHero{width:300px;height:150px;overflow:hidden;margin:0 auto;padding:0px;background:var(--wac-lgrey);z-index:49;position:relative;box-sizing: border-box !important;}
 	.wacCardHero img{width:100%;height:auto;position:relative;z-index:50}
 	.wacCardType{width:100%;height:auto;min-height:60px;font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:center;color:var(--wac-char);text-transform:uppercase;margin:0;padding:5px 10px;display: flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
 	.wacCardTeams{width:100%;height:auto;margin:0px auto;bottom:5px;left:4px;right:4px;position:absolute;z-index:51}
@@ -171,7 +190,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	.wacCardDateCount,.wacCardVenueCount{width:20px;height:20px;background:#fff;display:inline-block;font-family:/*"afc num",*/"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:900;text-align:center;margin:0px 5px 0px 0px;padding:3px 0px;border-radius:25px;box-sizing:border-box !important;}
 	.wacCardDateCount{color:var(--wac-dblu);}
 	.wacCardVenueCount{color:var(--wac-lblu);}	
-	.wacCardDateMultiWrap,.wacCardVenueMultiWrap{width:280px;left:-1px;top:32px;border-radius:5px;display:none;overflow:hidden;background:#efefef;/*border:1px solid var(--wac-grey)*/;box-shadow:rgba(0, 0, 0, .15) 0px 2px 5px 0;position: absolute;box-sizing:border-box !important;}
+	.wacCardDateMultiWrap,.wacCardVenueMultiWrap{width:280px;left:-1px;top:32px;border-radius:5px;display:none;overflow:hidden;background:#efefef;border:#fff;box-shadow:rgba(0, 0, 0, .15) 0px 2px 5px 0;position: absolute;box-sizing:border-box !important;}
 	.wacCardDateMultiWrap .wacCardDate,.wacCardVenueMultiWrap .wacCardVenue{margin:0px !important;border-radius:0px;padding:0px 0px 0px 30px;border:none !important;}
 	.wacCardDateMultiWrap .wacCardDate:nth-child(even){background:#1b3f92d6;}
 	.wacCardVenueMultiWrap .wacCardVenue:nth-child(even){background:#34aed6cf;}
@@ -197,27 +216,44 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	#wacContent{width:100%; position:relative;text-align: center; background:#fff;margin:0px auto 0px ;display:block;box-sizing: border-box !important}
 	#aoPubWrapper{display:none;}
 	/* Header */
-	#wacHeader{width:100%;height:auto;margin:0px auto;padding:20px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_afc_text_tile_img.svg') top center repeat-y, var(--wac-char);background-size:auto 400px ;box-sizing: border-box !important;}
+	#wacHeader{width:100%;height:auto;margin:0px auto;padding:20px ;position: relative;background:var(--wac-lblu);background-size:cover;box-sizing: border-box !important;}
 	#wacLogo{max-width:500px;width:90%;height:auto;padding:0px;margin:30px auto 0px;display:block;z-index:20;position: relative;border-radius:0px;}
 	#wacLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
-
+	#wacHeaderStrip{width:calc(100% + 40px);height:35px;background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_afc_text_tile_white_img.svg") repeat-x,var(--wac-dblu);background-size:auto 100% ;margin:-20px 0px 0px -20px ;position: relative;}
 	/*menu*/ /* {font-family:;font-size:;line-height:;font-weight:;text-align:;color:;margin:0px;padding:0px;}*/
 	#wacSearchBar{width:auto/*clamped for body click*/;height:auto;display:block;margin:0px auto;padding:1px 0px 0px 0px;position: relative;z-index:100;background:none;}
 	.wacSelectBtn{width:100%;max-width:300px;height:auto;display:block;overflow:hidden;border-radius:10px;position: relative;margin:10px auto 0px;box-sizing: border-box !important;}
 	.wacSelectBtn h1{font-family:"Noto Sans","Averta",fallback;font-size:24px;line-height:24px;font-weight:900;color:#fff;text-align:center;margin:0px 0px;padding:13px 0px;user-select:none;}
-	.wacSelectBtn h2{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;color:var(--wac-char);text-align:center;margin:0px auto;padding:0px 0px;transform:translateX(-20px);display:block;user-select:none;}
-	.wacSelectLable{width:100%;height:30px;background:#fff;cursor:pointer;text-align: center;display:flex;justify-content: flex-start;align-items: center;border-radius:0px;position: relative;}
-	.wacSelectTitle{width:100%;height:50px;background:var(--wac-dgrey);cursor:pointer;text-align: center;border-radius:0px;box-sizing: border-box !important;position: relative;border-bottom:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;}
-	.wacSelectIco{width:40px;height:30px;margin:0px 0px;display:inline-block;border-radius:10px 0px 0px 0px;border-left:1px solid #fff;border-top:1px solid #fff;box-sizing: border-box !important;}
-	.wacCalIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_char_ico.svg") center center no-repeat, var(--wac-grey);background-size:20px 20px;}
-	.wacVenueIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_pin_char_ico.svg") center center no-repeat, var(--wac-grey);background-size:20px 20px;}
-	.wacTeamIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_team_char_ico.svg") center center no-repeat, var(--wac-grey);background-size:20px 20px;}
+	.wacSelectBtn h2{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;color:#fff;text-align:center;margin:0px 0px;padding:0px 0px;display:block;user-select:none;}
+	.wacSelectLable{width:100%;height:30px;background:var(--wac-lblu);cursor:pointer;text-align: center;display:flex;justify-content: center;align-items: center;border-radius:10px 10px 0px 0px;position: relative;box-sizing: border-box !important;border-top:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;}
+	.wacSelectTitle{width:100%;height:50px;background:var(--wac-dblu);cursor:pointer;text-align: center;border-radius:0px;box-sizing: border-box !important;position: relative;border-bottom:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;}
+	/*featured events*/
+	#wacFeatureEvents{width:100%;height:auto;display:flex;margin:0px 0px;padding:0px 0px 0px 0px;white-space:nowrap;flex-wrap: wrap;flex-direction: row;align-items: center;justify-content:safe center;column-gap: 10px;row-gap: 10px;position:relative;}
+	/*#wacFeatureScroller{width:auto;height:auto;margin:50px 0px 20px 0px;padding:0px 0px;overflow: hidden;position: relative;display:block;;box-sizing: border-box !important;overflow-x: scroll; overflow-y: hidden; white-space: nowrap;position:relative;}
+	#wacFeatureScroller::-webkit-scrollbar { background: transparent; width: 0px;}
+	#wacFeatureScroller{ -ms-overflow-style: none; }*/
+	#wacFeatureScroller{width:auto;height:auto;margin:50px auto 0px;padding:0px 0px;overflow: hidden;position: relative;display:block;}
+	.wacFeatureEvent{max-width:170px;min-width:170px;width:50%;height:auto;background:var(--wac-dblu);border-radius:4px;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;border:1px solid #fff;position:relative;overflow:hidden;user-select:none;}
+	.wacFeatureEvent img{width:100%;height:auto;}
+
+	.wacFeaturePh{background:rgba(0,0,0,.2);}
+	.wacFeatureEvent a{user-drag: none; -webkit-user-drag: none;user-select: none;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
+	#wacFeatEventPips{width:auto;height:auto;margin:0px 0px 10px 0px;display:none;background:/*rgba(0,0,0,.4)*/transparent;border-radius:20px;}
+	.aoFeatPip{border-radius:20px;display:inline-block;transition: ease-in-out .5s all;box-sizing: border-box !important;}
+	.aoFeatPipOn{width:8px;height:8px;background:#fff;margin:6px 4.5px;}
+	.aoFeatPipOff{width:7px;height:7px;background:/*rgba(255,255,255,.5)*/transparent;border:1px solid #efefef;margin:6.5px 4.5px;}
+
 	.wacMenuVertDivDark{width:2px;height:20px;background:var(--wac-pur);right:2px;top:5px;position: absolute;}
 	.wacMenuVertDivLight{width:2px;height:30px;background:#fff;right:2px;top:10px;position: absolute;}
 	.wacMenuDownArrow{width:10px;height:auto;right:20px;top:22px;position: absolute;transition: ease-in-out all .5s;}
 	.wacMenuDownArrow img{width:100%;height:auto;}
 	/*menu icons*/
-
+	.wacSelectIco{width:40px;height:30px;margin:0px 0px 0px -15px;display:inline-block;border-radius:10px 0px 0px 0px;box-sizing: border-box !important;}
+	.wacCalIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_w_ico.svg") center center no-repeat;background-size:20px 20px;}
+	.wacVenueIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_pin_w_ico.svg") center center no-repeat;background-size:20px 20px;}
+	.wacTeamIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_team_w_lblu_ico.svg") center center no-repeat;background-size:20px 20px;}
+	/*menu counters*/
+	.wacMenuCounter{width:22px;height:22px;border-radius:20px;background:#fff;font-family:"afc num","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;color:var(--wac-dblu);text-align:center;margin:5px 9px;padding:4px 0px;display:none;box-sizing:border-box !important;}
 	/*calendar*/
 	#wacCalendarMenu{width:100%;height:auto;padding:5px 5px 10px 5px;border-radius:0px 0px 10px 10px;display:none;background:var(--wac-lgrey);position:relative;box-sizing:border-box !important;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;user-select:none;}
 	#wacCalHeader{width:100%;height:auto;padding:5px;border-radius:5px;background:#fff;border:1px solid var(--wac-grey);display:flex;flex-wrap: nowrap;justify-content: space-between;align-content: center;align-items: center;box-sizing:border-box !important;}
@@ -276,10 +312,10 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	.wacErrorResetBtn{width:145px;height:46px;display:block;padding:16px 0px;margin:26px auto 46px;background:#fff;color:var(--ao-blue);font-family:"poppins","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:700;border-radius:4px;box-sizing:border-box !important;cursor:pointer;}
 	/*event counter*/
 	#wacounterWrap{display:flex;justify-content: space-between;}
-	#wacCounter{width:auto;display:inline-block;background:var(--wac-grey);border-radius:10px;padding:10px 15px;margin:10px 0px 10px 0px;}
-	#wacEventCount{font-family:"Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;text-align:center;color:#000;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
-	#wacEventCountTotal{font-family:"Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:center;color:#000;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
-	#wacCounter p{display:inline-block;font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#4d4d4d;text-transform:uppercase;margin:0;padding:0px;}
+	#wacCounter{width:auto;display:inline-block;background:var(--wac-grey);border-radius:10px;padding:5px 15px;margin:10px 0px 10px 0px;}
+	#wacEventCount{font-family:"Averta",fallback;font-size:12px;line-height:12px;font-weight:bold;text-align:center;color:#000;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+	#wacEventCountTotal{font-family:"Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#000;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+	#wacCounter p{display:inline-block;font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:500;text-align:center;color:#4d4d4d;text-transform:uppercase;margin:0;padding:0px;}
 
 	/*event card*/
 	.wacEventCard{width:300px;height:auto;background:#fff;padding:0px 0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:10px;user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;justify-content: space-between;box-sizing: border-box !important;overflow:visible;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;}
@@ -291,7 +327,12 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	.wacCardStatePER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateGLD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
-	.wacCardHero{width:300px;height:150px;overflow:hidden;margin:0 auto;padding:0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_afc_heroPH_img.svg') no-repeat center center,var(--wac-pur);z-index:49;position:relative;box-sizing: border-box !important;}
+	.wacCardStateGLDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
+	.wacCardStateSYDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
+	.wacCardStateSYDGLDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_aus_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
+	.wacCardStateGLDSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_nsw_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
+
+	.wacCardHero{width:300px;height:150px;overflow:hidden;margin:0 auto;padding:0px;background:var(--wac-lgrey);z-index:49;position:relative;box-sizing: border-box !important;}
 	.wacCardHero img{width:100%;height:auto;position:relative;z-index:50}
 	.wacCardType{width:100%;height:auto;min-height:60px;font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:center;color:var(--wac-char);text-transform:uppercase;margin:0;padding:5px 10px;display: flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
 	.wacCardTeams{width:100%;height:auto;margin:0px auto;bottom:5px;left:4px;right:4px;position:absolute;z-index:51}
@@ -317,7 +358,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	.wacCardDateCount,.wacCardVenueCount{width:20px;height:20px;background:#fff;display:inline-block;font-family:/*"afc num",*/"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:900;text-align:center;margin:0px 5px 0px 0px;padding:3px 0px;border-radius:25px;box-sizing:border-box !important;}
 	.wacCardDateCount{color:var(--wac-dblu);}
 	.wacCardVenueCount{color:var(--wac-lblu);}	
-	.wacCardDateMultiWrap,.wacCardVenueMultiWrap{width:280px;left:-1px;top:32px;border-radius:5px;display:none;overflow:hidden;background:#efefef;/*border:1px solid var(--wac-grey)*/;box-shadow:rgba(0, 0, 0, .15) 0px 2px 5px 0;position: absolute;box-sizing:border-box !important;}
+	.wacCardDateMultiWrap,.wacCardVenueMultiWrap{width:280px;left:-1px;top:32px;border-radius:5px;display:none;overflow:hidden;background:#efefef;border:1px solid #fff;box-shadow:rgba(0, 0, 0, .15) 0px 2px 5px 0;position: absolute;box-sizing:border-box !important;}
 	.wacCardDateMultiWrap .wacCardDate,.wacCardVenueMultiWrap .wacCardVenue{margin:0px !important;border-radius:0px;padding:0px 0px 0px 30px;border:none !important;}
 	.wacCardDateMultiWrap .wacCardDate:nth-child(even){background:#1b3f92d6;}
 	.wacCardVenueMultiWrap .wacCardVenue:nth-child(even){background:#34aed6cf;}
@@ -354,9 +395,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	.wacUZBFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_uzb_rec_img.svg') no-repeat center center;background-size:cover;}
 	.wacPHIFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_phi_rec_img.svg') no-repeat center center;background-size:cover;}
 	.wacINDFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_ind_rec_img.svg') no-repeat center center;background-size:cover;}
-	.wacTBCFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tbc_rec_img.svg') no-repeat center center;background-size:cover;}
-	.wacTBC_HFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tbc_rec_img.svg') no-repeat center center;background-size:cover;}
-	.wacTBC_AFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tbc_rec_img.svg') no-repeat center center;background-size:cover;}
+	.wacTBCFlag,.wacA2Flag,.wacA3Flag,.wacA4Flag,.wacB1Flag,.wacB2Flag,.wacB3Flag,.wacB4Flag,.wacC1Flag,.wacC2Flag,.wacC3Flag,.wacC4Flag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tbc_rec_img.svg') no-repeat center center;background-size:cover;}
 
 	.wacAUSCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_aus_circ_img.svg') no-repeat center center;background-size:cover;}
 	.wacJPNCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_jpn_circ_img.svg') no-repeat center center;background-size:cover;}
@@ -373,9 +412,9 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	.wacUZBCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_uzb_circ_img.svg') no-repeat center center;background-size:cover;}
 	.wacPHICircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_phi_circ_img.svg') no-repeat center center;background-size:cover;}
 	.wacINDCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_ind_circ_img.svg') no-repeat center center;background-size:cover;}
-	.wacTBCCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tbc_circ_img.svg') no-repeat center center;background-size:cover;}
-	.wacTBC_HCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tbc_circ_img.svg') no-repeat center center;background-size:cover;}
-	.wacTBC_ACircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tbc_circ_img.svg') no-repeat center center;background-size:cover;}
+	.wacTBCCircFlag,.wacA2CircFlag,.wacA3CircFlag,.wacA4CircFlag,.wacB1CircFlag,.wacB2CircFlag,.wacB3CircFlag,.wacB4CircFlag,.wacC1CircFlag,.wacC2CircFlag,.wacC3CircFlag,.wacC4CircFlag, .wacundefinedCircFlag{background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/flags/flag_tbc_circ_img.svg') no-repeat center center;background-size:cover;}
+	
+
 /*headers*/
 /*1440 - 4k
 @media only screen and (min-width: 1440px){	
@@ -406,37 +445,51 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 <div id="wacWrapper">
 	
 	<div id="wacHeader">
-	
-		<div id="wacLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_AsianCup_w_grad_logo.svg" alt="AFC Womens Asia Cup"></div>
+		<div id="wacHeaderStrip"></div>
+		<div id="wacLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_logo_w_hori_2026_img.svg" alt="AFC Womens Asia Cup"></div>
 
-	<!---Search Bar--->
+	<!--featured events-->
+	<div id="wacFeatureScroller">
+		<div id="wacFeatureEvents">
+				<!--cards pop in here-->
+				<a href="?venue=URL" target="_self"><div class="wacFeatureEvent wacFeaturePh"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/featuretiles/wac_Aus_FeatureTile_225x173.png"></div></a>
+				<a href="?venue=URL" target="_self"><div class="wacFeatureEvent wacFeaturePh"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/featuretiles/wac_Perth_FeatureTile_225x173.png"></div></a>
+				<a href="?venue=URL" target="_self"><div class="wacFeatureEvent wacFeaturePh"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/featuretiles/wac_Sydney_FeatureTile_225x173.png"></div></a>
+				<a href="?venue=URL" target="_self"><div class="wacFeatureEvent wacFeaturePh"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/featuretiles/wac_GoldCoast_FeatureTile_225x173.png"></div></a>
+			</div>
+		</div>
+		<!--<div id="wacFeatEventPips">
+				pips pop in here
+		</div>-->
+
+	<!---Search Bar---
 	<div id="wacSearchBar">
-		<!--calendar selection--->
+		<!--calendar selection--
 		<div id="wacSelectDate" class="wacSelectBtn">
-			<div class="wacSelectLable"><div class="wacSelectIco wacCalIco"></div> <h2>Select</h2></div>
+			<div class="wacSelectLable"><div class="wacSelectIco wacCalIco"><div id="wacDateMenuCounter" class="wacMenuCounter"></div></div> <h2>Select</h2></div>
 			<div class="wacSelectTitle"><h1>DATE</h1><div class='wacMenuDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_arrow_down_w_ico.svg'></div></div>
 			
-		<!---session selected--->
-		<!--cal--><div id="wacCalendarMenu" class="wacDropDownOff">
+		<!---session selected--
+		<!--cal--<div id="wacCalendarMenu" class="wacDropDownOff">
 			<div id="wacCalHeader">
-				<h3>March 2026</h3><div id="clearDayFilters" class="wacClearMenuBtn">clear</div>		
+				<h3>March 2026</h3><div id="clearDateFilters" class="wacClearMenuBtn">clear</div>		
 						
-			</div><!--cal date list--->
+			</div><!--cal date list---
 				<div class="wacCalWrap"><div class="wacCalDay">MON</div><div class="wacCalDay">TUE</div><div class="wacCalDay">WED</div><div class="wacCalDay">THU</div><div class="wacCalDay">FRI</div><div class="wacCalDay">SAT</div><div class="wacCalDay">SUN</div></div>
-				<!--week 1-->
+				<!--week 1--
 				<div class="wacCalWrap"><div class=" wacNoEventDay"></div><div class=" wacNoEventDay"></div><div class=" wacNoEventDay"></div><div class=" wacNoEventDay"></div><div class=" wacNoEventDay"></div><div class=" wacNoEventDay"></div><div data-filterdate="2026-03-01"  data-filterbtn="mar01" class="wacDay wacCalDayOff">01</div></div>
-				<!--week 2-->
+				<!--week 2--
 				<div class="wacCalWrap"><div data-filterdate="2026-03-02"  data-filterbtn="mar02" class="wacDay wacCalDayOff">02</div><div data-filterdate="2026-03-03"  data-filterbtn="mar03" class="wacDay wacCalDayOff">03</div><div  data-filterdate="2026-03-04"  data-filterbtn="mar04" class="wacDay wacCalDayOff">04</div><div data-filterdate="2026-03-05"  data-filterbtn="mar05" class="wacDay wacCalDayOff">05</div><div  data-filterdate="2026-03-06"  data-filterbtn="mar06" class="wacDay wacCalDayOff">06</div><div data-filterdate="2026-03-07"  data-filterbtn="mar07" class="wacDay wacCalDayOff">07</div><div  data-filterdate="2026-03-08"  data-filterbtn="mar08" class="wacDay wacCalDayOff">08</div></div>
-				<!--week 3--><div class="wacCalWrap"><div data-filterdate="2026-03-09"  data-filterbtn="mar09" class="wacDay wacCalDayOff">09</div><div  data-filterdate="2026-03-10"  data-filterbtn="mar10" class="wacDay wacCalDayOff">10</div><div  data-filterdate="2026-03-11"  data-filterbtn="mar11" class="wacDay wacCalDayOff">11</div><div  data-filterdate="2026-03-12"  data-filterbtn="mar12" class="wacDay wacCalDayOff">12</div><div  data-filterdate="2026-03-13"  data-filterbtn="mar13" class="wacDay wacCalDayOff">13</div><div  data-filterdate="2026-03-14"  data-filterbtn="mar14" class="wacDay wacCalDayOff">14</div><div data-filterdate="2026-03-15"  data-filterbtn="mar15" class="wacDay wacCalDayOff">15</div></div>
-				<!--week 4-->
+				<!--week 3--<div class="wacCalWrap"><div data-filterdate="2026-03-09"  data-filterbtn="mar09" class="wacDay wacCalDayOff">09</div><div  data-filterdate="2026-03-10"  data-filterbtn="mar10" class="wacDay wacCalDayOff">10</div><div  data-filterdate="2026-03-11"  data-filterbtn="mar11" class="wacDay wacCalDayOff">11</div><div  data-filterdate="2026-03-12"  data-filterbtn="mar12" class="wacDay wacCalDayOff">12</div><div  data-filterdate="2026-03-13"  data-filterbtn="mar13" class="wacDay wacCalDayOff">13</div><div  data-filterdate="2026-03-14"  data-filterbtn="mar14" class="wacDay wacCalDayOff">14</div><div data-filterdate="2026-03-15"  data-filterbtn="mar15" class="wacDay wacCalDayOff">15</div></div>
+				<!--week 4--
 				<div class="wacCalWrap"><div data-filterdate="2026-03-16"  data-filterbtn="mar16" class="wacDay wacCalDayOff">16</div><div data-filterdate="2026-03-17"  data-filterbtn="mar17" class="wacDay wacCalDayOff">17</div><div data-filterdate="2026-03-18"  data-filterbtn="mar18" class="wacDay wacCalDayOff">18</div><div data-filterdate="2026-03-19"  data-filterbtn="mar19" class="wacDay wacCalDayOff">19</div><div  data-filterdate="2026-03-20"  data-filterbtn="mar20" class="wacDay wacCalDayOff">20</div><div  data-filterdate="2026-03-21"  data-filterbtn="mar21" class="wacDay wacCalDayOff">21</div><div class=" wacNoEventDay"></div></div>
 				<div class="wacMenuBotLid"></div>
 		</div>
-		</div><!--venue / state selection---><div id="wacSelectVenue" class="wacSelectBtn">
-			<div class="wacSelectLable"><div class="wacSelectIco wacVenueIco"></div> <h2>Select</h2></div>
+		</div><!--venue / state selection---<div id="wacSelectVenue" class="wacSelectBtn">
+			<div class="wacSelectLable"><div class="wacSelectIco wacVenueIco"><div id="wacVenueMenuCounter" class="wacMenuCounter"></div></div><h2>Select</h2></div>
 			<div class="wacSelectTitle"><h1>VENUE</h1><div class='wacMenuDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_arrow_down_w_ico.svg'></div></div>		
-		<!--Venue Menu---><div id="wacVenueMenu" class="wacDropDownMenu wacDropDownOff">
-			<div class="wacDropDownLid"><h3>Select A Venue</h3><div class="wacClearMenuBtn">clear</div></div>
+		<!--Venue Menu---<div id="wacVenueMenu" class="wacDropDownMenu wacDropDownOff">
+			<div class="wacDropDownLid"><h3>Select A Venue</h3><div id="clearVenueFilters"  class="wacClearMenuBtn">clear</div></div>
 			<div id="venueFilterAllBtn" data-filterbtn="All" class="wacDropDownBtn wacFilterBtnOff wacVenueFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><h4>Show All</h4></div>
 			<div class="wacDropDownSubHead"><div class="wacVenueMapIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg"></div><h4>Sydney</h4><span class="wacDropDownDot"></span><h4>New South Wales</h4></div>
 			<div data-filterbtn="StadiumAustralia" class="wacDropDownBtn wacFilterBtnOn wacVenueFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Stadium Australia</h4></div>
@@ -448,15 +501,32 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 			<div data-filterbtn="PerthStadium" class="wacDropDownBtn wacFilterBtnOn wacVenueFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Perth Stadium</h4></div>
 			<div class="wacMenuBotLid"></div>
 		</div>
-		</div><!--Team select---><div id="wacSelectTeam" class="wacSelectBtn">
-			<div class="wacSelectLable"><div class="wacSelectIco wacTeamIco"></div> <h2>Select</h2><!--<div class="wacMenuVertDivDark"></div>---></div>
-			<div class="wacSelectTitle"><h1>TEAM</h1><div class='wacMenuDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_arrow_down_w_ico.svg'></div><!-- ---></div>		
-		<!--Team Menu--->
+		</div><!--Team select---<div id="wacSelectTeam" class="wacSelectBtn">
+			<div class="wacSelectLable"><div class="wacSelectIco wacTeamIco"><div id="wacTeamMenuCounter" class="wacMenuCounter"></div></div><h2>Select</h2></div>
+			<div class="wacSelectTitle"><h1>TEAM</h1><div class='wacMenuDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_arrow_down_w_ico.svg'></div></div>		
+		<!--Team Menu---
 		<div id="wacTeamMenu" class="wacDropDownMenu wacDropDownOff">
-			<div class="wacDropDownLid"><h3>Select A Team / Country</h3><div class="wacClearMenuBtn">clear</div></div>
+			<div class="wacDropDownLid"><h3>Select A Team / Country</h3><div id="clearTeamFilters"  class="wacClearMenuBtn">clear</div></div>
 			<div id="teamFilterAllBtn" data-filterFull="All" data-filterbtn="All" class="wacDropDownBtn wacFilterBtnOff wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><h4>Show All</h4></div>
 				<div class="wacDropDownHorDiv"></div>
 			<div data-filterFull="Australia" data-filterbtn="AUS" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacAUSFlag"></div><h3>AUS</h3><span class="wacDropDownDot"></span><h4>Australia</h4></div>
+			<div data-filterFull="A2" data-filterbtn="A2" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacAUSFlag"></div><h3>A2</h3><span class="wacDropDownDot"></span><h4>A2</h4></div>
+			<div data-filterFull="A3" data-filterbtn="A3" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacAUSFlag"></div><h3>A3</h3><span class="wacDropDownDot"></span><h4>A3</h4></div>
+			<div data-filterFull="A4" data-filterbtn="A4" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacAUSFlag"></div><h3>A4</h3><span class="wacDropDownDot"></span><h4>A4</h4></div>
+			<div data-filterFull="B1" data-filterbtn="B1" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacAUSFlag"></div><h3>B1</h3><span class="wacDropDownDot"></span><h4>B1</h4></div>
+			<div data-filterFull="B2" data-filterbtn="B2" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacAUSFlag"></div><h3>B2</h3><span class="wacDropDownDot"></span><h4>B2</h4></div>
+			<div data-filterFull="B3" data-filterbtn="B3" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacAUSFlag"></div><h3>B3</h3><span class="wacDropDownDot"></span><h4>B3</h4></div>
+			<div data-filterFull="B4" data-filterbtn="B4" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacAUSFlag"></div><h3>B4</h3><span class="wacDropDownDot"></span><h4>B4</h4></div>
+			<div data-filterFull="C1" data-filterbtn="C1" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacAUSFlag"></div><h3>C1</h3><span class="wacDropDownDot"></span><h4>C1</h4></div>
+			<div data-filterFull="C2" data-filterbtn="C2" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacAUSFlag"></div><h3>C2</h3><span class="wacDropDownDot"></span><h4>C2</h4></div>
+			<div data-filterFull="C3" data-filterbtn="C3" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacAUSFlag"></div><h3>C3</h3><span class="wacDropDownDot"></span><h4>C3</h4></div>
+			<div data-filterFull="C4" data-filterbtn="C4" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacAUSFlag"></div><h3>C4</h3><span class="wacDropDownDot"></span><h4>C4</h4></div>
+
+
+
+
+
+			<!--
 			<div data-filterFull="Japan" data-filterbtn="JPN" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacJPNFlag"></div><h3>JPN</h3><span class="wacDropDownDot"></span><h4>Japan</h4></div>
 			<div data-filterFull="DPRKorea" data-filterbtn="PRK" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacPRKFlag"></div><h3>PRK</h3><span class="wacDropDownDot"></span><h4>DPR Korea</h4></div>
 			<div data-filterFull="ChinaPR" data-filterbtn="CHN" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacCHNFlag"></div><h3>CHN</h3><span class="wacDropDownDot"></span><h4>China PR</h4></div>			
@@ -481,31 +551,11 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 			<div data-filterFull="Kyrgyzstan" data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacINDFlag"></div><h3></h3><span class="wacDropDownDot"></span><h4>Kyrgyzstan</h4></div>			
 			<div data-filterFull="TBC" data-filterbtn="TBC" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacTBCFlag"></div><h3>TBC</h3><span class="wacDropDownDot"></span><h4>To Be Confirmed</h4></div>
 			<div data-filterFull="TBC_Home" data-filterbtn="TBC_Home" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacTBCFlag"></div><h3>TBC</h3><span class="wacDropDownDot"></span><h4>TBC_Home</h4></div>
-			<div data-filterFull="TBC_Away" data-filterbtn="TBC_Away" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacTBCFlag"></div><h3>TBC</h3><span class="wacDropDownDot"></span><h4>TBC_Away</h4></div>
+			<div data-filterFull="TBC_Away" data-filterbtn="TBC_Away" class="wacDropDownBtn wacFilterBtnOn wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><div class="wacDropDownFlag wacTBCFlag"></div><h3>TBC</h3><span class="wacDropDownDot"></span><h4>TBC_Away</h4></div>--
 			<div class="wacMenuBotLid"></div>
 		</div>
-		</div><!--Stage select---<div id="wacSelectStage" class="wacSelectBtn">
-			<div class="wacSelectLable"><div class="wacSelectIco wacStageIco"></div> <h2>Select</h2></div>
-			<div class="wacSelectTitle"><h1>STAGE</h1></div>
-		<!--Stage Menu---
-		<div id="wacStageMenu" class="wacDropDownMenu">		
-			<div data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacStageFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Group Stage</h4></div>
-			<div data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacStageFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Quarter Final</h4></div>
-			<div data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacStageFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><h4>Semi Final</h4></div>
-			<div data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacStageFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><h4>Preliminary Final</h4></div>			
-			<div data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacStageFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><h4>Final</h4></div>		
 		</div>
-		</div>---><!--Ticket Type select---<div id="wacSelectTicket" class="wacSelectBtn">
-			<div class="wacSelectLable"><div class="wacSelectIco wacStageIco"></div><h2>TYPE OF</h2></div>
-			<div class="wacSelectTitle"><h1>TICKET</h1></div>
-		<!--Ticket Type Menu---
-		<div id="wacTicketMenu" class="wacDropDownMenu">		
-			<div data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacTicketFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Single Match</h4></div>
-			<div data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacTicketFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Double Header</h4></div>
-			<div data-filterbtn="" class="wacDropDownBtn wacFilterBtnOn wacTicketFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><h4>3 Match Pack</h4></div>	
-		</div>
-		</div>--->
-	</div><!----end search bar ---->	
+	</div>--><!----end search bar ---->	
 
 	</div><!---end header--->
 
@@ -544,15 +594,15 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 		</div>
       	<div id="wacEventStream"> 
 			<!--base card--
-			<div data-tickettype='' data-venues="+venueMulti+" data-dates="+event.event_date+" data-teams="+discoTeams+" class='wacEventCard'><div class='wacCardWrap'><div class='wacTicketType wac"+tickettype+"Ticket'>"+event.ticket_type_category+"</div><div class='wacCardState wacCardState"+locMapper(event.host_state)+"'>"+locMapper(event.host_state)+"</div><div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Woemsn Asian Cup'><div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"Flag'></div><h2>"+eventTeam01+"</h2></div><p>vs.</p><div class='wacTeamAway'><h2>"+eventTeam02+"</h2><div class='wacAwayFlag wac"+eventTeam02+"Flag'></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div><div class='wacCardWrap'><div class='wacCardVenue'><div class='wacCardVenueIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_pin_purp_ico.svg'></div>"+event.venue_name_discovery+"</div><div class='wacCardDate'><div class='wacCardDateIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_purp_ico.svg'></div>"+eventDateShort+"</div></div><div class='wacCardWrap'><div class='wacCardPrice'><p>from:</p><h1>$"+event.price_from+"</h1></div><div class='wacCardInfoBtn'>MORE INFO</div><a href='"+event.buy_link+"'><div class='wacCardTicketBtn'>"+event.button_text+"</div></a></div></div>
+			<div data-tickettype='' data-venues="+venueMulti+" data-dates="+event.event_date+" data-teams="+discoTeams+" class='wacEventCard'><div class='wacCardWrap'><div class='wacTicketType wac"+tickettype+"Ticket'>"+event.ticket_type_category+"</div><div class='wacCardState wacCardState"+locMapper(event.host_state)+"'>"+locMapper(event.host_state)+"</div><div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Womens Asian Cup'><div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"Flag'></div><h2>"+eventTeam01+"</h2></div><p>vs.</p><div class='wacTeamAway'><h2>"+eventTeam02+"</h2><div class='wacAwayFlag wac"+eventTeam02+"Flag'></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div><div class='wacCardWrap'><div class='wacCardVenue'><div class='wacCardVenueIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_pin_purp_ico.svg'></div>"+event.venue_name_discovery+"</div><div class='wacCardDate'><div class='wacCardDateIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_purp_ico.svg'></div>"+eventDateShort+"</div></div><div class='wacCardWrap'><div class='wacCardPrice'><p>from:</p><h1>$"+event.price_from+"</h1></div><div class='wacCardInfoBtn'>MORE INFO</div><a href='"+event.buy_link+"'><div class='wacCardTicketBtn'>"+event.button_text+"</div></a></div></div>
 
 			<!--one team--
-			<div data-tickettype='' data-venues="+venueMulti+" data-dates="+event.event_date_discovery+" data-teams="+discoTeams+" class='wacEventCard'><div class='wacCardWrap'><div class='wacTicketType wac"+tickettype+"Ticket'>"+event.ticket_type_category+"</div><div class='wacCardState wacCardState"+locMapper(event.host_state)+"'>"+locMapper(event.host_state)+"</div><div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Woemsn Asian Cup'>
+			<div data-tickettype='' data-venues="+venueMulti+" data-dates="+event.event_date_discovery+" data-teams="+discoTeams+" class='wacEventCard'><div class='wacCardWrap'><div class='wacTicketType wac"+tickettype+"Ticket'>"+event.ticket_type_category+"</div><div class='wacCardState wacCardState"+locMapper(event.host_state)+"'>"+locMapper(event.host_state)+"</div><div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Womens Asian Cup'>
 			
 			<div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"Flag'></div><h2>"+eventTeam01+"</h2></div><p>vs.</p><div class='wacTeamAway'><h2>"+eventTeam02+"</h2><div class='wacAwayFlag wac"+eventTeam02+"Flag'></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div>
 
 			<!--multi team--
-			<div data-tickettype='' data-venues="+venueMulti+" data-dates="+event.event_date_discovery+" data-teams="+discoTeams+" class='wacEventCard'><div class='wacCardWrap'><div class='wacTicketType wac"+tickettype+"Ticket'>"+event.ticket_type_category+"</div><div class='wacCardState wacCardState"+locMapper(event.host_state)+"'>"+locMapper(event.host_state)+"</div><div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Woemsn Asian Cup'>
+			<div data-tickettype='' data-venues="+venueMulti+" data-dates="+event.event_date_discovery+" data-teams="+discoTeams+" class='wacEventCard'><div class='wacCardWrap'><div class='wacTicketType wac"+tickettype+"Ticket'>"+event.ticket_type_category+"</div><div class='wacCardState wacCardState"+locMapper(event.host_state)+"'>"+locMapper(event.host_state)+"</div><div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Womens Asian Cup'>
 			
 			<div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacCardMultiTeamWrap wac"+eventTeam01+"team'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"Flag'></div></div><p>vs.</p><div class='wacTeamAway'><div class='wacAwayFlag wac"+eventTeam02+"Flag''></div></div></div><div class='wacTeamVertDiv'></div><div class='wacCardMultiTeamWrap wac"+eventTeam03+"team'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam03+"Flag'></div></div><p>vs.</p><div class='wacTeamAway'><div class='wacAwayFlag wac"+eventTeam04+"Flag''></div></div></div><div class='wacTeamVertDiv wac"+eventTeam05+"team''></div><div class='wacCardMultiTeamWrap wac"+eventTeam05+"team'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam05+"Flag'></div></div><p>vs.</p><div class='wacTeamAway'><div class='wacAwayFlag wac"+eventTeam06+"Flag''></div></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div>
 
@@ -569,7 +619,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 		<!--single match--
 		<div class="wacEventCard">
 			<div class="wacTicketType">SINGLE MATCH</div>
-			<div class="wacCardHero"><img src="https://placehold.co/300x150" alt="AFC Woemsn Asian Cup"></div>
+			<div class="wacCardHero"><img src="https://placehold.co/300x150" alt="AFC Womens Asian Cup"></div>
 			<div class="wacCardType">C2 v C3</div>
 			<div class="wacCardTeams">
 				<div class="wacCardTeamWrap">
@@ -611,8 +661,9 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 
 	dateList = ["mar01","mar02","mar03","mar04","mar04","mar05","mar06","mar07","mar08","mar09","mar10","mar11","mar12","mar13","mar14","mar15","mar16","mar17","mar18","mar19","mar20","mar21"];
 	dateListNum = ["2026-03-01","2026-03-02","2026-03-03","2026-03-04","2026-03-04","2026-03-05","2026-03-06","2026-03-07","2026-03-08","2026-03-09","2026-03-10","2026-03-11","2026-03-12","2026-03-13","2026-03-14","2026-03-15","2026-03-16","2026-03-17","2026-03-18","2026-03-19","2026-03-20","2026-03-21"]
-	teamList = ["Australia","Japan","DPRKorea","ChinaPR","KoreaRepublic","Iran","Jordan","Thailand","Myanmar","ChineseTaipei","Vietnam","Uzbekistan","Philippines","India","Guam","TBC_Home","TBC_Away","Iraq","Indonesia","Laos","Lebanon","Kuwait","Kyrgyzstan","HongKong","TBC"]
-	venueList = ["PerthStadium","PerthRectangular","GoldCoastStadium","StadiumAustralia","WesternSydneyStadium"];
+	teamList = ["Australia","A2","A3","A4","B1","B2","B3","B4","D2","D3","D4","C1","C2","C3","C4",]
+	//teamList = ["Australia","Japan","DPRKorea","ChinaPR","KoreaRepublic","Iran","Jordan","Thailand","Myanmar","ChineseTaipei","Vietnam","Uzbekistan","Philippines","India","Guam","TBC_Home","TBC_Away","Iraq","Indonesia","Laos","Lebanon","Kuwait","Kyrgyzstan","HongKong","TBC"]
+	venueList = ["PerthStadium","PerthRectangularStadium","GoldCoastStadium","StadiumAustralia","WesternSydneyStadium"];
 	discoveryFilterArr = [];
 	//const allUrlVars = getUrlVars();
 	//eventCount = 0;
@@ -657,8 +708,9 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 							let eventDateShort = new Intl.DateTimeFormat('en-AU', options).format(eventdate).replace(',', '');
 							let eventDateMulti = event.event_date_discovery.split(',');
 							let venueMulti = event.venue_name_discovery.split(',');
-							let discoTeams = event.teams_discovery.replace(/\s/g, '')
-							let eventTeams = event.teams_discovery.split(',');
+							let venueDisco = event.venue_name_discovery.replace(/\s/g, '').split(',');							
+							let discoTeams = event?.teams_discovery.replace(/\s/g, '')
+							let eventTeams = event?.teams_discovery.split(',');
 							let eventTeam01 = teamMapper(eventTeams[0]);
 							let eventTeam02 = teamMapper(eventTeams[1]);
 							let eventTeam03 = teamMapper(eventTeams[2]);
@@ -678,22 +730,24 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 
 							//build card - single match
 							if(tickettype == "SingleMatch"){ 
-							let newEvent = $j("<div data-tickettype='' data-venues="+venueMulti+" data-dates="+event.event_date+" data-teams="+discoTeams+" class='wacEventCard'><div class='wacCardWrap'><div class='wacTicketType wac"+tickettype+"Ticket'>"+event.ticket_type_category+"</div><div class='wacCardState wacCardState"+locMapper(event.host_state)+"'>"+locMapper(event.host_state)+"</div><div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Woemsn Asian Cup'><div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"CircFlag'></div><h2>"+eventTeam01+"</h2></div><p>vs</p><div class='wacTeamAway'><h2>"+eventTeam02+"</h2><div class='wacAwayFlag wac"+eventTeam02+"CircFlag'></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div><div class='wacCardWrap'><div class='wacCardVenue'><div class='wacCardVenueIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_pin_w_ico.svg'></div>"+event.venue_name_discovery+"</div><div class='wacCardDate'><div class='wacCardDateIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_w_ico.svg'></div>"+dateMapper(event.event_date)+"</div></div><div class='wacCardBotWrap'><div class='wacCardInfoWrap'><div class='wacCardPrice'><p>FROM</p><h1>$"+event.price_from+"</h1></div><div class='wacPriceDiv'></div><div class='wacCardInfoBtn'>MORE INFO</div></div><a href='"+event.buy_link+"'><div class='wacCardTicketBtn'>"+event.button_text+"</div></a></div></div>");
+							let newEvent = $j("<div data-tickettype='' data-venues="+venueDisco+" data-dates="+event.event_date+" data-teams="+discoTeams+" class='wacEventCard'><div class='wacCardTopWrap'><div class='wacTicketType wac"+tickettype+"Ticket'>"+event.ticket_type_category+"</div><div class='wacCardState wacCardState"+locMapper(event.host_state)+"'>"+locMapper(event.host_state)+"</div><div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Womens Asian Cup'><div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"CircFlag'></div><h2>"+eventTeam01+"</h2></div><p>vs</p><div class='wacTeamAway'><h2>"+eventTeam02+"</h2><div class='wacAwayFlag wac"+eventTeam02+"CircFlag'></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div><div class='wacCardWrap'><div class='wacCardVenue'><div class='wacCardVenueIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_pin_w_ico.svg'></div>"+event.venue_name_discovery+"</div><div class='wacCardDate'><div class='wacCardDateIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_w_ico.svg'></div>"+dateMapper(event.event_date)+"</div></div><div class='wacCardBotWrap'><div class='wacCardInfoWrap'><div class='wacCardPrice'><p>FROM</p><h1>$"+event.price_from+"</h1></div><div class='wacPriceDiv'></div><div class='wacCardInfoBtn'>MORE INFO</div></div><a href='"+event.buy_link+"'><div class='wacCardTicketBtn'>"+event.button_text+"</div></a></div></div>");
 							//append to div
 							eventListDiv.append(newEvent);
 							eventCountTotal ++
 							}
 							//build card - packages
 							if(tickettype == "Package"){
-								let newEvent = $j("<div data-tickettype='' data-venues="+venueMulti+" data-dates="+event.event_date_discovery+" data-teams="+discoTeams+" class='wacEventCard'><div class='wacCardWrap'><div class='wacTicketType wac"+tickettype+"Ticket'>"+event.ticket_type_category+"</div><div class='wacCardState wacCardState"+locMapper(event.host_state)+"'>"+locMapper(event.host_state)+"</div>");	
+								let multiState = stateMapper(event.host_state)
+
+								let newEvent = $j("<div data-tickettype='' data-venues="+venueDisco+" data-dates="+event.event_date_discovery+" data-teams="+discoTeams+" class='wacEventCard'><div class='wacCardTopWrap'><div class='wacTicketType wac"+tickettype+"Ticket'>"+event.ticket_type_category+"</div><div class='wacCardState wacCardState"+multiState+"'>"+locMapper(event.host_state)+"</div>");	
 								
 								//single match
 								if(eventTeams.length==2){	
-									eventTeamSpan = $j("<div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Woemsn Asian Cup'><div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"CircFlag'></div><h2>"+eventTeam01+"</h2></div><p>vs</p><div class='wacTeamAway'><h2>"+eventTeam02+"</h2><div class='wacAwayFlag wac"+eventTeam02+"CircFlag'></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div>")
+									eventTeamSpan = $j("<div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Womens Asian Cup'><div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"CircFlag'></div><h2>"+eventTeam01+"</h2></div><p>vs</p><div class='wacTeamAway'><h2>"+eventTeam02+"</h2><div class='wacAwayFlag wac"+eventTeam02+"CircFlag'></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div>")
 								}
 								//multi match
 								if(eventTeams.length>=3){	
-									eventTeamSpan = $j("<div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Woemsn Asian Cup'><div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacCardMultiTeamWrap wac"+eventTeam01+"team'><div class='wacMultiTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"CircFlag'></div></div><p>vs</p><div class='wacMultiTeamAway'><div class='wacAwayFlag wac"+eventTeam02+"CircFlag''></div></div></div><div class='wacCardMultiTeamWrap wac"+eventTeam03+"team'><div class='wacMultiTeamHome'><div class='wacHomeFlag wac"+eventTeam03+"CircFlag'></div></div><p>vs</p><div class='wacMultiTeamAway'><div class='wacAwayFlag wac"+eventTeam04+"CircFlag''></div></div></div><div class='wacCardMultiTeamWrap wac"+eventTeam05+"team'><div class='wacMultiTeamHome'><div class='wacHomeFlag wac"+eventTeam05+"CircFlag'></div></div><p>vs</p><div class='wacMultiTeamAway'><div class='wacAwayFlag wac"+eventTeam06+"CircFlag''></div></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div>")
+									eventTeamSpan = $j("<div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/ph_hero/wac_HeroImage_300x150@1.5x_"+event.image_ref_link+"' alt='AFC Womens Asian Cup'><div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacCardMultiTeamWrap wac"+eventTeam01+"team'><div class='wacMultiTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"CircFlag'></div></div><p>vs</p><div class='wacMultiTeamAway'><div class='wacAwayFlag wac"+eventTeam02+"CircFlag''></div></div></div><div class='wacCardMultiTeamWrap wac"+eventTeam03+"team'><div class='wacMultiTeamHome'><div class='wacHomeFlag wac"+eventTeam03+"CircFlag'></div></div><p>vs</p><div class='wacMultiTeamAway'><div class='wacAwayFlag wac"+eventTeam04+"CircFlag''></div></div></div><div class='wacCardMultiTeamWrap wac"+eventTeam05+"team'><div class='wacMultiTeamHome'><div class='wacHomeFlag wac"+eventTeam05+"CircFlag'></div></div><p>vs</p><div class='wacMultiTeamAway'><div class='wacAwayFlag wac"+eventTeam06+"CircFlag''></div></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div>")
 								}
 								//single venue
 								if(venueMulti.length==1){										
@@ -717,8 +771,9 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 									let eventDate01 = eventDateMulti[0];
 									let eventDate02 = eventDateMulti[1];
 									let eventDate03 = eventDateMulti[2];
-									let eventDate04 = eventDateMulti[3];																										
-									 eventDateSpan = $j("<div class='wacCardDateMulti'><div class='wacCardDateIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_w_ico.svg'></div><div class='wacCardDateCount'>"+eventDateCardCount+"</div>Multiple Dates <div class='wacCardDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_arrow_down_w_ico.svg'></div><div class='wacCardDateMultiWrap wacCardMenuOff'><div class='wacCardDate wac"+eventDate01+"Date'>"+dateMapper(eventDate01)+"</div><div class='wacCardDate wac"+eventDate02+"Date'>"+dateMapper(eventDate02)+"</div><div class='wacCardDate wac"+eventDate03+"Date'>"+dateMapper(eventDate03)+"</div><div class='wacCardDate wac"+eventDate04+"Date'>"+dateMapper(eventDate04)+"</div></div></div></div>")
+									let eventDate04 = eventDateMulti[3];
+									let eventDate05 = eventDateMulti[4];																															
+									 eventDateSpan = $j("<div class='wacCardDateMulti'><div class='wacCardDateIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_w_ico.svg'></div><div class='wacCardDateCount'>"+eventDateCardCount+"</div>Multiple Dates <div class='wacCardDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_arrow_down_w_ico.svg'></div><div class='wacCardDateMultiWrap wacCardMenuOff'><div class='wacCardDate wac"+eventDate01+"Date'>"+dateMapper(eventDate01)+"</div><div class='wacCardDate wac"+eventDate02+"Date'>"+dateMapper(eventDate02)+"</div><div class='wacCardDate wac"+eventDate03+"Date'>"+dateMapper(eventDate03)+"</div><div class='wacCardDate wac"+eventDate04+"Date'>"+dateMapper(eventDate04)+"</div><div class='wacCardDate wac"+eventDate05+"Date'>"+dateMapper(eventDate05)+"</div></div></div></div>")
 								}	
 							//button span							
 							let eventBotSpan = $j("<div class='wacCardBotWrap'><div class='wacCardInfoWrap'><div class='wacCardPrice'><p>FROM</p><h1>$"+event.price_from+"</h1></div><div class='wacPriceDiv'></div><div class='wacCardInfoBtn'>MORE INFO</div></div><a href='"+event.buy_link+"'><div class='wacCardTicketBtn'>"+event.button_text+"</div></a></div></div>");		
@@ -1031,11 +1086,29 @@ let resetGP = function(){
 };	
 $j(document).on('click', '.aoErrorResetGP', function () {
 		resetGP()
-		});
-$j(document).on('click', '#aoClearMenuPub, #aoClearMenuMobPub', function () {	
-		resetGP()
+		});*/	
+/*clear menus*/		
+$j(document).on('click', '#clearDateFilters', function () {	
+		dateList.length = 0;
+		$j(".wacDay").removeClass("wacCalDayOn").addClass("wacCalDayOff");
+		//$j(".wacDay").children(".wacCheckBox").removeClass("wacCheckBoxOn").addClass("wacCheckBoxOff");
+		cardsToDisplay();
+		dateCounter();
+		});	
+$j(document).on('click', '#clearVenueFilters', function () {	
+		venueList.length = 0;
+		$j(".wacVenueFilterBtn").removeClass("wacFilterBtnOn").addClass("wacFilterBtnOff");
+		$j(".wacVenueFilterBtn").children(".wacCheckBox").removeClass("wacCheckBoxOn").addClass("wacCheckBoxOff");
+		cardsToDisplay();
+		venueCounter();
 		});		
-*/		
+$j(document).on('click', '#clearTeamFilters', function () {	
+		teamList.length = 0;
+		$j(".wacTeamFilterBtn").removeClass("wacFilterBtnOn").addClass("wacFilterBtnOff");
+		$j(".wacTeamFilterBtn").children(".wacCheckBox").removeClass("wacCheckBoxOn").addClass("wacCheckBoxOff");
+		cardsToDisplay();
+		teamCounter();
+		});		
 //toggle buttons for menu clicks
 //Dates Filter Check
 $j(document).on('click', ".wacDay ", function () {
@@ -1051,7 +1124,7 @@ var toggleDate = $j(this).data('filterdate');
 			//$j(this).siblings("#sessionPubAnyFilterBtn").removeClass("aoFilterBtnOn").addClass("aoFilterBtnOff");
 		}					
 		cardsToDisplay();
-
+		dateCounter();
 	})
 //venue Filter Check
 $j(document).on('click', "#wacVenueMenu .wacVenueFilterBtn", function () {
@@ -1067,6 +1140,7 @@ var toggleVenue = $j(this).data('filterbtn');
 			//$j(this).siblings("#sessionPubAnyFilterBtn").removeClass("aoFilterBtnOn").addClass("aoFilterBtnOff");
 		}					
 		cardsToDisplay();
+		venueCounter();
 	})
 //venue any/all
 $j(document).on('click', "#wacVenueMenu .wacVenueFilterBtn", function () {
@@ -1087,6 +1161,7 @@ $j(document).on('click', "#wacVenueMenu .wacVenueFilterBtn", function () {
 					});
 				}
 				cardsToDisplay();
+				venueCounter();
 });
 //team Filter Check
 $j(document).on('click', "#wacTeamMenu .wacTeamFilterBtn ", function () {
@@ -1102,6 +1177,7 @@ var toggleTeam = $j(this).data('filterfull');
 			//$j(this).siblings("#sessionPubAnyFilterBtn").removeClass("aoFilterBtnOn").addClass("aoFilterBtnOff");
 		}					
 		cardsToDisplay();
+		teamCounter();
 	})
 
 //teams any/all
@@ -1123,6 +1199,7 @@ $j(document).on('click', "#wacTeamMenu .wacTeamFilterBtn", function () {
 					});
 				}
 				cardsToDisplay();
+				teamCounter();
 });
 
 
@@ -1161,6 +1238,39 @@ $j(document).on('click', "#aoMiniSearchContBtn", function () {
 	})
 
 */
+//menu counters
+let venueCounter = function(){
+	let venueCountLength = jQuery.grep(venueList, function(value) {
+						return value != "All";});
+	let venueCount = venueCountLength.length			
+	document.getElementById('wacVenueMenuCounter').innerHTML = venueCount.toString();
+	if((venueCount >= 1)){
+			$j("#wacVenueMenuCounter").fadeIn(0);
+	}else if((venueCount == 0)){
+			$j("#wacVenueMenuCounter").fadeOut(0);
+	}
+}
+let dateCounter = function(){
+	let dateCount = dateListNum.length	
+
+	document.getElementById('wacDateMenuCounter').innerHTML = dateCount.toString();
+	if((dateCount >= 1)){
+			$j("#wacDateMenuCounter").fadeIn(0);
+	}else if((dateCount == 0)){
+			$j("#wacDateMenuCounter").fadeOut(0);
+	}
+}
+let teamCounter = function(){
+	let teamCountLength = jQuery.grep(teamList, function(value) {
+						return value != "All";});
+	let teamCount = teamCountLength.length
+	document.getElementById('wacTeamMenuCounter').innerHTML = teamCount.toString();
+	if((teamCount >= 1)){
+			$j("#wacTeamMenuCounter").fadeIn(0);
+	}else if((teamCount == 0)){
+			$j("#wacTeamMenuCounter").fadeOut(0);
+	}
+}
 //URL token filtering
 /*
 function getUrlVars(){	
@@ -1420,8 +1530,20 @@ function teamMapper(data){
 			case "Lebanon":return "LEB";
 			case "Kuwait":return "KUW";			
 			case "Kyrgyzstan":return "KRG";			
-
-
+			//groups
+			case "TBC":return "TBC";
+			case "A1":return "A1";	
+			case "A2":return "A2";	
+			case "A3":return "A3";	
+			case "A4":return "A4";	
+			case "B1":return "B1";	
+			case "B2":return "B2";	
+			case "B3":return "B3";	
+			case "B4":return "B4";	
+			case "C1":return "C1";	
+			case "C2":return "C2";	
+			case "C3":return "C3";	
+			case "C4":return "C4";				
 			//default:return ""
 	}
 }
@@ -1481,7 +1603,24 @@ function locMapper(data){
 			case "Queensland":return "GLD";
 			case "New South Wales":return "SYD";
 			case "Western Australia":return "PER";
-
+			case "Queensland,Western Australia":return "GLD/PER";
+			case "Western Australia,Queensland,New South Wales":return "SYD/GLD/PER";
+			case "Queensland,New South Wales":return "GLD/SYD";
+			case "New South Wales,Western Australia":return "SYD/PER";
+			case "Western Australia,New South Wales":return "SYD/PER";
+			//default:return ""
+	}
+}
+function stateMapper(data){
+	switch (data){			
+			case "Queensland":return "GLD";
+			case "New South Wales":return "SYD";
+			case "Western Australia":return "PER";
+			case "Queensland,Western Australia":return "GLDPER";
+			case "Western Australia,Queensland,New South Wales":return "SYDGLDPER";
+			case "Queensland,New South Wales":return "GLDSYD";
+			case "New South Wales,Western Australia":return "SYDPER"; 
+			case "Western Australia,New South Wales":return "SYDPER";
 			//default:return ""
 	}
 }
