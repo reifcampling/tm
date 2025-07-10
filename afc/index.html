@@ -48,8 +48,8 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	#wacContent{width:100%; position:relative;text-align: center; background:#fff;margin:0px auto 0px ;display:block;box-sizing: border-box !important}
 	#aoPubWrapper{display:none;}
 	/* Header */
-	#wacHeader{width:100%;height:400px;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_header_players.png') bottom center no-repeat,url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_header_pattern.png") no-repeat center left,  linear-gradient(37deg,rgba(0, 139, 180, 1) 0%, rgba(107, 213, 239, 1) 100%);background-size:1200px auto,50% auto, 100% 100%;box-sizing: border-box !important;}
-	#wacLogo{width:600px;height:auto;padding:0px;margin:40px auto 100px;display:block;z-index:20;position: relative;border-radius:0px;}
+	#wacHeader{width:100%;height:500px;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_header_players.png') bottom center no-repeat,url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_header_pattern.png") no-repeat center left,  linear-gradient(37deg,rgba(0, 139, 180, 1) 0%, rgba(107, 213, 239, 1) 100%);background-size:1400px auto,auto 500px, 100% 100%;box-sizing: border-box !important;}
+	#wacLogo{width:600px;height:auto;padding:0px;margin:60px auto 100px;display:block;z-index:20;position: relative;border-radius:0px;}
 	#wacLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
 	#wacHeaderStrip{width:100%;height:35px;background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_afc_text_tile_white_img.svg") repeat-x,var(--wac-dblu);background-size:contain;margin:0px auto;position: relative;}
 	/*menu*/ /* {font-family:;font-size:;line-height:;font-weight:;text-align:;color:;margin:0px;padding:0px;}*/
@@ -71,7 +71,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	.wacFeatureEvent a{user-drag: none; -webkit-user-drag: none;user-select: none;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
 	.wacFeatureEvent:hover{box-shadow:rgb(0 0 0 / 30%) 0px 4px 6px 2px;opacity:.95;}
 	.wacFeaturePh{background:rgba(0,0,0,.2);}
-
+	#wacResetAllFeat{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:900;color:#fff;text-align:center;margin:0px 0px;padding:5px 10px;user-select:none;cursor:pointer;text-decoration: underline;text-transform: uppercase;}
 
 	#wacFeatEventPips{display:none;}
 	/*menu icons*/
@@ -140,6 +140,11 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	.wacErrorMessage h1{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:22px;line-height:22px;font-weight:700;color:var(--wac-char);padding:24px 0px 16px 0px;margin:0px;box-sizing:border-box !important;}
 	.wacErrorMessage p{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:16px;font-weight:400;color:var(--wac-dgrey);padding:0px 0px 0px 0px;margin:0px;box-sizing:border-box !important;line-height: 24px;}
 	.wacErrorResetBtn{width:145px;height:auto;display:block;padding:16px 5px;margin:26px auto 46px;background:var(--wac-dgrey);color:#fff;font-family:"poppins","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:700;border-radius:4px;box-sizing:border-box !important;cursor:pointer;}
+	/*notice*/
+	.wacNotice{width:94%;max-width:1100px;height:auto;border-radius:10px;padding:20px;margin:20px auto;display:block;background:var(--wac-lgrey);box-sizing: border-box !important;position:relative;}
+	.wacNotice h1{font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:700;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 10px 0px;}
+	.wacNotice p{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 0px 0px;}
+	.wacCloseNoticeBtn{width:30px;height:30px;background:var(--wac-dblu);border-radius:20px;position:absolute;right:5px;top:5px;cursor:pointer;}
 	/*event counter*/
 	#wacounterWrap{display:flex;justify-content: space-between;}
 	#wacCounter{width:auto;display:inline-block;background:var(--wac-grey);border-radius:10px;padding:5px 15px;margin:10px 0px 10px 0px;}
@@ -151,10 +156,17 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	.wacEventCard{width:300px;height:auto;background:#fff;padding:0px 0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:10px;user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;justify-content: space-between;box-sizing: border-box !important;overflow:visible;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;}
 	.wacCardWrap{width:100%;height:auto;display: block;}
 	.wacCardTopWrap{width:100%;height:auto;margin:0px 0px 0px 0px;background:var(--wac-dgrey);border-radius:10px 10px 0px 0px;display: flex;flex-wrap: nowrap;justify-content:space-between;;}
-	.wacTicketType{width:auto;height:40px;font-family:"Noto Sans","Averta",fallback;font-size:18px;line-height:18px;font-weight:900;text-align:left;color:#fff;text-transform:uppercase;margin:0;padding:11px 0px 11px 40px;border-radius:10px 0px 0px 0px;display:inline-block;box-sizing:border-box !important;}
+	/*ticket pass icons*/
+	.wacTicketType{width:auto;height:40px;font-family:"Noto Sans","Averta",fallback;font-size:13px;line-height:13px;font-weight:800;text-align:left;color:#fff;text-transform:uppercase;margin:0;padding:14px 0px 14px 40px;border-radius:10px 0px 0px 0px;display:inline-block;box-sizing:border-box !important;}
 	.wacPackageTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
 	.wacSingleMatchTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_single_w_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
-	.wacCardState{height:40px;min-width:100px;width:auto;font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:left;color:#fff;text-transform:uppercase;margin:0;padding:13px 10px 13px 43px;border-radius:0px 10px 0px 0px;display:inline-block;box-sizing:border-box !important;}
+	.wacPremiumPassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_premPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	.wacFollowATeamTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_followPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	.wacGroupStagePassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_groupPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	.wacFinalsPassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_finalsPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	.wacSeriesPassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_stadPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	/*state icons*/
+	.wacCardState{height:40px;min-width:100px;width:auto;font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:13px 10px 13px 43px;border-radius:0px 10px 0px 0px;display:inline-block;box-sizing:border-box !important;}
 	.wacCardStatePER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateGLD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
@@ -163,12 +175,11 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	.wacCardStateSYDGLDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_aus_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateGLDSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_nsw_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
 
-
-	.wacCardHero{width:300px;height:150px;overflow:hidden;margin:0 auto;padding:0px;background:var(--wac-lgrey);z-index:49;position:relative;box-sizing: border-box !important;}
+	.wacCardHero{width:300px;height:150px;overflow:hidden;margin:0 auto;padding:0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_hero_fallback_img.svg') center center,var(--wac-lgrey);z-index:49;position:relative;box-sizing: border-box !important;}
 	.wacCardHero img{width:100%;height:auto;position:relative;z-index:50}
 	.wacCardType{width:100%;height:auto;min-height:60px;font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:center;color:var(--wac-char);text-transform:uppercase;margin:0;padding:5px 10px;display: flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
 	.wacCardTeams{width:100%;height:auto;margin:0px auto;bottom:5px;left:4px;right:4px;position:absolute;z-index:51}
-	.wacCardTeamWrap{width:290px;height:auto;display:flex;flex-wrap: wrap;align-content: center;align-items: center;justify-content: space-between;padding:0px;margin:0px ;border-radius:0px;background:transparent;box-sizing:border-box !important;}
+	.wacCardTeamWrap{width:290px;height:auto;display: none/*flex*/;flex-wrap: wrap;align-content: center;align-items: center;justify-content: space-between;padding:0px;margin:0px ;border-radius:0px;background:transparent;box-sizing:border-box !important;}
 	.wacCardTeamWrap h2{font-family:"Noto Sans","Averta",fallback;font-size:18px;line-height:18px;font-weight:900;text-align:center;color:var(--wac-char);text-transform:uppercase;margin:5px 5px 0px 5px;padding:0px 0px;transform: translateY(-3px);display:inline-block;}
 	.wacCardTeamWrap p{width:22px;height:22px;border-radius:20px;font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:12px;font-weight:700;text-align:center;color:var(--wac-char);text-transform:uppercase;background:rgba(255, 255, 255, .75);margin:0;padding:5px 0px;box-sizing:border-box !important;}
 	.wacCardMultiTeamWrap{height:35px;width:95px;padding:5px;background:rgba(255, 255, 255, .85);border-radius:20px;display:flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;box-sizing:border-box !important;}
@@ -310,6 +321,10 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	.wacErrorMessage h1{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:22px;line-height:22px;font-weight:700;color:#fff;padding:24px 0px 16px 0px;margin:0px;box-sizing:border-box !important;}
 	.wacErrorMessage p{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:16px;font-weight:400;color:#fff;padding:0px 0px 0px 0px;margin:0px;box-sizing:border-box !important;line-height: 24px;}
 	.wacErrorResetBtn{width:145px;height:46px;display:block;padding:16px 0px;margin:26px auto 46px;background:#fff;color:var(--ao-blue);font-family:"poppins","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:700;border-radius:4px;box-sizing:border-box !important;cursor:pointer;}
+	/*notice*/
+	.wacNotice{width:94%;max-width:600px;height:auto;border-radius:10px;padding:20px;margin:20px auto;display:block; box-sizing: border-box !important;}
+	.wacNotice h1{font-family:"Noto Sans","Averta",fallback;font-size:24px;line-height:24px;font-weight:700;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 0px 10px;}
+	.wacNotice p{font-family:"Noto Sans","Averta",fallback;font-size:18px;line-height:18px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 0px 10px;}	
 	/*event counter*/
 	#wacounterWrap{display:flex;justify-content: space-between;}
 	#wacCounter{width:auto;display:inline-block;background:var(--wac-grey);border-radius:10px;padding:5px 15px;margin:10px 0px 10px 0px;}
@@ -320,10 +335,18 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	/*event card*/
 	.wacEventCard{width:300px;height:auto;background:#fff;padding:0px 0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:10px;user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;justify-content: space-between;box-sizing: border-box !important;overflow:visible;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;}
 	.wacCardWrap{width:100%;height:auto;display: block;}
-	.wacTicketType{width:calc(100% - 100px);height:40px;font-family:"Noto Sans","Averta",fallback;font-size:18px;line-height:18px;font-weight:900;text-align:left;color:#fff;text-transform:uppercase;margin:0;padding:11px 0px 11px 40px;border-radius:10px 0px 0px 0px;display:inline-block;box-sizing:border-box !important;}
+		.wacCardTopWrap{width:100%;height:auto;margin:0px 0px 0px 0px;background:var(--wac-dgrey);border-radius:10px 10px 0px 0px;display: flex;flex-wrap: nowrap;justify-content:space-between;;}
+	/*ticket pass icons*/
+	.wacTicketType{width:auto;height:40px;font-family:"Noto Sans","Averta",fallback;font-size:13px;line-height:13px;font-weight:800;text-align:left;color:#fff;text-transform:uppercase;margin:0;padding:14px 0px 14px 40px;border-radius:10px 0px 0px 0px;display:inline-block;box-sizing:border-box !important;}
 	.wacPackageTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
 	.wacSingleMatchTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_single_w_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
-	.wacCardState{height:40px;width:100px;font-family:"Noto Sans","Averta",fallback;font-size:18px;line-height:18px;font-weight:500;text-align:left;color:#fff;text-transform:uppercase;margin:0;padding:11px 0px 11px 43px;border-radius:0px 10px 0px 0px;display:inline-block;box-sizing:border-box !important;}
+	.wacPremiumPassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_premPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	.wacFollowATeamTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_followPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	.wacGroupStagePassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_groupPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	.wacFinalsPassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_finalsPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	.wacSeriesPassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_stadPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	/*state icons*/
+	.wacCardState{height:40px;min-width:100px;width:auto;font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:13px 10px 13px 43px;border-radius:0px 10px 0px 0px;display:inline-block;box-sizing:border-box !important;}
 	.wacCardStatePER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateGLD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
@@ -446,18 +469,19 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	
 	<div id="wacHeader">
 		<div id="wacHeaderStrip"></div>
-		<div id="wacLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_logo_w_hori_2026_img.svg" alt="AFC Womens Asia Cup"></div>
+		<div id="wacLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_logo_presale_2026_img.png" alt="AFC Womens Asia Cup"></div>
 
 	<!--featured events-->
 	<div id="wacFeatureScroller">
 		<div id="wacFeatureEvents">
 				<!--cards pop in here-->
-				<a href="?venue=URL" target="_self"><div class="wacFeatureEvent wacFeaturePh"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/featuretiles/wac_Aus_FeatureTile_225x173.png"></div></a>
-				<a href="?venue=URL" target="_self"><div class="wacFeatureEvent wacFeaturePh"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/featuretiles/wac_Perth_FeatureTile_225x173.png"></div></a>
-				<a href="?venue=URL" target="_self"><div class="wacFeatureEvent wacFeaturePh"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/featuretiles/wac_Sydney_FeatureTile_225x173.png"></div></a>
-				<a href="?venue=URL" target="_self"><div class="wacFeatureEvent wacFeaturePh"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/featuretiles/wac_GoldCoast_FeatureTile_225x173.png"></div></a>
+				<a href="?teamType=AustraliaURL" target="_self"><div class="wacFeatureEvent wacFeaturePh"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/featuretiles/wac_Aus_FeatureTile_225x173.png"></div></a>
+				<a href="?venue=PerthStadiumURL&PerthRectangularStadiumURL" target="_self"><div class="wacFeatureEvent wacFeaturePh"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/featuretiles/wac_Perth_FeatureTile_225x173.png"></div></a>
+				<a href="?venue=StadiumAustraliaURL&WesternSydneyStadiumURL" target="_self"><div class="wacFeatureEvent wacFeaturePh"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/featuretiles/wac_Sydney_FeatureTile_225x173.png"></div></a>
+				<a href="?venue=GoldCoastStadiumURL" target="_self"><div class="wacFeatureEvent wacFeaturePh"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/featuretiles/wac_GoldCoast_FeatureTile_225x173.png"></div></a>
 			</div>
-		</div>
+			<div id="wacResetAllFeat">View All Events</div>
+	</div>
 		<!--<div id="wacFeatEventPips">
 				pips pop in here
 		</div>-->
@@ -469,7 +493,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 			<div class="wacSelectLable"><div class="wacSelectIco wacCalIco"><div id="wacDateMenuCounter" class="wacMenuCounter"></div></div> <h2>Select</h2></div>
 			<div class="wacSelectTitle"><h1>DATE</h1><div class='wacMenuDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_arrow_down_w_ico.svg'></div></div>
 			
-		<!---session selected--
+		<!---session selected---
 		<!--cal--<div id="wacCalendarMenu" class="wacDropDownOff">
 			<div id="wacCalHeader">
 				<h3>March 2026</h3><div id="clearDateFilters" class="wacClearMenuBtn">clear</div>		
@@ -497,7 +521,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 			<div class="wacDropDownSubHead"><div class="wacVenueMapIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg"></div><h4>Gold Coast</h4><span class="wacDropDownDot"></span><h4>Queensland</h4></div>
 			<div data-filterbtn="GoldCoastStadium" class="wacDropDownBtn wacFilterBtnOn wacVenueFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Gold Coast Stadium</h4></div>
 			<div class="wacDropDownSubHead"><div class="wacVenueMapIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg"></div><h4>Perth</h4><span class="wacDropDownDot"></span><h4>Western Australia</h4></div>
-			<div data-filterbtn="PerthRectangular" class="wacDropDownBtn wacFilterBtnOn wacVenueFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Perth Rectangular Stadium</h4></div>
+			<div data-filterbtn="PerthRectangularStadium" class="wacDropDownBtn wacFilterBtnOn wacVenueFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Perth Rectangular Stadium</h4></div>
 			<div data-filterbtn="PerthStadium" class="wacDropDownBtn wacFilterBtnOn wacVenueFilterBtn"><div class="wacCheckBox wacCheckBoxOn"></div><h4>Perth Stadium</h4></div>
 			<div class="wacMenuBotLid"></div>
 		</div>
@@ -575,7 +599,11 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 					</div>
 			</div>
 		</div>
-
+		<!--notice-->
+		<div class="wacNotice"><div class="wacCloseNoticeBtn"></div>
+			<h1>Welcome to the exclusive pre&#45;sale got Visa cardholders for the AFC Women&rsquo;s Asian Cup 2026</h1>
+			<p>Please note: This pre&#45;sale is exlusive to VISA cardholders and is accessible from XYZ Day, 00:00am to ABC Day, 00:00am. Only customers using VISA as a payment method at the time of checkout will be able to complete their purchase. Other customers will be able to access tickets through the MyTicketmaster Presale on XYZ Day, 00:00am to ABC Day, 00:00am or the geneal public on sale of tickets on XYZ Day, 00:00am to ABC Day, 00:00am.</p>
+		</div>
 		<!--error span-->
 		<div id="wacEventErrors">
 			<!--error message tickets-->
@@ -663,9 +691,11 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	dateListNum = ["2026-03-01","2026-03-02","2026-03-03","2026-03-04","2026-03-04","2026-03-05","2026-03-06","2026-03-07","2026-03-08","2026-03-09","2026-03-10","2026-03-11","2026-03-12","2026-03-13","2026-03-14","2026-03-15","2026-03-16","2026-03-17","2026-03-18","2026-03-19","2026-03-20","2026-03-21"]
 	teamList = ["Australia","A2","A3","A4","B1","B2","B3","B4","D2","D3","D4","C1","C2","C3","C4","TBC"]
 	//teamList = ["Australia","Japan","DPRKorea","ChinaPR","KoreaRepublic","Iran","Jordan","Thailand","Myanmar","ChineseTaipei","Vietnam","Uzbekistan","Philippines","India","Guam","TBC_Home","TBC_Away","Iraq","Indonesia","Laos","Lebanon","Kuwait","Kyrgyzstan","HongKong","TBC"]
+	teamListURL = ["AustraliaURL"]
 	venueList = ["PerthStadium","PerthRectangularStadium","GoldCoastStadium","StadiumAustralia","WesternSydneyStadium"];
+	venueListURL = ["PerthStadiumURL","PerthRectangularStadiumURL","GoldCoastStadiumURL","StadiumAustraliaURL","WesternSydneyStadiumURL"];	
 	discoveryFilterArr = [];
-	//const allUrlVars = getUrlVars();
+	const allUrlVars = getUrlVars();
 	//eventCount = 0;
 	eventCountTotal = 0;
 	//currentTarget = 1;
@@ -701,6 +731,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 							
 							//push exp filters to array
 							let tickettype = event.ticket_type_category.replace(/\s/g, '');
+							let packType = event.group_name.replace(/\s/g, '');
 							//let sessionType = event.session_type.replace(/\s/g, '');//removes spaces
 							//let sessionTypeCase = event.session_type.toLowerCase();
 							let eventdate = new Date(event.event_date)
@@ -739,7 +770,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 							if(tickettype == "Package"){
 								let multiState = stateMapper(event.host_state)
 
-								let newEvent = $j("<div data-tickettype='' data-venues="+venueDisco+" data-dates="+event.event_date_discovery+" data-teams="+discoTeams+" class='wacEventCard'><div class='wacCardTopWrap'><div class='wacTicketType wac"+tickettype+"Ticket'>"+event.ticket_type_category+"</div><div class='wacCardState wacCardState"+multiState+"'>"+locMapper(event.host_state)+"</div>");	
+								let newEvent = $j("<div data-tickettype='' data-venues="+venueDisco+" data-dates="+event.event_date_discovery+" data-teams="+discoTeams+" class='wacEventCard'><div class='wacCardTopWrap'><div class='wacTicketType wac"+packType+"Ticket'>"+event.group_name+"</div><div class='wacCardState wacCardState"+multiState+"'>"+locMapper(event.host_state)+"</div>");	
 								
 								//single match
 								if(eventTeams.length==2){	
@@ -790,12 +821,12 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	//call functions
 	emptyFullListsOnLoad();
 	cardsToDisplay()
-
+	getUrlVars()
+	parseUrl()
 
 	//	defaultSortPublic();
 	
-	//getUrlVars()
-	//parseUrl()
+
 
 	//imageLoader()
 
@@ -1272,11 +1303,11 @@ let teamCounter = function(){
 	}
 }
 //URL token filtering
-/*
+
 function getUrlVars(){	
     urlVars = [];
-	aoURLs = [];
-	aoFilterList = ["URL","seshType","expType","dateInc","buyFlowPremium","seshTypePX","expTypePX","dateIncPX", ]
+	wacURLs = [];
+	wacFilterList = ["URL","venueType","teamType","dateInc"]
 
 	// finally got the filtering to work and not slow down when tracking paramaters were present by restricting it to numbers (so as long as an event name doesnt include a number? we good)
 	var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split("=").join('&').split('&').filter(hashes => /[a-zA-Z]/.test(hashes));
@@ -1291,154 +1322,88 @@ function getUrlVars(){
 
 	let search = (cleanURL) =>  cleanURL.filter(Boolean)
 
-	aoURLs = search(urlVars, 'URL');
+	wacURLs = search(urlVars, 'URL');
 
 	//seshType = search(urlVars, 'raceDay');
-	expTypeFound = search(urlVars, 'expType');
-	seshTypeFound = search(urlVars, 'seshType');
+	venueTypeFound = search(urlVars, 'venueType');
+	teamTypeFound = search(urlVars, 'teamType');
 	dateIncludeFound = search(urlVars, 'dateInc');	
-	expTypePXFound = search(urlVars, 'expTypePX');
-	seshTypePXFound = search(urlVars, 'seshTypePX');
-	dateIncludePXFound = search(urlVars, 'dateIncPX');	
-	buyFlowFound = search(urlVars, 'buyFlowPremium');	
 }
 let parseUrl = function(){
 
 	checkURLArray()
 	//parse array for triggers, run relevant function when trigger found
 	function checkURLArray(){
-		if(jQuery.inArray("expType", expTypeFound) != -1){
-			parseExpTypeURL()
+		if(jQuery.inArray("venueType", venueTypeFound) != -1){
+			parseVenueTypeURL()
 			}
-		if(jQuery.inArray("seshType", seshTypeFound) != -1){
-			parseSeshTypeURL()
+		if(jQuery.inArray("teamType", teamTypeFound) != -1){
+			parseTeakTypeURL()
 			}
 		if(jQuery.inArray("dateInc", dateIncludeFound) != -1){
 			parseDateIncURL()
-			}
-		if(jQuery.inArray("buyFlowPremium", buyFlowFound) != -1){
-			switchToPrem()
-			}
-			if(jQuery.inArray("expTypePX", expTypePXFound) != -1){
-			parseExpTypePXURL()
-			}
-		if(jQuery.inArray("seshTypePX", seshTypePXFound) != -1){
-			parseSeshTypePXURL()
-			}
-		if(jQuery.inArray("dateIncPX", dateIncludePXFound) != -1){
-			parseDateIncPXURL()
-			}			
+			}		
 	}; 
 
 }
-let parseExpTypeURL = function(){
-	var urlExpTypeFilter = []
-	urlPubExperienceTypeList = Array.from(urlExperienceTypeSet);
+let parseVenueTypeURL = function(){
+	var urlVenTypeFilter = []
+	
 	//reset buttons
-	$j('#aoPubTicketMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
-	$j('#aoPubTicketMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
+	$j('#wacVenueMenu').children('.wacVenueFilterBtn').removeClass('wacFilterBtnOn').addClass('wacFilterBtnOff')    
+	$j('#wacVenueMenu').children('.wacVenueFilterBtn').children('.wacCheckBox').removeClass('wacCheckBoxOn').addClass('wacCheckBoxOff')
 	//run through URL vars and match with the race day set
-	$j.grep(aoURLs, function(urlFound){
-		if(jQuery.inArray( urlFound, urlPubExperienceTypeList) != -1){
+
+	$j.grep(wacURLs, function(urlFound){
+		if(jQuery.inArray(urlFound, venueListURL) != -1){
 			//match arrays - remove URL from end of current found variable
-			urlExpeTypeFound = urlFound.replace('URL','')
+			urlVenueTypeFound = urlFound.replace('URL','')
 			//push match to new array
-			urlExpTypeFilter.push(urlExpeTypeFound);
-			
-			//activate checkbox
-			$j("#"+urlExpeTypeFound+"FilterBtn").removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn');
-			$j("#"+urlExpeTypeFound+"FilterBtn").children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive');
+			urlVenTypeFilter.push(urlVenueTypeFound);
+			//activate checkbox 
+			$j('.wacVenueFilterBtn[data-filterbtn='+urlVenueTypeFound+']').removeClass('wacFilterBtnOff').addClass('wacFilterBtnOn') 
+			$j('.wacVenueFilterBtn[data-filterbtn='+urlVenueTypeFound+']').children('.wacCheckBox').removeClass('wacCheckBoxOff').addClass('wacCheckBoxOn')
 	}
 	});
 	//clear array, push found filter array into global array
-	fullPubExperienceTypeList.length = 0;
-	fullPubExperienceTypeList = urlExpTypeFilter
-	pubCardsToDisplay();
-	pubExperienceCounter();
+	venueList.length = 0;
+	venueList = urlVenTypeFilter
+	cardsToDisplay();
+	venueCounter();
 }
-let parseExpTypePXURL = function(){
-	var urlExpTypePXFilter = []
-	urlPremExperienceTypeList = Array.from(urlExperienceTypeSet);
+let parseTeakTypeURL = function(){
+	var urlTeamTypeFilter = []
+	
 	//reset buttons
-	$j('#aoPremTicketMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
-	$j('#aoPremTicketMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
+	$j('#wacTeamMenu').children('.wacVenueFilterBtn').removeClass('wacFilterBtnOn').addClass('wacFilterBtnOff')    
+	$j('#wacTeamMenu').children('.wacVenueFilterBtn').children('.wacCheckBox').removeClass('wacCheckBoxOn').addClass('wacCheckBoxOff')
 	//run through URL vars and match with the race day set
-	$j.grep(aoURLs, function(urlFound){
-		if(jQuery.inArray( urlFound, urlPremExperienceTypeList) != -1){
+
+	$j.grep(wacURLs, function(urlFound){
+		if(jQuery.inArray(urlFound, teamListURL) != -1){
 			//match arrays - remove URL from end of current found variable
-			urlExpeTypePXFound = urlFound.replace('URL','')
+			urlteamTypeFound = urlFound.replace('URL','')
 			//push match to new array
-			urlExpTypePXFilter.push(urlExpeTypePXFound);
-			
-			//activate checkbox
-			$j("#"+urlExpeTypePXFound+"FilterBtn").removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn');
-			$j("#"+urlExpeTypePXFound+"FilterBtn").children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive');
+			urlTeamTypeFilter.push(urlteamTypeFound);
+			//activate checkbox 
+			$j('.wacVenueFilterBtn[data-filterbtn='+urlteamTypeFound+']').removeClass('wacFilterBtnOff').addClass('wacFilterBtnOn') 
+			$j('.wacVenueFilterBtn[data-filterbtn='+urlteamTypeFound+']').children('.wacCheckBox').removeClass('wacCheckBoxOff').addClass('wacCheckBoxOn')
 	}
 	});
 	//clear array, push found filter array into global array
-	fullPremExperienceTypeList.length = 0;
-	fullPremExperienceTypeList = urlExpTypePXFilter
-	premCardsToDisplay();
-	premExperienceCounter();
+	teamList.length = 0;
+	teamList = urlTeamTypeFilter
+	cardsToDisplay();
+	teamCounter();
 }
-let parseSeshTypeURL = function(){
-	var urlSeshTypeFilter = []
-	urlPubSessionTypeList = urlSessionTypeList;
-	//reset buttons
-	$j('#aoPubSessionMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
-	$j('#aoPubSessionMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
-	//run through URL vars and match with the race day set
-	$j.grep(aoURLs, function(urlFound){
-		if(jQuery.inArray( urlFound, urlPubSessionTypeList) != -1){
-			//match arrays - remove URL from end of current found variable
-			urlSeshTypeFound = urlFound.replace('URL','')
-			//push match to new array
-			urlSeshTypeFilter.push(urlSeshTypeFound);
-			
-			//activate checkbox
-			$j("#"+urlSeshTypeFound+"FilterBtn").removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn');
-			$j("#"+urlSeshTypeFound+"FilterBtn").children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive');
-	}
-	});
-	//clear array, push found filter array into global array
-	fullPubSessionTypeList.length = 0;
-	fullPubSessionTypeList = urlSeshTypeFilter
-	pubCardsToDisplay();
-	pubSessionCounter();
-}
-let parseSeshTypePXURL = function(){
-	var urlSeshTypePXFilter = []
-	urlPremSessionTypeList = urlSessionTypeList;
-	//reset buttons
-	$j('#aoPremSessionMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
-	$j('#aoPremSessionMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
-	//run through URL vars and match with the race day set
-	$j.grep(aoURLs, function(urlFound){
-		if(jQuery.inArray( urlFound, urlPremSessionTypeList) != -1){
-			//match arrays - remove URL from end of current found variable
-			urlSeshTypePXFound = urlFound.replace('URL','')
-			//console.log(urlFound)
-			//push match to new array
-			urlSeshTypePXFilter.push(urlSeshTypePXFound);
-			
-			//activate checkbox
-			$j("#"+urlSeshTypePXFound+"FilterBtn").removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn');
-			$j("#"+urlSeshTypePXFound+"FilterBtn").children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive');
-	}
-	});
-	//clear array, push found filter array into global array
-	fullPremSessionTypeList.length = 0;
-	fullPremSessionTypeList = urlSeshTypePXFilter
-	premCardsToDisplay();
-	premSessionCounter();
-}
+/*
 let parseDateIncURL = function(){
 	var urlDateIncFilter = []
 	urlDateIncList = dateNameList;
 	//reset buttons
 
 	//run through URL vars and match with the race day set
-	$j.grep(aoURLs, function(urlFound){
+	$j.grep(wacURLs, function(urlFound){
 		if(jQuery.inArray( urlFound, urlDateIncList) != -1){
 
 			//match arrays - remove URL from end of current found variable
@@ -1455,30 +1420,6 @@ let parseDateIncURL = function(){
 	pubDateList = urlDateIncFilter
 	pubCardsToDisplay();
 	pubDateCounter();
-}
-let parseDateIncPXURL = function(){
-	var urlDateIncPXFilter = []
-	urlDateIncPXList = dateNameList;
-	//reset buttons
-
-	//run through URL vars and match with the race day set
-	$j.grep(aoURLs, function(urlFound){
-		if(jQuery.inArray( urlFound, urlDateIncPXList) != -1){
-
-			//match arrays - remove URL from end of current found variable
-			urlDateIncPXFound = dayMapper(urlFound)
-			//push match to new array
-			urlDateIncPXFilter.push(urlDateIncPXFound);
-			
-			//activate day btn
-			$j("#prem-date-list-div").children('.wacCalWrap').children('#'+urlDateIncPXFound).removeClass('datelist').addClass('datelistActive');
-	}
-	});
-	//clear array, push found filter array into global array
-	premDateList.length = 0;
-	premDateList = urlDateIncPXFilter
-	premCardsToDisplay();
-	premDateCounter();
 }
 */
 //end parse url function
@@ -1604,7 +1545,7 @@ function locMapper(data){
 			case "New South Wales":return "SYD";
 			case "Western Australia":return "PER";
 			case "Queensland,Western Australia":return "GLD/PER";
-			case "Western Australia,Queensland,New South Wales":return "SYD/GLD/PER";
+			case "Western Australia,Queensland,New South Wales":return "GLD/SYD/PER";
 			case "Queensland,New South Wales":return "GLD/SYD";
 			case "New South Wales,Western Australia":return "SYD/PER";
 			case "Western Australia,New South Wales":return "SYD/PER";
