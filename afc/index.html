@@ -144,7 +144,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	.wacNotice{width:94%;max-width:1100px;height:auto;border-radius:10px;padding:20px;margin:20px auto;display:block;background:var(--wac-lgrey);box-sizing: border-box !important;position:relative;}
 	.wacNotice h1{font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:700;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 10px 0px;}
 	.wacNotice p{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 0px 0px;}
-	.wacCloseNoticeBtn{width:30px;height:30px;background:var(--wac-dblu);border-radius:20px;position:absolute;right:5px;top:5px;cursor:pointer;}
+	.wacCloseNoticeBtn{width:30px;height:30px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-dblu);background-size:10px 10px;border-radius:20px;position:absolute;right:5px;top:5px;cursor:pointer;}
 	/*event counter*/
 	#wacounterWrap{display:flex;justify-content: space-between;}
 	#wacCounter{width:auto;display:inline-block;background:var(--wac-grey);border-radius:10px;padding:5px 15px;margin:10px 0px 10px 0px;}
@@ -322,9 +322,10 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	.wacErrorMessage p{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:16px;font-weight:400;color:#fff;padding:0px 0px 0px 0px;margin:0px;box-sizing:border-box !important;line-height: 24px;}
 	.wacErrorResetBtn{width:145px;height:46px;display:block;padding:16px 0px;margin:26px auto 46px;background:#fff;color:var(--ao-blue);font-family:"poppins","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:700;border-radius:4px;box-sizing:border-box !important;cursor:pointer;}
 	/*notice*/
-	.wacNotice{width:94%;max-width:600px;height:auto;border-radius:10px;padding:20px;margin:20px auto;display:block; box-sizing: border-box !important;}
-	.wacNotice h1{font-family:"Noto Sans","Averta",fallback;font-size:24px;line-height:24px;font-weight:700;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 0px 10px;}
-	.wacNotice p{font-family:"Noto Sans","Averta",fallback;font-size:18px;line-height:18px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 0px 10px;}	
+	.wacNotice{width:94%;max-width:1100px;height:auto;border-radius:10px;padding:20px;margin:20px auto;display:block;background:var(--wac-lgrey);box-sizing: border-box !important;position:relative;}
+	.wacNotice h1{font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:700;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 10px 0px;}
+	.wacNotice p{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 0px 0px;}
+	.wacCloseNoticeBtn{width:30px;height:30px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-dblu);background-size:10px 10px;border-radius:20px;position:absolute;right:5px;top:5px;cursor:pointer;}
 	/*event counter*/
 	#wacounterWrap{display:flex;justify-content: space-between;}
 	#wacCounter{width:auto;display:inline-block;background:var(--wac-grey);border-radius:10px;padding:5px 15px;margin:10px 0px 10px 0px;}
@@ -601,7 +602,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 		</div>
 		<!--notice-->
 		<div class="wacNotice"><div class="wacCloseNoticeBtn"></div>
-			<h1>Welcome to the exclusive pre&#45;sale got Visa cardholders for the AFC Women&rsquo;s Asian Cup 2026</h1>
+			<h1>Welcome to the exclusive VISA cardholders pre&#45;sale for the AFC Women&rsquo;s Asian Cup 2026</h1>
 			<p>Please note: This pre&#45;sale is exlusive to VISA cardholders and is accessible from XYZ Day, 00:00am to ABC Day, 00:00am. Only customers using VISA as a payment method at the time of checkout will be able to complete their purchase. Other customers will be able to access tickets through the MyTicketmaster Presale on XYZ Day, 00:00am to ABC Day, 00:00am or the geneal public on sale of tickets on XYZ Day, 00:00am to ABC Day, 00:00am.</p>
 		</div>
 		<!--error span-->
@@ -1088,7 +1089,11 @@ $j(document).on('click', '.wacDay', function () {
 			$j('.wacCardVenueMulti').children(".wacCardDownArrow").removeClass("wacCardArrowRot");
 			$j(".wacCardVenueMultiWrap").addClass("wacCardMenuOff").removeClass("wacCardMenuOn");
 		});
+//close notice
 
+	$j(document).on('click', '.wacCloseNoticeBtn', function () {
+		$j(this).parent('.wacNotice').fadeOut(200)
+		});
 
 //reset buttons
 /*
