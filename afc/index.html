@@ -756,7 +756,6 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 							let eventTeam04 = teamMapper(eventTeams[3]);
 							let eventTeam05 = teamMapper(eventTeams[4]);
 							let eventTeam06 = teamMapper(eventTeams[5]);		
-		
 							//let eventDatesMapped = eventDateMulti.forEach(dateMapper);
 							
 							//let recSort = event.event_date.replace('-', '').replace('-', '').replace('202501','')+aoSortMapper(sessionType)+event.arena_sort_no;
@@ -1568,7 +1567,7 @@ function locMapper(data){
 			case "Queensland":return "GCC";
 			case "New South Wales":return "SYD";
 			case "Western Australia":return "PER";
-			case "Queensland,Western Australia":return "GCC/PER";
+			case "Western Australia,Queensland":return "GCC/PER";
 			case "Western Australia,Queensland,New South Wales":return "GCC/SYD/PER";
 			case "Queensland,New South Wales":return "GCC/SYD";
 			case "New South Wales,Western Australia":return "SYD/PER";
@@ -1581,7 +1580,7 @@ function stateMapper(data){
 			case "Queensland":return "GCC";
 			case "New South Wales":return "SYD";
 			case "Western Australia":return "PER";
-			case "Queensland,Western Australia":return "GCCPER";
+			case "Western Australia,Queensland":return "GCCPER";
 			case "Western Australia,Queensland,New South Wales":return "SYDGCCPER";
 			case "Queensland,New South Wales":return "GCCSYD";
 			case "New South Wales,Western Australia":return "SYDPER"; 
