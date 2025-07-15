@@ -177,7 +177,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	.wacCardStateGCC{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg") no-repeat,var(--wac-lgre);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateSYDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
-	.wacCardStateSYDGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_aus_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
+	.wacCardStateSYDGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_aus_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;font-size:12px !important;}
 	.wacCardStateGCCSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_nsw_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
 
 	.wacCardHero{width:300px;height:150px;overflow:hidden;margin:0 auto;padding:0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_hero_fallback_img.svg') center center,var(--wac-lgrey);z-index:49;position:relative;box-sizing: border-box !important;}
@@ -720,8 +720,8 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	teamListURL = ["AustraliaURL"]
 	venueList = ["PerthStadium","PerthRectangularStadium","GoldCoastStadium","StadiumAustralia","WesternSydneyStadium"];
 	venueListURL = ["PerthStadiumURL","PerthRectangularStadiumURL","GoldCoastStadiumURL","StadiumAustraliaURL","WesternSydneyStadiumURL"];	
-	packList = ["PremiumPass","FollowYourTeam","GroupStagePass","SeriesPass","StadiumPass","FinalsPass"]
-	packListURL = ["PremiumPassURL","FollowYourTeamURL","GroupStagePassURL","StadiumPassURL","FinalsPassURL"]
+	packList = ["PremiumPass","FollowYourTeam","GroupStagePass","SeriesPass","StadiumPass","FinalsPass","PlayOffPass"]
+	packListURL = ["PremiumPassURL","FollowYourTeamURL","GroupStagePassURL","StadiumPassURL","FinalsPassURL","PlayOffPassURL"]
 	discoveryFilterArr = [];
 	const allUrlVars = getUrlVars();
 	//eventCount = 0;
@@ -759,7 +759,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 							
 							//push exp filters to array
 							let tickettype = event.ticket_type_category.replace(/\s/g, '');
-							let packType = event.group_name.replace(/\s/g, '');
+							let packType = event.group_name.replace(/\s/g, '').replace(/[^\w\s]/gi, '');
 							//let sessionType = event.session_type.replace(/\s/g, '');//removes spaces
 							//let sessionTypeCase = event.session_type.toLowerCase();
 							let eventdate = new Date(event.event_date)
@@ -1710,7 +1710,7 @@ function locMapper(data){
 			case "New South Wales":return "SYD";
 			case "Western Australia":return "PER";
 			case "Western Australia,Queensland":return "GCC/PER";
-			case "Western Australia,Queensland,New South Wales":return "GCC/SYD/PER";
+			case "New South Wales,Queensland,Western Australia":return "GCC/SYD/PER";
 			case "Queensland,New South Wales":return "GCC/SYD";
 			case "New South Wales,Western Australia":return "SYD/PER";
 			case "Western Australia,New South Wales":return "SYD/PER";
@@ -1723,7 +1723,7 @@ function stateMapper(data){
 			case "New South Wales":return "SYD";
 			case "Western Australia":return "PER";
 			case "Western Australia,Queensland":return "GCCPER";
-			case "Western Australia,Queensland,New South Wales":return "SYDGCCPER";
+			case "New South Wales,Queensland,Western Australia":return "SYDGCCPER";
 			case "Queensland,New South Wales":return "GCCSYD";
 			case "New South Wales,Western Australia":return "SYDPER"; 
 			case "Western Australia,New South Wales":return "SYDPER";
