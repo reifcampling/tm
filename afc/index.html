@@ -1110,6 +1110,18 @@ $j(document).on('click', '.wacDay', function () {
 			{return false;}
 			$j(".wacSortDropDown").fadeOut(0);
 		});
+//radio button
+$j(document).on('click', '.sortRadioBtn', function () {
+			if ($j(this).hasClass('wacFilterBtnOff')) {
+				$j(this).removeClass('wacFilterBtnOff').addClass('wacFilterBtnOn');
+				$j(this).children('.wacRadioBtn').removeClass('wacRadioBtnOff').addClass('wacRadioBtnOn');
+				$j(this).siblings('.sortRadioBtn').removeClass('wacFilterBtnOn').addClass('wacFilterBtnOff');
+				$j(this).siblings('.sortRadioBtn').children('.wacRadioBtn').removeClass('wacRadioBtnOn').addClass('wacRadioBtnOff');
+			} else if ($j(this).hasClass('wacFilterBtnOn')) {
+				return
+			}
+		});
+		
 //click for multi date / venue / team cards
 	$j(document).on('click', '.wacCardDateMulti', function (e) {
 			if($j(this).children(".wacCardDateMultiWrap").hasClass("wacCardMenuOff")){
@@ -1713,6 +1725,7 @@ function locMapper(data){
 			case "Western Australia":return "PER";
 			case "Western Australia,Queensland":return "GCC/PER";
 			case "New South Wales,Queensland,Western Australia":return "GCC/SYD/PER";
+			case "Queensland,Western Australia,New South Wales":return "GCC/SYD/PER";
 			case "Queensland,New South Wales":return "GCC/SYD";
 			case "New South Wales,Western Australia":return "SYD/PER";
 			case "Western Australia,New South Wales":return "SYD/PER";
@@ -1726,6 +1739,7 @@ function stateMapper(data){
 			case "Western Australia":return "PER";
 			case "Western Australia,Queensland":return "GCCPER";
 			case "New South Wales,Queensland,Western Australia":return "SYDGCCPER";
+			case "Queensland,Western Australia,New South Wales":return "SYDGCCPER";
 			case "Queensland,New South Wales":return "GCCSYD";
 			case "New South Wales,Western Australia":return "SYDPER"; 
 			case "Western Australia,New South Wales":return "SYDPER";
