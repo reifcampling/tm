@@ -474,14 +474,14 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	.wacCardMenuOff{}
 	/*light boxes*/
 	.wacLightbox{width:100%;height:100%;margin:0px;position:fixed;background:rgba(0,0,0,.4);z-index:201;display:none;top:0;right:0;left:0;justify-content: safe center; align-items: center;flex-direction: column;overflow-y: scroll;}
-	.wacLbContent{width:600px;height:auto;background:#fff;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;border-radius:10px;box-sizing: border-box !important;position:relative;}
-	.wacLbTopWrap{width:calc(100% - 20px);height:36px;display:flex;align-items: center;justify-content: space-between;flex-direction: row;flex-wrap: nowrap;column-gap: 10px;margin:10px auto;box-sizing: border-box !important;}
-	.wacLbEventName{width:400px;height:36px;background:var(--wac-dgrey);border-radius:10px;font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:center;color:#fff;display:flex;align-items: center;justify-content: flex-start;flex-direction: row;flex-wrap: nowrap;}
+	.wacLbContent{max-width:600px;width:96%;height:auto;background:#fff;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;border-radius:10px;box-sizing: border-box !important;position:relative;}
+	.wacLbTopWrap{width:calc(100% - 20px);height:55px;display:flex;align-items: center;justify-content: space-between;flex-direction: row;flex-wrap: nowrap;column-gap: 10px;margin:10px auto;box-sizing: border-box !important;}
+	.wacLbEventName{max-width:400px;height:55px;background:var(--wac-dblu);border-radius:10px;font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:left;color:#fff;display:flex;align-items: center;justify-content: flex-start;flex-direction: row;flex-wrap: nowrap;}
 	.wacTypeIcon{width:36px;height:36px;display:inline-block;margin:0 10px 0px 10px;border-radius:10px 0px 0px 10px;}
-	.wacLbStateIco{min-width:140px;width:auto;height:36px;font-family:"Noto Sans","Averta",fallback;font-size:13px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:11px 10px 11px 43px;border-radius:10px;display:inline-block;box-sizing:border-box !important;}
+	.wacLbStateIco{min-width:140px;width:auto;height:55px;font-family:"Noto Sans","Averta",fallback;font-size:13px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 10px 0px 43px;border-radius:10px;display:flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
 	.wacLbCloseBtn{width:30px;height:30px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-dblu);background-size:10px 10px;border-radius:20px;position:relative;cursor:pointer;display:inline-block;}
 	.wacLbMidWrap{width:calc(100% - 20px);height:auto;display:flex;align-items: flex-start;justify-content: space-around;flex-direction: row;flex-wrap: nowrap;column-gap: 10px;margin:10px auto;box-sizing: border-box !important;}
-	.wacLbBlurb{width:calc(100% - 20px);height:auto;display:inline-block;margin:0;border-radius:10px;background:var(--wac-lgrey);box-sizing: border-box !important;}
+	.wacLbBlurb{width:100%;height:auto;display:inline-block;margin:0;border-radius:10px;background:var(--wac-lgrey);box-sizing: border-box !important;}
 	.wacLbBlurb p{font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:18px;font-weight:normal;text-align:left;color:var(--wac-char);margin:0 0px 0px 0px;padding:20px;display:block;box-sizing: border-box !important;}
 	.wacLbBlurb h1{}
 	.wacLbTerms{width:180px;height:auto;display:none;margin:0;box-sizing: border-box !important;}
@@ -500,27 +500,28 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packages. Official Ti
 	.wacLbPrice{width:100px;height:auto;margin:0px 0px 0px 20px;display:flex;flex-wrap:wrap;align-items: flex-start;justify-content: flex-start;flex-direction: column;flex-grow: 1;box-sizing:border-box !important;}
 	.wacLbPrice p{font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px;display:block;}
 	.wacLbPrice h1{font-family:"afc num","Averta",fallback;font-size:26px;line-height:26px;font-weight:normal;text-align:center;color:var(--wac-lblu);margin:0px 0px 0px 0px;padding:0px 0px;display:block;}
-	.wacLbBtn{width:450px;height:40px;padding:12px 0px;margin:0px auto 0px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-dblu);border-radius:5px;box-sizing:border-box !important;}
+	.wacLbBtn{width:100%;height:40px;padding:12px 0px;margin:0px auto 0px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-dblu);border-radius:5px;box-sizing:border-box !important;}
 	.wacLbContent a{text-decoration: none;color: var(--wac-dblu);}
+	.wacLbBotWrap a{width:calc(100% - 140px)}
 
 	/*lb icons*/
-	.wacLbStatePER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-orn);background-size:24px;background-position:left 10px top 6px;}
-	.wacLbStateSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg") no-repeat,var(--wac-red);background-size:24px;background-position:left 10px top 6px;}
-	.wacLbStateGCC{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg") no-repeat,var(--wac-lgre);background-size:24px;background-position:left 10px top 6px;}
-	.wacLbStateGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 6px;}
-	.wacLbStateSYDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 6px;}
-	.wacLbStateSYDGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_aus_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 6px;}
-	.wacLbStateGCCSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_nsw_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 6px;}
+	.wacLbStatePER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-orn);background-size:24px;background-position:left 10px top 16px;}
+	.wacLbStateSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg") no-repeat,var(--wac-red);background-size:24px;background-position:left 10px top 16px;}
+	.wacLbStateGCC{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg") no-repeat,var(--wac-lgre);background-size:24px;background-position:left 10px top 16px;}
+	.wacLbStateGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 16px;}
+	.wacLbStateSYDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 16px;}
+	.wacLbStateSYDGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_aus_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 16px;}
+	.wacLbStateGCCSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_nsw_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 16px;}
 
-	.wacPackagIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat,var(--wac-dgrey);background-size:30px;background-position:left 3px top 3px;}
-	.wacSingleMatchIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_single_w_ico.svg") no-repeat,var(--wac-dgrey);background-size:30px;background-position:left 3px top 3px;}
-	.wacPremiumPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_premPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:27px;background-position:left 3px top 5px;}
-	.wacFollowYourTeamIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_followPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:30px;background-position:left 3px top 3px;}
-	.wacGroupStagePassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_groupPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:30px;background-position:left 3px top 3px;}
-	.wacFinalsPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_finalsPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:30px;background-position:left 3px top 3px;}
-	.wacSeriesPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat,var(--wac-dgrey);background-size:30px;background-position:left 3px top 3px;}
-	.wacStadiumPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_stadPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:27px;background-position:left 3px top 5px;}
-	.wacPlayOffPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_playoffPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:30px;background-position:left 3px top 3px;}	
+	.wacPackagIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}
+	.wacSingleMatchIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_single_w_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}
+	.wacPremiumPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_premPass_ico.svg") no-repeat;background-size:27px;background-position:left 3px top 5px;}
+	.wacFollowYourTeamIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_followPass_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}
+	.wacGroupStagePassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_groupPass_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}
+	.wacFinalsPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_finalsPass_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}
+	.wacSeriesPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}
+	.wacStadiumPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_stadPass_ico.svg") no-repeat;background-size:27px;background-position:left 3px top 5px;}
+	.wacPlayOffPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_playoffPass_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}	
 
 	/*footer*/
 	#wacSubFooter{width:100%;max-width:1100px;background:var(--wac-lgrey);height:auto;margin:20px auto 0px;padding:10px;border-radius:10px 10px 0px 0px;box-sizing: border-box !important;}
