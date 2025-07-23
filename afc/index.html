@@ -2,8 +2,8 @@
 page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast Stadium, Stadium Australia, Perth Stadium, Perth Rectangular Stadium, Western Sydney Stadium. Official Ticketmaster Site" %]
 [% static_has_responsive_header_footer = 1; enable_leader_board = 0; force_disable_nav_paypal_branding = 1;%]
 [% PROCESS "layout/frame/top.tt" %]
-<!--delte for on sale--
- <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />--->
+<!--cut for on sale----->
+ <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />
  <!--delte for on sale-->
 <!--libs--->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -18,15 +18,18 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 
 <style type="text/css">
 	:root{
-		--wac-pur:#7D194C;
-		--wac-lgre:#43A035;		
-		--wac-dgre:#00713C;		
+		--wac-grey:#D4D4D1;	
+		--wac-pur:#6100E8;
+		--wac-blu:#0DBFE5;
+		--wac-gre:#0DD9A6;		
+		--wac-pnk:#FF404A;
+
 		--wac-red:#DE0B21;		
 		--wac-yel:#FFD100;		
-		--wac-orn:#F26B21;		
+		--wac-orn:#F26B21;	
+		--wac-lgre:#43A035;		
 		--wac-lblu:#34AED6;		
-		--wac-dblu:#1B3F92;		
-		--wac-grey:#D9D9D9;		
+		--wac-dblu:#1B3F92;			
 		--wac-lgrey:#f0f0f0;
 		--wac-dgrey:#3f3f3f;		
 		--wac-char:#212121;	
@@ -50,17 +53,17 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	#wacContent{width:100%; position:relative;text-align: center; background:#fff;margin:0px auto 0px ;padding:0px 0px 50px 0px;display:block;box-sizing: border-box !important}
 	#aoPubWrapper{display:none;}
 	/* Header */
-	#wacHeader{width:100%;height:520px;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_header_players.png') bottom center no-repeat,url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_header_pattern.png") no-repeat center left,  linear-gradient(37deg,rgba(0, 139, 180, 1) 0%, rgba(107, 213, 239, 1) 100%);background-size:1400px auto,auto 500px, 100% 100%;box-sizing: border-box !important;}
+	#wacHeader{width:100%;height:520px;margin:0px auto;padding:0px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_header_players_p2.png') bottom center no-repeat, url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_ind_pattern_left_img.png") no-repeat top -10px left -10px,url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_ind_pattern_right_img.png") no-repeat top right -60px, var(--wac-pur);background-size:1400px auto,auto 110%,auto 102%, 100% 100%;box-sizing: border-box !important;}
 	#wacLogo{width:550px;height:auto;padding:0px;margin:0px auto 30px;display:block;z-index:20;position: relative;border-radius:0px;}
 	#wacLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
-	#wacHeaderStrip{width:100%;height:35px;background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_afc_text_tile_white_img.svg") repeat-x,var(--wac-dblu);background-size:contain;margin:0px auto;position: relative;}
+	#wacHeaderStrip{width:100%;height:35px;background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_afc_text_tile_white_img.svg") repeat-x,var(--wac-blu);background-size:contain;margin:0px auto;position: relative;}
 	/*menu*/ /* {font-family:;font-size:;line-height:;font-weight:;text-align:;color:;margin:0px;padding:0px;}*/
 	#wacSearchBar{width:auto/*clamped for body click*/;height:80px;display:none;margin:0px auto;padding:1px 0px 0px 0px;position: relative;z-index:100;background:none;}
 	.wacSelectBtn{width:170px;height:80px;display:inline-block;overflow:visible;position: relative;box-sizing: border-box !important;}
 	.wacSelectBtn:nth-child(2){margin:0px 10px;}	
 	.wacSelectBtn h1{font-family:"Noto Sans","Averta",fallback;font-size:24px;line-height:24px;font-weight:900;color:#fff;text-align:center;margin:0px 0px;padding:13px 0px;user-select:none;}
 	.wacSelectBtn h2{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;color:#fff;text-align:center;margin:0px 0px 0 0px;padding:0px 0px;display:block;user-select:none;}
-	.wacSelectLable{width:100%;height:30px;background:var(--wac-lblu);cursor:pointer;text-align: center;display:flex;justify-content: center;align-items: center;border-radius:10px 10px 0px 0px;position: relative;border-top:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;box-sizing: border-box !important}
+	.wacSelectLable{width:100%;height:30px;background:var(--wac-blu);cursor:pointer;text-align: center;display:flex;justify-content: center;align-items: center;border-radius:10px 10px 0px 0px;position: relative;border-top:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;box-sizing: border-box !important}
 	.wacSelectTitle{width:100%;height:50px;background:var(--wac-dblu);cursor:pointer;text-align: center;border-radius:0px 0px 10px 10px;box-sizing: border-box !important;position: relative;border-bottom:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;}
 	.wacMenuVertDivDark{width:2px;height:20px;background:var(--wac-pur);right:2px;top:5px;position: absolute;}
 	.wacMenuVertDivLight{width:2px;height:30px;background:#fff;right:2px;top:10px;position: absolute;}
@@ -68,7 +71,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacMenuDownArrow img{width:100%;height:auto;}
 	/*feature tiles*/
 	#wacFeatureEvents{width:100%;height:150px;display:flex;margin:0px auto;white-space:nowrap;flex-wrap: nowrap;flex-direction: row;align-items:safe center;justify-content:safe center;column-gap: 10px;position:relative;}
-	.wacFeatureEvent{width:170px;height:131px;background:var(--wac-dblu);border-radius:5px;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;border:1px solid #fff;position:relative;overflow:hidden;cursor:pointer;user-drag: none; -webkit-user-drag: none;user-select: none;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
+	.wacFeatureEvent{width:170px;height:131px;background:var(--wac-pur);border-radius:5px;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;border:1px solid #fff;position:relative;overflow:hidden;cursor:pointer;user-drag: none; -webkit-user-drag: none;user-select: none;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
 	.wacFeatureEvent img{width:100%;height:auto;}
 	.wacFeatureEvent a{user-drag: none; -webkit-user-drag: none;user-select: none;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
 	.wacFeatureEvent:hover{box-shadow:rgb(0 0 0 / 30%) 0px 4px 6px 2px;opacity:.95;}
@@ -91,7 +94,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacCalWrap{width:100%;height:auto;margin:5px 0px;display:flex;flex-wrap:nowrap;justify-content: space-between;align-items: center;}
 	.wacCalDay{width:35px;height:auto;font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:#000;}
 	.wacDay{width:35px;height:35px;box-sizing:border-box;border-radius:20px;box-sizing:border-box !important;cursor:pointer;}
-	.wacCalDayOff{background:#fff;box-shadow:inset 0px 0px 0px 2px var(--wac-lblu);font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);padding:10px 0px;box-sizing:border-box !important}
+	.wacCalDayOff{background:#fff;box-shadow:inset 0px 0px 0px 2px var(--wac-blu);font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);padding:10px 0px;box-sizing:border-box !important}
 	.wacCalDayOn{background:var(--wac-dblu);font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:center;color:#fff;padding:10px 0px;box-sizing:border-box !important}
 	.wacNoEventDay{background:#D9D9D9;cursor:default !important;width:35px;height:35px;box-sizing:border-box;border-radius:20px;box-sizing:border-box !important;}
 	/*drop down & buttons*/
@@ -110,9 +113,9 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacVenueMapIco{width:20px;height:auto;display:inline-block; margin:0px 5px 0px 0px;}
 	.wacVenueMapIco img{width:100%;height:auto;}	
 	.wacCheckBox{width:15px;height:15px;display:inline-block;margin:0px 5px 0px 0px;padding:0px;box-sizing:border-box !important;}
-	.wacCheckBoxOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_checkbox_tick_img.svg")center right no-repeat,var(--wac-dblu);background-size:12px;}
+	.wacCheckBoxOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_checkbox_tick_img.svg")center right no-repeat,var(--wac-pur);background-size:12px;}
 	.wacCheckBoxOff{background:#fff;border:2px solid var(--wac-silv);}
-	.wacDropDownFlag{height:15px;width:23px;display:inline-block;background:var(--wac-dblu);margin:0px 5px 0px 0px;}
+	.wacDropDownFlag{height:15px;width:23px;display:inline-block;background:var(--wac-pur);margin:0px 5px 0px 0px;}
 	.wacDropDownDot{height:5px;width:5px;display:inline-block;background:var(--wac-lgrey);margin:0px 5px;border-radius:5px;}
 	.wacDropDownHorDiv{width:90%;height:2px;background:var(--wac-dgrey);margin:5px auto;}
 	#wacVenueMenu{width:275px;}
@@ -129,7 +132,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.sortRadioBtn{width:calc(100% - 4px);height:25px;background:#fff;margin:2px;padding:2px 5px;border-radius:5px;border:1px solid var(--wac-grey);display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;}
 	.sortRadioBtn h4{font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0 ;display:inline-block;}
 	.wacRadioBtn{width:15px;height:15px;display:inline-block;margin:0px 5px 0px 0px;padding:0px;border-radius:15px;box-sizing:border-box !important;}
-	.wacRadioBtnOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_radio_on_w_img.svg")center right no-repeat,var(--wac-dblu);background-size:15px;}
+	.wacRadioBtnOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_radio_on_w_img.svg")center right no-repeat,var(--wac-pur);background-size:15px;}
 	.wacRadioBtnOff{background:#fff;box-shadow:inset 0px 0px 0px 2px var(--wac-grey);}
 	/*event stream styles*/
 	#wacEvents{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;padding:1px ;position: relative; box-sizing:border-box !important;}
@@ -146,13 +149,13 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacNotice{width:94%;max-width:1000px;height:auto;border-radius:10px;padding:20px;margin:20px auto;display:block;background:var(--wac-lgrey);box-sizing: border-box !important;position:relative;}
 	.wacNotice h1{font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:700;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 15px 0px;}
 	.wacNotice p{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 0px 0px;}
-	.wacCloseNoticeBtn{width:30px;height:30px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-dblu);background-size:10px 10px;border-radius:20px;position:absolute;right:5px;top:5px;cursor:pointer;}
+	.wacCloseNoticeBtn{width:30px;height:30px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-pur);background-size:10px 10px;border-radius:20px;position:absolute;right:5px;top:5px;cursor:pointer;}
 	/*event counter*/
 	#wacSubHeader{display:flex;justify-content: space-between;}
 	#wacCounter{width:auto;display:inline-block;background:#fff;border-radius:5px;padding:0px;margin:10px 0px 10px 10px;box-shadow:inset 0px 0px 0px 1px var(--wac-grey);box-sizing: border-box !important;}
 	#wacEventCount{font-family:"Averta",fallback;font-size:12px;line-height:12px;font-weight:bold;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
 	#wacEventCountTotal{font-family:"Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
-	.waCounterWrap{width:60px;height:24px;background:var(--wac-lblu);border-radius:5px 0px 0px 5px;padding:4px 0px;display:inline-block;color:#fff !important;box-sizing: border-box !important;}
+	.waCounterWrap{width:60px;height:24px;background:var(--wac-pur);border-radius:5px 0px 0px 5px;padding:4px 0px;display:inline-block;color:#fff !important;box-sizing: border-box !important;}
 	.waCounterWrap p{color:#fff !important;padding:0px 1px!important;margin:0px !important;}
 	#wacCounter p{display:inline-block;font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 10px 0px 0px;}
 
@@ -176,10 +179,10 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacCardStatePER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-orn);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg") no-repeat,var(--wac-red);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateGCC{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg") no-repeat,var(--wac-lgre);background-size:24px;background-position:left 10px top 8px;}
-	.wacCardStateGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
-	.wacCardStateSYDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
-	.wacCardStateSYDGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_aus_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;font-size:11px !important;min-width: 130px !important;}
-	.wacCardStateGCCSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_nsw_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
+	.wacCardStateGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_wa_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 8px;}
+	.wacCardStateSYDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_wa_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 8px;}
+	.wacCardStateSYDGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_aus_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 8px;font-size:11px !important;min-width: 130px !important;}
+	.wacCardStateGCCSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_nsw_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 8px;}
 
 	.wacCardHero{width:300px;height:150px;overflow:hidden;margin:0 auto;padding:0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_hero_fallback_img.svg') center center,var(--wac-lgrey);z-index:49;position:relative;box-sizing: border-box !important;}
 	.wacCardHero img{width:100%;height:auto;position:relative;z-index:50}
@@ -192,25 +195,25 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacCardMultiTeamWrap p{font-family:"Noto Sans","Averta",fallback;font-size:8px !important;line-height:8px;font-weight:bold;text-align:center;color:var(--wac-char);background:none;text-transform:uppercase;margin:0;padding:8px 0px;}
 	.wacTeamHome, .wacTeamAway{height:35px;width:90px;padding:5px;background:rgba(255, 255, 255, .85);border-radius:20px;display:flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;box-sizing:border-box !important;}
 	.wacMultiTeamHome, .wacMultiTeamAway{height:25px;width:25px;padding:0px;border-radius:20px;display:flex;align-items: center;justify-content: center;flex-wrap: nowrap;box-sizing:border-box !important;}
-	.wacHomeFlag,.wacAwayFlag{width:25px;height:25px;display:inline-block;background:var(--wac-dblu);}
+	.wacHomeFlag,.wacAwayFlag{width:25px;height:25px;display:inline-block;background:var(--wac-pur);}
 	/*card mid*/
-	.wacCardVenue{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-lblu);margin:5px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
-	.wacCardVenueIco{width:30px;height:30px;margin:0px 5px 0px 0px;border-radius:5px 0px 0px 5px;background:var(--wac-lblu);display:inline-block;}
-	.wacCardDateIco{width:30px;height:30px;margin:0px 5px 0px 0px;border-radius:5px 0px 0px 5px;background:var(--wac-dblu);display:inline-block;}
+	.wacCardVenue{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-blu);margin:5px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
+	.wacCardVenueIco{width:30px;height:30px;margin:0px 5px 0px 0px;border-radius:5px 0px 0px 5px;background:var(--wac-blu);display:inline-block;}
+	.wacCardDateIco{width:30px;height:30px;margin:0px 5px 0px 0px;border-radius:5px 0px 0px 5px;background:var(--wac-pur);display:inline-block;}
 	.wacCardVenueIco img,.wacCardDateIco img{width:20px;height:auto;padding:5px;}
 	.wacCardDownArrow{width:10px;height:auto;right:10px;top:11px;position: absolute;transition: ease-in-out .3s all;}
 	.wacCardDownArrow img{width:100%;height:auto;}
 	.wacCardArrowRot{transform: rotate(180deg);}
-	.wacCardDate{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-dblu);margin:0px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
-	.wacCardDateMulti{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-dblu);margin:0px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:50;}
-	.wacCardVenueMulti{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-lblu);margin:5px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:51;}
+	.wacCardDate{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-pur);margin:0px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
+	.wacCardDateMulti{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-pur);margin:0px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:50;}
+	.wacCardVenueMulti{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-blu);margin:5px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:51;}
 	.wacCardDateCount,.wacCardVenueCount{width:20px;height:20px;background:#fff;display:inline-block;font-family:/*"afc num",*/"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:900;text-align:center;margin:0px 5px 0px 0px;padding:3px 0px;border-radius:25px;box-sizing:border-box !important;}
-	.wacCardDateCount{color:var(--wac-dblu);}
-	.wacCardVenueCount{color:var(--wac-lblu);}	
+	.wacCardDateCount{color:var(--wac-pur);}
+	.wacCardVenueCount{color:var(--wac-blu);}	
 	.wacCardDateMultiWrap,.wacCardVenueMultiWrap{width:280px;left:0;top:32px;border-radius:5px;display:none;overflow:hidden;background:#efefef;border:1px solid #fff;box-shadow:rgba(0, 0, 0, .15) 0px 2px 5px 0;position: absolute;box-sizing:border-box !important;}
 	.wacCardDateMultiWrap .wacCardDate,.wacCardVenueMultiWrap .wacCardVenue{margin:0px !important;border-radius:0px;padding:0px 0px 0px 30px;border:none !important;position: relative;}
-	.wacCardDateMultiWrap .wacCardDate:nth-child(even){background:#1b3f92d6;}
-	.wacCardVenueMultiWrap .wacCardVenue:nth-child(even){background:#34aed6cf;}
+	.wacCardDateMultiWrap .wacCardDate:nth-child(even){background:#5716B1;}
+	.wacCardVenueMultiWrap .wacCardVenue:nth-child(even){background:#0eadd0;}
 	.wacundefinedDate,.wacundefinedVenue,.wacundefinedteam, .wacFollowYourTeamInc,.wacPremiumPassInc,.wacFinalsPassInc,.wacStadiumPassInc,.wacPlayOffPassInc{display:none !important;}
 	.wacEventsInc{width:calc(100% - 20px);margin:10px 10px 15px 10px;padding:0px;display: flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
 	.wacEventsInc p{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:400;margin:0px 0px;padding:0px;text-align:center;color:var(--wac-char);display:inline-block;}
@@ -220,10 +223,10 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacCardInfoWrap{width:100%;height:auto;display: flex;flex-wrap: nowrap;align-items: center;justify-content: space-between;}
 	.wacCardPrice{width:49%;height:auto;margin:20px 0px 20px 10px;display:flex;flex-wrap:wrap;align-items: flex-start;justify-content: flex-start;flex-direction: column;flex-grow: 1;box-sizing:border-box !important;}
 	.wacCardPrice p{font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px;display:block;}
-	.wacCardPrice h1{font-family:"afc num","Averta",fallback;font-size:26px;line-height:26px;font-weight:normal;text-align:center;color:var(--wac-lblu);margin:0px 0px 0px 0px;padding:0px 0px;display:block;}
+	.wacCardPrice h1{font-family:"afc num","Averta",fallback;font-size:26px;line-height:26px;font-weight:normal;text-align:center;color:var(--wac-blu);margin:0px 0px 0px 0px;padding:0px 0px;display:block;}
 	.wacPriceDiv{width:0;height:14px; margin:0px 0px;background:none;border-right:2px solid var(--wac-dgrey);flex-grow: 1;}
-	.wacCardInfoBtn{width:49%;height:auto;padding:5px;margin:0px 10px 0px 0px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:900;text-align:center;color:var(--wac-dblu);background:none;cursor:pointer;flex-grow: 1;box-sizing:border-box !important;}
-	.wacCardTicketBtn{width:280px;height:40px;padding:12px 0px;margin:0px auto 10px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-dblu);border-radius:5px;box-sizing:border-box !important;}
+	.wacCardInfoBtn{width:49%;height:auto;padding:5px;margin:0px 10px 0px 0px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:900;text-align:center;color:var(--wac-pur);background:none;cursor:pointer;flex-grow: 1;box-sizing:border-box !important;}
+	.wacCardTicketBtn{width:280px;height:40px;padding:12px 0px;margin:0px auto 10px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-pur);border-radius:5px;box-sizing:border-box !important;}
 	.wacEventCard a{text-decoration: none;}
 	.wacCardMenuOn{}
 	.wacCardMenuOff{}
@@ -233,10 +236,10 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacLightbox{width:100%;height:100%;margin:0px;position:fixed;background:rgba(0,0,0,.4);z-index:201;display:none;top:0;right:0;left:0;justify-content: safe center; align-items: center;flex-direction: column;overflow-y: scroll;}
 	.wacLbContent{width:600px;height:auto;background:#fff;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;border-radius:10px;box-sizing: border-box !important;position:relative;}
 	.wacLbTopWrap{width:calc(100% - 20px);height:36px;display:flex;align-items: center;justify-content: space-between;flex-direction: row;flex-wrap: nowrap;column-gap: 10px;margin:10px auto;box-sizing: border-box !important;}
-	.wacLbEventName{width:calc(100% - 30px);height:36px;background:var(--wac-dblu);border-radius:10px;font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:center;color:#fff;display:flex;align-items: center;justify-content: flex-start;flex-direction: row;flex-wrap: nowrap;position: relative;}
+	.wacLbEventName{width:calc(100% - 30px);height:36px;background:var(--wac-pur);border-radius:10px;font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:center;color:#fff;display:flex;align-items: center;justify-content: flex-start;flex-direction: row;flex-wrap: nowrap;position: relative;}
 	.wacTypeIcon{width:36px;height:36px;display:inline-block;margin:0 10px 0px 10px;border-radius:10px 0px 0px 10px;}
 	.wacLbStateIco{min-width:100px;width:auto;height:36px;font-family:"Noto Sans","Averta",fallback;font-size:13px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:11px 10px 11px 43px;border-radius:0px 10px 10px 0px;border-left:10px solid #fff;display:inline-block;box-sizing:border-box !important;position: absolute;top:0;right:-1px;}
-	.wacLbCloseBtn{width:30px;height:30px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-dblu);background-size:10px 10px;border-radius:20px;position:relative;cursor:pointer;display:inline-block;}
+	.wacLbCloseBtn{width:30px;height:30px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-pur);background-size:10px 10px;border-radius:20px;position:relative;cursor:pointer;display:inline-block;}
 	.wacLbMidWrap{width:calc(100% - 20px);height:auto;display:flex;align-items: flex-start;justify-content: space-around;flex-direction: row;flex-wrap: nowrap;column-gap: 10px;margin:10px auto;box-sizing: border-box !important;}
 	.wacLbBlurb{width:100%;height:auto;display:inline-block;margin:0;border-radius:10px;background:var(--wac-lgrey);box-sizing: border-box !important;}
 	.wacLbBlurb p{font-family:"Noto Sans","Averta",fallback;font-size:15px;line-height:22px;font-weight:normal;text-align:left;color:var(--wac-char);margin:0 0px 0px 0px;padding:20px;display:block;box-sizing: border-box !important;}
@@ -256,18 +259,18 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacLbBotWrap{width:100%;height:auto;margin:0px 0px 0px 0px;padding:20px 10px;background:var(--wac-lgrey);border-radius:0px 0px 10px 10px;display: flex;flex-wrap: nowrap;justify-content: center;align-items: center;box-sizing:border-box !important;}
 	.wacLbPrice{width:100px;height:auto;margin:0px 0px 0px 20px;display:flex;flex-wrap:wrap;align-items: flex-start;justify-content: flex-start;flex-direction: column;flex-grow: 1;box-sizing:border-box !important;}
 	.wacLbPrice p{font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px;display:block;}
-	.wacLbPrice h1{font-family:"afc num","Averta",fallback;font-size:26px;line-height:26px;font-weight:normal;text-align:center;color:var(--wac-lblu);margin:0px 0px 0px 0px;padding:0px 0px;display:block;}
-	.wacLbBtn{width:450px;height:40px;padding:12px 0px;margin:0px auto 0px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-dblu);border-radius:5px;box-sizing:border-box !important;}
+	.wacLbPrice h1{font-family:"afc num","Averta",fallback;font-size:26px;line-height:26px;font-weight:normal;text-align:center;color:var(--wac-blu);margin:0px 0px 0px 0px;padding:0px 0px;display:block;}
+	.wacLbBtn{width:450px;height:40px;padding:12px 0px;margin:0px auto 0px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-pur);border-radius:5px;box-sizing:border-box !important;}
 	.wacLbContent a{text-decoration: none;color: var(--wac-dblu);}
 
 	/*lb icons*/
 	.wacLbStatePER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-orn);background-size:24px;background-position:left 10px top 6px;}
 	.wacLbStateSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg") no-repeat,var(--wac-red);background-size:24px;background-position:left 10px top 6px;}
 	.wacLbStateGCC{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg") no-repeat,var(--wac-lgre);background-size:24px;background-position:left 10px top 6px;}
-	.wacLbStateGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 6px;}
-	.wacLbStateSYDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 6px;}
-	.wacLbStateSYDGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_aus_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 6px;}
-	.wacLbStateGCCSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_nsw_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 6px;}
+	.wacLbStateGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_wa_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 6px;}
+	.wacLbStateSYDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_wa_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 6px;}
+	.wacLbStateSYDGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_aus_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 6px;}
+	.wacLbStateGCCSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_nsw_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 6px;}
 
 	.wacPackagIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}
 	.wacSingleMatchIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_single_w_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}
@@ -282,7 +285,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	#wacSubFooter{width:100%;max-width:1100px;background:var(--wac-lgrey);height:auto;margin:10px auto 10px;padding:1px;border-radius:10px 10px 0px 0px;box-sizing: border-box !important;}
 	#wacSubFooter p{font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:12px;font-weight:400;text-align:center;color:var(--wac-char);margin:10px auto;padding:0px 0px;}
 
-	#wacFooter{width:100%;height:auto;margin:0px auto;padding:20px; box-sizing: border-box !important;background: linear-gradient(0deg,rgba(0, 14, 95, 1) 0%, rgba(60, 109, 162, 1) 100%);}
+	#wacFooter{width:100%;height:auto;margin:0px auto;padding:20px; box-sizing: border-box !important;background: var(--wac-pur);}
 	#wacFooterWrap{width:100%;max-width:1100px;margin:0px auto;}
 	#wacFooterWrap p{font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:14px;font-weight:400;text-align:center;color:#fff;margin:10px auto;padding:0px 0px;}
 	#wacFooterWrap a{color:#efefef;}
@@ -294,24 +297,24 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	#wacContent{width:100%; position:relative;text-align: center; background:#fff;margin:0px auto 0px ;display:block;box-sizing: border-box !important}
 	#aoPubWrapper{display:none;}
 	/* Header */
-	#wacHeader{width:100%;height:auto;margin:0px auto;padding:20px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_header_players_mobile.png') no-repeat,url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_header_pattern_mobile.png") no-repeat ,  linear-gradient(37deg,rgba(0, 139, 180, 1) 0%, rgba(107, 213, 239, 1) 100%);background-size:contain,cover, 100% 100%;background-position: top 90px center,bottom left, center center;box-sizing: border-box !important;}
+	#wacHeader{width:100%;height:auto;margin:0px auto;padding:20px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_header_players_p2_mobile.png') no-repeat top 20px center,url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_ind_pattern_left_img.png") no-repeat bottom 0px left 0px,url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_ind_pattern_right_img.png") no-repeat top right -360px,  var(--wac-pur);background-size:contain,300px auto, auto 1000px, 100% 100%;box-sizing: border-box !important;}
 	#wacLogo{max-width:500px;width:84%;height:auto;padding:0px;margin:20px auto 40px;display:block;z-index:20;position: relative;border-radius:0px;}
 	#wacLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
-	#wacHeaderStrip{width:calc(100% + 40px);height:35px;background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_afc_text_tile_white_img.svg") repeat-x,var(--wac-dblu);background-size:auto 100% ;margin:-20px 0px 0px -20px ;position: relative;}
+	#wacHeaderStrip{width:calc(100% + 40px);height:35px;background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_afc_text_tile_white_img.svg") repeat-x,var(--wac-blu);background-size:auto 100% ;margin:-20px 0px 0px -20px ;position: relative;}
 	/*menu*/ /* {font-family:;font-size:;line-height:;font-weight:;text-align:;color:;margin:0px;padding:0px;}*/
 	#wacSearchBar{width:auto/*clamped for body click*/;height:auto;display:none;margin:0px auto;padding:1px 0px 0px 0px;position: relative;z-index:100;background:none;}
 	.wacSelectBtn{width:100%;max-width:300px;height:auto;display:block;overflow:hidden;border-radius:10px;position: relative;margin:10px auto 0px;box-sizing: border-box !important;}
 	.wacSelectBtn h1{font-family:"Noto Sans","Averta",fallback;font-size:24px;line-height:24px;font-weight:900;color:#fff;text-align:center;margin:0px 0px;padding:13px 0px;user-select:none;}
 	.wacSelectBtn h2{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;color:#fff;text-align:center;margin:0px 0px;padding:0px 0px;display:block;user-select:none;}
-	.wacSelectLable{width:100%;height:30px;background:var(--wac-lblu);cursor:pointer;text-align: center;display:flex;justify-content: center;align-items: center;border-radius:10px 10px 0px 0px;position: relative;box-sizing: border-box !important;border-top:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;}
-	.wacSelectTitle{width:100%;height:50px;background:var(--wac-dblu);cursor:pointer;text-align: center;border-radius:0px;box-sizing: border-box !important;position: relative;border-bottom:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;}
+	.wacSelectLable{width:100%;height:30px;background:var(--wac-blu);cursor:pointer;text-align: center;display:flex;justify-content: center;align-items: center;border-radius:10px 10px 0px 0px;position: relative;box-sizing: border-box !important;border-top:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;}
+	.wacSelectTitle{width:100%;height:50px;background:var(--wac-pur);cursor:pointer;text-align: center;border-radius:0px;box-sizing: border-box !important;position: relative;border-bottom:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;}
 	/*featured events*/
 	#wacFeatureEvents{width:100%;height:auto;display:flex;margin:0px 0px;padding:0px 0px 0px 0px;white-space:nowrap;flex-wrap: wrap;flex-direction: row;align-items: center;justify-content:safe center;column-gap: 10px;row-gap: 10px;position:relative;}
 	/*#wacFeatureScroller{width:auto;height:auto;margin:50px 0px 20px 0px;padding:0px 0px;overflow: hidden;position: relative;display:block;;box-sizing: border-box !important;overflow-x: scroll; overflow-y: hidden; white-space: nowrap;position:relative;}
 	#wacFeatureScroller::-webkit-scrollbar { background: transparent; width: 0px;}
 	#wacFeatureScroller{ -ms-overflow-style: none; }*/
 	#wacFeatureScroller{width:auto;height:auto;margin:130px auto 0px;padding:0px 0px;overflow: hidden;position: relative;display:block;}
-	.wacFeatureEvent{max-width:170px;min-width:170px;width:50%;height:auto;background:var(--wac-dblu);border-radius:4px;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;border:1px solid #fff;position:relative;overflow:hidden;user-select:none;}
+	.wacFeatureEvent{max-width:170px;min-width:170px;width:50%;height:auto;background:var(--wac-pur);border-radius:4px;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;border:1px solid #fff;position:relative;overflow:hidden;user-select:none;}
 	.wacFeatureEvent img{width:100%;height:auto;}
 
 	.wacFeaturePh{background:rgba(0,0,0,.2);}
@@ -332,7 +335,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacVenueIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_pin_w_ico.svg") center center no-repeat;background-size:20px 20px;}
 	.wacTeamIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_team_w_lblu_ico.svg") center center no-repeat;background-size:20px 20px;}
 	/*menu counters*/
-	.wacMenuCounter{width:22px;height:22px;border-radius:20px;background:#fff;font-family:"afc num","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;color:var(--wac-dblu);text-align:center;margin:5px 9px;padding:4px 0px;display:none;box-sizing:border-box !important;}
+	.wacMenuCounter{width:22px;height:22px;border-radius:20px;background:#fff;font-family:"afc num","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;color:var(--wac-pur);text-align:center;margin:5px 9px;padding:4px 0px;display:none;box-sizing:border-box !important;}
 	/*calendar*/
 	#wacCalendarMenu{width:100%;height:auto;padding:5px 5px 10px 5px;border-radius:0px 0px 10px 10px;display:none;background:var(--wac-lgrey);position:relative;box-sizing:border-box !important;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;user-select:none;}
 	#wacCalHeader{width:100%;height:auto;padding:5px;border-radius:5px;background:#fff;border:1px solid var(--wac-grey);display:flex;flex-wrap: nowrap;justify-content: space-between;align-content: center;align-items: center;box-sizing:border-box !important;}
@@ -340,15 +343,15 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacCalWrap{width:100%;height:auto;margin:5px 0px;display:flex;flex-wrap:nowrap;justify-content: space-between;align-items: center;}
 	.wacCalDay{width:35px;height:auto;font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:#000;}
 	.wacDay{width:35px;height:35px;box-sizing:border-box;border-radius:20px;box-sizing:border-box !important;cursor:pointer;}
-	.wacCalDayOff{background:#fff;box-shadow:inset 0px 0px 0px 2px var(--wac-lblu);font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);padding:10px 0px;box-sizing:border-box !important}
-	.wacCalDayOn{background:var(--wac-dblu);font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:center;color:#fff;padding:10px 0px;box-sizing:border-box !important}
+	.wacCalDayOff{background:#fff;box-shadow:inset 0px 0px 0px 2px var(--wac-blu);font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);padding:10px 0px;box-sizing:border-box !important}
+	.wacCalDayOn{background:var(--wac-pur);font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:center;color:#fff;padding:10px 0px;box-sizing:border-box !important}
 	.wacNoEventDay{background:#D9D9D9;cursor:default !important;width:35px;height:35px;box-sizing:border-box;border-radius:20px;box-sizing:border-box !important;}
 	/*drop down & buttons*/
 	.wacDropDownMenu{width:100%;height:auto;background:var(--wac-lgrey);position: relative;border-radius:0px;text-align: left;display:inline-block;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;padding:0px 0px 15px 0px;}
 	.wacDropDownBtn{width:calc(100% - 4px);height:25px;background:#fff;margin:2px;padding:2px 5px;border-radius:5px;border:1px solid var(--wac-grey);display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;}
 	.wacDropDownBtn h3{font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#000;margin:0;padding:0;display:inline-block;}	
 	.wacDropDownBtn h4{font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0;display:inline-block;}	
-	.wacDropDownSubHead{width:calc(100% - 4px);height:25px;background:var(--wac-dblu);margin:2px;padding:2px 5px;border-radius:5px;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;}
+	.wacDropDownSubHead{width:calc(100% - 4px);height:25px;background:var(--wac-pur);margin:2px;padding:2px 5px;border-radius:5px;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;}
 	.wacDropDownSubHead h4{font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
 	.wacDropDownLid{width:100%;padding:10px 15px;height:auto;display:flex;flex-wrap:nowrap;align-items: center;justify-content: space-between;box-sizing:border-box !important;}
 	.wacDropDownLid h3{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:left;color:var(--wac-char);margin:0;padding:0;display:inline-block;}
@@ -357,11 +360,11 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacVenueMapIco{width:20px;height:auto;display:inline-block; margin:0px 5px 0px 0px;}
 	.wacVenueMapIco img{width:100%;height:auto;}	
 	.wacCheckBox{width:15px;height:15px;display:inline-block;margin:0px 5px 0px 0px;padding:0px;box-sizing:border-box !important;}
-	.wacCheckBoxOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_checkbox_tick_img.svg")center right no-repeat,var(--wac-dblu);background-size:12px;}
+	.wacCheckBoxOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_checkbox_tick_img.svg")center right no-repeat,var(--wac-pur);background-size:12px;}
 	.wacCheckBoxOff{background:#fff;border:2px solid var(--wac-silv);}
-	.wacDropDownFlag{height:15px;width:23px;display:inline-block;background:var(--wac-dblu);margin:0px 5px 0px 0px;}
+	.wacDropDownFlag{height:15px;width:23px;display:inline-block;background:var(--wac-pur);margin:0px 5px 0px 0px;}
 	.wacDropDownDot{height:5px;width:5px;display:inline-block;background:var(--wac-lgrey);margin:0px 5px;border-radius:5px;}
-	.wacDropDownHorDiv{width:90%;height:2px;background:var(--wac-dblu);margin:5px auto;}
+	.wacDropDownHorDiv{width:90%;height:2px;background:var(--wac-pur);margin:5px auto;}
 	#wacVenueMenu{display:none;}
 	#wacTeamMenu{display:none;}
 	#wacStageMenu{display:none;}
@@ -380,7 +383,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.sortRadioBtn{width:calc(100% - 4px);height:25px;background:#fff;margin:2px;padding:2px 5px;border-radius:5px;border:1px solid var(--wac-grey);display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;}
 	.sortRadioBtn h4{font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0 ;display:inline-block;}
 	.wacRadioBtn{width:15px;height:15px;display:inline-block;margin:0px 5px 0px 0px;padding:0px;border-radius:15px;box-sizing:border-box !important;}
-	.wacRadioBtnOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_radio_on_w_img.svg")center right no-repeat,var(--wac-dblu);background-size:15px;}
+	.wacRadioBtnOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_radio_on_w_img.svg")center right no-repeat,var(--wac-pur);background-size:15px;}
 	.wacRadioBtnOff{background:#fff;box-shadow:inset 0px 0px 0px 2px var(--wac-grey);}
 	/*error message*/
 	#wacEventErrors{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;padding:0px;position: relative; box-sizing:border-box !important;display:flex;flex-wrap: nowrap;justify-content: center;flex-direction: row;}
@@ -393,13 +396,13 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacNotice{width:94%;max-width:1100px;height:auto;border-radius:10px;padding:20px;margin:20px auto;display:block;background:var(--wac-lgrey);box-sizing: border-box !important;position:relative;}
 	.wacNotice h1{font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:700;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 10px 0px;}
 	.wacNotice p{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 0px 0px;}
-	.wacCloseNoticeBtn{width:20px;height:20px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-dblu);background-size:9px 9px;border-radius:20px;position:absolute;right:5px;top:5px;cursor:pointer;}
+	.wacCloseNoticeBtn{width:20px;height:20px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-pur);background-size:9px 9px;border-radius:20px;position:absolute;right:5px;top:5px;cursor:pointer;}
 	/*event counter*/
 	#wacSubHeader{display:flex;justify-content: space-between;}
 	#wacCounter{width:auto;display:inline-block;background:#fff;border-radius:5px;padding:0px;margin:10px 0px 10px 10px;box-shadow:inset 0px 0px 0px 1px var(--wac-grey);box-sizing: border-box !important;}
 	#wacEventCount{font-family:"Averta",fallback;font-size:12px;line-height:12px;font-weight:bold;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
 	#wacEventCountTotal{font-family:"Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
-	.waCounterWrap{width:60px;height:24px;background:var(--wac-lblu);border-radius:5px 0px 0px 5px;padding:4px 0px;display:inline-block;color:#fff !important;box-sizing: border-box !important;}
+	.waCounterWrap{width:60px;height:24px;background:var(--wac-blu);border-radius:5px 0px 0px 5px;padding:4px 0px;display:inline-block;color:#fff !important;box-sizing: border-box !important;}
 	.waCounterWrap p{color:#fff !important;padding:0px 1px!important;margin:0px !important;}
 	#wacCounter p{display:inline-block;font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 10px 0px 0px;}
 
@@ -423,10 +426,10 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacCardStatePER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-orn);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg") no-repeat,var(--wac-red);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateGCC{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg") no-repeat,var(--wac-lgre);background-size:24px;background-position:left 10px top 8px;}
-	.wacCardStateGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
-	.wacCardStateSYDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
-	.wacCardStateSYDGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_aus_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;font-size:11px !important;min-width: 130px !important;}
-	.wacCardStateGCCSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_nsw_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 8px;}
+	.wacCardStateGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_wa_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 8px;}
+	.wacCardStateSYDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_wa_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 8px;}
+	.wacCardStateSYDGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_aus_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 8px;font-size:11px !important;min-width: 130px !important;}
+	.wacCardStateGCCSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_nsw_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 8px;}
 
 	.wacCardHero{width:300px;height:150px;overflow:hidden;margin:0 auto;padding:0px;background:var(--wac-lgrey);z-index:49;position:relative;box-sizing: border-box !important;}
 	.wacCardHero img{width:100%;height:auto;position:relative;z-index:50}
@@ -439,25 +442,25 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacCardMultiTeamWrap p{font-family:"Noto Sans","Averta",fallback;font-size:8px !important;line-height:8px;font-weight:bold;text-align:center;color:var(--wac-char);background:none;text-transform:uppercase;margin:0;padding:8px 0px;}
 	.wacTeamHome, .wacTeamAway{height:35px;width:90px;padding:5px;background:rgba(255, 255, 255, .85);border-radius:20px;display:flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;box-sizing:border-box !important;}
 	.wacMultiTeamHome, .wacMultiTeamAway{height:25px;width:25px;padding:0px;border-radius:20px;display:flex;align-items: center;justify-content: center;flex-wrap: nowrap;box-sizing:border-box !important;}
-	.wacHomeFlag,.wacAwayFlag{width:25px;height:25px;display:inline-block;background:var(--wac-dblu);}
+	.wacHomeFlag,.wacAwayFlag{width:25px;height:25px;display:inline-block;background:var(--wac-pur);}
 	/*card mid*/
-	.wacCardVenue{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-lblu);margin:5px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
-	.wacCardVenueIco{width:30px;height:30px;margin:0px 5px 0px 0px;border-radius:5px 0px 0px 5px;background:var(--wac-lblu);display:inline-block;}
-	.wacCardDateIco{width:30px;height:30px;margin:0px 5px 0px 0px;border-radius:5px 0px 0px 5px;background:var(--wac-dblu);display:inline-block;}
+	.wacCardVenue{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-blu);margin:5px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
+	.wacCardVenueIco{width:30px;height:30px;margin:0px 5px 0px 0px;border-radius:5px 0px 0px 5px;background:var(--wac-blu);display:inline-block;}
+	.wacCardDateIco{width:30px;height:30px;margin:0px 5px 0px 0px;border-radius:5px 0px 0px 5px;background:var(--wac-pur);display:inline-block;}
 	.wacCardVenueIco img,.wacCardDateIco img{width:20px;height:auto;padding:5px;}
 	.wacCardDownArrow{width:10px;height:auto;right:10px;top:11px;position: absolute;transition: ease-in-out .3s all;}
 	.wacCardDownArrow img{width:100%;height:auto;}
 	.wacCardArrowRot{transform: rotate(180deg);}
-	.wacCardDate{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-dblu);margin:0px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
-	.wacCardDateMulti{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-dblu);margin:0px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:50;}
-	.wacCardVenueMulti{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-lblu);margin:5px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:51;}
+	.wacCardDate{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-pur);margin:0px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
+	.wacCardDateMulti{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-pur);margin:0px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:50;}
+	.wacCardVenueMulti{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-blu);margin:5px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:51;}
 	.wacCardDateCount,.wacCardVenueCount{width:20px;height:20px;background:#fff;display:inline-block;font-family:/*"afc num",*/"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:900;text-align:center;margin:0px 5px 0px 0px;padding:3px 0px;border-radius:25px;box-sizing:border-box !important;}
-	.wacCardDateCount{color:var(--wac-dblu);}
-	.wacCardVenueCount{color:var(--wac-lblu);}	
+	.wacCardDateCount{color:var(--wac-pur);}
+	.wacCardVenueCount{color:var(--wac-blu);}	
 	.wacCardDateMultiWrap,.wacCardVenueMultiWrap{width:280px;left:-1px;top:32px;border-radius:5px;display:none;overflow:hidden;background:#efefef;border:1px solid #fff;box-shadow:rgba(0, 0, 0, .15) 0px 2px 5px 0;position: absolute;box-sizing:border-box !important;}
 	.wacCardDateMultiWrap .wacCardDate,.wacCardVenueMultiWrap .wacCardVenue{margin:0px !important;border-radius:0px;padding:0px 0px 0px 30px;border:none !important;}
-	.wacCardDateMultiWrap .wacCardDate:nth-child(even){background:#1b3f92d6;}
-	.wacCardVenueMultiWrap .wacCardVenue:nth-child(even){background:#34aed6cf;}
+	.wacCardDateMultiWrap .wacCardDate:nth-child(even){background:#5716B1;}
+	.wacCardVenueMultiWrap .wacCardVenue:nth-child(even){background:#0eadd0;}
 	.wacundefinedDate,.wacundefinedVenue,.wacundefinedteam, .wacFollowYourTeamInc,.wacPremiumPassInc,.wacFinalsPassInc,.wacStadiumPassInc,.wacPlayOffPassInc{display:none !important;}
 	.wacEventsInc{width:calc(100% - 20px);margin:10px 10px 15px 10px;padding:0px;display: flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
 	.wacEventsInc p{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:400;margin:0px 0px;padding:0px;text-align:center;color:var(--wac-char);display:inline-block;}
@@ -467,10 +470,10 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacCardInfoWrap{width:100%;height:auto;display: flex;flex-wrap: nowrap;align-items: center;justify-content: space-between;}
 	.wacCardPrice{width:49%;height:auto;margin:20px 0px 20px 10px;display:flex;flex-wrap:wrap;align-items: flex-start;justify-content: flex-start;flex-direction: column;flex-grow: 1;box-sizing:border-box !important;}
 	.wacCardPrice p{font-family:"Noto Sans","Averta",fallback;font-size:11px;line-height:11px;font-weight:bold;text-align:center;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px;display:block;}
-	.wacCardPrice h1{font-family:"afc num","Averta",fallback;font-size:26px;line-height:26px;font-weight:normal;text-align:center;color:var(--wac-lblu);margin:0px 0px 0px 0px;padding:0px 0px;display:block;}
+	.wacCardPrice h1{font-family:"afc num","Averta",fallback;font-size:26px;line-height:26px;font-weight:normal;text-align:center;color:var(--wac-blu);margin:0px 0px 0px 0px;padding:0px 0px;display:block;}
 	.wacPriceDiv{width:0;height:14px; margin:0px 0px;background:none;border-right:2px solid var(--wac-dgrey);flex-grow: 1;}
-	.wacCardInfoBtn{width:49%;height:auto;padding:5px;margin:0px 10px 0px 0px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:900;text-align:center;color:var(--wac-dblu);background:none;cursor:pointer;flex-grow: 1;box-sizing:border-box !important;}
-	.wacCardTicketBtn{width:280px;height:40px;padding:12px 0px;margin:0px auto 10px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-dblu);border-radius:5px;box-sizing:border-box !important;}
+	.wacCardInfoBtn{width:49%;height:auto;padding:5px;margin:0px 10px 0px 0px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:900;text-align:center;color:var(--wac-pur);background:none;cursor:pointer;flex-grow: 1;box-sizing:border-box !important;}
+	.wacCardTicketBtn{width:280px;height:40px;padding:12px 0px;margin:0px auto 10px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-pur);border-radius:5px;box-sizing:border-box !important;}
 	.wacEventCard a{text-decoration: none;}
 	.wacCardMenuOn{}
 	.wacCardMenuOff{}
@@ -480,10 +483,10 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacLightbox{width:100%;height:100%;margin:0px;position:fixed;background:rgba(0,0,0,.4);z-index:201;display:none;top:0;right:0;left:0;justify-content: safe center; align-items: center;flex-direction: column;overflow-y: scroll;}
 	.wacLbContent{max-width:600px;width:96%;height:auto;background:#fff;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;border-radius:10px;box-sizing: border-box !important;position:relative;}
 	.wacLbTopWrap{width:calc(100% - 20px);height:55px;display:flex;align-items: center;justify-content: space-between;flex-direction: row;flex-wrap: nowrap;column-gap: 10px;margin:10px auto;box-sizing: border-box !important;}
-	.wacLbEventName{max-width:400px;height:55px;background:var(--wac-dblu);border-radius:10px;font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:left;color:#fff;display:flex;align-items: center;justify-content: flex-start;flex-direction: row;flex-wrap: nowrap;}
+	.wacLbEventName{max-width:400px;height:55px;background:var(--wac-pur);border-radius:10px;font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:left;color:#fff;display:flex;align-items: center;justify-content: flex-start;flex-direction: row;flex-wrap: nowrap;}
 	.wacTypeIcon{width:36px;height:36px;display:inline-block;margin:0 10px 0px 10px;border-radius:0px 0px 0px 0px;}
 	.wacLbStateIco{min-width:100px;width:auto;height:55px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0px 0px 0px 10px;padding:0px 10px 0px 43px;border-radius:0px 10px 10px 0px;border-left:5px solid #fff;display:flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
-	.wacLbCloseBtn{width:30px;height:30px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-dblu);background-size:10px 10px;border-radius:20px;position:relative;cursor:pointer;display:inline-block;}
+	.wacLbCloseBtn{width:30px;height:30px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-pur);background-size:10px 10px;border-radius:20px;position:relative;cursor:pointer;display:inline-block;}
 	.wacLbMidWrap{width:calc(100% - 20px);height:auto;display:flex;align-items: flex-start;justify-content: space-around;flex-direction: row;flex-wrap: nowrap;column-gap: 10px;margin:10px auto;box-sizing: border-box !important;}
 	.wacLbBlurb{width:100%;height:auto;display:inline-block;margin:0;border-radius:10px;background:var(--wac-lgrey);box-sizing: border-box !important;}
 	.wacLbBlurb p{font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:18px;font-weight:normal;text-align:left;color:var(--wac-char);margin:0 0px 0px 0px;padding:20px;display:block;box-sizing: border-box !important;}
@@ -503,8 +506,8 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacLbBotWrap{width:100%;height:auto;margin:0px 0px 0px 0px;padding:20px 10px;background:var(--wac-lgrey);border-radius:0px 0px 10px 10px;display: flex;flex-wrap: nowrap;justify-content: center;align-items: center;box-sizing:border-box !important;}
 	.wacLbPrice{width:100px;height:auto;margin:0px 0px 0px 20px;display:flex;flex-wrap:wrap;align-items: flex-start;justify-content: flex-start;flex-direction: column;flex-grow: 1;box-sizing:border-box !important;}
 	.wacLbPrice p{font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px;display:block;}
-	.wacLbPrice h1{font-family:"afc num","Averta",fallback;font-size:26px;line-height:26px;font-weight:normal;text-align:center;color:var(--wac-lblu);margin:0px 0px 0px 0px;padding:0px 0px;display:block;}
-	.wacLbBtn{width:100%;height:40px;padding:12px 0px;margin:0px auto 0px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-dblu);border-radius:5px;box-sizing:border-box !important;}
+	.wacLbPrice h1{font-family:"afc num","Averta",fallback;font-size:26px;line-height:26px;font-weight:normal;text-align:center;color:var(--wac-blu);margin:0px 0px 0px 0px;padding:0px 0px;display:block;}
+	.wacLbBtn{width:100%;height:40px;padding:12px 0px;margin:0px auto 0px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-pur);border-radius:5px;box-sizing:border-box !important;}
 	.wacLbContent a{text-decoration: none;color: var(--wac-dblu);}
 	.wacLbBotWrap a{width:calc(100% - 140px)}
 
@@ -512,10 +515,10 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacLbStatePER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-orn);background-size:24px;background-position:left 10px top 16px;}
 	.wacLbStateSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg") no-repeat,var(--wac-red);background-size:24px;background-position:left 10px top 16px;}
 	.wacLbStateGCC{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg") no-repeat,var(--wac-lgre);background-size:24px;background-position:left 10px top 16px;}
-	.wacLbStateGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 16px;}
-	.wacLbStateSYDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_wa_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 16px;}
-	.wacLbStateSYDGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_aus_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 16px;min-width: 140px !important;font-size: 12px !important;}
-	.wacLbStateGCCSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_nsw_w_ico.svg") no-repeat,var(--wac-dblu);background-size:24px;background-position:left 10px top 16px;}
+	.wacLbStateGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_wa_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 16px;}
+	.wacLbStateSYDPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_wa_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 16px;}
+	.wacLbStateSYDGCCPER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_aus_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 16px;min-width: 140px !important;font-size: 12px !important;}
+	.wacLbStateGCCSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_nsw_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 16px;}
 
 	.wacPackagIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}
 	.wacSingleMatchIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_single_w_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}
@@ -531,23 +534,24 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	#wacSubFooter{width:100%;max-width:1100px;background:var(--wac-lgrey);height:auto;margin:20px auto 0px;padding:10px;border-radius:10px 10px 0px 0px;box-sizing: border-box !important;}
 	#wacSubFooter p{font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:400;text-align:center;color:var(--wac-char);margin:10px auto;padding:0px 0px;}
 
-	#wacFooter{width:100%;height:auto;margin:0px auto;padding:20px; box-sizing: border-box !important;background: linear-gradient(0deg,rgba(0, 14, 95, 1) 0%, rgba(60, 109, 162, 1) 100%);}
+	#wacFooter{width:100%;height:auto;margin:0px auto;padding:20px; box-sizing: border-box !important;background: var(--wac-pur);}
 	#wacFooterWrap{width:100%;max-width:1100px;margin:0px auto;}
 	#wacFooterWrap p{font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:14px;font-weight:400;text-align:center;color:#fff;margin:10px auto;padding:0px 0px;}
 	#wacFooterWrap a{color:#efefef;}
 }
-@media only screen and (min-width: 0px) and (max-width: 999.99px){	
+@media only screen and (min-width: 0px) and (max-width: 449.99px){	
 /*small displays LB icon*/
+	.wacTypeIcon{width:36px;height:36px;display:inline-block;margin:0 5px 0px 0px;border-radius:0px 0px 0px 0px;}
 
-	.wacPackagIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}
-	.wacSingleMatchIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_single_w_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}
-	.wacPremiumPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_premPass_ico.svg") no-repeat;background-size:27px;background-position:left 3px top 5px;}
-	.wacFollowYourTeamIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_followPass_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}
-	.wacGroupStagePassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_groupPass_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}
-	.wacFinalsPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_finalsPass_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}
-	.wacSeriesPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}
-	.wacStadiumPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_stadPass_ico.svg") no-repeat;background-size:27px;background-position:left 3px top 5px;}
-	.wacPlayOffPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_playoffPass_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}	
+	.wacPackagIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat;background-size:25px;background-position:left 3px top 3px;}
+	.wacSingleMatchIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_single_w_ico.svg") no-repeat;background-size:25px;background-position:left 3px top 3px;}
+	.wacPremiumPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_premPass_ico.svg") no-repeat;background-size:23px;background-position:left 3px top 5px;}
+	.wacFollowYourTeamIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_followPass_ico.svg") no-repeat;background-size:25px;background-position:left 3px top 3px;}
+	.wacGroupStagePassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_groupPass_ico.svg") no-repeat;background-size:25px;background-position:left 3px top 3px;}
+	.wacFinalsPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_finalsPass_ico.svg") no-repeat;background-size:25px;background-position:left 3px top 3px;}
+	.wacSeriesPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat;background-size:25px;background-position:left 3px top 3px;}
+	.wacStadiumPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_stadPass_ico.svg") no-repeat;background-size:23px;background-position:left 3px top 5px;}
+	.wacPlayOffPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_playoffPass_ico.svg") no-repeat;background-size:25px;background-position:left 3px top 3px;}	
 
 
 }
