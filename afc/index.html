@@ -15,7 +15,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/fonts/afc_numerals.css" type="text/css" rel="stylesheet" />
-
+<link href="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/fonts/clash-display.css" type="text/css" rel="stylesheet" />
 <style type="text/css">
 	:root{
 		--wac-grey:#D4D4D1;	
@@ -62,8 +62,8 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	#wacSearchBar{width:auto/*clamped for body click*/;height:80px;display:none;margin:0px auto;padding:1px 0px 0px 0px;position: relative;z-index:100;background:none;}
 	.wacSelectBtn{width:170px;height:80px;display:inline-block;overflow:visible;position: relative;box-sizing: border-box !important;}
 	.wacSelectBtn:nth-child(2){margin:0px 10px;}	
-	.wacSelectBtn h1{font-family:"Noto Sans","Averta",fallback;font-size:24px;line-height:24px;font-weight:900;color:#fff;text-align:center;margin:0px 0px;padding:13px 0px;user-select:none;}
-	.wacSelectBtn h2{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;color:#fff;text-align:center;margin:0px 0px 0 0px;padding:0px 0px;display:block;user-select:none;}
+	.wacSelectBtn h1{font-family:"ClashDisplay","Averta",fallback;font-size:24px;line-height:24px;font-weight:bold;color:#fff;text-align:center;margin:0px 0px;padding:13px 0px;user-select:none;}
+	.wacSelectBtn h2{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;color:#fff;text-align:center;margin:0px 0px 0 0px;padding:0px 0px;display:block;user-select:none;}
 	.wacSelectLable{width:100%;height:30px;background:var(--wac-blu);cursor:pointer;text-align: center;display:flex;justify-content: center;align-items: center;border-radius:10px 10px 0px 0px;position: relative;border-top:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;box-sizing: border-box !important}
 	.wacSelectTitle{width:100%;height:50px;background:var(--wac-dblu);cursor:pointer;text-align: center;border-radius:0px 0px 10px 10px;box-sizing: border-box !important;position: relative;border-bottom:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;}
 	.wacMenuVertDivDark{width:2px;height:20px;background:var(--wac-pur);right:2px;top:5px;position: absolute;}
@@ -77,7 +77,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacFeatureEvent a{user-drag: none; -webkit-user-drag: none;user-select: none;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
 	.wacFeatureEvent:hover{box-shadow:rgb(0 0 0 / 30%) 0px 4px 6px 2px;opacity:.95;}
 	.wacFeaturePh{background:rgba(0,0,0,.2);}
-	#wacResetAllFeat{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:900;color:#fff;text-align:center;margin:5px 0px 0px 0px;padding:15px 10px;user-select:none;cursor:pointer;text-decoration: underline;text-transform: uppercase;z-index: 99;position: relative;}
+	#wacResetAllFeat{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:600;color:#fff;text-align:center;margin:5px 0px 0px 0px;padding:15px 10px;user-select:none;cursor:pointer;text-decoration: underline;text-transform: uppercase;z-index: 99;position: relative;}
 
 	#wacFeatEventPips{display:none;}
 	/*menu icons*/
@@ -91,23 +91,23 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	/*calendar*/
 	#wacCalendarMenu{width:285px;height:auto;padding:5px 5px 10px 5px;border-radius:10px;display:none;background:var(--wac-lgrey);position:absolute;top:85px;left:-55px;box-sizing:border-box !important;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;user-select:none;}
 	#wacCalHeader{width:100%;height:auto;padding:5px;border-radius:5px;background:#fff;border:1px solid var(--wac-grey);display:flex;flex-wrap: nowrap;justify-content: space-between;align-content: center;align-items: center;box-sizing:border-box !important;}
-	#wacCalHeader h3{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;text-align:left;color:#000;margin:0px;padding:0px;}
+	#wacCalHeader h3{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;text-align:left;color:#000;margin:0px;padding:0px;}
 	.wacCalWrap{width:100%;height:auto;margin:5px 0px;display:flex;flex-wrap:nowrap;justify-content: space-between;align-items: center;}
-	.wacCalDay{width:35px;height:auto;font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:#000;}
+	.wacCalDay{width:35px;height:auto;font-family:"ClashDisplay","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:#000;}
 	.wacDay{width:35px;height:35px;box-sizing:border-box;border-radius:20px;box-sizing:border-box !important;cursor:pointer;}
-	.wacCalDayOff{background:#fff;box-shadow:inset 0px 0px 0px 2px var(--wac-blu);font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);padding:10px 0px;box-sizing:border-box !important}
-	.wacCalDayOn{background:var(--wac-dblu);font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:center;color:#fff;padding:10px 0px;box-sizing:border-box !important}
+	.wacCalDayOff{background:#fff;box-shadow:inset 0px 0px 0px 2px var(--wac-blu);font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);padding:10px 0px;box-sizing:border-box !important}
+	.wacCalDayOn{background:var(--wac-dblu);font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:center;color:#fff;padding:10px 0px;box-sizing:border-box !important}
 	.wacNoEventDay{background:#D9D9D9;cursor:default !important;width:35px;height:35px;box-sizing:border-box;border-radius:20px;box-sizing:border-box !important;}
 	/*drop down & buttons*/
 	.wacDropDownMenu{width:auto;height:auto;background:var(--wac-lgrey);position: absolute;top:85px;left:-52.5px;padding:0px 0px 12px 0px;border-radius:10px;text-align: left;display:inline-block;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;transition: ease-in-out all .3s;}
 	.wacDropDownBtn{width:calc(100% - 4px);height:25px;background:#fff;margin:2px;padding:2px 5px;border-radius:5px;border:1px solid var(--wac-grey);display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;}
-	.wacDropDownBtn h3{font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#000;margin:0;padding:0;display:inline-block;}	
-	.wacDropDownBtn h4{font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0;display:inline-block;}	
+	.wacDropDownBtn h3{font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#000;margin:0;padding:0;display:inline-block;}	
+	.wacDropDownBtn h4{font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0;display:inline-block;}	
 	.wacDropDownSubHead{width:calc(100% - 4px);height:25px;background:var(--wac-dblu);margin:2px;padding:2px 5px;border-radius:5px;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;}
-	.wacDropDownSubHead h4{font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
+	.wacDropDownSubHead h4{font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
 	.wacDropDownLid{width:100%;padding:10px 15px;height:auto;display:flex;flex-wrap:nowrap;align-items: center;justify-content: space-between;box-sizing:border-box !important;}
-	.wacDropDownLid h3{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:left;color:var(--wac-char);margin:0;padding:0;display:inline-block;}
-	.wacClearMenuBtn{display:inline-block;font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:12px;font-weight:bold;text-align:left;color:var(--wac-char);margin:0;padding:0;text-decoration: underline;cursor:pointer;}
+	.wacDropDownLid h3{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:left;color:var(--wac-char);margin:0;padding:0;display:inline-block;}
+	.wacClearMenuBtn{display:inline-block;font-family:"ClashDisplay","Averta",fallback;font-size:12px;line-height:12px;font-weight:bold;text-align:left;color:var(--wac-char);margin:0;padding:0;text-decoration: underline;cursor:pointer;}
 	.wacDropDownOff{display:none !important;opacity:0 !important;}
 	.wacDropDownOn{display:block !important;opacity:1 !important;}
 	
@@ -127,11 +127,11 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 
 	/*sort menu*/
 	#wacSortMenu{width:auto;height:auto;margin:10px;box-sizing: border-box !important;position: relative;z-index:50;}
-	.wacSortBtn{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;text-align:left;color:var(--wac-char);margin:0;padding:5px;text-decoration: underline;cursor:pointer;}
+	.wacSortBtn{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:600;text-align:left;color:var(--wac-char);margin:0;padding:5px;text-decoration: underline;cursor:pointer;}
 	.wacSortDropDown{width:200px;height:auto;background:var(--wac-lgrey);position: absolute;top:25px;right:0px;padding:10px 0px 12px 0px;border-radius:10px;text-align: left;display:none;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;transition: ease-in-out all .3s;}
-	.wacSortDropDown h3{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:left;color:var(--wac-char);margin:0;padding:0px 0px 0px 10px;display:inline-block;}
+	.wacSortDropDown h3{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:left;color:var(--wac-char);margin:0;padding:0px 0px 0px 10px;display:inline-block;}
 	.sortRadioBtn{width:calc(100% - 4px);height:25px;background:#fff;margin:2px;padding:2px 5px;border-radius:5px;border:1px solid var(--wac-grey);display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;}
-	.sortRadioBtn h4{font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0 ;display:inline-block;}
+	.sortRadioBtn h4{font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0 ;display:inline-block;}
 	.wacRadioBtn{width:15px;height:15px;display:inline-block;margin:0px 5px 0px 0px;padding:0px;border-radius:15px;box-sizing:border-box !important;}
 	.wacRadioBtnOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_radio_on_w_img.svg")center right no-repeat,var(--wac-pur);background-size:15px;}
 	.wacRadioBtnOff{background:#fff;box-shadow:inset 0px 0px 0px 2px var(--wac-grey);}
@@ -148,24 +148,24 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacErrorResetBtn{width:145px;height:auto;display:block;padding:16px 5px;margin:26px auto 46px;background:var(--wac-dgrey);color:#fff;font-family:"poppins","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:700;border-radius:4px;box-sizing:border-box !important;cursor:pointer;}
 	/*notice*/
 	.wacNotice{width:94%;max-width:1000px;height:auto;border-radius:10px;padding:20px;margin:20px auto;display:block;background:var(--wac-lgrey);box-sizing: border-box !important;position:relative;}
-	.wacNotice h1{font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:700;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 15px 0px;}
-	.wacNotice p{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 0px 0px;}
+	.wacNotice h1{font-family:"ClashDisplay","Averta",fallback;font-size:20px;line-height:20px;font-weight:700;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 15px 0px;}
+	.wacNotice p{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 0px 0px;}
 	.wacCloseNoticeBtn{width:30px;height:30px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-pur);background-size:10px 10px;border-radius:20px;position:absolute;right:5px;top:5px;cursor:pointer;}
 	/*event counter*/
 	#wacSubHeader{display:flex;justify-content: space-between;}
 	#wacCounter{width:auto;display:inline-block;background:#fff;border-radius:5px;padding:0px;margin:10px 0px 10px 10px;box-shadow:inset 0px 0px 0px 1px var(--wac-grey);box-sizing: border-box !important;}
-	#wacEventCount{font-family:"Averta",fallback;font-size:12px;line-height:12px;font-weight:bold;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
-	#wacEventCountTotal{font-family:"Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+	#wacEventCount{font-family:"ClashDisplay","Averta",fallback;font-size:12px;line-height:12px;font-weight:600;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+	#wacEventCountTotal{font-family:"ClashDisplay","Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
 	.waCounterWrap{width:60px;height:24px;background:var(--wac-pur);border-radius:5px 0px 0px 5px;padding:4px 0px;display:inline-block;color:#fff !important;box-sizing: border-box !important;}
 	.waCounterWrap p{color:#fff !important;padding:0px 1px!important;margin:0px !important;}
-	#wacCounter p{display:inline-block;font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 10px 0px 0px;}
+	#wacCounter p{display:inline-block;font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 10px 0px 0px;}
 
 	/*event card*/
 	.wacEventCard{width:300px;height:auto;background:#fff;padding:0px 0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:10px;user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;justify-content: space-between;box-sizing: border-box !important;overflow:visible;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;}
 	.wacCardWrap{width:100%;height:auto;display: block;}
 	.wacCardTopWrap{width:100%;height:auto;margin:0px 0px 0px 0px;background:var(--wac-dgrey);border-radius:10px 10px 0px 0px;display: flex;flex-wrap: nowrap;justify-content:space-between;;}
 	/*ticket pass icons*/
-	.wacTicketType{width:auto;height:40px;font-family:"Noto Sans","Averta",fallback;font-size:13px;line-height:13px;font-weight:800;text-align:left;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px 0px 40px;border-radius:10px 0px 0px 0px;display:flex;align-items:center;box-sizing:border-box !important;}
+	.wacTicketType{width:auto;height:40px;font-family:"ClashDisplay","Averta",fallback;font-size:13px;line-height:13px;font-weight:800;text-align:left;color:#fff;text-transform:uppercase;margin:0;padding:1px 0px 0px 40px;border-radius:10px 0px 0px 0px;display:flex;align-items:center;box-sizing:border-box !important;}
 	.wacPackageTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
 	.wacSingleMatchTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_single_w_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
 	.wacPremiumPassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_premPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
@@ -176,7 +176,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacStadiumPassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_stadPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
 	.wacPlayOffPassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_playoffPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
 	/*state icons*/
-	.wacCardState{height:40px;min-width:100px;width:auto;font-family:"Noto Sans","Averta",fallback;font-size:13px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:13px 10px 13px 43px;border-radius:0px 10px 0px 0px;display:inline-block;box-sizing:border-box !important;}
+	.wacCardState{height:40px;min-width:100px;width:auto;font-family:"ClashDisplay","Averta",fallback;font-size:13px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:14px 10px 13px 43px;border-radius:0px 10px 0px 0px;display:inline-block;box-sizing:border-box !important;}
 	.wacCardStatePER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-orn);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg") no-repeat,var(--wac-pnk);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateGCC{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg") no-repeat,var(--wac-gcc);background-size:24px;background-position:left 10px top 8px;}
@@ -187,28 +187,28 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 
 	.wacCardHero{width:300px;height:150px;overflow:hidden;margin:0 auto;padding:0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_hero_fallback_img.svg') center center,var(--wac-lgrey);z-index:49;position:relative;box-sizing: border-box !important;}
 	.wacCardHero img{width:100%;height:auto;position:relative;z-index:50}
-	.wacCardType{width:100%;height:auto;min-height:60px;font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:center;color:var(--wac-char);text-transform:uppercase;margin:0;padding:5px 10px;display: flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
+	.wacCardType{width:100%;height:auto;min-height:60px;font-family:"ClashDisplay","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:center;color:var(--wac-char);text-transform:uppercase;margin:0;padding:5px 10px;display: flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
 	.wacCardTeams{width:100%;height:auto;margin:0px auto;bottom:5px;left:4px;right:4px;position:absolute;z-index:51}
 	.wacCardTeamWrap{width:290px;height:auto;display: none/*flex*/;flex-wrap: wrap;align-content: center;align-items: center;justify-content: space-between;padding:0px;margin:0px ;border-radius:0px;background:transparent;box-sizing:border-box !important;}
-	.wacCardTeamWrap h2{font-family:"Noto Sans","Averta",fallback;font-size:18px;line-height:18px;font-weight:900;text-align:center;color:var(--wac-char);text-transform:uppercase;margin:5px 5px 0px 5px;padding:0px 0px;transform: translateY(-3px);display:inline-block;}
-	.wacCardTeamWrap p{width:22px;height:22px;border-radius:20px;font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:12px;font-weight:700;text-align:center;color:var(--wac-char);text-transform:uppercase;background:rgba(255, 255, 255, .75);margin:0;padding:5px 0px;box-sizing:border-box !important;}
+	.wacCardTeamWrap h2{font-family:"ClashDisplay","Averta",fallback;font-size:18px;line-height:18px;font-weight:600;text-align:center;color:var(--wac-char);text-transform:uppercase;margin:5px 5px 0px 5px;padding:0px 0px;transform: translateY(-3px);display:inline-block;}
+	.wacCardTeamWrap p{width:22px;height:22px;border-radius:20px;font-family:"ClashDisplay","Averta",fallback;font-size:10px;line-height:12px;font-weight:700;text-align:center;color:var(--wac-char);text-transform:uppercase;background:rgba(255, 255, 255, .75);margin:0;padding:5px 0px;box-sizing:border-box !important;}
 	.wacCardMultiTeamWrap{height:35px;width:95px;padding:5px;background:rgba(255, 255, 255, .85);border-radius:20px;display:flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;box-sizing:border-box !important;}
-	.wacCardMultiTeamWrap p{font-family:"Noto Sans","Averta",fallback;font-size:8px !important;line-height:8px;font-weight:bold;text-align:center;color:var(--wac-char);background:none;text-transform:uppercase;margin:0;padding:8px 0px;}
+	.wacCardMultiTeamWrap p{font-family:"ClashDisplay","Averta",fallback;font-size:8px !important;line-height:8px;font-weight:600;text-align:center;color:var(--wac-char);background:none;text-transform:uppercase;margin:0;padding:8px 0px;}
 	.wacTeamHome, .wacTeamAway{height:35px;width:90px;padding:5px;background:rgba(255, 255, 255, .85);border-radius:20px;display:flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;box-sizing:border-box !important;}
 	.wacMultiTeamHome, .wacMultiTeamAway{height:25px;width:25px;padding:0px;border-radius:20px;display:flex;align-items: center;justify-content: center;flex-wrap: nowrap;box-sizing:border-box !important;}
 	.wacHomeFlag,.wacAwayFlag{width:25px;height:25px;display:inline-block;background:var(--wac-pur);}
 	/*card mid*/
-	.wacCardVenue{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-blu);margin:5px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
+	.wacCardVenue{width:280px;height:30px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:left;color:#fff;background:var(--wac-blu);margin:5px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
 	.wacCardVenueIco{width:30px;height:30px;margin:0px 5px 0px 0px;border-radius:5px 0px 0px 5px;background:var(--wac-blu);display:inline-block;}
 	.wacCardDateIco{width:30px;height:30px;margin:0px 5px 0px 0px;border-radius:5px 0px 0px 5px;background:var(--wac-pur);display:inline-block;}
 	.wacCardVenueIco img,.wacCardDateIco img{width:20px;height:auto;padding:5px;}
 	.wacCardDownArrow{width:10px;height:auto;right:10px;top:11px;position: absolute;transition: ease-in-out .3s all;}
 	.wacCardDownArrow img{width:100%;height:auto;}
 	.wacCardArrowRot{transform: rotate(180deg);}
-	.wacCardDate{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-pur);margin:0px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
-	.wacCardDateMulti{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-pur);margin:0px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:50;}
-	.wacCardVenueMulti{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-blu);margin:5px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:51;}
-	.wacCardDateCount,.wacCardVenueCount{width:20px;height:20px;background:#fff;display:inline-block;font-family:/*"afc num",*/"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:900;text-align:center;margin:0px 5px 0px 0px;padding:3px 0px;border-radius:25px;box-sizing:border-box !important;}
+	.wacCardDate{width:280px;height:30px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:left;color:#fff;background:var(--wac-pur);margin:0px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
+	.wacCardDateMulti{width:280px;height:30px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:left;color:#fff;background:var(--wac-pur);margin:0px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:50;}
+	.wacCardVenueMulti{width:280px;height:30px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:left;color:#fff;background:var(--wac-blu);margin:5px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:51;}
+	.wacCardDateCount,.wacCardVenueCount{width:20px;height:20px;background:#fff;display:inline-block;font-family:/*"afc num",*/"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;text-align:center;margin:0px 5px 0px 0px;padding:3px 0px;border-radius:25px;box-sizing:border-box !important;}
 	.wacCardDateCount{color:var(--wac-pur);}
 	.wacCardVenueCount{color:var(--wac-blu);}	
 	.wacCardDateMultiWrap,.wacCardVenueMultiWrap{width:280px;left:0;top:32px;border-radius:5px;display:none;overflow:hidden;background:#efefef;border:1px solid #fff;box-shadow:rgba(0, 0, 0, .15) 0px 2px 5px 0;position: absolute;box-sizing:border-box !important;}
@@ -217,17 +217,17 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacCardVenueMultiWrap .wacCardVenue:nth-child(even){background:#0eadd0;}
 	.wacundefinedDate,.wacundefinedVenue,.wacundefinedteam, .wacFollowYourTeamInc,.wacPremiumPassInc,.wacFinalsPassInc,.wacStadiumPassInc,.wacPlayOffPassInc{display:none !important;}
 	.wacEventsInc{width:calc(100% - 20px);margin:10px 10px 15px 10px;padding:0px;display: flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
-	.wacEventsInc p{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:400;margin:0px 0px;padding:0px;text-align:center;color:var(--wac-char);display:inline-block;}
+	.wacEventsInc p{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:400;margin:0px 0px;padding:0px;text-align:center;color:var(--wac-char);display:inline-block;}
 
 	/*card bot*/
 	.wacCardBotWrap{width:100%;height:auto;margin:0px 0px 0px 0px;background:var(--wac-lgrey);border-radius:0px 0px 10px 10px;display: block;}
 	.wacCardInfoWrap{width:100%;height:auto;display: flex;flex-wrap: nowrap;align-items: center;justify-content: space-between;}
 	.wacCardPrice{width:49%;height:auto;margin:20px 0px 20px 10px;display:flex;flex-wrap:wrap;align-items: flex-start;justify-content: flex-start;flex-direction: column;flex-grow: 1;box-sizing:border-box !important;}
-	.wacCardPrice p{font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px;display:block;}
+	.wacCardPrice p{font-family:"ClashDisplay","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px;display:block;}
 	.wacCardPrice h1{font-family:"afc num","Averta",fallback;font-size:26px;line-height:26px;font-weight:normal;text-align:center;color:var(--wac-blu);margin:0px 0px 0px 0px;padding:0px 0px;display:block;}
 	.wacPriceDiv{width:0;height:14px; margin:0px 0px;background:none;border-right:2px solid var(--wac-dgrey);flex-grow: 1;}
-	.wacCardInfoBtn{width:49%;height:auto;padding:5px;margin:0px 10px 0px 0px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:900;text-align:center;color:var(--wac-pur);background:none;cursor:pointer;flex-grow: 1;box-sizing:border-box !important;}
-	.wacCardTicketBtn{width:280px;height:40px;padding:12px 0px;margin:0px auto 10px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-pur);border-radius:5px;box-sizing:border-box !important;}
+	.wacCardInfoBtn{width:49%;height:auto;padding:5px;margin:0px 10px 0px 0px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:var(--wac-pur);background:none;cursor:pointer;flex-grow: 1;box-sizing:border-box !important;}
+	.wacCardTicketBtn{width:280px;height:40px;padding:12px 0px;margin:0px auto 10px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-pur);border-radius:5px;box-sizing:border-box !important;}
 	.wacEventCard a{text-decoration: none;}
 	.wacCardMenuOn{}
 	.wacCardMenuOff{}
@@ -237,31 +237,31 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacLightbox{width:100%;height:100%;margin:0px;position:fixed;background:rgba(0,0,0,.4);z-index:201;display:none;top:0;right:0;left:0;justify-content: safe center; align-items: center;flex-direction: column;overflow-y: scroll;}
 	.wacLbContent{width:600px;height:auto;background:#fff;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;border-radius:10px;box-sizing: border-box !important;position:relative;}
 	.wacLbTopWrap{width:calc(100% - 20px);height:36px;display:flex;align-items: center;justify-content: space-between;flex-direction: row;flex-wrap: nowrap;column-gap: 10px;margin:10px auto;box-sizing: border-box !important;}
-	.wacLbEventName{width:calc(100% - 30px);height:36px;background:var(--wac-pur);border-radius:10px;font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:center;color:#fff;display:flex;align-items: center;justify-content: flex-start;flex-direction: row;flex-wrap: nowrap;position: relative;}
+	.wacLbEventName{width:calc(100% - 30px);height:36px;background:var(--wac-pur);border-radius:10px;font-family:"ClashDisplay","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:center;color:#fff;display:flex;align-items: center;justify-content: flex-start;flex-direction: row;flex-wrap: nowrap;position: relative;}
 	.wacTypeIcon{width:36px;height:36px;display:inline-block;margin:0 10px 0px 10px;border-radius:10px 0px 0px 10px;}
-	.wacLbStateIco{min-width:100px;width:auto;height:36px;font-family:"Noto Sans","Averta",fallback;font-size:13px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:11px 10px 11px 43px;border-radius:0px 10px 10px 0px;border-left:10px solid #fff;display:inline-block;box-sizing:border-box !important;position: absolute;top:0;right:-1px;}
+	.wacLbStateIco{min-width:100px;width:auto;height:36px;font-family:"ClashDisplay","Averta",fallback;font-size:13px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:11px 10px 11px 43px;border-radius:0px 10px 10px 0px;border-left:10px solid #fff;display:inline-block;box-sizing:border-box !important;position: absolute;top:0;right:-1px;}
 	.wacLbCloseBtn{width:30px;height:30px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-pur);background-size:10px 10px;border-radius:20px;position:relative;cursor:pointer;display:inline-block;}
 	.wacLbMidWrap{width:calc(100% - 20px);height:auto;display:flex;align-items: flex-start;justify-content: space-around;flex-direction: row;flex-wrap: nowrap;column-gap: 10px;margin:10px auto;box-sizing: border-box !important;}
 	.wacLbBlurb{width:100%;height:auto;display:inline-block;margin:0;border-radius:10px;background:var(--wac-lgrey);box-sizing: border-box !important;}
-	.wacLbBlurb p{font-family:"Noto Sans","Averta",fallback;font-size:15px;line-height:22px;font-weight:normal;text-align:left;color:var(--wac-char);margin:0 0px 0px 0px;padding:20px;display:block;box-sizing: border-box !important;}
+	.wacLbBlurb p{font-family:"ClashDisplay","Averta",fallback;font-size:15px;line-height:22px;font-weight:normal;text-align:left;color:var(--wac-char);margin:0 0px 0px 0px;padding:20px;display:block;box-sizing: border-box !important;}
 	.wacLbBlurb h1{}
 	.wacLbTerms{width:180px;height:auto;display:none;margin:0;box-sizing: border-box !important;}
 	.wacLbKey{width:100%;height:auto;display:flex;flex-wrap: wrap;flex-direction: column;align-content: flex-start;align-items: flex-start;}
-	.wacLbKey h1{font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:left;color:var(--wac-char);margin:0 0px 10px 0px;padding:0px 0px;display:block;}
+	.wacLbKey h1{font-family:"ClashDisplay","Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:left;color:var(--wac-char);margin:0 0px 10px 0px;padding:0px 0px;display:block;}
 	.wacLbStateKey{width:100%;height:22px;margin:0px 0px 5px 0px;padding:0px 0px;display:flex;align-items: center;flex-wrap: nowrap;justify-content: flex-start;overflow:hidden;border-radius:5px;text-align: left;background:var(--wac-lgrey);}
-	.wacLbState{width:70px;height:22px;display:inline-block;margin:0px;padding:3px 0 5px 30px;border-radius:5px 0px 0px 5px;font-family:"Noto Sans","Averta",fallback;font-size:15px;line-height:16px;font-weight:normal;text-align:left;color:#fff;box-sizing: border-box !important;}
+	.wacLbState{width:70px;height:22px;display:inline-block;margin:0px;padding:3px 0 5px 30px;border-radius:5px 0px 0px 5px;font-family:"ClashDisplay","Averta",fallback;font-size:15px;line-height:16px;font-weight:normal;text-align:left;color:#fff;box-sizing: border-box !important;}
 	.wacLbStateGCCKey{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg") no-repeat,var(--wac-gcc);background-size:18px;background-position:left 5px top 2px;}
 	.wacLbStatePERKey{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-orn);background-size:18px;background-position:left 5px top 2px;}
 	.wacLbStateSYDKey{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg") no-repeat,var(--wac-pnk);background-size:18px;background-position:left 5px top 2px;}
-	.wacLbStateKey p{font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:500;text-align:left;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px 0px 14px;display:inline-block;}
+	.wacLbStateKey p{font-family:"ClashDisplay","Averta",fallback;font-size:10px;line-height:10px;font-weight:500;text-align:left;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px 0px 14px;display:inline-block;}
 	.wacLbTsCs{width:calc(100% - 20px);height:auto;display:block;margin:10px auto;border-radius:10px;background:var(--wac-lgrey);box-sizing: border-box !important;}
-	.wacLbTsCs p{font-family:"Noto Sans","Averta",fallback;font-size:11px;line-height:11px;font-weight:normal;text-align:left;color:var(--wac-char);margin:0 0px 0px 0px;padding:20px;display:block;box-sizing: border-box !important;}
+	.wacLbTsCs p{font-family:"ClashDisplay","Averta",fallback;font-size:11px;line-height:11px;font-weight:normal;text-align:left;color:var(--wac-char);margin:0 0px 0px 0px;padding:20px;display:block;box-sizing: border-box !important;}
 	.wacLbTsCs a{text-decoration: none;}
 	.wacLbBotWrap{width:100%;height:auto;margin:0px 0px 0px 0px;padding:20px 10px;background:var(--wac-lgrey);border-radius:0px 0px 10px 10px;display: flex;flex-wrap: nowrap;justify-content: center;align-items: center;box-sizing:border-box !important;}
 	.wacLbPrice{width:100px;height:auto;margin:0px 0px 0px 20px;display:flex;flex-wrap:wrap;align-items: flex-start;justify-content: flex-start;flex-direction: column;flex-grow: 1;box-sizing:border-box !important;}
-	.wacLbPrice p{font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px;display:block;}
+	.wacLbPrice p{font-family:"ClashDisplay","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px;display:block;}
 	.wacLbPrice h1{font-family:"afc num","Averta",fallback;font-size:26px;line-height:26px;font-weight:normal;text-align:center;color:var(--wac-blu);margin:0px 0px 0px 0px;padding:0px 0px;display:block;}
-	.wacLbBtn{width:450px;height:40px;padding:12px 0px;margin:0px auto 0px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-pur);border-radius:5px;box-sizing:border-box !important;}
+	.wacLbBtn{width:450px;height:40px;padding:12px 0px;margin:0px auto 0px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-pur);border-radius:5px;box-sizing:border-box !important;}
 	.wacLbContent a{text-decoration: none;color: var(--wac-dblu);}
 
 	/*lb icons*/
@@ -284,11 +284,11 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacPlayOffPassIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_playoffPass_ico.svg") no-repeat;background-size:30px;background-position:left 3px top 3px;}	
 	/*footer*/
 	#wacSubFooter{width:100%;max-width:1100px;background:var(--wac-lgrey);height:auto;margin:10px auto 10px;padding:1px;border-radius:10px 10px 0px 0px;box-sizing: border-box !important;}
-	#wacSubFooter p{font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:12px;font-weight:400;text-align:center;color:var(--wac-char);margin:10px auto;padding:0px 0px;}
-
+	#wacSubFooter p{font-family:"ClashDisplay","Averta",fallback;font-size:12px;line-height:12px;font-weight:400;text-align:center;color:var(--wac-char);margin:10px auto;padding:0px 0px;}
+	#wacSubFooter h1{font-family:"ClashDisplay","Averta",fallback;font-size:12px;line-height:12px;font-weight:400;text-align:center;color:var(--wac-char);margin:10px auto;padding:0px 0px;}
 	#wacFooter{width:100%;height:auto;margin:0px auto;padding:20px; box-sizing: border-box !important;background: var(--wac-pur);}
 	#wacFooterWrap{width:100%;max-width:1100px;margin:0px auto;}
-	#wacFooterWrap p{font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:14px;font-weight:400;text-align:center;color:#fff;margin:10px auto;padding:0px 0px;}
+	#wacFooterWrap p{font-family:"ClashDisplay","Averta",fallback;font-size:12px;line-height:14px;font-weight:400;text-align:center;color:#fff;margin:10px auto;padding:0px 0px;}
 	#wacFooterWrap a{color:#efefef;}
 }
 	
@@ -306,8 +306,8 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	/*menu*/ /* {font-family:;font-size:;line-height:;font-weight:;text-align:;color:;margin:0px;padding:0px;}*/
 	#wacSearchBar{width:auto/*clamped for body click*/;height:auto;display:none;margin:0px auto;padding:1px 0px 0px 0px;position: relative;z-index:100;background:none;z-index:99;}
 	.wacSelectBtn{width:100%;max-width:300px;height:auto;display:block;overflow:hidden;border-radius:10px;position: relative;margin:10px auto 0px;box-sizing: border-box !important;}
-	.wacSelectBtn h1{font-family:"Noto Sans","Averta",fallback;font-size:24px;line-height:24px;font-weight:900;color:#fff;text-align:center;margin:0px 0px;padding:13px 0px;user-select:none;}
-	.wacSelectBtn h2{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;color:#fff;text-align:center;margin:0px 0px;padding:0px 0px;display:block;user-select:none;}
+	.wacSelectBtn h1{font-family:"ClashDisplay","Averta",fallback;font-size:24px;line-height:24px;font-weight:bold;color:#fff;text-align:center;margin:0px 0px;padding:13px 0px;user-select:none;}
+	.wacSelectBtn h2{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;color:#fff;text-align:center;margin:0px 0px;padding:0px 0px;display:block;user-select:none;}
 	.wacSelectLable{width:100%;height:30px;background:var(--wac-blu);cursor:pointer;text-align: center;display:flex;justify-content: center;align-items: center;border-radius:10px 10px 0px 0px;position: relative;box-sizing: border-box !important;border-top:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;}
 	.wacSelectTitle{width:100%;height:50px;background:var(--wac-pur);cursor:pointer;text-align: center;border-radius:0px;box-sizing: border-box !important;position: relative;border-bottom:1px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;}
 	/*featured events*/
@@ -325,7 +325,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.aoFeatPip{border-radius:20px;display:inline-block;transition: ease-in-out .5s all;box-sizing: border-box !important;}
 	.aoFeatPipOn{width:8px;height:8px;background:#fff;margin:6px 4.5px;}
 	.aoFeatPipOff{width:7px;height:7px;background:/*rgba(255,255,255,.5)*/transparent;border:1px solid #efefef;margin:6.5px 4.5px;}
-	#wacResetAllFeat{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:900;color:#fff;text-align:center;margin:20px 0px;padding:15px 10px;user-select:none;cursor:pointer;text-decoration: underline;text-transform: uppercase;z-index:99;position: relative;}
+	#wacResetAllFeat{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:600;color:#fff;text-align:center;margin:20px 0px;padding:15px 10px;user-select:none;cursor:pointer;text-decoration: underline;text-transform: uppercase;z-index:99;position: relative;}
 
 	.wacMenuVertDivDark{width:2px;height:20px;background:var(--wac-pur);right:2px;top:5px;position: absolute;}
 	.wacMenuVertDivLight{width:2px;height:30px;background:#fff;right:2px;top:10px;position: absolute;}
@@ -341,23 +341,23 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	/*calendar*/
 	#wacCalendarMenu{width:100%;height:auto;padding:5px 5px 10px 5px;border-radius:0px 0px 10px 10px;display:none;background:var(--wac-lgrey);position:relative;box-sizing:border-box !important;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;user-select:none;}
 	#wacCalHeader{width:100%;height:auto;padding:5px;border-radius:5px;background:#fff;border:1px solid var(--wac-grey);display:flex;flex-wrap: nowrap;justify-content: space-between;align-content: center;align-items: center;box-sizing:border-box !important;}
-	#wacCalHeader h3{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;text-align:left;color:#000;margin:0px;padding:0px;}
+	#wacCalHeader h3{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;text-align:left;color:#000;margin:0px;padding:0px;}
 	.wacCalWrap{width:100%;height:auto;margin:5px 0px;display:flex;flex-wrap:nowrap;justify-content: space-between;align-items: center;}
-	.wacCalDay{width:35px;height:auto;font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:#000;}
+	.wacCalDay{width:35px;height:auto;font-family:"ClashDisplay","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:#000;}
 	.wacDay{width:35px;height:35px;box-sizing:border-box;border-radius:20px;box-sizing:border-box !important;cursor:pointer;}
-	.wacCalDayOff{background:#fff;box-shadow:inset 0px 0px 0px 2px var(--wac-blu);font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);padding:10px 0px;box-sizing:border-box !important}
-	.wacCalDayOn{background:var(--wac-pur);font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:center;color:#fff;padding:10px 0px;box-sizing:border-box !important}
+	.wacCalDayOff{background:#fff;box-shadow:inset 0px 0px 0px 2px var(--wac-blu);font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);padding:10px 0px;box-sizing:border-box !important}
+	.wacCalDayOn{background:var(--wac-pur);font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:center;color:#fff;padding:10px 0px;box-sizing:border-box !important}
 	.wacNoEventDay{background:#D9D9D9;cursor:default !important;width:35px;height:35px;box-sizing:border-box;border-radius:20px;box-sizing:border-box !important;}
 	/*drop down & buttons*/
 	.wacDropDownMenu{width:100%;height:auto;background:var(--wac-lgrey);position: relative;border-radius:0px;text-align: left;display:inline-block;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;padding:0px 0px 15px 0px;}
 	.wacDropDownBtn{width:calc(100% - 4px);height:25px;background:#fff;margin:2px;padding:2px 5px;border-radius:5px;border:1px solid var(--wac-grey);display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;}
-	.wacDropDownBtn h3{font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#000;margin:0;padding:0;display:inline-block;}	
-	.wacDropDownBtn h4{font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0;display:inline-block;}	
+	.wacDropDownBtn h3{font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#000;margin:0;padding:0;display:inline-block;}	
+	.wacDropDownBtn h4{font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0;display:inline-block;}	
 	.wacDropDownSubHead{width:calc(100% - 4px);height:25px;background:var(--wac-pur);margin:2px;padding:2px 5px;border-radius:5px;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;}
-	.wacDropDownSubHead h4{font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
+	.wacDropDownSubHead h4{font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
 	.wacDropDownLid{width:100%;padding:10px 15px;height:auto;display:flex;flex-wrap:nowrap;align-items: center;justify-content: space-between;box-sizing:border-box !important;}
-	.wacDropDownLid h3{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:left;color:var(--wac-char);margin:0;padding:0;display:inline-block;}
-	.wacClearMenuBtn{display:inline-block;font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:12px;font-weight:bold;text-align:left;color:var(--wac-char);margin:0;padding:0;text-decoration: underline;cursor:pointer;}
+	.wacDropDownLid h3{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:left;color:var(--wac-char);margin:0;padding:0;display:inline-block;}
+	.wacClearMenuBtn{display:inline-block;font-family:"ClashDisplay","Averta",fallback;font-size:12px;line-height:12px;font-weight:bold;text-align:left;color:var(--wac-char);margin:0;padding:0;text-decoration: underline;cursor:pointer;}
 
 	.wacVenueMapIco{width:20px;height:auto;display:inline-block; margin:0px 5px 0px 0px;}
 	.wacVenueMapIco img{width:100%;height:auto;}	
@@ -379,11 +379,11 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	#wacEventStream{margin:0px auto;padding:16px 0px;position:relative;display:flex;flex-wrap: wrap;flex-direction: row;align-content: flex-start;justify-content: space-around;column-gap: 24px;row-gap: 24px;}
 /*sort menu*/
 	#wacSortMenu{width:auto;height:auto;margin:10px;box-sizing: border-box !important;position: relative;z-index:50;}
-	.wacSortBtn{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;text-align:left;color:var(--wac-char);margin:0;padding:5px;text-decoration: underline;cursor:pointer;}
+	.wacSortBtn{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;text-align:left;color:var(--wac-char);margin:0;padding:5px;text-decoration: underline;cursor:pointer;}
 	.wacSortDropDown{width:200px;height:auto;background:var(--wac-lgrey);position: absolute;top:25px;right:0px;padding:10px 0px 12px 0px;border-radius:10px;text-align: left;display:none;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;transition: ease-in-out all .3s;}
-	.wacSortDropDown h3{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:left;color:var(--wac-char);margin:0;padding:0px 0px 0px 10px;display:inline-block;}
+	.wacSortDropDown h3{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:left;color:var(--wac-char);margin:0;padding:0px 0px 0px 10px;display:inline-block;}
 	.sortRadioBtn{width:calc(100% - 4px);height:25px;background:#fff;margin:2px;padding:2px 5px;border-radius:5px;border:1px solid var(--wac-grey);display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;}
-	.sortRadioBtn h4{font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0 ;display:inline-block;}
+	.sortRadioBtn h4{font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0 ;display:inline-block;}
 	.wacRadioBtn{width:15px;height:15px;display:inline-block;margin:0px 5px 0px 0px;padding:0px;border-radius:15px;box-sizing:border-box !important;}
 	.wacRadioBtnOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_radio_on_w_img.svg")center right no-repeat,var(--wac-pur);background-size:15px;}
 	.wacRadioBtnOff{background:#fff;box-shadow:inset 0px 0px 0px 2px var(--wac-grey);}
@@ -396,24 +396,24 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacErrorResetBtn{width:145px;height:auto;display:block;padding:16px 5px;margin:20px auto 0px;background:var(--wac-dgrey);color:#fff;font-family:"poppins","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:700;border-radius:4px;box-sizing:border-box !important;cursor:pointer;}
 	/*notice*/
 	.wacNotice{width:94%;max-width:1100px;height:auto;border-radius:10px;padding:20px;margin:20px auto;display:block;background:var(--wac-lgrey);box-sizing: border-box !important;position:relative;}
-	.wacNotice h1{font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:700;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 10px 0px;}
-	.wacNotice p{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 0px 0px;}
+	.wacNotice h1{font-family:"ClashDisplay","Averta",fallback;font-size:20px;line-height:20px;font-weight:700;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 10px 0px;}
+	.wacNotice p{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 0px 0px;}
 	.wacCloseNoticeBtn{width:20px;height:20px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-pur);background-size:9px 9px;border-radius:20px;position:absolute;right:5px;top:5px;cursor:pointer;}
 	/*event counter*/
 	#wacSubHeader{display:flex;justify-content: space-between;}
 	#wacCounter{width:auto;display:inline-block;background:#fff;border-radius:5px;padding:0px;margin:10px 0px 10px 10px;box-shadow:inset 0px 0px 0px 1px var(--wac-grey);box-sizing: border-box !important;}
-	#wacEventCount{font-family:"Averta",fallback;font-size:12px;line-height:12px;font-weight:bold;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
-	#wacEventCountTotal{font-family:"Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+	#wacEventCount{font-family:"ClashDisplay","Averta",fallback;font-size:12px;line-height:12px;font-weight:600;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+	#wacEventCountTotal{font-family:"ClashDisplay","Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
 	.waCounterWrap{width:60px;height:24px;background:var(--wac-pur);border-radius:5px 0px 0px 5px;padding:4px 0px;display:inline-block;color:#fff !important;box-sizing: border-box !important;}
 	.waCounterWrap p{color:#fff !important;padding:0px 1px!important;margin:0px !important;}
-	#wacCounter p{display:inline-block;font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 10px 0px 0px;}
+	#wacCounter p{display:inline-block;font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 10px 0px 0px;}
 
 	/*event card*/
 	.wacEventCard{width:300px;height:auto;background:#fff;padding:0px 0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:10px;user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;justify-content: space-between;box-sizing: border-box !important;overflow:visible;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;}
 	.wacCardWrap{width:100%;height:auto;display: block;}
 	.wacCardTopWrap{width:100%;height:auto;margin:0px 0px 0px 0px;background:var(--wac-dgrey);border-radius:10px 10px 0px 0px;display: flex;flex-wrap: nowrap;justify-content:space-between;;}
 	/*ticket pass icons*/
-	.wacTicketType{width:auto;height:40px;font-family:"Noto Sans","Averta",fallback;font-size:13px;line-height:13px;font-weight:800;text-align:left;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px 0px 40px;border-radius:10px 0px 0px 0px;display:flex;align-items:center;box-sizing:border-box !important;}
+	.wacTicketType{width:auto;height:40px;font-family:"ClashDisplay","Averta",fallback;font-size:13px;line-height:13px;font-weight:800;text-align:left;color:#fff;text-transform:uppercase;margin:0;padding:1px 0px 0px 40px;border-radius:10px 0px 0px 0px;display:flex;align-items:center;box-sizing:border-box !important;}
 	.wacPackageTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
 	.wacSingleMatchTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_single_w_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
 	.wacPremiumPassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_premPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
@@ -424,7 +424,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacStadiumPassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_stadPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
 	.wacPlayOffPassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_playoffPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
 	/*state icons*/
-	.wacCardState{height:40px;min-width:100px;width:auto;font-family:"Noto Sans","Averta",fallback;font-size:13px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:13px 10px 13px 43px;border-radius:0px 10px 0px 0px;display:inline-block;box-sizing:border-box !important;}
+	.wacCardState{height:40px;min-width:100px;width:auto;font-family:"ClashDisplay","Averta",fallback;font-size:13px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:14px 10px 13px 43px;border-radius:0px 10px 0px 0px;display:inline-block;box-sizing:border-box !important;}
 	.wacCardStatePER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-orn);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg") no-repeat,var(--wac-pnk);background-size:24px;background-position:left 10px top 8px;}
 	.wacCardStateGCC{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg") no-repeat,var(--wac-gcc);background-size:24px;background-position:left 10px top 8px;}
@@ -435,28 +435,28 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 
 	.wacCardHero{width:300px;height:150px;overflow:hidden;margin:0 auto;padding:0px;background:var(--wac-lgrey);z-index:49;position:relative;box-sizing: border-box !important;}
 	.wacCardHero img{width:100%;height:auto;position:relative;z-index:50}
-	.wacCardType{width:100%;height:auto;min-height:60px;font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:center;color:var(--wac-char);text-transform:uppercase;margin:0;padding:5px 10px;display: flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
+	.wacCardType{width:100%;height:auto;min-height:60px;font-family:"ClashDisplay","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:center;color:var(--wac-char);text-transform:uppercase;margin:0;padding:5px 10px;display: flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
 	.wacCardTeams{width:100%;height:auto;margin:0px auto;bottom:5px;left:4px;right:4px;position:absolute;z-index:51;display:none;}
 	.wacCardTeamWrap{width:290px;height:auto;display:none;flex-wrap: wrap;align-content: center;align-items: center;justify-content: space-between;padding:0px;margin:0px ;border-radius:0px;background:transparent;box-sizing:border-box !important;}
-	.wacCardTeamWrap h2{font-family:"Noto Sans","Averta",fallback;font-size:18px;line-height:18px;font-weight:900;text-align:center;color:var(--wac-char);text-transform:uppercase;margin:5px 5px 0px 5px;padding:0px 0px;transform: translateY(-3px);display:inline-block;}
-	.wacCardTeamWrap p{width:22px;height:22px;border-radius:20px;font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:12px;font-weight:700;text-align:center;color:var(--wac-char);text-transform:uppercase;background:rgba(255, 255, 255, .75);margin:0;padding:5px 0px;box-sizing:border-box !important;}
+	.wacCardTeamWrap h2{font-family:"ClashDisplay","Averta",fallback;font-size:18px;line-height:18px;font-weight:600;text-align:center;color:var(--wac-char);text-transform:uppercase;margin:5px 5px 0px 5px;padding:0px 0px;transform: translateY(-3px);display:inline-block;}
+	.wacCardTeamWrap p{width:22px;height:22px;border-radius:20px;font-family:"ClashDisplay","Averta",fallback;font-size:10px;line-height:12px;font-weight:700;text-align:center;color:var(--wac-char);text-transform:uppercase;background:rgba(255, 255, 255, .75);margin:0;padding:5px 0px;box-sizing:border-box !important;}
 	.wacCardMultiTeamWrap{height:35px;width:95px;padding:5px;background:rgba(255, 255, 255, .85);border-radius:20px;display:flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;box-sizing:border-box !important;}
-	.wacCardMultiTeamWrap p{font-family:"Noto Sans","Averta",fallback;font-size:8px !important;line-height:8px;font-weight:bold;text-align:center;color:var(--wac-char);background:none;text-transform:uppercase;margin:0;padding:8px 0px;}
+	.wacCardMultiTeamWrap p{font-family:"ClashDisplay","Averta",fallback;font-size:8px !important;line-height:8px;font-weight:600;text-align:center;color:var(--wac-char);background:none;text-transform:uppercase;margin:0;padding:8px 0px;}
 	.wacTeamHome, .wacTeamAway{height:35px;width:90px;padding:5px;background:rgba(255, 255, 255, .85);border-radius:20px;display:flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;box-sizing:border-box !important;}
 	.wacMultiTeamHome, .wacMultiTeamAway{height:25px;width:25px;padding:0px;border-radius:20px;display:flex;align-items: center;justify-content: center;flex-wrap: nowrap;box-sizing:border-box !important;}
 	.wacHomeFlag,.wacAwayFlag{width:25px;height:25px;display:inline-block;background:var(--wac-pur);}
 	/*card mid*/
-	.wacCardVenue{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-blu);margin:5px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
+	.wacCardVenue{width:280px;height:30px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:left;color:#fff;background:var(--wac-blu);margin:5px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
 	.wacCardVenueIco{width:30px;height:30px;margin:0px 5px 0px 0px;border-radius:5px 0px 0px 5px;background:var(--wac-blu);display:inline-block;}
 	.wacCardDateIco{width:30px;height:30px;margin:0px 5px 0px 0px;border-radius:5px 0px 0px 5px;background:var(--wac-pur);display:inline-block;}
 	.wacCardVenueIco img,.wacCardDateIco img{width:20px;height:auto;padding:5px;}
 	.wacCardDownArrow{width:10px;height:auto;right:10px;top:11px;position: absolute;transition: ease-in-out .3s all;}
 	.wacCardDownArrow img{width:100%;height:auto;}
 	.wacCardArrowRot{transform: rotate(180deg);}
-	.wacCardDate{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-pur);margin:0px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
-	.wacCardDateMulti{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-pur);margin:0px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:50;}
-	.wacCardVenueMulti{width:280px;height:30px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#fff;background:var(--wac-blu);margin:5px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:51;}
-	.wacCardDateCount,.wacCardVenueCount{width:20px;height:20px;background:#fff;display:inline-block;font-family:/*"afc num",*/"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:900;text-align:center;margin:0px 5px 0px 0px;padding:3px 0px;border-radius:25px;box-sizing:border-box !important;}
+	.wacCardDate{width:280px;height:30px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:left;color:#fff;background:var(--wac-pur);margin:0px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;}
+	.wacCardDateMulti{width:280px;height:30px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:left;color:#fff;background:var(--wac-pur);margin:0px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:50;}
+	.wacCardVenueMulti{width:280px;height:30px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:left;color:#fff;background:var(--wac-blu);margin:5px auto 5px auto;padding:0px 0px;/*border:1px solid var(--wac-grey)*/;border-radius:5px;display:flex;justify-content: flex-start;align-items: center;box-sizing:border-box !important;position: relative;cursor:pointer;z-index:51;}
+	.wacCardDateCount,.wacCardVenueCount{width:20px;height:20px;background:#fff;display:inline-block;font-family:/*"afc num",*/"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;text-align:center;margin:0px 5px 0px 0px;padding:3px 0px;border-radius:25px;box-sizing:border-box !important;}
 	.wacCardDateCount{color:var(--wac-pur);}
 	.wacCardVenueCount{color:var(--wac-blu);}	
 	.wacCardDateMultiWrap,.wacCardVenueMultiWrap{width:280px;left:-1px;top:32px;border-radius:5px;display:none;overflow:hidden;background:#efefef;border:1px solid #fff;box-shadow:rgba(0, 0, 0, .15) 0px 2px 5px 0;position: absolute;box-sizing:border-box !important;}
@@ -465,17 +465,17 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacCardVenueMultiWrap .wacCardVenue:nth-child(even){background:#0eadd0;}
 	.wacundefinedDate,.wacundefinedVenue,.wacundefinedteam, .wacFollowYourTeamInc,.wacPremiumPassInc,.wacFinalsPassInc,.wacStadiumPassInc,.wacPlayOffPassInc{display:none !important;}
 	.wacEventsInc{width:calc(100% - 20px);margin:10px 10px 15px 10px;padding:0px;display: flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
-	.wacEventsInc p{font-family:"Noto Sans","Averta",fallback;font-size:14px;line-height:14px;font-weight:400;margin:0px 0px;padding:0px;text-align:center;color:var(--wac-char);display:inline-block;}
+	.wacEventsInc p{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:400;margin:0px 0px;padding:0px;text-align:center;color:var(--wac-char);display:inline-block;}
 
 	/*card bot*/
 	.wacCardBotWrap{width:100%;height:auto;margin:0px 0px 0px 0px;background:var(--wac-lgrey);border-radius:0px 0px 10px 10px;display: block;}
 	.wacCardInfoWrap{width:100%;height:auto;display: flex;flex-wrap: nowrap;align-items: center;justify-content: space-between;}
 	.wacCardPrice{width:49%;height:auto;margin:20px 0px 20px 10px;display:flex;flex-wrap:wrap;align-items: flex-start;justify-content: flex-start;flex-direction: column;flex-grow: 1;box-sizing:border-box !important;}
-	.wacCardPrice p{font-family:"Noto Sans","Averta",fallback;font-size:11px;line-height:11px;font-weight:bold;text-align:center;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px;display:block;}
+	.wacCardPrice p{font-family:"ClashDisplay","Averta",fallback;font-size:11px;line-height:11px;font-weight:bold;text-align:center;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px;display:block;}
 	.wacCardPrice h1{font-family:"afc num","Averta",fallback;font-size:26px;line-height:26px;font-weight:normal;text-align:center;color:var(--wac-blu);margin:0px 0px 0px 0px;padding:0px 0px;display:block;}
 	.wacPriceDiv{width:0;height:14px; margin:0px 0px;background:none;border-right:2px solid var(--wac-dgrey);flex-grow: 1;}
-	.wacCardInfoBtn{width:49%;height:auto;padding:5px;margin:0px 10px 0px 0px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:900;text-align:center;color:var(--wac-pur);background:none;cursor:pointer;flex-grow: 1;box-sizing:border-box !important;}
-	.wacCardTicketBtn{width:280px;height:40px;padding:12px 0px;margin:0px auto 10px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-pur);border-radius:5px;box-sizing:border-box !important;}
+	.wacCardInfoBtn{width:49%;height:auto;padding:5px;margin:0px 10px 0px 0px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:var(--wac-pur);background:none;cursor:pointer;flex-grow: 1;box-sizing:border-box !important;}
+	.wacCardTicketBtn{width:280px;height:40px;padding:12px 0px;margin:0px auto 10px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-pur);border-radius:5px;box-sizing:border-box !important;}
 	.wacEventCard a{text-decoration: none;}
 	.wacCardMenuOn{}
 	.wacCardMenuOff{}
@@ -485,31 +485,31 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacLightbox{width:100%;height:100%;margin:0px;position:fixed;background:rgba(0,0,0,.4);z-index:201;display:none;top:0;right:0;left:0;justify-content: safe center; align-items: center;flex-direction: column;overflow-y: scroll;}
 	.wacLbContent{max-width:600px;width:96%;height:auto;background:#fff;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;border-radius:10px;box-sizing: border-box !important;position:relative;}
 	.wacLbTopWrap{width:calc(100% - 20px);height:55px;display:flex;align-items: center;justify-content: space-between;flex-direction: row;flex-wrap: nowrap;column-gap: 10px;margin:10px auto;box-sizing: border-box !important;}
-	.wacLbEventName{max-width:400px;height:55px;background:var(--wac-pur);border-radius:10px;font-family:"Noto Sans","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:left;color:#fff;display:flex;align-items: center;justify-content: flex-start;flex-direction: row;flex-wrap: nowrap;}
+	.wacLbEventName{max-width:400px;height:55px;background:var(--wac-pur);border-radius:10px;font-family:"ClashDisplay","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:left;color:#fff;display:flex;align-items: center;justify-content: flex-start;flex-direction: row;flex-wrap: nowrap;}
 	.wacTypeIcon{width:36px;height:36px;display:inline-block;margin:0 10px 0px 10px;border-radius:0px 0px 0px 0px;}
-	.wacLbStateIco{min-width:100px;width:auto;height:55px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0px 0px 0px 10px;padding:0px 10px 0px 43px;border-radius:0px 10px 10px 0px;border-left:5px solid #fff;display:flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
+	.wacLbStateIco{min-width:100px;width:auto;height:55px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0px 0px 0px 10px;padding:0px 10px 0px 43px;border-radius:0px 10px 10px 0px;border-left:5px solid #fff;display:flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
 	.wacLbCloseBtn{width:30px;height:30px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-pur);background-size:10px 10px;border-radius:20px;position:relative;cursor:pointer;display:inline-block;}
 	.wacLbMidWrap{width:calc(100% - 20px);height:auto;display:flex;align-items: flex-start;justify-content: space-around;flex-direction: row;flex-wrap: nowrap;column-gap: 10px;margin:10px auto;box-sizing: border-box !important;}
 	.wacLbBlurb{width:100%;height:auto;display:inline-block;margin:0;border-radius:10px;background:var(--wac-lgrey);box-sizing: border-box !important;}
-	.wacLbBlurb p{font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:18px;font-weight:normal;text-align:left;color:var(--wac-char);margin:0 0px 0px 0px;padding:20px;display:block;box-sizing: border-box !important;}
+	.wacLbBlurb p{font-family:"ClashDisplay","Averta",fallback;font-size:12px;line-height:18px;font-weight:normal;text-align:left;color:var(--wac-char);margin:0 0px 0px 0px;padding:20px;display:block;box-sizing: border-box !important;}
 	.wacLbBlurb h1{}
 	.wacLbTerms{width:180px;height:auto;display:none;margin:0;box-sizing: border-box !important;}
 	.wacLbKey{width:100%;height:auto;display:flex;flex-wrap: wrap;flex-direction: column;align-content: flex-start;align-items: flex-start;}
-	.wacLbKey h1{font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:left;color:var(--wac-char);margin:0 0px 10px 0px;padding:0px 0px;display:block;}
+	.wacLbKey h1{font-family:"ClashDisplay","Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:left;color:var(--wac-char);margin:0 0px 10px 0px;padding:0px 0px;display:block;}
 	.wacLbStateKey{width:100%;height:22px;margin:0px 0px 5px 0px;padding:0px 0px;display:flex;align-items: center;flex-wrap: nowrap;justify-content: flex-start;overflow:hidden;border-radius:5px;text-align: left;background:var(--wac-lgrey);}
-	.wacLbState{width:70px;height:22px;display:inline-block;margin:0px;padding:3px 0 5px 30px;border-radius:5px 0px 0px 5px;font-family:"Noto Sans","Averta",fallback;font-size:15px;line-height:16px;font-weight:normal;text-align:left;color:#fff;box-sizing: border-box !important;}
+	.wacLbState{width:70px;height:22px;display:inline-block;margin:0px;padding:3px 0 5px 30px;border-radius:5px 0px 0px 5px;font-family:"ClashDisplay","Averta",fallback;font-size:15px;line-height:16px;font-weight:normal;text-align:left;color:#fff;box-sizing: border-box !important;}
 	.wacLbStateGCCKey{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_w_ico.svg") no-repeat,var(--wac-gcc);background-size:18px;background-position:left 5px top 2px;}
 	.wacLbStatePERKey{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-orn);background-size:18px;background-position:left 5px top 2px;}
 	.wacLbStateSYDKey{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg") no-repeat,var(--wac-pnk);background-size:18px;background-position:left 5px top 2px;}
-	.wacLbStateKey p{font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:500;text-align:left;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px 0px 14px;display:inline-block;}
+	.wacLbStateKey p{font-family:"ClashDisplay","Averta",fallback;font-size:10px;line-height:10px;font-weight:500;text-align:left;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px 0px 14px;display:inline-block;}
 	.wacLbTsCs{width:calc(100% - 20px);height:auto;display:block;margin:10px auto;border-radius:10px;background:var(--wac-lgrey);box-sizing: border-box !important;}
-	.wacLbTsCs p{font-family:"Noto Sans","Averta",fallback;font-size:11px;line-height:11px;font-weight:normal;text-align:center;color:var(--wac-char);margin:0 0px 0px 0px;padding:10px;display:block;box-sizing: border-box !important;}
+	.wacLbTsCs p{font-family:"ClashDisplay","Averta",fallback;font-size:11px;line-height:11px;font-weight:normal;text-align:center;color:var(--wac-char);margin:0 0px 0px 0px;padding:10px;display:block;box-sizing: border-box !important;}
 	.wacLbTsCs a{text-decoration: none;}
 	.wacLbBotWrap{width:100%;height:auto;margin:0px 0px 0px 0px;padding:20px 10px;background:var(--wac-lgrey);border-radius:0px 0px 10px 10px;display: flex;flex-wrap: nowrap;justify-content: center;align-items: center;box-sizing:border-box !important;}
 	.wacLbPrice{width:100px;height:auto;margin:0px 0px 0px 20px;display:flex;flex-wrap:wrap;align-items: flex-start;justify-content: flex-start;flex-direction: column;flex-grow: 1;box-sizing:border-box !important;}
-	.wacLbPrice p{font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px;display:block;}
+	.wacLbPrice p{font-family:"ClashDisplay","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px;display:block;}
 	.wacLbPrice h1{font-family:"afc num","Averta",fallback;font-size:26px;line-height:26px;font-weight:normal;text-align:center;color:var(--wac-blu);margin:0px 0px 0px 0px;padding:0px 0px;display:block;}
-	.wacLbBtn{width:100%;height:40px;padding:12px 0px;margin:0px auto 0px;font-family:"Noto Sans","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-pur);border-radius:5px;box-sizing:border-box !important;}
+	.wacLbBtn{width:100%;height:40px;padding:12px 0px;margin:0px auto 0px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-pur);border-radius:5px;box-sizing:border-box !important;}
 	.wacLbContent a{text-decoration: none;color: var(--wac-dblu);}
 	.wacLbBotWrap a{width:calc(100% - 140px)}
 
@@ -534,11 +534,11 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 
 	/*footer*/
 	#wacSubFooter{width:100%;max-width:1100px;background:var(--wac-lgrey);height:auto;margin:20px auto 0px;padding:10px;border-radius:10px 10px 0px 0px;box-sizing: border-box !important;}
-	#wacSubFooter p{font-family:"Noto Sans","Averta",fallback;font-size:10px;line-height:10px;font-weight:400;text-align:center;color:var(--wac-char);margin:10px auto;padding:0px 0px;}
+	#wacSubFooter p{font-family:"ClashDisplay","Averta",fallback;font-size:10px;line-height:10px;font-weight:400;text-align:center;color:var(--wac-char);margin:10px auto;padding:0px 0px;}
 
 	#wacFooter{width:100%;height:auto;margin:0px auto;padding:20px; box-sizing: border-box !important;background: var(--wac-pur);}
 	#wacFooterWrap{width:100%;max-width:1100px;margin:0px auto;}
-	#wacFooterWrap p{font-family:"Noto Sans","Averta",fallback;font-size:12px;line-height:14px;font-weight:400;text-align:center;color:#fff;margin:10px auto;padding:0px 0px;}
+	#wacFooterWrap p{font-family:"ClashDisplay","Averta",fallback;font-size:12px;line-height:14px;font-weight:400;text-align:center;color:#fff;margin:10px auto;padding:0px 0px;}
 	#wacFooterWrap a{color:#efefef;}
 }
 @media only screen and (min-width: 0px) and (max-width: 449.99px){	
