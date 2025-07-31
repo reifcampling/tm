@@ -2,7 +2,7 @@
 page_title = "Men's Rugby World Cup 2027 | Ticketmaster Australia, Official Tickets" %]
 [% static_has_responsive_header_footer = 1; enable_leader_board = 0; %]
 [% PROCESS "layout/frame/top.tt" %]
-<!--cut for on sale----->
+<!--cut for on sale--->
  <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />
 <!--libs--->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -42,11 +42,13 @@ page_title = "Men's Rugby World Cup 2027 | Ticketmaster Australia, Official Tick
 	.rwcTicketIcon img{width:36.66px;height:36.66px;}
 	.rwcTicketInfo{width:calc(100% - 215px);/*max-width:615px*/;height:auto;margin:0;padding:0;}
 	.rwcTicketInfo h2{font-family:"RWC","Averta", sans-serif, fallback;font-size:18px;font-weight:bold;color:#000;margin:0;padding:0;}
+	.rwcTicketInfo h2 br{display:none;}
 	.rwcTicketBot{width:auto;height:auto;/*min-height:118px*/;display:flex;flex-wrap: nowrap;flex-direction: column;justify-content: flex-end;align-items: flex-end;justify-self: flex-end;}
 	.rwcTicketPrice{background:url('https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_money_ico.svg') no-repeat;background-size:16px 11px;background-position:left 0px top 8px;padding:0px 0px 0px 24px;}
 	.rwcAvailTag{width:140px;height:22px;font-family:"DM Sans","Averta", sans-serif, fallback;font-size:12;font-weight:bold;text-transform:uppercase;color:#000;border-radius:4px;border:1px solid var(--rwc-lgrey);display:flex;justify-content: flex-start;align-items: center;box-sizing: border-box !important;}
 	.rwcAvailCirc{width:10px;height:10px;margin:0;background:var(--rwc-lgrey);border-radius:10px;padding:0px;margin:0px 8px 0px 8px;}
 	.rwcPrimaryBtn{width:auto;min-width:150px;font-family:"DM Sans","Averta", sans-serif, fallback;font-size:20px;font-weight:normal;text-align:center;color:#fff;margin:0;padding:11px 23px;border-radius:4px;background:var(--rwc-dorn);}
+	.hideD{display:none;}
 }
 
 /*mobile*/
@@ -61,16 +63,17 @@ page_title = "Men's Rugby World Cup 2027 | Ticketmaster Australia, Official Tick
 
 	.rwcTicketWrap{width:100%;max-width:1000px;height:auto;padding:24px 16px;margin:45px auto;border-radius:4px;border:2px solid var(--rwc-dorn);display:flex;flex-wrap: wrap;justify-content: space-between;box-sizing: border-box !important;}
 	.rwcTicketWrap a{text-decoration: none;}
-	.rwcTicketIcon{width:65px;height:65px;background:var(--rwc-dorn);border-radius:20px 10px 15px 5px;margin:0px 10px 0px 0px;display:none;align-items:center ;justify-content: center;}
+	.rwcTicketIcon{width:65px;height:65px;background:var(--rwc-dorn);border-radius:20px 10px 15px 5px;margin:0px 10px 0px 0px;padding:14px;display:inline-block;align-items:center ;justify-content: center;box-sizing: border-box !important;}
 	.rwcTicketIcon img{width:36.66px;height:36.66px;}
 	.rwcTicketInfo{width:100%;/*max-width:615px*/;height:auto;margin:0;padding:0;}
-	.rwcTicketInfo h2{font-family:"RWC","Averta", sans-serif, fallback;font-size:18px;font-weight:bold;color:#000;margin:0;padding:0;}
+	.rwcTicketInfo h2{font-family:"RWC","Averta", sans-serif, fallback;font-size:18px;font-weight:bold;color:#000;margin:0;padding:0;display:inline-block;}
 	.rwcTicketInfo p{width:100%;margin:16px 0px !important;}
 	.rwcTicketBot{width:auto;height:auto;/*min-height:118px*/;display:flex;flex-wrap: nowrap;flex-direction: column;justify-content: flex-end;align-items: flex-end;justify-self: flex-end;}
 	.rwcTicketPrice{background:url('https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_money_ico.svg') no-repeat;background-size:16px 11px;background-position:left 0px top 8px;padding:0px 0px 0px 24px;}
 	.rwcAvailTag{width:140px;height:22px;font-family:"DM Sans","Averta", sans-serif, fallback;font-size:12;font-weight:bold;text-transform:uppercase;color:#000;border-radius:4px;border:1px solid var(--rwc-lgrey);display:flex;justify-content: flex-start;align-items: center;box-sizing: border-box !important;}
 	.rwcAvailCirc{width:10px;height:10px;margin:0;background:var(--rwc-lgrey);border-radius:10px;padding:0px;margin:0px 8px 0px 8px;}
 	.rwcPrimaryBtn{width:auto;min-width:150px;font-family:"DM Sans","Averta", sans-serif, fallback;font-size:20px;font-weight:normal;text-align:center;color:#fff;margin:0;padding:11px 23px;border-radius:4px;background:var(--rwc-dorn);}
+	.hideM{display:none;}
 	}
 /*headers*/
 @media only screen and (min-width: 999.99px) and (max-width: 1440px){	
@@ -90,9 +93,9 @@ page_title = "Men's Rugby World Cup 2027 | Ticketmaster Australia, Official Tick
 			<h1>PASS SELECTION</h1>
 			<p>Guarantee your access to Men&rsquo;s Rugby World Cup 2027 tickets with a Superfan Pass!</p>
 				<div class="rwcTicketWrap">
-					<div class="rwcTicketIcon"><img src="https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_ticket_ico.svg" alt="Ticket Icon"></div>
+					<div class="rwcTicketIcon hideM"><img src="https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_ticket_ico.svg" alt="Ticket Icon"></div>
 					<div class="rwcTicketInfo">
-						<h2>SUPERFAN PASS</h2>
+						<div class="rwcTicketIcon hideD"><img src="https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_ticket_ico.svg" alt="Ticket Icon"></div><h2>SUPERFAN <br />PASS</h2>
 						<p>Match tickets are not included in the price of a Superfan Pass.<br />Tickets will be available for purchase in February 2026.</p>
 					</div>
 					<div class="rwcTicketBot">
