@@ -2,7 +2,8 @@
 page_title = "Men's Rugby World Cup 2027 | Ticketmaster Australia, Official Tickets" %]
 [% static_has_responsive_header_footer = 1; enable_leader_board = 0; %]
 [% PROCESS "layout/frame/top.tt" %]
-
+<!--cut for on sale----->
+ <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />
 <!--libs--->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="https://s1.ticketm.net/tm/en-au/img/static/fonts/averta.css" type="text/css" rel="stylesheet" />
@@ -31,26 +32,45 @@ page_title = "Men's Rugby World Cup 2027 | Ticketmaster Australia, Official Tick
 	#rwcHeader{width:100%;/*max-width:1440px;*/height:auto;max-height:206px;margin:0 auto;padding:14.3% 0px 0px 0px;display:block;background:url('https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_pattern1_img.svg') center top no-repeat,#fff;background-size:cover;box-sizing: border-box !important;} 
 
 /*tickets*/
-	#rwcTicketMod{width:100%;max-width:1100px;height:auto;margin:0 auto;padding:0;display:block;position:relative;}
-	#rwcTicketMod h1{font-family:"RWC","Averta", sans-serif, fallback;font-size:24px;font-weight:bold;color:#000;margin:0 auto;padding:0;}
-	#rwcTicketMod p{font-family:"DM Sans","Averta", sans-serif, fallback;font-size:20px;font-weight:normal;color:#000;margin:0;padding:0;} 
+	#rwcTicketMod{width:100%;max-width:1100px;height:auto;margin:100px auto;padding:0;display:block;position:relative;}
+	#rwcTicketMod h1{font-family:"RWC","Averta", sans-serif, fallback;font-size:24px;font-weight:bold;color:#000;margin:25px auto;padding:0;}
+	#rwcTicketMod p{font-family:"DM Sans","Averta", sans-serif, fallback;font-size:20px;font-weight:normal;color:#000;margin:5px auto;padding:0;} 
 
-	.rwcTicketWrap{width:100%;max-width:1100px;height:auto;padding:24px 16px;margin:0px auto;border-radius:4px;border:2px solid var(--rwc-dorn);display:flex;flex-wrap: nowrap;justify-content: space-between;box-sizing: border-box !important;}
+	.rwcTicketWrap{width:100%;max-width:1100px;height:auto;padding:24px 16px;margin:45px auto;border-radius:4px;border:2px solid var(--rwc-dorn);display:flex;flex-wrap: nowrap;justify-content: space-between;box-sizing: border-box !important;}
 	.rwcTicketWrap a{text-decoration: none;}
-	.rwcTicketIcon{width:65px;height:65px;background:var(--rwc-dorn);border-radius:20px 10px 15px 5px;display:flex;align-items:center ;justify-content: center;}
+	.rwcTicketIcon{width:65px;height:65px;background:var(--rwc-dorn);border-radius:20px 10px 15px 5px;margin:0px 10px 0px 0px;display:flex;align-items:center ;justify-content: center;}
 	.rwcTicketIcon img{width:36.66px;height:36.66px;}
-	.rwcTicketInfo{width:auto;max-width:615px;height:auto;}
+	.rwcTicketInfo{width:calc(100% - 215px);/*max-width:615px*/;height:auto;margin:0;padding:0;}
 	.rwcTicketInfo h2{font-family:"RWC","Averta", sans-serif, fallback;font-size:18px;font-weight:bold;color:#000;margin:0;padding:0;}
-	.rwcTicketBot{width:auto;height:auto;min-height:118px;display:flex;flex-wrap: nowrap;flex-direction: column;justify-content: space-between;align-items: flex-end;justify-self: flex-end;}
+	.rwcTicketBot{width:auto;height:auto;/*min-height:118px*/;display:flex;flex-wrap: nowrap;flex-direction: column;justify-content: flex-end;align-items: flex-end;justify-self: flex-end;}
 	.rwcTicketPrice{background:url('https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_money_ico.svg') no-repeat;background-size:16px 11px;background-position:left 0px top 8px;padding:0px 0px 0px 24px;}
 	.rwcAvailTag{width:140px;height:22px;font-family:"DM Sans","Averta", sans-serif, fallback;font-size:12;font-weight:bold;text-transform:uppercase;color:#000;border-radius:4px;border:1px solid var(--rwc-lgrey);display:flex;justify-content: flex-start;align-items: center;box-sizing: border-box !important;}
 	.rwcAvailCirc{width:10px;height:10px;margin:0;background:var(--rwc-lgrey);border-radius:10px;padding:0px;margin:0px 8px 0px 8px;}
-	.rwcPrimaryBtn{font-family:"DM Sans","Averta", sans-serif, fallback;font-size:20px;font-weight:normal;color:#fff;margin:0;padding:11px 23px;border-radius:4px;background:var(--rwc-dorn);}
+	.rwcPrimaryBtn{width:auto;min-width:150px;font-family:"DM Sans","Averta", sans-serif, fallback;font-size:20px;font-weight:normal;text-align:center;color:#fff;margin:0;padding:11px 23px;border-radius:4px;background:var(--rwc-dorn);}
 }
 
 /*mobile*/
 @media only screen and (max-width: 999.99px) {		
+	#rwcContent{width:100%;height:auto;margin:0 auto;display:block;padding:1px;background:#fff;position:relative;box-sizing: border-box !important;}
+	#rwcHeader{width:100%;/*max-width:1440px;*/height:auto;max-height:206px;margin:0 auto;padding:14.3% 0px 0px 0px;display:block;background:url('https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_pattern1_img.svg') center top no-repeat,#fff;background-size:cover;box-sizing: border-box !important;} 
 
+/*tickets*/
+	#rwcTicketMod{width:100%;max-width:1000px;height:auto;margin:50px auto;padding:16px;display:block;position:relative;box-sizing: border-box !important;}
+	#rwcTicketMod h1{font-family:"RWC","Averta", sans-serif, fallback;font-size:24px;font-weight:bold;color:#000;margin:25px auto;padding:0;}
+	#rwcTicketMod p{font-family:"DM Sans","Averta", sans-serif, fallback;font-size:20px;font-weight:normal;color:#000;margin:5px auto;padding:0;} 
+
+	.rwcTicketWrap{width:100%;max-width:1000px;height:auto;padding:24px 16px;margin:45px auto;border-radius:4px;border:2px solid var(--rwc-dorn);display:flex;flex-wrap: wrap;justify-content: space-between;box-sizing: border-box !important;}
+	.rwcTicketWrap a{text-decoration: none;}
+	.rwcTicketIcon{width:65px;height:65px;background:var(--rwc-dorn);border-radius:20px 10px 15px 5px;margin:0px 10px 0px 0px;display:none;align-items:center ;justify-content: center;}
+	.rwcTicketIcon img{width:36.66px;height:36.66px;}
+	.rwcTicketInfo{width:100%;/*max-width:615px*/;height:auto;margin:0;padding:0;}
+	.rwcTicketInfo h2{font-family:"RWC","Averta", sans-serif, fallback;font-size:18px;font-weight:bold;color:#000;margin:0;padding:0;}
+	.rwcTicketInfo p{width:100%;margin:16px 0px !important;}
+	.rwcTicketBot{width:auto;height:auto;/*min-height:118px*/;display:flex;flex-wrap: nowrap;flex-direction: column;justify-content: flex-end;align-items: flex-end;justify-self: flex-end;}
+	.rwcTicketPrice{background:url('https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_money_ico.svg') no-repeat;background-size:16px 11px;background-position:left 0px top 8px;padding:0px 0px 0px 24px;}
+	.rwcAvailTag{width:140px;height:22px;font-family:"DM Sans","Averta", sans-serif, fallback;font-size:12;font-weight:bold;text-transform:uppercase;color:#000;border-radius:4px;border:1px solid var(--rwc-lgrey);display:flex;justify-content: flex-start;align-items: center;box-sizing: border-box !important;}
+	.rwcAvailCirc{width:10px;height:10px;margin:0;background:var(--rwc-lgrey);border-radius:10px;padding:0px;margin:0px 8px 0px 8px;}
+	.rwcPrimaryBtn{width:auto;min-width:150px;font-family:"DM Sans","Averta", sans-serif, fallback;font-size:20px;font-weight:normal;text-align:center;color:#fff;margin:0;padding:11px 23px;border-radius:4px;background:var(--rwc-dorn);}
 	}
 /*headers*/
 @media only screen and (min-width: 999.99px) and (max-width: 1440px){	
@@ -68,22 +88,25 @@ page_title = "Men's Rugby World Cup 2027 | Ticketmaster Australia, Official Tick
 
 	<section id="rwcTicketMod"> 
 			<h1>PASS SELECTION</h1>
-			<p>Gain exclusive access to our presale phase, and guarantee yourself tickets across the tournament.</p>
+			<p>Guarantee your access to Men&rsquo;s Rugby World Cup 2027 tickets with a Superfan Pass!</p>
 				<div class="rwcTicketWrap">
 					<div class="rwcTicketIcon"><img src="https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_ticket_ico.svg" alt="Ticket Icon"></div>
 					<div class="rwcTicketInfo">
-						<h2>GUARANTEED TICKET ACCESS PASS</h2>
-						<p>Holders of this pass will be granted access to an exclusive presale phase, during which they can purchase up to 52 tickets across the tournament.</p>
+						<h2>SUPERFAN PASS</h2>
+						<p>Match tickets are not included in the price of a Superfan Pass.<br />Tickets will be available for purchase in February 2026.</p>
 					</div>
 					<div class="rwcTicketBot">
-						<div class="rwcTicketPrice"><p>AUD$2,700</p></div>
-						<div class="rwcAvailTag"><div class="rwcAvailCirc"></div>LOREM IPSUM</div>
-						<a href="https://tickets.rugbyworldcup.com/" name="Find Tickets"><div class="rwcPrimaryBtn">FIND TICKETS</div></a>
+						<!--<div class="rwcTicketPrice"><p>AUD$2,700</p></div>-->
+						<!--<div class="rwcAvailTag"><div class="rwcAvailCirc"></div>LOREM IPSUM</div>--->
+						<a href="https://tickets.rugbyworldcup.com/" name="BUY PASS"><div class="rwcPrimaryBtn">BUY PASS</div></a>
 					</div>
 
 				</div>
 	</section>
-	<div id="rwcFooter"></div>
+	<div id="rwcFooter">
+		<div class="rwcFooterPattern"></div>
+
+	</div>
 </div>
 
 <script type="text/javascript">
