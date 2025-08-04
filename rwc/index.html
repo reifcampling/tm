@@ -29,7 +29,7 @@ page_title = "Men's Rugby World Cup 2027 | Ticketmaster Australia, Official Tick
 
 @media only screen and (min-width: 1000px) {	
 	#rwcContent{width:100%;height:auto;margin:0 auto;display:block;padding:1px;background:#fff;position:relative;box-sizing: border-box !important;}
-	#rwcHeader{width:100%;/*max-width:1440px;*/height:auto;max-height:206px;margin:0 auto;padding:14.3% 0px 0px 0px;display:block;background:url('https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_pattern1_img.svg') center top no-repeat,#fff;background-size:cover;box-sizing: border-box !important;} 
+
 
 /*tickets*/
 	#rwcTicketMod{width:100%;max-width:1100px;height:auto;margin:100px auto;padding:0;display:block;position:relative;}
@@ -48,7 +48,6 @@ page_title = "Men's Rugby World Cup 2027 | Ticketmaster Australia, Official Tick
 	.rwcAvailTag{width:140px;height:22px;font-family:"DM Sans","Averta", sans-serif, fallback;font-size:12;font-weight:bold;text-transform:uppercase;color:#000;border-radius:4px;border:1px solid var(--rwc-lgrey);display:flex;justify-content: flex-start;align-items: center;box-sizing: border-box !important;}
 	.rwcAvailCirc{width:10px;height:10px;margin:0;background:var(--rwc-lgrey);border-radius:10px;padding:0px;margin:0px 8px 0px 8px;}
 	.rwcPrimaryBtn{width:auto;min-width:150px;font-family:"DM Sans","Averta", sans-serif, fallback;font-size:20px;font-weight:normal;text-align:center;color:#fff;margin:0;padding:11px 23px;border-radius:4px;background:var(--rwc-dorn);}
-	.hideD{display:none;}
 }
 
 /*mobile*/
@@ -74,35 +73,49 @@ page_title = "Men's Rugby World Cup 2027 | Ticketmaster Australia, Official Tick
 	.rwcAvailTag{width:140px;height:22px;font-family:"DM Sans","Averta", sans-serif, fallback;font-size:12;font-weight:bold;text-transform:uppercase;color:#000;border-radius:4px;border:1px solid var(--rwc-lgrey);display:flex;justify-content: flex-start;align-items: center;box-sizing: border-box !important;}
 	.rwcAvailCirc{width:10px;height:10px;margin:0;background:var(--rwc-lgrey);border-radius:10px;padding:0px;margin:0px 8px 0px 8px;}
 	.rwcPrimaryBtn{width:100%;min-width:150px;font-family:"DM Sans","Averta", sans-serif, fallback;font-size:20px;font-weight:normal;text-align:center;color:#fff;margin:0;padding:11px 23px;border-radius:4px;background:var(--rwc-dorn);}
-	.hideM{display:none;}
+
 	}
 /*headers*/
+@media only screen and (max-width: 499.99px){	
+	#rwcHeader{width:100%;/*max-width:1440px;*/height:auto;margin:0 auto;padding:0px 0px 0px 0px;display:block;background:url("https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_header_desktop.png"),#fff;background-size:cover;box-sizing: border-box !important;} 
+	#rwcHeader img{width:100%;height:auto;margin:0 auto;}
+		.hideM{display:none;}
+}
+@media only screen and (min-width: 500px) and (max-width: 999.99px){	
+	#rwcHeader{width:100%;/*max-width:1440px;*/height:auto;margin:0 auto;padding:18.55% 0px 0px 0px;display:block;background:url("https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_header_desktop.png"),#fff;background-size:cover;box-sizing: border-box !important;} 
+	#rwcHeader img{display:none;}
+		.hideM{display:none;}
+}
 @media only screen and (min-width: 999.99px) and (max-width: 1440px){	
-
+	#rwcHeader{width:100%;/*max-width:1440px;*/height:auto;margin:0 auto;padding:18.55% 0px 0px 0px;display:block;background:url("https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_header_desktop.png"),#fff;background-size:cover;box-sizing: border-box !important;} 
+	#rwcHeader img{display:none;}
+		.hideD{display:none;}
 }
 @media only screen and (min-width: 1440px){	
-	/*	#rwcHeader{width:100%;height:206px;max-height:206px;margin:0 auto;padding:0 0px 0px 0px;display:block;background:url('rwc_pattern1_img.svg') center bottom no-repeat,#fff;background-size:cover;box-sizing: border-box !important;} */
+	#rwcHeader{width:100%;/*max-width:1440px;*/height:auto;margin:0 auto;padding:18.55% 0px 0px 0px;display:block;background:url("https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_header_desktop.png"),#fff;background-size:cover;box-sizing: border-box !important;}
+	#rwcHeader img{display:none;}
+		.hideD{display:none;} 
 }
 </style>
 
  
 <div id="rwcContent">
-	<div id="rwcHeader"></div>
+	<div id="rwcHeader"><img src="https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_header_mobile.png" alt="Rugby World Cup, Men's Australia 2027"></div>
 	
 
 	<section id="rwcTicketMod"> 
 			<h1>Men&rsquo;s Rugby World Cup 2027</h1>
 			<p>Guarantee your access to Men&rsquo;s Rugby World Cup 2027 tickets with a Superfan Pass!</p>
 				<div class="rwcTicketWrap">
-					<div class="rwcTicketIcon hideM"><img src="https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_fan_ico.png" alt="Superfan Icon"></div>
+					<div class="rwcTicketIcon hideM"><img src="https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_fan_ico.svg" alt="Superfan Icon"></div>
 					<div class="rwcTicketInfo">
-						<div class="rwcTicketIcon hideD"><img src="https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_fan_ico.png" alt="Superfan Icon"></div><h2>SUPERFAN <br />PASS</h2>
+						<div class="rwcTicketIcon hideD"><img src="https://s1.ticketm.net/tm/en-au/img/static/rwc/rwc_fan_ico.svg" alt="Superfan Icon"></div><h2>SUPERFAN <br />PASS</h2>
 						<p>By purchasing a Superfan Pass you will be invited to buy tickets in February 2026 before anyone else.</p>
 					</div>
 					<div class="rwcTicketBot">
 						<!--<div class="rwcTicketPrice"><p>AUD$2,700</p></div>-->
 						<!--<div class="rwcAvailTag"><div class="rwcAvailCirc"></div>LOREM IPSUM</div>--->
-						<a href="https://rwc2027.rugbyworldcup.com/" name="BUY PASS"><div class="rwcPrimaryBtn">FIND OUT MORE</div></a>
+						<a href="https://rwc2027.rugbyworldcup.com/" name="FIND OUT MORE"><div class="rwcPrimaryBtn">FIND OUT MORE</div></a>
 					</div>
 
 				</div>
