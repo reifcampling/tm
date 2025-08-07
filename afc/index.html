@@ -310,7 +310,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	#aoPubWrapper{display:none;}
 	/* Header */
 	#wacHeader{width:100%;height:auto;margin:0px auto;padding:20px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_header_players_p2_mobile.png') no-repeat top 20px center,url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg") no-repeat center top ,  var(--wac-pur);background-size:95% auto,cover, 100% 100%;box-sizing: border-box !important;}
-	#wacLogo{max-width:500px;width:90%;height:auto;padding:0px;margin:0px auto 40px;display:block;z-index:20;position: relative;border-radius:0px;}
+	#wacLogo{max-width:380px;width:90%;height:auto;padding:0px;margin:0px auto 40px;display:block;z-index:20;position: relative;border-radius:0px;}
 	#wacLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
 	#wacHeaderStrip{width:calc(100% + 40px);height:35px;background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_afc_text_tile_white_img.svg") repeat-x,var(--wac-blu);background-size:auto 100% ;margin:-20px 0px 0px -20px ;position: relative;}
 	#wacHeaderGrad{width:100%;height:250px;display:block;margin:0px;padding:0px;position: absolute;bottom:0px;left:0px;right:0px;background:linear-gradient(0deg,rgba(97, 0, 232, 1) 0%, rgba(97, 0, 232, 0) 100%);z-index:98;}
@@ -1160,7 +1160,8 @@ function cardsToDisplay(){
 		venueType = $j(this).data('venues').split(",");
 		teamType = $j(this).data('teams').split(",");
 		ticketType = $j(this).data('packtype');	
-		if((matchEventDate() === true) || (dateListNum.length == 0) && //date 
+		if(
+		((matchEventDate() === true) || (dateListNum.length == 0)) && //date 
 		((matchEvenVenue() === true) || jQuery.inArray("All", venueList) != -1) && //venue
 		((matchEventTeams() === true) || jQuery.inArray("All", teamList) != -1) && // team	
 		((jQuery.inArray(ticketType,packList) != -1) || jQuery.inArray("All", packList) != -1) //ticket type				
@@ -1947,11 +1948,11 @@ ausBrand = function(){
 	$j("#wacAusNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center top").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center center").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 }
@@ -1959,12 +1960,12 @@ banBrand = function(){
 	//fade in textbox
 	$j("#wacBanNotice").fadeIn(0)
 	//set headers
-	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+	if (window.matchMedia('(max-width:999.99px)').matches) {//mobile
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center top").css("background-size","1000px 1000px")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
-	if (window.matchMedia('(min-width:1000px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+	if (window.matchMedia('(min-width:1000px)').matches) {//desktop
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center center").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 }
@@ -1973,11 +1974,11 @@ chnBrand = function(){
 	$j("#wacChnNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_header_desktop_chn.jpg')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center top").css("background-size","1000px 1000px")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
-		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_header_desktop_chn.jpg')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center center").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 }
@@ -1986,11 +1987,11 @@ tpeBrand = function(){
 	$j("#wacTpeNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center top").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center center").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 }
@@ -1999,11 +2000,11 @@ prkBrand = function(){
 	$j("#wacPrkNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center top").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center center").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 }
@@ -2012,11 +2013,11 @@ indBrand = function(){
 	$j("#wacIndNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center center").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center top").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 }
@@ -2025,11 +2026,11 @@ irnBrand = function(){
 	$j("#wacIrnNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center top").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center center").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 }
@@ -2038,11 +2039,11 @@ jpnBrand = function(){
 	$j("#wacJpnNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center top").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center center").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 }
@@ -2051,11 +2052,11 @@ korBrand = function(){
 	$j("#wacKorNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center top").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center center").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 }
@@ -2064,11 +2065,11 @@ phiBrand = function(){
 	$j("#wacPhiNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center top").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center center").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 }
@@ -2077,11 +2078,11 @@ uzbBrand = function(){
 	$j("#wacUzbNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center top").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center center").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 }
@@ -2090,11 +2091,11 @@ vieBrand = function(){
 	$j("#wacVieNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center top").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
-		$j("#wacHeader").css("background","url('')no-repeat center center").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_p2_pattern_01.jpg')no-repeat center center").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 }
@@ -2233,30 +2234,30 @@ function sortDateMapper (data){
 }
 function sortEventsMapper (data){
 	switch (data){		
-			case "FOLCHN":return "15"
-			case "FOLIND":return "16"
+			case "FOLCHN":return "1"
+			case "FOLIND":return "2"
 			case "PERPREM":return "3";
-			case "SYDPREM":return "2";
-			case "GCSPREM":return "4";
-			case "FOLJPN":return "18"
-			case "FOLPHI":return "20"
-			case "FOLVIE":return "24"
+			case "SYDPREM":return "4";
+			case "GCSPREM":return "5";
+			case "FOLJPN":return "6"
+			case "FOLPHI":return "7"
+			case "FOLVIE":return "8"
 			case "PERFINAL":return "9";
-			case "SYDFINAL":return "8";
-			case "26GCSSP":return "13";
-			case "FOLKOR":return "19"
-			case "FOLIRN":return "17"
-			case "PERGRP":return "6";
-			case "SYDGRP":return "5";
-			case "GCSGRP":return "7";
-			case "FOLBAN":return "14"
-			case "FOLTPE":return "22"
-			case "26PRSSP":return "12";
-			case "26WSSSP":return "11";
-			case "26GCSFP":return "10";
-			case "FOLAUS":return "1";
+			case "SYDFINAL":return "10";
+			case "26GCSSP":return "11";
+			case "FOLKOR":return "12"
+			case "FOLIRN":return "13"
+			case "PERGRP":return "14";
+			case "SYDGRP":return "15";
+			case "GCSGRP":return "16";
+			case "FOLBAN":return "17"
+			case "FOLTPE":return "18"
+			case "26PRSSP":return "19";
+			case "26WSSSP":return "20";
+			case "26GCSFP":return "21";
+			case "FOLAUS":return "22";
 			case "FOLUZB":return "23"
-			case "FOLPRK":return "21"
+			case "FOLPRK":return "24"
 			default:return "50"
 	}
 }
