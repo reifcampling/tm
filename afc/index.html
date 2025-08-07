@@ -154,7 +154,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacErrorMessage p{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:16px;font-weight:400;color:var(--wac-dgrey);padding:0px 0px 0px 0px;margin:0px;box-sizing:border-box !important;line-height: 24px;}
 	.wacErrorResetBtn{width:145px;height:auto;display:block;padding:16px 5px;margin:26px auto 46px;background:var(--wac-dgrey);color:#fff;font-family:"poppins","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:700;border-radius:4px;box-sizing:border-box !important;cursor:pointer;}
 	/*notice*/
-	.wacNotice{width:94%;max-width:1000px;height:auto;border-radius:10px;padding:20px;margin:20px auto;display:none;background:var(--wac-lgrey);box-sizing: border-box !important;position:relative;}
+	.wacNotice{width:94%;max-width:1000px;height:auto;border-radius:10px;padding:20px 40px;margin:20px auto;display:none;background:var(--wac-lgrey);box-sizing: border-box !important;position:relative;}
 	.wacNotice h1{font-family:"Open Sans",fallback;font-size:20px;line-height:20px;font-weight:700;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 15px 0px;}
 	.wacNotice p{font-family:"Open Sans",fallback;font-size:14px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 0px 0px;}
 	.wacCloseNoticeBtn{width:30px;height:30px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-pur);background-size:10px 10px;border-radius:20px;position:absolute;right:5px;top:5px;cursor:pointer;}
@@ -1087,6 +1087,10 @@ For a limited time only, Multi&#45;Match Packs give you access to the biggest ma
 								if(eventTeams.length==2){	
 									eventTeamSpan = $j("<div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/heroimg/wac_"+event.event_name+"_450x225.png' alt='AFC Womens Asian Cup'><div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"CircFlag'></div><h2>"+eventTeam01+"</h2></div><p>vs</p><div class='wacTeamAway'><h2>"+eventTeam02+"</h2><div class='wacAwayFlag wac"+eventTeam02+"CircFlag'></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div>")
 								}
+								//follwo your team pass
+								if(eventTeams.length==1){	
+									eventTeamSpan = $j("<div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/heroimg/wac_"+event.event_name+"_450x225.png' alt='AFC Womens Asian Cup'><div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacTeamHome'><div class='wacHomeFlag wac"+eventTeam01+"CircFlag'></div><h2>"+eventTeam01+"</h2></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div>")
+								}
 								//multi match
 								if(eventTeams.length>=3){	
 									eventTeamSpan = $j("<div class='wacCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/heroimg/wac_"+event.event_name+"_450x225.png' alt='AFC Womens Asian Cup'><div class='wacCardTeams'><div class='wacCardTeamWrap'><div class='wacCardMultiTeamWrap'><div class='wacMultiTeam wac"+eventTeam01+"team' title='"+eventTeam01+"'><div class='wacTeamFlag wac"+eventTeam01+"CircFlag'></div></div><div class='wacMultiTeam wac"+eventTeam02+"team' title='"+eventTeam02+"'><div class='wacTeamFlag wac"+eventTeam02+"CircFlag'></div></div><div class='wacMultiTeam wac"+eventTeam03+"team' title='"+eventTeam03+"'><div class='wacTeamFlag wac"+eventTeam03+"CircFlag'></div></div><div class='wacMultiTeam wac"+eventTeam04+"team' title='"+eventTeam04+"'><div class='wacTeamFlag wac"+eventTeam04+"CircFlag'></div></div><div class='wacMultiTeam wac"+eventTeam05+"team' title='"+eventTeam05+"'><div class='wacTeamFlag wac"+eventTeam05+"CircFlag'></div></div><div class='wacMultiTeam wac"+eventTeam06+"team' title='"+eventTeam06+"'><div class='wacTeamFlag wac"+eventTeam06+"CircFlag'></div></div><div class='wacMultiTeam wac"+eventTeam07+"team' title='"+eventTeam07+"'><div class='wacTeamFlag wac"+eventTeam07+"CircFlag'></div></div><div class='wacMultiTeam wac"+eventTeam08+"team' title='"+eventTeam08+"'><div class='wacTeamFlag wac"+eventTeam08+"CircFlag'></div></div></div></div></div></div><div class='wacCardType'>"+event.offer_desc+"</div></div>")
@@ -1968,7 +1972,7 @@ ausBrand = function(){
 	$j("#wacAusNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_aus.jpg')no-repeat center top -40px").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_aus.jpg')no-repeat center top -40px,#4ed6b5").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
@@ -1981,7 +1985,7 @@ banBrand = function(){
 	$j("#wacBanNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {//mobile
-		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_ban.jpg')no-repeat center top -40px").css("background-size","1000px 1000px")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_ban.jpg')no-repeat center top -40px,#4ed6b5").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {//desktop
@@ -1994,7 +1998,7 @@ chnBrand = function(){
 	$j("#wacChnNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_chn.jpg')no-repeat center top -40px").css("background-size","1000px 1000px")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_chn.jpg')no-repeat center top -40px,#4ed6b5").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
@@ -2007,7 +2011,7 @@ tpeBrand = function(){
 	$j("#wacTpeNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_tpe.jpg')no-repeat center top -40px").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_tpe.jpg')no-repeat center top -40px,#4ed6b5").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
@@ -2020,7 +2024,7 @@ prkBrand = function(){
 	$j("#wacPrkNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_prk.jpg')no-repeat center top -40px").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_prk.jpg')no-repeat center top -40px,#4ed6b5").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
@@ -2033,7 +2037,7 @@ indBrand = function(){
 	$j("#wacIndNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_ind.jpg')no-repeat center top -40px").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_ind.jpg')no-repeat center top -40px,#4ed6b5").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
@@ -2046,7 +2050,7 @@ irnBrand = function(){
 	$j("#wacIrnNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_irn.jpg')no-repeat center top -40px").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_irn.jpg')no-repeat center top -40px,#4ed6b5").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
@@ -2059,7 +2063,7 @@ jpnBrand = function(){
 	$j("#wacJpnNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_jpn.jpg')no-repeat center top -40px").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_jpn.jpg')no-repeat center top -40px,#4ed6b5").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
@@ -2072,7 +2076,7 @@ korBrand = function(){
 	$j("#wacKorNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_kor.jpg')no-repeat center top -40px").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_kor.jpg')no-repeat center top -40px,#4ed6b5").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
@@ -2085,7 +2089,7 @@ phiBrand = function(){
 	$j("#wacPhiNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_phi.jpg')no-repeat center top -40px").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_phi.jpg')no-repeat center top -40px,#4ed6b5").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
@@ -2098,7 +2102,7 @@ uzbBrand = function(){
 	$j("#wacUzbNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_uzb.jpg')no-repeat center top -40px").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_uzb.jpg')no-repeat center top -40px,#4ed6b5").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
@@ -2111,7 +2115,7 @@ vieBrand = function(){
 	$j("#wacVieNotice").fadeIn(0)
 	//set headers
 	if (window.matchMedia('(max-width:999.99px)').matches) {
-		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_vie.jpg')no-repeat center top -40px").css("background-size","cover")
+		$j("#wacHeader").css("background","url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/brands/wac_brand_header_mobile_vie.jpg')no-repeat center top -40px,#4ed6b5").css("background-size","cover")
 		$j("#wacHeaderGrad").fadeOut(0);
 	}
 	if (window.matchMedia('(min-width:1000px)').matches) {
