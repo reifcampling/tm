@@ -1,9 +1,9 @@
 [% # text to be displayed within <title></title>
-page_title = "FORMULA 1 LQATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026. | Melbourne Australia | Buy Tickets Official Ticketmaster site." %]
+page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Australia | Buy Tickets Official Ticketmaster site." %]
 [% static_has_responsive_header_footer = 1; enable_leader_board = 0; force_disable_nav_paypal_branding = 1; %]
 [% PROCESS "layout/frame/top.tt" %]
-<!--cut for on sale----->
- <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />
+<!--cut for on sale-->
+ <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />--->
  <!--delete for on sale-->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -50,17 +50,115 @@ page_title = "FORMULA 1 LQATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026. | Melbourne A
 		#tmSearch{width:450px;height:35px;margin:0px auto;padding:7px 0px 0px 0px;display:inline-block;float:right;background:#004da1;border-radius:20px;color:#fff;font-family:"Open Sans","Averta",  sans-serif ;font-size:16px;font-weight: 300;text-align: center;box-sizing:border-box;}
 
 		#ausgpContent{background-color: #fff;width:100%;height:auto;overflow:hidden;padding:0px;margin:0px auto;position: relative;font-family: "F1 Display", Fallback, sans-serif;font-size: 12px;}
-		
-		#ausgpHeader{width:94%;max-width:1400px;height:auto;position: relative;margin:0px auto;padding:1px;background:var(--gp-pur);box-sizing:border-box!important;text-align: center;overflow:hidden;border-radius:30px;}
-		#ausgpHeader img{width:100%;height:auto;}	
-		#ausgpLogo{width:195px;height:auto;margin:35px auto;position: relative;display:inline-block;vertical-align: top;padding:0px 640px 0px 0px;}
-		#ausgpLogo img{width:100%;height:auto;}
+		#ausgpHeader{width:98%;height:500px;position: relative;margin:0px auto;padding:1px;background:url("http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp26_header_3840x975.png") center center no-repeat, #fff;background-size:cover;box-sizing:border-box!important;text-align: center;border-radius:0px 0px 20px 20px;}	
+	
+		/*menu */
+		#ausgpMenuWrap{width:100%;height:auto;display: flex;position: relative;margin:0px;padding:0;justify-content: center;align-items: center;flex-wrap: nowrap;flex-direction: row;}
+		#ausgpMenu{width:600px;height:50px;background:#fff;margin:20px auto;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);border-radius:30px;display:flex;flex-wrap:nowrap;box-sizing:border-box!important;}
+		.ausgpMenuBtn{width:50%;height:50px;margin:0px;background:none;display:flex;justify-content: flex-start;align-items: center;flex-wrap: nowrap;position: relative;user-select:none;cursor:pointer;}
+		.ausgpMenuBtn h1{font-family: "F1 Display", Fallback, sans-serif;font-size:22px;line-height:22px;font-weight:bold;color:#000;text-align:center;margin:0;padding:0;display:inline-block;}
+		.ausgpMenuIco{width:30px;height:30px;display:inline-block;margin:5px 20px;padding:0px;box-sizing:border-box!important;}
+		.ausgpMenuArrow{width:20px;height:auto;display:inline-block;position: absolute;right:20px;top:21px;transition: ease-in-out .3s all;}
+		.ausgpArrowRot{transform: rotate(180deg);}
+		.ausgpMenuIco img, .ausgpMenuArrow img{width:100%;height:auto}
+		.ausgpMenuDiv{width:4px;height:30px;border-radius:5px;margin:10px auto;background:#e5e5e5;}
+		.ausgpDropDown{width:295px;background:#efefef;padding:8px 0px;position:absolute;top:60px;left:0;right:0;margin:0px auto;z-index: 22;border:1px solid #fff;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);border-radius:2px 10px;overflow:hidden;box-sizing:border-box!important;}
+		.ausgpDropDown h2{font-family: "F1 Display", Fallback, sans-serif;font-size:14px;line-height:14px;font-weight:normal;color:#6D6D6D;text-align:center;margin:0;padding:0 0px 4px 8px;display:inline-block;}
+		.ausgpDropDownBtn{width:calc(100% - 8px);height:27px;background:#fff;margin:2px 4px;padding:5px 10px;display:flex;flex-wrap: nowrap;align-items: center;justify-content: flex-start;box-sizing:border-box!important;}
+		.ausgpDropDownIco{width:17px;height:17px;padding:0;display:inline-block;margin:0px 10px 0px 0px;}
+		.ausgpDropDownIco img{width:100%;height:auto;}
+		.ausgpDropDownBtn p{font-family: "F1 Display", Fallback, sans-serif;font-size:16px;line-height:16px;font-weight:normal;color:#000;text-align:left;margin:0;padding:0;display:inline-block;}
+		.ausgpCheckBox{width:14px;height:14px;margin:0px 10px 0px 0px;padding:0px;box-sizing:border-box!important;border-radius:2px 4px 2px 4px;display:inline-block;}
+		.ausgpCheckBoxOn{background:url('http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_tick_ico.svg') no-repeat center center,var(--gp-pur);background-size:12px;}
+   		.ausgpCheckBoxOff{background:#e5e5e5;border:2px solid #a7a7a7;}
+		.ausgpDropDownOff{display: none;}
+		.ausgpDropDownOn{display: block;}
+		/*counter*/
+		#ausgpCounter{width:165px;display:flex;flex-wrap:nowrap;align-items: center;justify-content: space-between;background:#fff;border-radius:5px;padding:0px;margin:10px auto;box-sizing: border-box !important;text-align: center;border:1px solid var(--gp-pur);box-sizing: border-box !important;}
+		#ausgpEventCount{font-family:"Averta",fallback;font-size:12px;line-height:12px;font-weight:600;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+		#ausgpEventCountTotal{font-family:"Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#efefef;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+		.ausgpCounterWrap{width:60px;height:24px;background:var(--gp-pur);border-radius:5px 0px 0px 5px;padding:5px 0px;display:inline-block;color:#000 !important;box-sizing: border-box !important;}
+		.ausgpCounterWrap p{color:#fff !important;padding:0px 1px!important;margin:0px !important;}
+		#ausgpCounter p{display:inline-block;font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:center;color:var(--ausgp-char);margin:0;padding:0px 10px 0px 0px;}
+		/*cards*/
+		#ausgpEventStream{width:100%;max-width:1300px;background:none;margin:0px auto;display:flex;flex-wrap:wrap;align-items: flex-start;justify-content: center;align-items: stretch;column-gap:20px;row-gap:30px;position: relative;z-index:20;}
+		.ausgpHeader{width:100%;max-width:1100px;background:none;margin:50px auto;display:block;position: relative;z-index:20;}
+		.ausgpHeader h1{width:100%;font-family: "F1 Display", Fallback, sans-serif;font-size:40px;line-height:40px;font-weight:bold;color:#000;text-align:center;margin:0;padding:0;}
+		.ausgpHeaderDiv{width:450px;height:5px;background:var(--gp-pur);margin:10px auto;border-radius: 5px;}
+		#ausgpEventStream a{text-decoration: none;}
 
-		#ausgpInfoMod{width:850px;height:auto;border-radius:30px;background:#fff;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);margin:50px auto 0px;padding:50px;box-sizing:border-box!important;z-index: 19;position: relative;display:block;}
-		#ausgpInfoMod p{font-family: "Averta", Fallback, sans-serif;font-size: 22px;line-height:auto;color:#000;text-align: left;margin:0px;padding:0;}
-		.ausgpStripe{width:40%;max-width:450px;height:6px;margin:0px 0px 20px 0px;border-radius:10px;background:var(--gp-pur);}
-		#ausgpHeroImg{width:500px;height:auto;margin:-20px auto 20px; transform:translateX(250px); padding:0px;overflow:hidden;border-radius:30px;z-index: 20;position: relative;display:block;}
-		#ausgpHeroImg img{width:100%;height:auto;}
+		.ausgpEventCard{width:300px;height:auto;min-height:350px;display:flex;flex-direction: column;flex-wrap:nowrap;justify-content: space-between;position:relative;border-radius:5px 30px 5px 30px;z-index:21;border:#f5f5f5 1px solid;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);overflow:hidden;box-sizing:border-box !important;}
+		.ausgpCardTop,.ausgpCardBot{width:100%;height:auto;margin:0;padding:0;}
+		.ausgpHero{width:298px;height:110px;overflow:hidden;position: relative;z-index:21;}
+		.ausgpHero img{width:100%;height:auto;display:block;position: relative;z-index:23;}
+		.ausgpTurnWrap{width:100%;height:auto;margin:0px;display:flex;position: absolute;top:5px;left:0;right:0;z-index:24;justify-content: center;align-items: center;column-gap:5px;}
+		.ausgpTurnWrap p{font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:center;margin:0 5px 0px 0px;padding:0;display:inline-block;}
+		.ausgpTurnWrap h1{font-family: "F1 Display", Fallback, sans-serif;font-size:16px;line-height:16px;font-weight:normal;color:#fff;text-align:center;margin:0;padding:0;display:inline-block;}
+		.ausgpTurn{min-width:110px;width:auto;height:25px;background:url('http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_track_ico.svg') no-repeat,var(--gp-pur);background-size:15px;background-position:left 10px top 4px;border-radius:15px 5px 5px 15px;padding:0px 10px 0px 30px;display: flex;align-items: center;justify-content: flex-end;box-sizing:border-box !important;}
+		.ausgpGate{width:110px;height:25px;background:url('http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_Gate_ico.svg')no-repeat,var(--gp-dpur);background-size:15px;background-position:right 10px top 4px;border-radius:5px 15px 15px 5px;padding:0px 0px 0px 10px;display: flex;align-items: center;justify-content: flex-start;box-sizing:border-box !important;}
+		.ausgpCardTitle{width:100%;height:80px;display:flex;align-items: center;justify-content: center;}
+		.ausgpCardTitle h1{font-family: "F1 Display", Fallback, sans-serif;font-size:26px;line-height:26px;font-weight:bold;color:#000;text-align:center;margin:0;padding:0;}
+		.ausgpCardDiv{width:225px;height:5px;border-radius:5px;margin:0px auto 10px;display:block;background: var(--gp-pur);}
+		.ausgpTagWrap{width:100%;padding:0px 5px;display:flex;flex-wrap:wrap;justify-content: center;column-gap:5px;row-gap:5px;box-sizing:border-box !important;}
+		.ausgpCardTag{width:49%;height:25px;border-radius:5px 10px 5px 10px;display:flex;align-items: center;justify-content: center;}
+		.ausgpCardTag p{font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:center;margin:0;padding:0px 0px 0px 15px;}
+		.preTag p, .ExtTag p{color:#000 !important;}
+		.genTag{background:url('http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_genadmin_ico.svg') no-repeat,var(--gp-pur);background-size:15px;background-position:left 5px top 5px;}
+		.resTag{background:url('http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_reserved_ico.svg') no-repeat,var(--gp-pur);background-size:15px;background-position:left 5px top 5px;}
+		.preTag{background:url('http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_premium_ico.svg') no-repeat,var(--gp-gld);background-size:15px;background-position:left 5px top 5px;color:#000 !important;}		
+		.covTag{background:url('http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_covered_ico.svg') no-repeat,var(--gp-pnk);background-size:15px;background-position:left 5px top 5px;}
+		.AccTag{background:url('http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_accessible_ico.svg') no-repeat,var(--gp-dpur);background-size:15px;background-position:left 5px top 5px;}
+		.ExtTag{background:url('http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_extra_ico.svg') no-repeat,var(--gp-gld);background-size:15px;background-position:left 5px top 5px;color:#000 !important;}	
+		.ausgpCardAvailWrap{width:100%;height:auto;margin:20px auto 10px;padding:0;display:flex;flex-wrap:wrap;align-items: center;justify-content: center;}
+		.ausgpCardAvailWrap h2{width:100%;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:bold;color:#6c6c6c;text-align:center;margin:0;padding:0;}
+		.ausgpCardAvailTag{width:auto;height:25px;padding:0px 5px;margin:5px;font-family: "F1 Display", Fallback, sans-serif;font-size:14px;line-height:14px;font-weight:bold;color:#000;text-align:center;border-radius:15px;background:#D9D9D9;display:flex;flex-wrap: nowrap;flex-wrap: nowrap;justify-content: center;align-items: center;box-sizing:border-box !important;}
+		.availTagIndicator{width:16px;height:16px;margin:0px 0px 0px 5px;background:var(--gp-gld);display:inline-block;border-radius:10px;}
+		.ausgpCardPriceWrap{width:100%;height:auto;margin:10px auto;padding:0;display:flex;flex-wrap:wrap;align-items: center;justify-content: center;}
+		.ausgpCardPriceWrap h2{width:100%;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:bold;color:#6c6c6c;text-align:center;margin:0;padding:0;}
+		.ausgpCardPriceWrap h3{width:100%;font-family: "F1 Display", Fallback, sans-serif;font-size:24px;line-height:24px;font-weight:bold;color:var(--gp-pur);text-align:center;margin:0;padding:0;}
+		.ausgpCardBtn{width:286px;height:50px;background:var(--gp-pur);font-family: "F1 Display", Fallback, sans-serif;font-size:26px;line-height:26px;font-weight:bold;color:#fff;text-align:center;margin:0 auto 5px;padding:10px 0px;border-radius:5px 25px 5px 25px;cursor:pointer;user-select:none;box-sizing: border-box !important;}
+		/*custom cards*/
+		#ausgpAccessibleCard{min-height:500px;background:url('http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp26_Accessible_Card_450x675.jpg') no-repeat top center, var(--gp-dpur);background-size:contain;justify-content: flex-end !important;}
+		#ausgpAccessibleCard a, .ausgpCardNote a, .ausgpCardBot a{text-decoration: none;}
+		.ausgpCardNote{width:90%;height:auto; margin:20px auto;background:var(--gp-dpur);border-radius:10px;box-sizing:border-box !important;border:1px solid #efefef;}
+		.ausgpCardNote p{font-family: "Averta", Fallback, sans-serif;font-size:17px;line-height:17px;font-weight:normal;color:#fff;text-align:center;margin:0px auto;padding:20px;box-sizing:border-box !important;}		
+
+		/*faq mod*/
+		#ausgpFaqMod{width:100%;height:auto;background:transparent;position:relative;margin:30px auto 50px;box-sizing:border-box !important;text-align: center}
+		.ausgpFaqModDiv{width:70%;height:4px;background:var(--gp-pur);margin:60px -50px 40px auto;display:block;padding:1px;}
+		.ausgpFaqWrap{width:1100px;height:auto;margin:0 auto;display:block;vertical-align: top;text-align: left;position: relative;}
+		.ausgpFaqWrap a{text-decoration: none;}
+		#ausgpFaqMod h1{font-family: "F1 Display", Fallback, sans-serif;font-size: 36px;color:#15151e;text-align: left;}
+		.ausgpFaqStripe{width:445px;margin: -40px 0px 0px 30px;}
+		.ausgpFaqHero{margin:-20px -132px 0px 0px;height:250px;width:445px;display:inline-block !important}
+		.ausgpTileDiv{width:50px;height:4px;background:var(--gp-pur);margin:5px auto 10px;}
+		
+		/*info section*/
+		.ausgpInfoCard{width:325px;height:410px;display:inline-block;background:#fff;border-radius:15px;box-shadow: 0px 5px 10px 0px rgb(0, 0, 0 , 10%);overflow:hidden;position: relative;vertical-align: top;transition: ease-in-out .4s;cursor:pointer;}
+		.ausgpInfoCard:hover{box-shadow:0px 5px 10px 2px rgb(0 0 0 / 20%);}	
+		.ausgpInfoCard:nth-child(2),.ausgpInfoCard:nth-child(4){margin:20px 0px;}	
+		.ausgpInfoCard:nth-child(3){margin:20px 56px;}	
+		.asugpInfoHead{width:325px;height:128px;margin:0;padding:30px 20px;box-sizing: border-box !important;background:#eeeded;}
+		.asugpInfoHead img{display:inline-block;width:80px;height:80px;float:left;margin:0px 10px 0px 0px;}
+		.asugpInfoHead h2{font-family: "F1 Display", Fallback, sans-serif;font-size: 28px;color:#15151e;display:inline-block;text-align: left;margin:0;padding:0px;}
+		.ausgpInfoCard p{font-family: "Averta", Fallback, sans-serif;padding:15px 20px;font-size: 22px;color:#15151e;text-align: center;}
+		.ausgpInfoBtn{width:325px;height:60px;background:var(--gp-pur);position: absolute;bottom: 0;}
+		.ausgpInfoBtn h3{font-family: "F1 Display", Fallback, sans-serif;font-size: 20px;color:#fff;text-align: center;margin:10px 0px 0px 0px;padding:0px; z-index: 51;position: relative;}
+		.ausgpInfoBtnBg{width:340px;height:78px;background:var(--gp-pur);position: absolute;margin:0px auto;bottom:0;left:0;right:0;transform: rotate(355deg);z-index: 50;}
+		.ausgpFaqTextWrap{width:800px;height:auto;margin:0 auto;display:block;text-align: left;position: relative;}
+		.ausgpFaqTextWrap p{font-family: "Averta", Fallback, sans-serif;padding:0px;font-size: 16px;color:#15151e;text-align: left;}
+		
+		.ausgpStripe{height:70px;position: relative;display:block;z-index:19;border-radius:15px;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp_pattern.jpg") center center;background-size:200%;box-shadow: 0px 10px 10px 0px rgb(0, 0, 0 , 20%)}
+		.ausgpStripe img{width:100%;height:auto;position: relative;display:block;z-index:19;border-radius:15px;}
+
+		.ausgpBtn{height:auto;border-radius:25px;font-family: "F1 Display", Fallback, sans-serif;font-size: 16px;color:#fff;text-align: center;background:var(--gp-pur);padding:10px 5px;}
+	
+		.hideDesktop{display:none;}
+		/*error*/
+		#ausgpErrorNoTickets{width:450px;height:auto;margin:50px auto;border-radius:10px 30px 10px 30px;background:var(--gp-pur);padding:20px;}
+		#ausgpErrorNoTickets h1{font-family: "F1 Display", Fallback, sans-serif;font-size:26px;line-height:26px;font-weight:bold;color:#fff;text-align:center;margin:0;padding:0;}
+		#ausgpErrorNoTickets p{font-family: "Averta", Fallback, sans-serif;font-size:20px;line-height:20px;font-weight:normal;color:#fff;text-align:center;margin:20px auto;padding:0;}
+		.ausgpErrorBtn{width:100%;height:50px;background:#fff;font-family: "F1 Display", Fallback, sans-serif;font-size:26px;line-height:26px;font-weight:bold;color:var(--gp-pur);text-align:center;margin:0 auto 5px;padding:10px 0px;border-radius:5px 25px 5px 25px;cursor:pointer;user-select:none;box-sizing: border-box !important;}
 		}
 	/*mobile -----------------*/
 		@media only screen and (min-width: 0px) and (max-width: 999.99px){	
@@ -69,213 +167,1139 @@ page_title = "FORMULA 1 LQATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026. | Melbourne A
 		#tmLogo{width:200px;height:auto;display:block;}
 		#tmLogo img{width:100%;height:auto;padding:0;margin:0px auto;}
 		#tmSearch{display:none;}
+		/*f1 CONTENT*/	
+	
 
-		#ausgpContent{background-color: #fff;width:100%;height:auto;overflow:hidden;padding:0px;margin:0px auto;position: relative;font-family: "F1 Display", Fallback, sans-serif;font-size: 12px;}
-			
-		#ausgpHeader{width:94%;max-width:1400px;height:auto;position: relative;margin:0px auto;padding:1px;background:var(--gp-pur);box-sizing:border-box!important;text-align: center;overflow:hidden;border-radius:30px;}	
-		#ausgpHeader img{width:100%;height:auto;}	
-		#ausgpLogo{width:195px;height:auto;margin:35px auto;position: relative;display:inline-block;vertical-align: top;padding:0px 640px 0px 0px;}
-		#ausgpLogo img{width:100%;height:auto;}
-
-		#ausgpInfoMod{width:94%;max-width:850px;height:auto;border-radius:30px;background:#fff;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);margin:50px auto 0px;padding:50px;box-sizing:border-box!important;z-index: 19;position: relative;display:block;}
-		#ausgpInfoMod p{font-family: "Averta", Fallback, sans-serif;font-size: 22px;line-height:auto;color:#000;text-align: left;margin:0px;padding:0;}
-		.ausgpStripe{width:80%;max-width:450px;height:6px;margin:0px 0px 20px 0px;border-radius:10px;background:var(--gp-pur);}
-		#ausgpHeroImg{max-width:500px;width:80%;height:auto;margin:-20px auto 20px; transform:translateX(20%); padding:0px;overflow:hidden;border-radius:30px;z-index: 20;position: relative;display:block;}
-		#ausgpHeroImg img{width:100%;height:auto;}
 
 	
+	/*faq mod*/
+		#ausgpFaqMod{width:100%;height:auto;background:transparent;position:relative;margin:30px auto 50px;box-sizing:border-box !important;text-align: center}
+		.ausgpFaqModDiv{width:70%;height:4px;background:var(--gp-pur);margin:60px -50px 40px auto;display:block;padding:1px;}
+		.ausgpFaqWrap{width:100%;max-width:1100px;height:auto;margin:0 auto;display:block;vertical-align: top;text-align: left;position: relative;}
+		.ausgpFaqWrap a{text-decoration: none;}
+		#ausgpFaqMod h1{font-family: "F1 Display", Fallback, sans-serif;font-size: 36px;color:#15151e;text-align: center;}
+		.ausgpFaqStripe{width:445px;margin: -40px 0px 0px 30px;}
+		.ausgpFaqHero{margin:20px -132px 60px 0px;height:250px;width:445px;display:inline-block !important}
+		.ausgpTileDiv{width:50px;height:4px;background:var(--gp-pur);margin:5px auto 10px;}
+		
+		/*info section*/
+		.ausgpInfoCard{max-width:325px;width:96%;height:auto;display:block;background:#fff;border-radius:15px;box-shadow: 0px 5px 10px 0px rgb(0, 0, 0 , 10%);overflow:hidden;position: relative;vertical-align: top;margin:0px auto 20px;}
+	
+		.asugpInfoHead{width:100%;height:auto;margin:0;padding:30px 20px;box-sizing: border-box !important;background:#eeeded;}
+		.asugpInfoHead img{display:inline-block;width:80px;height:80px;float:left;margin:0px 10px 0px 0px;}
+		.asugpInfoHead h2{font-family: "F1 Display", Fallback, sans-serif;font-size: 28px;color:#15151e;display:inline-block;text-align: left;margin:0;padding:0px;}
+		.ausgpInfoCard p{font-family: "Averta", Fallback, sans-serif;padding:15px 20px 120px 15px;font-size: 22px;color:#15151e;text-align: center;}
+		.ausgpInfoBtn{width:100%;height:60px;background:var(--gp-pur);position: absolute;bottom: 0;}
+		.ausgpInfoBtn h3{font-family: "F1 Display", Fallback, sans-serif;font-size: 20px;color:#fff;text-align: center;margin:10px 0px 0px 0px;padding:0px; z-index: 51;position: relative;}
+		.ausgpInfoBtnBg{width:115%;height:130%;background:var(--gp-pur);position: absolute;margin:0px auto;bottom:0;left:0;right:0;transform: rotate(355deg);z-index: 50;}
+		.ausgpFaqTextWrap{max-width:800px;width:94%;height:auto;margin:0 auto;display:block;text-align: left;position: relative;}
+		.ausgpFaqTextWrap p{font-family: "Averta", Fallback, sans-serif;padding:0px;font-size: 16px;color:#15151e;text-align: left;}
+		
+		.ausgpStripe{height:70px;position: relative;display:block;z-index:19;border-radius:15px;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp_pattern.jpg") center center;background-size:200%;box-shadow: 0px 10px 10px 0px rgb(0, 0, 0 , 20%)}
+		.ausgpStripe img{width:100%;height:auto;position: relative;display:block;z-index:19;border-radius:15px;}
+		.ausgpHero{border-radius:15px;position: relative;display:block;z-index:20;overflow:visible;background-size:contain;box-shadow: 0px 10px 10px 0px rgb(0, 0, 0 , 20%)}
+		.ausgpHero img{width:100%;height:auto;border-radius:15px;position: relative;display:block;z-index:20;}
+		.ausgpBtn{height:auto;border-radius:25px;font-family: "F1 Display", Fallback, sans-serif;font-size: 16px;color:#fff;text-align: center;background:var(--gp-pur);padding:10px 5px;}	
 		}
-
 </style>
-<!---TM HEADER--->
-<div id="tmHeader">
-	<div id="tmLogo"><img src="https://s1.ticketm.net/en-au/css/6087a0923498ed842bd93d95cd427cba/rebrand_smvp/tm/img/sys/alpha/discovery/header/ticketmaster-logo.svg"></div><div id="tmSearch">what are you looking for?</div>
-</div>
+
 <!--aus gp content--->
 <div id="ausgpContent">
-	<!--menu-->
 
-	<!--main content-->
 	<div id="ausgpHeader">
 		
-		<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausp_announce_header_1440x450.jpg" alt="Formula 1 Australian Grand Prix 2026">
+
 
 	</div>
-	<!--info section--->
-		<div id="ausgpInfoMod">
-			<div class="ausgpStripe"></div>
-			<p>From March 5-8, the <strong>FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026</strong> will return in true Melbourne style, with plenty of fashion, food, arts and entertainment to compliment the on&#45;track action. The first race of the 2026 season will see the highly anticipated debut of the Audi and Cadillac teams, while Oscar Piastri will return to his home circuit to continue his phenomenal run of success.</p>
-      
+	<!--menu-->
+	<div id="ausgpMenuWrap">
+	<div id="ausgpMenu">
+		<!--ticket type-->
+			<div id="ausgpTicketMenu" class="ausgpMenuBtn">
+				<div class="ausgpMenuIco"><img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_tickets_ico.svg"></div>
+				<h1>Ticket Type</h1>
+				<div class="ausgpMenuArrow"><img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_ico.svg"></div>
+				<div id="ausgpTicketDropDown" class="ausgpDropDown ausgpDropDownOff">
+					<h2>Select Ticket Type:</h2>
+					<div data-filterbtn="General Admission" class="ausgpDropDownBtn ausgpFilterOn"><div class="ausgpCheckBox ausgpCheckBoxOn"></div><div class="ausgpDropDownIco"><img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_genadmin_g_ico.svg" alt="General Admission Icon"></div><p>General Admission</p></div>
+					<div data-filterbtn="Reserved" class="ausgpDropDownBtn ausgpFilterOn"><div class="ausgpCheckBox ausgpCheckBoxOn"></div><div class="ausgpDropDownIco"><img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_reserved_g_ico.svg" alt="Reserved Seat Icon"></div><p>Reserved Seat</p></div>
+				</div>
+			</div>
+			<div class="ausgpMenuDiv"></div>
+			<!--filters-->
+			<div id="ausgpFilterMenu" class="ausgpMenuBtn">
+				<div class="ausgpMenuIco"><img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_filter_ico.svg"></div>
+				<h1>Filter By</h1>
+				<div class="ausgpMenuArrow"><img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_ico.svg"></div>
+				<div id="ausgpFilterDropDown"  class="ausgpDropDown ausgpDropDownOff"> 
+					<h2>Show Events Containing:</h2>
+					<div data-filterbtn="Accessible" class="ausgpDropDownBtn ausgpFilterOn"><div class="ausgpCheckBox ausgpCheckBoxOn"></div><div class="ausgpDropDownIco"><img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_accessible_g_ico.svg" alt="Reserved Seat Icon"></div><p>Accessible Option</p></div>
+					<div data-filterbtn="Covered" class="ausgpDropDownBtn ausgpFilterOn"><div class="ausgpCheckBox ausgpCheckBoxOn"></div><div class="ausgpDropDownIco"><img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_covered_g_ico.svg" alt="Covered Icon"></div><p>Covered Option</p></div>
+					<div data-filterbtn="Extra" class="ausgpDropDownBtn ausgpFilterOn"><div class="ausgpCheckBox ausgpCheckBoxOn"></div><div class="ausgpDropDownIco"><img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_extra_g_ico.svg" alt="Extra Icon"></div><p>Extra Experience</p></div> 
+					<div data-filterbtn="Premium" class="ausgpDropDownBtn ausgpFilterOn"><div class="ausgpCheckBox ausgpCheckBoxOn"></div><div class="ausgpDropDownIco"><img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_premium_g_ico.svg" alt="Premium Icon"></div><p>Premium Option</p></div>
+				</div>
+			</div>
+	</div>
 
+	</div>
 
+	<div class="ausgpHeader"> 
+			<h1>General Tickets</h1>
+			<div class="ausgpHeaderDiv"></div>
+	<!--counter-->
+	<div id="ausgpCounter"><div class="ausgpCounterWrap"><div id="ausgpEventCount"></div><p> / </p><div id="ausgpEventCountTotal"></div></div><p>&nbsp; events shown</p></div>
+	</div>
+	<section id="ausgpEventStream">
+		<!--error-->
+		<div id="ausgpErrorNoTickets"> 
+			<h1>Chequered flag?</h1>
+			<p>Your search didn&rsquo;t match any of our available tickets.<br /><br />
+			Please adjust your filters to see what tickets are available.</p>
+				<div class="ausgpErrorBtn">Reset Filters</div>
 		</div>
-		<div id="ausgpHeroImg"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_hero_750x400.jpg"></div>	
-	<!--selection area--->
+<!--event cards--->
+<!--Park Pass-->
+<div class="ausgpEventCard" data-ticket="General Admission" data-covered="false" data-premium="false" data-accessible="true" data-extra="false" data-filters="Accessible">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
 
-	<!--end select mod--->
-	<!---grandstands--->
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_ParkPass_450x165.jpg" alt="Park Pass">
+	</div>
+	<div class="ausgpCardTitle"><h1>Park Pass</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag genTag"><p>General Admin</p></div>
+		<!--<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>-->
+		<!--<div class="ausgpCardTag preTag"><p>Premium Option</p></div>-->
+		<!--<div class="ausgpCardTag covTag"><p>Covered Option</p></div>-->
+		<div class="ausgpCardTag AccTag"><p>Accessible</p></div>
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Thu: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
 </div>
+<!--T6 Grandstand--
+<div class="ausgpEventCard">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Turn</p><h1>6</h1></div>
+			<div class="ausgpGate"><p>Gate</p><h1>5</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_TurnSix_450x165.jpg" alt=" Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>Turn 6 Grandstand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<div class="ausgpCardTag preTag"><p>Premium Option</p></div>
+		<div class="ausgpCardTag covTag"><p>Covered Option</p></div>
+		<div class="ausgpCardTag AccTag"><p>Accessible</p></div>
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Thu: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>-->
+<!--American Express Stand-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Turn</p><h1>04</h1></div>
+			<div class="ausgpGate"><p>Gate</p><h1>03</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_ParkPass_450x165.jpg" alt=" Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>American Express Stand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<!--<div class="ausgpCardTag preTag"><p>Premium Option</p></div>-->
+		<!--<div class="ausgpCardTag covTag"><p>Covered Option</p></div>-->
+		<!--<div class="ausgpCardTag AccTag"><p>Accessible</p></div>-->
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--Brabham Grandstand-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Turn</p><h1>01</h1></div>
+			<div class="ausgpGate"><p>Gate</p><h1>01</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_BrabhamGrandstand_450x165.jpg" alt="Brabham Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>Brabham Grandstand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<!--<div class="ausgpCardTag preTag"><p>Premium Option</p></div>-->
+		<!--<div class="ausgpCardTag covTag"><p>Covered Option</p></div>-->
+		<!--<div class="ausgpCardTag AccTag"><p>Accessible</p></div>-->
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--Button Grandstand-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Turn</p><h1>08</h1></div>
+			<div class="ausgpGate"><p>Gate</p><h1>05</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_ButtonGrandstand_450x165.jpg" alt="Button Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>Button Grandstand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<!--<div class="ausgpCardTag preTag"><p>Premium Option</p></div>-->
+		<!--<div class="ausgpCardTag covTag"><p>Covered Option</p></div>-->
+		<!--<div class="ausgpCardTag AccTag"><p>Accessible</p></div>-->
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--Clark Grandstand-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Turn</p><h1>08</h1></div>
+			<div class="ausgpGate"><p>Gate</p><h1>05</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_ClarkGrandstand_450x165.jpg" alt="Clark Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>Clark Grandstand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<!--<div class="ausgpCardTag preTag"><p>Premium Option</p></div>-->
+		<!--<div class="ausgpCardTag covTag"><p>Covered Option</p></div>-->
+		<!--<div class="ausgpCardTag AccTag"><p>Accessible</p></div>-->
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--Fangio Grandstand-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="true" data-premium="true" data-accessible="false" data-extra="false" data-filters="Covered,Premium">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Main Straight</p></div>
+			<div class="ausgpGate"><p>Gate</p><h1>01</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_FangioGrandstand_450x165.jpg" alt="Fangio Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>Fangio Grandstand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<div class="ausgpCardTag preTag"><p>Premium Option</p></div>
+		<div class="ausgpCardTag covTag"><p>Covered Option</p></div>
+		<!--<div class="ausgpCardTag AccTag"><p>Accessible</p></div>-->
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--Hill  Grandstand-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Turn</p><h1>03</h1></div>
+			<div class="ausgpGate"><p>Gate</p><h1>03</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_HillGrandstand_450x165.jpg" alt=" Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>Hill Grandstand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<!--<div class="ausgpCardTag preTag"><p>Premium Option</p></div>-->
+		<!--<div class="ausgpCardTag covTag"><p>Covered Option</p></div>-->
+		<!--<div class="ausgpCardTag AccTag"><p>Accessible</p></div>-->
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--Jones Grandstand-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="true" data-extra="false" data-filters="Accessible">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Turn</p><h1>01</h1></div>
+			<div class="ausgpGate"><p>Gate</p><h1>01</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_JonesGrandstand_450x165.jpg" alt=" Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>Jones Grandstand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<!--<div class="ausgpCardTag preTag"><p>Premium Option</p></div>-->
+		<!--<div class="ausgpCardTag covTag"><p>Covered Option</p></div>-->
+		<div class="ausgpCardTag AccTag"><p>Accessible</p></div>
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--Lauda  Grandstand-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Turn</p><h1>11 &amp; 12</h1></div>
+			<div class="ausgpGate"><p>Gate</p><h1>10</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_LaudaGrandstand_450x165.jpg" alt=" Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>Lauda Grandstand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<!--<div class="ausgpCardTag preTag"><p>Premium Option</p></div>-->
+		<!--<div class="ausgpCardTag covTag"><p>Covered Option</p></div>-->
+		<!--<div class="ausgpCardTag AccTag"><p>Accessible</p></div>-->
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--Prost  Grandstand-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="true" data-premium="true" data-accessible="false" data-extra="false" data-filters="Covered,Premium">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Turn</p><h1>14</h1></div>
+			<div class="ausgpGate"><p>Gate</p><h1>10</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_ProstGrandstand_450x165.jpg" alt="Prost Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>Prost Grandstand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<div class="ausgpCardTag preTag"><p>Premium Option</p></div>
+		<div class="ausgpCardTag covTag"><p>Covered Option</p></div>
+		<!--<div class="ausgpCardTag AccTag"><p>Accessible</p></div>-->
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--Piastri Grandstand-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="true" data-premium="true" data-accessible="false" data-extra="false" data-filters="Covered,Premium">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Main Straight</p></div>
+			<div class="ausgpGate"><p>Gate</p><h1>01</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_ParkPass_450x165.jpg" alt="Piastri Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>Piastri Grandstand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<div class="ausgpCardTag preTag"><p>Premium Option</p></div>
+		<div class="ausgpCardTag covTag"><p>Covered Option</p></div>
+		<!--<div class="ausgpCardTag AccTag"><p>Accessible</p></div>-->
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--Ricciardo Grandstand-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="true" data-premium="true" data-accessible="false" data-extra="false"  data-filters="Covered,Premium">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Turn</p><h1>03 &amp; 04</h1></div>
+			<div class="ausgpGate"><p>Gate</p><h1>02</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_RicciardoGrandstand_450x165.jpg" alt="Ricciardo Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>Ricciardo Grandstand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<div class="ausgpCardTag preTag"><p>Premium Option</p></div>
+		<div class="ausgpCardTag covTag"><p>Covered Option</p></div>
+		<!--<div class="ausgpCardTag AccTag"><p>Accessible</p></div>-->
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--Schumacher  Grandstand-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="true" data-premium="true" data-accessible="true" data-extra="false" data-filters="Accessible,Covered,Premium">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Turn</p><h1>13</h1></div>
+			<div class="ausgpGate"><p>Gate</p><h1>10</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_SchumacherGrandstand_450x165.jpg" alt="Schumacher Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>Schumacher Grandstand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<div class="ausgpCardTag preTag"><p>Premium Option</p></div>
+		<div class="ausgpCardTag covTag"><p>Covered Option</p></div>
+		<div class="ausgpCardTag AccTag"><p>Accessible</p></div>
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--Senna Grandstand-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="true" data-premium="true" data-accessible="false" data-extra="false" data-filters="Covered,Premium">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Turn</p><h1>14</h1></div>
+			<div class="ausgpGate"><p>Gate</p><h1>10</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_SennaGrandstand_450x165.jpg" alt="Senna Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>Senna Grandstand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<div class="ausgpCardTag preTag"><p>Premium Option</p></div>
+		<div class="ausgpCardTag covTag"><p>Covered Option</p></div>
+		<!--<div class="ausgpCardTag AccTag"><p>Accessible</p></div>-->
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--Stewart Grandstand-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Turn</p><h1>05</h1></div>
+			<div class="ausgpGate"><p>Gate</p><h1>03</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_StewartGrandstand_450x165.jpg" alt="Steward Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>Steward Grandstand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<!--<div class="ausgpCardTag preTag"><p>Premium Option</p></div>-->
+		<!--<div class="ausgpCardTag covTag"><p>Covered Option</p></div>-->
+		<!--<div class="ausgpCardTag AccTag"><p>Accessible</p></div>-->
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--Vettel Grandstand-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Turn</p><h1>11</h1></div>
+			<div class="ausgpGate"><p>Gate</p><h1>09</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_VettelGrandstand_450x165.jpg" alt="Vettel Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>Vettel Grandstand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<!--<div class="ausgpCardTag preTag"><p>Premium Option</p></div>-->
+		<!--<div class="ausgpCardTag covTag"><p>Covered Option</p></div>-->
+		<!--<div class="ausgpCardTag AccTag"><p>Accessible</p></div>-->
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--Waite Grandstand-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Turn</p><h1>09 &amp; 10</h1></div>
+			<div class="ausgpGate"><p>Gate</p><h1>08</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_WaiteGrandstand_450x165.jpg" alt="Waite Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>Waite Grandstand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<!--<div class="ausgpCardTag preTag"><p>Premium Option</p></div>-->
+		<!--<div class="ausgpCardTag covTag"><p>Covered Option</p></div>-->
+		<!--<div class="ausgpCardTag AccTag"><p>Accessible</p></div>-->
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--Webber Grandstand-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false"  data-filters="none">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<div class="ausgpTurnWrap">
+			<div class="ausgpTurn"><p>Turn</p><h1>11</h1></div>
+			<div class="ausgpGate"><p>Gate</p><h1>10</h1></div>
+		</div>
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_WebberGrandstand_450x165.jpg" alt="Webber Grandstand">
+	</div>
+	<div class="ausgpCardTitle"><h1>Webber Grandstand</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>
+		<!--<div class="ausgpCardTag preTag"><p>Premium Option</p></div>-->
+		<!--<div class="ausgpCardTag covTag"><p>Covered Option</p></div>-->
+		<!--<div class="ausgpCardTag AccTag"><p>Accessible</p></div>-->
+	</div>
+	<div class="ausgpCardAvailWrap">
+		<h2>Ticket Availability</h2>
+		<div class="ausgpCardAvailTag">4Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div class="availTagIndicator"></div></div>
+	</div>
+	</div>
+	<div class="ausgpCardBot">
+		<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--Joy Flights-->
+<div class="ausgpEventCard" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="true" data-filters="Extra">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_JoyFlight_450x165.jpg" alt="Joy Flight">
+	</div>
+	<div class="ausgpCardTitle"><h1>Joy Flight</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<!--<div class="ausgpCardTag resTag"><p>Reserved Seat</p></div>-->
+		<!--<div class="ausgpCardTag preTag"><p>Premium Option</p></div>-->
+		<!--<div class="ausgpCardTag covTag"><p>Covered Option</p></div>-->
+		<!--<div class="ausgpCardTag AccTag"><p>Accessible</p></div>-->
+		<div class="ausgpCardTag ExtTag"><p>Extra Experience</p></div>
+	</div>
+
+	</div>
+	<div class="ausgpCardBot">
+		<!--<div class="ausgpCardPriceWrap">
+			<h2>Sunday From:</h2>
+			<h3>$000*</h3>
+		</div>-->
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>
+<!--accessible-->
+<a href="https://www.ticketmaster.com.au/explore/formula-1-qatar-airways-australian-grand-prix-2026"><div id="ausgpAccessibleCard" class="ausgpEventCard" data-ticket="none" data-covered="true" data-premium="false" data-accessible="true" data-extra="false" data-filters="Accessible">
+
+	<div class="ausgpCardBot">
+		<div class="ausgpCardNote"><p>For bookings with accessible needs please view the options available here.</p></div>
+		<div class="ausgpCardBtn">See Options</div>
+	</div>
+</div></a>
+<!--Collector Ticket--
+<div class="ausgpEventCard">
+	<div class="ausgpCardTop">
+	<div class="ausgpHero">
+		<img src="http://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_ParkPass_450x165.jpg" alt="Collector Ticket">
+	</div>
+	<div class="ausgpCardTitle"><h1>Collector Ticket</h1></div>
+	<div class="ausgpCardDiv"></div>
+	<div class="ausgpTagWrap">
+		<div class="ausgpCardTag ExtTag"><p>Optional Extra</p></div>
+	</div>
+
+	</div>
+	<div class="ausgpCardBot">
+
+		<div class="ausgpCardBtn">Select Day</div>
+	</div>
+</div>-->
+
+		
+	</section>
+
+<section id="ausgpEvents">
+
+<!--Park Pass-->
+
+<!--T6 Grandstand-->
+
+<!--American Express Stand-->
+
+<!--Brabham Grandstand-->
+
+<!--Button Grandstand-->
+
+<!--Clark Grandstand-->
+
+<!--Fangio Grandstand-->
+
+<!--Hill  Grandstand-->
+
+<!--Jones Grandstand-->
+
+<!--Lauda  Grandstand-->
+
+<!--Prost  Grandstand-->
+
+<!--Piastri Grandstand-->
+
+<!--Ricciardo Grandstand-->
+
+<!--Schumacher  Grandstand-->
+
+<!--Senna Grandstand-->
+
+<!--Stewart Grandstand-->
+
+<!--Vettel Grandstand-->
+
+<!--Waite Grandstand-->
+
+<!--Webber Grandstand-->
+
+<!--Joy Flights-->
+
+<!--Collector Ticket-->
+
+
+</section>
+<!---faq and event info section--->
+		<div id="ausgpFaqMod">
+			<div class="ausgpFaqModDiv"></div>
+		<!--TM Faqs--->
+		<div class="ausgpFaqWrap">
+			<h1>FAQ&rsquo;s &amp; Event Information</h1>
+			
+			<div class="ausgpInfoCard">
+				<div class="asugpInfoHead">
+					<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_customerService_ico.svg"><h2>General<br />FAQ&rsquo;s</h2>
+				</div>
+				<p>Have a question? View our FAQs regarding when we go on sale, ticket prices, grandstand locations and more.</p>
+			
+				<a href="https://help.ticketmaster.com.au/hc/en-au/articles/28328216573201-Formula-1-Australian-Grand-Prix-2025" target="_blank"><div class="ausgpInfoBtn"><h3>All Your Answers Here</h3><div class="ausgpInfoBtnBg"></div></div></a>
+			</div>
+			<!--TM Faqs--->
+			<div class="ausgpInfoCard">
+				<div class="asugpInfoHead">
+					<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_track_ico.svg"><h2>Event<br />Information</h2>
+				</div>
+				<p>For all your general event information on&#45;track and off&#45;track check out the Australian Grand Pix site.</p>
+			
+				<a href="https://www.grandprix.com.au/" target="_blank"><div class="ausgpInfoBtn"><h3>See More</h3><div class="ausgpInfoBtnBg"></div></div></a>
+			</div>			
+			<!--Hosp--->
+			<div class="ausgpInfoCard">
+				<div class="asugpInfoHead">
+					<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_hospitality_ico.svg"><h2>Hospitality<br />FAQ&rsquo;s</h2>
+				</div>
+				<p>Access information on Hospitality Tickets, arrival tips, and more on the Australian Grand Prix site.</p>
+			
+				<a href="https://www.grandprix.com.au/hospitality/already-booked-faq" target="_blank"><div class="ausgpInfoBtn"><h3>See More</h3><div class="ausgpInfoBtnBg"></div></div></a>
+			</div>
+			<!--<div class="ausgpHero ausgpFaqHero">
+				<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2024/ausgp_faq_hero_445x250v2.jpg">
+				<div class="ausgpStripe ausgpFaqStripe"></div>
+			</div>-->		
+		</div>
+			
+	<!--products--->	
+		<div class="ausgpFaqWrap">
+			<h1>Product Information</h1>
+			<!--Collector Ticket--->
+			<div  id="ausgpFaqCollectorBtn" class="ausgpInfoCard ausgpProdCard">
+				<div class="asugpInfoHead">
+					<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_collector_ico.svg"><h2>Collector<br />Ticket</h2>
+				</div>
+				<p>Want a memento? Grab a collector ticket.</p>
+			
+				<div class="ausgpInfoBtn"><h3>Read More</h3><div class="ausgpInfoBtnBg"></div></div>
+			</div>
+			<!--Aisle seating--->
+			<div  id="ausgpFaqAisleBtn" class="ausgpInfoCard ausgpProdCard">
+				<div class="asugpInfoHead">
+					<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_aisle_ico.svg"><h2>Aisle<br />Seating</h2>
+				</div>
+				<p>Looking for some extra comfort? Aisle Seats have you covered.</p>
+			
+				<div class="ausgpInfoBtn"><h3>Read More</h3><div class="ausgpInfoBtnBg"></div></div>
+			</div>
+			<!--In Demand--->
+			<div id="ausgpFaqDemandBtn" class="ausgpInfoCard ausgpProdCard">
+				<div class="asugpInfoHead">
+					<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_priority_ico.svg"><h2>In Demand<br />Tickets</h2>
+				</div>
+				<p>Want to ensure you&rsquo;re in the most in demand areas of the circuit?</p>
+			
+				<div class="ausgpInfoBtn"><h3>Read More</h3><div class="ausgpInfoBtnBg"></div></div>
+			</div>
+		</div>
+	<!--products description--->		
+		<div id="ausgpFaqCollector" class="ausgpFaqTextWrap">
+			<div class="ausgpFaqModDiv"></div>
+			<h1>Souvenir Tickets</h1>
+			<p>Missed out on adding a Collector Ticket to your order? Celebrate your love for the event with a stylish Souvenir Ticket. Souvenir Tickets are mailed out after the event and are an unforgettable keepsake for true fans!
+		<br /><br />
+		Souvenir Tickets can only be purchased if you have an Australian postal address, so double-check that your Ticketmaster account details are up to date! Expected delivery &#45; 3 weeks after the event.
+		<br /><br />
+		Purchase yours today and hold onto the memories!
+		<br /><br />
+		Upsell only does not include event entry
+		<br /><br />
+		To purchase yours today and hold onto the memories click <a href="https://www.ticketmaster.com.au/event/25006174A3070C7F">here</a>! 		
+	</p>	
+		</div>
+	<!--products description--->	
+		<div id="ausgpFaqAisle" class="ausgpFaqTextWrap">
+			<div class="ausgpFaqModDiv"></div>
+			<h1>What are Aisle Seat Tickets?</h1>
+			<p>Looking to add some added comfort to your race day? We've got you covered with Aisle Seat Tickets!
+			 <br><br>
+			These premium tickets are available in all grandstands, covering the first 4 seats from each aisle. They incur a $20 surcharge.
+				</p>
+		</div>
+	<!--products description--->	
+		<div id="ausgpFaqDemand" class="ausgpFaqTextWrap">
+			<div class="ausgpFaqModDiv"></div>
+			<h1>What are In Demand Tickets?</h1>
+			<p>A portion of each grandstand will be allocated to In Demand Tickets which are tickets to the <strong>FORMULA 1 LOUIS VUITTON AUSTRALIAN GRAND PRIX 2025</strong> in some of the most sought&#45;after areas of each of the Grandstands. Please Note &#45; Ticket prices may fluctuate based on demand.
+				<br /><br />
+				In Demand tickets are made available by event organisers through Ticketmaster. They give fans fair and safe access to the most sought&#45;after areas in the Grandstands at market&#45;driven prices (adjusting prices according to supply and demand). In Demand tickets are ticket&#45;only purchases, and prices are subject to change at any time.
+				</p>
+		</div>		
+			
+		</div>	
+	</div>
+
 <script type="text/javascript">
 	var $j = jQuery.noConflict();
-
-	ausgpEventList = ["SouvenirTicket","JoyFlight","Vettel","Webber","Waite","Stewart","Senna","Schumacher","Ricciardo","Prost","Moss","Lauda","Jones","Hill","Fangio","Clark","Button","Brabham","ParkPass","Amex","PitLaneWalk","TurnSix" ]
-
-
 	
-$j("#ausgpTopInfoBtn").click(
-	function(){
-		$j('html, body').animate({ scrollTop: $j("#ausgpInfoMod").offset().top}, 2000);	
-})
-$j("#ausgpTopCovidBtn, #ausgpCovidMenuBtn").click(
-	function(){
-		$j('html, body').animate({ scrollTop: $j("#ausgpFaqMod").offset().top}, 2000);	
-})	
-$j("#ausgpTicketsMenuBtn").click(
-	function(){
-		$j('html, body').animate({ scrollTop: $j("#ausgpSelectMod").offset().top}, 2000);	
-})	
-//show grandstandsausgp
-$j(".ausgppSelectDay").click(
-	function(){
-		var currentGrandstand = $j(this).attr('id').replace('Btn', '');
-		closeZones()
-		$j("#" + currentGrandstand).delay(300).fadeIn(1500);
-		$j('html, body').animate({ scrollTop: $j("#ausgpGrandstands").offset().top}, 1500);	
-});		
+	ticketList = ["General Admission", "Reserved", "none"]
+	filterList = ["Accessible", "Covered", "Extra", "Premium"]
+	let covered = true;
+	let premium = true;
+	let accessible = true;
+	let extra = true;
+	eventCountTotal = 0;
+	$j(document).ready(function () {
 
-
-function closeZones(){
-			$j(".ausgpGrandstand").fadeOut(50);
-	};	
-//faq scrolls
-$j(".ausgpProdCard").click(
-	function(){
-		var currentProd = $j(this).attr('id').replace('Btn', '');	
-		$j('html, body').animate({ scrollTop: $j("#" + currentProd).offset().top}, 1500);	
-});			
-
-
-//URL token filtering
-function getUrlVars(){	
-    urlVars = [];
-	ausgpURLs = [];
-
-
-	// finally got the filtering to work and not slow down when tracking paramaters were present by restricting it to numbers (so as long as an event name doesnt include a number? we good)
-	var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split("=").join('&').split('&').filter(hashes => /[a-zA-Z]/.test(hashes));
-//console.log(hashes)
-
-    for(var i = 0; i < hashes.length; i++)
-    {
-
-	    hash = hashes[i].split('&').filter(hashes =>  hashes !== undefined);
-        urlVars.push(hash[0]);
-        urlVars[hash[0]] = hash[1];	
-    }
-
-	let search = (cleanURL) =>  cleanURL.filter(Boolean)
-	gpFound = search(urlVars, 'ausgpEvent');
-
-	//ausgpEvent=ParkPass
-	checkURLArray()
-
-}
-function checkURLArray(){
-
-		$j.grep(urlVars, function(urlFound){
-		if(jQuery.inArray( urlFound, ausgpEventList) != -1){
-			//match arrays - remove URL from end of current found variable
-			urlAusGpFound = urlFound
-	
-
-			$j("#ausgp" + urlAusGpFound).delay(300).fadeIn(1500);
-			$j('html, body').animate({ scrollTop: $j("#ausgpGrandstands").offset().top}, 1500);	
-			//activate checkbox
-
-	}
+		cardsToDisplay();
 	});
-}; 
-//best avail module
-$j(".ausgpBestAvailBtn").click(
-	function(){
-		$j("#ausgpBestAvailWrap").toggleClass('ausgpBestAvailToggle')
-		$j(this).toggleClass('ausgpBestAvailBtnToggle')
-	}
-)
-$j(".ausgpBestAvailCard").click(
-	function(){
-		var currentGrandstand = $j(this).data('babtn');
-		closeZones()
-		$j("#ausgp" + currentGrandstand).delay(300).fadeIn(1500);
-		$j('html, body').animate({ scrollTop: $j("#ausgpGrandstands").offset().top}, 1500);	
-});
 
-function bestAvailCheck(){
-	bestAvailCount = 0;
-	$j.ajax({
-               type: 'GET',
-               url: "https://953lrs6ve3.execute-api.us-east-1.amazonaws.com/prod/?events=16PZk7JJ3ZAGvCa2,16efZb3Q9G7n8Sd,16efZb3Q_G7T8Bu,16efZb3Q_G7wZyT,16efZb3QbG7RYVe,16efZb3QbG7TZV_,1APZk7YGkeWwetO,1AefZboGkRbWoEp,1AefZboGklIdoE_,1aefZb3Q_P8Zd267,1aefZb3Q__YZd272,1ka8v-atGAGEYDj,1ka8v-atGAGQODe,1ka8v-atGAGUOHA,1ka8v-atGAugOXG,1ka8v-atGAuoOW1,1ka8v-atGAuqOWr,1ka8v-atGAutOWR,1ka8v-atGAuvYHq,16PZk7JJ8ZACvCk6,16PZk7JJfZAGvCGF,16efZb3Q9G7yZSh,16efZb3Q_G7gYBk,16efZb3Q_G7tZyy,16efZb3QbG7UOV8,1APZk7YGkeWUetx,1AefZboGkRbWsEq,1aefZb3Q_qYZd2A7,1ka8v-atGA17ZBO,1ka8v-atGAGB8Hf,1ka8v-atGAGL8Da,1ka8v-atGAGiYDW,1ka8v-atGAu-OWJ,1ka8v-atGAu4YW4,1ka8v-atGAucOWy,1ka8v-atGAukYHS,1ka8v-atGAuyZXK,16PZk7JJ_ZAuv26k,16PZk7JJpZA2v2Ae,16efZb3Q9G7DOSJ,16efZb3Q9G7c8Sb,16efZb3Q_G7SYBe,16efZb3Q_G7iZyD,16efZb3Q_G7zZBF,16efZb3QbG7wOVu,16efZb3QbG7y8VK,1APZk7YGkeWMwtJ,1AefZboGkRbXvEH,1aefZb3Q_8OZdCG7,1aefZb3Q_A8ZdCku,1aefZb3Q_OZZd2kA,1aefZb3Q_fOZdC2k,1aefZb3Q_v8ZdC7d,1ka8v-atGA16ZB0,1ka8v-atGA1eZB2,1ka8v-atGAGH8H9,1ka8v-atGAGmYDT,1ka8v-atGAGnODB,1ka8v-atGAGqZDA,1ka8v-atGAGxZDK,1ka8v-atGAGz8H5,1ka8v-atGAu0YWt,1ka8v-atGAu58HD,1ka8v-atGAu7ZHc,1ka8v-atGAuDZXp,1ka8v-atGAuKYWK,1ka8v-atGAuL8WN,1ka8v-atGAuM8XC,1ka8v-atGAuYZWX,1ka8v-atGAub8W9,1ka8v-atGAulOWs,16PZk7JJ4ZAGv275,16PZk7JJoZA2vCa7,16efZb3Q9G7XZSm,16efZb3Q_G7BYB5,16efZb3Q_G7RZyW,16efZb3QbG7DYV9,1APZk7YGkeWzwtI,1AefZboGkRbX-Iv,1aefZb3Q_xZZd2kC,1ka8v-GyGACkx7J,1ka8v-atGA15ZBc,1ka8v-atGAC78Xh,1ka8v-atGAG08D4,1ka8v-atGAGXYHQ,1ka8v-atGAGYOHv,1ka8v-atGAuJYWi,1ka8v-atGAuQ8Wh,1ka8v-atGAuuOHT,1ka8v-atGAuwZXd,1APZk7zGkeyCx4X,1APZk7zGkdoqxn7,1APZk7zGkdorwnF,1APZk7zGkdoO3n5,1APZk7zGkdoxenu,1APZkFJGketuomU,1ka8vxaIGACoOSj,1APZkFJGket2smz,1APZkFJGketo-RZ,1APZkFJGket5-mI",
-               dataType: 'html',
-				success: function(data) {
-					var availData = JSON.parse(data);
-					
-					$j.each(availData, function(key,value){
-						var availID = value.eventId
-						var availClass = value.status
-						//console.log(availID)
-						 $j('.ausgpBestAvailCard').each(function () {
-							 var eventID = $j(this).attr('data-eventid');
-							//console.log(eventID)
-							 	if (eventID == availID) {
-									
-									$j(this).addClass(ausgpAvailMapper(availClass))
-									//count 
-									if ((availClass == "TICKETS_AVAILABLE") || (availClass == "FEW_TICKETS_LEFT")){
-										bestAvailCount ++
+//conditional check	
+function cardsToDisplay(){
 
-										}
+	eventCountPlus = 0;
+	eventCountMinus = 0;
+	eventCountTotal = 0;
 
-									}
-								});
+	//run through each card and check against filters
+	$j('.ausgpEventCard').each(function () {
+		let ticketType = $j(this).data('ticket')
+		let coveredCard = $j(this).data('covered')
+		let premiumCard = $j(this).data('premium')
+		let accessibleCard = $j(this).data('accessible');	
+		let extraCard = $j(this).data('ticketList');
+		filterType = $j(this).data('filters').split(",");
+		console.log(filterType)
+		eventCountTotal ++;
 
-						})	
-					},
-                    error: function (xhr, ajaxOptions, thrownError) { 
+		if(
+		((jQuery.inArray(ticketType,ticketList) != -1)) &&//ticket type
+		((matchFilter() === true) || filterType == "none")
 
-                       // console.log("error cant read data");
-                    }
-                });	
-			//run counter
-			setTimeout(bestAvailCounter, 1500)
-			}
-//adjust module based on visible numbers
-function bestAvailCounter(){
+		){			
+	/*(
+		((jQuery.inArray("Accessible",filterList) != -1 && accessibleCard == true) || (accessibleCard == false)) ||//accessible		
+		((jQuery.inArray("Covered",filterList) != -1 && coveredCard == true) || (coveredCard == false)) ||//covered		
+		((jQuery.inArray("Extra",filterList) != -1 && extraCard == true) || (extraCard == false)) ||//extra	
+		((jQuery.inArray("Premium",filterList) != -1 && premiumCard == true) || (premiumCard == false)) //premium		
+	)*/
+				
+				$j(this).fadeIn(500);		
+				eventCountPlus ++;
+				//console.log("showing",eventCountPlus)
+		} else {
+				$j(this).fadeOut(250);
+				eventCountMinus ++;
 
-	if (bestAvailCount == 0){
-		$j("#ausgpBestAvailMod").fadeOut(0)
-	}
-	
-	if ((bestAvailCount <= 9 )&&(window.matchMedia('(min-width: 1000px)').matches)){
-		$j(".ausgpBestAvailBtn").fadeOut(0)
-	}
-
-
+		}	
+				//eventCount ++
+				//console.log("total",eventCountPlus)	
+		});
+		eventCounter()
 }
+matchFilter = function(){
+		filterFound = false;
+		filterList.forEach(function(currentFilter){
+				if(jQuery.inArray(currentFilter, filterType) != -1){filterFound = true;}			
+		})
+		return filterFound;	
+}
+////CLICKS
+//change the class on the checkbox's when they have been checked
+$j(document).on('click', '.ausgpDropDownBtn', function () {
+			if ($j(this).hasClass('ausgpFilterOff')) {
+				$j(this).removeClass('ausgpFilterOff').addClass('ausgpFilterOn');
+				$j(this).children('.ausgpCheckBox').removeClass('ausgpCheckBoxOff').addClass('ausgpCheckBoxOn');
+			} else if ($j(this).hasClass('ausgpFilterOn')) {
+				$j(this).removeClass('ausgpFilterOn').addClass('ausgpFilterOff');
+				$j(this).children('.ausgpCheckBox').removeClass('ausgpCheckBoxOn').addClass('ausgpCheckBoxOff');
+			}
+		});
+//menu open		
+	$j(document).on('click', '#ausgpTicketMenu', function (e) {
+			if ($j(e.target).closest('#ausgpTicketDropdown').length !== 0)
+			{return false;}
+			//open
+				if($j(this).children('#ausgpTicketDropDown').hasClass('ausgpDropDownOff')){
+				$j("#ausgpTicketDropDown").removeClass('ausgpDropDownOff').addClass('ausgpDropDownOn');
+				$j(this).children(".ausgpMenuArrow").addClass('ausgpArrowRot')
+			//fade out		
+				$j("#ausgpFilterDropDown").removeClass('ausgpDropDownOn').addClass('ausgpDropDownOff');
+				$j("#ausgpFilterMenu").children(".ausgpMenuArrow").removeClass('ausgpArrowRot');
+				}
+			//close
+				else if($j(this).children('#ausgpTicketDropDown').hasClass('ausgpDropDownOn')){
+				$j("#ausgpTicketDropDown").removeClass('ausgpDropDownOn').addClass('ausgpDropDownOff');
+				$j(this).children(".ausgpMenuArrow").removeClass('ausgpArrowRot')
+				}
+		});
+	$j(document).on('click', '#ausgpFilterMenu', function (e) {
+			if ($j(e.target).closest('#ausgpFilterDropDown').length !== 0)
+			{return false;}
+			//open
+				if($j(this).children('#ausgpFilterDropDown').hasClass('ausgpDropDownOff')){
+				$j("#ausgpFilterDropDown").removeClass('ausgpDropDownOff').addClass('ausgpDropDownOn');
+				$j(this).children(".ausgpMenuArrow").addClass('ausgpArrowRot')
+			//fade out		
+				$j("#ausgpTicketDropDown").removeClass('ausgpDropDownOn').addClass('ausgpDropDownOff');
+				$j("#ausgpTicketMenu").children(".ausgpMenuArrow").removeClass('ausgpArrowRot');
+				}
+			//close
+				else if($j(this).children('#ausgpFilterDropDown').hasClass('ausgpDropDownOn')){
+				$j("#ausgpFilterDropDown").removeClass('ausgpDropDownOn').addClass('ausgpDropDownOff');
+				$j(this).children(".ausgpMenuArrow").removeClass('ausgpArrowRot')
+				}
+		});
+//click anywhere
+	$j(document).on('click', 'body', function (e) {
+			if (($j(e.target).closest('#ausgpMenu').length !== 0)) 
+			{return false;}
+				$j("#ausgpTicketDropDown").removeClass('ausgpDropDownOn').addClass('ausgpDropDownOff');
+				$j("#ausgpTicketMenu").children(".ausgpMenuArrow").removeClass('ausgpArrowRot');
+				$j("#ausgpFilterDropDown").removeClass('ausgpDropDownOn').addClass('ausgpDropDownOff');
+				$j("#ausgpFilterMenu").children(".ausgpMenuArrow").removeClass('ausgpArrowRot');		
+		});	
+//Ticket Filter Check
+$j(document).on('click', "#ausgpTicketDropDown .ausgpDropDownBtn", function () {
+var toggleTicket = $j(this).data('filterbtn');
+		
+		if((jQuery.inArray(toggleTicket, ticketList ) != -1)){
+			//unselect
+			ticketList.splice($j.inArray(toggleTicket, ticketList ), 1 );		
+		} else {
+			//select
+			ticketList.push(toggleTicket)	
+		}					
+		cardsToDisplay();
+	})		
+//Asc Filters Check
+$j(document).on('click', "#ausgpFilterDropDown .ausgpDropDownBtn", function () {
+var toggleFilter = $j(this).data('filterbtn');
+		
+		if((jQuery.inArray(toggleFilter, filterList ) != -1)){
+			//unselect
+			filterList.splice($j.inArray(toggleFilter, filterList ), 1 );		
+		} else {
+			//select
+			filterList.push(toggleFilter)	
+		}			
+		console.log(filterList)		
+		cardsToDisplay();
+	})			
+//counters
+let eventCounter = function(){
 
-//availMapper	
-function ausgpAvailMapper(data){
-	switch (data){
-			default:return ""
-			case "TICKETS_NOT_AVAILABLE":return "ausgpAvailCardNone";
-			case "FEW_TICKETS_LEFT":return "ausgpAvailCardFew";
-			case "TICKETS_AVAILABLE":return "ausgpAvailCardAvail";	
+	document.getElementById('ausgpEventCount').innerHTML = eventCountPlus.toString();
+	document.getElementById('ausgpEventCountTotal').innerHTML = eventCountTotal.toString();
 
-	}
-}	
-//after load check avail for each button
-window.addEventListener("load", (event) => {
-	bestAvailCheck();
-});
+	if((eventCountPlus == 0)){
+		$j("#ausgpErrorNoTickets").fadeIn(500)
+	} 
+	if((eventCountPlus >= 1)){
+		$j("#ausgpErrorNoTickets").fadeOut(0)	
+	} 
+}
+//error button reset
+$j(document).on('click', ".ausgpErrorBtn", function () {
+	ticketList = ["General Admission", "Reserved", "none"]
+	filterList = ["Accessible", "Covered", "Extra", "Premium"]
+	$j('.ausgpDropDownBtn').removeClass('ausgpFilterOff').addClass('ausgpFilterOn');
+	$j('.ausgpCheckBox').removeClass('ausgpCheckBoxOff').addClass('ausgpCheckBoxOn');
+	cardsToDisplay();
+})
+
 </script>
 
 [% PROCESS "layout/frame/bottom.tt" %]
