@@ -157,7 +157,16 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacNotice{width:94%;max-width:1000px;height:auto;border-radius:10px;padding:20px 40px;margin:20px auto;display:none;background:var(--wac-lgrey);box-sizing: border-box !important;position:relative;}
 	.wacNotice h1{font-family:"Open Sans",fallback;font-size:20px;line-height:20px;font-weight:700;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 15px 0px;}
 	.wacNotice p{font-family:"Open Sans",fallback;font-size:14px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 0px 0px;}
-	.wacCloseNoticeBtn{width:30px;height:30px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-pur);background-size:10px 10px;border-radius:20px;position:absolute;right:5px;top:5px;cursor:pointer;}
+	.wacCloseNoticeBtn,.wacCloseAnnounceBtn{width:30px;height:30px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-pur);background-size:10px 10px;border-radius:20px;position:absolute;right:5px;top:5px;cursor:pointer;}
+
+	#wacAnnounce{}
+	.wacAnnounce{width:100%;max-width:1350px;height:auto;border-radius:10px;padding:0px;margin:20px auto;display:flex;background:var(--wac-lgrey);box-sizing: border-box !important;position:relative;overflow:hidden;}
+	
+	.wacAnnounceHero{width:35%;height:auto;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac26_AnnounceHero_530x340@1.jpg') center center no-repeat;background-size:cover;box-sizing: border-box !important;}
+	.wacAnnounceWrap{width:65%;height:auto;margin:0;padding:40px 20px;display:inline-block;box-sizing: border-box !important;}
+	.wacAnnounceWrap h1{font-family:"ClashDisplay","Averta",fallback;font-size:29px;line-height:32px;font-weight:700;text-align:left;color:#000;margin:0;padding:0 0px 20px 0px;}
+	.wacAnnounceWrap p{font-family:"ClashDisplay","Averta",fallback;font-size:20px;line-height:20px;font-weight:normal;text-align:left;color:#000;margin:0;padding:0 ;}
+	.wacAnnounceWrap em{font-size: 14px !important;}
 	/*event counter*/
 	#wacSubHeader{display:flex;justify-content: space-between;}
 	#wacCounter{width:auto;display:inline-block;background:#fff;border-radius:5px;padding:0px;margin:10px 0px 10px 10px;box-shadow:inset 0px 0px 0px 1px var(--wac-grey);box-sizing: border-box !important;}
@@ -225,6 +234,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacundefinedDate,.wacundefinedVenue,.wacundefinedteam, .wacFollowYourTeamInc,.wacPremiumPassInc,.wacFinalsPassInc,.wacStadiumPassInc,.wacPlayOffPassInc{display:none !important;}
 	.wacEventsInc{width:calc(100% - 20px);margin:10px 10px 15px 10px;padding:0px;display: flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
 	.wacEventsInc p{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:400;margin:0px 0px;padding:0px;text-align:center;color:var(--wac-char);display:inline-block;}
+	.wacEventCard[data-eventcode='FOLBAN'] .wacFollowYourTeamInc:nth-child(1),	.wacEventCard[data-eventcode='FOLTPE'] .wacFollowYourTeamInc:nth-child(1),	.wacEventCard[data-eventcode='FOLIND'] .wacFollowYourTeamInc:nth-child(1),	.wacEventCard[data-eventcode='FOLKOR'] .wacFollowYourTeamInc:nth-child(1),	.wacEventCard[data-eventcode='FOLPHI'] .wacFollowYourTeamInc:nth-child(1),	.wacEventCard[data-eventcode='FOLUZB'] .wacFollowYourTeamInc:nth-child(1){display:inline-block !important;}
 
 	/*card bot*/
 	.wacCardBotWrap{width:100%;height:auto;margin:0px 0px 0px 0px;background:var(--wac-lgrey);border-radius:0px 0px 10px 10px;display: block;}
@@ -408,7 +418,14 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacNotice{width:94%;max-width:1100px;height:auto;border-radius:10px;padding:20px;margin:20px auto;display:none;background:var(--wac-lgrey);box-sizing: border-box !important;position:relative;}
 	.wacNotice h1{font-family:"ClashDisplay","Averta",fallback;font-size:20px;line-height:20px;font-weight:700;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 10px 0px;}
 	.wacNotice p{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:16px;font-weight:500;text-align:center;color:var(--wac-char);margin:0;padding:0px 0px 0px 0px;}
-	.wacCloseNoticeBtn{width:20px;height:20px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-pur);background-size:9px 9px;border-radius:20px;position:absolute;right:5px;top:5px;cursor:pointer;}
+	.wacCloseNoticeBtn,.wacCloseAnnounceBtn{width:20px;height:20px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-pur);background-size:9px 9px;border-radius:20px;position:absolute;right:5px;top:5px;cursor:pointer;}
+	#wacAnnounce{}
+	.wacAnnounce{width:100%;max-width:1000px;height:auto;border-radius:10px;padding:0px;margin:20px auto;display:flex;flex-wrap:wrap;background:var(--wac-lgrey);box-sizing: border-box !important;position:relative;overflow:hidden;}
+	.wacAnnounceHero{width:100%;height:200px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac26_AnnounceHero_530x340@1.jpg') top -30px center no-repeat;background-size:cover;box-sizing: border-box !important;}
+	.wacAnnounceWrap{width:100%;height:auto;margin:0;padding:20px 20px;display:block;box-sizing: border-box !important;}
+	.wacAnnounceWrap h1{font-family:"ClashDisplay","Averta",fallback;font-size:22px;line-height:22px;font-weight:700;text-align:center;color:#000;margin:0;padding:0 0px 20px 0px;}
+	.wacAnnounceWrap p{font-family:"ClashDisplay","Averta",fallback;font-size:18px;line-height:18px;font-weight:normal;text-align:left;color:#000;margin:0;padding:0 ;}
+	.wacAnnounceWrap em{font-size: 14px !important;}
 	/*event counter*/
 	#wacSubHeader{display:flex;justify-content: space-between;}
 	#wacCounter{width:auto;display:inline-block;background:#fff;border-radius:5px;padding:0px;margin:10px 0px 10px 10px;box-shadow:inset 0px 0px 0px 1px var(--wac-grey);box-sizing: border-box !important;}
@@ -476,6 +493,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacundefinedDate,.wacundefinedVenue,.wacundefinedteam, .wacFollowYourTeamInc,.wacPremiumPassInc,.wacFinalsPassInc,.wacStadiumPassInc,.wacPlayOffPassInc{display:none !important;}
 	.wacEventsInc{width:calc(100% - 20px);margin:10px 10px 15px 10px;padding:0px;display: flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
 	.wacEventsInc p{font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:400;margin:0px 0px;padding:0px;text-align:center;color:var(--wac-char);display:inline-block;}
+	.wacEventCard[data-eventcode='FOLBAN'] .wacFollowYourTeamInc:nth-child(1),	.wacEventCard[data-eventcode='FOLTPE'] .wacFollowYourTeamInc:nth-child(1),	.wacEventCard[data-eventcode='FOLIND'] .wacFollowYourTeamInc:nth-child(1),	.wacEventCard[data-eventcode='FOLKOR'] .wacFollowYourTeamInc:nth-child(1),	.wacEventCard[data-eventcode='FOLPHI'] .wacFollowYourTeamInc:nth-child(1),	.wacEventCard[data-eventcode='FOLUZB'] .wacFollowYourTeamInc:nth-child(1){display:inline-block !important;}
 
 	/*card bot*/
 	.wacCardBotWrap{width:100%;height:auto;margin:0px 0px 0px 0px;background:var(--wac-lgrey);border-radius:0px 0px 10px 10px;display: block;}
@@ -760,10 +778,23 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 			</div>
 		</div>
 		<!--notices-->
+		<div id="wacAnnounce" class="wacAnnounce"><div class="wacCloseAnnounceBtn"></div>
+			<div class="wacAnnounceHero"></div>
+			<div class="wacAnnounceWrap">
+				<h1>Single&#45;match tickets on sale on Friday, 5 September</h1>
+				<p>Amazing seats still available for supporters to secure tickets to any game across Perth, Gold Coast and Sydney from 1-21 March. Experience world-class football up close, with prices from $20 for adults and $10 for children*.
+					<br /><br />
+					&bull; <strong>5 September</strong> (10.00am AEST / 8.00am WST) &#45; Pre&#45sale opens exclusively to Visa cardholders <br /><br />
+					&bull; <strong>11 September</strong> (10.00am AEST / 8.00am WST) &#45; General public sales open to all accepted payment methods 
+					<br /><br />
+				<em>*'From' pricing is based on the lowest available adult and children's ticket categories and is subject to availability. Ticket prices will vary depending on match selection, seating category, and availability. Children's tickets apply to ages 4&#45;16</em>
+</p>
+			</div>
+		</div>
 		<!--AUS-->
 		<div id="wacAusNotice" class="wacNotice"><div class="wacCloseNoticeBtn"></div>
 			
-			<p>The host nation Australia will be looking to win their 2nd Women&rsquo;s Asian Cup in 2026.  We have the Follow Australia Pass, as well as a range of Multi-Match Packs for every fan to support the Matildas. 
+			<p>The host nation Australia will be looking to win their 2nd AFC Women&rsquo;s Asian Cup in 2026.  We have the Follow Australia Pass, as well as a range of Multi-Match Packs for every fan to support the Matildas. 
 <br /><br />
 		For a limited time only, Multi&#45;Match Packs give you access to the biggest matches, as well as the option to add a ticket to the Final. Don't miss your chance to be part of history.
 		</strong>
@@ -805,7 +836,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 		</div>
 		<!--IND-->
 		<div id="wacIndNotice" class="wacNotice"><div class="wacCloseNoticeBtn"></div>
-			<p>India makes their 2nd appearance in the Women&rsquo;s Asian Cup. We have the Follow India Pass, as well as a range of Multi-Match Packs for every fan to support the Blue Tigresses. 
+			<p>India makes their 2nd appearance in the AFC Women&rsquo;s Asian Cup. We have the Follow India Pass, as well as a range of Multi-Match Packs for every fan to support the Blue Tigresses. 
 <br /><br />
 		For a limited time only, Multi&#45;Match Packs give you access to the biggest matches, as well as the option to add a ticket to the Final. Don't miss your chance to be part of history.
 
@@ -831,7 +862,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 		<!--KOR-->
 		<div id="wacKorNotice" class="wacNotice"><div class="wacCloseNoticeBtn"></div>
 			<p>
-			The &lsquo;Taegeuk Ladies&rsquo; will be looking to claim their maiden Women&rsquo;s Asian Cup title in 2026. We have the Follow Korea Republic Pass, as well as a range of Multi-Match Packs for every fan to get behind the team. 
+			The &lsquo;Taegeuk Ladies&rsquo; will be looking to claim their maiden AFC Women&rsquo;s Asian Cup title in 2026. We have the Follow Korea Republic Pass, as well as a range of Multi-Match Packs for every fan to get behind the team. 
 <br /><br />
 		For a limited time only, Multi&#45;Match Packs give you access to the biggest matches, as well as the option to add a ticket to the Final. Don't miss your chance to be part of history.
 
@@ -840,7 +871,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 		<!--PHI-->
 		<div id="wacPhiNotice" class="wacNotice"><div class="wacCloseNoticeBtn"></div>
 			<p>
-			The Philippines make their 11th appearance in the Women&rsquo;s Asian Cup. We have the Follow Philippines Pass, as well as a range of Multi-Match Packs for every fan to get behind the Filipinas. 
+			The Philippines make their 11th appearance in the AFC Women&rsquo;s Asian Cup. We have the Follow Philippines Pass, as well as a range of Multi-Match Packs for every fan to get behind the Filipinas. 
 			<br /><br />
 		For a limited time only, Multi&#45;Match Packs give you access to the biggest matches, as well as the option to add a ticket to the Final. Don't miss your chance to be part of history.
 
@@ -858,7 +889,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 		<!--VIE-->
 		<div id="wacVieNotice" class="wacNotice"><div class="wacCloseNoticeBtn"></div>
 			<p>
-Vietnam will make their 10th appearance in the Women&rsquo;s Asian Cup. We have the Follow Vietnam Pass, as well as a range of Multi-Match Packs for every fan to get behind the Golden Star Warriors. 
+Vietnam will make their 10th appearance in the AFC Women&rsquo;s Asian Cup. We have the Follow Vietnam Pass, as well as a range of Multi-Match Packs for every fan to get behind the Golden Star Warriors. 
 <br /><br />
 For a limited time only, Multi&#45;Match Packs give you access to the biggest matches, as well as the option to add a ticket to the Final. Don't miss your chance to be part of history.
 
@@ -872,9 +903,9 @@ For a limited time only, Multi&#45;Match Packs give you access to the biggest ma
 			<!--error message tickets-->
 			<div id="wacErrorNoTickets" class="wacErrorMessage">
 				<h1>Offside?</h1>
-				<p>Your search didn&rsquo;t any of our available tickets.
+				<p>Your search didn&rsquo;t match any of our available tickets.
 					<br />Adjust your filters to see what tickets are available.</p>
-				<div class="wacErrorResetBtn">RESET FILTERS</div>
+				<div id="errorResetFilterBtn" class="wacErrorResetBtn">RESET FILTERS</div>
 			</div>
 			<!--error message-->
 			<div id="wacErrorConnection" class="wacErrorMessage">
@@ -982,7 +1013,7 @@ For a limited time only, Multi&#45;Match Packs give you access to the biggest ma
 	//notes: date filtering and counters next, 
 	$j = jQuery.noConflict();
 	//the server name could change so I put it here so it was easy to find
-	let availLocation = "https://d1qeon7qw4jcrw.cloudfront.net/awac_sandbox";
+	let availLocation = "https://d1qeon7qw4jcrw.cloudfront.net/awac";
 	//sandbox link >>> https://d1qeon7qw4jcrw.cloudfront.net/awac_sandbox
 
 	let dates;
@@ -1124,7 +1155,7 @@ For a limited time only, Multi&#45;Match Packs give you access to the biggest ma
 									let sortDate04 = sortDateMapper(eventDate04)
 									let eventDate05 = eventDateMulti[4];							
 									let sortDate05= sortDateMapper(eventDate05)																					
-									 eventDateSpan = $j("<div class='wacCardDateMulti'><div class='wacCardDateIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_w_ico.svg'></div><div class='wacCardDateCount'>"+eventDateCardCount+"</div>Multiple Dates <div class='wacCardDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_arrow_down_w_ico.svg'></div><div id='"+event.event_name+"-datedown' class='wacCardDateMultiWrap wacCardMenuOff'><div data-menudate="+sortDate01+" class='wacCardDate wac"+eventDate01+"Date'>"+dateMapper(eventDate01)+"</div><div data-menudate="+sortDate02+" class='wacCardDate wac"+eventDate02+"Date''>"+dateMapper(eventDate02)+"</div><div data-menudate="+sortDate03+" class='wacCardDate wac"+eventDate03+"Date''>"+dateMapper(eventDate03)+"</div><div data-menudate="+sortDate04+" class='wacCardDate wac"+eventDate04+"Date''>"+dateMapper(eventDate04)+"</div><div data-menudate="+sortDate05+" class='wacCardDate wac"+eventDate05+"Date''>"+dateMapper(eventDate05)+"</div></div></div><div class='wacEventsInc'><p class='wac"+packType+"Inc'>Select 3 of the </p><p>&nbsp;"+eventCodeCount+" Events Included</p></div></div>")
+									 eventDateSpan = $j("<div class='wacCardDateMulti'><div class='wacCardDateIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_w_ico.svg'></div><div class='wacCardDateCount'>"+eventDateCardCount+"</div>Multiple Dates <div class='wacCardDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_arrow_down_w_ico.svg'></div><div id='"+event.event_name+"-datedown' class='wacCardDateMultiWrap wacCardMenuOff'><div data-menudate="+sortDate01+" class='wacCardDate wac"+eventDate01+"Date'>"+dateMapper(eventDate01)+"</div><div data-menudate="+sortDate02+" class='wacCardDate wac"+eventDate02+"Date''>"+dateMapper(eventDate02)+"</div><div data-menudate="+sortDate03+" class='wacCardDate wac"+eventDate03+"Date''>"+dateMapper(eventDate03)+"</div><div data-menudate="+sortDate04+" class='wacCardDate wac"+eventDate04+"Date''>"+dateMapper(eventDate04)+"</div><div data-menudate="+sortDate05+" class='wacCardDate wac"+eventDate05+"Date''>"+dateMapper(eventDate05)+"</div></div></div><div class='wacEventsInc'><p class='wac"+packType+"Inc'>Select 2 or </p><p class='wac"+packType+"Inc'>Select 3 of the </p><p>&nbsp;"+eventCodeCount+" Events Included</p></div></div>")
 								}	
 							//button span							
 							let eventBotSpan = $j("<div class='wacCardBotWrap'><div class='wacCardInfoWrap'><div class='wacCardPrice'><p>ADULTS FROM*</p><h1>$"+event.price_from+"</h1></div><div class='wacPriceDiv'></div><div class='wacCardInfoBtn'>MORE INFO</div></div><a href='"+event.buy_link+"'><div class='wacCardTicketBtn'>FIND TICKETS</div></a></div></div>");		
@@ -1232,18 +1263,15 @@ matchEventTeams = function(){
 //counters
 let eventCounter = function(){
 
-
 	document.getElementById('wacEventCount').innerHTML = eventCountPlus.toString();
 	document.getElementById('wacEventCountTotal').innerHTML = eventCountTotal.toString();
 
 	if((eventCountPlus == 0)){
-		$j("#wacErrorMessage").fadeIn(500)
+		$j("#wacErrorNoTickets").fadeIn(500)
 	} 
 	if((eventCountPlus >= 1)){
-		$j("#wacErrorMessage").fadeOut(0)	
+		$j("#wacErrorNoTickets").fadeOut(0)	
 	} 
-
-
 }
 // click functions for Menus
 //change the class on the checkbox's when they have been checked  wacCheckBoxOn
@@ -1518,7 +1546,13 @@ let wacCloseNotice = function(){
 $j(document).on('click', '.wacCloseNoticeBtn', function () {
 		wacCloseNotice();
 		});
-
+let wacCloseAnnounce = function(){
+	$j('.wacAnnounce').fadeOut(200)
+}
+$j(document).on('click', '.wacCloseAnnounceBtn', function () {
+		wacCloseAnnounce();
+		});
+		
 //reset buttons
 
 let wacResetAll = function(){
@@ -1562,7 +1596,7 @@ let wacResetAll = function(){
 	ticketCounter();
 };	
 //reset from feature tiles
-$j(document).on('click', '#wacResetAllFeat', function () {	
+$j(document).on('click', '#wacResetAllFeat,#errorResetFilterBtn', function () {	
 	wacResetAll();
 	//scrollToEvents();
 });
