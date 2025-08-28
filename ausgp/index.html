@@ -2,8 +2,8 @@
 page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Australia | Buy Tickets Official Ticketmaster site." %]
 [% static_has_responsive_header_footer = 1; enable_leader_board = 0; force_disable_nav_paypal_branding = 1; %]
 [% PROCESS "layout/frame/top.tt" %]
-<!--cut for on sale--
- <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />--->
+<!--cut for on sale-->
+ <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />
  <!--delete for on sale-->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -51,6 +51,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 
 		#ausgpContent{background-color: #fff;width:100%;height:auto;overflow:hidden;padding:0px;margin:0px auto;position: relative;font-family: "F1 Display", Fallback, sans-serif;font-size: 12px;}
 		#ausgpHeader{width:98%;height:500px;position: relative;margin:0px auto;padding:1px;background:url("https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp26_header_3840x975.png") center center no-repeat, #fff;background-size:cover;box-sizing:border-box!important;text-align: center;border-radius:0px 0px 20px 20px;}	
+		#ausgpHeader img{display:none;}
 			
 		/*menu */
 		#ausgpMenuWrap{width:100%;height:auto;display: flex;position: relative;margin:0px;padding:0;justify-content: center;align-items: center;flex-wrap: nowrap;flex-direction: row;}
@@ -131,8 +132,8 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 
 		/*grandstands*/
 		.ausgpGrandstandMod{width:100%;height:100%;background:rgba(0,0,0,0.4);position: fixed;top:0;left:0;margin:0;z-index: 100;display:none;}
-		.ausgpStandWrap{width:96%;height:94vh;max-width:1350px;margin:3vh auto;background:#fff;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);border-radius:30px 0px 0px 30px;box-sizing:border-box !important;position: relative;display:flex;flex-wrap: wrap;justify-content: flex-end;align-items: flex-start;overflow-y: auto;overflow-x: hidden;padding:0px 0px 0px 0px;}
-		.ausgpStandClose{width:120px;height:30px;padding:5px;background:url('ausgp_close_img.svg') right 2px top 2px no-repeat, #fff;background-size:22px;top:10px;right:30px;border-radius:30px;border:2px solid var(--gp-pur);position: absolute;cursor:pointer;box-sizing:border-box !important;font-family: "F1 Display", Fallback, sans-serif;font-size:16px;line-height:16px;font-weight:bold;color:var(--gp-pur);text-align:left;}
+		.ausgpStandWrap{width:96%;height:auto;max-height:94vh;max-width:1350px;margin:3vh auto;background:#fff;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);border-radius:30px 0px 0px 30px;box-sizing:border-box !important;position: relative;display:flex;flex-wrap: wrap;justify-content: flex-end;align-items: flex-start;align-content: flex-start;overflow-y: auto;overflow-x: hidden;padding:0px 0px 0px 0px;}
+		.ausgpStandClose{width:120px;height:30px;padding:5px;background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_close_img.svg') right 2px top 2px no-repeat, #fff;background-size:22px;top:10px;right:30px;border-radius:30px;border:2px solid var(--gp-pur);position: absolute;cursor:pointer;box-sizing:border-box !important;font-family: "F1 Display", Fallback, sans-serif;font-size:16px;line-height:16px;font-weight:bold;color:var(--gp-pur);text-align:left;}
 		.ausgpStandTop{max-width:800px;width:55%;height:auto;box-sizing:border-box !important;padding:40px;}
 		.ausgpStandTop h1{font-family: "F1 Display", Fallback, sans-serif;font-size:36px;line-height:36px;font-weight:bold;color:#000;text-align:center;margin:0 auto 20px;padding:0;}
 		.ausgpStandTop h2{font-family: "Averta", Fallback, sans-serif;font-size:26px;line-height:26px;font-weight:normal;color:#6C6C6C;text-align:center;margin:0 auto 20px;padding:0;}
@@ -165,10 +166,12 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		.ausgpAvailKeyTag p{display:inline-block;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:left;margin:0 0px;padding:0px;}
 		.ausgpAvailKeyLimited{width:auto;display:inline-block;height:23px;border-radius:5px 10px 5px 10px;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:left;margin:0 10px 0px 10px;padding:5px 8px;background:var(--gp-pur);box-sizing:border-box !important;}
 		.ausgpAvailKeyFew{width:auto;display:inline-block;height:23px;border-radius:5px 10px 5px 10px;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:left;margin:0 0px 0px 10px;padding:5px 8px;background:var(--gp-pnk);box-sizing:border-box !important;}
-		.ausgpHideTixBtn{width:210px;height:30px;border-radius:5px 10px 5px 10px;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:center;margin:0 10px 0px 10px;padding:9px 8px;background:var(--gp-dpur);box-sizing:border-box !important;cursor:pointer;user-select:none;display:none;} 
+		.ausgpHideTixBtn{width:80%;max-width:210px;height:30px;border-radius:5px 10px 5px 10px;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:center;margin:0 10px 0px 10px;padding:9px 8px;background:var(--gp-dpur);box-sizing:border-box !important;cursor:pointer;user-select:none;display:none;} 
 		.ausgpShowTixBtn{display:none;}
 		.ausgpHideTixBtn img, .ausgpShowTixBtn img{width:15px;height:auto;display:inline-block;margin:0px 0px 0px 10px;}
 		.ausgpShowTixBtn img{transform: rotate(180deg);}
+		.ausgpShowMoreBtn, .ausgpShowLessBtn,.ausgpMoreBtnWrap{display:none}
+
 		.ausgpButtonWrap{width:100%;/*background:rgba(124,124,124,0.725)*/;margin:0;padding:10px 0px;display:flex;flex-wrap: nowrap;column-gap: 1px;justify-content: center;}
 		.ausgpStandBtn{width:210px;height:130px;padding:0 0px;margin:0 ;display:inline-block;background:#000;cursor:pointer;user-select:none;}
 		.ausgpDayWrap{width:100%;height:auto;padding:0 0px 0px 20px;margin:15px auto 0px;box-sizing:border-box !important;display:flex;flex-wrap: nowrap;align-content: center;justify-content: space-between;align-items: center;}
@@ -239,7 +242,194 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		#tmSearch{display:none;}
 		/*f1 CONTENT*/	
 	
+		#ausgpContent{background-color: #fff;width:100%;height:auto;overflow:hidden;padding:0px;margin:0px auto;position: relative;font-family: "F1 Display", Fallback, sans-serif;font-size: 12px;}
+		#ausgpHeader{width:98%;height:auto;position: relative;margin:0px auto;padding:0px;background:var(--gp-pur);background-size:cover;box-sizing:border-box!important;text-align: center;border-radius:0px 0px 20px 20px;overflow:hidden;}	
+		#ausgpHeader img{width:100%;height:auto;margin:0px;padding:auto;display:block;position: relative;}	
+		/*menu */
+		#ausgpMenuWrap{width:100%;height:auto;display: flex;position: relative;margin:0px;padding:0;justify-content: center;align-items: center;flex-wrap: wrap;flex-direction: row;}
+		#ausgpMenu{width:90%;max-width:350px;height:auto;background:#fff;margin:20px auto;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);border-radius:20px;display:flex;flex-wrap:wrap;box-sizing:border-box!important;}
+		.ausgpMenuBtn{width:100%;max-width:350px;height:auto;margin:10px 0px;background:none;display:flex;justify-content: center;align-items: center;flex-wrap: wrap;position: relative;user-select:none;}
+		.ausgpMenuBtn h1{width:155px;font-family: "F1 Display", Fallback, sans-serif;font-size:22px;line-height:22px;font-weight:bold;color:#000;text-align:center;margin:0;padding:0px 60px 0px 0px;display:inline-block;}
+		.ausgpMenuIco{width:30px;height:30px;display:inline-block;margin:5px 20px;padding:0px;box-sizing:border-box!important;}
+		.ausgpMenuArrow{width:20px;height:auto;display:inline-block;position: absolute;right:30px;top:21px;transition: ease-in-out .3s all;}
+		.ausgpArrowRot{transform: rotate(180deg);}
+		.ausgpMenuIco img, .ausgpMenuArrow img{width:100%;height:auto}
+		.ausgpMenuDiv{width:80%;height:4px;border-radius:5px;margin:0px auto;background:#e5e5e5;}
+		.ausgpDropDown{width:100%;background:#efefef;padding:8px 0px;position:relative;margin:15px auto 5px;z-index: 22;border:1px solid #fff;overflow:hidden;box-sizing:border-box!important;}
+		.ausgpDropDown h2{font-family: "F1 Display", Fallback, sans-serif;font-size:14px;line-height:14px;font-weight:normal;color:#6D6D6D;text-align:center;margin:0;padding:0 0px 4px 8px;display:inline-block;}
+		.ausgpDropDownBtn{width:calc(100% - 8px);height:27px;background:#fff;margin:2px 4px;padding:5px 10px;display:flex;flex-wrap: nowrap;align-items: center;justify-content: flex-start;box-sizing:border-box!important;}
+		.ausgpDropDownIco{width:17px;height:17px;padding:0;display:inline-block;margin:0px 10px 0px 0px;}
+		.ausgpDropDownIco img{width:100%;height:auto;}
+		.ausgpDropDownBtn p{font-family: "F1 Display", Fallback, sans-serif;font-size:16px;line-height:16px;font-weight:normal;color:#000;text-align:left;margin:0;padding:0;display:inline-block;}
+		.ausgpCheckBox{width:14px;height:14px;margin:0px 10px 0px 0px;padding:0px;box-sizing:border-box!important;border-radius:2px 4px 2px 4px;display:inline-block;}
+		.ausgpCheckBoxOn{background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_tick_ico.svg') no-repeat center center,var(--gp-pur);background-size:12px;}
+   		.ausgpCheckBoxOff{background:#e5e5e5;border:2px solid #a7a7a7;}
+		.ausgpDropDownOff{display: none;}
+		.ausgpDropDownOn{display: block;}
+		/*subheader*/
+		.ausgpSubHeader{width:100%;max-width:400px;display:flex;flex-wrap:wrap;align-items: center;justify-content: center;column-gap:20px;padding:0px;margin:0px auto;text-align: center;}
+		#ausgpCounter{width:auto;display:flex;flex-wrap:nowrap;align-items: center;justify-content: space-between;background:#fff;border-radius:5px 15px 5px 15px;padding:0px;margin:10px ;text-align: center;border:1px solid var(--gp-pur);overflow:hidden;box-sizing: border-box !important;}
+		#ausgpEventCount{font-family:"Averta",fallback;font-size:12px;line-height:12px;font-weight:600;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+		#ausgpEventCountTotal{font-family:"Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#efefef;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+		.ausgpCounterWrap{width:60px;height:24px;background:var(--gp-pur);padding:5px 0px;display:inline-block;color:#000 !important;box-sizing: border-box !important;}
+		.ausgpCounterWrap p{color:#fff !important;padding:0px 1px!important;margin:0px !important;}
+		#ausgpCounter p{display:inline-block;font-family:"ClashDisplay","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:center;color:var(--ausgp-char);margin:0;padding:0px 10px 0px 0px;}
+		.ausgpAvailKeyHeader{width:220px;display:flex;flex-wrap:wrap;align-items: center;justify-content:center;padding:5px 10px;margin:0px;text-align: center;background: #303030;border-radius:5px 15px 5px 15px;}
+		.ausgpAvailKeyHeader .ausgpAvailKeyTag{width:100% !important;margin:5px 0;justify-content: center;}
+		.ausgpAvailKeyLimitedCirc{width: 16px;height: 16px;margin: 0px 10px 0px 10px;background: var(--gp-pur); display: inline-block; border-radius: 10px;border:1px solid #fff;}
+		.ausgpAvailKeyFewCirc{width: 16px;height: 16px;margin: 0px 10px 0px 10px;background: var(--gp-pnk); display: inline-block; border-radius: 10px;border:1px solid #fff;}
+		.ausgpAvailKeyManyCirc{width: 16px;height: 16px;margin: 0px 10px 0px 10px;background: var(--gp-gre); display: inline-block; border-radius: 10px;border:1px solid #fff;}
+		/*cards*/
+		#ausgpEventStream{width:100%;max-width:1000px;background:none;margin:0px auto;display:flex;flex-wrap:wrap;align-items: flex-start;justify-content: center;align-items: stretch;column-gap:20px;row-gap:30px;position: relative;z-index:20;}
+		.ausgpHeader{width:100%;max-width:1000px;background:none;margin:25px auto;display:block;position: relative;z-index:20;}
+		.ausgpHeader h1{width:100%;font-family: "F1 Display", Fallback, sans-serif;font-size:36px;line-height:36px;font-weight:bold;color:#000;text-align:center;margin:0 auto;padding:0 15px;box-sizing: border-box !important;}
+		.ausgpHeaderDiv{width:80%;max-width:450px;height:4px;background:var(--gp-pur);margin:10px auto;border-radius: 5px;}
+		#ausgpEventStream a{text-decoration: none;}
 
+		.ausgpEventCard{width:100%;max-width:300px;height:auto;min-height:350px;display:flex;flex-direction: column;flex-wrap:nowrap;justify-content: space-between;position:relative;border-radius:5px 30px 5px 30px;z-index:21;border:#f5f5f5 1px solid;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);overflow:hidden;box-sizing:border-box !important;}
+		.ausgpCardTop,.ausgpCardBot{width:100%;height:auto;margin:0;padding:0;}
+		.ausgpHero{max-width:298px;width:100%;height:auto;overflow:hidden;position: relative;z-index:21;}
+		.ausgpHero img{width:100%;height:auto;display:block;position: relative;z-index:23;}
+		.ausgpTurnWrap{width:100%;height:auto;margin:0px;display:flex;position: absolute;top:5px;left:0;right:0;z-index:24;justify-content: center;align-items: center;column-gap:5px;}
+		.ausgpTurnWrap p{font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:center;margin:0 5px 0px 0px;padding:0;display:inline-block;}
+		.ausgpTurnWrap h1{font-family: "F1 Display", Fallback, sans-serif;font-size:16px;line-height:16px;font-weight:normal;color:#fff;text-align:center;margin:0;padding:0;display:inline-block;}
+		.ausgpTurn{min-width:125px;width:auto;height:25px;background:/*url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_track_ico.svg') no-repeat,*/var(--gp-pur);background-size:15px;background-position:left 10px top 4px;border-radius:15px 5px 5px 15px;padding:0px 0px 0px 0px;display: flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
+		.ausgpGate{width:125px;height:25px;background:/*url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_gate_ico.svg')no-repeat,*/var(--gp-dpur);background-size:15px;background-position:right 10px top 4px;border-radius:5px 15px 15px 5px;padding:0px 0px 0px 0px;display: flex;align-items: center;justify-content:center;box-sizing:border-box !important;}
+		.ausgpCardTitle{width:100%;height:80px;display:flex;align-items: center;justify-content: center;}
+		.ausgpCardTitle h1{font-family: "F1 Display", Fallback, sans-serif;font-size:26px;line-height:26px;font-weight:bold;color:#000;text-align:center;margin:0;padding:0;}
+		.ausgpCardDiv{width:225px;height:5px;border-radius:5px;margin:0px auto 10px;display:block;background: var(--gp-pur);}
+		.ausgpTagWrap{width:100%;padding:0px 5px;display:flex;flex-wrap:wrap;justify-content: center;column-gap:5px;row-gap:5px;box-sizing:border-box !important;}
+		.ausgpCardTag{width:49%;min-width:140px;height:25px;border-radius:5px 10px 5px 10px;display:flex;align-items: center;justify-content: center;}
+		.ausgpCardTag p{font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:center;margin:0;padding:0px 0px 0px 15px;}
+		.preTag p, .ExtTag p{color:#000 !important;}
+		.genTag{background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_genadmin_ico.svg') no-repeat,var(--gp-dpur);background-size:15px;background-position:left 5px top 5px;min-width:165px !important;}
+		.resTag{background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_reserved_ico.svg') no-repeat,var(--gp-pur);background-size:15px;background-position:left 5px top 5px;}
+		.preTag{background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_premium_ico.svg') no-repeat,var(--gp-gld);background-size:15px;background-position:left 5px top 5px;color:#000 !important;}		
+		.covTag{background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_covered_ico.svg') no-repeat,var(--gp-pnk);background-size:15px;background-position:left 5px top 5px;}
+		.AccTag{background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_accessible_ico.svg') no-repeat,var(--gp-dpur);background-size:15px;background-position:left 5px top 5px;}
+		.ExtTag{background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_extra_ico.svg') no-repeat,var(--gp-gld);background-size:15px;background-position:left 5px top 5px;color:#000 !important;}	
+		.ausgpCardAvailWrap{width:100%;height:auto;margin:20px auto 10px;padding:0;display:flex;flex-wrap:wrap;align-items: center;justify-content: center;}
+		.ausgpCardAvailWrap h2{width:100%;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:bold;color:#6c6c6c;text-align:center;margin:0;padding:0;}
+		.ausgpCardAvailTag{width:auto;height:25px;padding:0px 5px;margin:5px;font-family: "F1 Display", Fallback, sans-serif;font-size:14px;line-height:14px;font-weight:bold;color:#000;text-align:center;border-radius:15px;background:#D9D9D9;display:flex;flex-wrap: nowrap;flex-wrap: nowrap;justify-content: center;align-items: center;box-sizing:border-box !important;}
+		.availTagIndicator{width:16px;height:16px;margin:0px 0px 0px 5px;background:#efefef;display:inline-block;border-radius:10px;}
+
+		.ausgpCardPriceWrap{width:100%;height:auto;margin:10px auto;padding:0;display:flex;flex-wrap:wrap;align-items: center;justify-content: center;}
+		.ausgpCardPriceWrap h2{width:100%;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:bold;color:#6c6c6c;text-align:center;margin:0;padding:0;}
+		.ausgpCardPriceWrap h3{width:100%;font-family: "F1 Display", Fallback, sans-serif;font-size:24px;line-height:24px;font-weight:bold;color:var(--gp-pur);text-align:center;margin:0;padding:0;}
+		.ausgpCardBtn{max-width:286px;width:calc(100% - 8px);height:50px;background:var(--gp-pur);font-family: "F1 Display", Fallback, sans-serif;font-size:26px;line-height:26px;font-weight:bold;color:#fff;text-align:center;margin:0 auto 5px;padding:10px 0px;border-radius:5px 25px 5px 25px;cursor:pointer;user-select:none;box-sizing: border-box !important;}
+		/*custom cards*/
+		#ausgpAccessibleCard{min-height:500px;background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp26_Accessible_Card_450x675.jpg') no-repeat top center, var(--gp-dpur);background-size:contain;justify-content: flex-end !important;}
+		#ausgpAccessibleCard a, .ausgpCardNote a, .ausgpCardBot a{text-decoration: none;}
+		.ausgpCardNote{width:90%;height:auto; margin:20px auto;background:var(--gp-dpur);border-radius:10px;box-sizing:border-box !important;border:1px solid #efefef;}
+		.ausgpCardNote p{font-family: "Averta", Fallback, sans-serif;font-size:17px;line-height:17px;font-weight:normal;color:#fff;text-align:center;margin:0px auto;padding:20px;box-sizing:border-box !important;}		
+
+		/*grandstands*/
+		.ausgpGrandstandMod{width:100%;height:100%;background:rgba(0,0,0,0.4);position: fixed;top:0;left:0;margin:0;z-index: 100;display:none;}
+		.ausgpStandWrap{width:98%;height:96vh;max-width:1000px;margin:2vh auto;background:#fff;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);border-radius:30px 0px 0px 30px;box-sizing:border-box !important;position: relative;display:flex;flex-wrap: wrap;justify-content: flex-end;align-items: flex-start;overflow-y: auto;overflow-x: hidden;padding:0px 0px 0px 0px;}
+		.ausgpStandClose{width:120px;height:30px;padding:5px;background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_close_img.svg') right 2px top 2px no-repeat, #fff;background-size:22px;top:10px;right:10px;border-radius:30px;border:2px solid var(--gp-pur);position: absolute;cursor:pointer;box-sizing:border-box !important;font-family: "F1 Display", Fallback, sans-serif;font-size:16px;line-height:16px;font-weight:bold;color:var(--gp-pur);text-align:left;}
+		.ausgpStandTop{max-width:800px;width:100%;height:auto;box-sizing:border-box !important;padding:40px;}
+		.ausgpStandTop h1{font-family: "F1 Display", Fallback, sans-serif;font-size:36px;line-height:36px;font-weight:bold;color:#000;text-align:center;margin:0 auto 20px;padding:0;}
+		.ausgpStandTop h2{font-family: "Averta", Fallback, sans-serif;font-size:26px;line-height:26px;font-weight:normal;color:#6C6C6C;text-align:center;margin:0 auto 20px;padding:0;}
+		.ausgpStandTurnWrap{width:100%;height:auto;display:flex;flex-wrap:nowrap;justify-content: center;align-items: center;column-gap:5px;margin:0px auto;}
+		.ausgpStandTurnWrap p{font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:center;margin:0 5px 0px 0px;padding:0;display:inline-block;}
+		.ausgpStandTurnWrap h1{font-family: "F1 Display", Fallback, sans-serif;font-size:16px;line-height:16px;font-weight:normal;color:#fff;text-align:center;margin:0;padding:0;display:inline-block;}
+		.ausgpHorDiv{width:80%;height:5px;border-radius:5px;margin:20px auto ;display:block;background: var(--gp-pur);}
+		.ausgpStandTags{width:100%;max-width:450px;padding:0px 5px;margin:0px auto 20px;display:flex;flex-wrap:wrap;justify-content: center;column-gap:5px;row-gap:5px;box-sizing:border-box !important;}
+		.ausgpStandTag{width:49%;max-width:200px;height:25px;border-radius:5px 10px 5px 10px;display:flex;align-items: center;justify-content: center;}
+		.ausgpStandTag p{font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:center;margin:0;padding:0px 0px 0px 0px;}
+		.ausgpStandBlurb{max-height:200px;width:100%;height:auto;margin:0;padding:0px 0px 40px 0px;overflow:hidden;position: relative;box-sizing:border-box !important;}
+		.ausgpStandBlurb p{font-family: "Averta", Fallback, sans-serif;font-size:20px;line-height:20px;font-weight:normal;color:#000;text-align:center;margin:0;padding:0;}
+		.ausgpStandBlurb ul, .ausgpStandBlurb li{font-family: "Averta", Fallback, sans-serif;font-size:20px;line-height:20px;font-weight:normal;color:#000;text-align:left;}
+		.ausgpStandBot{width:100%;max-width:450px;height:auto;background:linear-gradient(180deg,rgba(247, 247, 247, 1) 0%, rgba(247, 247, 247, 1) 90%, rgba(255, 255, 255, 0) 100%);}
+		.ausgpStandMap{width:90%;height:auto;margin:50px auto 20px;display:flex;background:#fff;border-radius:20px;align-items: center;justify-content: center;}
+		.ausgpStandMap h1{font-family: "F1 Display", Fallback, sans-serif;font-size:22px;line-height:22px;font-weight:normal;color:#000;text-align:center;margin:0 auto 0px;padding:0;display:inline-block;}
+		.ausgpStandMap img{width:200px;margin:0px auto;padding:10px;height:auto;display:inline-block;}	
+		.ausgpImpInfo{width:90%;height:auto;margin:20px auto;display:flex;background:#fff;border-radius:20px;}
+		.ausgpImpInfo p{font-family: "Averta", Fallback, sans-serif;font-size:16px;line-height:16px;font-weight:normal;color:#000;text-align:center;margin:0;padding:10px;box-sizing:border-box !important;}
+		.ausgpStandAccessible img,.ausgpStandHero img{width:100%;height:auto;}	
+		.ausgpStandAccessible{width:400px;height:auto;margin:20px auto;display:block;border-radius:10px 25px 10px 25px;overflow:hidden;}
+		.ausgpStandHero{width:96%;height:auto;margin:20px auto 0px;display:block;border-radius:10px 25px 10px 25px;overflow:hidden;}
+		/*button span*/
+		.ausgpButtonMod{width:100%;height:200px;background:#fff;margin:0px auto 20px;position: relative;display:block;box-sizing:border-box !important;}
+		.ausgpButtonSpan{width:100%;height:auto;display:block;position: absolute;bottom:0px;left:0;right:0;margin:0px auto;}
+		.ausgpBtnHeader{/*background:rgba(124,124,124,0.75);*/width:auto;margin:0px auto;max-width:1090px;padding:5px 10px 0px 10px;border-radius:10px 10px 0px 0px;display:flex;flex-wrap: nowrap;justify-content:  space-between;align-items: center;box-sizing:border-box !important;}
+		.ausgpBtnHeader h1{font-family: "F1 Display", Fallback, sans-serif;font-size:26px;line-height:26px;font-weight:bold;color:#000;text-align:center;margin:0 10px 0px 10px;padding:0;display:inline-block;}
+		.ausgpAvailKey{padding:5px 10px;margin:0px 10px 0px 0px;display:flex;width:auto;height:auto;flex-wrap: nowrap;align-content: center;justify-content: flex-start;background:#303030;border-radius:5px 10px 5px 10px;box-sizing:border-box !important;}
+		.ausgpAvailKeyTag{width:auto;height:auto;display: flex;align-items: center;flex-wrap: nowrap;}
+		.ausgpAvailKeyTag p{display:inline-block;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:left;margin:0 0px;padding:0px;}
+		.ausgpAvailKeyLimited{width:auto;display:inline-block;height:23px;border-radius:5px 10px 5px 10px;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:left;margin:0 10px 0px 10px;padding:5px 8px;background:var(--gp-pur);box-sizing:border-box !important;}
+		.ausgpAvailKeyFew{width:auto;display:inline-block;height:23px;border-radius:5px 10px 5px 10px;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:left;margin:0 0px 0px 10px;padding:5px 8px;background:var(--gp-pnk);box-sizing:border-box !important;}
+		.ausgpMoreBtnWrap{width:100%;height:30px;margin:0;padding:0;display:block;position: absolute;bottom:0px;left:0;right:0;background:linear-gradient(0deg,rgba(255, 255, 255, 1) 20%,rgba(255, 255, 255, 0) 100%);}
+		.ausgpShowMoreBtn{width:80%;max-width:165px;height:30px;border-radius:5px 10px 5px 10px;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:center;margin:0 auto;padding:9px 8px;background:var(--gp-pur);box-sizing:border-box !important;cursor:pointer;user-select:none;display:block;} 
+		.ausgpShowLessBtn{width:80%;max-width:165px;height:30px;border-radius:5px 10px 5px 10px;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:center;margin:0 auto;padding:9px 8px;background:var(--gp-pur);box-sizing:border-box !important;cursor:pointer;user-select:none;display:none;}
+		.ausgpShowMoreBtn img, .ausgpShowLessBtn img{width:15px;height:auto;display:inline-block;margin:0px 0px 0px 10px;}
+		.ausgpShowLessBtn img{transform: rotate(180deg);}
+		
+		.ausgpHideTixBtn{display:none;} 
+		.ausgpShowTixBtn{display:none;}
+		.ausgpHideTixBtn img, .ausgpShowTixBtn img{width:15px;height:auto;display:inline-block;margin:0px 0px 0px 10px;}
+		.ausgpShowTixBtn img{transform: rotate(180deg);}
+
+		.ausgpButtonWrap{width:100%;/*background:rgba(124,124,124,0.725)*/;margin:0;padding:10px 0px;display:flex;flex-wrap: nowrap;column-gap: 1px;justify-content: center;}
+		.ausgpStandBtn{width:210px;height:130px;padding:0 0px;margin:0 ;display:inline-block;background:#000;cursor:pointer;user-select:none;}
+		.ausgpDayWrap{width:100%;height:auto;padding:0 0px 0px 20px;margin:15px auto 0px;box-sizing:border-box !important;display:flex;flex-wrap: nowrap;align-content: center;justify-content: space-between;align-items: center;}
+		.ausgpDayWrap h2{font-family: "F1 Display", Fallback, sans-serif;font-size:20px;line-height:20px;font-weight:normal;color:#fff;text-align:left;margin:0 0px;padding:0;display:inline-block}
+		.ausgpPriceWrap{width:100%;height:auto;padding:0 20px;margin:25px auto 0px;box-sizing:border-box !important;}
+		.ausgpPriceWrap p{font-family: "F1 Display", Fallback, sans-serif;font-size:16px;line-height:16px;font-weight:normal;color:#fff;text-align:left;margin:0 auto 0px;padding:0;}
+		.ausgpPassWrap{width:100%;height:auto;padding:0 20px;margin:10 auto 0;box-sizing:border-box !important;}
+		.ausgpPassWrap h3{font-family: "F1 Display", Fallback, sans-serif;font-size:20px;line-height:20px;font-weight:bold;color:#fff;text-align:left;margin:0 auto 0px;padding:0;display:inline-block}
+		.rightCrn{border-radius:0px 10px 10px 0px;}
+		.leftCrn{border-radius:10px 0px 0px 10px;}
+		.ausgpBtnToggle{position: relative}
+		/*scroll bar*/
+		.ausgpStandWrap::-webkit-scrollbar{width: 10px;margin:0px 2px 0px 0px;}
+		.ausgpStandWrap::-webkit-scrollbar-track {background:#c8c8c8;}
+		.ausgpStandWrap::-webkit-scrollbar-thumb, .ausgpStandWrap::-webkit-scrollbar-thumb:hover{background: var(--gp-pur);border-radius:5px;border-right: solid 1px #c8c8c8;border-left: solid 1px #c8c8c8;box-sizing: border-box !important;}
+		.ausgpStandWrap {scrollbar-face-color: rgb(210,210,210); /* Firefox 63 compatibility */}
+		.ausgpStandWrap {scrollbar-track-color: rgb(46,54,69); /* Firefox 63 compatibility */}
+		/*avail tags*/
+		.ausgpStandAvail{width:auto;display:inline-block;height:23px;border-radius:5px 10px 5px 10px;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:left;margin:0 10px 0px 0px;padding:5px 8px;box-sizing:border-box !important;}
+		.ausgpFewTickets, .ausgpFewTicketsCirc{background:var(--gp-pnk);}
+		.ausgpFewTickets:after{content:"Few";}
+		.ausgpLimitedTickets, .ausgpLimitedTicketsCirc{background:var(--gp-pur);}	
+		.ausgpLimitedTickets:after{content:"Limited";}	
+		.ausgpManyTicketsCirc{background: var(--gp-gre);}
+		/*faq mod*/
+		#ausgpFaqMod{width:100%;height:auto;background:transparent;position:relative;margin:30px auto 50px;box-sizing:border-box !important;text-align: center}
+		.ausgpFaqModDiv{width:70%;height:4px;background:var(--gp-pur);margin:60px -50px 40px auto;display:block;padding:1px;}
+		.ausgpFaqWrap{width:1100px;height:auto;margin:0 auto;display:block;vertical-align: top;text-align: left;position: relative;}
+		.ausgpFaqWrap a{text-decoration: none;}
+		#ausgpFaqMod h1{font-family: "F1 Display", Fallback, sans-serif;font-size: 36px;color:#15151e;text-align: left;}
+		.ausgpFaqStripe{width:445px;margin: -40px 0px 0px 30px;}
+		.ausgpFaqHero{margin:-20px -132px 0px 0px;height:250px;width:445px;display:inline-block !important}
+		.ausgpTileDiv{width:50px;height:4px;background:var(--gp-pur);margin:5px auto 10px;}
+		
+		/*info section*/
+		.ausgpInfoCard{width:325px;height:410px;display:inline-block;background:#fff;border-radius:15px;box-shadow: 0px 5px 10px 0px rgb(0, 0, 0 , 10%);overflow:hidden;position: relative;vertical-align: top;transition: ease-in-out .4s;cursor:pointer;}
+		.ausgpInfoCard:hover{box-shadow:0px 5px 10px 2px rgb(0 0 0 / 20%);}	
+		.ausgpInfoCard:nth-child(2),.ausgpInfoCard:nth-child(4){margin:20px 0px;}	
+		.ausgpInfoCard:nth-child(3){margin:20px 56px;}	
+		.asugpInfoHead{width:325px;height:128px;margin:0;padding:30px 20px;box-sizing: border-box !important;background:#eeeded;}
+		.asugpInfoHead img{display:inline-block;width:80px;height:80px;float:left;margin:0px 10px 0px 0px;}
+		.asugpInfoHead h2{font-family: "F1 Display", Fallback, sans-serif;font-size: 28px;color:#15151e;display:inline-block;text-align: left;margin:0;padding:0px;}
+		.ausgpInfoCard p{font-family: "Averta", Fallback, sans-serif;padding:15px 20px;font-size: 22px;color:#15151e;text-align: center;}
+		.ausgpInfoBtn{width:325px;height:60px;background:var(--gp-pur);position: absolute;bottom: 0;}
+		.ausgpInfoBtn h3{font-family: "F1 Display", Fallback, sans-serif;font-size: 20px;color:#fff;text-align: center;margin:10px 0px 0px 0px;padding:0px; z-index: 51;position: relative;}
+		.ausgpInfoBtnBg{width:340px;height:78px;background:var(--gp-pur);position: absolute;margin:0px auto;bottom:0;left:0;right:0;transform: rotate(355deg);z-index: 50;}
+		.ausgpFaqTextWrap{width:800px;height:auto;margin:0 auto;display:block;text-align: left;position: relative;}
+		.ausgpFaqTextWrap p{font-family: "Averta", Fallback, sans-serif;padding:0px;font-size: 16px;color:#15151e;text-align: left;}
+		
+		.ausgpStripe{height:70px;position: relative;display:block;z-index:19;border-radius:15px;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp_pattern.jpg") center center;background-size:200%;box-shadow: 0px 10px 10px 0px rgb(0, 0, 0 , 20%)}
+		.ausgpStripe img{width:100%;height:auto;position: relative;display:block;z-index:19;border-radius:15px;}
+
+		.ausgpBtn{height:auto;border-radius:25px;font-family: "F1 Display", Fallback, sans-serif;font-size: 16px;color:#fff;text-align: center;background:var(--gp-pur);padding:10px 5px;}
+	
+		.hideDesktop{display:none;}
+		/*error*/
+		#ausgpErrorNoTickets{width:450px;height:auto;margin:50px auto;border-radius:10px 30px 10px 30px;background:var(--gp-pur);padding:20px;}
+		#ausgpErrorNoTickets h1{font-family: "F1 Display", Fallback, sans-serif;font-size:26px;line-height:26px;font-weight:bold;color:#fff;text-align:center;margin:0;padding:0;}
+		#ausgpErrorNoTickets p{font-family: "Averta", Fallback, sans-serif;font-size:20px;line-height:20px;font-weight:normal;color:#fff;text-align:center;margin:20px auto;padding:0;}
+		.ausgpErrorBtn{width:100%;height:50px;background:#fff;font-family: "F1 Display", Fallback, sans-serif;font-size:26px;line-height:26px;font-weight:bold;color:var(--gp-pur);text-align:center;margin:0 auto 5px;padding:10px 0px;border-radius:5px 25px 5px 25px;cursor:pointer;user-select:none;box-sizing: border-box !important;}
 
 	
 	/*faq mod*/
@@ -265,12 +455,18 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		.ausgpFaqTextWrap{max-width:800px;width:94%;height:auto;margin:0 auto;display:block;text-align: left;position: relative;}
 		.ausgpFaqTextWrap p{font-family: "Averta", Fallback, sans-serif;padding:0px;font-size: 16px;color:#15151e;text-align: left;}
 		
-		.ausgpStripe{height:70px;position: relative;display:block;z-index:19;border-radius:15px;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp_pattern.jpg") center center;background-size:200%;box-shadow: 0px 10px 10px 0px rgb(0, 0, 0 , 20%)}
-		.ausgpStripe img{width:100%;height:auto;position: relative;display:block;z-index:19;border-radius:15px;}
-		.ausgpHero{border-radius:15px;position: relative;display:block;z-index:20;overflow:visible;background-size:contain;box-shadow: 0px 10px 10px 0px rgb(0, 0, 0 , 20%)}
-		.ausgpHero img{width:100%;height:auto;border-radius:15px;position: relative;display:block;z-index:20;}
-		.ausgpBtn{height:auto;border-radius:25px;font-family: "F1 Display", Fallback, sans-serif;font-size: 16px;color:#fff;text-align: center;background:var(--gp-pur);padding:10px 5px;}	
 		}
+
+@media only screen and (min-width: 999.99px) and (max-width: 1120px){	
+		.ausgpStandBtn{width:190px;height:130px;padding:0 0px;margin:0 ;display:inline-block;background:#000;cursor:pointer;user-select:none;}
+		.ausgpDayWrap{width:100%;height:auto;padding:0 0px 0px 20px;margin:15px auto 0px;box-sizing:border-box !important;display:flex;flex-wrap: nowrap;align-content: center;justify-content: space-between;align-items: center;}
+		.ausgpDayWrap h2{font-family: "F1 Display", Fallback, sans-serif;font-size:16px;line-height:16px;font-weight:normal;color:#fff;text-align:left;margin:0 0px;padding:0;display:inline-block}
+		.ausgpPriceWrap{width:100%;height:auto;padding:0 20px;margin:25px auto 0px;box-sizing:border-box !important;}
+		.ausgpPriceWrap p{font-family: "F1 Display", Fallback, sans-serif;font-size:16px;line-height:16px;font-weight:normal;color:#fff;text-align:left;margin:0 auto 0px;padding:0;}
+		.ausgpPassWrap{width:100%;height:auto;padding:0 20px;margin:10 auto 0;box-sizing:border-box !important;}
+		.ausgpPassWrap h3{font-family: "F1 Display", Fallback, sans-serif;font-size:18px;line-height:18px;font-weight:bold;color:#fff;text-align:left;margin:0 auto 0px;padding:0;display:inline-block}
+
+}		
 </style>
 
 <!--aus gp content--->
@@ -278,7 +474,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 
 	<div id="ausgpHeader">
 		
-
+		<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp26_mHeader.png" alt="F">
 
 	</div>
 	<!--menu-->
@@ -1074,6 +1270,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<br /><br />
 			With access to incredible food, family-friendly zones, and the electrifying buzz of the crowd, this is the ultimate way to experience the spectacle of motorsport.
 			</p>
+			<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -1092,7 +1289,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/2500630C97790D86?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -1148,6 +1345,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<br /><br />
 			A nearby superscreen ensures you won't miss a moment of the action, while easy access via Gate 5 makes your journey in and out of Albert Park a breeze.
 			</p>
+			<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>			
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -1157,7 +1355,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		<!--<div class="ausgpImpInfo">
 		<p>Please note: Fangio Grandstand seat and section numbers now run in the opposite direction to previous years, aligning with all other Grandstands and following the race direction. Fangio Grandstand now has 6 sections.</p>
 		</div>-->
-		<div class="ausgpStandHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/aausgp25_TurnSix_445x250@150.jpg" alt="T6 Grandstand Image"></div>
+		<div class="ausgpStandHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp25_TurnSix_445x250@150.jpg" alt="T6 Grandstand Image"></div>
 		<a href="https://www.ticketmaster.com.au/explore/formula-1-qatar-airways-australian-grand-prix-2026" target="_blank" name="Accessible Seating"><div class="ausgpStandAccessible"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp26_AccessibleTile_600x450.jpg" alt="See Accessible Tickets"></div></a>
 
 		
@@ -1166,7 +1364,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -1224,6 +1422,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<br /><br />
 				With a superscreen to catch all the action and easy access via Gate 3, it's the perfect spot to see precision driving at its best.
 			</p>
+			<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>			
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -1242,7 +1441,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/25006305AFFC0E8F?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -1300,6 +1499,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<br /><br />
 			Conveniently located near Melbourne Junction - home of the Melbourne Walk, and our Lakeside precinct, with easy access to superscreens and nearby food, drink and entertainment options, you won't miss a moment of the action on or off the track.
 			</p>
+			<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>			
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -1318,7 +1518,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/25006305AFFC0E8F?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -1377,6 +1577,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				With superscreen viewing and convenient access to nearby food and beverage outlets, you'll be riding shotgun for every twist and turn.
 
 			</p>
+			<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>			
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -1395,7 +1596,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/25006305BB4E0F58?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -1453,6 +1654,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<br /><br />
 				The Clark Grandstand is just a short walk from our Pit Stop Park precinct and central pedestrian footbridge across the lake, putting you at the cultural heart of the event.
 			</p>
+			<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>			
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -1471,7 +1673,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/25006305BB4E0F58?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -1530,6 +1732,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<br /><br />
 				Best accessed from Gate 1, the Fangio Grandstand is a haven for motorsport fanatics, backing onto our Motorsport Straight precinct, meaning you won't be short of something to do between sessions.
 			</p>
+			<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>			
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -1548,7 +1751,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/25006304E06B1EEC?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -1604,6 +1807,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<br /><br />
 			With superscreen viewing to keep you immersed in every lap and every overtake, and an array of nearby food trucks and bars, the Hill Grandstand puts you in the driver's seat this Grand Prix&trade; weekend.
 			</p>
+				<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>		
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -1619,7 +1823,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/25006305AFFC0E8F?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -1679,6 +1883,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<br /><br />
 				With a superscreen, food, and bar facilities nearby, you'll never be far from the action.
 			</p>
+				<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>		
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -1697,7 +1902,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/25006305AFFC0E8F?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -1753,6 +1958,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<br /><br />
 			Located on the outfield of Turn 12 and on the doorstep of our Motorsport Straight precinct, the Lauda Grandstand overlooks a prime overtaking location, as  cars hurtle towards Albert Park's penultimate corner and set up their launch toward the chequered flag.
 			</p>
+			<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>		
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -1771,7 +1977,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/25006305C31C0F94?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -1818,8 +2024,8 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		<div class="ausgpHorDiv"></div>
 		<div class="ausgpStandTags">
 		<div class="ausgpStandTag resTag"><p>Reserved Seat</p></div>
-		<!--<div class="ausgpStandTag preTag"><p>Premium Option</p></div>-->
-		<!--<div class="ausgpStandTag covTag"><p>Covered Option</p></div>-->
+		<div class="ausgpStandTag preTag"><p>Premium Option</p></div>
+		<div class="ausgpStandTag covTag"><p>Covered Option</p></div>
 		<!--<div class="ausgpStandTag AccTag"><p>Accessible</p></div>-->
 		</div>
 		<div class="ausgpStandBlurb">
@@ -1829,6 +2035,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<br /><br />
 				With purpose built superscreens you won't miss a moment of the action while Motorsport Straight awaits between sessions, keeping you fuelled up between sessions.
 			</p>
+			<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>	
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -1847,7 +2054,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/25006304E06B1EEC?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -1894,8 +2101,8 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		<div class="ausgpHorDiv"></div>
 		<div class="ausgpStandTags">
 		<div class="ausgpStandTag resTag"><p>Reserved Seat</p></div>
-		<!--<div class="ausgpStandTag preTag"><p>Premium Option</p></div>-->
-		<!--<div class="ausgpStandTag covTag"><p>Covered Option</p></div>-->
+		<div class="ausgpStandTag preTag"><p>Premium Option</p></div>
+		<div class="ausgpStandTag covTag"><p>Covered Option</p></div>
 		<!--<div class="ausgpStandTag AccTag"><p>Accessible</p></div>-->
 		</div>
 		<div class="ausgpStandBlurb">
@@ -1905,6 +2112,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<br /><br />
 				To top it off, every ticket holder scores an Oscar Piastri merchandise pack - the perfect way to show your support in style.
 			</p>
+			<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -1923,7 +2131,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/25006304E06B1EEC?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -1970,8 +2178,8 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		<div class="ausgpHorDiv"></div>
 		<div class="ausgpStandTags">
 		<div class="ausgpStandTag resTag"><p>Reserved Seat</p></div>
-		<!--<div class="ausgpStandTag preTag"><p>Premium Option</p></div>-->
-		<!--<div class="ausgpStandTag covTag"><p>Covered Option</p></div>-->
+		<div class="ausgpStandTag preTag"><p>Premium Option</p></div>
+		<div class="ausgpStandTag covTag"><p>Covered Option</p></div>
 		<!--<div class="ausgpStandTag AccTag"><p>Accessible</p></div>-->
 		</div>
 		<div class="ausgpStandBlurb">
@@ -1981,6 +2189,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<br /><br />
 				Best accessed via Gate 2, the Ricciardo Grandstand has superscreen viewing available and is only a short walk from Albert Park's Melbourne Junction and Lakeside precincts.
 			</p>
+			<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -1999,7 +2208,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/25006305AFFC0E8F?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -2046,8 +2255,8 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		<div class="ausgpHorDiv"></div>
 		<div class="ausgpStandTags">
 		<div class="ausgpStandTag resTag"><p>Reserved Seat</p></div>
-		<!--<div class="ausgpStandTag preTag"><p>Premium Option</p></div>-->
-		<!--<div class="ausgpStandTag covTag"><p>Covered Option</p></div>-->
+		<div class="ausgpStandTag preTag"><p>Premium Option</p></div>
+		<div class="ausgpStandTag covTag"><p>Covered Option</p></div>
 		<!--<div class="ausgpStandTag AccTag"><p>Accessible</p></div>-->
 		</div>
 		<div class="ausgpStandBlurb">
@@ -2057,6 +2266,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<br /><br />
 				The Grandstand backs onto our Motorsport Straight precinct, providing convenient access to food, drink and entertainment  between sessions.
 			</p>
+			<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -2075,7 +2285,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/25006304E06B1EEC?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -2122,8 +2332,8 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		<div class="ausgpHorDiv"></div>
 		<div class="ausgpStandTags">
 		<div class="ausgpStandTag resTag"><p>Reserved Seat</p></div>
-		<!--<div class="ausgpStandTag preTag"><p>Premium Option</p></div>-->
-		<!--<div class="ausgpStandTag covTag"><p>Covered Option</p></div>-->
+		<div class="ausgpStandTag preTag"><p>Premium Option</p></div>
+		<div class="ausgpStandTag covTag"><p>Covered Option</p></div>
 		<!--<div class="ausgpStandTag AccTag"><p>Accessible</p></div>-->
 		</div>
 		<div class="ausgpStandBlurb">
@@ -2134,6 +2344,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				With a range of conveniently located food and drink options nearby, you'll barely need to leave your seat to enjoy the best Albert Park has to offer.
 
 			</p>
+			<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -2149,7 +2360,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/25006304E06B1EEC?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -2205,6 +2416,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<br /><br />
 			The Stewart Grandstand is best accessed from Gate 3, where public transport awaits, making your journey in and out of Albert Park a breeze.
 			</p>
+			<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -2223,7 +2435,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/25006305BB4E0F58?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -2281,6 +2493,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<br /><br />
 				Easily accessed from Gate 9, one of the most convenient gates for public transport users, access to the rest of the circuit from the Vettel Grandstand requires the use of one of the circuit's footbridges to cross over onto the infield.
 			</p>
+			<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -2299,7 +2512,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/25006305C31C0F94?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -2357,6 +2570,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<br /><br />
 				Easily accessed from Gate 8 and backing onto our Pit Stop Park precinct, you're never far from the action.
 			</p>
+			<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -2375,7 +2589,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/25006305C31C0F94?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -2431,6 +2645,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<br /><br />
 				With superscreen viewing to keep you immersed in the action, and no shortage of food and drink options nearby to keep you from running on empty, the Webber Grandstand is where drivers commit to high-speed entries, have to navigate the apex before powering out of the corner - all within metres of your seat.
 			</p>
+			<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -2449,7 +2664,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--4d--><a href="https://www.ticketmaster.com.au/event/25006305C31C0F94?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Thu &#45; Sun</h2><div class="ausgpStandAvail ausgpLimitedTickets"></div></div>
@@ -2529,7 +2744,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<li>Tickets cannot be redeemed for cash, are non&#45;refundable (Excluding weather events preventing flights) and not exchangeable.</li>
 				<li>For further terms and conditions visit <a href="https://phs.com.au/" target="_blank">www.phs.com.au</a>.</li>
 				</ul>
-			
+					<div class="ausgpMoreBtnWrap"><div class="ausgpShowMoreBtn">Show More<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowLessBtn">Show Less<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_w_ico.svg"></div></div>
 		</div>	
 	</div>
 	<!--Bot side-->
@@ -2549,7 +2764,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	<!--buttons-->
 	<div class="ausgpButtonMod">
 	<div class="ausgpButtonSpan">
-			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="ausgp_arrow_w_ico.svg"></div></div>
+			<div class="ausgpBtnHeader"><h1>Select Day</h1><div class="ausgpAvailKey"><div class="ausgpAvailKeyTag"><p>Limited / No Tickets Left</p><div class="ausgpAvailKeyLimited">Limited</div></div><div class="ausgpAvailKeyTag"><p>Few Tickets Left</p><div class="ausgpAvailKeyFew">Few</div></div></div><div class="ausgpHideTixBtn">Hide Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div><div class="ausgpShowTixBtn">Show Ticket Selection <img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp_arrow_w_ico.svg"></div></div>
 			<div class="ausgpButtonWrap">
 			<!--Sun--><a href="https://www.ticketmaster.com.au/event/2500630DBB9F1359?brand=f1amex" target="_blank"><div class="ausgpStandBtn leftCrn">
 					<div class="ausgpDayWrap"><h2>Sun</h2><div class="ausgpStandAvail ausgpFewTickets"></div></div>
@@ -2863,6 +3078,17 @@ $j(document).on('click', ".ausgpCardBtn", function () {
 //close grandstand
 $j(document).on('click', ".ausgpStandClose", function () {
 	$j('.ausgpGrandstandMod').fadeOut(250);
+})
+//show more or less blurb
+$j(document).on('click', ".ausgpShowMoreBtn", function () {
+	$j(this).parent('.ausgpMoreBtnWrap').parent('.ausgpStandBlurb').css("max-height","none");
+	$j(this).siblings('.ausgpShowLessBtn').fadeIn(0)
+	$j(this).fadeOut(0)
+})
+$j(document).on('click', ".ausgpShowLessBtn", function () {
+	$j(this).parent('.ausgpMoreBtnWrap').parent('.ausgpStandBlurb').css("max-height","200px");
+	$j(this).siblings('.ausgpShowMoreBtn').fadeIn(0)
+	$j(this).fadeOut(0)
 })
 //sticky button wrap
 /*
