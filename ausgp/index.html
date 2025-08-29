@@ -67,6 +67,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		.ausgpArrowRot{transform: rotate(180deg);}
 		.ausgpMenuIco img, .ausgpMenuArrow img{width:100%;height:auto}
 		.ausgpMenuDiv{width:4px;height:30px;border-radius:5px;margin:10px auto;background:#e5e5e5;}
+		.ausgpDropDownDiv{width:285px;height:2px;border-radius:5px;margin:5px auto;background:#6c6c6c;}
 		.ausgpDropDown{width:295px;background:#efefef;padding:8px 0px;position:absolute;top:60px;left:0;right:0;margin:0px auto;z-index: 22;border:1px solid #fff;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);border-radius:2px 10px;overflow:hidden;box-sizing:border-box!important;}
 		.ausgpDropDown h2{font-family: "F1 Display", Fallback, sans-serif;font-size:14px;line-height:14px;font-weight:normal;color:#6D6D6D;text-align:center;margin:0;padding:0 0px 4px 8px;display:inline-block;}
 		.ausgpDropDownBtn{width:calc(100% - 8px);height:27px;background:#fff;margin:2px 4px;padding:5px 10px;display:flex;flex-wrap: nowrap;align-items: center;justify-content: flex-start;box-sizing:border-box!important;}
@@ -254,6 +255,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		.ausgpArrowRot{transform: rotate(180deg);}
 		.ausgpMenuIco img, .ausgpMenuArrow img{width:100%;height:auto}
 		.ausgpMenuDiv{width:80%;height:4px;border-radius:5px;margin:0px auto;background:#e5e5e5;}
+		.ausgpDropDownDiv{width:80%;height:2px;border-radius:5px;margin:5px auto;background:#6c6c6c;}
 		.ausgpDropDown{width:100%;background:#efefef;padding:8px 0px;position:relative;margin:15px auto 5px;z-index: 22;border:1px solid #fff;overflow:hidden;box-sizing:border-box!important;}
 		.ausgpDropDown h2{font-family: "F1 Display", Fallback, sans-serif;font-size:14px;line-height:14px;font-weight:normal;color:#6D6D6D;text-align:center;margin:0;padding:0 0px 4px 8px;display:inline-block;}
 		.ausgpDropDownBtn{width:calc(100% - 8px);height:27px;background:#fff;margin:2px 4px;padding:5px 10px;display:flex;flex-wrap: nowrap;align-items: center;justify-content: flex-start;box-sizing:border-box!important;}
@@ -477,7 +479,9 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				<div class="ausgpMenuArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_arrow_ico.svg"></div>
 				<div id="ausgpFilterDropDown"  class="ausgpDropDown ausgpDropDownOff"> 
 					<h2>Show Events Containing:</h2>
-					<div data-filterbtn="Accessible" class="ausgpDropDownBtn ausgpFilterOn"><div class="ausgpCheckBox ausgpCheckBoxOn"></div><div class="ausgpDropDownIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_accessible_g_ico.svg" alt="Reserved Seat Icon"></div><p>Accessible Option</p></div>
+					<div data-filterbtn="Standard" class="ausgpDropDownBtn ausgpFilterOn"><div class="ausgpCheckBox ausgpCheckBoxOn"></div><div class="ausgpDropDownIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_standard_g_ico.svg" alt="Standard Icon"></div><p>Standard Option</p></div>
+					<div class="ausgpDropDownDiv"></div>
+					<div data-filterbtn="Accessible" class="ausgpDropDownBtn ausgpFilterOn"><div class="ausgpCheckBox ausgpCheckBoxOn"></div><div class="ausgpDropDownIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_accessible_g_ico.svg" alt="Accessible Icon"></div><p>Accessible Option</p></div>
 					<div data-filterbtn="Covered" class="ausgpDropDownBtn ausgpFilterOn"><div class="ausgpCheckBox ausgpCheckBoxOn"></div><div class="ausgpDropDownIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_covered_g_ico.svg" alt="Covered Icon"></div><p>Covered Option</p></div>
 					<div data-filterbtn="Extra" class="ausgpDropDownBtn ausgpFilterOn"><div class="ausgpCheckBox ausgpCheckBoxOn"></div><div class="ausgpDropDownIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_extra_g_ico.svg" alt="Extra Icon"></div><p>Extra Experience</p></div> 
 					<div data-filterbtn="Premium" class="ausgpDropDownBtn ausgpFilterOn"><div class="ausgpCheckBox ausgpCheckBoxOn"></div><div class="ausgpDropDownIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_premium_g_ico.svg" alt="Premium Icon"></div><p>Premium Option</p></div>
@@ -506,7 +510,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		</div>
 <!--event cards--->
 <!--Park Pass-->
-<div class="ausgpEventCard" data-btn="ParkPass" data-ticket="General Admission" data-covered="false" data-premium="false" data-accessible="true" data-extra="false" data-filters="none">
+<div class="ausgpEventCard" data-btn="ParkPass" data-ticket="General Admission" data-covered="false" data-premium="false" data-accessible="true" data-extra="false" data-filters="Standard">
 	<div class="ausgpCardTop">
 	<div class="ausgpHero">
 
@@ -575,7 +579,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 </div>-->
 <!--American Express Stand-->
-<div class="ausgpEventCard" data-btn="AMEX" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+<div class="ausgpEventCard" data-btn="AMEX" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="Standard">
 	<div class="ausgpCardTop">
 	<div class="ausgpHero">
 		<div class="ausgpTurnWrap">
@@ -610,7 +614,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 </div>
 <!--Brabham Grandstand-->
-<div class="ausgpEventCard" data-btn="Brabham" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+<div class="ausgpEventCard" data-btn="Brabham" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="Standard">
 	<div class="ausgpCardTop">
 	<div class="ausgpHero">
 		<div class="ausgpTurnWrap">
@@ -645,7 +649,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 </div>
 <!--Button Grandstand-->
-<div class="ausgpEventCard" data-btn="Button" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+<div class="ausgpEventCard" data-btn="Button" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="Standard">
 	<div class="ausgpCardTop">
 	<div class="ausgpHero">
 		<div class="ausgpTurnWrap">
@@ -680,7 +684,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 </div>
 <!--Clark Grandstand-->
-<div class="ausgpEventCard" data-btn="Clark" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+<div class="ausgpEventCard" data-btn="Clark" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="Standard">
 	<div class="ausgpCardTop">
 	<div class="ausgpHero">
 		<div class="ausgpTurnWrap">
@@ -750,7 +754,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 </div>
 <!--Hill  Grandstand-->
-<div class="ausgpEventCard" data-btn="Hill" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+<div class="ausgpEventCard" data-btn="Hill" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="Standard">
 	<div class="ausgpCardTop">
 	<div class="ausgpHero">
 		<div class="ausgpTurnWrap">
@@ -785,7 +789,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 </div>
 <!--Jones Grandstand-->
-<div class="ausgpEventCard" data-btn="Jones" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="true" data-extra="false" data-filters="none">
+<div class="ausgpEventCard" data-btn="Jones" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="true" data-extra="false" data-filters="Standard">
 	<div class="ausgpCardTop">
 	<div class="ausgpHero">
 		<div class="ausgpTurnWrap">
@@ -820,7 +824,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 </div>
 <!--Lauda  Grandstand-->
-<div class="ausgpEventCard" data-btn="Lauda" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+<div class="ausgpEventCard" data-btn="Lauda" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="Standard">
 	<div class="ausgpCardTop">
 	<div class="ausgpHero">
 		<div class="ausgpTurnWrap">
@@ -1030,7 +1034,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 </div>
 <!--Stewart Grandstand-->
-<div class="ausgpEventCard" data-btn="Stewart" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+<div class="ausgpEventCard" data-btn="Stewart" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="Standard">
 	<div class="ausgpCardTop">
 	<div class="ausgpHero">
 		<div class="ausgpTurnWrap">
@@ -1065,7 +1069,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 </div>
 <!--Vettel Grandstand-->
-<div class="ausgpEventCard" data-btn="Vettel" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+<div class="ausgpEventCard" data-btn="Vettel" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="Standard">
 	<div class="ausgpCardTop">
 	<div class="ausgpHero">
 		<div class="ausgpTurnWrap">
@@ -1100,7 +1104,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 </div>
 <!--Waite Grandstand-->
-<div class="ausgpEventCard" data-btn="Waite" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="none">
+<div class="ausgpEventCard" data-btn="Waite" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false" data-filters="Standard">
 	<div class="ausgpCardTop">
 	<div class="ausgpHero">
 		<div class="ausgpTurnWrap">
@@ -1135,7 +1139,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 </div>
 <!--Webber Grandstand-->
-<div class="ausgpEventCard" data-btn="Webber" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false"  data-filters="none">
+<div class="ausgpEventCard" data-btn="Webber" data-ticket="Reserved" data-covered="false" data-premium="false" data-accessible="false" data-extra="false"  data-filters="Standard">
 	<div class="ausgpCardTop">
 	<div class="ausgpHero">
 		<div class="ausgpTurnWrap">
@@ -2909,7 +2913,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	var $j = jQuery.noConflict();
 	
 	ticketList = ["General Admission", "Reserved", "none"]
-	filterList = ["Accessible", "Covered", "Extra", "Premium"]
+	filterList = ["Standard","Accessible", "Covered", "Extra", "Premium"]
 	let covered = true;
 	let premium = true;
 	let accessible = true;
