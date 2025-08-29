@@ -130,7 +130,8 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		.ausgpCardBtn{width:286px;height:50px;background:var(--gp-pur);font-family: "F1 Display", Fallback, sans-serif;font-size:26px;line-height:26px;font-weight:bold;color:#fff;text-align:center;margin:20px auto 5px;padding:10px 0px;border-radius:5px 25px 5px 25px;cursor:pointer;user-select:none;box-sizing: border-box !important;}
 		/*custom cards*/
 		#ausgpAccessibleCard{min-height:500px;background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp26_Accessible_Card_450x675.jpg') no-repeat top center, var(--gp-dpur);background-size:contain;justify-content: flex-end !important;}
-		#ausgpAccessibleCard a, .ausgpCardNote a, .ausgpCardBot a{text-decoration: none;}
+		#ausgpHospitalityCard{min-height:500px;background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp26_Hospitality_Card_450x675.jpg') no-repeat top center, var(--gp-dpur);background-size:contain;justify-content: flex-end !important;}
+		#ausgpAccessibleCard a,#ausgpHospitalityCard a, .ausgpCardNote a, .ausgpCardBot a{text-decoration: none;}
 		.ausgpCardNote{width:90%;height:auto; margin:20px auto;background:var(--gp-dpur);border-radius:10px;box-sizing:border-box !important;border:1px solid #efefef;}
 		.ausgpCardNote p{font-family: "Averta", Fallback, sans-serif;font-size:17px;line-height:17px;font-weight:normal;color:#fff;text-align:center;margin:0px auto;padding:20px;box-sizing:border-box !important;}		
 
@@ -317,7 +318,8 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		.ausgpCardBtn{max-width:286px;width:calc(100% - 8px);height:50px;background:var(--gp-pur);font-family: "F1 Display", Fallback, sans-serif;font-size:26px;line-height:26px;font-weight:bold;color:#fff;text-align:center;margin:20px auto 5px;padding:10px 0px;border-radius:5px 25px 5px 25px;cursor:pointer;user-select:none;box-sizing: border-box !important;}
 		/*custom cards*/
 		#ausgpAccessibleCard{min-height:500px;background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp26_Accessible_Card_450x675.jpg') no-repeat top center, var(--gp-dpur);background-size:contain;justify-content: flex-end !important;}
-		#ausgpAccessibleCard a, .ausgpCardNote a, .ausgpCardBot a{text-decoration: none;}
+		#ausgpHospitalityCard{min-height:500px;background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp26_Hospitality_Card_450x675.jpg') no-repeat top center, var(--gp-dpur);background-size:contain;justify-content: flex-end !important;}
+		#ausgpAccessibleCard a,#ausgpHospitalityCard a, .ausgpCardNote a, .ausgpCardBot a{text-decoration: none;}
 		.ausgpCardNote{width:90%;height:auto; margin:20px auto;background:var(--gp-dpur);border-radius:10px;box-sizing:border-box !important;border:1px solid #efefef;}
 		.ausgpCardNote p{font-family: "Averta", Fallback, sans-serif;font-size:17px;line-height:17px;font-weight:normal;color:#fff;text-align:center;margin:0px auto;padding:20px;box-sizing:border-box !important;}		
 
@@ -895,7 +897,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 			<div class="ausgpTurn"><p>Main Straight</p></div>
 			<div class="ausgpGate"><p>Gate</p><h1>1</h1></div>
 		</div>
-		<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_ParkPass_450x165.jpg" alt="Piastri Grandstand">
+		<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/heroimg/ausgp26_Piastri_450x165.jpg" alt="Piastri Grandstand">
 	</div>
 	<div class="ausgpCardTitle"><h1>Piastri<br />Grandstand</h1></div>
 	<div class="ausgpCardDiv"></div>
@@ -1193,13 +1195,23 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 </div>
 <!--accessible-->
-<a href="https://www.ticketmaster.com.au/explore/formula-1-qatar-airways-australian-grand-prix-2026"  target="_blank"><div id="ausgpAccessibleCard" class="ausgpEventCard" data-ticket="Reserved" data-covered="true" data-premium="false" data-accessible="true" data-extra="false" data-filters="Accessible,Covered">
+<a href="https://www.ticketmaster.com.au/explore/formula-1-qatar-airways-australian-grand-prix-2026"  target="_blank"><div id="ausgpAccessibleCard" class="ausgpEventCard" data-ticket="Reserved" data-covered="true" data-premium="false" data-accessible="true" data-extra="false" data-filters="Accessible">
 
 	<div class="ausgpCardBot">
 		<div class="ausgpCardNote"><p>For bookings with accessible needs please view the options available here.</p></div>
 		<div class="ausgpCardBtn">See Options</div>
 	</div>
 </div></a>
+<!--hosp-->
+<a href="https://www.grandprix.com.au/tickets/hospitality"  target="_blank"><div id="ausgpHospitalityCard" class="ausgpEventCard" data-ticket="Reserved" data-covered="true" data-premium="false" data-accessible="true" data-extra="false" data-filters="Extra">
+
+	<div class="ausgpCardBot">
+		<!--<div class="ausgpCardNote"><p>For bookings with accessible needs please view the options available here.</p></div>-->
+		<div class="ausgpCardBtn">See Options</div>
+	</div>
+</div></a>
+
+
 <!--Collector Ticket--
 <div class="ausgpEventCard">
 	<div class="ausgpCardTop">
