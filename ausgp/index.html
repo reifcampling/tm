@@ -135,7 +135,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		.ausgpCardNote p{font-family: "Averta", Fallback, sans-serif;font-size:17px;line-height:17px;font-weight:normal;color:#fff;text-align:center;margin:0px auto;padding:20px;box-sizing:border-box !important;}		
 
 		/*grandstands*/
-		.ausgpGrandstandMod{width:100%;height:100%;background:rgba(0,0,0,0.4);position: fixed;top:0;left:0;margin:0;z-index: 100;display:none;}
+		.ausgpGrandstandMod{width:100%;height:100%;background:rgba(0,0,0,0.4);position: fixed;top:0;left:0;margin:0;z-index: 100;display:none;align-items: center;justify-content: center;}
 		.ausgpStandWrap{width:96%;height:auto;max-height:94vh;max-width:1350px;margin:3vh auto;background:#fff;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);border-radius:30px 0px 0px 30px;box-sizing:border-box !important;position: relative;display:flex;flex-wrap: wrap;justify-content: flex-end;align-items: flex-start;align-content: flex-start;overflow-y: auto;overflow-x: hidden;padding:0px 0px 0px 0px;}
 		.ausgpStandClose{width:120px;height:30px;padding:5px;background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_close_img.svg') right 2px top 2px no-repeat, #fff;background-size:22px;top:10px;right:30px;border-radius:30px;border:2px solid var(--gp-pur);position: absolute;cursor:pointer;box-sizing:border-box !important;font-family: "F1 Display", Fallback, sans-serif;font-size:16px;line-height:16px;font-weight:bold;color:var(--gp-pur);text-align:left;}
 		.ausgpStandTop{max-width:800px;width:55%;height:auto;box-sizing:border-box !important;padding:40px;}
@@ -197,34 +197,26 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		.ausgpStandWrap {scrollbar-track-color: rgb(46,54,69); /* Firefox 63 compatibility */}
 		/*avail tags*/
 		.ausgpStandAvail{width:auto;display:inline-block;height:23px;border-radius:5px 10px 5px 10px;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:left;margin:0 10px 0px 0px;padding:5px 8px;box-sizing:border-box !important;}
-		.ausgpFewTickets, .ausgpFewTicketsCirc{background:var(--gp-soldout);}
+		.ausgpFewTickets, .ausgpFewTicketsCirc{background:var(--gp-selling);}
 		.ausgpFewTickets:after{content:"Few";}
-		.ausgpLimitedTickets, .ausgpLimitedTicketsCirc{background:var(--gp-selling);}	
+		.ausgpLimitedTickets, .ausgpLimitedTicketsCirc{background:var(--gp-soldout);}	
 		.ausgpLimitedTickets:after{content:"Limited";}	
 		.ausgpManyTicketsCirc{background: var(--gp-onsale);}
 		/*faq mod*/
-		#ausgpFaqMod{width:100%;height:auto;background:transparent;position:relative;margin:30px auto 50px;box-sizing:border-box !important;text-align: center}
-		.ausgpFaqModDiv{width:70%;height:4px;background:var(--gp-pur);margin:60px -50px 40px auto;display:block;padding:1px;}
-		.ausgpFaqWrap{width:1100px;height:auto;margin:0 auto;display:block;vertical-align: top;text-align: left;position: relative;}
+		#ausgpFaqMod{width:100%;height:auto;background:transparent;position:relative;margin:80px auto 50px;box-sizing:border-box !important;text-align: center}
+		.ausgpFaqWrap{width:1100px;height:auto;width:100%;max-width:1100px;margin:0px auto;display:flex;flex-wrap:wrap;align-items: flex-start;justify-content: center;align-items: stretch;column-gap:40px;row-gap:30px;position: relative;z-index:20;}
 		.ausgpFaqWrap a{text-decoration: none;}
-		#ausgpFaqMod h1{font-family: "F1 Display", Fallback, sans-serif;font-size: 36px;color:#15151e;text-align: left;}
-		.ausgpFaqStripe{width:445px;margin: -40px 0px 0px 30px;}
-		.ausgpFaqHero{margin:-20px -132px 0px 0px;height:250px;width:445px;display:inline-block !important}
-		.ausgpTileDiv{width:50px;height:4px;background:var(--gp-pur);margin:5px auto 10px;}
 		
 		/*info section*/
-		.ausgpInfoCard{width:325px;height:410px;display:inline-block;background:#fff;border-radius:15px;box-shadow: 0px 5px 10px 0px rgb(0, 0, 0 , 10%);overflow:hidden;position: relative;vertical-align: top;transition: ease-in-out .4s;cursor:pointer;}
-		.ausgpInfoCard:hover{box-shadow:0px 5px 10px 2px rgb(0 0 0 / 20%);}	
-		.ausgpInfoCard:nth-child(2),.ausgpInfoCard:nth-child(4){margin:20px 0px;}	
-		.ausgpInfoCard:nth-child(3){margin:20px 56px;}	
+		.ausgpInfoCard{width:325px;height:auto;background:#fff;border-radius:5px 30px 5px 30px;z-index:21;border:#f5f5f5 1px solid;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);overflow:hidden;box-sizing:border-box !important;position: relative;vertical-align: top;transition: ease-in-out .4s;cursor:pointer;display:flex;flex-direction: column;flex-wrap: nowrap;justify-content: space-between;align-items: stretch;}
 		.asugpInfoHead{width:325px;height:128px;margin:0;padding:30px 20px;box-sizing: border-box !important;background:#eeeded;}
 		.asugpInfoHead img{display:inline-block;width:80px;height:80px;float:left;margin:0px 10px 0px 0px;}
 		.asugpInfoHead h2{font-family: "F1 Display", Fallback, sans-serif;font-size: 28px;color:#15151e;display:inline-block;text-align: left;margin:0;padding:0px;}
 		.ausgpInfoCard p{font-family: "Averta", Fallback, sans-serif;padding:15px 20px;font-size: 22px;color:#15151e;text-align: center;}
-		.ausgpInfoBtn{width:325px;height:60px;background:var(--gp-pur);position: absolute;bottom: 0;}
+		.ausgpInfoBtn{width:calc(100% - 8px);height:50px;background:var(--gp-pur);font-family: "F1 Display", Fallback, sans-serif;font-size:22px;line-height:22px;font-weight:bold;color:#fff;text-align:center;margin:20px auto 5px;padding:14px 0px;border-radius:5px 25px 5px 25px;cursor:pointer;user-select:none;box-sizing: border-box !important;}
 		.ausgpInfoBtn h3{font-family: "F1 Display", Fallback, sans-serif;font-size: 20px;color:#fff;text-align: center;margin:10px 0px 0px 0px;padding:0px; z-index: 51;position: relative;}
 		.ausgpInfoBtnBg{width:340px;height:78px;background:var(--gp-pur);position: absolute;margin:0px auto;bottom:0;left:0;right:0;transform: rotate(355deg);z-index: 50;}
-		.ausgpFaqTextWrap{width:800px;height:auto;margin:0 auto;display:block;text-align: left;position: relative;}
+		.ausgpFaqTextWrap{width:800px;height:auto;margin:50px auto;display:block;text-align: left;position: relative;}
 		.ausgpFaqTextWrap p{font-family: "Averta", Fallback, sans-serif;padding:0px;font-size: 16px;color:#15151e;text-align: left;}
 		
 		.ausgpStripe{height:70px;position: relative;display:block;z-index:19;border-radius:15px;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp_pattern.jpg") center center;background-size:200%;box-shadow: 0px 10px 10px 0px rgb(0, 0, 0 , 20%)}
@@ -354,8 +346,8 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		.ausgpImpInfo{width:90%;height:auto;margin:20px auto;display:flex;background:#fff;border-radius:20px;}
 		.ausgpImpInfo p{font-family: "Averta", Fallback, sans-serif;font-size:16px;line-height:16px;font-weight:normal;color:#000;text-align:center;margin:0;padding:10px;box-sizing:border-box !important;}
 		.ausgpStandAccessible img,.ausgpStandHero img{width:100%;height:auto;}	
-		.ausgpStandAccessible{width:90%;max-width:400px;height:auto;margin:20px auto;display:block;border-radius:10px 25px 10px 25px;overflow:hidden;}
-		.ausgpStandHero{width:90%;max-width:400px;height:auto;margin:20px auto 0px;display:block;border-radius:10px 25px 10px 25px;overflow:hidden;}
+		.ausgpStandAccessible{width:90%;max-width:400px;height:auto;margin:20px auto;display:none;border-radius:10px 25px 10px 25px;overflow:hidden;}
+		.ausgpStandHero{width:90%;max-width:400px;height:auto;margin:20px auto 20px;display:block;border-radius:10px 25px 10px 25px;overflow:hidden;}
 		/*button span*/
 		.ausgpButtonMod{width:100%;height:auto;background:#fff;margin:0px auto 20px;position: relative;display:block;box-sizing:border-box !important;order: 2;}
 		.ausgpButtonSpan{width:100%;height:auto;display:block;position: relative;margin:0px auto;}
@@ -364,8 +356,8 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		.ausgpAvailKey{padding:5px 10px;margin:0px 0px 0px 0px;display:flex;width:auto;height:auto;flex-wrap: nowrap;align-content: center;justify-content: flex-start;background:#303030;border-radius:5px 10px 5px 10px;box-sizing:border-box !important;}
 		.ausgpAvailKeyTag{width:auto;height:auto;display: flex;align-items: center;flex-wrap: nowrap;}
 		.ausgpAvailKeyTag p{display:inline-block;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:center;margin:0 0px;padding:0px;}
-		.ausgpAvailKeyLimited{width:auto;display:inline-block;height:23px;border-radius:5px 10px 5px 10px;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:left;margin:0 10px 0px 10px;padding:5px 8px;background:var(--gp-selling);box-sizing:border-box !important;}
-		.ausgpAvailKeyFew{width:auto;display:inline-block;height:23px;border-radius:5px 10px 5px 10px;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:left;margin:0 0px 0px 10px;padding:5px 8px;background:var(--gp-soldout);box-sizing:border-box !important;}
+		.ausgpAvailKeyLimited{width:auto;display:inline-block;height:23px;border-radius:5px 10px 5px 10px;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:left;margin:0 10px 0px 10px;padding:5px 8px;background:var(--gp-soldout);box-sizing:border-box !important;}
+		.ausgpAvailKeyFew{width:auto;display:inline-block;height:23px;border-radius:5px 10px 5px 10px;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:left;margin:0 0px 0px 10px;padding:5px 8px;background:var(--gp-selling);box-sizing:border-box !important;}
 		.ausgpMoreBtnWrap{width:100%;height:30px;margin:0;padding:0;display:block;position: absolute;bottom:0px;left:0;right:0;background:linear-gradient(0deg,rgba(255, 255, 255, 1) 20%,rgba(255, 255, 255, 0) 100%);}
 		.ausgpShowMoreBtn{width:80%;max-width:165px;height:30px;border-radius:5px 10px 5px 10px;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:center;margin:0 auto;padding:9px 8px;background:var(--gp-pur);box-sizing:border-box !important;cursor:pointer;user-select:none;display:block;} 
 		.ausgpShowLessBtn{width:80%;max-width:165px;height:30px;border-radius:5px 10px 5px 10px;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:normal;color:#fff;text-align:center;margin:0 auto;padding:9px 8px;background:var(--gp-pur);box-sizing:border-box !important;cursor:pointer;user-select:none;display:none;}
@@ -405,29 +397,21 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		.ausgpLimitedTickets:after{content:"Limited";}	
 		.ausgpManyTicketsCirc{background: var(--gp-onsale);}
 		/*faq mod*/
-		#ausgpFaqMod{width:100%;height:auto;background:transparent;position:relative;margin:30px auto 50px;box-sizing:border-box !important;text-align: center}
-		.ausgpFaqModDiv{width:70%;height:4px;background:var(--gp-pur);margin:60px -50px 40px auto;display:block;padding:1px;}
-		.ausgpFaqWrap{width:1100px;height:auto;margin:0 auto;display:block;vertical-align: top;text-align: left;position: relative;}
+		#ausgpFaqMod{width:100%;height:auto;background:transparent;position:relative;margin:80px auto 50px;box-sizing:border-box !important;text-align: center}
+		.ausgpFaqWrap{width:1100px;height:auto;width:100%;max-width:1100px;margin:0px auto;display:flex;flex-wrap:wrap;align-items: flex-start;justify-content: center;align-items: stretch;column-gap:40px;row-gap:30px;position: relative;z-index:20;}
 		.ausgpFaqWrap a{text-decoration: none;}
-		#ausgpFaqMod h1{font-family: "F1 Display", Fallback, sans-serif;font-size: 36px;color:#15151e;text-align: left;}
-		.ausgpFaqStripe{width:445px;margin: -40px 0px 0px 30px;}
-		.ausgpFaqHero{margin:-20px -132px 0px 0px;height:250px;width:445px;display:inline-block !important}
-		.ausgpTileDiv{width:50px;height:4px;background:var(--gp-pur);margin:5px auto 10px;}
 		
 		/*info section*/
-		.ausgpInfoCard{width:325px;height:410px;display:inline-block;background:#fff;border-radius:15px;box-shadow: 0px 5px 10px 0px rgb(0, 0, 0 , 10%);overflow:hidden;position: relative;vertical-align: top;transition: ease-in-out .4s;cursor:pointer;}
-		.ausgpInfoCard:hover{box-shadow:0px 5px 10px 2px rgb(0 0 0 / 20%);}	
-		.ausgpInfoCard:nth-child(2),.ausgpInfoCard:nth-child(4){margin:20px 0px;}	
-		.ausgpInfoCard:nth-child(3){margin:20px 56px;}	
-		.asugpInfoHead{width:325px;height:128px;margin:0;padding:30px 20px;box-sizing: border-box !important;background:#eeeded;}
+		.ausgpInfoCard{width:100%;max-width:325px;height:auto;background:#fff;border-radius:5px 30px 5px 30px;z-index:21;border:#f5f5f5 1px solid;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);overflow:hidden;box-sizing:border-box !important;position: relative;vertical-align: top;transition: ease-in-out .4s;cursor:pointer;display:flex;flex-direction: column;flex-wrap: nowrap;justify-content: space-between;align-items: stretch;}
+		.asugpInfoHead{width:100%;height:128px;margin:0;padding:30px 20px;box-sizing: border-box !important;background:#eeeded;}
 		.asugpInfoHead img{display:inline-block;width:80px;height:80px;float:left;margin:0px 10px 0px 0px;}
 		.asugpInfoHead h2{font-family: "F1 Display", Fallback, sans-serif;font-size: 28px;color:#15151e;display:inline-block;text-align: left;margin:0;padding:0px;}
 		.ausgpInfoCard p{font-family: "Averta", Fallback, sans-serif;padding:15px 20px;font-size: 22px;color:#15151e;text-align: center;}
-		.ausgpInfoBtn{width:325px;height:60px;background:var(--gp-pur);position: absolute;bottom: 0;}
+		.ausgpInfoBtn{width:calc(100% - 8px);height:50px;background:var(--gp-pur);font-family: "F1 Display", Fallback, sans-serif;font-size:22px;line-height:22px;font-weight:bold;color:#fff;text-align:center;margin:20px auto 5px;padding:14px 0px;border-radius:5px 25px 5px 25px;cursor:pointer;user-select:none;box-sizing: border-box !important;}
 		.ausgpInfoBtn h3{font-family: "F1 Display", Fallback, sans-serif;font-size: 20px;color:#fff;text-align: center;margin:10px 0px 0px 0px;padding:0px; z-index: 51;position: relative;}
 		.ausgpInfoBtnBg{width:340px;height:78px;background:var(--gp-pur);position: absolute;margin:0px auto;bottom:0;left:0;right:0;transform: rotate(355deg);z-index: 50;}
-		.ausgpFaqTextWrap{width:800px;height:auto;margin:0 auto;display:block;text-align: left;position: relative;}
-		.ausgpFaqTextWrap p{font-family: "Averta", Fallback, sans-serif;padding:0px;font-size: 16px;color:#15151e;text-align: left;}
+		.ausgpFaqTextWrap{max-width:800px;width:90%;height:auto;margin:50px auto;display:block;text-align: center;position: relative;box-sizing: border-box !important;}
+		.ausgpFaqTextWrap p{font-family: "Averta", Fallback, sans-serif;padding:0px;font-size: 16px;color:#15151e;text-align: center;}
 		
 		.ausgpStripe{height:70px;position: relative;display:block;z-index:19;border-radius:15px;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp_pattern.jpg") center center;background-size:200%;box-shadow: 0px 10px 10px 0px rgb(0, 0, 0 , 20%)}
 		.ausgpStripe img{width:100%;height:auto;position: relative;display:block;z-index:19;border-radius:15px;}
@@ -441,29 +425,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		#ausgpErrorNoTickets p{font-family: "Averta", Fallback, sans-serif;font-size:20px;line-height:20px;font-weight:normal;color:#fff;text-align:center;margin:20px auto;padding:0;}
 		.ausgpErrorBtn{width:100%;height:50px;background:#fff;font-family: "F1 Display", Fallback, sans-serif;font-size:26px;line-height:26px;font-weight:bold;color:var(--gp-pur);text-align:center;margin:0 auto 5px;padding:10px 0px;border-radius:5px 25px 5px 25px;cursor:pointer;user-select:none;box-sizing: border-box !important;}
 
-	
-	/*faq mod*/
-		#ausgpFaqMod{width:100%;height:auto;background:transparent;position:relative;margin:30px auto 50px;box-sizing:border-box !important;text-align: center}
-		.ausgpFaqModDiv{width:70%;height:4px;background:var(--gp-pur);margin:60px -50px 40px auto;display:block;padding:1px;}
-		.ausgpFaqWrap{width:100%;max-width:1100px;height:auto;margin:0 auto;display:block;vertical-align: top;text-align: left;position: relative;}
-		.ausgpFaqWrap a{text-decoration: none;}
-		#ausgpFaqMod h1{font-family: "F1 Display", Fallback, sans-serif;font-size: 36px;color:#15151e;text-align: center;}
-		.ausgpFaqStripe{width:445px;margin: -40px 0px 0px 30px;}
-		.ausgpFaqHero{margin:20px -132px 60px 0px;height:250px;width:445px;display:inline-block !important}
-		.ausgpTileDiv{width:50px;height:4px;background:var(--gp-pur);margin:5px auto 10px;}
-		
-		/*info section*/
-		.ausgpInfoCard{max-width:325px;width:96%;height:auto;display:block;background:#fff;border-radius:15px;box-shadow: 0px 5px 10px 0px rgb(0, 0, 0 , 10%);overflow:hidden;position: relative;vertical-align: top;margin:0px auto 20px;}
-	
-		.asugpInfoHead{width:100%;height:auto;margin:0;padding:30px 20px;box-sizing: border-box !important;background:#eeeded;}
-		.asugpInfoHead img{display:inline-block;width:80px;height:80px;float:left;margin:0px 10px 0px 0px;}
-		.asugpInfoHead h2{font-family: "F1 Display", Fallback, sans-serif;font-size: 28px;color:#15151e;display:inline-block;text-align: left;margin:0;padding:0px;}
-		.ausgpInfoCard p{font-family: "Averta", Fallback, sans-serif;padding:15px 20px 120px 15px;font-size: 22px;color:#15151e;text-align: center;}
-		.ausgpInfoBtn{width:100%;height:60px;background:var(--gp-pur);position: absolute;bottom: 0;}
-		.ausgpInfoBtn h3{font-family: "F1 Display", Fallback, sans-serif;font-size: 20px;color:#fff;text-align: center;margin:10px 0px 0px 0px;padding:0px; z-index: 51;position: relative;}
-		.ausgpInfoBtnBg{width:115%;height:130%;background:var(--gp-pur);position: absolute;margin:0px auto;bottom:0;left:0;right:0;transform: rotate(355deg);z-index: 50;}
-		.ausgpFaqTextWrap{max-width:800px;width:94%;height:auto;margin:0 auto;display:block;text-align: left;position: relative;}
-		.ausgpFaqTextWrap p{font-family: "Averta", Fallback, sans-serif;padding:0px;font-size: 16px;color:#15151e;text-align: left;}
+
 		
 		}
 
@@ -476,7 +438,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		.ausgpPassWrap{width:100%;height:auto;padding:0 20px;margin:10 auto 0;box-sizing:border-box !important;}
 		.ausgpPassWrap h3{font-family: "F1 Display", Fallback, sans-serif;font-size:18px;line-height:18px;font-weight:bold;color:#fff;text-align:left;margin:0 auto 0px;padding:0;display:inline-block}
 
-}		
+}
+@media only screen and (min-width: 0) and (max-width: 355px){	
+		.asugpInfoHead img{display:inline-block;width:60px;height:60px;float:left;margin:0px 10px 0px 0px;}
+		.asugpInfoHead h2{font-family: "F1 Display", Fallback, sans-serif;font-size: 22px;color:#15151e;display:inline-block;text-align: left;margin:0;padding:0px;}
+}
 </style>
 
 <!--aus gp content--->
@@ -2820,10 +2786,15 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 </section>
 <!---faq and event info section--->
 		<div id="ausgpFaqMod">
-			<div class="ausgpFaqModDiv"></div>
+		
 		<!--TM Faqs--->
-		<div class="ausgpFaqWrap">
+		<div class="ausgpHeader"> 
 			<h1>FAQ&rsquo;s &amp; Event Information</h1>
+			<div class="ausgpHeaderDiv"></div>
+		</div>
+			
+		<div class="ausgpFaqWrap">
+		
 			
 			<div class="ausgpInfoCard">
 				<div class="asugpInfoHead">
@@ -2831,43 +2802,44 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				</div>
 				<p>Have a question? View our FAQs regarding when we go on sale, ticket prices, grandstand locations and more.</p>
 			
-				<a href="https://help.ticketmaster.com.au/hc/en-au/articles/28328216573201-Formula-1-Australian-Grand-Prix-2025" target="_blank"><div class="ausgpInfoBtn"><h3>All Your Answers Here</h3><div class="ausgpInfoBtnBg"></div></div></a>
+				<a href="https://help.ticketmaster.com.au/hc/en-au/articles/28328216573201-FORMULA-1-QATAR-AIRWAYS-AUSTRALIAN-GRAND-PRIX-2026" target="_blank"><div class="ausgpInfoBtn">Your Answers Here</div></a>
 			</div>
 			<!--TM Faqs--->
 			<div class="ausgpInfoCard">
 				<div class="asugpInfoHead">
-					<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_track_ico.svg"><h2>Event<br />Information</h2>
+					<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_event_ico.svg"><h2>Event<br />Information</h2>
 				</div>
-				<p>For all your general event information on&#45;track and off&#45;track check out the Australian Grand Pix site.</p>
+				<p>For all your general event information including schedules, transport, maps and more.</p>
 			
-				<a href="https://www.grandprix.com.au/" target="_blank"><div class="ausgpInfoBtn"><h3>See More</h3><div class="ausgpInfoBtnBg"></div></div></a>
+				<a href="https://www.grandprix.com.au/" target="_blank"><div class="ausgpInfoBtn">See More</div></a>
 			</div>			
 			<!--Hosp--->
 			<div class="ausgpInfoCard">
 				<div class="asugpInfoHead">
-					<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_hospitality_ico.svg"><h2>Hospitality<br />FAQ&rsquo;s</h2>
+					<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_hosp_ico.svg"><h2>Hospitality<br />FAQ&rsquo;s</h2>
 				</div>
-				<p>Access information on Hospitality Tickets, arrival tips, and more on the Australian Grand Prix site.</p>
+				<p>For information on Hospitality Tickets, arrival tips and more.</p>
 			
-				<a href="https://www.grandprix.com.au/hospitality/already-booked-faq" target="_blank"><div class="ausgpInfoBtn"><h3>See More</h3><div class="ausgpInfoBtnBg"></div></div></a>
+				<a href="https://www.grandprix.com.au/hospitality/already-booked-faq" target="_blank"><div class="ausgpInfoBtn">See More</div></a>
 			</div>
-			<!--<div class="ausgpHero ausgpFaqHero">
-				<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2024/ausgp_faq_hero_445x250v2.jpg">
-				<div class="ausgpStripe ausgpFaqStripe"></div>
-			</div>-->		
+	
 		</div>
 			
-	<!--products--->	
-		<div class="ausgpFaqWrap">
+	<!--products--->
+	<div class="ausgpHeader"> 
 			<h1>Product Information</h1>
+			<div class="ausgpHeaderDiv"></div>
+	</div>
+		<div class="ausgpFaqWrap">
+			
 			<!--Collector Ticket--->
 			<div  id="ausgpFaqCollectorBtn" class="ausgpInfoCard ausgpProdCard">
 				<div class="asugpInfoHead">
 					<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2026/ausgp_collector_ico.svg"><h2>Collector<br />Ticket</h2>
 				</div>
-				<p>Want a memento? Grab a collector ticket.</p>
+				<p>Want a memento? Grab a Collector Ticket.</p>
 			
-				<div class="ausgpInfoBtn"><h3>Read More</h3><div class="ausgpInfoBtnBg"></div></div>
+				<div class="ausgpInfoBtn">Read More</div>
 			</div>
 			<!--Aisle seating--->
 			<div  id="ausgpFaqAisleBtn" class="ausgpInfoCard ausgpProdCard">
@@ -2876,7 +2848,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 				</div>
 				<p>Looking for some extra comfort? Aisle Seats have you covered.</p>
 			
-				<div class="ausgpInfoBtn"><h3>Read More</h3><div class="ausgpInfoBtnBg"></div></div>
+				<div class="ausgpInfoBtn">Read More</div>
 			</div>
 			<!--In Demand---
 			<div id="ausgpFaqDemandBtn" class="ausgpInfoCard ausgpProdCard">
@@ -2892,22 +2864,19 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		<div id="ausgpFaqCollector" class="ausgpFaqTextWrap">
 			<div class="ausgpFaqModDiv"></div>
 			<h1>Collector Tickets</h1>
-
-			A Collector Ticket is a stylish ticket which not only gets you into the event, it also serves as a treasured keepsake to be kept well after the race is over.
-			<br /><br />		
-			Collector tickets are only made available for selected events and can be purchased through the normal purchase processes - be sure to select a 'Collector Ticket' ticket type when choosing your tickets. They incur a $25 fee.
-			<br /><br />	
-			Collector tickets can only be delivered to fans via mail and cannot be sent as Print-at-Home or E-Tickets, or collected from outlets or the venue. Collector Tickets are not available to those without a valid Australian address. You must provide an Australian postal address to receive Collector Tickets. <strong>*Collector Tickets are not eligible for Resale.</strong>
-	</p>	
+			<p>
+			Make your entrance to the <strong>FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026</strong> truly unforgettable with a stylish Collector Ticket. Not only will these tickets grant you access to the event, but they also serve as a cherished keepsake to remember for years to come. Please note that Collector Tickets can only be purchased with an Australian Postal address, so make sure your Ticketmaster account details are up to date. Expected delivery - 4 weeks prior to the event.
+			</p>	
 		</div>
 	<!--products description--->	
 		<div id="ausgpFaqAisle" class="ausgpFaqTextWrap">
 			<div class="ausgpFaqModDiv"></div>
 			<h1>What are Aisle Seat Tickets?</h1>
-			<p>Looking to add some added comfort to your race day? We've got you covered with Aisle Seat Tickets!
-			 <br><br>
-			These premium tickets are available in all grandstands, covering the first 4 seats from each aisle. They incur a $20 surcharge.
-				</p>
+			<p>	
+			Looking to add some added comfort to your race day? We've got you covered with Aisle Seat Tickets!
+			<br><br>
+			Aisle seats are the closest 4 seats to each aisle and cost an additional $25. This is also reflected in the seats at the back of an aisle which do not have any seats in front of them.
+			</p>
 		</div>
 	<!--products description	
 		<div id="ausgpFaqDemand" class="ausgpFaqTextWrap">
@@ -3095,7 +3064,7 @@ $j(document).on('click', ".ausgpErrorBtn", function () {
 $j(document).on('click', ".ausgpCardBtn", function () {
 	let btnTarget = $j(this).parent('.ausgpCardBot').parent('.ausgpEventCard').data('btn');
 	targetStand = $j(this).parent('.ausgpCardBot').parent('.ausgpEventCard').data('btn');
-	$j('#ausgp'+btnTarget+'Grandstand').fadeIn(250);
+	$j('#ausgp'+btnTarget+'Grandstand').fadeIn(250).css("display","flex");
 })
 //close grandstand
 $j(document).on('click', ".ausgpStandClose", function () {
