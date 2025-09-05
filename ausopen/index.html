@@ -233,6 +233,14 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	#aoAccessibleList li{margin:10px 0px;padding:0px 0px 0px 0px;}
 	#aoAccessibleList ol{padding-inline-start: 20px;}
 	#aoAccessibleWrap a{text-decoration: underline;font-weight: 600;color:#fff;}
+
+	.aoAcessibleLb{width:100%;height:100%;margin:0 auto;position: absolute;left:0;right:0;top:0;background:rgba(255,255,255,.8);display:flex;flex-wrap: nowrap;justify-content: center;align-items: flex-start;z-index: 100;}
+	.aoAcessibleLbContent{width:760px;height:auto;margin:50px auto;padding:40px;display:block;background:rgba(30,40,134,.8);box-sizing: border-box !important;border-radius: 5px;}
+	.aoAcessibleLbContent p{font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:400;display:block;text-align: center;color:#fff;margin:0px;padding:0px;}
+	.aoAccessibleBtn{height:30px;width:224px;padding:0px 0px 0px 0px;margin:25px auto 0px;display:flex;vertical-align: top;user-select: none;box-sizing:border-box !important;cursor:pointer;user-select:none;background:#fff;border-radius: 5px;align-items: center;justify-content: space-evenly;flex-wrap: nowrap;}
+	.aoAccessibleBtn img{width:18px;height:18px;display:inline-block;}
+	.aoAccessibleBtn h3{font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--ao-blue);padding:3px 0px 0px 0px;margin:0px 0px 0px 0px;}
+	
 	/*event stream styles*/
 	#aoPubSessions{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;padding:1px ;position: relative; box-sizing:border-box !important;}
 	#aoPremSessions{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;padding:1px ;position: relative; box-sizing:border-box !important;}
@@ -599,6 +607,13 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	#aoAccessibleList li{margin:10px 0px;padding:0px 0px 0px 0px;}
 	#aoAccessibleList ol{padding-inline-start: 20px;}
 	#aoAccessibleWrap a{text-decoration: underline;font-weight: 600;color:#fff;}
+
+	.aoAcessibleLb{width:100%;height:100%;margin:0 auto;position: absolute;left:0;right:0;top:0;background:rgba(255,255,255,.8);display:flex;flex-wrap: nowrap;justify-content: center;align-items: flex-start;z-index: 100;}
+	.aoAcessibleLbContent{max-width:760px;width:90%;height:auto;margin:50px auto;padding:40px;display:block;background:rgba(30,40,134,.8);box-sizing: border-box !important;border-radius: 5px;}
+	.aoAcessibleLbContent p{font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:400;display:block;text-align: center;color:#fff;margin:0px;padding:0px;}
+	.aoAccessibleBtn{height:30px;width:224px;padding:0px 0px 0px 0px;margin:25px auto 0px;display:flex;vertical-align: top;user-select: none;box-sizing:border-box !important;cursor:pointer;user-select:none;background:#fff;border-radius: 5px;align-items: center;justify-content: space-evenly;flex-wrap: nowrap;}
+	.aoAccessibleBtn img{width:18px;height:18px;display:inline-block;}
+	.aoAccessibleBtn h3{font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--ao-blue);padding:3px 0px 0px 0px;margin:0px 0px 0px 0px;}	
 	/*event stream styles*/
 	#aoPubSessions{width:100%;height:auto;max-width:1000px;margin:0px auto 0px;padding:1px ;position: relative; box-sizing:border-box !important;}
 	#aoPremSessions{width:100%;height:auto;max-width:1000px;margin:0px auto 0px;padding:1px ;position: relative; box-sizing:border-box !important;}
@@ -948,7 +963,14 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 
 	</div><!---end header--->
 	<!---GP sessions---->
-	<div id="aoPubSessions">	
+	<div id="aoPubSessions">
+		<!--accessible cover-->
+		<div class="aoAcessibleLb"> 
+			<div class="aoAcessibleLbContent">
+					<p>To view events please make a selection on the  &lsquo;Seat Category&rsquo; filter near the top of this page.</p>
+					<div class="aoAccessibleBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_accessible_ico.svg"><h3>GO TO SEAT CATEGORY</h3></div>
+			</div>		
+		</div>
 		<!--counter and date sort-->
 		<div id="aoPubCounterWrap">
 			<div id="aoPubCounter"><div id="aoPubCount"></div><p>&nbsp; results</p></div>
@@ -1088,6 +1110,7 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 			</div>	
 		</div>
 		</div>
+
 		<!--error span-->
 		<div id="aoEventErrorsPX">
 			<!--error message-->
@@ -1124,7 +1147,7 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 	//notes: date filtering and counters next, 
 	$j = jQuery.noConflict();
 	//the server name could change so I put it here so it was easy to find
-	let availLocation = "https://d1qeon7qw4jcrw.cloudfront.net/ao";
+	let availLocation = "https://d1qeon7qw4jcrw.cloudfront.net/ao_sandbox";
 	//TM only link >>> https://dixntprqcqdcg.cloudfront.net/ao_tm
 	//sandbox link >>> https://d1qeon7qw4jcrw.cloudfront.net/ao_sandbox
 	//prod link    >>> https://d1qeon7qw4jcrw.cloudfront.net/ao
@@ -2098,7 +2121,7 @@ $j(document).on('click', 'body', function (e) {
 //accessible selection 
 $j(document).on('click', "#aoPubAccessMenu .aoFilterRadioBtn", function () {
 accessibleSelection = $j(this).data('filterbtnlab');
-		
+			$j(".aoAcessibleLb").fadeOut(250)
 			//toggle self
 			if ($j(this).hasClass("aoFilterBtnOff")) {
 				$j(this).removeClass("aoFilterBtnOff").addClass("aoFilterBtnOn");
@@ -2111,11 +2134,16 @@ accessibleSelection = $j(this).data('filterbtnlab');
 				$j(this).children(".aoRadioBtnActive").removeClass("aoRadioBtnActive").addClass("aoRadioBtn");
 			}
 			
-	console.log(accessibleSelection)
+
 		//pubCardsToDisplay();
 		//pubSessionCounter();
 		//console.log(sessionTypeList)
 	})
+$j(document).on('click', ".aoAccessibleBtn", function () {
+
+	$j('html, body').animate({ scrollTop: $j("#aoPubSearchBar").offset().top}, 1000);
+
+})
 
 //pub sessions filter click
 $j(document).on('click', "#aoPubSessionMenu .sessionFilterBtn", function () {
