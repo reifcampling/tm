@@ -147,33 +147,42 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	.aoCalDay{width:35px;height:auto;font-family:'poppins', 'Averta', sans-serif;font-size:10px;line-height:10px;text-align: center;font-weight:600;color:var(--ao-dgrey);padding:0px;margin:16px 0px 5px 0px;display:inline-block;}
  	#prem-date-list-div .aoCalDay{color:#fff}
 	#pub-date-list-div, #prem-date-list-div{width:100%;height:auto;margin:0px auto 10px;text-align: center;}
-	.datelist{width:35px;height:35px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;display:inline-block;padding:11px 0px;border-radius:20px;text-transform: uppercase;user-select: none;transition:ease-in-out .2s all;position:relative;}
-	.week0Day{color:var(--ao-dblue);background:#fff;cursor:pointer;}
+	.datelist{width:35px;height:35px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:15px;line-height:15px;text-align: center;font-weight:700;display:inline-block;padding:12px 0px;border-radius:20px;text-transform: uppercase;user-select: none;transition:ease-in-out .2s all;position:relative;}
+	#pub-date-list-div .week0Day,#aoPubSelectDate .aoIntroDate{color:var(--ao-dblue);background:rgba(30,40,134,.1);cursor:pointer;}
 	#prem-date-list-div .week0Day{color:var(--px-dblue);background:#fff;border:2px solid #fff;cursor:pointer;}
 	.week0Day:hover{background:rgba(30,40,134,.2);}
-	.mainDay{color:var(--ao-blue);background:rgba(0,115,178,.1);cursor:pointer;}
+	#pub-date-list-div .mainDay,#aoPubSelectDate .aoMainDate{color:var(--ao-blue);background:rgba(0,115,178,.1);cursor:pointer;}
 	#prem-date-list-div .mainDay{color:var(--px-blue);border:2px solid var(--px-blue);cursor:pointer;}
 	.mainDay:hover{background:rgba(0,115,178,.2);}
 
 	.datelistActive, .datelistActive:hover{width:35px;height:35px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;display:inline-block;padding:12px 0px 0px 0px;border-radius:20px;text-transform: uppercase;user-select: none;background:var(--ao-blue);color:#fff;transition:ease-in-out .2s all;position: relative;}
 	/*day markers*/
-	.aoFinalKey{width:6px;height:6px;border-radius:10px;bottom:3px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
-	.aoFinal01{border:2px solid #fff;}
-	.aoFinal02{border:2px solid var(--ao-green);}
-	.aoFinal03{background:#fff}
-	.aoFinal04{background:var(--ao-green);}
+	#aoPubCalendar .aoFinalKey{width:6px;height:6px;border-radius:10px;bottom:1px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
+	#aoPubCalendar .aoFinal01{border:2px solid var(--ao-bblue);}
+	#aoPubCalendar .aoFinal02{border:2px solid #1E2886;}
+	#aoPubCalendar .aoFinal03{background:var(--ao-bblue);}
+	#aoPubCalendar .aoFinal04{background:#1E2886;}
+	#aoPremCalendar .aoFinalKey{width:6px;height:6px;border-radius:10px;bottom:1px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
+	#aoPremCalendar .aoFinal01{border:2px solid var(--ao-grey);}
+	#aoPremCalendar .aoFinal02{border:2px solid var(--ao-green);}
+	#aoPremCalendar .aoFinal03{background:var(--ao-grey);}
+	#aoPremCalendar .aoFinal04{background:var(--ao-green);}
 	/*key*/
 	.aoKeyWrap{width:50%;height:auto;margin:16px auto 0px;padding:0px;position:relative;display:inline-block;vertical-align: top;text-align: left;}
 	#aoPubCalendar .aoKeyEvent{font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: left;font-weight:500;color:var(--px-dblue);padding:16px 0px 0px 0px;margin:3px auto;display:block;}
 	#aoPremCalendar .aoKeyEvent{font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: left;font-weight:500;color:#fff;padding:16px 0px 0px 0px;margin:3px auto;display:block;}                                                                                                                 
 	.aoKeyEventBullet{width:6px;height:6px;border-radius:15px;background:transparent;display:inline-block;margin:0px 3px 1px 0px;box-sizing: border-box !important;}
-	.final01Key{border:2px solid #fff;}
-	.final02Key{border:2px solid var(--ao-green)}
-	.final03Key{background:#fff;}
-	.final04Key{background: var(--ao-green);}
-	.aoKeyDate{width:35px;height:35px;border-radius:20px;display:inline-block;margin:4px 0px 0px 0px;padding:11px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;text-transform: uppercase;user-select: none;position:relative;}
-	.aoIntroDate{color:var(--px-dblue);background:#fff;border:2px solid #fff;} 
-	.aoMainDate{color:var(--px-blue);border:2px solid var(--px-blue);}
+	#aoPubCalendar .final01Key{border:2px solid var(--ao-bblue);}
+	#aoPubCalendar .final02Key{border:2px solid #1E2886;}
+	#aoPubCalendar .final03Key{background:var(--ao-bblue);}
+	#aoPubCalendar .final04Key{background:#1E2886;}
+	.aoKeyEvent .aoFinalKey{width:6px;height:6px;border-radius:10px;bottom:1px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
+	#aoPremCalendar .final01Key{border:2px solid var(--ao-grey);}
+	#aoPremCalendar .final02Key{border:2px solid var(--ao-green);}
+	#aoPremCalendar .final03Key{background:var(--ao-grey);}
+	#aoPremCalendar .final04Key{background:var(--ao-green);}
+	.aoKeyDate{width:35px;height:35px;border-radius:20px;display:inline-block;margin:4px 0px 0px 0px;padding:12px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;text-transform: uppercase;user-select: none;position:relative;}
+
 	/*checkbox radio buttons*/
 	.aoFilterListBtn, .aoFilterRadioBtn, .sortRadioBtn{width:100%;height:auto; padding:0px; margin:12px auto 0px;box-sizing: border-box !important;border-radius:3px;text-align: left;cursor:pointer;transition: .25s ease-in-out}
 	.aoFilterListBtn h4, .aoFilterRadioBtn h4, .sortRadioBtn h4{padding:0px; margin:0px 0px -2px 8px;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: left;font-weight:600;color:var(--ao-mdgrey);display:inline-block;vertical-align: middle;user-select: none;}	
@@ -206,7 +215,7 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	#aoPubCounter, #aoPremCounter{width:auto;height:auto;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:var(--ao-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;}
 	#aoPubCount, #aoPremCount{width:auto;height:auto;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:var(--ao-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;}
 	#aoPubCounter p, #aoPremCounter p{font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:500;color:var(--ao-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;}
-	#aoPubSearchBar .aoDropDownCount{width:22px;height:22px;margin:0px;padding:0px;background:var(--ao-dblue);border-radius:20px;position:absolute;top:17px;left:46px;display:none;}
+	#aoPubSearchBar .aoDropDownCount{width:22px;height:22px;margin:0px;padding:0px;background:var(--ao-dblue);border-radius:20px;position:absolute;top:17px;left:36px;display:none;}
 	#aoPremSearchBar .aoDropDownCount{width:22px;height:22px;margin:0px;padding:0px;background:var(--px-blue);border-radius:20px;position:absolute;top:17px;left:46px;display:none;}
 	#aoPubSearchBar .aoDropDownNumber{width:22px;height:22px;margin:0px;padding:6.5px 0px 0px 0px;font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:800;color:#fff;box-sizing: border-box !important;}
 	#aoPremSearchBar .aoDropDownNumber{width:22px;height:22px;margin:0px;padding:6.5px 0px 0px 0px;font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:800;color:var(--px-dblue);box-sizing: border-box !important;}
