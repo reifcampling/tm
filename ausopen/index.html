@@ -91,7 +91,7 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	.aoClearMenuBtn{font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:#fff;padding:8px;margin:0px 0px;right:16px;top:16px;position:absolute;box-sizing: border-box !important;text-decoration: underline;cursor:pointer;}
 	#aoClearMenuMobPub, #aoClearMenuMobPrem{display:none;}
 	#aoPubSearchBar .aoPubTab{height:60px;width:205px;display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:#fff;padding:24px 0px;margin:0px 16px 0px 0px;border-radius:4px 4px 0px 0px;background:var(--ao-blue);box-sizing: border-box !important;position: relative;vertical-align: top;box-sizing: border-box !important;}
-	#aoPubSearchBar .aoPremTab{height:60px;width:300px;display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:#fff;padding:21px 70px 24px 0px;margin:0px 0px 0px 0px;border-radius:4px 4px 0px 0px;background:rgba(0,0,0,.4);border-top:3px var(--ao-blue) solid;position: relative;vertical-align: top;box-sizing: border-box !important;cursor:pointer;}
+	#aoPubSearchBar .aoPremTab{height:60px;width:300px;display:none;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:#fff;padding:21px 70px 24px 0px;margin:0px 0px 0px 0px;border-radius:4px 4px 0px 0px;background:rgba(0,0,0,.4);border-top:3px var(--ao-blue) solid;position: relative;vertical-align: top;box-sizing: border-box !important;cursor:pointer;}
 	#aoPubSearchBar .aoPremTab span{height:20px;background:var(--ao-green);font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:900;color:#000;padding:5px 10px;border-radius:12px;top:17px;right:24px;position:absolute;box-sizing: border-box !important;}
 	#aoPubSearchBar .aoSearchBarWrap{width:100%;max-width:874px;height:56px;margin:0px;text-align:center;background:#fff;border-radius:0px 4px 4px 4px;position: relative;z-index:200;box-sizing: border-box !important;display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-evenly; align-content: center;align-items: center;}
 	#aoPubSearchBar .aoSearchVertDiv{width:2px;height:32px;margin:12px 0px; background:var(--ao-grey);display:inline-block;border-radius:2px;}
@@ -456,7 +456,7 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	#aoPubSearchBar .aoTabWrap{width:100%;max-width:358px;height:64px;margin:0px;position: relative;z-index:200;box-sizing: border-box !important;text-align: left;user-select: none;}
 	#aoPubSearchBar .aoTabWrap .aoClearMenuBtn{display:none;}
 	#aoPubSearchBar .aoPubTab{height:64px;max-width:92px;width:auto;display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:#fff;padding:25px 16px;margin:0px 8px 0px 0px;border-radius:4px 4px 0px 0px;background:var(--ao-blue);box-sizing: border-box !important;position: relative;vertical-align: top;box-sizing: border-box !important;}
-	#aoPubSearchBar .aoPremTab{height:64px;width:calc(100% - 100px);display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: left;font-weight:700;color:#fff;padding:15px 60px 18px 16px;margin:0px 0px 0px 0px;border-radius:4px 4px 0px 0px;background:rgba(0,0,0,.4);border-top:3px var(--ao-blue) solid;position: relative;vertical-align: top;box-sizing: border-box !important;cursor:pointer;}
+	#aoPubSearchBar .aoPremTab{height:64px;width:calc(100% - 100px);display:none;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: left;font-weight:700;color:#fff;padding:15px 60px 18px 16px;margin:0px 0px 0px 0px;border-radius:4px 4px 0px 0px;background:rgba(0,0,0,.4);border-top:3px var(--ao-blue) solid;position: relative;vertical-align: top;box-sizing: border-box !important;cursor:pointer;}
 	#aoPubSearchBar .aoPremTab span{height:20px;background:var(--ao-green);font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:900;color:#000;padding:5px 10px;border-radius:12px;top:17px;right:8px;position:absolute;box-sizing: border-box !important;}
 	#aoPubSearchBar .aoSearchBarWrap{width:100%;max-width:358px;height:auto;margin:0px;text-align:left;background:#fff;border-radius:0px 0px 4px 4px;position: relative;z-index:200;box-sizing: border-box !important;display: flex;flex-direction: column;flex-wrap: wrap;justify-content: center;align-content: center; align-items: flex-start}
 	#aoPubSearchBar .aoSearchVertDiv{width:100%;height:2px;margin:0px; background:var(--ao-grey);display:inline-block;border-radius:2px;}
@@ -1147,7 +1147,7 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 	//notes: date filtering and counters next, 
 	$j = jQuery.noConflict();
 	//the server name could change so I put it here so it was easy to find
-	let availLocation = "https://d1qeon7qw4jcrw.cloudfront.net/ao_sandbox";
+	let availLocation = "https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao_sandbox_accessible_test.json";
 	//TM only link >>> https://dixntprqcqdcg.cloudfront.net/ao_tm
 	//sandbox link >>> https://d1qeon7qw4jcrw.cloudfront.net/ao_sandbox
 	//prod link    >>> https://d1qeon7qw4jcrw.cloudfront.net/ao
@@ -1329,7 +1329,7 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 												let suiteLinkn24 = event.table_options.Suite_of_24?.buy_link;
 													
 												if( aoBuyLink != (null || "none" || "")){
-													eventInfo = $j("<div class='eventBtnWrap'><p>From</p><div class='eventPrice'>$"
+												eventInfo = $j("<div class='eventBtnWrap'><p>From</p><div class='eventPrice'>$"
 												+event.price_from+"<p>/ "
 												+event.unit_reference+"</p></div><a href='" 
 												+ addDidBrandToken(event.buy_link,event.did_link)+"'><div class='eventTicketsBtn'>"
@@ -1358,6 +1358,26 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 												//console.log(eventFlow)
 												} 
 												else if( aoBuyLink == (null || "none" || "") && (eventFlow == "ao-ticketssuite")){//try adding a condition specific to table and suites if table_options.Table_of_2 || Table_of_4 etc != null then.
+													eventInfo = $j("<div class='eventBtnWrap'><p>From</p><div class='eventPrice'>$"
+												+event.price_from+"<p>/ "
+												+event.unit_reference+"</p></div><div class='eventTicketsBtn event"
+												+buttonText+"btn'>"
+												+event.button_text+"</div><div class='eventIncBtn'>VIEW INCLUSIONS</div></div><div class='aoTableLightBox'><div class='aoEventTableContent'><div class='aoTableTopWrap'><div class='aoTableClose'></div><h1>"
+												+event.offer_desc+"</h1><div class='aoTableDetailWrap'><div class='aoTableDate' data-date='"
+												+event.event_date+"'>"
+												+eventDateShort+"</div><div class='aoTableVenue' data-venue='"
+												+event.arena_name+"'>"
+												+event.arena_name+"</div></div><div class='aoTableDetailWrap'><div class='aoTableSession aoLb"
+												+sessionType+"'>"
+												+sessionTypeCase+"</div><div class='aoTableAccessTime'>"
+												+event.inclusions_match_start_time+"</div></div></div><p>Suites can only be booked in the sizes below. No singles or odd bookings.</p><div class='aoTableBtnWrap'><a href="
+												+ suiteLinkn12 + " target='_blank'><div class='aoTableBtn' data-link='" + suiteLinkn12 + "'>SUITE OF 12</div></a><a href="
+												+ suiteLinkn16 + " target='_blank'><div class='aoTableBtn' data-link='" + suiteLinkn16 + "'>SUITE OF 16</div></a><a href="
+												+ suiteLinkn18 + " target='_blank'><div class='aoTableBtn' data-link='" + suiteLinkn18 + "'>SUITE OF 18</div></a><a href="
+												+ suiteLinkn24 + " target='_blank'><div class='aoTableBtn' data-link='" + suiteLinkn24 + "'>SUITE OF 24</div></a></div></div></div></div>");
+												//console.log(eventFlow)
+												}
+												else if( aoBuyLink == (null || "none" || "") && (eventFlow == "ao-tickets")){//try adding a condition specific to table and suites if table_options.Table_of_2 || Table_of_4 etc != null then.
 													eventInfo = $j("<div class='eventBtnWrap'><p>From</p><div class='eventPrice'>$"
 												+event.price_from+"<p>/ "
 												+event.unit_reference+"</p></div><div class='eventTicketsBtn event"
