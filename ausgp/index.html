@@ -124,11 +124,18 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		.ausgpCardAvailWrap h2{width:100%;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:bold;color:#6c6c6c;text-align:center;margin:0px 0px 10px 0px;padding:0;}
 		.ausgpCardAvailTag{width:auto;height:25px;padding:0px 5px;margin:5px;font-family: "F1 Display", Fallback, sans-serif;font-size:14px;line-height:14px;font-weight:bold;color:#000;text-align:center;border-radius:15px;background:#D9D9D9;display:flex;flex-wrap: nowrap;flex-wrap: nowrap;justify-content: center;align-items: center;box-sizing:border-box !important;}
 		/*card avail tags*/
-		.availTagIndicator{width:16px;height:16px;margin:0px 0px 0px 5px;background:#efefef;display:inline-block;border-radius:10px;transition: ease-in-out .75s all;}
+		.availTagIndicator{width:16px;height:16px;margin:0px 0px 0px 5px;background:#efefef;display:inline-block;border-radius:10px;}
+
 		.ausgpTixAvailCard{background: var(--gp-onsale);}
 		.ausgpTixFewAvailCard{background: var(--gp-selling);}
 		.ausgpTixNotAvailCard{background: var(--gp-soldout);}
 		.ausgpunknownCard{background:#efefef;}
+		/*staggered animations*/
+		.fade1{transition: ease-in-out .25s all;}
+		.fade2{transition: ease-in-out .5s all;}
+		.fade3{transition: ease-in-out .75s all;}
+		.fade4{transition: ease-in-out 1s all;}
+		.fade5{transition: ease-in-out 1.25s all;}
 
 		.ausgpCardPriceWrap{width:100%;height:auto;margin:10px auto;padding:0;display:none;flex-wrap:wrap;align-items: center;justify-content: center;}
 		.ausgpCardPriceWrap h2{width:100%;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:bold;color:#6c6c6c;text-align:center;margin:0;padding:0;}
@@ -326,11 +333,17 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		.ausgpCardAvailWrap h2{width:100%;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:bold;color:#6c6c6c;text-align:center;margin:0px 0px 10px 0px;padding:0;}
 		.ausgpCardAvailTag{width:auto;height:25px;padding:0px 5px;margin:5px;font-family: "F1 Display", Fallback, sans-serif;font-size:14px;line-height:14px;font-weight:bold;color:#000;text-align:center;border-radius:15px;background:#D9D9D9;display:flex;flex-wrap: nowrap;flex-wrap: nowrap;justify-content: center;align-items: center;box-sizing:border-box !important;}
 		/*card avail tags*/
-		.availTagIndicator{width:16px;height:16px;margin:0px 0px 0px 5px;background:#efefef;display:inline-block;border-radius:10px;transition: ease-in-out .75s all;}
+		.availTagIndicator{width:16px;height:16px;margin:0px 0px 0px 5px;background:#efefef;display:inline-block;border-radius:10px;}
 		.ausgpTixAvailCard{background: var(--gp-onsale);}
 		.ausgpTixFewAvailCard{background: var(--gp-selling);}
 		.ausgpTixNotAvailCard{background: var(--gp-soldout);}
 		.ausgpunknownCard{background:#efefef;}
+		/*staggered animations*/
+		.fade1{transition: ease-in-out .25s all;}
+		.fade2{transition: ease-in-out .5s all;}
+		.fade3{transition: ease-in-out .75s all;}
+		.fade4{transition: ease-in-out 1s all;}
+		.fade5{transition: ease-in-out 1.25s all;}
 
 		.ausgpCardPriceWrap{width:100%;height:auto;margin:10px auto;padding:0;display:none;flex-wrap:wrap;align-items: center;justify-content: center;}
 		.ausgpCardPriceWrap h2{width:100%;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:12px;font-weight:bold;color:#6c6c6c;text-align:center;margin:0;padding:0;}
@@ -556,11 +569,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day:<div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Thu: <div data-availid="6FD1G" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div data-availid="6FD2G" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div data-availid="6FD3G" class="availTagIndicator "></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div data-availid="6FD4G" class="availTagIndicator "></div></div>
+		<div class="ausgpCardAvailTag">4Day:<div data-availid="" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">Thu: <div data-availid="6FD1G" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="6FD2G" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="6FD3G" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="6FD4G" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -627,11 +640,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -662,11 +675,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day: <div  data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">2Day: <div  data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div  data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div  data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div  data-availid="" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -697,11 +710,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day: <div  data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">2Day: <div  data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div  data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div  data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div  data-availid="" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -732,11 +745,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day: <div  data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">2Day: <div  data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div  data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div  data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div  data-availid="" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -767,11 +780,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -802,11 +815,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -837,11 +850,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -872,11 +885,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -907,11 +920,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -942,11 +955,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -977,11 +990,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day: <div data-availid="6FH4D2" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">2Day: <div data-availid="6FH2D2" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div data-availid="6FD22" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div data-availid="6FD32" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div data-availid="6FD42" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">4Day: <div data-availid="6FH4D2" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div data-availid="6FH2D2" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="6FD22" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="6FD32" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="6FD42" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -1012,11 +1025,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -1047,11 +1060,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day: <div data-availid="6FH4D1" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">2Day: <div data-availid="6FH2D1" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div data-availid="6FD21" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div data-availid="6FD31" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div data-availid="6FD41" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">4Day: <div data-availid="6FH4D1" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div data-availid="6FH2D1" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="6FD21" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="6FD31" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="6FD41" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -1082,11 +1095,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day: <div data-availid="6FH4D3" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">2Day: <div data-availid="6FH2D3" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div data-availid="6FD23" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div data-availid="6FD33" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div data-availid="6FD43" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">4Day: <div data-availid="6FH4D3" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div data-availid="6FH2D3" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="6FD23" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="6FD33" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="6FD43" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -1117,11 +1130,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -1152,11 +1165,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">4Day: <div data-availid="" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div data-availid="" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -1187,11 +1200,11 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">4Day: <div data-availid="6FH4D4" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">2Day: <div data-availid="6FH2D4" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div data-availid="6FD24" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div data-availid="6FD34" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div data-availid="6FD44" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">4Day: <div data-availid="6FH4D4" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">2Day: <div data-availid="6FH2D4" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="6FD24" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="6FD34" class="availTagIndicator fade4"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="6FD44" class="availTagIndicator fade5"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -1219,10 +1232,10 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 	</div>
 	<div class="ausgpCardAvailWrap">
 		<h2>Ticket Availability</h2>
-		<div class="ausgpCardAvailTag">Thu: <div data-availid="EVJF305" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Fri: <div data-availid="EVJF306" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sat: <div data-availid="EVJF307" class="availTagIndicator"></div></div>
-		<div class="ausgpCardAvailTag">Sun: <div data-availid="EVJF308" class="availTagIndicator"></div></div>
+		<div class="ausgpCardAvailTag">Thu: <div data-availid="EVJF305" class="availTagIndicator fade1"></div></div>
+		<div class="ausgpCardAvailTag">Fri: <div data-availid="EVJF306" class="availTagIndicator fade2"></div></div>
+		<div class="ausgpCardAvailTag">Sat: <div data-availid="EVJF307" class="availTagIndicator fade3"></div></div>
+		<div class="ausgpCardAvailTag">Sun: <div data-availid="EVJF308" class="availTagIndicator fade4"></div></div>
 	</div>
 	</div>
 	<div class="ausgpCardBot">
@@ -2998,7 +3011,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026 | Melbourne Aus
 		loadData();
 		cardsToDisplay();
 		setTimeout(cardAvail, 1500);
-		
+		setTimeout(cardAvail, 3000);
 	});
 
 //conditional check	
