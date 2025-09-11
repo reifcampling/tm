@@ -156,6 +156,8 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	.mainDay:hover{background:rgba(0,115,178,.2);}
 
 	.datelistActive, .datelistActive:hover{width:35px;height:35px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;display:inline-block;padding:12px 0px 0px 0px;border-radius:20px;text-transform: uppercase;user-select: none;background:var(--ao-blue);color:#fff;transition:ease-in-out .2s all;position: relative;}
+	.week0Day.datelistActive{box-shadow:inset 0px 0px 0px 2px var(--ao-dblue)}
+	.mainDay.datelistActive{box-shadow:inset 0px 0px 0px 2px var(--ao-blue)}
 	/*day markers*/
 	#aoPubCalendar .aoFinalKey{width:6px;height:6px;border-radius:10px;bottom:1px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
 	#aoPubCalendar .aoFinal01{border:2px solid var(--ao-bblue);}
@@ -530,7 +532,9 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	#pub-date-list-div .mainDay{color:var(--ao-blue);background:rgba(0,115,178,.1);}
 	#prem-date-list-div .mainDay{color:var(--px-blue);border:2px solid var(--px-blue);padding:9px 0px 0px 0px !important;}
 
-	#pub-date-list-div .datelistActive{width:32px;height:32px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;display:inline-block;padding:11px 0px 0px 0px;border-radius:20px;text-transform: uppercase;user-select: none;background:var(--ao-blue);color:#fff;transition:ease-in-out .2s all;position: relative;}
+	#pub-date-list-div .datelistActive{width:32px;height:32px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;display:inline-block;padding:11px 0px 0px 0px;border-radius:20px;text-transform: uppercase;user-select: none;transition:ease-in-out .2s all;position: relative;}
+	.week0Day.datelistActive{box-shadow:inset 0px 0px 0px 2px var(--ao-dblue)}
+	.mainDay.datelistActive{box-shadow:inset 0px 0px 0px 2px var(--ao-blue)}
 	#prem-date-list-div .datelistActive{width:32px;height:32px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;display:inline-block;padding:11px 0px 0px 0px;border-radius:20px;text-transform: uppercase;user-select: none;background:var(--px-blue);color:var(--px-dblue);transition:ease-in-out .2s all;position: relative;}
 	/*day markers*/
 	#aoPubCalendar .aoFinalKey{width:6px;height:6px;border-radius:10px;bottom:1px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
@@ -924,8 +928,8 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 						<div class="aoKeyEvent"><div class="aoKeyEventBullet final03Key"></div>Women&rsquo;s Final</div>
 						<div class="aoKeyEvent"><div class="aoKeyEventBullet final04Key"></div>Men&rsquo;s Final</div>
 					</div><div class="aoKeyWrap"><h2>Tournament Dates</h2>
-						<div class="aoKeyEvent">Opening Week<br /><div class="aoKeyDate aoIntroDate">06</div> &#45; <div class="aoKeyDate aoIntroDate">11</div></div>
-						<div class="aoKeyEvent">Main Draw (Week 1 &amp; 2)<br /><div class="aoKeyDate aoMainDate">12</div> &#45; <div class="aoKeyDate aoMainDate">26</div></div>
+						<div class="aoKeyEvent">Opening Week<br /><div class="aoKeyDate aoIntroDate">12</div> &#45; <div class="aoKeyDate aoIntroDate">17</div></div>
+						<div class="aoKeyEvent">Main Draw (Week 1 &amp; 2)<br /><div class="aoKeyDate aoMainDate">18</div> &#45; <div class="aoKeyDate aoMainDate">01</div></div>
 					</div></div>
 		</div>
 		</div>
@@ -996,12 +1000,12 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 		</div>
 		<!--error span-->
 		<div id="aoEventErrorsGP">
-			<!--prem exp ad card-->
+			<!--prem exp ad card
 			<div id="aoPxAdCard">				
 				<div id="aoPxAdCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_AOReserve_mRec.png"></div>
 				<div class="aoPxAdCardBtn">ViEW TICKETS + HOSPITALITY</div>
 				<div id="aoPxAdCardLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_AOReserve_white_logo.svg" alt="AO RESERVE PREMIUM EXPERIENCE"></div>
-			</div>
+			</div>-->
 			<!--end card-->
 			<!--error message-->
 			<div class="aoErrorMessage">
@@ -1271,7 +1275,8 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 												+event.session_type+"</div></div><div class='eventHero'><div class='eventOfferTag offerTag"
 												+offerTag+"'>"
 												+event.ticket_offer_desc+"</div><img data-src='https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/heroimages/"
-												+event.image_link+".png' src='https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_placeholder_hero.jpg'></div><div class='eventInfo'><div class='eventName'>"
+												+event.image_link+".png' src='https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_placeholder_hero.jpg' alt='"
+												+event.offer_desc+"'></div><div class='eventInfo'><div class='eventName'>"
 												+event.offer_desc+"</div><div class='eventSubDesc'>"
 												+event.offer_desc_sub+"</div><div class='eventLoc eventPin'>"
 												+event.arena_name+"</div><div class='eventTime eventClock'>"
@@ -2175,10 +2180,18 @@ let updateCardDID = function(){
 		let mainBtnLink = $j(this).children('.eventBtnWrap').children('a').attr("href").replace("&did=ease","").replace("&did=vision","").replace("&did=hearing","").replace("&did=wheel","");
 		let mainBtnDiv = $j(this).children('.eventBtnWrap').children('a');	
 		let lbBtnDiv = $j(this).children('.aoEventLightBox').children('.aoEventLbContent').children('.aoLbBtnWrap').children('a');
-		//add DID to end of link
-		mainBtnDiv.attr("href",mainBtnLink+"&did="+accessibleSelection)
-		lbBtnDiv.attr("href",mainBtnLink+"&did="+accessibleSelection)
-
+		let eventType = $j(this).data('expfilter')
+		//console.log(eventType) //OpeningWeek || GroundPass
+		if((eventType === "RodLaverArena")||(eventType === "JohnCainArena")||(eventType === "MargaretCourtArena")){	
+			//add DID to end of link
+			mainBtnDiv.attr("href",mainBtnLink+"&did="+accessibleSelection)
+			lbBtnDiv.attr("href",mainBtnLink+"&did="+accessibleSelection)
+		}
+			if((eventType === "OpeningWeek")||(eventType === "GroundPass")){	
+			//add DID to end of link
+			mainBtnDiv.attr("href",mainBtnLink+"&did=accessible")
+			lbBtnDiv.attr("href",mainBtnLink+"&did=accessible")
+		}
 	})
 }
 
