@@ -2178,7 +2178,7 @@ let updateCardDID = function(){
 
 	//run through the cards
 	$j('.ao-tickets').each(function (){
-		let mainBtnLink = $j(this).children('.eventBtnWrap').children('a').attr("href").replace("&did=ease","").replace("&did=vision","").replace("&did=hearing","").replace("&did=wheel","");
+		let mainBtnLink = $j(this).children('.eventBtnWrap').children('a').attr("href").replace("&did=ease","").replace("&did=vision","").replace("&did=hearing","").replace("&did=wheel","").replace("&did=accessible","");;
 		let mainBtnDiv = $j(this).children('.eventBtnWrap').children('a');	
 		let lbBtnDiv = $j(this).children('.aoEventLightBox').children('.aoEventLbContent').children('.aoLbBtnWrap').children('a');
 		let eventType = $j(this).data('expfilter')
@@ -2192,6 +2192,7 @@ let updateCardDID = function(){
 			//add DID to end of link
 			mainBtnDiv.attr("href",mainBtnLink+"&did=accessible")
 			lbBtnDiv.attr("href",mainBtnLink+"&did=accessible")
+			//$j(this).addClass('aoHasDid');
 		}
 	})
 }
