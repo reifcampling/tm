@@ -91,12 +91,13 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	.aoClearMenuBtn{font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:#fff;padding:8px;margin:0px 0px;right:16px;top:16px;position:absolute;box-sizing: border-box !important;text-decoration: underline;cursor:pointer;}
 	#aoClearMenuMobPub, #aoClearMenuMobPrem{display:none;}
 	#aoPubSearchBar .aoPubTab{height:60px;width:205px;display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:#fff;padding:24px 0px;margin:0px 16px 0px 0px;border-radius:4px 4px 0px 0px;background:var(--ao-blue);box-sizing: border-box !important;position: relative;vertical-align: top;box-sizing: border-box !important;}
-	#aoPubSearchBar .aoPremTab{height:60px;width:300px;display:none;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:#fff;padding:21px 70px 24px 0px;margin:0px 0px 0px 0px;border-radius:4px 4px 0px 0px;background:rgba(0,0,0,.4);border-top:3px var(--ao-blue) solid;position: relative;vertical-align: top;box-sizing: border-box !important;cursor:pointer;}
+	#aoPubSearchBar .aoPremTab{height:60px;width:auto;display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:#fff;padding:24px 24px 24px 24px;margin:0px 0px 0px 0px;border-radius:4px 4px 0px 0px;background:rgba(0,0,0,.4);border-top:3px var(--ao-blue) solid;position: relative;vertical-align: top;box-sizing: border-box !important;cursor:pointer;}
 	#aoPubSearchBar .aoPremTab span{height:20px;background:var(--ao-green);font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:900;color:#000;padding:5px 10px;border-radius:12px;top:17px;right:24px;position:absolute;box-sizing: border-box !important;}
 	#aoPubSearchBar .aoSearchBarWrap{width:100%;max-width:874px;height:56px;margin:0px;text-align:center;background:#fff;border-radius:0px 4px 4px 4px;position: relative;z-index:200;box-sizing: border-box !important;display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-evenly; align-content: center;align-items: center;}
 	#aoPubSearchBar .aoSearchVertDiv{width:2px;height:32px;margin:12px 0px; background:var(--ao-grey);display:inline-block;border-radius:2px;}
 	#aoPubSearchBar .aoSelectBtn{width:auto;height:56px;padding:16px 40px;margin:0px 0px;background:transparent;display:inline-block;box-sizing:border-box !important;overflow:visible;position: relative;vertical-align: top;transition:.5s ease-in-out;cursor:pointer;}
-	#aoPubSearchBar .aoSelectBtn h3{height:24px;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--ao-blue);padding:6px 0px 6px 26px;margin:0px 0px 0px 0px;display:inline-block;vertical-align: top;user-select: none;box-sizing:border-box !important;}
+	#aoPubSearchBar .aoSelectBtn h3{height:24px;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--ao-blue);padding:6px 0px 6px 26px;margin:0px 0px 0px 0px;display:inline-block;vertical-align: top;user-select: none;box-sizing:border-box !important;text-transform:uppercase;white-space:nowrap;text-overflow:ellipsis;overflow: hidden;width: 100%;}
+	#aoPubSelectAccess{width:250px !important;max-width:250px !important;}
 	.aoSelectArrow{display:none;}
 	.aoRotateArrow{transform:rotate(180deg);}
 	/*Premium Search Bar*/
@@ -149,22 +150,24 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	#pub-date-list-div, #prem-date-list-div{width:100%;height:auto;margin:0px auto 10px;text-align: center;}
 	.datelist{width:35px;height:35px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:15px;line-height:15px;text-align: center;font-weight:700;display:inline-block;padding:12px 0px;border-radius:20px;text-transform: uppercase;user-select: none;transition:ease-in-out .2s all;position:relative;}
 	#pub-date-list-div .week0Day,#aoPubSelectDate .aoIntroDate{color:var(--ao-dblue);background:rgba(30,40,134,.1);cursor:pointer;}
-	#prem-date-list-div .week0Day{color:var(--px-dblue);background:#fff;border:2px solid #fff;cursor:pointer;}
-	.week0Day:hover{background:rgba(30,40,134,.2);}
+	#prem-date-list-div .week0Day, #aoPremSelectDate .aoIntroDate{box-shadow:inset 0px 0px 0px 2px #fff;background:rgba(255,255,255,.2) !important;color:#fff;cursor:pointer;}
 	#pub-date-list-div .mainDay,#aoPubSelectDate .aoMainDate{color:var(--ao-blue);background:rgba(0,115,178,.1);cursor:pointer;}
-	#prem-date-list-div .mainDay{color:var(--px-blue);border:2px solid var(--px-blue);cursor:pointer;}
-	.mainDay:hover{background:rgba(0,115,178,.2);}
+	#prem-date-list-div .mainDay, #aoPremSelectDate .aoMainDate{color:var(--px-blue);box-shadow:inset 0px 0px 0px 2px var(--px-blue);cursor:pointer;}
 
-	.datelistActive, .datelistActive:hover{width:35px;height:35px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;display:inline-block;padding:12px 0px 0px 0px;border-radius:20px;text-transform: uppercase;user-select: none;background:var(--ao-blue);color:#fff;transition:ease-in-out .2s all;position: relative;}
-	.week0Day.datelistActive{box-shadow:inset 0px 0px 0px 2px var(--ao-dblue)}
-	.mainDay.datelistActive{box-shadow:inset 0px 0px 0px 2px var(--ao-blue)}
+	.aoCalNoDay{background:rgba(255,255,255,.5);color:var(--ao-dgrey);width:35px;height:35px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:15px;line-height:15px;text-align: center;font-weight:700;display:inline-block;padding:12px 0px;border-radius:20px;text-transform: uppercase;user-select: none;transition:ease-in-out .2s all;position:relative;}
+	.aoCalNoDay.datelistActive{background:rgba(255,255,255,.5);color:var(--ao-dgrey);}
+	.datelistActive{width:35px;height:35px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:15px;line-height:15px;text-align: center;font-weight:700;display:inline-block;padding:12px 0px 0px 0px;border-radius:20px;text-transform: uppercase;user-select: none;background:var(--ao-blue);color:#fff;transition:ease-in-out .2s all;position: relative;}
+	#aoPubCalendar .week0Day.datelistActive{box-shadow:inset 0px 0px 0px 2px var(--ao-dblue)}
+	#aoPubCalendar .mainDay.datelistActive{box-shadow:inset 0px 0px 0px 2px var(--ao-blue)}
+	#aoPremCalendar .week0Day.datelistActive{box-shadow:inset 0px 0px 0px 2px #fff;background:rgba(255,255,255,1) !important;color:var(--px-dblue);}
+	#aoPremCalendar .mainDay.datelistActive{box-shadow:inset 0px 0px 0px 2px var(--px-blue);background:var(--px-blue) !important;color:var(--px-dblue);}
 	/*day markers*/
-	#aoPubCalendar .aoFinalKey{width:6px;height:6px;border-radius:10px;bottom:1px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
+	#aoPubCalendar .aoFinalKey{width:6px;height:6px;border-radius:10px;bottom:4px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
 	#aoPubCalendar .aoFinal01{border:2px solid var(--ao-bblue);}
 	#aoPubCalendar .aoFinal02{border:2px solid #1E2886;}
 	#aoPubCalendar .aoFinal03{background:var(--ao-bblue);}
 	#aoPubCalendar .aoFinal04{background:#1E2886;}
-	#aoPremCalendar .aoFinalKey{width:6px;height:6px;border-radius:10px;bottom:1px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
+	#aoPremCalendar .aoFinalKey{width:6px;height:6px;border-radius:10px;bottom:4px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
 	#aoPremCalendar .aoFinal01{border:2px solid var(--ao-grey);}
 	#aoPremCalendar .aoFinal02{border:2px solid var(--ao-green);}
 	#aoPremCalendar .aoFinal03{background:var(--ao-grey);}
@@ -206,7 +209,7 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	/*venue menu*/
 	#aoPubVenueMenu{width:334px;height:auto;margin:0px auto;padding:0px 10px 10px 10px;background:#fff;box-sizing: border-box !important ;position: absolute;top:82px;left:0px;text-align:left;border-radius:0px 0px 3px 3px;border:3px solid var(--ao-grey);display:none;z-index:100;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;}
 	/*accessible menu*/
-	#aoPubAccessMenu{width:calc(110% + 70px);height:auto;margin:0px auto;padding:16px;box-sizing: border-box !important;position: absolute;top:60px;left:-6px;text-align:left;border-radius:4px;display:none;z-index:100;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;cursor:default;background:#fff;}
+	#aoPubAccessMenu{width:345px;;max-width:345px;height:auto;margin:0px auto;padding:16px;box-sizing: border-box !important;position: absolute;top:60px;left:-6px;text-align:left;border-radius:4px;display:none;z-index:100;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;cursor:default;background:#fff;}
 	#aoPubAccessMenu .aoFilterRadioBtn h4 br{display:none;}
 	/*sort menu*/
 	#aoPubPriceMenu, #aoPremPriceMenu{width:calc(100% + 16px);height:auto;margin:0px auto;padding:16px;background:#fff;box-sizing: border-box !important;position: absolute;top:60px;left:-6px;text-align:left;border-radius:4px;display:none;z-index:100;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;cursor:default;}
@@ -270,8 +273,8 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 
 	#aoEventStreamGP .eventHero{width:304px;height:110px;padding:0px;margin:0px;display:block;box-sizing: border-box !important;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_placeholder_hero.jpg") center center;background-size:cover;position: relative;flex-grow: 0;}
 	.eventHero img{width:304px;height:110px;display:block;border:0;outline:0;}
-	.eventOfferTag{font-family:"poppins","Averta", sans-serif, fallback;font-size:12px;line-height:12px;font-weight:bold;color:#fff;background:#000;position:absolute;bottom:8px;left:8px;padding:6px 10px 4px;display:none;margin:0px 0px ;box-sizing: border-box !important;border-radius:3px;}
-	.offerTagNone{display:none;}
+	.eventOfferTag{font-family:"poppins","Averta", sans-serif, fallback;font-size:12px;line-height:12px;font-weight:bold;color:#fff;background:#000;position:absolute;bottom:8px;left:8px;padding:6px 10px 4px;display:inline-block;margin:0px 0px ;box-sizing: border-box !important;border-radius:3px;}
+	.offerTag{display:none;}
 	
 	.eventInfo{width:100%;height:auto;padding:16px;margin:0px auto;text-align:left;display:block;box-sizing: border-box !important;flex-grow: 1;}
 	#aoEventStreamGP .eventName{font-family:"poppins","Averta", sans-serif, fallback;font-size:22px;line-height:22px;font-weight:700;color:var(--ao-dblue);padding:0px 0px 8px 0px;margin:0px;}
@@ -289,12 +292,12 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	#aoEventStreamGP .eventTicketsBtn{width:100%;height:48px;margin:0px auto;padding:18px 0px;display:block;background:var(--ao-blue);font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:700;color:#fff;text-align: center;border-radius:4px;box-sizing: border-box !important;user-select: none;cursor:pointer;text-transform:uppercase;}
 	#aoEventStreamGP .eventIncBtn{width:100%;height:48px;margin:8px auto 0px;padding:16px 0px;display:block;background:var(--ao-lgrey);font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:700;color:var(--ao-blue);text-align: center;border:2px solid var(--ao-blue);border-radius:4px;box-sizing: border-box !important;user-select: none;cursor:pointer;text-transform:uppercase;}
 	/*Px ad Card*/
-	#aoPxAdCard{width:304px;height:auto;background:var(--px-dblue);box-shadow:0px 1px 8px rgba(0,0,0,.25);padding:24px;border-radius:2px;box-sizing: border-box !important;user-select: none;display: none;flex-direction:column;flex-wrap:wrap;align-content:flex-start;align-content: space-between; 
- 	justify-content: flex-end;cursor:pointer;position:relative;min-height: 460px;}
-	#aoPxAdCardHero{width:calc(100% - 48px);height:auto;margin:0px auto;display:block;position:absolute;top:24px;right:0px;left:0px;}
-	#aoPxAdCardLogo{width:110px;height:auto;margin:18px auto 0px;}
-	#aoPxAdCardHero img, #aoPxAdCardLogo img{width:100%;height:auto;margin:0px auto;}
-	.aoPxAdCardBtn{width:100%;height:48px;margin:20px auto 0px;padding:18px 0px;display:block;background:var(--px-blue);font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:700;color:var(--px-dblue);text-align: center;border-radius:4px;box-sizing: border-box !important;user-select: none;cursor:pointer;text-transform:uppercase;}
+	#aoPxPromoCard{width:304px;height:auto;background:var(--px-dblue);box-shadow:0px 1px 8px rgba(0,0,0,.25);padding:0px;border-radius:2px;box-sizing: border-box !important;user-select: none;display: none;flex-direction:column;flex-wrap:wrap;align-content:flex-start;align-content: space-between; 
+ 	justify-content: flex-start;cursor:pointer;position:relative;min-height: 400px;}
+	#aoPxPromoCardHero{width:100%;height:auto;margin:0px auto;display:block;}
+	#aoPxPromoCardLogo{width:110px;height:auto;margin:18px auto 0px;}
+	#aoPxPromoCardHero img, #aoPxPromoCardLogo img{width:100%;height:auto;margin:0px auto;}
+	.aoPxPromoCardBtn{width:100%;height:48px;margin:20px auto 0px;padding:18px 0px;display:block;background:var(--px-blue);font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:700;color:var(--px-dblue);text-align: center;border-radius:4px;box-sizing: border-box !important;user-select: none;cursor:pointer;text-transform:uppercase;}
 	/*error message*/
 	#aoEventErrorsGP, #aoEventErrorsPX{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;padding:16px 0px 0px 0px;position: relative; box-sizing:border-box !important;display:flex;flex-wrap: nowrap;justify-content: space-between;flex-direction: row;}
 	.aoErrorMessage{width:100%;height:auto;margin:0px;border-radius:4px;background:var(--ao-blue);display: none;}
@@ -467,13 +470,14 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	#aoPubSearchBar{width:100%;max-width:358px;height:auto;margin:40px auto 16px;padding:0px 16px;text-align:center;position: relative;z-index:200;transition:ease-in-out all .4s;box-sizing: border-box !important;}
 	#aoPubSearchBar .aoTabWrap{width:100%;max-width:358px;height:64px;margin:0px;position: relative;z-index:200;box-sizing: border-box !important;text-align: left;user-select: none;}
 	#aoPubSearchBar .aoTabWrap .aoClearMenuBtn{display:none;}
-	#aoPubSearchBar .aoPubTab{height:64px;max-width:92px;width:auto;display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:#fff;padding:25px 16px;margin:0px 8px 0px 0px;border-radius:4px 4px 0px 0px;background:var(--ao-blue);box-sizing: border-box !important;position: relative;vertical-align: top;box-sizing: border-box !important;}
-	#aoPubSearchBar .aoPremTab{height:64px;width:calc(100% - 100px);display:none;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: left;font-weight:700;color:#fff;padding:15px 60px 18px 16px;margin:0px 0px 0px 0px;border-radius:4px 4px 0px 0px;background:rgba(0,0,0,.4);border-top:3px var(--ao-blue) solid;position: relative;vertical-align: top;box-sizing: border-box !important;cursor:pointer;}
+	#aoPubSearchBar .aoPubTab{height:64px;max-width:92px;width:auto;display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:#fff;padding:25px 14px;margin:0px 8px 0px 0px;border-radius:4px 4px 0px 0px;background:var(--ao-blue);box-sizing: border-box !important;position: relative;vertical-align: top;box-sizing: border-box !important;}
+	#aoPubSearchBar .aoPremTab{height:64px;width:calc(100% - 100px);display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: left;font-weight:700;color:#fff;padding:25px 14px;margin:0px 0px 0px 0px;border-radius:4px 4px 0px 0px;background:rgba(0,0,0,.4);border-top:3px var(--ao-blue) solid;position: relative;vertical-align: top;box-sizing: border-box !important;cursor:pointer;}
 	#aoPubSearchBar .aoPremTab span{height:20px;background:var(--ao-green);font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:900;color:#000;padding:5px 10px;border-radius:12px;top:17px;right:8px;position:absolute;box-sizing: border-box !important;}
 	#aoPubSearchBar .aoSearchBarWrap{width:100%;max-width:358px;height:auto;margin:0px;text-align:left;background:#fff;border-radius:0px 0px 4px 4px;position: relative;z-index:200;box-sizing: border-box !important;display: flex;flex-direction: column;flex-wrap: wrap;justify-content: center;align-content: center; align-items: flex-start}
 	#aoPubSearchBar .aoSearchVertDiv{width:100%;height:2px;margin:0px; background:var(--ao-grey);display:inline-block;border-radius:2px;}
 	#aoPubSearchBar .aoSelectBtn{width:100%;height:auto;padding:16px ;margin:0px 0px;background:transparent;display:inline-block;box-sizing:border-box !important;overflow:visible;position: relative;}
-	#aoPubSearchBar .aoSelectBtn h3{height:24px;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--ao-blue);padding:6px 0px 6px 26px;margin:0px 0px 0px 0px;display:inline-block;vertical-align: top;user-select: none;box-sizing:border-box !important;}
+	#aoPubSearchBar .aoSelectBtn h3{height:24px;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--ao-blue);padding:6px 0px 6px 26px;margin:0px 0px 0px 0px;display:inline-block;vertical-align: top;user-select: none;text-transform:uppercase;white-space:nowrap;text-overflow:ellipsis;box-sizing:border-box !important;overflow: hidden;width: auto;max-width:calc(100% - 30px);}
+	#aoPubSelectAccess{width:326px !important;max-width:326px !important;}
 	.aoMenuActive{}
 	.aoSelectArrow{width:16px;height:16px;display:block;position:absolute;right:20px;top:20px;user-select:none;}
 	.aoSelectArrow img{width:100%;height:auto;}
@@ -482,8 +486,8 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	#aoPremSearchBar{width:100%;max-width:358px;height:auto;margin:0px auto 16px;padding:0px 16px;text-align:center;position: relative;z-index:200;transition:ease-in-out all .4s;box-sizing: border-box !important;}
 	#aoPremSearchBar .aoTabWrap{width:100%;max-width:358px;height:60px;margin:0px;position: relative;z-index:200;box-sizing: border-box !important;text-align: left;user-select: none;}
 	#aoPremSearchBar .aoTabWrap .aoClearMenuBtn{display:none;}
-	#aoPremSearchBar .aoPubTab{height:60px;max-width:92px;display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--px-blue);padding:22px 16px;margin:0px 8px 0px 0px;border-radius:4px 4px 0px 0px;background:#263968;box-sizing: border-box !important;cursor:pointer;position: relative;vertical-align: top;box-sizing: border-box !important;border-top:3px var(--px-blue) solid;}
-	#aoPremSearchBar .aoPremTab{height:60px;width:100%;display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--px-dblue);padding:25px 16px;margin:0px 0px 0px 0px;border-radius:4px 4px 0px 0px;background:var(--px-blue);position: relative;vertical-align: top;box-sizing: border-box !important;}
+	#aoPremSearchBar .aoPubTab{height:60px;max-width:92px;display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--px-blue);padding:22px 14px;margin:0px 8px 0px 0px;border-radius:4px 4px 0px 0px;background:#263968;box-sizing: border-box !important;cursor:pointer;position: relative;vertical-align: top;box-sizing: border-box !important;border-top:3px var(--px-blue) solid;}
+	#aoPremSearchBar .aoPremTab{height:60px;width:calc(100% - 100px);display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--px-dblue);padding:25px 14px;margin:0px 0px 0px 0px;border-radius:4px 4px 0px 0px;background:var(--px-blue);position: relative;vertical-align: top;box-sizing: border-box !important;}
 	#aoPremSearchBar .aoPremTab span{height:20px;background:var(--px-dblue);font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:900;color:var(--px-blue);padding:5px 10px;border-radius:12px;top:20px;right:8px;position:absolute;box-sizing: border-box !important;}
 	#aoPremSearchBar .aoSearchBarWrap{width:100%;max-width:358px;height:auto;margin:0px;text-align:left;background:var(--px-dblue);border-radius:0px 0px 4px 4px;border:2px solid var(--px-blue);box-sizing: border-box !important;display: flex;flex-direction: column;flex-wrap: wrap;justify-content: center;align-content: center; align-items: flex-start}
 	#aoPremSearchBar .aoSearchVertDiv{width:100%;height:2px;margin:0px; background:var(--px-blue);display:inline-block;border-radius:2px;}
@@ -518,32 +522,35 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	#aoPubSessionMenu h1, #aoPubTicketMenu h1, #aoPubVenueMenu h1, #aoPubPriceMenu h1, #aoPubAccessMenu h1{font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: left;font-weight:600;color:var(--ao-mgrey);margin:0px auto 0px;display:inline-block;}
 	#aoPremSessionMenu h1, #aoPremTicketMenu h1, #aoPremVenueMenu h1, #aoPremPriceMenu h1{font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: left;font-weight:600;color:#fff;margin:0px auto 0px;display:inline-block;}
 	#aoSessionMenu h1, #aoTicketMenu h1, #aoVenueMenu h1{padding:18px 10px 16px 10px;}
-	#aoPubCalendar h2,  #aoPubSessionMenu h2, #aoPubTicketMenu h2, #aoPubVenueMenu h2, #aoPubAccessMenu h2{font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: left;font-weight:800;color:var(--ao-dgrey);margin:0px auto 0px;display:inline-block;}
+	#aoPubCalendar h2,  #aoPubSessionMenu h2, #aoPubTicketMenu h2, #aoPubVenueMenu h2, #aoPubAccessMenu h2{font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: left;font-weight:800;color:var(--ao-dgrey);margin:0px auto 0px;display:inline-block;}
 	#aoPremCalendar h2,  #aoPremSessionMenu h2, #aoPPremTicketMenu h2, #aoPremVenueMenu h2 {font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: left;font-weight:800;color:#fff;margin:0px auto 0px;display:inline-block;}
 
-	.aoHoriDiv{width:100%;height:2px;background:var(--ao-grey);}
+	.aoHoriDiv{width:100%;height:1px;background:#e6e6e6;}
 	.aoCalWrap, .aoCalWrapKey{width:100%;height:auto;display:flex;white-space: nowrap;text-align: center;margin:0px auto 0px;flex-wrap: nowrap;justify-content: space-between;flex-direction: row;}
-	#pub-date-list-div .aoCalDay{width:32px;height:auto;font-family:'poppins', 'Averta', sans-serif;font-size:10px;line-height:10px;text-align: center;font-weight:600;color:var(--ao-dgrey);padding:0px;margin:16px 0px 5px 0px;display:inline-block;}	
-	#prem-date-list-div .aoCalDay{width:32px;height:auto;font-family:'poppins', 'Averta', sans-serif;font-size:10px;line-height:10px;text-align: center;font-weight:600;color:#fff;padding:0px;margin:16px 0px 5px 0px;display:inline-block;}
 
+	.aoCalDay{width:35px;height:auto;font-family:'poppins', 'Averta', sans-serif;font-size:10px;line-height:10px;text-align: center;font-weight:600;color:var(--ao-dgrey);padding:0px;margin:16px 0px 5px 0px;display:inline-block;}
+ 	#prem-date-list-div .aoCalDay{color:#fff}
 	#pub-date-list-div, #prem-date-list-div{width:100%;height:auto;margin:0px auto 10px;text-align: center;}
-	.datelist{width:32px;height:32px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;display:inline-block;padding:11px 0px 0px 0px;border-radius:20px;text-transform: uppercase;user-select: none;transition:ease-in-out .2s all;position:relative;}
-	#pub-date-list-div .week0Day{color:var(--ao-dblue);background:rgba(30,40,134,.1);}
-	#prem-date-list-div .week0Day{color:var(--px-dblue);background:#fff;}
-	#pub-date-list-div .mainDay{color:var(--ao-blue);background:rgba(0,115,178,.1);}
-	#prem-date-list-div .mainDay{color:var(--px-blue);border:2px solid var(--px-blue);padding:9px 0px 0px 0px !important;}
+	.datelist{width:35px;height:35px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:15px;line-height:15px;text-align: center;font-weight:700;display:inline-block;padding:12px 0px;border-radius:20px;text-transform: uppercase;user-select: none;transition:ease-in-out .2s all;position:relative;}
+	#pub-date-list-div .week0Day,#aoPubSelectDate .aoIntroDate{color:var(--ao-dblue);background:rgba(30,40,134,.1);cursor:pointer;}
+	#prem-date-list-div .week0Day, #aoPremSelectDate .aoIntroDate{box-shadow:inset 0px 0px 0px 2px #fff;background:rgba(255,255,255,.2) !important;color:#fff;cursor:pointer;}
+	#pub-date-list-div .mainDay,#aoPubSelectDate .aoMainDate{color:var(--ao-blue);background:rgba(0,115,178,.1);cursor:pointer;}
+	#prem-date-list-div .mainDay, #aoPremSelectDate .aoMainDate{color:var(--px-blue);box-shadow:inset 0px 0px 0px 2px var(--px-blue);cursor:pointer;}
 
-	#pub-date-list-div .datelistActive{width:32px;height:32px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;display:inline-block;padding:11px 0px 0px 0px;border-radius:20px;text-transform: uppercase;user-select: none;transition:ease-in-out .2s all;position: relative;}
-	.week0Day.datelistActive{box-shadow:inset 0px 0px 0px 2px var(--ao-dblue)}
-	.mainDay.datelistActive{box-shadow:inset 0px 0px 0px 2px var(--ao-blue)}
-	#prem-date-list-div .datelistActive{width:32px;height:32px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;display:inline-block;padding:11px 0px 0px 0px;border-radius:20px;text-transform: uppercase;user-select: none;background:var(--px-blue);color:var(--px-dblue);transition:ease-in-out .2s all;position: relative;}
+	.aoCalNoDay{background:rgba(255,255,255,.5);color:var(--ao-dgrey);width:35px;height:35px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:15px;line-height:15px;text-align: center;font-weight:700;display:inline-block;padding:12px 0px;border-radius:20px;text-transform: uppercase;user-select: none;transition:ease-in-out .2s all;position:relative;}
+	.aoCalNoDay.datelistActive{background:rgba(255,255,255,.5);color:var(--ao-dgrey);}
+	.datelistActive{width:35px;height:35px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:15px;line-height:15px;text-align: center;font-weight:700;display:inline-block;padding:12px 0px 0px 0px;border-radius:20px;text-transform: uppercase;user-select: none;background:var(--ao-blue);color:#fff;transition:ease-in-out .2s all;position: relative;}
+	#aoPubCalendar .week0Day.datelistActive{box-shadow:inset 0px 0px 0px 2px var(--ao-dblue)}
+	#aoPubCalendar .mainDay.datelistActive{box-shadow:inset 0px 0px 0px 2px var(--ao-blue)}
+	#aoPremCalendar .week0Day.datelistActive{box-shadow:inset 0px 0px 0px 2px #fff;background:rgba(255,255,255,1) !important;color:var(--px-dblue);}
+	#aoPremCalendar .mainDay.datelistActive{box-shadow:inset 0px 0px 0px 2px var(--px-blue);background:var(--px-blue) !important;color:var(--px-dblue);}
 	/*day markers*/
-	#aoPubCalendar .aoFinalKey{width:6px;height:6px;border-radius:10px;bottom:1px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
+	#aoPubCalendar .aoFinalKey{width:6px;height:6px;border-radius:10px;bottom:4px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
 	#aoPubCalendar .aoFinal01{border:2px solid var(--ao-bblue);}
 	#aoPubCalendar .aoFinal02{border:2px solid #1E2886;}
 	#aoPubCalendar .aoFinal03{background:var(--ao-bblue);}
 	#aoPubCalendar .aoFinal04{background:#1E2886;}
-	#aoPremCalendar .aoFinalKey{width:6px;height:6px;border-radius:10px;bottom:1px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
+	#aoPremCalendar .aoFinalKey{width:6px;height:6px;border-radius:10px;bottom:4px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
 	#aoPremCalendar .aoFinal01{border:2px solid var(--ao-grey);}
 	#aoPremCalendar .aoFinal02{border:2px solid var(--ao-green);}
 	#aoPremCalendar .aoFinal03{background:var(--ao-grey);}
@@ -562,10 +569,6 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	#aoPremCalendar .final03Key{background:var(--ao-grey);}
 	#aoPremCalendar .final04Key{background: var(--ao-green);}
 	.aoKeyDate{width:32px;height:32px;border-radius:20px;display:inline-block;margin:4px 0px 0px 0px;padding:11px 0px 0px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;text-transform: uppercase;user-select: none;position:relative;}
-	#aoPubCalendar	.aoIntroDate{color:var(--ao-dblue);background:rgba(30,40,134,.1);} 
-	#aoPubCalendar	.aoMainDate{color:var(--ao-blue);background:rgba(0,115,178,.1);}
-	#aoPremCalendar .aoIntroDate{color:var(--px-dblue);background:#fff;} 
-	#aoPremCalendar .aoMainDate{color:var(--px-blue);background:var(--px-dblue);border:2px solid var(--px-blue);padding:9px 0px 0px 0px !important;}
 
 	/*session menu*/
 	#aoPubSessionMenu{width:100%;height:auto;margin:16px auto 0px;padding:16px 0px 0px 0px;background:#fff;box-sizing: border-box !important;position: relative;text-align:left;display:none;z-index:100;border-top:2px solid var(--ao-grey);}
@@ -645,8 +648,8 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 
 	#aoEventStreamGP .eventHero{width:100%;max-width:304px;height:auto;max-height:110px;padding:0px;margin:0px;display:block;box-sizing: border-box !important;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_placeholder_hero.jpg") center center;background-size:cover;position: relative;flex-grow: 0;}
 	.eventHero img{width:100%;max-width:304px;height:auto;display:block;border:0;outline:0;}
-	.eventOfferTag{font-family:"poppins","Averta", sans-serif, fallback;font-size:12px;line-height:12px;font-weight:bold;color:#fff;background:#000;position:absolute;bottom:8px;left:8px;padding:6px 10px 4px;display:none;margin:0px 0px ;box-sizing: border-box !important;border-radius:3px;}
-	.offerTagNone{display:none;}
+	.eventOfferTag{font-family:"poppins","Averta", sans-serif, fallback;font-size:12px;line-height:12px;font-weight:bold;color:#fff;background:#000;position:absolute;bottom:8px;left:8px;padding:6px 10px 4px;display:inline-block;margin:0px 0px ;box-sizing: border-box !important;border-radius:3px;}
+	.offerTag{display:none;}
 
 	.eventInfo{width:100%;height:auto;padding:16px;margin:0px auto;text-align:left;display:block;box-sizing: border-box !important;flex-grow: 1;}
 	#aoEventStreamGP .eventName{font-family:"poppins","Averta", sans-serif, fallback;font-size:22px;line-height:22px;font-weight:700;color:var(--ao-dblue);padding:0px 0px 8px 0px;margin:0px;}
@@ -664,12 +667,12 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	#aoEventStreamGP .eventTicketsBtn{width:100%;height:48px;margin:0px auto;padding:18px 0px;display:block;background:var(--ao-blue);font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:700;color:#fff;text-align: center;border-radius:4px;box-sizing: border-box !important;user-select: none;cursor:pointer;text-transform:uppercase;}
 	#aoEventStreamGP .eventIncBtn{width:100%;height:48px;margin:8px auto 0px;padding:16px 0px;display:block;background:var(--ao-lgrey);font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:700;color:var(--ao-blue);text-align: center;border:2px solid var(--ao-blue);border-radius:4px;box-sizing: border-box !important;user-select: none;cursor:pointer;text-transform:uppercase;}
 	/*Px ad Card*/
-	#aoPxAdCard{width:100%;max-width:304px;height:auto;background:var(--px-dblue);box-shadow:0px 1px 8px rgba(0,0,0,.25);padding:24px;border-radius:2px;box-sizing: border-box !important;user-select: none;display: none;flex-direction:column;flex-wrap:wrap;align-content:flex-start;align-content: space-between; 
+	#aoPxPromoCard{width:100%;max-width:304px;height:auto;background:var(--px-dblue);box-shadow:0px 1px 8px rgba(0,0,0,.25);padding:0px;border-radius:2px;box-sizing: border-box !important;user-select: none;display: none;flex-direction:column;flex-wrap:wrap;align-content:flex-start;align-content: space-between; 
  	justify-content: flex-end;cursor:pointer;position:relative;min-height: 460px;}
-	#aoPxAdCardHero{width:calc(100% - 48px);height:auto;margin:0px auto;display:block;position:absolute;top:24px;right:0px;left:0px;}
-	#aoPxAdCardLogo{width:110px;height:auto;margin:18px auto 0px;}
-	#aoPxAdCardHero img, #aoPxAdCardLogo img{width:100%;height:auto;margin:0px auto;}
-	.aoPxAdCardBtn{width:100%;height:auto;margin:20px auto 0px;padding:18px 8px 14px 8px;display:block;background:var(--px-blue);font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:700;color:var(--px-dblue);text-align: center;border-radius:4px;box-sizing: border-box !important;user-select: none;cursor:pointer;text-transform:uppercase;}
+	#aoPxPromoCardHero{width:calc(100% - 48px);height:auto;margin:0px auto;display:block;position:absolute;top:24px;right:0px;left:0px;}
+	#aoPxPromoCardLogo{width:110px;height:auto;margin:18px auto 0px;}
+	#aoPxPromoCardHero img, #aoPxPromoCardLogo img{width:100%;height:auto;margin:0px auto;}
+	.aoPxPromoCardBtn{width:100%;height:auto;margin:20px auto 0px;padding:18px 8px 14px 8px;display:block;background:var(--px-blue);font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:700;color:var(--px-dblue);text-align: center;border-radius:4px;box-sizing: border-box !important;user-select: none;cursor:pointer;text-transform:uppercase;}
 	/*error message*/
 	#aoEventErrorsGP, #aoEventErrorsPX{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;padding:16px 0px 0px 0px;position: relative; box-sizing:border-box !important;display:flex;flex-wrap: nowrap;justify-content: space-between;flex-direction: row;}
 	.aoErrorMessage{width:100%;height:auto;margin:0px;border-radius:4px;background:var(--ao-blue);display: none;}
@@ -797,30 +800,34 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 /*headers*/
 /*1440 - 4k*/	
 @media only screen and (min-width: 1440px){	/*1140 to 3840*/
-    #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:/*url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_public_header_1920x564px.png') top center no-repeat,*/ var(--ao-dblue);background-size:cover;box-sizing: border-box !important}			
+    #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_presale_bg_1920x564px.png') top center no-repeat, var(--ao-dblue);background-size:cover;box-sizing: border-box !important}			
 	}
 /*1000 - 1440*/		
 @media only screen and (min-width: 1000px) and (max-width: 1439.99px){	/*1000 to 1440*/
- 	#aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:/*url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_public_header_1400x564px.png') top center no-repeat,*/ var(--ao-dblue);background-size:1440px 564px;box-sizing: border-box !important}	
+ 	#aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_presale_bg_1400x564px.png') top center no-repeat, var(--ao-dblue);background-size:cover;box-sizing: border-box !important}	
 	}
 /*tablet*/		
 @media only screen and (min-width: 769px) and (max-width: 1000px){	/*768 x 1024*/
-    #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:/*url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_public_header_768x700px.png') top center no-repeat, */var(--ao-dblue);background-size:100% auto;box-sizing: border-box !important}	
+    #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_presale_bg_768x700px.png') top center no-repeat, var(--ao-dblue);background-size:100% auto;box-sizing: border-box !important}	
 	}
  @media only screen and (min-width: 449.99px) and (max-width: 768.99px){	/*768 x 1024*/
-    #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:/*url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_public_header_768x700px.png') top center no-repeat,*/ var(--ao-dblue);background-size:768px 700px;box-sizing: border-box !important}	
+    #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_presale_bg_768x700px.png') top center no-repeat, var(--ao-dblue);background-size:768px 700px;box-sizing: border-box !important}	
 	}
 /*mobile*/		
 @media only screen and (min-width:0px ) and (max-width: 450px){	/*400 x 650*/
-    #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:/*url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_public_header_400x660px.png') top center no-repeat, */var(--ao-dblue);background-size:450px auto;box-sizing: border-box !important}	
+    #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_presale_bg_400x660px.png') top center no-repeat, var(--ao-dblue);background-size:450px auto;box-sizing: border-box !important}	
 	}
 /*mobile cal*/
 @media only screen and (min-width:250px ) and (max-width: 375px){	
 
 	.datelist{width:28px;height:28px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;text-align: center;font-weight:700;display:inline-block;padding:10px 0px 0px 0px;border-radius:20px;text-transform: uppercase;user-select: none;transition:ease-in-out .2s all;position:relative;}
-	.datelistActive{width:28px;height:28px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;text-align: center;font-weight:700;display:inline-block;padding:10px 0px 0px 0px;border-radius:20px;text-transform: uppercase;user-select: none;background:var(--ao-blue);color:#fff;transition:ease-in-out .2s all;position: relative;}
+	.datelistActive{width:28px;height:28px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;text-align: center;font-weight:700;display:inline-block;padding:10px 0px 0px 0px;border-radius:20px;text-transform: uppercase;user-select: none;transition:ease-in-out .2s all;position: relative;}
 	.aoKeyDate{width:28px;height:28px;border-radius:20px;display:inline-block;margin:4px 0px 0px 0px;padding:10px 0px 0px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;text-align: center;font-weight:700;text-transform: uppercase;user-select: none;position:relative;}
 	#aoPubCalendar h2,  #aoPubSessionMenu h2, #aoPubTicketMenu h2, #aoPubVenueMenu h2, 	#aoPremCalendar h2,  #aoPremSessionMenu h2, #aoPPremTicketMenu h2, #aoPremVenueMenu h2, #aoPubAccessMenu h2 {font-family:'poppins', 'Averta', sans-serif;font-size:13px;text-align: left;font-weight:800;margin:0px auto 0px;display:inline-block;}
+	 #aoPremSearchBar .aoPremTab, #aoPubSearchBar .aoPremTab{text-align: left;padding:16px 14px;}
+	 .aoCalNoDay{background:rgba(255,255,255,.5);color:var(--ao-dgrey);width:28px;height:28px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;display:inline-block;padding:10px 0px;border-radius:20px;text-transform: uppercase;user-select: none;transition:ease-in-out .2s all;position:relative;}
+	#aoPubCalendar .aoFinalKey{width:6px;height:6px;border-radius:10px;bottom:-6px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
+	#aoPremCalendar .aoFinalKey{width:6px;height:6px;border-radius:10px;bottom:-6px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
 }
 /*slider key frames
 @media only screen and (min-width:0px ) and (max-width: 515px){
@@ -860,25 +867,11 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	<div id="aoPubHeader">
 		<div id="aoPubLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_hitsDiff_Logo_desktop.png" alt="AO Hits Different"></div>
 
-		<div id="aoAccessibleWrap"> 
-			<h1>Welcome to AO&rsquo;s Accessibility Pre&#45;sale 15&#45;23 September</h1>
-			<h2>Find the right seats for you using the &lsquo;Seat Category&rsquo; filter below.</h2>
-			<div id="aoAccessibleList">
-				<ol>
-				<li><strong>Wheelchair & Mobility Equipment bays</strong>(for wheelchair users and people requiring physical equipment support)</li>
-				<li><strong>Ease of access seating </strong>(for people with low mobility, intellectual disability, neurodiversity or injury)</li>
-				<li><strong>Enhanced vision seating</strong> (for patrons with low vision)</li>
-				<li><strong>Deaf or Hard of Hearing seating</strong> (these seats will be positioned anywhere within the arena depending on location of hearing loops and live captions on screens)</li>
-
-				</ol>
-			</div>
-			<h2><a href="https://help.ticketmaster.com.au/" name="For help contact Ticketmaster">For help contact Ticketmaster</a></h2>
-		</div>
 		<!--intersect <div id="aoFeatIntersect"></div>-->
-		<!--featured events--
+		<!--featured events-->
 		<div id="aoFeatureScroller">
 			<div id="aoFeatureEvents">
-				<!--cards pop in here--
+				<!--cards pop in here-->
 				<div class="aoFeatureEvent aoFeaturePh" data-name="" data-start="" data-end="" data-order="100"></div>
 				<div class="aoFeatureEvent aoFeaturePh" data-name="" data-start="" data-end="" data-order="100"></div>
 				<div class="aoFeatureEvent aoFeaturePh" data-name="" data-start="" data-end="" data-order="100"></div>
@@ -886,25 +879,12 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 			</div>
 		</div>
 			<div id="aoFeatEventPips">
-				<!--pips pop in here
-			</div>-->
+				<!--pips pop in here-->
+			</div>
 	<!---Search Bar--->
 	<div id="aoPubSearchBar">
 		<div class="aoTabWrap"><div class="aoPubTab">TICKETS</div><div class="aoPremTab">TICKETS + HOSPITALITY <!--<span>NEW</span>---></div><div id="aoClearMenuPub" class="aoClearMenuBtn">CLEAR ALL</div></div>
 		<div class="aoSearchBarWrap">
-		<!--accessible selection--><div id="aoPubSelectAccess" class="aoSelectBtn"><div class="aoSelectArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_menuArrow_pub_logo.svg"></div>
-			<h3>SEAT CATEGORY*</h3>		
-		<!--accessible menu--->
-		<div id="aoPubAccessMenu">
-			<h1>Select accessible seat category</h1><!--<div class="aoDoneBtn">Done</div>-->
-			
-			<div data-filterbtnlab="wheel" class="aoFilterRadioBtn aoFilterBtnOff accessibleFilterBtn" id="" ><div class="aoRadioBtn"></div><h4>Wheelchair & Mobility <br />Equipment bays</h4></div>
-			<div data-filterbtnlab="ease" class="aoFilterRadioBtn aoFilterBtnOff accessibleFilterBtn" id="" ><div class="aoRadioBtn"></div><h4>Ease of access seating</h4></div>
-			<div data-filterbtnlab="vision" class="aoFilterRadioBtn aoFilterBtnOff accessibleFilterBtn" id="" ><div class="aoRadioBtn"></div><h4>Enhanced vision seating</h4></div>
-			<div data-filterbtnlab="hearing" class="aoFilterRadioBtn aoFilterBtnOff accessibleFilterBtn" id="" ><div class="aoRadioBtn"></div><h4>Deaf or Hard of hearing seating</h4></div>
-		</div>	
-		</div>
-		<div class="aoSearchVertDiv"></div>
 		<!--calendar selection--->
 		<div id="aoPubSelectDate" class="aoSelectBtn"><div class="aoSelectArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_menuArrow_pub_logo.svg"></div>
 			<h3>DATE/S</h3>
@@ -917,7 +897,7 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 			</div><!--cal date list---><div id="pub-date-list-div">
 				<div class="aoCalWrapKey"><div class="aoCalDay">M</div><div class="aoCalDay">T</div><div class="aoCalDay">W</div><div class="aoCalDay">T</div><div class="aoCalDay">F</div><div class="aoCalDay">S</div><div class="aoCalDay">S</div></div>
 				<!--week 1-->
-				<div class="aoCalWrap aoCalWeek1"><div id="2026-01-12" class="datelist week0Day d2026-01-12">12</div><div id="2026-01-13" class="datelist week0Day d2026-01-13">13</div><div id="2026-01-14" class="datelist week0Day d2026-01-14">14</div><div id="2026-01-15" class="datelist week0Day d2026-01-15">15</div><div id="2026-01-16" class="datelist week0Day d2026-01-16">16</div><div id="2026-01-17" class=" datelist week0Day d2026-01-17">17</div><div id="2026-01-18" class="datelist mainDay d2026-01-18">18</div></div>
+				<div class="aoCalWrap aoCalWeek1"><div id="2026-01-12" class="datelist week0Day d2026-01-12">12</div><div id="2026-01-13" class="datelist week0Day d2026-01-13">13</div><div id="2026-01-14" class="datelist week0Day d2026-01-14">14</div><div id="2026-01-15" class="datelist week0Day d2026-01-15">15</div><div id="2026-01-16" class=" aoCalNoDay d2026-01-16">16</div><div id="2026-01-17" class="  aoCalNoDay d2026-01-17">17</div><div id="2026-01-18" class="datelist mainDay d2026-01-18">18</div></div>
 				<!--week 2-->
 				<div class="aoCalWrap aoCalWeek2"><div id="2026-01-19" class="datelist mainDay d2026-01-19">19</div><div id="2026-01-20" class="datelist mainDay d2026-01-20">20</div><div id="2026-01-21" class="datelist mainDay d2026-01-21">21</div><div id="2026-01-22" class="datelist mainDay d2026-01-22">22</div><div id="2026-01-23" class="datelist mainDay d2026-01-23">23</div><div id="2026-01-24" class="datelist mainDay d2026-01-24">24</div><div id="2026-01-25" class="datelist mainDay d2026-01-25">25</div></div>
 				<!--week 3-->
@@ -929,7 +909,7 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 						<div class="aoKeyEvent"><div class="aoKeyEventBullet final03Key"></div>Women&rsquo;s Final</div>
 						<div class="aoKeyEvent"><div class="aoKeyEventBullet final04Key"></div>Men&rsquo;s Final</div>
 					</div><div class="aoKeyWrap"><h2>Tournament Dates</h2>
-						<div class="aoKeyEvent">Opening Week<br /><div class="aoKeyDate aoIntroDate">12</div> &#45; <div class="aoKeyDate aoIntroDate">17</div></div>
+						<div class="aoKeyEvent">Opening Week<br /><div class="aoKeyDate aoIntroDate">12</div> &#45; <div class="aoKeyDate aoIntroDate">15</div></div>
 						<div class="aoKeyEvent">Main Draw (Week 1 &amp; 2)<br /><div class="aoKeyDate aoMainDate">18</div> &#45; <div class="aoKeyDate aoMainDate">01</div></div>
 					</div></div>
 		</div>
@@ -960,18 +940,16 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 			<h1>Select experience type</h1><!---<div id="clearTicketFilters" class="aoClearBtn">Clear</div><div class="aoDoneBtn">Done</div>--->
 			<div data-filterbtnlab="Any" class="aoFilterListBtn aoFilterBtnOn ticketFilterBtn" id="ticketPubAnyFilterBtn"><div class="aoCheckBoxActive"></div><h4>Show All</h4></div>	
 		</div>	
-		</div>
-
-			<!--<div class="aoSearchVertDiv"></div>
-			price sort--<div id="aoPubSelectPrice" class="aoSelectBtn"><div class="aoSelectArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_menuArrow_pub_logo.svg"></div>
+		</div><div class="aoSearchVertDiv"></div>
+			<!--price sort--><div id="aoPubSelectPrice" class="aoSelectBtn"><div class="aoSelectArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_menuArrow_pub_logo.svg"></div>
 				<h3>PRICE</h3>
-				<!--sort by price---
+				<!--sort by price--->
 				<div id="aoPubPriceMenu">
-				<h1>Sort by</h1><!---<div id="clearTicketFilters" class="aoClearBtn">Clear</div><div class="aoDoneBtn">Done</div>---
+				<h1>Sort by</h1><!---<div id="clearTicketFilters" class="aoClearBtn">Clear</div><div class="aoDoneBtn">Done</div>--->
 					<div data-filterbtnlab="Low to High" class="aoFilterBtnOff sortRadioBtn" id="pubPriceLowSortBtn"><div class="aoRadioBtn"></div><h4>Low to High</h4></div>	
 					<div data-filterbtnlab="High to Low" class="aoFilterBtnOff sortRadioBtn" id="pubPriceHighSortBtn"><div class="aoRadioBtn"></div><h4>High to Low</h4></div>
 				</div>	
-			</div>--->
+			</div>
 
 
 	</div><div id="aoClearMenuMobPub" class="aoClearMenuBtn">CLEAR ALL</div></div><!----end search bar ---->
@@ -979,13 +957,13 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	</div><!---end header--->
 	<!---GP sessions---->
 	<div id="aoPubSessions">
-		<!--accessible cover-->
+		<!--accessible cover
 		<div class="aoAcessibleLb"> 
 			<div class="aoAcessibleLbContent">
 					<p>To view events please make a selection on the  &lsquo;Seat Category&rsquo; filter near the top of this page.</p>
 					<div class="aoAccessibleBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_accessible_ico.svg"><h3>GO TO SEAT CATEGORY</h3></div>
 			</div>		
-		</div>
+		</div>-->
 		<!--counter and date sort-->
 		<div id="aoPubCounterWrap">
 			<div id="aoPubCounter"><div id="aoPubCount"></div><p>&nbsp; results</p></div>
@@ -994,19 +972,19 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 			<div id="aoPubDateMenu">			
 					<div data-filterbtnlab="Earliest Date" class="aoFilterBtnOn sortRadioBtn" id="pubDateEarliestSortBtn"><div class="aoRadioBtnActive"></div><h4>Earliest Date</h4></div>	
 					<div data-filterbtnlab="Latest Date" class="aoFilterBtnOff sortRadioBtn" id="pubDateLatestSortBtn"><div class="aoRadioBtn"></div><h4>Furthest Date</h4></div>
-					<div data-filterbtnlab="Low to High" class="aoFilterBtnOff sortRadioBtn" id="pubPriceLowSortBtn"><div class="aoRadioBtn"></div><h4>Low to High</h4></div>	
-					<div data-filterbtnlab="High to Low" class="aoFilterBtnOff sortRadioBtn" id="pubPriceHighSortBtn"><div class="aoRadioBtn"></div><h4>High to Low</h4></div>
+					<!--<div data-filterbtnlab="Low to High" class="aoFilterBtnOff sortRadioBtn" id="pubPriceLowSortBtn"><div class="aoRadioBtn"></div><h4>Low to High</h4></div>	-->
+					<!--<div data-filterbtnlab="High to Low" class="aoFilterBtnOff sortRadioBtn" id="pubPriceHighSortBtn"><div class="aoRadioBtn"></div><h4>High to Low</h4></div>-->
 			</div>	
 		</div>
 		</div>
 		<!--error span-->
 		<div id="aoEventErrorsGP">
-			<!--prem exp ad card
-			<div id="aoPxAdCard">				
-				<div id="aoPxAdCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_AOReserve_mRec.png"></div>
-				<div class="aoPxAdCardBtn">ViEW TICKETS + HOSPITALITY</div>
-				<div id="aoPxAdCardLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_AOReserve_white_logo.svg" alt="AO RESERVE PREMIUM EXPERIENCE"></div>
-			</div>-->
+			<!--prem exp ad card-->
+			<div id="aoPxPromoCard">				
+				<div id="aoPxPromoCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_aoRes_promoTile.jpg"></div>
+				<!--<div class="aoPxPromoCardBtn">ViEW TICKETS + HOSPITALITY</div>-->
+				<!--<div id="aoPxPromoCardLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_AOReserve_white_logo.svg" alt="AO RESERVE PREMIUM EXPERIENCE"></div>-->
+			</div>
 			<!--end card-->
 			<!--error message-->
 			<div class="aoErrorMessage">
@@ -1046,7 +1024,7 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 				</div><!--cal date list---><div id="prem-date-list-div">
 					<div class="aoCalWrap"><div class="aoCalDay">M</div><div class="aoCalDay">T</div><div class="aoCalDay">W</div><div class="aoCalDay">T</div><div class="aoCalDay">F</div><div class="aoCalDay">S</div><div class="aoCalDay">S</div></div>
 				<!--week 1-->
-				<div class="aoCalWrap aoCalWeek1"><div id="2026-01-12" class="datelist week0Day d2026-01-12">12</div><div id="2026-01-13" class="datelist week0Day d2026-01-13">13</div><div id="2026-01-14" class="datelist week0Day d2026-01-14">14</div><div id="2026-01-15" class="datelist week0Day d2026-01-15">15</div><div id="2026-01-16" class="datelist week0Day d2026-01-16">16</div><div id="2026-01-17" class=" datelist week0Day d2026-01-17">17</div><div id="2026-01-18" class="datelist mainDay d2026-01-18">18</div></div>
+				<div class="aoCalWrap aoCalWeek1"><div id="2026-01-12" class="datelist week0Day d2026-01-12">12</div><div id="2026-01-13" class="datelist week0Day d2026-01-13">13</div><div id="2026-01-14" class="datelist week0Day d2026-01-14">14</div><div id="2026-01-15" class="datelist week0Day d2026-01-15">15</div><div id="2026-01-16" class=" aoCalNoDay d2026-01-16">16</div><div id="2026-01-17" class="  aoCalNoDay d2026-01-17">17</div><div id="2026-01-18" class="datelist mainDay d2026-01-18">18</div></div>
 				<!--week 2-->
 				<div class="aoCalWrap aoCalWeek2"><div id="2026-01-19" class="datelist mainDay d2026-01-19">19</div><div id="2026-01-20" class="datelist mainDay d2026-01-20">20</div><div id="2026-01-21" class="datelist mainDay d2026-01-21">21</div><div id="2026-01-22" class="datelist mainDay d2026-01-22">22</div><div id="2026-01-23" class="datelist mainDay d2026-01-23">23</div><div id="2026-01-24" class="datelist mainDay d2026-01-24">24</div><div id="2026-01-25" class="datelist mainDay d2026-01-25">25</div></div>
 				<!--week 3-->
@@ -1058,7 +1036,7 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 							<div class="aoKeyEvent"><div class="aoKeyEventBullet final03Key"></div>Women&rsquo;s Final</div>
 							<div class="aoKeyEvent"><div class="aoKeyEventBullet final04Key"></div>Men&rsquo;s Final</div>
 						</div><div class="aoKeyWrap"><h2>Tournament</h2>
-							<div class="aoKeyEvent">Opening Week<br /><div class="aoKeyDate aoIntroDate">12</div> &#45; <div class="aoKeyDate aoIntroDate">17</div></div>
+							<div class="aoKeyEvent">Opening Week<br /><div class="aoKeyDate aoIntroDate">12</div> &#45; <div class="aoKeyDate aoIntroDate">15</div></div>
 							<div class="aoKeyEvent">Australian Open 2026<br /><div class="aoKeyDate aoMainDate">18</div> &#45; <div class="aoKeyDate aoMainDate">01</div></div>
 						</div></div>
 			</div>
@@ -1097,7 +1075,7 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 					</div>	
 			</div>		
 		</div><div id="aoClearMenuMobPrem" class="aoClearMenuBtn">CLEAR ALL</div></div><!----end search bar ---->
-
+		<!--video header--->
 		<div id="aoPremVideo">
 			<video playsinline autoplay muted loop poster="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/video/ao26_aoreserver_header_poster_3840x564.jpg" id="">
 
@@ -1162,7 +1140,7 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 	//notes: date filtering and counters next, 
 	$j = jQuery.noConflict();
 	//the server name could change so I put it here so it was easy to find
-	let availLocation = "https://d1qeon7qw4jcrw.cloudfront.net/ao_sandbox";
+	let availLocation = "https://d1qeon7qw4jcrw.cloudfront.net/ao";
 	//TM only link >>> https://dixntprqcqdcg.cloudfront.net/ao_tm
 	//sandbox link >>> https://d1qeon7qw4jcrw.cloudfront.net/ao_sandbox
 	//prod link    >>> https://d1qeon7qw4jcrw.cloudfront.net/ao
@@ -1451,11 +1429,11 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 	emptyFullListsOnLoad();
 //	defaultSortPublic();
 	defaultSortPremium();
-//	pubCardsToDisplay();
+	pubCardsToDisplay();
 	premCardsToDisplay();
-	getUrlVars()
-	parseUrl()
-//	loadFeatureTiles();
+	setTimeout(getUrlVars,500)
+	setTimeout(parseUrl,1000)
+ 	setTimeout(loadFeatureTiles, 1000);
 	imageLoader()
 
 				},
@@ -1680,6 +1658,7 @@ function pubCardsToDisplay(){
 		){			
 				$j(this).fadeIn(500);		
 				pubEventCountPlus ++;
+				console.log(pubEventCountPlus)
 				document.getElementById(eventCard).setAttribute("data-childnum",pubEventCountPlus)
 		} else {
 				$j(this).fadeOut(250);
@@ -1722,7 +1701,7 @@ function premCardsToDisplay(){
 //counters
 let pubEventCounter = function(){
 	pubEventCountTotal = pubEventCountPlus - pubEventCountMinus;
-	let aoPXCard = document.getElementById('aoPxAdCard');
+	let aoPXCard = document.getElementById('aoPxPromoCard');
 
 	document.getElementById('aoPubCount').innerHTML = pubEventCountPlus.toString();
 	if((pubEventCountPlus == 0)){
@@ -1732,13 +1711,13 @@ let pubEventCounter = function(){
 		$j("#aoEventErrorsGP .aoErrorMessage").fadeOut(0)	
 	} 
 	if(pubEventCountPlus <=3 || pubEventCountTotal !== pubEventCountPlus){
-		$j("#aoPxAdCard").fadeOut(0);	
+		$j("#aoPxPromoCard").fadeOut(0);	
 	}
 	if(pubEventCountPlus >=3 ){
 		//$j('.eventCard').removeClass('eventCardThirdChild')
 		//$j('#aoEventStreamGP .eventCard:nth-child(3)').addClass('eventCardThirdChild')
 		$j(aoPXCard).insertAfter('.ao-tickets[data-childnum=3]')
-		$j("#aoPxAdCard").fadeIn(0).css("display","flex");	
+		$j("#aoPxPromoCard").fadeIn(0).css("display","flex");	
 	}
 
 }
@@ -2023,7 +2002,7 @@ $j(document).on('click', '#aoClearMenuPrem, #aoClearMenuMobPrem ', function () {
 		$j(document).on('click', '#aoPubSearchBar .aoPremTab', function () {
 			switchToPrem()
 		});
-		$j(document).on('click', '#aoPxAdCard', function () {
+		$j(document).on('click', '#aoPxPromoCard', function () {
 			switchToPremAndScroll   ()
 		});
 		let switchToPrem = function(){
@@ -2157,6 +2136,8 @@ $j(document).on('click', 'body', function (e) {
 //accessible selection 
 $j(document).on('click', "#aoPubAccessMenu .aoFilterRadioBtn", function () {
 			accessibleSelection = $j(this).data('filterbtnlab');
+			let accessBtnLabel = $j(this).data('btnlabel');
+
 			$j(".aoAcessibleLb").fadeOut(250)
 			//toggle self
 			if ($j(this).hasClass("aoFilterBtnOff")) {
@@ -2165,6 +2146,9 @@ $j(document).on('click', "#aoPubAccessMenu .aoFilterRadioBtn", function () {
 				//toggle siblins
 				$j(this).siblings('.aoFilterRadioBtn').removeClass("aoFilterBtnOn").addClass("aoFilterBtnOff");
 				$j(this).siblings('.aoFilterRadioBtn').children('.aoRadioBtnActive').removeClass("aoRadioBtnActive").addClass("aoRadioBtn");
+				//change text on button label
+				document.getElementById('aoPubSelectAccessLabel').innerHTML = accessBtnLabel//.toString();
+				//console.log(accessBtnLabel)
 			} else if ($j(this).hasClass("aoFilterBtnOn")) {
 				$j(this).removeClass("aoFilterBtnOn").addClass("aoFilterBtnOff");
 				$j(this).children(".aoRadioBtnActive").removeClass("aoRadioBtnActive").addClass("aoRadioBtn");
@@ -2783,7 +2767,7 @@ let loadFeatureTiles = function(){
 	cardCounter = 0;
 	$j.ajax({
                type: 'GET',
-               url: 'https://www.ticketmaster.com.au/ausopen/ao25_featureTiles.json',//https://www.ticketmaster.com.au/ausopen/ao25_featureTiles.json  // https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_featureTiles_01-11-2024.json
+               url: 'https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_featureTiles.json',//https://www.ticketmaster.com.au/ausopen/ao26_featureTiles.json  // https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_featureTiles.json
                dataType: 'html',
 				success: function(data) {
 					let tilesData = JSON.parse(data);
@@ -2793,6 +2777,7 @@ let loadFeatureTiles = function(){
 						let startDate = value.date_start.replace("-","/").replace("-","/").split("/").reverse().join("/").replace("/","").replace("/",".");
 						let endDate = value.date_end.replace("-","/").replace("-","/").split("/").reverse().join("/").replace("/","").replace("/",".");
 
+						
 						//build card
 						let newFeatTile = $j("<div class='aoFeatureEvent' id='featCard0"
 						+value.order+"' data-name='"
@@ -2814,7 +2799,8 @@ let loadFeatureTiles = function(){
 								$j("#aoFeatureEvents").append(newFeatTile);
 								$j("#aoFeatEventPips").append(newPip);
 						} else if (currentDateNum > endDate){ 
-								
+								//a$j("#aoFeatureEvents").append(newFeatTile).css("display","none");
+								//$j("#aoFeatEventPips").append(newPip).css("display","none");
 								
 						}
 						})	
