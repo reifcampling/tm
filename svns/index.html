@@ -1,0 +1,385 @@
+[% # text to be displayed within <title></title>
+page_title = "Rugby SVNS Perth | 7 & 8 Feb 2026, HBF Park | Buy Tickets Official Ticketmaster site." %]
+[% static_has_responsive_header_footer = 1; enable_leader_board = 0; %]
+[% PROCESS "layout/frame/top.tt" %]
+
+	
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link href="https://s1.ticketm.net/en-au/img/static/rugbysvns/MabryMono.css" type="text/css" rel="stylesheet" />
+<link href="https://s1.ticketm.net/tm/en-au/img/static/fonts/averta.css" type="text/css" rel="stylesheet" />
+
+<style type="text/css">
+	:root {
+		--svns-blk:#19000a;
+		--svns-blue:#4dd9ff;
+		--svns-yel:#f5f505;
+	  }
+@media only screen and (min-width: 0px) and (max-width: 1000px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE !!!! IMPORTANT*/ 
+}
+@media only screen and (min-width: 1000px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE !!!! IMPORTANT*/ 
+	}
+#contentWrap, #mainContent {
+    background-color: var(--svns-blk);overflow: visible;padding:0 !important;}
+	body{background: var(--svns-blk);}
+
+
+/*desktop */	
+@media only screen and (min-width: 1000px){
+	#svnsdContent{background-color:  var(--svns-blk);width:100%;height:auto;overflow:hidden;padding:1px 0px;margin:0px auto;position: relative;display:block;}
+	
+	#svnsMenuWrap{width:100%;height:auto;margin:0px auto 0px;display:block;position:relative;z-index:200;}
+	#svnsMenu{width:100%;height:50px;margin:0px auto;padding:0px;display:block;position:absolute;top:0;left:0;right:0;z-index:201;font-family:"MabryMono", sans-serif,fallback;text-align: center;background:var(--svns-blk);}
+	#svnsMenu button{width:auto;height:auto;margin:0px 15px 0px 15px;padding:12px 20px 12px 0px;display:inline-block;font-family:"MabryMono", sans-serif,fallback;font-weight:normal;text-transform:uppercase;color:#fff;font-size:16px;border:0;outline:0;cursor:pointer;box-sizing:border-box !important;background:url("https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_down_img.svg") no-repeat, rgba(250,250,250,.0);background-size:auto 10px;background-position:right 4px top 16px;}
+	.svnsMenuArrow{display:none;}
+	.svnsMenuToggle{position:fixed !important;top:0px;left:0px;right:0px;margin:0px auto;}
+	.svnsSubMenuLogo{width:auto;height:25px;display:inline-block;margin:0px 20px 10px 0px;box-sizing: border-box !important;vertical-align: bottom;}
+	.svnsSubMenuLogo img{width:auto;height:25px;}
+
+	#svnsHeader{width:100%;height:auto;background:url('https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_headerSun_bg.svg') center center no-repeat, var(--svns-blue);background-size:cover;position: relative;margin:0px auto 0px;padding:1px 1px 0px 1px;box-sizing:border-box!important;text-align: center;display:block;}
+	#svnsHeader img{width:auto;height:550px;display:block;margin:70px auto 0px;}
+
+	#svnsLogo{width:1100px;height:auto;display:block;margin:20px auto 20px;text-align:left;}
+	#svnsLogo img{width:300px;height:auto;display:block;margin:0px;}
+	/**/
+	#svnsEventMod{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:0px auto;}
+	#svnsSubMenu{width:auto;height:auto;display:block;padding:50px 0px 0px 0px;margin:0px auto;text-align: left;}
+	.svnsSubMenuBtn{width:auto;height:auto;display:inline-block;padding:10px;margin:5px 30px 5px 0px;border-bottom:2px solid #fff;background:url("https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_right_wht_img.svg") no-repeat, rgba(250,250,250,.0);background-size:auto 15px;background-position:right 10px bottom 10px;cursor:pointer;user-select:none;transition:ease-in-out .3s all;vertical-align: top;}
+	.svnsSubMenuBtn:hover{background:url("https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_right_wht_img.svg") no-repeat, rgba(250,250,250,.1);background-position:right 0px bottom 10px;background-size:auto 15px;}
+	.svnsSubMenuBtn h1{font-family:"MabryMono", sans-serif,fallback;font-size:34px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}
+	.svnsSubMenuBtn h2{font-family:"MabryMono", sans-serif,fallback;font-size:22px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}
+	.svnsEventInfoLogo{width:auto;height:110px;display:inline-block;margin:-10px 35px 0px 0px;box-sizing: border-box !important;vertical-align: top;}
+	.svnsEventInfoLogo img{width:auto;height:100%;}
+
+	#svnsEventInfo{width:100%;height:auto;margin:50px auto;}
+	#svnsEventInfo h1{font-family:"MabryMono", sans-serif,fallback;font-size:36px;font-weight:normal;color:#fff;text-align:left;margin:10px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}
+	#svnsEventInfo h2{font-family:"MabryMono", sans-serif,fallback;font-size:150px;font-weight:normal;color:#fff;text-align:left;margin:-30px 170px 0px -7px;padding:0px 0px 0px 0px;box-sizing: border-box !important;display:inline-block;}
+	#svnsEventInfo h3{font-family:"MabryMono", sans-serif,fallback;font-size:70px;font-weight:normal;color:#fff;text-align:right;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;display:inline-block;}		
+	#svnsEventInfo p{font-family:"Averta", sans-serif,fallback;font-size:22px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}
+	#svnsEventInfo a{color:#efefef;}	
+	.svnsHoriDiv{width:100%;height:2px; margin:0px auto;background:#fff;}
+
+	/*ticket mod*/
+	#svnsTicketBanner{width:100%;height:150px;background:url('https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_headerSun_bg.svg') center center no-repeat, var(--svns-blue);background-size:cover;margin:0px 0px 50px 0px;}
+	#svnsTicketBanner h3{width:100%;max-width:1100px;font-family:"MabryMono", sans-serif,fallback;font-size:56px;font-weight:normal;color:#000;text-align:left;margin:0px auto;padding:70px 0px 0px 0px;display:block;box-sizing: border-box !important;} 
+	#svnsTicketsMod{width:100%;max-width:1100px;height:auto;display:flex;position: relative;margin:0px auto 50px;flex-wrap: nowrap;justify-content: space-between;align-items: flex-start;}
+	.svnsTicketWrap{width:530px;max-width:550px;height:auto;display:inline-block;position: relative;margin:25px auto; }
+	#svnsTicketsMod .svnsTicketWrap h3{font-family:"MabryMono", sans-serif,fallback;font-size:46px;font-weight:normal;color:#fff;text-align:left;margin:10px 0px 40px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;} 
+	.svnsTicketWrap p{font-family:"Averta", sans-serif,fallback;font-size:16px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;} 
+	.svnsTicketBtn{width:100%;height:auto;display:block;margin:10px auto;padding:10px;border-bottom:2px solid #fff;background:url("https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_right_wht_img.svg") no-repeat;background-size:auto 15px;background-position:right 10px bottom 10px;cursor:pointer;user-select:none;transition:ease-in-out .3s all;box-sizing: border-box !important;} 
+	.svnsTicketBtn:hover{background:url("https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_right_wht_img.svg") no-repeat, rgba(250,250,250,.1);background-position:right 0px bottom 10px;background-size:auto 15px;}
+	.svnsTicketBtn h1{font-family:"MabryMono", sans-serif,fallback;font-size:40px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 15px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	.svnsTicketBtn h2{font-family:"MabryMono", sans-serif,fallback;font-size:20px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 10px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	.svnsTicketWrap a{text-decoration: none;}
+	/*Next Level Experiences*/
+	.svnsExpBanner{width:100%;height:150px;background:url('https://s1.ticketm.net/en-au/img/static/rugbysvns/2025/svns_headerSun_bg_blue.svg') center center no-repeat, var(--svns-yel);background-size:cover;}
+	.svnsExpBanner h3{width:100%;max-width:1100px;font-family:"MabryMono", sans-serif,fallback;font-size:56px;font-weight:normal;color:#000;text-align:left;margin:0px auto;padding:70px 0px 0px 0px;display:block;box-sizing: border-box !important;} 
+	#svnsExpMod{width:100%;height:auto;display:block;position: relative;margin:0px auto;}
+	#svnsExpMod .svnsTicketWrap h3{font-family:"MabryMono", sans-serif,fallback;font-size:46px;font-weight:normal;color:#fff;text-align:left;margin:10px 0px 10px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;text-transform: uppercase;} 
+	.svnsExpWrap{width:100%;max-width:1100px;height:auto;display:flex;position: relative;margin:0px auto;flex-wrap: wrap;justify-content: space-between;align-items: flex-start;}
+	.svnsTicketWrap p{font-family:"Averta", sans-serif,fallback;font-size:16px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;} 
+	.svnsExpHero{width:100%;height:auto;margin:0px auto;padding:20px 0px 0px 0px;}
+	.svnsExpHero img{width:100%;height:auto;border-right:2px solid #fff;border-bottom:2px solid #fff;}
+	.svnsTable{width:100%;height:auto;display:block;margin:20px 0px 0px 0px;padding:0px;border-top:2px solid #fff;border-left:2px solid #fff;border-right:2px solid #fff;box-sizing:border-box !important;}
+	.svnsTable h4{font-family:"MabryMono", sans-serif,fallback;font-size:20px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	.svnsRow{width:100%;height:auto;margin:0px;padding:10px;display:block;border-bottom:2px solid #fff;box-sizing:border-box !important;}
+	.svnsExpBtn{width:100%;height:auto;display:block;margin:10px auto;padding:10px;background:url("https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_right_blk_img.svg") no-repeat, #fff;background-size:auto 15px;background-position:right 10px bottom 10px;cursor:pointer;user-select:none;transition:ease-in-out .3s all;box-sizing: border-box !important;} 
+	.svnsExpBtn:hover{background:url("https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_right_blk_img.svg") no-repeat, rgba(250,250,250,.7);background-position:right 0px bottom 10px;background-size:auto 15px;}
+	.svnsExpBtn h1{font-family:"MabryMono", sans-serif,fallback;font-size:40px;font-weight:normal;color:#000;text-align:left;margin:0px 0px 15px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	.svnsExpBtn h2{font-family:"MabryMono", sans-serif,fallback;font-size:20px;font-weight:normal;color:#000;text-align:left;margin:0px 0px 10px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	/**/
+	#svnsFAQsMod{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:100px auto 50px;}
+	#svnsFAQsMod h3{width:100%;max-width:1100px;font-family:"MabryMono", sans-serif,fallback;font-size:56px;font-weight:normal;color:#fff;text-align:left;margin:0px auto;padding:0px 0px 0px 0px;display:block;box-sizing: border-box !important;} 
+	#svnsFAQsMod h2{width:100%;max-width:1100px;font-family:"MabryMono", sans-serif,fallback;font-size:26px;font-weight:normal;color:#fff;text-align:left;margin:20px auto;padding:0px 0px 0px 0px;display:block;box-sizing: border-box !important;} 
+	.svnsFAQ{width:100%;height:auto;margin:10px auto 0px;border-bottom:2px solid #fff;box-sizing:border-box !important;cursor:pointer;}
+	.svnsQ{width:100%;height:auto;padding:5px;box-sizing:border-box !important;font-family:"MabryMono", sans-serif,fallback;font-size:16px;font-weight:normal;color:#fff;text-align:left;margin:0px;text-transform: uppercase;position:relative;}
+	.svnsQ img{width:14px;height:auto;right:2px;top:5px;position:absolute;transition:ease-in-out all .5s;}
+	.svnsRotate{transform: rotate(180deg);}
+	.svnsA{width:100%;height:auto;padding:5px 5px 10px 5px;box-sizing:border-box !important;font-family:"Averta", sans-serif,fallback;font-size:14px;font-weight:normal;color:#fff;text-align:left;margin:0px;display:none;}
+
+	#svnsFooter{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:50px auto 50px;}
+	.socialWrap{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:0px auto 20px;text-align: center;}
+	.socialWrap img{width:40px;height:auto;margin:10px;display:inline-block;box-sizing: border-box !important;}
+	.svnsPartners{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:0px auto 0px;}
+	.svnsPartners img{width:450px;height:auto;display:block;margin:0px auto;}
+
+	}
+/*mobile -----------------*/
+	@media only screen and (min-width: 0px) and (max-width: 1000px){	
+	
+	#svnsdContent{background-color:  var(--svns-blk);width:100%;height:auto;overflow:hidden;padding:1px 0px;margin:0px auto;position: relative;display:block;}
+	
+	.svnsSubMenuLogo{width:auto;height:25px;display:none;margin:0px 20px 10px 0px;box-sizing: border-box !important;}
+	.svnsSubMenuLogo img{width:auto;height:25px;}
+
+	#svnsMenuWrap{width:100%;height:50px;margin:0px auto 0;text-align: left;display:block;overflow:hidden;z-index:200;top:0;left:0;right:0;position: absolute;}
+	#svnsMenu{width:100%;height:50px;margin:0px 0px;padding:0px 20px;display:block;position:absolute;top:0;left:0;right:0;z-index:201;background:var(--svns-blk);font-family:"ClashDisplay-Medium", sans-serif,fallback;text-align: center;white-space: nowrap;overflow:hidden;box-sizing:border-box !important;border-radius:30px;}
+	#svnsMenu button{width:auto;height:50px;margin:0px 5px;padding:12px 20px 12px 0px;display:inline-block;font-family:"MabryMono", sans-serif,fallback;font-weight:normal;text-transform:uppercase;color:#fff;font-size:12px;border:0;outline:0;cursor:pointer;box-sizing:border-box !important;background:url("https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_down_img.svg") no-repeat, rgba(250,250,250,.0);background-size:auto 10px;background-position:right 4px top 19px;}
+	.svnsMenuArrow{height:40px;width:auto;margin:5px 0px;display:block;position: absolute;z-index:202;}
+	.svnsMenuArrow img{height:auto;width:8px !important;padding:14px 10px;}
+	.svnsArrowRight{top:0;right:0;background:linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);}
+	.svnsArrowLeft{top:0;left:0;transform:rotate(180deg);background:linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);}
+
+	#svnsHeader{width:100%;height:auto;background:url('https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_headerSun_bg.svg') center center no-repeat, var(--svns-blue);background-size:cover;position: relative;margin:0px auto 0px;padding:50px 1px 0px 1px;box-sizing:border-box!important;text-align: center;display:block;}
+	#svnsHeader img{width:100%;height:auto;display:block;margin:0px auto 0px;}
+
+	#svnsLogo{width:1100px;height:auto;display:block;margin:20px auto 20px;text-align:left;}
+	#svnsLogo img{width:300px;height:auto;display:block;margin:0px;}
+	/**/
+	#svnsEventMod{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:0px auto;}
+	#svnsSubMenu{width:auto;height:auto;display:block;padding:25px 0px 0px 0px;margin:0px auto;text-align: left;}
+	.svnsSubMenuBtn{width:100%;height:auto;display:block;padding:10px;margin:5px auto;border-bottom:2px solid #fff;background:url("https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_right_wht_img.svg") no-repeat, rgba(250,250,250,.0);background-size:auto 15px;background-position:right 20px bottom 10px;cursor:pointer;user-select:none;transition:ease-in-out .3s all;box-sizing: border-box !important}
+	.svnsSubMenuBtn h1{font-family:"MabryMono", sans-serif,fallback;font-size:28px;font-weight:normal;color:#fff;text-align:left;line-height: 28px;margin:0px 0px 20px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}
+	.svnsSubMenuBtn h2{font-family:"MabryMono", sans-serif,fallback;font-size:16px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}
+	.svnsEventInfoLogo{width:auto;height:100px;display:block;margin:20px auto;box-sizing: border-box !important;}
+	.svnsEventInfoLogo img{width:auto;height:100%;margin:0px auto;display:block;}
+
+	#svnsEventInfo{width:100%;height:auto;margin:50px auto;}
+	#svnsEventInfo h1{font-family:"MabryMono", sans-serif,fallback;font-size:30px;line-height:30px;font-weight:normal;color:#fff;text-align:left;margin:10px 0px 0px 0px;padding:0px 10px 0px 10px;box-sizing: border-box !important;}
+	#svnsEventInfo h2{font-family:"MabryMono", sans-serif,fallback;font-size:62px;font-weight:normal;color:#fff;text-align:left;margin:0px;padding:0px 10px 0px 10px;box-sizing: border-box !important;display:block;}
+	#svnsEventInfo h3{font-family:"MabryMono", sans-serif,fallback;font-size:36px;font-weight:normal;color:#fff;text-align:right;margin:0px 0px 0px 0px;padding:0px 10px 0px 10px;box-sizing: border-box !important;display:block;}		
+	#svnsEventInfo p{font-family:"Averta", sans-serif,fallback;font-size:18px;font-weight:normal;color:#fff;text-align:center;margin:20px auto;padding:0px 10px 0px 10px;box-sizing: border-box !important;}
+	#svnsEventInfo a{color:#efefef;}	
+	.svnsHoriDiv{width:100%;height:2px; margin:0px auto;background:#fff;}
+
+	/*ticket mod*/
+	#svnsTicketBanner{width:100%;height:auto;background:url('https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_headerSun_bg.svg') center center no-repeat, var(--svns-blue);background-size:cover;margin:0px auto 25px auto;padding:20px 10px;}
+	#svnsTicketBanner h3{width:100%;max-width:1100px;font-family:"MabryMono", sans-serif,fallback;font-size:42px;line-height:42px;font-weight:normal;color:#000;text-align:left;margin:0px auto;padding:0px;display:block;box-sizing: border-box !important;} 
+	#svnsTicketsMod{width:100%;max-width:1100px;height:auto;display:flex;position: relative;margin:0px auto 50px;flex-wrap: wrap;justify-content: space-between;align-items: flex-start;}
+	.svnsTicketWrap{width:100%;max-width:550px;height:auto;display:block;position: relative;margin:25px auto; }
+	#svnsTicketsMod .svnsTicketWrap h3{font-family:"MabryMono", sans-serif,fallback;font-size:44px;font-weight:normal;color:#fff;text-align:left;margin:10px auto 40px 0px;padding:0px 0px 0px 10px;box-sizing: border-box !important;} 
+	.svnsTicketWrap p{font-family:"Averta", sans-serif,fallback;font-size:16px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;} 
+	.svnsTicketBtn{width:100%;height:auto;display:block;margin:10px auto;padding:10px;border-bottom:2px solid #fff;background:url("https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_right_wht_img.svg") no-repeat;background-size:auto 15px;background-position:right 10px bottom 10px;cursor:pointer;user-select:none;transition:ease-in-out .3s all;box-sizing: border-box !important;} 
+	.svnsTicketBtn h1{font-family:"MabryMono", sans-serif,fallback;font-size:40px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 15px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	.svnsTicketBtn h2{font-family:"MabryMono", sans-serif,fallback;font-size:20px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 10px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	.svnsTicketWrap a{text-decoration: none;}
+	/*Next Level Experiences*/
+	.svnsExpBanner{width:100%;height:auto;background:url('https://s1.ticketm.net/en-au/img/static/rugbysvns/2025/svns_headerSun_bg_blue.svg') center center no-repeat, var(--svns-yel);background-size:cover;margin:0px auto 25px auto;padding:20px 10px;}
+	.svnsExpBanner h3{width:100%;max-width:1100px;font-family:"MabryMono", sans-serif,fallback;font-size:42px;line-height:42px;font-weight:normal;color:#000;text-align:left;margin:0px auto;padding:0px;display:block;box-sizing: border-box !important;} 
+	#svnsExpMod{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:0px auto;}
+	#svnsExpMod .svnsTicketWrap h3{font-family:"MabryMono", sans-serif,fallback;font-size:46px;font-weight:normal;color:#fff;text-align:left;margin:10px 0px 10px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;text-transform: uppercase;} 
+	.svnsExpWrap{width:100%;max-width:1100px;height:auto;display:flex;position: relative;margin:0px auto;flex-wrap: wrap;justify-content: space-between;align-items: flex-start;}
+	.svnsTicketWrap p{font-family:"Averta", sans-serif,fallback;font-size:16px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;} 
+	.svnsExpHero{width:100%;height:auto;margin:-20px auto 0px;padding:0px 0px 0px 0px;}
+	.svnsExpHero img{width:100%;height:auto;border-right:2px solid #fff;border-bottom:2px solid #fff;}
+	.svnsTable{width:100%;height:auto;display:block;margin:20px 0px 0px 0px;padding:0px;border-top:2px solid #fff;border-left:2px solid #fff;border-right:2px solid #fff;box-sizing:border-box !important;}
+	.svnsTable h4{font-family:"MabryMono", sans-serif,fallback;font-size:20px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	.svnsRow{width:100%;height:auto;margin:0px;padding:10px;display:block;border-bottom:2px solid #fff;box-sizing:border-box !important;}
+	.svnsExpBtn{width:100%;height:auto;display:block;margin:10px auto;padding:10px;background:url("https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_right_blk_img.svg") no-repeat, #fff;background-size:auto 15px;background-position:right 10px bottom 10px;cursor:pointer;user-select:none;transition:ease-in-out .3s all;box-sizing: border-box !important;} 
+	.svnsExpBtn:hover{background:url("https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_right_blk_img.svg") no-repeat, rgba(250,250,250,.7);background-position:right 0px bottom 10px;background-size:auto 15px;}
+	.svnsExpBtn h1{font-family:"MabryMono", sans-serif,fallback;font-size:40px;font-weight:normal;color:#000;text-align:left;margin:0px 0px 15px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	.svnsExpBtn h2{font-family:"MabryMono", sans-serif,fallback;font-size:20px;font-weight:normal;color:#000;text-align:left;margin:0px 0px 10px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	/**/
+	#svnsFAQsMod{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:50px auto 50px;}
+	#svnsFAQsMod h3{width:100%;max-width:1100px;font-family:"MabryMono", sans-serif,fallback;font-size:46px;font-weight:normal;color:#fff;text-align:left;margin:0px auto;padding:0px 0px 0px 0px;display:block;box-sizing: border-box !important;} 
+	#svnsFAQsMod h2{width:100%;max-width:1100px;font-family:"MabryMono", sans-serif,fallback;font-size:26px;font-weight:normal;color:#fff;text-align:left;margin:20px auto;padding:0px 0px 0px 0px;display:block;box-sizing: border-box !important;} 
+	.svnsFAQ{width:100%;height:auto;margin:10px auto 0px;border-bottom:2px solid #fff;box-sizing:border-box !important;cursor:pointer;}
+	.svnsQ{width:100%;height:auto;padding:5px 15px 5px 5px;box-sizing:border-box !important;font-family:"MabryMono", sans-serif,fallback;font-size:16px;font-weight:normal;color:#fff;text-align:left;margin:0px;text-transform: uppercase;position:relative;}
+	.svnsQ img{width:14px;height:auto;right:2px;top:5px;position:absolute;transition:ease-in-out all .5s;}
+	.svnsRotate{transform: rotate(180deg);}
+	.svnsA{width:100%;height:auto;padding:5px 5px 10px 5px;box-sizing:border-box !important;font-family:"Averta", sans-serif,fallback;font-size:14px;font-weight:normal;color:#fff;text-align:left;margin:0px;display:none;}
+
+	#svnsFooter{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:50px auto 50px;}
+	.socialWrap{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:0px auto 20px;text-align: center;}
+	.socialWrap img{width:40px;height:auto;margin:10px;display:inline-block;box-sizing: border-box !important;}
+	.svnsPartners{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:0px auto 0px;}
+	.svnsPartners img{max-width:450px;width:80%;height:auto;display:block;margin:0px auto;}
+
+	}
+
+</style>
+
+
+<div id="svnsContent">
+
+
+	<div id="svnsMenuWrap">
+		<div class="svnsMenuArrow svnsArrowLeft"><img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_menu_arrow_wht_img.svg"></div>		
+		<div id="svnsMenu"><div class="svnsSubMenuLogo"><img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/2025/svns26_horizontal_logo.svg"></div><button data-btn="Tickets">GENERAL TICKETS</button><button data-btn="Exp">HOSPITALITY &amp; PREMIUM OPTIONS</button><button data-btn="FAQs">FAQ&rsquo;s</button></div>
+		<div class="svnsMenuArrow svnsArrowRight"><img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_menu_arrow_wht_img.svg"></div>
+	</div>
+
+		<!--header-->
+		<div id="svnsHeader">
+
+			<img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_header_players_v02.png">
+
+		</div>
+	<div id="svnsEventMod"> 
+		<div id="svnsSubMenu">
+			<div class="svnsEventInfoLogo"><img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_locationLogo_stacked_img.svg"></div>
+			<div class="svnsSubMenuBtn" data-btn="Tickets"><h1>GENERAL TICKETS</h1><h2>SEE OPTIONS</h2></div>
+			<div class="svnsSubMenuBtn" data-btn="Exp"><h1>NEXT LEVEL EXPERIENCES</h1><h2>HOSPITALITY &amp; PREMIUM OPTIONS</h2></div>
+		</div>
+		<div id="svnsEventInfo">
+			
+			<h1>HBF PARK</h1>
+			<h2>PERTH</h2>
+			<h3>SAT 7 &amp; <br />SUN 8 FEB</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus velit sed turpis efficitur, non blandit elit faucibus. Nulla consectetur fringilla libero et luctus. Aliquam suscipit tincidunt nunc, at auctor elit semper vel. Sed hendrerit ante risus, at cursus mauris faucibus ut. Ut ut tellus ultricies, tempus leo eget, auctor dolor. Vestibulum consequat, velit id volutpat egestas, nisl turpis gravida quam, vitae sollicitudin felis est sed orci. Suspendisse bibendum rutrum auctor. Vivamus nec lacus mattis, cursus enim id, venenatis nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mollis dapibus maximus. Maecenas nulla est, tempus tristique justo ut, gravida euismod erat. Integer dignissim nunc in nisi condimentum, ut lacinia metus aliquet. Duis malesuada pellentesque lorem, at mattis ipsum molestie nec. Aenean eros lectus, imperdiet et rutrum a, pulvinar eget turpis. Ut sem nulla, eleifend id massa vel, ornare dictum est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; <a href="https://www.svns.com/en/events/perth/" target="_blank">svns.com/en/events/perth/</a>
+			
+			</p>
+		</div>
+
+	</div>
+	<!--<div class="svnsHoriDiv"></div>-->
+	<!--Tickets-->
+	<div id="svnsTicketBanner"><h3>GENERAL ADMISSION &amp; RESERVED</h3></div>
+	<div id="svnsTicketsMod"> 
+		
+		<!--single day-->
+		<div class="svnsTicketWrap">
+			<h3>SINGLE DAY PASS</h3>
+
+			<a href="" target="_blank"><div class="svnsTicketBtn">
+				<h1>Saturday</h1>
+				<h2>Find Tickets</h2>
+			</div></a>
+			<a href="" target="_blank"><div class="svnsTicketBtn">
+				<h1>Sunday</h1>
+				<h2>Find Tickets</h2>
+			</div></a>			
+		</div>
+		<!--multi day-->
+		<div class="svnsTicketWrap">
+			<h3>MULTI&#45;DAY PASS</h3>
+
+			<a href="" target="_blank"><div class="svnsTicketBtn">
+				<h1>2 Day Pass</h1>
+				<h2>Find Tickets</h2>
+			</div></a>
+
+		</div>
+
+	</div>
+	<!--Experiences-->
+
+
+	<!--Corp Box-->
+	<div id="svnsExpMod" class="svnsExpBanner"><h3>HOSPITALITY &amp; PREMIUM OPTIONS</h3></div>
+	<div class="svnsExpWrap">
+			<div class="svnsTicketWrap">
+
+				<p>For hospitality, Suites and other premium ticket options please visit the partner website here <br /><br /></p>
+
+				<a href="" target="_blank"><div class="svnsExpBtn">
+					<h1>Explore Options</h1>
+					<h2>Sold On Partner Website</h2>
+				</div></a>
+		
+			</div>
+			<!--hero img-->
+			<div class="svnsTicketWrap">
+				<div class="svnsExpHero"><img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_svnsPlus_v2_rec_expHero.jpg"></div>
+			</div>
+	</div>
+
+	<!--FAQs-->
+	<div id="svnsFAQsMod">
+
+		<h3>FREQUENTLY ASKED QUESTIONS</h3>
+		<h2>EVENT INFORMATION</h2>
+		<!--Q-->
+		<div class="svnsFAQ">
+			<div class="svnsQ">WHICH TEAMS ARE TAKING PART?<img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_down_img.svg"></div>
+			<div class="svnsA">All HSBC SVNS events will showcase the 12 best men's and women's rugby sevens teams, including men's Olympic medalists France, Fiji and South Africa and women's Olympic medalists New Zealand, Canada and USA. There will also be some newcomers to HSBC SVNS for 2025, with China Women and Kenya and Uruguay Men joining the series after winning promotion from the Challenger Series at the end of last season.</div>
+		</div>
+		<!--Q-->
+		<div class="svnsFAQ">
+			<div class="svnsQ">WILL I BE ABLE TO LEAVE AND RE&#45;ENTER THE STADIUM ON THE DAY?<img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_down_img.svg"></div>
+			<div class="svnsA">Great news for all attendees of the Perth SVNS! We are pleased to announce that re&#45;admittance will be permitted throughout the event. Whether you need to step out for a break or handle personal matters, rest assured that you can re&#45;enter and continue enjoying the festivities without any hassle. We aim to make your experience as convenient and enjoyable as possible.</div>
+		</div>		
+		<h2>PRICES &amp; INFORMATION</h2>
+		<!--Q-->
+		<div class="svnsFAQ">
+			<div class="svnsQ">ARE THERE ANY AGE RESTRICTIONS FOR ATTENDING THE EVENT?<img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_down_img.svg"></div>
+			<div class="svnsA">All children aged 4+ are required to have a valid ticket upon entry to the stadium. Children aged under 4 years are not required to have a ticket, given they will be seated on a parent's lap and not occupy a seat. Under 18s must be accompanied by an adult</div>
+		</div>
+		<!--Q-->
+		<div class="svnsFAQ">
+			<div class="svnsQ">WHAT IS THE MAXIMUM NUMBER OF TICKETS THAT I CAN PURCHASE?<img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_down_img.svg"></div>
+			<div class="svnsA">The maximum number of tickets you can purchase in a single transaction is 8.</div>
+		</div>		
+		<h2>ONLINE TICKET &amp; DELIVERY</h2>
+		<!--Q-->
+		<div class="svnsFAQ">
+			<div class="svnsQ">HOW AND WHEN WILL I RECEIVE MY TICKETS?<img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_down_img.svg"></div>
+			<div class="svnsA">Tickets will be issued digitally and we will communicate with you closer to the event date when your tickets are ready to be downloaded.</div>
+		</div>
+		<!--Q-->
+		<div class="svnsFAQ">
+			<div class="svnsQ">WILL I BE REQUIRED TO BRING ID FOR ENTRY?<img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_down_img.svg"></div>
+			<div class="svnsA">Yes, ID may be required to confirm proof of age.</div>
+		</div>
+		<h2>FAMILIES</h2>
+		<!--Q-->
+		<div class="svnsFAQ">
+			<div class="svnsQ">IS THERE A FAMILY ZONE IN THE STADIUM AND WHERE IS IT LOCATED?<img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_down_img.svg"></div>
+			<div class="svnsA">HSBC SVNS brings the party across the whole stadium. We recommend to not book tickets in the Party Stand if you are attending with families. </div>
+		</div>
+		<h2>FACILITIES</h2>
+		<!--Q-->
+		<div class="svnsFAQ">
+			<div class="svnsQ">WHAT FOOD AND DRINK IS AVAILABLE AT THE VENUE?<img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_down_img.svg"></div>
+			<div class="svnsA">Details of the Food & Drink available at the venue will be made available nearer the event.</div>
+		</div>
+		<!--Q-->
+		<div class="svnsFAQ">
+			<div class="svnsQ">CAN I BRING MY OWN FOOD AND DRINK INTO THE VENUE?<img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_down_img.svg"></div>
+			<div class="svnsA">No. Please refer to the Event Terms and Conditions.</div>
+		</div>
+		<!--Q-->
+		<div class="svnsFAQ">
+			<div class="svnsQ">WILL I BE ABLE TO LEAVE AND RE-ENTER THE STADIUM ON THE DAY?<img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_down_img.svg"></div>
+			<div class="svnsA">Great news for all attendees of the Perth SVNS! We are pleased to announce that re&#45;admittance will be permitted throughout the event. Whether you need to step out for a break or handle personal matters, rest assured that you can re&#45;enter and continue enjoying the festivities without any hassle. We aim to make your experience as convenient and enjoyable as possible.
+			</div>
+		</div>
+		<!--Q-->
+		<div class="svnsFAQ">
+			<div class="svnsQ">WHAT TIME DO THE GATES OPEN?<img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_down_img.svg"></div>
+			<div class="svnsA">Gates open 60 minutes before the Event start time.</div>
+		</div>
+		<h2>SECURITY</h2>
+		<!--Q-->
+		<div class="svnsFAQ">
+			<div class="svnsQ">SHOULD I EXPECT TO BE SEARCHED AT THE GATE?<img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_arrow_down_img.svg"></div>
+			<div class="svnsA">Yes. All ticket holders are subject to security searches, if required.</div>
+		</div>
+
+	</div>
+	<!--footer--> 
+	<div id="svnsFooter">
+		<div class="socialWrap"><a href="https://www.facebook.com/svnsseries/" target="_blank"><img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_fb_ico.svg" alt="Facebook"></a><a href="https://www.instagram.com/svnsseries" target="_blank"><img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_ig_ico.svg" alt="instagram"></a></div>
+		<div class="svnsPartners"><img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_westernAus_combined_logo.svg" alt="Western Australias"></div>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var $j = jQuery.noConflict();
+//scroll
+$j("#svnsMenu button, .svnsSubMenuBtn").click(
+	function(){
+
+		var scrollTarget = $j(this).attr("data-btn")
+		$j('html, body').animate({ scrollTop: $j("#svns" + scrollTarget + "Mod").offset().top + -150}, 1000);	
+	})		
+//mobile menu	
+$j(".svnsArrowRight").click(
+	function(){
+		$j("#svnsMenu").animate({scrollLeft:"+=250px"}, "slow");
+	});
+$j(".svnsArrowLeft").click(
+	function(){
+		$j("#svnsMenu").animate({scrollLeft:"-=250px"}, "slow");
+	});
+//FAQs
+$j(".svnsFAQ").click(
+	function(){
+		$j(this).children(".svnsA").fadeToggle(300);
+		$j(this).children(".svnsQ").children("img").toggleClass("svnsRotate");
+	});
+
+</script>
+[% PROCESS "layout/frame/bottom.tt" %]
