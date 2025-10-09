@@ -829,7 +829,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 					<div class="wacSortBtn">Sort Events:</div> 
 					<div class="wacSortDropDown">
 						<h3>Sort Events By:</h3>
-						<div data-filterbtnlab="Recommended" class="wacFilterBtnOn sortRadioBtn"><div class="wacRadioBtn wacRadioBtnOn"></div><h4>Recommended</h4></div>
+						<!--<div data-filterbtnlab="Recommended" class="wacFilterBtnOn sortRadioBtn"><div class="wacRadioBtn wacRadioBtnOn"></div><h4>Default</h4></div>-->
 						<div data-filterbtnlab="Earliest" class="wacFilterBtnOff sortRadioBtn"><div class="wacRadioBtn wacRadioBtnOff"></div><h4>Earliest Date</h4></div>	
 						<div data-filterbtnlab="Latest" class="wacFilterBtnOff sortRadioBtn"><div class="wacRadioBtn wacRadioBtnOff"></div><h4>Furthest Date</h4></div>
 					</div>
@@ -1128,7 +1128,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 					<div class="wacSortBtn">Sort Events:</div> 
 					<div class="wacSortDropDown">
 						<h3>Sort Events By:</h3>
-						<div data-filterbtnlab="Recommended" class="wacFilterBtnOn sortRadioBtn"><div class="wacRadioBtn wacRadioBtnOn"></div><h4>Recommended</h4></div>
+						<!--<div data-filterbtnlab="Recommended" class="wacFilterBtnOn sortRadioBtn"><div class="wacRadioBtn wacRadioBtnOn"></div><h4>Recommended</h4></div>-->
 						<div data-filterbtnlab="Earliest" class="wacFilterBtnOff sortRadioBtn"><div class="wacRadioBtn wacRadioBtnOff"></div><h4>Earliest Date</h4></div>	
 						<div data-filterbtnlab="Latest" class="wacFilterBtnOff sortRadioBtn"><div class="wacRadioBtn wacRadioBtnOff"></div><h4>Furthest Date</h4></div>
 					</div>
@@ -1767,8 +1767,9 @@ $j(document).on('click', '#wacHospSelectDate', function (e) {
 				}
 		});	
 //sort menu
-	$j(document).on('click', '.wacSortBtn', function (e) {
-			if ($j(e.target).closest('.wacSortDropDown').length !== 0)
+//pub
+	$j(document).on('click', '#wacPubSortMenu .wacSortBtn', function (e) {
+			if ($j(e.target).closest('#wacPubSortMenu .wacSortDropDown').length !== 0)
 			{return false;}
 			//open
 			$j(".wacSortDropDown").fadeIn(500);
@@ -1776,8 +1777,20 @@ $j(document).on('click', '#wacHospSelectDate', function (e) {
 	$j(document).on('click', 'body', function (e) {
 			if (($j(e.target).closest('#wacPubSortMenu').length !== 0)) 
 			{return false;}
-			$j(".wacSortDropDown").fadeOut(0);
+			$j("#wacPubSortMenu .wacSortDropDown").fadeOut(0);
 		});
+//hosp
+	$j(document).on('click', '#wacHospSortMenu .wacSortBtn', function (e) {
+			if ($j(e.target).closest('#wacHospSortMenu .wacSortDropDown').length !== 0)
+			{return false;}
+			//open
+			$j(".wacSortDropDown").fadeIn(500);
+		});
+	$j(document).on('click', 'body', function (e) {
+			if (($j(e.target).closest('#wacHospSortMenu').length !== 0)) 
+			{return false;}
+			$j("#wacHospSortMenu .wacSortDropDown").fadeOut(0);
+		});		
 //radio button
 $j(document).on('click', '.sortRadioBtn', function () {
 			if ($j(this).hasClass('wacFilterBtnOff')) {
@@ -1790,28 +1803,50 @@ $j(document).on('click', '.sortRadioBtn', function () {
 			}
 		});
 //sort by soonest 
-$j(document).on('click', '.sortRadioBtn[data-filterbtnlab="Earliest"]', function () {
+//pub
+$j(document).on('click', '#wacPubSortMenu .sortRadioBtn[data-filterbtnlab="Earliest"]', function () {
 			$j('#wacPubEventStream .wacEventCard').sort(function (a, b) {
 				return $j(a).data('sortdate') - $j(b).data('sortdate');
 			})
 			.appendTo('#wacPubEventStream');
+			cardsToDisplayPub()
 		});
-//sort by furthers		
-$j(document).on('click', '.sortRadioBtn[data-filterbtnlab="Latest"]', function () {
-			$j('#wacEventStream .wacEventCard').sort(function (a, b) {
+//hosp
+$j(document).on('click', '#wacHospSortMenu .sortRadioBtn[data-filterbtnlab="Earliest"]', function () {
+			$j('#wacHospEventStream .wacEventCard').sort(function (a, b) {
+				return $j(a).data('sortdate') - $j(b).data('sortdate');
+			})
+			.appendTo('#wacHospEventStream');
+			cardsToDisplayHosp()
+		});
+//sort by furthers	
+//pub	
+$j(document).on('click', '#wacPubSortMenu .sortRadioBtn[data-filterbtnlab="Latest"]', function () {
+			$j('#wacPubEventStream .wacEventCard').sort(function (a, b) {
 				return $j(b).data('sortdate') - $j(a).data('sortdate');
 			})
 			.appendTo('#wacPubEventStream');
+			cardsToDisplayPub()
 		});
+//hosp
+$j(document).on('click', '#wacHospSortMenu .sortRadioBtn[data-filterbtnlab="Latest"]', function () {
+			$j('#wacHospEventStream .wacEventCard').sort(function (a, b) {
+				return $j(b).data('sortdate') - $j(a).data('sortdate');
+			})
+			.appendTo('#wacHospEventStream');
+			cardsToDisplayHosp()
+		});		
 //sort by recommended	
+//pub
 let sortEventsRecommended = function(){
 			$j('#wacEventStream .wacEventCard').sort(function (a, b) {
 				return $j(a).data('recsort') - $j(b).data('recsort');
 			})
 			.appendTo('#wacPubEventStream');
 }
-$j(document).on('click', '.sortRadioBtn[data-filterbtnlab="Recommended"]', function () {
-	sortEventsRecommended()
+$j(document).on('click', '#wacPubSortMenu .sortRadioBtn[data-filterbtnlab="Recommended"]', function () {
+	//loadData()
+	//cardsToDisplayPub()
 })
 //sort date drop downs on load
 $j(document).on('click', '.wacCardDateMulti', function () {
