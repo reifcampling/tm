@@ -1527,7 +1527,7 @@ let eventCounterHosp = function(){
 }
 // click functions for Menus
 //switch tabs
-$j(document).on('click', '#wacPubTabWrap .wacMenuHospTab', function () {
+$j(document).on('click', '#wacPubTabWrap .wacMenuHospTab,#wacHospCard', function () {
 	$j("#wacPubWrapper").fadeOut(0)	
 	$j("#wacHospWrapper").fadeIn(0)	
 })
@@ -1535,6 +1535,7 @@ $j(document).on('click', '#wacHospTabWrap .wacMenuPubTab', function () {
 	$j("#wacHospWrapper").fadeOut(0)	
 	$j("#wacPubWrapper").fadeIn(0)	
 })
+
 //change the class on the checkbox's when they have been checked  wacCheckBoxOn
 $j(document).on('click', '.wacDropDownBtn', function () {
 			if ($j(this).hasClass('wacFilterBtnOff')) {
