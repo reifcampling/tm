@@ -1,0 +1,194 @@
+[% # text to be displayed within <title></title>
+page_title = "Disney Presents The Lion King | Capitol Theatre Sydney | Tickets and Groups | Ticketmaster Australia, Official Tickets" %]
+[% static_has_responsive_header_footer = 1; enable_leader_board = 0; %]
+[% PROCESS "layout/frame/top.tt" %]
+<!--cut for on sale----->
+ <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />
+ <!--delete for on sale-->
+<!--libs--->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>var $j = jQuery.noConflict();</script>
+<link href="https://s1.ticketm.net/tm/en-au/img/static/fonts/averta.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="https://use.typekit.net/qol0zyc.css">
+
+<style type="text/css">
+:root {
+		--tlk-yel:#fccc08; /*futura-pt*/
+	  }	
+#mainContent{padding: 0px 0px 0px 0px !important;background: #05041b;}
+@media only screen and (min-width: 0px) and (max-width: 999.99px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE !!!! IMPORTANT*/ 
+	#mainContent{padding: 0px 0px 0px 0px !important;background: #05041b;}
+}
+@media only screen and (min-width: 1000px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE */ d
+	#mainContent{padding: 0px 0px 0px 0px !important;background: #05041b;}
+}	
+@media only screen and (min-width: 1000px) {	
+	#tlkContent{width:100%;height:auto;min-height:1000px;margin:0 auto;display:block;padding:1px;background:url("https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_background.jpg") top center no-repeat, var(--tlk-yel);background-size:contain;position:relative;box-sizing: border-box !important;}
+	#tlkLogo{width:600px;height:auto;margin:50px auto 0px;padding:0px;display:block;position:relative;box-sizing: border-box !important;z-index: 20;}
+	#tlkLogo img{width:100%;height:auto;}
+	#disneyLogo{width:10px;height:auto;position: absolute;right:5px;top:5px;}
+	#disneyLogo img{width:100%;height:auto;}
+
+	#tlkMenu{width:500px;height:25px;margin:0 auto; padding:5px; background:#000;display:flex;flex-wrap: nowrap;justify-content: space-around;align-items: center;border:2px solid var(--tlk-yel);}
+	#tlkMenuWrap{width:100%;height:auto;margin:5px auto 0;position: relative;display:block;z-index: 100;}
+	#tlkMenu button{font-family:"futura-pt","Averta",  sans-serif;font-size:16px;line-height:16px;font-weight:700;color:var(--tlk-yel);background:none;text-align:center;margin:0px 0px 0px 0px;padding:8px 16px;border:0;outline:none;box-sizing:border-box !important;cursor:pointer;}
+	.tlkMenuToggle{top:0;left:0;right:0;position: fixed !important;}
+
+	.tlkTicketWrap{width:100%;max-width:1100px;height:auto;margin:0px auto 25px;display:flex;flex-wrap:nowrap;justify-content: center;padding:0px;box-sizing:border-box !important;z-index: 20;}
+	.tlkTicketMod{width:500px;height:auto;margin:40px auto;padding:0px;display:inline-block;}
+	.tlkGroupMod{width:325px;height:auto;margin:40px auto;padding:0px;display:inline-block;}
+	.tlkTicketMod a, .tlkGroupMod a{text-decoration:none;}
+	.tlkTicketMod h1{font-family:"futura-pt","Averta",  sans-serif;font-size:44px;line-height:44px;font-weight:700;color:#000;text-align:center;margin:0px 0px 10px 0px;padding:0px 0px;box-sizing:border-box !important;}
+	.tlkGroupMod h1{font-family:"futura-pt","Averta",  sans-serif;font-size:36px;line-height:36px;font-weight:700;color:#000;text-align:center;margin:0px 0px 10px 0px;padding:0px 0px;box-sizing:border-box !important;}
+	.tlkTicketMod h3,.tlkGroupMod h2{font-family:"futura-pt","Averta",  sans-serif;font-size:30px;line-height:30px;font-weight:700;color:#000;text-align:center;margin:0px 0px 10px 0px;padding:0px 0px;box-sizing:border-box !important;}
+	.tlkTicketMod h2,.tlkGroupMod h3{font-family:"futura-pt","Averta",  sans-serif;font-size:29px;line-height:29px;font-weight:500;color:#000;text-align:center;margin:0px 0px;padding:0px 0px;box-sizing:border-box !important;}
+
+	.tlkInfoWrap{width:100%;max-width:700px;height:auto;margin:0px auto 25px;display:block;padding:0px;box-sizing:border-box !important;}
+	.tlkInfoWrap p{font-family:"futura-pt","Averta",  sans-serif;font-size:22px;line-height:22px;font-weight:400;color:#000;text-align:center;margin:0px 0px;padding:0px 0px;box-sizing:border-box !important;display:block;}
+
+	.tlkTicketBtn{width:295px;height:60px;margin:10px auto 5px;padding:14px 0px;font-family:"futura-pt","Averta",  sans-serif;font-size:33px;line-height:33px;font-weight:bold;color:var(--tlk-yel);text-align:center;background:#000;box-sizing: border-box !important;}
+	.tlkGroupBtn{width:295px;height:60px;margin:10px auto 5px;padding:11px 0px;font-family:"futura-pt","Averta",  sans-serif;font-size:33px;line-height:33px;font-weight:bold;color:#000;text-align:center;background:var(--tlk-yel);border:4px solid #000;box-sizing: border-box !important;}	
+	.tlkQuote{width:500px;height:auto;margin:0px auto 50px;padding:0px;display:block;}
+	.tlkQuote h1{font-family:"futura-pt","Averta",  sans-serif;font-size:42px;line-height:42px;font-weight:700;color:#000;text-align:left;margin:0px 0px 10px 0px;padding:0px 0px;}
+	.tlkQuote h2{font-family:"futura-pt","Averta",  sans-serif;font-size:29px;line-height:29px;font-weight:500;color:#000;text-align:right;margin:0px 0px;padding:0px 0px;}
+
+	.tlkHoriDiv{width:600px;height:4px;background:#000;margin:0px auto}
+
+	#tlkVideoWrap{width:852px;margin:50px auto;padding:0px;display:block;border:4px solid #000;}
+	#tlkVideoMod{width:852px;height:480px;margin:0px auto;overflow: hidden;background:#000;}
+	#tlkVideoMod iframe{width:852px;height:480px;border:0;outline:0;}
+
+	#tlkFooterMod{width:100%;height:auto;max-width:1000px;margin:0 auto;display:block;padding:0px 0px 40px 0px;}
+	#tlkFooterMod h1{font-family:"futura-pt","Averta",  sans-serif;font-size:34px;line-height:34px;font-weight:700;color:#000;text-align:center;margin:0px 0px 0px 0px;padding:0px 0px;}
+	#tlkFooterMod a{text-decoration: none;color:#000}
+	.tlkFooterWrap{margin:0px auto;display:block;width:auto;text-align: center;}
+	.tlkFooterWrap img{width:55px;height:55px;margin:20px 10px;display:inline-block;vertical-align: top;}
+}
+
+/*mobile*/
+@media only screen and (max-width: 999.99px) {		
+	#tlkContent{width:100%;max-width:1000px;height:auto;margin:0 auto;display:block;padding:1px;background:url("https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_background.jpg") top left no-repeat, var(--tlk-yel);background-size:1000px auto;position:relative;box-sizing: border-box !important;}
+	#tlkLogo{width:85%;max-width:600px;height:auto;margin:40px auto 0px;padding:0px;display:block;position:relative;box-sizing: border-box !important;}
+	#tlkLogo img{width:100%;height:auto;}
+	#disneyLogo{width:10px;height:auto;position: absolute;right:5px;top:50px;}
+	#disneyLogo img{width:100%;height:auto;}
+
+	#tlkMenu{max-width:500px;width:96%;height:auto;margin:0px auto 0; padding:5px; background:#000;display:flex;flex-wrap: nowrap;justify-content: space-around;align-items: center;}
+	#tlkMenu button{font-family:"futura-pt","Averta",  sans-serif;font-size:14px;line-height:14px;font-weight:700;color:var(--tlk-yel);background:none;text-align:center;margin:0px 0px 0px 0px;padding:4px 10px;border:0;outline:none;box-sizing:border-box !important;cursor:pointer;}
+	#tlkMenuWrap{width:100%;height:auto;margin:5px auto 0;position: relative;display:block;z-index: 100;}
+	.tlkMenuToggle{top:0;left:0;right:0;position: fixed !important;border:2px solid var(--tlk-yel);}
+
+	.tlkTicketWrap{width:100%;max-width:1000px;height:auto;margin:0px auto 25px;display:flex;flex-wrap:wrap;justify-content: center;padding:0px;box-sizing:border-box !important;}
+	.tlkTicketMod, .tlkGroupMod{width:90%;max-width:325px;height:auto;margin:40px auto;padding:0px;display:inline-block;}
+	.tlkTicketMod a, .tlkGroupMod a{text-decoration:none;}
+	.tlkTicketMod h1,.tlkGroupMod h1{font-family:"futura-pt","Averta",  sans-serif;font-size:36px;line-height:36px;font-weight:700;color:#000;text-align:center;margin:0px 0px 10px 0px;padding:0px 0px;box-sizing:border-box !important;}
+	.tlkTicketMod h3,.tlkGroupMod h2{font-family:"futura-pt","Averta",  sans-serif;font-size:30px;line-height:30px;font-weight:700;color:#000;text-align:center;margin:0px 0px 10px 0px;padding:0px 0px;box-sizing:border-box !important;}
+	.tlkTicketMod h2,.tlkGroupMod h3{font-family:"futura-pt","Averta",  sans-serif;font-size:29px;line-height:29px;font-weight:500;color:#000;text-align:center;margin:0px 0px;padding:0px 0px;box-sizing:border-box !important;}
+
+	.tlkInfoWrap{width:100%;max-width:700px;height:auto;margin:0px auto 25px;display:block;padding:0px;box-sizing:border-box !important;}
+	.tlkInfoWrap p{font-family:"futura-pt","Averta",  sans-serif;font-size:22px;line-height:22px;font-weight:400;color:#000;text-align:center;margin:0px 0px;padding:0px 15px;box-sizing:border-box !important;display:block;}
+
+	.tlkTicketBtn{width:90%;max-width:295px;height:60px;margin:10px auto 5px;padding:14px 0px;font-family:"futura-pt","Averta",  sans-serif;font-size:33px;line-height:33px;font-weight:bold;color:var(--tlk-yel);text-align:center;background:#000;box-sizing: border-box !important;}
+	.tlkGroupBtn{width:295px;height:60px;margin:10px auto 5px;padding:11px 0px;font-family:"futura-pt","Averta",  sans-serif;font-size:33px;line-height:33px;font-weight:bold;color:#000;text-align:center;background:var(--tlk-yel);border:4px solid #000;box-sizing: border-box !important;}	
+	.tlkQuote{width:80%;max-width:500px;height:auto;margin:0px auto 50px;padding:0px;display:block;}
+	.tlkQuote h1{font-family:"futura-pt","Averta",  sans-serif;font-size:42px;line-height:42px;font-weight:700;color:#000;text-align:left;margin:0px 0px 10px 0px;padding:0px 0px;}
+	.tlkQuote h2{font-family:"futura-pt","Averta",  sans-serif;font-size:29px;line-height:29px;font-weight:500;color:#000;text-align:right;margin:0px 0px;padding:0px 0px;}
+
+	.tlkHoriDiv{width:80%;max-width:600px;height:4px;background:#000;margin:0px auto}
+
+	#tlkFooterMod{width:100%;height:auto;max-width:1000px;margin:0 auto;display:block;padding:0px 0px 40px 0px;}
+	#tlkFooterMod h1{font-family:"futura-pt","Averta",  sans-serif;font-size:22px;line-height:22px;font-weight:700;color:#000;text-align:center;margin:0px 0px 0px 0px;padding:0px 0px;}
+	#tlkFooterMod a{text-decoration: none;color:#000}
+	.tlkFooterWrap{margin:0px auto;display:block;width:auto;text-align: center;}
+	.tlkFooterWrap img{width:55px;height:55px;margin:20px 10px;display:inline-block;vertical-align: top;}
+
+	#tlkVideoWrap{width:90%;margin:0px auto 25px;display:block;border:4px solid #000;}
+	#tlkVideoMod{width:100%;height: 0px;padding-top:56.25%;margin: auto; position:relative;display: block !important;box-sizing: border-box !important;overflow: hidden;}
+	#tlkVideoMod iframe{position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 0;}	
+	}
+	
+</style>
+
+ 
+<div id="tlkContent">
+	<div id="tlkMenuWrap"><div id="tlkMenu"><button data-btn="Ticket">TICKETS</button><button data-btn="Group">GROUPS</button><button data-btn="Info">ABOUT</button><button data-btn="Footer">FOLLOW</button></div></div>
+	<div id="tlkLogo">
+		<img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_logo.png"  alt="The Lion King, The Award-Winning Musical">
+	</div>
+
+	<div id="disneyLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/disney_logo.png" alt="Disney"></div>
+
+	<!--tickets-->
+	<div id="tlkTicketMod" class="tlkTicketWrap">
+		<!--sydney-->
+		<div class="tlkTicketMod">
+			<h1>CAPITOL THEATRE, SYDNEY</h1>
+			<h2>OPENS APRIL 2026<br /></h2>
+			<a href="https://www.ticketmaster.com.au/disney-presents-the-lion-king-australia-tickets/artist/21441"><div class="tlkTicketBtn">BOOK NOW</div></a>
+		</div>
+
+
+	</div>
+	<div class="tlkHoriDiv"></div>
+	<!--groups-->
+	<div id="tlkGroupMod" class="tlkTicketWrap">
+		<!--sydney-->
+		<div class="tlkGroupMod">
+			<h3>GROUPS OF 10+ SAVE</h3>
+			<a href="https://www.ticketmaster.com.au/explore/the-lion-king-groups"><div class="tlkGroupBtn">BOOK NOW</div></a>
+		</div>
+		<div class="tlkGroupMod">
+			<h3>SCHOOL GROUPS 10+</h3>
+			<a href="https://www.ticketmaster.com.au/explore/the-lion-king-school-groups"><div class="tlkGroupBtn">BOOK NOW</div></a>
+		</div>
+	</div>
+	<!--blurb-->
+	<div id="tlkInfoMod" class="tlkInfoWrap">
+		<div class="tlkQuote">
+			<h1>"There is simply nothing else like it"</h1>
+			<h2>&#45; The New York Times</h2>
+		</div>
+		<p> 
+			Disney's The Lion King is making its triumphant return to Sydney in April! Prepare for a spectacle far beyond your imagination as you follow the powerful story of Simba as he journeys from wide-eyed cub to his destined role as King of the Pridelands.
+			<br /><br />
+			Seen by over 124 million people worldwide, this landmark musical combines breathtaking visual artistry, unforgettable music, and a deeply moving story that has captured hearts across generations. Winner of six Tony Awards&REG; including Best Musical, this is a spectacular theatrical experience you will never forget.
+		</p>
+
+	</div>
+	<!--video-->
+	<div id="tlkVideoWrap"><div id="tlkVideoMod"><iframe src="https://www.youtube.com/embed/skVcKlNRfZw?si=OMJhmzW5OJH0jOyC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div>
+	<!--footer-->
+	<div id="tlkFooterMod">
+			<h1>@thelionkingau</h1>
+		<div class="tlkFooterWrap">
+			<a href="https://www.facebook.com/TheLionKing" target="_blank"><img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_ig_ico.svg" alt="Facebook"></a>
+			<a href="https://www.instagram.com/thelionkingau/" target="_blank"><img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_fb_ico.svg" alt="Instagram"></a>
+
+			<h1><a href="https://thelionkingmusical.com.au/" target="_blank">TheLionKingMusical.com.au</a></h1>	
+		</div>
+		
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var $j = jQuery.noConflict();	
+$j("#tlkMenu button").click(
+	function(){
+		var menuTarget = $j(this).data('btn')		
+			$j('html, body').animate({ scrollTop: $j("#tlk"+ menuTarget +"Mod").offset().top}, 1000);	 
+		})	
+//sticky menu
+$j(document).scroll(function() {
+    var pageTop = $j(document).scrollTop();
+    var scollTarget = $j("#tlkMenuWrap").offset().top;
+    if (pageTop > scollTarget) {
+		$j("#tlkMenu").addClass("tlkMenuToggle");		
+    } else {
+		$j("#tlkMenu").removeClass("tlkMenuToggle");
+    }
+});			
+</script>
+[% PROCESS "layout/frame/bottom.tt" %]
