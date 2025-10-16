@@ -26,7 +26,7 @@ page_title = "Disney Presents The Lion King | Capitol Theatre Sydney | Tickets a
 }	
 @media only screen and (min-width: 1000px) {	
 	#tlkContent{width:100%;height:auto;min-height:1000px;margin:0 auto;display:block;padding:1px;background:url("https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_background.jpg") top center no-repeat, var(--tlk-yel);background-size:contain;position:relative;box-sizing: border-box !important;}
-	#tlkLogo{width:600px;height:auto;margin:50px auto 0px;padding:0px;display:block;position:relative;box-sizing: border-box !important;z-index: 20;}
+	#tlkLogo{width:400px;height:auto;margin:50px auto 0px;padding:0px;display:block;position:relative;box-sizing: border-box !important;z-index: 20;}
 	#tlkLogo img{width:100%;height:auto;}
 	#disneyLogo{width:10px;height:auto;position: absolute;right:5px;top:5px;}
 	#disneyLogo img{width:100%;height:auto;}
@@ -34,7 +34,7 @@ page_title = "Disney Presents The Lion King | Capitol Theatre Sydney | Tickets a
 	#tlkMenu{width:500px;height:25px;margin:0 auto; padding:5px; background:#000;display:flex;flex-wrap: nowrap;justify-content: space-around;align-items: center;border:2px solid var(--tlk-yel);}
 	#tlkMenuWrap{width:100%;height:auto;margin:5px auto 0;position: relative;display:block;z-index: 100;}
 	#tlkMenu button{font-family:"futura-pt","Averta",  sans-serif;font-size:16px;line-height:16px;font-weight:700;color:var(--tlk-yel);background:none;text-align:center;margin:0px 0px 0px 0px;padding:8px 16px;border:0;outline:none;box-sizing:border-box !important;cursor:pointer;}
-	.tlkMenuToggle{top:0;left:0;right:0;position: fixed !important;}
+	.tlkMenuToggle{top:5px;left:0;right:0;position: fixed !important;}
 
 	.tlkTicketWrap{width:100%;max-width:1100px;height:auto;margin:0px auto 25px;display:flex;flex-wrap:nowrap;justify-content: center;padding:0px;box-sizing:border-box !important;z-index: 20;}
 	.tlkTicketMod{width:500px;height:auto;margin:40px auto;padding:0px;display:inline-block;}
@@ -50,7 +50,7 @@ page_title = "Disney Presents The Lion King | Capitol Theatre Sydney | Tickets a
 
 	.tlkTicketBtn{width:295px;height:60px;margin:10px auto 5px;padding:14px 0px;font-family:"futura-pt","Averta",  sans-serif;font-size:33px;line-height:33px;font-weight:bold;color:var(--tlk-yel);text-align:center;background:#000;box-sizing: border-box !important;}
 	.tlkGroupBtn{width:295px;height:60px;margin:10px auto 5px;padding:11px 0px;font-family:"futura-pt","Averta",  sans-serif;font-size:33px;line-height:33px;font-weight:bold;color:#000;text-align:center;background:var(--tlk-yel);border:4px solid #000;box-sizing: border-box !important;}	
-	.tlkQuote{width:500px;height:auto;margin:0px auto 50px;padding:0px;display:block;}
+	.tlkQuote{width:670px;height:auto;margin:0px auto 50px;padding:0px;display:block;}
 	.tlkQuote h1{font-family:"futura-pt","Averta",  sans-serif;font-size:42px;line-height:42px;font-weight:700;color:#000;text-align:left;margin:0px 0px 10px 0px;padding:0px 0px;}
 	.tlkQuote h2{font-family:"futura-pt","Averta",  sans-serif;font-size:29px;line-height:29px;font-weight:500;color:#000;text-align:right;margin:0px 0px;padding:0px 0px;}
 
@@ -59,6 +59,23 @@ page_title = "Disney Presents The Lion King | Capitol Theatre Sydney | Tickets a
 	#tlkVideoWrap{width:852px;margin:50px auto;padding:0px;display:block;border:4px solid #000;}
 	#tlkVideoMod{width:852px;height:480px;margin:0px auto;overflow: hidden;background:#000;}
 	#tlkVideoMod iframe{width:852px;height:480px;border:0;outline:0;}
+
+	#tlkGalleryWrap{width:100%;max-width:865px;height:auto;margin:0px auto 25px;display:flex;flex-wrap:nowrap;justify-content: center;column-gap:10px;padding:0px;box-sizing:border-box !important;z-index: 20;}
+	.tlkGalleryImg{width:200px;height:300px;margin:0px auto;display:inline-block;border:4px solid #000;cursor:pointer;transition: ease-in-out .5s all;}
+	.tlkGalleryImg img{width:100%;height:auto;}
+	.tlkGalleryImg:hover{opacity:.8;}
+
+	/*lightbox gallery*/
+	#tlkLightboxMod{width:100%;height:100%;position: fixed;bottom:0;left:0;right:0;margin:0px auto;background:rgba(0,0,0,.8);z-index:100;display:none;justify-content: center; align-items: center;}
+	#tlkLightboxGallery{width:95%;max-width:1080px;height:70vh;background:/*rgba(252,240,8,.2)*/none;margin:10px auto 0;position: relative;}
+	.tlkLbGal{width:auto;height:70vh;max-width:1080px;margin:0px auto;display:none;overflow: hidden;user-select: none;text-align: center;}
+	.tlkLbGal img{width:auto;height:100%;margin:0px;margin:0px auto;border:4px solid #000;}
+	#tlkLbThumbWrap{width:calc(1080px - 10%);height:auto;display:flex;margin:20px auto;position: absolute;bottom:-70px;right:0;left:0;flex-wrap: nowrap; flex-direction: row;justify-content: center;column-gap:15px;align-items: center;}
+	.tlkLbThumbBtn{width:60px;height:auto;margin:0px 2px;border:2px solid #000;box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.50);cursor:pointer;transition: ease-in-out opacity .5s;user-select: none;}	
+	.tlkLbThumbBtn img{width:100%;height:auto;}
+	.tlkLbThumbActive{opacity:.8;border:2px solid #fff;}
+	.tlkCloseLbBtn{width:110px;height:35px;position: absolute;right:0px;left:0;margin:0px auto;top:-35px;cursor:pointer;}
+	.tlkCloseLbBtn img{width:100%;height:auto;user-select: none;}
 
 	#tlkFooterMod{width:100%;height:auto;max-width:1000px;margin:0 auto;display:block;padding:0px 0px 40px 0px;}
 	#tlkFooterMod h1{font-family:"futura-pt","Averta",  sans-serif;font-size:34px;line-height:34px;font-weight:700;color:#000;text-align:center;margin:0px 0px 0px 0px;padding:0px 0px;}
@@ -98,6 +115,22 @@ page_title = "Disney Presents The Lion King | Capitol Theatre Sydney | Tickets a
 
 	.tlkHoriDiv{width:80%;max-width:600px;height:4px;background:#000;margin:0px auto}
 
+	#tlkGalleryWrap{width:100%;max-width:865px;height:auto;margin:0px auto 25px;display:flex;flex-wrap:wrap;justify-content: center;column-gap:0px;padding:0px;box-sizing:border-box !important;z-index: 20;}
+	.tlkGalleryImg{width:45%;height:auto;padding:0;margin:0px auto 5px;display:inline-block;border:4px solid #000;cursor:pointer;}
+	.tlkGalleryImg img{width:100%;height:auto;}
+
+	/*lightbox gallery*/
+	#tlkLightboxMod{width:100%;height:100%;position: fixed;bottom:0;left:0;right:0;margin:0px auto;background:rgba(0,0,0,.8);z-index:100;display:none;justify-content: center; align-items: center;}
+	#tlkLightboxGallery{width:95%;max-width:960px;height:auto;background:/*rgba(252,240,8,.2)*/none;margin:10px auto 0;position: relative;}
+	.tlkLbGal{width:96%;height:auto;max-width:1080px;margin:0px auto;display:none;overflow: hidden;user-select: none;text-align: center;box-sizing:border-box !important;}
+	.tlkLbGal img{width:100%;height:auto;margin:0px;margin:0px auto;border:4px solid #000;box-sizing:border-box !important;}
+	#tlkLbThumbWrap{width:90%;height:auto;display:flex;margin:20px auto;position: absolute;bottom:-70px;right:0;left:0;flex-wrap: nowrap; flex-direction: row;justify-content: center;column-gap:15px;align-items: center;}
+	.tlkLbThumbBtn{width:60px;height:auto;margin:0px 2px;border:2px solid #000;box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.50);cursor:pointer;transition: ease-in-out opacity .5s;user-select: none;}	
+	.tlkLbThumbBtn img{width:100%;height:auto;}
+	.tlkLbThumbActive{opacity:.8;border:2px solid #fff;}
+	.tlkCloseLbBtn{width:110px;height:35px;position: absolute;right:0px;left:0;margin:0px auto;top:-35px;cursor:pointer;}
+	.tlkCloseLbBtn img{width:100%;height:auto;user-select: none;}
+
 	#tlkFooterMod{width:100%;height:auto;max-width:1000px;margin:0 auto;display:block;padding:0px 0px 40px 0px;}
 	#tlkFooterMod h1{font-family:"futura-pt","Averta",  sans-serif;font-size:22px;line-height:22px;font-weight:700;color:#000;text-align:center;margin:0px 0px 0px 0px;padding:0px 0px;}
 	#tlkFooterMod a{text-decoration: none;color:#000}
@@ -108,7 +141,23 @@ page_title = "Disney Presents The Lion King | Capitol Theatre Sydney | Tickets a
 	#tlkVideoMod{width:100%;height: 0px;padding-top:56.25%;margin: auto; position:relative;display: block !important;box-sizing: border-box !important;overflow: hidden;}
 	#tlkVideoMod iframe{position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 0;}	
 	}
-	
+/*css animation*/
+	@keyframes enlarge{
+		from{background-size:auto 100%;background-position:center center;}
+		to{background-size:auto 110%;background-position:center center;}
+	}
+	@keyframes shrink{
+		from{background-size:auto 110%;background-position:center center;}
+		to{background-size:auto 100%;background-position:center center;}
+	}
+	@keyframes fadeIn{
+		from{opacity:0;}
+		to{opacity:1;}
+	}
+	@keyframes fadeOut{
+		from{opacity:1;}
+		to{opacity:0;}
+	}
 </style>
 
  
@@ -124,8 +173,8 @@ page_title = "Disney Presents The Lion King | Capitol Theatre Sydney | Tickets a
 	<div id="tlkTicketMod" class="tlkTicketWrap">
 		<!--sydney-->
 		<div class="tlkTicketMod">
-			<h1>CAPITOL THEATRE, SYDNEY</h1>
-			<h2>OPENS APRIL 2026<br /></h2>
+			<h1>CAPITOL THEATRE</h1>
+			<h2>FROM APRIL</h2>
 			<a href="https://www.ticketmaster.com.au/disney-presents-the-lion-king-australia-tickets/artist/21441"><div class="tlkTicketBtn">BOOK NOW</div></a>
 		</div>
 
@@ -158,10 +207,17 @@ page_title = "Disney Presents The Lion King | Capitol Theatre Sydney | Tickets a
 
 	</div>
 	<!--video-->
-	<div id="tlkVideoWrap"><div id="tlkVideoMod"><iframe src="https://www.youtube.com/embed/skVcKlNRfZw?si=OMJhmzW5OJH0jOyC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div>
+	<div id="tlkVideoWrap"><div id="tlkVideoMod"><iframe src="https://www.youtube.com/embed/8X5mmRxvlw4?si=rLxnIhEI9mUmD4hY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div>
+	<!--gallery-->
+	<div id="tlkGalleryWrap"> 
+				<div class="tlkGalleryImg" data-gallery="1"><img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_gal_thmb_01.jpg"></div>
+				<div class="tlkGalleryImg" data-gallery="2"><img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_gal_thmb_02.jpg"></div>
+				<div class="tlkGalleryImg" data-gallery="3"><img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_gal_thmb_03.jpg"></div>
+				<div class="tlkGalleryImg" data-gallery="4"><img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_gal_thmb_04.jpg"></div>
+	</div>	
 	<!--footer-->
 	<div id="tlkFooterMod">
-			<h1>@thelionkingau</h1>
+			<!--<h1>@thelionkingau</h1>-->
 		<div class="tlkFooterWrap">
 			<a href="https://www.facebook.com/TheLionKing" target="_blank"><img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_ig_ico.svg" alt="Facebook"></a>
 			<a href="https://www.instagram.com/thelionkingau/" target="_blank"><img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_fb_ico.svg" alt="Instagram"></a>
@@ -172,7 +228,26 @@ page_title = "Disney Presents The Lion King | Capitol Theatre Sydney | Tickets a
 	</div>
 
 </div>
-
+<!--lightbox content-->
+<div id="tlkLightboxMod">
+	<!--gen gallery-->
+	<div id="tlkLightboxGallery">
+		<!--qk buttons-->
+		<div class="tlkCloseLbBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/beautyandthebeast/batb_close_w_btn.svg" alt="CLOSE X"></div>
+		<!--gallery-->
+		<div data-galleryLb="1" class="tlkLbGal"><img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_gal_01.jpg"></div>
+		<div data-galleryLb="2" class="tlkLbGal"><img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_gal_02.jpg"></div>
+		<div data-galleryLb="3" class="tlkLbGal"><img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_gal_03.jpg"></div>
+		<div data-galleryLb="4" class="tlkLbGal"><img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_gal_04.jpg"></div>
+		<!--thumbnail menu-->
+		<div id="tlkLbThumbWrap">
+			<div data-gallery="1" class="tlkLbThumbBtn tlkLbThumbBtn-01"><img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_gal_01.jpg"></div>
+			<div data-gallery="2" class="tlkLbThumbBtn tlkLbThumbBtn-02"><img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_gal_02.jpg"></div>
+			<div data-gallery="3" class="tlkLbThumbBtn tlkLbThumbBtn-03"><img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_gal_03.jpg"></div>
+			<div data-gallery="4" class="tlkLbThumbBtn tlkLbThumbBtn-04"><img src="https://s1.ticketm.net/tm/en-au/img/static/thelionking/2025/tlk_gal_04.jpg"></div>
+		</div>		
+	</div>
+</div>
 <script type="text/javascript">
 var $j = jQuery.noConflict();	
 $j("#tlkMenu button").click(
@@ -189,6 +264,46 @@ $j(document).scroll(function() {
     } else {
 		$j("#tlkMenu").removeClass("tlkMenuToggle");
     }
-});			
+});
+//gallery pop ups
+$j(".tlkGalleryImg").click(
+	function(){
+		galleryTarget = $j(this).data('gallery');
+		$j("#tlkLightboxMod").fadeIn(1000).css("display","flex");
+		$j(".tlkLbGal[data-galleryLb="+ galleryTarget +"]").fadeIn(1000);
+		$j(".tlkLbThumbBtn").removeClass("tlkLbThumbActive");
+		$j(".tlkLbThumbBtn[data-gallery="+ galleryTarget +"]").addClass("tlkLbThumbActive");
+});
+$j(".tlkLbThumbBtn").click(
+	function(){
+		galleryTarget = $j(this).data("gallery")
+		$j(".tlkLbGal").fadeOut(0)
+		$j(".tlkLbThumbBtn").removeClass("tlkLbThumbActive");
+		$j(".tlkLbGal[data-galleryLb="+ galleryTarget +"]").fadeIn(0);
+		$j(".tlkLbThumbBtn[data-gallery="+ galleryTarget +"]").addClass("tlkLbThumbActive");
+
+	});
+
+$j(".tlkCloseLbBtn").click(
+	function(){
+		resetGallery()
+});
+//close on lb background click
+$j(document).on('click', '#tlkLightboxMod', function (e) {
+
+if ($j(e.target).closest('.tlkCloseLbBtn').length !== 0 )
+{return true}
+else if ($j(e.target).closest('#tlkLightboxGallery').length !== 0 )
+{return false;}
+resetGallery()
+});
+
+function resetGallery(){
+	galleryTarget = 0
+	$j(".tlkLbThumbBtn").removeClass("tlkLbThumbActive");
+	$j(".tlkLbGal").fadeOut(0)
+	$j("#tlkLightboxMod").fadeOut(500)
+};
+
 </script>
 [% PROCESS "layout/frame/bottom.tt" %]
