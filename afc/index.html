@@ -2,8 +2,8 @@
 page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast Stadium, Stadium Australia, Perth Stadium, Perth Rectangular Stadium, Western Sydney Stadium. Official Ticketmaster Site" %]
 [% static_has_responsive_header_footer = 1; enable_leader_board = 0; force_disable_nav_paypal_branding = 1;%]
 [% PROCESS "layout/frame/top.tt" %]
-<!--cut for on sale----->
- <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />
+<!--cut for on sale--
+ <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />--->
  <!--delete for on sale-->
 <!--libs--->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -180,9 +180,10 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacAnnounce{width:100%;max-width:1350px;height:auto;border-radius:10px;padding:0px;margin:20px auto;display:flex;background:var(--wac-lgrey);box-sizing: border-box !important;position:relative;overflow:hidden;}
 	
 	.wacAnnounceHero{width:35%;height:auto;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac26_AnnounceHero_530x340@1.jpg') center center no-repeat;background-size:cover;box-sizing: border-box !important;}
-	.wacAnnounceWrap{width:65%;height:auto;margin:0;padding:40px 20px;display:inline-block;box-sizing: border-box !important;}
+	.wacAnnounceWrap{width:100%;height:auto;margin:0;padding:40px 20px;display:flex;align-content: flex-start;flex-wrap: nowrap;justify-content: space-around;align-items: flex-start;box-sizing: border-box !important;}
+	.wacAnnounceWrap span{width:30%;height:auto;margin:0;display:inline-block;}
 	.wacAnnounceWrap h1{font-family:"ClashDisplay","Averta",fallback;font-size:29px;line-height:32px;font-weight:700;text-align:left;color:#000;margin:0;padding:0 0px 20px 0px;}
-	.wacAnnounceWrap p{font-family:"ClashDisplay","Averta",fallback;font-size:20px;line-height:20px;font-weight:normal;text-align:left;color:#000;margin:0;padding:0 ;}
+	.wacAnnounceWrap p{font-family:"ClashDisplay","Averta",fallback;font-size:18px;line-height:18px;font-weight:normal;text-align:left;color:#000;margin:0;padding:0 ;}
 	.wacAnnounceWrap em{font-size: 14px !important;}
 	/*event counter*/
 	#wacPubSubHeader,#wacHospSubHeader{display:flex;justify-content: space-between;}
@@ -1122,7 +1123,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 		<!--counter and date sort-->
 		<div id="wacHospSubHeader">
 			<div id="wacHospCounter"><div class="waCounterWrap"><div id="wacHospEventCount"></div><p> / </p><div id="wacHospEventCountTotal"></div></div><p>&nbsp; events shown</p></div>
-		
+
 			<!--sort menu-->
 			<div id="wacHospSortMenu">
 					<div class="wacSortBtn">Sort Events:</div> 
@@ -1137,6 +1138,40 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 
 		<!--Hosp Events-->
 		<div class="wacTextHeader"><h1>HOSPITALITY PACKAGES</h1><div class="wacTextUnderlinePnk"></div></div>
+				<!--notices---->
+		<div id="wacAnnounce" class="wacAnnounce"><div class="wacCloseAnnounceBtn"></div>
+			<div class="wacAnnounceWrap">
+				<span>
+					<h1>MATCH CLUB</h1>
+					<p>Deep v succulents jean shorts blue bottle aesthetic, cronut green juice everyday carry poke praxis edison bulb tbh 8-bit microdosing man braid. Swag actually cliche +1 chia, migas etsy gluten-free.
+					<br /><br />	
+					&bull; Cold-pressed butcher mumblecore<br />
+					&bull; Cold-pressed butcher mumblecore<br />
+					&bull; Cold-pressed butcher mumblecore<br />
+					</p>
+				</span>
+				<span>
+					<h1>MATCH OPEN BOX</h1>
+					<p>
+					Master cleanse paleo freegan, everyday carry lomo iPhone normcore readymade. Flexitarian retro beard, edison bulb leggings tumblr knausgaard hot chicken 8-bit vegan whatever actually fixie chia.
+					<br /><br />	
+					&bull; Cold-pressed butcher mumblecore<br />
+					&bull; Cold-pressed butcher mumblecore<br />
+					&bull; Cold-pressed butcher mumblecore<br />
+					</p>
+				</span>
+				<span>
+					<h1>MATCH PRIVATE SUITE</h1>
+					<p>Swag actually cliche +1 chia, migas etsy gluten-free. Offal blackbird spyplane vexillologist pitchfork copper mug umami chillwave succulents. Pop-up etsy umami pabst blog intelligentsia la croix woke hexagon celiac vexillologist pok pok biodiesel jean shorts.
+					<br /><br />	
+					&bull; Cold-pressed butcher mumblecore<br />
+					&bull; Cold-pressed butcher mumblecore<br />
+					&bull; Cold-pressed butcher mumblecore<br />	
+
+					</p>
+				</span>
+			</div>
+		</div>
 		<div id="wacHospEventStream"> 
 			<!--error span-->
 			<div id="wacHospEventErrors">
@@ -1334,8 +1369,17 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 									let eventDate04 = eventDateMulti[3];
 									let sortDate04 = sortDateMapper(eventDate04)
 									let eventDate05 = eventDateMulti[4];							
-									let sortDate05= sortDateMapper(eventDate05)																					
-									 eventDateSpan = $j("<div class='wacCardDateMulti'><div class='wacCardDateIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_w_ico.svg'></div><div class='wacCardDateCount'>"+eventDateCardCount+"</div>Multiple Dates <div class='wacCardDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_arrow_down_w_ico.svg'></div><div id='"+event.event_name+"-datedown' class='wacCardDateMultiWrap wacCardMenuOff'><div data-menudate="+sortDate01+" class='wacCardDate wac"+eventDate01+"Date'>"+dateMapper(eventDate01)+"</div><div data-menudate="+sortDate02+" class='wacCardDate wac"+eventDate02+"Date''>"+dateMapper(eventDate02)+"</div><div data-menudate="+sortDate03+" class='wacCardDate wac"+eventDate03+"Date''>"+dateMapper(eventDate03)+"</div><div data-menudate="+sortDate04+" class='wacCardDate wac"+eventDate04+"Date''>"+dateMapper(eventDate04)+"</div><div data-menudate="+sortDate05+" class='wacCardDate wac"+eventDate05+"Date''>"+dateMapper(eventDate05)+"</div></div></div><div class='wacEventsInc'><p>"+eventCodeCount+" Events Included</p></div></div>")
+									let sortDate05= sortDateMapper(eventDate05)
+									let eventDate06 = eventDateMulti[5];							
+									let sortDate06= sortDateMapper(eventDate06)										
+									let eventDate07 = eventDateMulti[6];							
+									let sortDate07= sortDateMapper(eventDate07)										
+									let eventDate08 = eventDateMulti[7];							
+									let sortDate08= sortDateMapper(eventDate08)	
+									let eventDate09 = eventDateMulti[8];							
+									let sortDate09= sortDateMapper(eventDate09)	
+
+									 eventDateSpan = $j("<div class='wacCardDateMulti'><div class='wacCardDateIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_cal_w_ico.svg'></div><div class='wacCardDateCount'>"+eventDateCardCount+"</div>Multiple Dates <div class='wacCardDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_arrow_down_w_ico.svg'></div><div id='"+event.event_name+"-datedown' class='wacCardDateMultiWrap wacCardMenuOff'><div data-menudate="+sortDate01+" class='wacCardDate wac"+eventDate01+"Date'>"+dateMapper(eventDate01)+"</div><div data-menudate="+sortDate02+" class='wacCardDate wac"+eventDate02+"Date''>"+dateMapper(eventDate02)+"</div><div data-menudate="+sortDate03+" class='wacCardDate wac"+eventDate03+"Date''>"+dateMapper(eventDate03)+"</div><div data-menudate="+sortDate04+" class='wacCardDate wac"+eventDate04+"Date''>"+dateMapper(eventDate04)+"</div><div data-menudate="+sortDate05+" class='wacCardDate wac"+eventDate05+"Date''>"+dateMapper(eventDate05)+"</div><div data-menudate="+sortDate06+" class='wacCardDate wac"+eventDate06+"Date''>"+dateMapper(eventDate06)+"</div><div data-menudate="+sortDate07+" class='wacCardDate wac"+eventDate07+"Date''>"+dateMapper(eventDate07)+"</div><div data-menudate="+sortDate08+" class='wacCardDate wac"+eventDate08+"Date''>"+dateMapper(eventDate08)+"</div><div data-menudate="+sortDate09+" class='wacCardDate wac"+eventDate09+"Date''>"+dateMapper(eventDate09)+"</div></div></div><div class='wacEventsInc'><p>"+eventCodeCount+" Events Included</p></div></div>")
 								}	
 							//button span							
 							let eventBotSpan = $j("<div class='wacCardBotWrap'><div class='wacCardInfoWrap'><div class='wacCardPrice'><p>"+event.price_from_desc+"</p><h1>$"+event.price_from+"</h1></div><div class='wacPriceDiv'></div><div class='wacCardInfoBtn'>MORE INFO</div></div><a href='"+event.buy_link+"'><div class='wacCardTicketBtn wacCardClubBtn'>"+event.button_text+"</div></a></div></div>");		
