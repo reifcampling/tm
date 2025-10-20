@@ -1,0 +1,1873 @@
+[% # text to be displayed within <title></title>
+page_title = "Australian Motorcycle Grand Prix 2025, Buy Tickets, Ticketmaster Australia" %]
+[% static_has_responsive_header_footer = 1; enable_leader_board = 0; %]
+[% PROCESS "layout/frame/top.tt" %]
+
+	
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.typekit.net/nts7wbf.css">
+<link href="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/font/gotham2.css" type="text/css" rel="stylesheet" />
+<link href="https://s1.ticketm.net/tm/en-au/img/static/fonts/averta.css" type="text/css" rel="stylesheet" />
+
+<style type="text/css">
+	:root {
+		--moto-blue:#286ee6;
+		--moto-black:#15151e;
+	  }
+@media only screen and (min-width: 0px) and (max-width: 999.99px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE !!!! IMPORTANT*/ 
+}
+@media only screen and (min-width: 1000px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE !!!! IMPORTANT*/ 
+	}
+#contentWrap, #mainContent {
+    background-color: #fff;overflow: visible;padding:0 !important;}
+	body{background:#fff;}
+	.page__wrapper-footer{z-index: 100;}
+
+/*desktop */	
+@media only screen and (min-width: 1000px){
+	/*TM HEADER */
+	#tmHeader{width:100%;height:auto;background:#026cdf;padding:25px 20px 55px;margin:0px auto 20px;box-sizing:border-box;display:block;position: relative;}
+	#tmLogo{width:220px;height:auto;display:inline-block;float:left;}
+	#tmLogo img{width:100%;height:auto;padding:0;margin:0px auto;}
+	#tmSearch{width:450px;height:35px;margin:0px auto;padding:7px 0px 0px 0px;display:inline-block;float:right;background:#004da1;border-radius:20px;color:#fff;font-family:"Open Sans","Averta",  sans-serif ;font-size:16px;font-weight: 300;text-align: center;box-sizing:border-box;}
+	#motogpContent{background-color: #fff;width:100%;height:auto;overflow:visible;padding:0px;margin:0px auto;position: relative;font-family:"Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 12px;}
+/*menu */
+	#motogpMenu{width:100%;height:auto;position:fixed;left:0;right:0;top:0;background:var(--moto-blue);padding:0px 0px;margin:0px 0px 0px 0px;box-sizing:border-box !important;overflow:visible;z-index:100;text-align: center;display:none;border-bottom: 2px solid #fff;}
+	#motogpMenuLogo{width:90px;height:auto;margin:10px 40px;display:inline-block;float:left;}
+	#motogpMenuLogo img{width:100%;height:auto;}	
+	.motogpMenuWrap{width:calc(40% - 45px);height:auto;margin:0px auto;padding:0px;display:inline-block;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 28px;font-weight:normal;color:#fff;text-align: left;}
+	.motogpMenuWrap h1{font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 24px;font-weight:900;color:#fff;text-align: left;padding:0;margin:10px 0px 0px 0px;}
+	#motogpMenu button{padding:0;border:0px;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 28px;font-weight:900;color:#fff;background:transparent;cursor:pointer;}
+	#motogpMenuToggle{display:none;}
+	
+	#motogpHeader{width:100%;height:750px;position: relative;margin:0px auto;padding:1px;background:url("https://s1.ticketm.net/tm/en-au/img/static/motogp/2026/moto26_header_placeholder.jpg") top center no-repeat, #fff;background-size:cover;box-sizing:border-box!important;text-align: center;z-index:20;}	
+	/*#motogpHeader img{width:100%;height:auto;margin:0;}*/
+	#motogpLogo{width:300px;height:auto;margin:0px auto;position: absolute;top:20px;left:20px;display:block;/*transform: translate(-400px, calc(50% + 30px))*/;box-sizing:border-box !important;border-radius:10px;overflow:hidden;}
+	#motogpLogo img{width:100%;height:auto;border-radius:10px}
+
+	#motoPattern{width:100vw;height:100vh;position: fixed;background:url("https://s1.ticketm.net/tm/en-au/img/static/motogp/2025/moto25_pattern_img.svg") no-repeat, transparent;background-size:100% auto;background-position:bottom right;bottom:0%;right:-50%;z-index:1;opacity:.2;}
+
+	/*info selection mod*/
+	#motogpInfo{width:850px;height:210px;background:#fff;position:relative;margin:-100px auto 320px;box-sizing:border-box !important;text-align: center;box-shadow:0px -10px 10px 0px rgb(0 0 0 / 20%);border-radius:15px;padding:15px 0px;z-index:20;}
+	#motogpInfo h1{font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 34px;font-weight:900;color:#15151e;text-align: center;margin:40px auto}
+	.motogpInfoSpan{width:100%;height:auto;display:flex;flex-wrap: wrap;justify-content: space-evenly;}
+	/*main info mods*/
+	.motogpInfoMod{width:350px;height:150px;background:#fff;margin:0px 0px 20px 0px;border-radius:5px;box-sizing: border-box !important;box-shadow:0px 8px 10px 0px rgb(0 0 0 / 20%);padding:0;display:inline-block;cursor:pointer; z-index: 22;} 
+	.motogpInfoMod .motogpInfoHero{width:150px;height:150px;display:inline-block;margin:-10px 0px 0px -10px;padding:0px;overflow:hidden;border-radius:5px;box-shadow:0px 8px 10px 0px rgb(0 0 0 / 20%);}
+	.motogpInfoHero img{width:100%;height:auto;}
+	.motogpInfoMod .motogpInfoBtn{width:160px;font-family: "Gotham", "dharma-gothic-e", "Averta",Fallback, sans-serif;font-size: 16px;font-weight:900;color:#fff;background:var(--moto-blue);text-transform: uppercase;border-radius:20px;padding:5px 0px;box-sizing: border-box !important;margin:10px auto;vertical-align: top;display:block;}
+	.motogpInfoMod h2{height:auto;width:100%;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 22px;line-height: 22px;font-weight:900;color:#15151e;text-align: left;padding:20px 0px 0px 20px;margin:0px auto;display:block;box-sizing: border-box !important;}
+	.motogpInfoMod .motogpInfoWrap{width:calc(100% - 150px);height:auto;display:inline-block;margin:0px;padding:0px;box-sizing:border-box !important;vertical-align: top;}
+	/*alt info mods*/
+	.motogpInfoModAlt{width:225px;height:100px;background:#fff;margin:0px 0px 0px 0px;border-radius:5px;box-sizing: border-box !important;box-shadow:0px 8px 10px 0px rgb(0 0 0 / 20%);padding:0;display:inline-block;cursor:pointer; z-index: 22;} 
+	.motogpInfoModAlt .motogpInfoHero{width:100px;height:100px;display:inline-block;margin:-10px 0px 0px -10px;padding:0px;overflow:hidden;border-radius:5px;box-shadow:0px 8px 10px 0px rgb(0 0 0 / 20%);}
+	.motogpInfoModAlt .motogpInfoBtn{width:30px;height:30px;background:var(--moto-blue);border-radius:20px;padding:0px 0px;box-sizing: border-box !important;margin:5px auto 5px;display:block;}
+	.motogpInfoModAlt .motogpInfoBtn img{width:100%;height:auto;}	
+	.motogpInfoModAlt h2{height:auto;width:100%;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 16px;line-height: 16px;font-weight:900;color:#15151e;text-align: center;padding:10px 0px 0px 10px;margin:0px auto;display:block;box-sizing: border-box !important;}
+	.motogpInfoModAlt .motogpInfoWrap{width:calc(100% - 100px);height:auto;display:inline-block;margin:0px;padding:0px 0px 0px 0px;box-sizing:border-box !important;vertical-align: top;}
+
+	/**/
+	.motogpRegBtn{width:260px;font-family: "Gotham", "dharma-gothic-e", "Averta",Fallback, sans-serif;font-size: 18px;font-weight:900;color:#fff;background:var(--moto-blue);text-transform: uppercase;border-radius:20px;padding:10px 0px;box-sizing: border-box !important;margin:20px auto;display:block;}
+	.motogpInfoModDiv{width:60%;height:2px;background:var(--moto-blue);margin:-10px auto 0px;display:block;padding:1px;transition: ease-in-out .5s;}
+	.motogpInfoMod:hover .motogpInfoModDiv, .motogpInfoModAlt:hover .motogpInfoModDiv{width:90%;}
+	/*sub header*/
+	.motogpSubHeader{width:100%;height:250px;margin:50px auto 100px;background:url("https://s1.ticketm.net/tm/en-au/img/static/motogp/2025/moto25_header_banner.jpg") center -200px no-repeat, var(--moto-blue);background-size:cover;padding:0px 0px 0px 0px;overflow:hidden;box-sizing:border-box !important;position: relative;}
+	.motogpSubHeaderCover{width:100%;height:250px;margin:0 auto;position: absolute;top:0;right:0;left:0;background:rgba(40, 110, 230, .4);z-index: 20;}	
+	.motogpSubHeader h1{font-family:"Gotham",  "dharma-gothic-e", "Averta",Fallback, sans-serif;font-size: 80px;font-weight:900;text-align: center;color:#fff !important;text-transform: uppercase;position:relative; z-index: 22;margin:81px auto;padding:0px;}
+	/*selection area*/
+	#motogpTicketSelectMod, #motogpExtraMod, #motogpPackagesMod{width:100%;height:auto;background:transparent;position:relative;margin:80px auto 80px;box-sizing:border-box !important;z-index: 20;}
+
+	.motogpSelectWrap{max-width:1000px;width:100%;height:auto;display:block;margin:0px auto;vertical-align: top;z-index: 20;}
+	.motogpSelectDay{width:99%;height:140px;background:#fff;margin:20px auto 10px;box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 20%);position: relative;box-sizing:border-box !important;padding:15px 15px;cursor:pointer;transition: ease-in-out .4s;border-radius:15px;}
+	.motogpSelectDay h2{width:195px;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 25px;font-weight:900;line-height:36px;color:#15151e;text-align: left;margin:16px 0px 0px 0px;display: inline-block;vertical-align: top;}
+	.motogpSelectDay h4{width:195px;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 25px;font-weight:900;line-height:25px;color:#15151e;text-align: left;margin:16px 0px 0px 0px;display: inline-block;vertical-align: top;}
+	.motogpSelectDay h3{width:195px;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 23px;font-weight:900;line-height:25px;color:#15151e;text-align: left;margin:38px 0px 0px 0px;display: inline-block;vertical-align: top;}
+	.motoInfoWrap, .motoInfoWrapLong{width:600px;height:auto;display:inline-block;vertical-align: top;margin:10px 0px 0px 0px;padding:0px  15px;box-sizing:border-box !important;}
+	.motogpSelectDay p{width:480px;font-family: "Averta", Fallback, sans-serif;font-size: 15px;color:#15151e;text-align: left;display:inline-block;margin:0px;padding:10px 0px 0px 0px;line-height: 17px;box-sizing:border-box !important;}
+	.motoInfoWrapLong p{width:620px;font-family: "Averta", Fallback, sans-serif;font-size: 15px;color:#15151e;text-align: left;display:inline-block;margin:0px;padding:10px 0px 0px 0px;line-height: 17px;box-sizing:border-box !important;}
+	.motogpSelectDay:hover{width:100%;box-shadow: 0px 6px 12px 2px rgb(0 0 0 / 25%)}
+	.motogpSelectBtn{width:120px;height:140px;position: absolute;right:0px;top:0px;background:var(--moto-blue);border-radius:0px 15px 15px 0px;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 20px;font-weight:900;color:#fff;text-align: center;padding:25px 0px 0px 0px;box-sizing:border-box !important;text-transform: uppercase;}
+	.motogpSelectBtn img {width:40px;height:auto;margin:0px auto 5px;display:block;}
+	.motogpSoonBtn{background:#15151e !important;}
+	.motogpSelectMap{width:150px;height:140px;display:block;margin:0px auto;position: absolute;right:125px;top:0px;padding:30px 0px 0px 0px;box-sizing:border-box !important;}
+	.motogpSelectMap img{width:100%;height:auto;display:block;margin:0px auto;}
+	.motogpVertDiv{width:4px;height:100px;margin:5px 0px;display:inline-block;background:var(--moto-blue);border-radius:2px;}
+	/*tags*/
+	.motoTagWrap{width:990px;height:24px;margin:0px auto;padding:0px 120px 0px 200px;box-sizing:border-box !important;position:absolute;top:-12px;left:0px;right:0px;}
+	.motogpTag{width:auto;height:auto;padding:4px 8px 4px 8px;margin:0px 2px 1px 2px;position:relative;border-radius:3px;box-sizing:border-box !important;font-family: "Averta", Fallback, sans-serif;font-size: 12px;font-weight:normal;color:#fff;text-align: center;vertical-align: top;}
+	.motoAvailTag{background:var(--moto-blue);display:none;}
+	.motoPremiumTag{background:#6a98e6;display:inline-block;}
+	.motoLocationTag{background:#403e3e;display:inline-block;}
+	.motoTicketTag{background:#15151e;display:inline-block;}
+	.motoAcessibleTag{background:#5a5a5a;display:inline-block;}
+	.motoAvailTagSpan{width:100%;height:25px;text-align: center;margin:5px auto;padding:0px;box-sizing:border-box !important;}
+	.motoAvailTagSpan .FEW_TICKETS_LEFT, .motoAvailTagSpan .TICKETS_NOT_AVAILABLE{width:90% !important;}
+	.FEW_TICKETS_LEFT{ display:inline-block !important;}
+	.FEW_TICKETS_LEFT:after{content:"Selling Fast";}	
+	.TICKETS_NOT_AVAILABLE{display:inline-block !important;}
+	.TICKETS_NOT_AVAILABLE:after{content:"Limited / No Availability";}
+	.TICKETS_AVAILABLE{display:none;}
+	/*grandstand pages*/
+
+	.motogpGrandstand, .motogpProduct{max-width:1000px;width:100%;height:auto;display:block;margin:100px auto;display:block;;z-index: 20;}
+	.motogpGrandstand{display:none;}	
+	.motogpGrandstandWrap{width:495px;height:auto;display:inline-block;margin:0px auto;vertical-align: top;}
+	.motogpFullWidthWrap{width:1000px;height:auto;display:block;margin:0px auto;vertical-align: top;}
+	.motogpGrandstandWrap a, .motogpFullWidthWrap a{text-decoration: none;color:var(--moto-blue);}
+	.motogpGrandstand h1, .motogpProduct h1{font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 60px;font-weight:900;color:#15151e;text-align: left;padding:0px;margin:0px;}
+	.motogpGrandstand h2, .motogpProduct h2{font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 38px;font-weight:400;color:var(--moto-blue);text-align: left;padding:0px;margin:0px;}
+	.motogpGrandstand p, .motogpProduct p, .motogpFullWidthWrap{font-family: "Averta", Fallback, sans-serif;font-size: 18px;color:#15151e;text-align: left;padding:10px 10px 10px 0px;margin:10px auto;box-sizing:border-box !important;}
+	.motogpGrandstand sup, .motogpProduct sup{font-size: 14px;}
+	.motogpGrandstand h4{font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;font-size: 30px;color:#15151e;text-align: left;padding:0px;margin:0px 0px -40px 0px;}
+	.motogpGrandstandInfo{width:100%;height:auto;margin:-15px 0px 0px 20px;background:#fff;display:block;position:relative;z-index:21;box-shadow: 0px 10px 10px 0px rgb(0, 0, 0 , 20%);padding:30px;box-sizing:border-box !important;border-right:8px solid var(--moto-blue);border-radius:6px;}
+	.motogpGrandstandInfo p{font-family: "Averta", Fallback, sans-serif;font-size: 16px;color:#15151e;text-align: left;padding:0px;margin:10px auto;}
+	.motogpGrandstandHero, .motogpGrandstandHero img{margin:0px auto;height:auto;width:100%;}
+	.motogpGrandstandDiv{width:70%;height:4px;margin:30px 0px 30px -30px;display:block;background:var(--moto-blue);border-radius:2px;}
+
+	/*extras sub menu*/
+	.motogpExtraWrap{max-width:1000px;width:100%;height:auto;display:block;margin:0px auto;vertical-align: top;z-index: 20;}
+	.motogpInfoSubMod{width:310px;height:auto;background:#fff;margin:10px;display:inline-block;border-radius:5px;box-sizing: border-box !important;box-shadow:0px 4px 10px 0px rgb(0 0 0 / 20%);cursor:pointer;padding:0px 0px 5px 0px;}
+	.motogpInfoSubMod h2{font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 22px;font-weight:900;color:#15151e;text-align: center;padding:10px 0px 0px 0px;margin:0px auto;vertical-align: top;display:block;box-sizing: border-box !important;}
+	.motogpInfoSubMod h3{font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;font-size: 22px;font-weight:900;color:#15151e;text-align: center;padding:10px 0px 0px 0px;margin:0px auto;vertical-align: top;display:block;box-sizing: border-box !important;}
+	.motogpInfoSubBtn{width:160px;font-family: "Gotham", "dharma-gothic-e", "Averta",Fallback, sans-serif;font-size: 16px;font-weight:900;color:#fff;background:var(--moto-blue);text-transform: uppercase;border-radius:20px;padding:5px 0px;box-sizing: border-box !important;margin:10px auto;vertical-align: top;display:block;text-align: center;}
+	.motogpInfoTermsBtn{width:280px;font-family: "Gotham", "dharma-gothic-e", "Averta",Fallback, sans-serif;font-size: 16px;font-weight:900;color:#fff;background:var(--moto-blue);text-transform: uppercase;border-radius:20px;padding:5px 0px;box-sizing: border-box !important;margin:10px 0px;display:block;text-align: center;}
+	.motogpInfoSubMod:hover .motogpInfoModDiv{width:250px;}	
+	
+	.motogpBtnWrap{width:100%;height:auto;padding:0;margin:50px 0px 50px 0px;z-index:40;position: relative;}
+	.motogpDayMod{width:195px;height:auto;display:inline-block;background:#15151E;padding:0px 0px;margin:10px 0px 0px 0px;box-sizing: border-box !important;overflow:hidden;transition: ease-in-out .7s;cursor:pointer }
+	.motogp3DayMod{width:300px;height:auto;display:block;background:#15151E;padding:0px 0px;margin:10px 0px 0px 0px;box-sizing: border-box !important;overflow:hidden;transition: ease-in-out .7s;cursor:pointer ;border-radius:15px;}
+	.motogpLeftBrd{border-radius:15px 0px 0px 15px;}
+	.motogpRightBrd{border-radius:0px 15px 15px 0px;}
+	.motogpBtnWrap a:first-child .motogpDayMod{border-radius:15px 0px 0px 15px;overflow: hidden;}
+	.motogpBtnWrap a:last-child .motogpDayMod{border-radius:0px 15px 15px 0px;overflow: hidden;}
+	.motogpBtnWrap a:not(first-child) .motogpDayMod{margin:0px 1px 0px 0px;}
+	
+	.motogpMultiDayMod{width:300px;height:auto;display:block;border-radius:15px;background:#15151E;padding:0px 0px 0px 0px;margin:10px 0px 0px 0px;box-sizing: border-box !important;overflow:hidden;transition: ease-in-out .7s;cursor:pointer }
+	.motogpBtnWrap a{text-decoration: none;}
+	.motogpDayMod h2, 	.motogpMultiDayMod h2, .motogp3DayMod h2{text-align: left; font-size:25px;font-weight:400;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;color:#fff;padding:10px 10px 10px 20px;margin:0;text-transform: uppercase;}	
+	.motogpDayMod:hover, 	.motogpMultiDayMod:hover{background:var(--moto-blue);}	
+	.motogpDayBtn{width:100%;padding:5px 0px 10px 20px;height:auto;background:transparent;position: relative;margin:0px auto;box-sizing: border-box !important;text-align: left;box-sizing: border-box !important;}
+	.motogpDayBtn h1{text-align:left;padding:0px 5px 0px 0px;height:auto;color:#fff;font-size:40px;font-weight:900;font-family: "Gotham", "dharma-gothic-e", "Open Sans", Fallback, sans-serif;margin:0px auto;box-sizing: border-box !important;display:inline-block;}
+	.motogpDayBtn h3{text-align:left;padding:0px 0px 25px 0px;height:auto;color:#fff;font-size:22px;font-weight:900;font-family:"Gotham", "dharma-gothic-e", "Open Sans", Fallback, sans-serif;margin:0px auto;box-sizing: border-box !important;display:inline-block;text-transform: uppercase;}	
+
+	.motogpHero{border-radius:15px;position: relative;display:block;z-index:20;overflow:visible;background-size:contain;box-shadow: 0px 10px 10px 0px rgb(0, 0, 0 , 20%);}
+	.motogpHero img{width:100%;height:auto;border-radius:15px;position: relative;display:block;z-index:20;}
+	.motogpBtn{height:auto;border-radius:25px;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 16px;color:#fff;text-align: center;background:var(--moto-blue);padding:10px 5px;}
+	/*package area*/
+	.motogpPackageWrap{max-width:1000px;width:100%;height:auto;display:block;margin:0px auto;vertical-align: top;z-index: 20;text-align: center;}
+	.motogpPackageWrap p{font-family: "Averta", Fallback, sans-serif;font-size: 18px;line-height: 20px;color:#15151e;text-align: left;display:block;margin:0px;padding:20px 0px 20px 0px;box-sizing:border-box !important;}
+	.motogpPackageCard{width:450px;height:335px;display:inline-block;margin:10px 5px;padding:25px;box-sizing:border-box !important;vertical-align: top;background:#fff;box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 20%);border-radius:15px;position: relative;user-select:none;cursor:pointer;}
+	.motogpPackageCard h2{font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 25px;font-weight:900;line-height:25px;color:#15151e;text-align: left;margin:16px 0px 0px 0px;padding:0px;display:block;}
+	.motogpPackageCard h3{font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 20px;font-weight:700;line-height:20px;color:var(--moto-blue);text-align: left;margin:10px 0px 0px 0px;padding:0px;display:block;}
+	.motogpHoriDiv{width:70%;height:4px;display:block;margin:20px 0px 0px 0px;background:var(--moto-blue);}
+	.motogpPackBtn{width:100%;height:50px;position: absolute;right:0px;left:0px;bottom:0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg') no-repeat, var(--moto-blue);background-size:40px;background-position:right 95px top 7px;border-radius:0px 0px 15px 15px;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 20px;font-weight:900;color:#fff;text-align: center;padding:13px 30px 13px 0px;box-sizing:border-box !important;text-transform: uppercase;}
+	/*hide show on mobile*/
+	.motogpMobHero{display:none;}
+	.motogpHeroWrap{display:inline-block;}
+	
+	.hideDesktop{display:none;}
+	/*filters*/
+	#motoFiltersMenu{width:100%;max-width:1000px;height:auto;margin:20px auto 40px;background:transparent;position: relative;z-index:20;display:block;text-align: center;}
+	.motoFiltersWrap{width:auto;max-width:1000px;height:auto;margin:0px 10px;position: relative;z-index:20;display:inline-block;text-align: center;}
+	.motoFiltersWrap h1{font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 18px;font-weight:700;color:var(--moto-black);text-align: center;}
+	.motoFilterBtn{width:auto;height:auto;background:var(--moto-black);padding:6px 8px 6px 10px;border-radius:3px;display:inline-block;cursor:pointer;user-select: none;}
+	.motoFilterBtn p{font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 13px;font-weight:700;color:#fff;text-align: left;margin:0px 5px 0px 0px;padding:0px;display:inline-block;vertical-align: top;}
+	.motoCheckbox{width:15px;height:12px;display:inline-block;vertical-align: top;margin:1px 0px 0px 0px;}
+	.motoCheckboxOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_checkbox_tick_img.svg") no-repeat;}
+	.motoCheckboxOff{background:url("https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_checkbox_notick_img.svg") no-repeat;}
+	#motoFiltersOtherMenu{width:100%;max-width:1000px;height:auto;margin:20px auto;background:transparent;position: relative;z-index:20;display:block;text-align: center;}
+	.motoFilterAllBtn, .motoFilterClearBtn{width:auto;height:auto;display:inline-block;position: relative;z-index:20;margin:10px;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 14px;font-weight:400;color:var(--moto-black);text-align: center;}
+	#motoToggleFiltersBtn{display:none;}
+	/*faq mod*/
+	#motogpFaqMod{width:100%;height:auto;background:transparent;position:relative;margin:30px auto 50px;box-sizing:border-box !important;text-align: center;z-index: 50;}
+	.motogpFaqModDiv{width:70%;height:4px;background:var(--moto-blue);margin:60px -50px 40px auto;display:block;padding:1px;}
+	.motogpFaqWrap{width:1100px;height:auto;margin:0 auto;display:flex;flex-wrap: wrap;text-align: left;position: relative;align-content: flex-start;justify-content: space-evenly;}
+	.motogpFaqWrap a{text-decoration: none;}
+	#motogpFaqMod h1{font-family: "Gotham", Fallback, sans-serif;font-size: 36px;color:#15151e;text-align: center;width:100%;}
+	.motogpFaqStripe{width:445px;margin: -40px 0px 0px 30px;}
+	.motogpFaqHero{margin:-20px -132px 0px 0px;height:250px;width:445px;display:inline-block !important}
+	.motogpTileDiv{width:50px;height:4px;background:var(--moto-blue);margin:5px auto 10px;}
+		
+	/*info section*/
+	.motogpInfoCard{width:325px;height:410px;display:inline-block;background:#fff;border-radius:15px;box-shadow: 0px 5px 10px 0px rgb(0, 0, 0 , 10%);overflow:hidden;position: relative;vertical-align: top;transition: ease-in-out .4s;cursor:pointer;}
+	.motogpInfoCard:hover{box-shadow:0px 5px 10px 2px rgb(0 0 0 / 20%);}	
+	.motogpInfoHead{width:325px;height:128px;margin:0;padding:30px 20px;box-sizing: border-box !important;background:#eeeded;}
+	.motogpInfoHead img{display:inline-block;width:80px;height:80px;float:left;margin:0px 10px 0px 0px;}
+	.motogpInfoHead h2{font-family: "Gotham", Fallback, sans-serif;font-size: 28px;color:#15151e;display:inline-block;text-align: left;margin:0;padding:0px;}
+	.motogpInfoCard p{font-family: "Averta", Fallback, sans-serif;padding:15px 20px;font-size: 22px;color:#15151e;text-align: center;}
+	.motoInfoBtn{width:325px;height:80px;background:var(--moto-blue);position: absolute;bottom: 0;background:var(--moto-blue);}
+	.motoInfoBtn h3{font-family: "Gotham", Fallback, sans-serif;font-size: 20px;color:#fff;text-align: center;margin:10px 0px 0px 0px;padding:20px 0px; z-index: 51;position: relative;}
+	.motogpFaqTextWrap{width:800px;height:auto;margin:0 auto;display:block;text-align: left;position: relative;}
+	.motogpFaqTextWrap p{font-family: "Averta", Fallback, sans-serif;padding:0px;font-size: 16px;color:#15151e;text-align: left;}	
+/*best avail mod*/
+	#motogpBestAvailMod{width:100%;max-width:1100px;height:auto;margin:25px auto 50px;padding:20px 20px 40px 20px;position: relative;border-radius:15px;border:2px solid var(--moto-blue);box-sizing: border-box !important;}
+	#motogpBestAvailMod h1{font-family: "Gotham", Fallback, sans-serif;font-size: 36px;line-height:36px;font-weight:bold;text-transform:uppercase;color:var(--moto-blue);text-align: center;margin:0px 0px;padding:0px 20px;background:#fff;display:inline-block;top:-20px;left:50px;position: absolute;}
+	#motogpBestAvailMod p{font-family: "Averta", Fallback, sans-serif;font-size: 18px;color:#15151e;text-align: left;padding:0px;margin:10px auto 20px;}
+	#motogpBestAvailWrap{width:100%;height:auto;max-height: 170px;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;display: flex;flex-wrap: wrap;justify-content: flex-start;align-items: center;row-gap: 5px;column-gap: 5px;overflow:hidden;}
+	.motogpBestAvailCard{width:auto;height:auto;text-align: left;margin:0;padding:0;cursor:pointer;user-select:none;}
+	.motogpBestAvailStand{min-width: 120px;font-family: "Gotham", Fallback, sans-serif;font-size: 16px;line-height:16px;font-weight:bold;color:#fff;text-align: center;margin:0px 0px;padding:6px 10px;background:var(--moto-blue);display:inline-block;border-radius:6px 6px 0px 0px;}
+	.motogpBestAvailDay{/*max-width:75px*/font-family: "Averta", Fallback, sans-serif;font-size: 14px;line-height:14px;font-weight:normal;color:#fff;text-align: left;margin:0px 0px;padding:4px 25px 6px 10px;background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2024/ausgp25_right_arrow_img.svg') no-repeat,var(--moto-black);background-size:18px 18px;background-position:top 3px right 5px;display:block;border-radius:0px 0px 6px 6px;}
+	.motogpBestAvailBtn{width:200px;margin:0px auto;position:absolute;left:50px;bottom:-20px;cursor:pointer;height:auto;border-radius:25px;font-family: "Gotham", Fallback, sans-serif;font-size: 16px;color:#fff;text-align: center;padding:10px 5px;background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2024/ausgp25_down_arrow_img.svg') no-repeat,var(--moto-blue);background-size:18px 18px;background-position:center right 16px;}
+	.motogpBestAvailBtn:before{content:"Show All";}
+	.motogpBestAvailBtnToggle{background:url('https://s1.ticketm.net/tm/en-au/img/static/formula1/2024/ausgp25_up_arrow_img.svg') no-repeat,var(--moto-blue);background-size:18px 18px;background-position:center right 16px;}
+	.motogpBestAvailBtnToggle:before{content:"Hide";}
+	.motogpBestAvailToggle{height:auto !important;max-height:none !important;}
+	.motogpAvailCardNone{display:none;}
+	.motogpAvailCardFew{display:block;}
+	.motogpAvailCardAvail{display:block;}
+	}
+/*mobile -----------------*/
+	@media only screen and (min-width: 0px) and (max-width: 1000px){	
+	/*TM HEADER */
+	#tmHeader{width:100%;height:auto;background:#026cdf;padding:25px 0px 25px 20px;margin:0px auto 5px;box-sizing:border-box;display:block;position: relative;}
+	#tmLogo{width:200px;height:auto;display:block;}
+	#tmLogo img{width:100%;height:auto;padding:0;margin:0px auto;}
+	#tmSearch{display:none;}
+	/*f1 CONTENT*/	
+		
+/*menu */
+	#motogpMenu{width:100%;height:auto;position:fixed;left:0;right:0;top:0;background:transparent;padding:0px 0px;margin:0px 0px 0px 0px;box-sizing:border-box !important;overflow:visible;z-index:100;text-align: center;display:none;}
+	#motogpMenuLogo{display:none;}
+	#motogpMenuLogo img{width:100%;height:auto;}	
+	.motogpMenuWrap{width:95%;height:auto;margin:0px;padding:5px;display:block;font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;font-size: 22px;font-weight:normal;color:#fff;text-align: left;box-sizing: border-box !important;border-bottom:2px solid #fff;background:var(--moto-blue);}
+	.motogpMenuWrap h1{font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;font-size: 18px;font-weight:normal;color:#fff;text-align: left;padding:0;margin:10px 0px 0px 0px;}
+	#motogpMenu button{padding:0;border:0px;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 22px;font-weight:700;color:#fff;background:transparent;}
+	#motogpMenuToggle{width:27px;height:66px;position: absolute;right:1%;top:0;transform: translateY(50%);box-shadow:0px 0px 5px 2px rgb(0 0 0 / 15%)}
+	#motogpMenuHide{display:block;}	
+	#motogpMenuShow{display:none;}
+	#motogpMenuHide img, 	#motogpMenuShow img{width:100%;height:auto;}
+	#motogpHeader{width:100%;height:500px;position: relative;margin:0px auto;padding:1px;background:url("https://s1.ticketm.net/tm/en-au/img/static/motogp/2026/moto26_header_placeholder.jpg") center center no-repeat, #fff;background-size:cover;box-sizing:border-box!important;text-align: center;}	
+	#motogpHeader img{width:100%;height:auto;margin:0;}
+	#motogpLogo{max-width:200px;width:80%;height:auto;margin:255px auto 0px;position: relative;display:block;padding:10px;box-sizing:border-box !important;}
+	#motogpLogo img{width:100%;height:auto;border-radius:5px;}
+
+	/*info selection mod*/
+	#motogpInfo{width:96%;max-width:1100px;height:auto;background:#fff;position:relative;margin:-110px auto 0px;box-sizing:border-box !important;text-align: center;box-shadow:0px -10px 10px 0px rgb(0 0 0 / 20%);padding:15px 0px;text-align: center;border-radius:15px;}
+	.motogpRegBtn{width:260px;font-family: "Gotham", "dharma-gothic-e", "Averta",Fallback, sans-serif;font-size: 18px;font-weight:900;color:#fff;background:var(--moto-blue);text-transform: uppercase;border-radius:20px;padding:10px 0px;box-sizing: border-box !important;margin:20px auto;vertical-align: top;display:block;}
+	#motogpInfo p{font-family :"Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 18px;font-weight:normal;margin:0px auto;padding:20px;color:#15151e;text-align: center;box-sizing: border-box !important;}
+	#motogpInfo h1{font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;font-size: 24px;font-weight:900;color:#15151e;text-align: center;padding:5px 10px 15px 10px;margin:0px 0px 0px 0px; box-sizing: border-box !important;}
+	.motogpInfoSpan{width:100%;height:auto;display:flex;flex-wrap: wrap;justify-content: space-evenly;position: relative;}
+	.motogpInfoSpan a{width:100%}	
+	.motogpInfoMod, .motogpInfoModAlt{width:calc(100% - 30px);max-width:600px;height:100px;background:#fff;margin:10px 0px 20px 0px;border-radius:5px;box-sizing: border-box !important;box-shadow:0px 8px 10px 0px rgb(0 0 0 / 20%);padding:0;display:inline-block;cursor:pointer;position:relative;} 
+	.motogpInfoHero{width:100px;height:100px;display:inline-block;margin:0;padding:0px;overflow:hidden;border-radius:5px;box-shadow:0px 8px 10px 0px rgb(0 0 0 / 20%);position:absolute;top:-10px;left:-10px;}
+	.motogpInfoHero img{width:100%;height:auto;}
+	.motogpInfoWrap{width:100%;height:100px;display:inline-block;margin:0px;padding:0px 0px 0px 100px;box-sizing:border-box !important;vertical-align: top;}
+	.motogpInfoMod h2, .motogpInfoModAlt h2{height:auto;width:100%;font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;font-size: 24px;font-weight:900;color:#15151e;text-align: left;padding:0px 0px ;margin:10px auto;vertical-align: top;display:block;box-sizing: border-box !important;}
+	.motogpInfoMod h3, .motogpInfoModAlt h3{height:auto;width:100%;font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;font-size: 24px;font-weight:900;color:#15151e;text-align: left;padding:0px 0px ;margin:0px auto;vertical-align: top;display:block;box-sizing: border-box !important;}
+	.motogpInfoBtn{width:160px;height:30px;font-family:"Gotham",  "dharma-gothic-e", "Averta",Fallback, sans-serif;font-size: 16px;font-weight:900;color:#fff;background:var(--moto-blue);text-transform: uppercase;border-radius:20px;padding:6px 0px;box-sizing: border-box !important;margin:10px auto;display:block;position:absolute;bottom:-20px;right:20px;}
+
+	/*alt info mods*/
+	.motogpInfoModAlt .motogpInfoBtn{width:30px;height:30px;background:var(--moto-blue);border-radius:20px;padding:0px 0px;box-sizing: border-box !important;margin:5px auto 5px;display:block;}
+
+	.motogpInfoModDiv{display:none;}
+	/*sub header*/
+	.motogpSubHeader{width:100%;height:auto;max-height:200px;margin:50px auto 20px;background:url("https://s1.ticketm.net/tm/en-au/img/static/motogp/2025/moto25_header_banner.jpg") center center no-repeat, var(--moto-blue);background-size:cover;padding:0px 0px 0px 0px;overflow:hidden;box-sizing:border-box !important;position: relative;display:block;}
+	.motogpSubHeaderCover{width:100%;height:200px;margin:0 auto;position: absolute;top:0;right:0;left:0;background:rgba(40, 110, 230, .4);z-index: 20;}	
+	.motogpSubHeader h1{font-family: "Gotham", "dharma-gothic-e", "Averta",Fallback, sans-serif;font-size: 40px;font-weight:900;text-align: center;color:#fff !important;text-transform: uppercase;position:relative; z-index: 22;padding:25px 0px;}
+	/*selection area*/
+	#motogpSelectStandMod{width:100%;height:auto;background:#fff;position:relative;margin:80px auto 80px;box-sizing:border-box !important;}
+
+	.motogpSelectWrap{max-width:1000px;width:100%;height:auto;display:block;margin:0px auto;vertical-align: top;}
+	.motogpSelectDay{width:99%;height:auto;background:#fff;margin:20px auto 10px;box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 20%);position: relative;box-sizing:border-box !important;padding:10px 0px 1px 0px;cursor:pointer;border-radius:15px;box-sizing: border-box !important;}
+	.motogpSelectDay h2, .motogpSelectDay h3, .motogpSelectDay h4{width:100%;height:auto;min-height:80px;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 23px;font-weight:900;color:#15151e;text-align: center;display:block;margin:5px 0px 0px 0px;padding:5px 15px;box-sizing: border-box !important;}
+	.motogpSelectDay p{width:100%;font-family: "Averta", Fallback, sans-serif;font-size: 15px;color:#15151e;text-align: left;display:block;margin:5px 0px 0px 0px;line-height: 17px;padding:15px 0px;box-sizing: border-box !important;}
+
+	.motogpSelectBtn{width:90%;max-width:450px;height:auto;background:var(--moto-blue);border-radius:15px;font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;font-size: 16px;font-weight:900;color:#fff;text-align: center;margin:0px auto 14px;padding:5px;box-sizing:border-box !important;text-transform: uppercase;display:block;}
+	.motogpSelectBtn br {display:none;}
+	.motogpSelectBtn img {display:none;}
+	.motogpSoonBtn{background:#15151e !important;}
+	.motogpSelectMap{width:150px;height:80px;display:block;margin:10px auto;padding:0px;box-sizing:border-box !important;position: relative;}
+	.motogpSelectMap img{width:100%;height:auto;display:block;margin:0px auto;}
+	.motoInfoWrap, .motoInfoWrapLong{width:100%;height:auto;display:block;vertical-align: top;margin:5px auto;padding:0px  15px;box-sizing:border-box !important;}
+	.motogpVertDiv{width:80%;height:4px;margin:5px 0px 5px 15px;display:inline-block;background:var(--moto-blue);border-radius:2px;}
+	/*tags*/
+	.motoTagWrap{width:100%;height:auto;margin:0px auto;padding:0px 15px;box-sizing:border-box !important;position:relative;}
+	.motogpTag{width:auto;height:auto;padding:4px 8px 4px 8px;margin:2px 2px 2px 2px;position:relative;border-radius:3px;box-sizing:border-box !important;font-family: "Averta", Fallback, sans-serif;font-size: 12px;font-weight:normal;color:#fff;text-align: center;vertical-align: top;}
+	.motoAvailTag{background:var(--moto-blue);display:none;}
+	.motoPremiumTag{background:#6a98e6;display:inline-block;}
+	.motoLocationTag{background:#403e3e;display:inline-block;}
+	.motoTicketTag{background:#15151e;display:inline-block;}
+	.motoAcessibleTag{background:#5a5a5a;display:inline-block;}
+	.motoAvailTagSpan{width:100%;height:25px;text-align: center;margin:5-3px auto 5px;padding:0px;box-sizing:border-box !important;}
+	.motoAvailTagSpan .FEW_TICKETS_LEFT, .motoAvailTagSpan .TICKETS_NOT_AVAILABLE{width:90% !important;max-width:200px;}
+	.FEW_TICKETS_LEFT{ display:inline-block !important;}
+	.FEW_TICKETS_LEFT:after{content:"Selling Fast";}	
+	.TICKETS_NOT_AVAILABLE{display:inline-block !important;}
+	.TICKETS_NOT_AVAILABLE:after{content:"Limited / No Availability";}
+	.TICKETS_AVAILABLE{display:none;}
+	/*grandstand pages*/
+	#motogpIslandPass{width:100%;height:auto;background:#fff;position:relative;margin:80px auto 80px;box-sizing:border-box !important;}
+	.motogpGrandstand, .motogpProduct{max-width:1000px;width:100%;height:auto;display:block;margin:100px auto;display:block;}
+	.motogpGrandstand{display:none;}	
+	.motogpGrandstandWrap, .motogpFullWidthWrap{width:96%;max-width:495px;height:auto;display:block;margin:0px auto;vertical-align: top;font-family: "Averta", Fallback, sans-serif;font-size: 14px;color:#15151e;text-align: center;}
+	.motogpGrandstandWrap a, .motogpFullWidthWrap a{text-decoration: none;color:var(--moto-blue);}
+	.motogpGrandstand h1, .motogpProduct h1{font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;font-size: 44px;font-weight:900;color:#15151e;text-align: center;padding:0px;margin:0px;}
+	.motogpGrandstand h2, .motogpProduct h2{font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 24px;font-weight:400;color:var(--moto-blue);text-align: center;padding:0px;margin:0px;}
+	.motogpGrandstand p, .motogpProduct p, .motogpFullWidthWrap p{font-family: "Averta", Fallback, sans-serif;font-size: 14px;color:#15151e;text-align: center;padding:10px 10px 10px 10px;margin:10px auto;box-sizing:border-box !important;}
+	.motogpFullWidthWrap li{font-family: "Averta", Fallback, sans-serif;font-size: 14px;color:#15151e;}
+	.motogpGrandstand sup, .motogpProduct sup{font-size: 14px;}
+	.motogpGrandstand h4, .motogpProduct h4{font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 30px;color:#15151e;text-align: center;padding:0px;margin:0px;}	
+		
+	.motogpGrandstandInfo{width:100%;height:auto;margin:10px auto 10px;background:#fff;display:block;position:relative;z-index:21;box-shadow: 0px 10px 10px 0px rgb(0, 0, 0 , 20%);padding:10px;box-sizing:border-box !important;border-right:17px solid var(--moto-blue);border-radius:15px;}
+	.motogpGrandstandInfo p{font-family: "Averta", Fallback, sans-serif;font-size: 14px;color:#15151e;text-align: left;padding:0px;margin:10px auto;}
+	.motogpGrandstandHero, .motogpGrandstandHero img{margin:0px auto;height:auto;width:100%;}
+
+	/*extras sub menu*/
+	.motogpExtraWrap{width:100%;height:auto;max-width:1000px;margin:0px auto;text-align: center;}
+	.motogpInfoSubMod{width:90%;max-width:310px;height:auto;background:#fff;margin:10px auto;padding:0px 0px 10px 0px;display:block;border-radius:5px;box-sizing: border-box !important;box-shadow:0px 4px 10px 0px rgb(0 0 0 / 20%);cursor:pointer;text-align: center;}
+	.motogpInfoSubMod h2{height:auto;width:100%;font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;font-size: 34px;font-weight:900;color:#15151e;text-align: center;padding:10px 0px 10px 0px;margin:0px auto;vertical-align: top;display:block;box-sizing: border-box !important;}
+	.motogpInfoSubMod h3{height:auto;width:100%;font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;font-size: 34px;font-weight:900;color:#15151e;text-align: center;padding:10px 0px 10px 0px;margin:0px auto;vertical-align: top;display:block;box-sizing: border-box !important;}
+	.motogpInfoSubBtn{width:100%;max-width:230px;font-family:"Gotham",  "dharma-gothic-e", "Averta",Fallback, sans-serif;font-size: 22px;font-weight:900;color:#fff;background:var(--moto-blue);text-transform: uppercase;border-radius:20px;padding:5px 0px;box-sizing: border-box !important;margin:10px auto;vertical-align: top;display:block;}
+	.motogpInfoTermsBtn{width:100%;max-width:230px;font-family:"Gotham",  "dharma-gothic-e", "Averta",Fallback, sans-serif;font-size: 18px;font-weight:900;color:#fff;background:var(--moto-blue);text-transform: uppercase;border-radius:20px;padding:5px 0px;box-sizing: border-box !important;margin:10px auto;vertical-align: top;display:block;}
+	
+	.motogpBtnWrap{width:100%;height:auto;padding:0;margin:10px auto;z-index:40;position: relative;text-align: center;}
+	.motogpDayMod, .motogpMultiDayMod,.motogp3DayMod{max-width:300px;width:100%;height:auto;display:inline-block;background:#15151E;padding:10px 0px;margin:1px auto;box-sizing: border-box !important;overflow:hidden;border-radius:15px;text-align: left;}
+	.motogpLeftBrd{border-radius:15px 0px 0px 15px;}
+	.motogpRightBrd{border-radius:0px 15px 15px 0px;}
+	
+	.motogpDayModMarg1{margin: 0 1px 0 0;}	
+	.motogpDayMod h2, .motogp3DayMod h2{text-align: left; font-size:22px;font-weight:400;font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;color:#fff;padding:4px 5px 0px 20px;margin:0;text-transform: uppercase;vertical-align: top;display:inline-block;}	
+	.motogpDayBtn{padding:0px 20px 0px 5px;height:auto;background:transparent;position: relative;margin:0px auto;box-sizing: border-box !important;text-align: right;display:inline-block;vertical-align: top;float:right;}
+	.motogpDayBtn h1{text-align:left;padding:0px 5px 0px 0px;height:auto;color:#fff;font-size:30px;font-weight:900;font-family: "dharma-gothic-e", "Open Sans", Fallback, sans-serif;margin:0px auto;box-sizing: border-box !important;display:inline-block;}
+	.motogpDayBtn h3{text-align:left;padding:0px;height:auto;color:#fff;font-size:20px;font-weight:900;font-family: "Gotham", "dharma-gothic-e", "Open Sans", Fallback, sans-serif;margin:0px auto;box-sizing: border-box !important;display:inline-block;text-transform: uppercase;}
+	/*fix for larger buttons on mobile*/
+	.motogpMultiDayMod .motogpDayBtn h3{width:100%;text-align:center;padding:0px;height:auto;color:#fff;font-size:30px;font-weight:900;font-family: "Gotham", "dharma-gothic-e", "Open Sans", Fallback, sans-serif;margin:0px auto;box-sizing: border-box !important;display:inline-block;text-transform: uppercase;}
+	.motogpMultiDayMod .motogpDayBtn br{display:none;}
+	.motogpMultiDayMod 	.motogpDayBtn{width:100%;padding:0px 20px 0px 20px;height:auto;background:transparent;position: relative;margin:0px auto;box-sizing: border-box !important;text-align: center;display:block;}
+	.motogpMultiDayMod h2{text-align: center; font-size:22px;font-weight:400;font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;color:#fff;padding:4px 20px 0px 20px;margin:0;text-transform: uppercase;vertical-align: top;display:block;}	
+
+	.motogpHero{border-radius:15px;position: relative;display:block;z-index:20;overflow:visible;background-size:contain;box-shadow: 0px 10px 10px 0px rgb(0, 0, 0 , 20%)}
+	.motogpHero img{width:100%;height:auto;border-radius:15px;position: relative;display:block;z-index:20;}
+	.motogpBtn{height:auto;border-radius:25px;font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;font-size: 16px;color:#fff;text-align: center;background:var(--moto-blue);padding:10px 5px;}
+	/*package area*/
+	.motogpPackageWrap{max-width:1000px;width:100%;height:auto;display:block;margin:0px auto;z-index: 20;text-align: center;}
+	.motogpPackageWrap p{font-family: "Averta", Fallback, sans-serif;font-size: 18px;line-height: 20px;color:#15151e;text-align: center;display:block;margin:0px;padding:20px 10px 20px 10px;box-sizing:border-box !important;}
+	.motogpPackageCard{max-width:450px;width:96%;height:auto;display:block;margin:10px auto;padding:25px 25px 25px 25px;box-sizing:border-box !important;vertical-align: top;background:#fff;box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 20%);border-radius:15px;position: relative;user-select:none;cursor:pointer;}
+	.motogpPackageCard p{text-align: left!important;}
+	.motogpPackageCard h2{font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 25px;font-weight:900;line-height:25px;color:#15151e;text-align: left;margin:16px 0px 0px 0px;padding:0px;display:block;}
+	.motogpPackageCard h3{font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 20px;font-weight:700;line-height:20px;color:var(--moto-blue);text-align: left;margin:10px 0px 0px 0px;padding:0px;display:block;}
+	.motogpHoriDiv{width:70%;height:4px;display:block;margin:20px 0px 0px 0px;background:var(--moto-blue);}
+	.motogpPackBtn{width:100%;height:auto;position: relative;background:var(--moto-blue);border-radius:15px;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 18px;font-weight:900;color:#fff;text-align: center;padding:13px 0px 13px 0px;margin:0px auto;box-sizing:border-box !important;text-transform: uppercase;}
+
+	/*hide show on mobile*/
+	.motogpMobHero{display:block;}
+	.motogpHeroWrap{display:none;}
+
+	.agpbdr{border-radius:15px;}
+	.hideDesktop{display:none;}
+	/*filters*/
+	#motoFiltersMenu{width:100%;max-width:1000px;height:auto;margin:20px auto;background:transparent;position: relative;z-index:20;display:block;text-align: center;display:none;}
+	.motoFiltersWrap{width:auto;max-width:1000px;height:auto;margin:0px 10px;position: relative;z-index:20;display:inline-block;text-align: center;}
+	.motoFiltersWrap h1{font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 18px;font-weight:700;color:var(--moto-black);text-align: center;}
+	.motoFilterBtn{width:auto;height:auto;background:var(--moto-black);padding:6px 8px 6px 10px;border-radius:3px;display:block;cursor:pointer;user-select: none;margin:3px 0px 0px 0px;}
+	.motoFilterBtn p{font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 13px;font-weight:700;color:#fff;text-align: left;margin:0px 5px 0px 0px;padding:0px;display:inline-block;vertical-align: top;}
+	.motoCheckbox{width:15px;height:12px;display:inline-block;vertical-align: top;margin:1px 0px 0px 0px;}
+	.motoCheckboxOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_checkbox_tick_img.svg") no-repeat;}
+	.motoCheckboxOff{background:url("https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_checkbox_notick_img.svg") no-repeat;}
+	#motoFiltersOtherMenu{width:100%;max-width:1000px;height:auto;margin:20px auto;background:transparent;position: relative;z-index:20;display:block;text-align: center;}
+	.motoFilterAllBtn, .motoFilterClearBtn{width:auto;height:auto;display:inline-block;position: relative;z-index:20;margin:10px;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 14px;font-weight:400;color:var(--moto-black);text-align: center;}
+	#motoToggleFiltersBtn{width:90%;max-width:250px;height:auto;background:var(--moto-blue);border-radius:15px;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 18px;font-weight:700;color:#fff;text-align: center;margin:0px auto;padding:9px 0px 6px 0px;}
+	#motoToggleFiltersBtn img{width:25px;height:25px;display:inline-block;vertical-align: top;}
+	.motoRotate{transform: rotate(180deg);}
+
+/*faq mod*/
+	#motogpFaqMod{width:100%;height:auto;background:transparent;position:relative;margin:30px auto 50px;box-sizing:border-box !important;text-align: center}
+	.motogpFaqModDiv{width:70%;height:4px;background:var(--moto-blue);margin:60px auto 40px auto;display:block;padding:1px;}
+	.motogpFaqWrap{width:100%;max-width:1100px;height:auto;margin:0 auto;display:block;vertical-align: top;text-align: left;position: relative;}
+	.motogpFaqWrap a{text-decoration: none;}
+	#motogpFaqMod h1{font-family: "Gotham", Fallback, sans-serif;font-size: 36px;color:#15151e;text-align: center;}
+	.motogpFaqStripe{width:445px;margin: -40px 0px 0px 30px;}
+	.motogpFaqHero{margin:20px -132px 60px 0px;height:250px;width:445px;display:inline-block !important}
+	.motogpTileDiv{width:50px;height:4px;background:var(--moto-blue);margin:5px auto 10px;}
+		
+	/*info section*/
+	.motogpInfoCard{max-width:325px;width:96%;height:auto;display:block;background:#fff;border-radius:15px;box-shadow: 0px 5px 10px 0px rgb(0, 0, 0 , 10%);overflow:hidden;position: relative;vertical-align: top;margin:0px auto 20px;}	
+	.motogpInfoHead{width:100%;height:auto;margin:0;padding:30px 20px;box-sizing: border-box !important;background:#eeeded;}
+	.motogpInfoHead img{display:inline-block;width:80px;height:80px;float:left;margin:0px 10px 0px 0px;}
+	.motogpInfoHead h2{font-family: "Gotham", Fallback, sans-serif;font-size: 28px;color:#15151e;display:inline-block;text-align: left;margin:0;padding:0px;}
+	.motogpInfoCard p{font-family: "Averta", Fallback, sans-serif;padding:15px 20px 120px 15px;font-size: 22px;color:#15151e;text-align: center;}
+	.motoInfoBtn{width:100%;height:60px;background:var(--moto-blue);position: absolute;bottom: 0;}
+	.motoInfoBtn h3{font-family: "Gotham", Fallback, sans-serif;font-size: 20px;color:#fff;text-align: center;margin:17px 0px 0px 0px;padding:0px; z-index: 51;position: relative;}
+	.motogpFaqTextWrap{max-width:800px;width:94%;height:auto;margin:0 auto;display:block;text-align: left;position: relative;}
+	.motogpFaqTextWrap p{font-family: "Averta", Fallback, sans-serif;padding:0px;font-size: 16px;color:#15151e;text-align: left;}
+	}
+	/*@media only screen and (min-width: 0px) and (max-width: 350px){
+	.motogpSelectDay h2{width:calc(100% - 175px);height:auto;min-height:80px;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 20px;font-weight:900;color:#15151e;text-align: left;display:block;margin:5px 0px 0px 0px;padding:5px 15px;}
+	.motogpSelectDay h3{width:calc(100% - 175px);height:auto;min-height:80px;font-family: "Gotham", "dharma-gothic-e", Fallback, sans-serif;font-size: 20px;font-weight:900;color:#15151e;text-align: left;display:block;margin:5px 0px 0px 0px;padding:5px 15px;}
+	}*/
+
+	@media only screen and (min-width: 0px) and (max-width: 370px){	
+	.motogpInfoMod h2, .motogpInfoModAlt h2{height:auto;width:100%;font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;font-size: 20px;font-weight:900;color:#15151e;text-align: left;padding:0px 0px ;margin:25px auto;vertical-align: top;display:block;box-sizing: border-box !important;}
+	.motogpInfoMod h3, .motogpInfoModAlt h3{height:auto;width:100%;font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;font-size: 20px;font-weight:900;color:#15151e;text-align: left;padding:0px 0px ;margin:0px auto;vertical-align: top;display:block;box-sizing: border-box !important;}
+	}
+	@media only screen and (min-width: 0px) and (max-width: 325px){	
+	.motogpInfoMod h2, .motogpInfoModAlt h2{height:auto;width:100%;font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;font-size: 16px;font-weight:900;color:#15151e;text-align: left;padding:0px 0px ;margin:25px auto;vertical-align: top;display:block;box-sizing: border-box !important;}
+	.motogpInfoMod h3, .motogpInfoModAlt h3{height:auto;width:100%;font-family:"Gotham",  "dharma-gothic-e", Fallback, sans-serif;font-size: 16px;font-weight:900;color:#15151e;text-align: left;padding:0px 0px ;margin:0px auto;vertical-align: top;display:block;box-sizing: border-box !important;}
+
+	}	
+</style>
+<!--TM HEADER--
+<div id="tmHeader">
+	<div id="tmLogo"><img src="https://s1.ticketm.net/en-au/css/6087a0923498ed842bd93d95cd427cba/rebrand_smvp/tm/img/sys/alpha/discovery/header/ticketmaster-logo.svg"></div><div id="tmSearch">what are you looking for?</div>
+</div>--->
+<!--aus gp content--->
+<div id="motogpContent">
+	<!--menu--
+	<div id="motogpMenu"><div id="motogpMenuLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_logo_v2_hori_ico.svg" alt="Animoca Brands Australian Motorcycle Grand Prix 2022"></div><div class="motogpMenuWrap">
+		<h1>Main Experiences</h1>
+		<button data-menubtn="IslandPass" class="motogpMenuBtn">ISLAND PASS (GA)</button> | <button data-menubtn="Grandstands" class="motogpMenuBtn">GRANDSTANDS</button> | <a href="https://www.motogp.com.au/hospitality/suites" target="_blank"><button class="motogpMenuBtn">HOSPITALITY</button></a>
+		</div><div class="motogpMenuWrap">
+		<h1>Extra Experiences</h1>
+		<button data-menubtn="Campgrounds" class="motogpMenuBtn">CAMPGROUNDS</button> | <button data-menubtn="Coach" class="motogpMenuBtn">CATCH&#45;A&#45;COACH</button> | <button data-menubtn="Clubhouse" class="motogpMenuBtn">CLUBHOUSE</button>
+		</div>
+	<div id="motogpMenuToggle">
+			<div id="motogpMenuShow"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_show_btn.svg" alt="Show"></div>
+			<div id="motogpMenuHide"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_hide_btn.svg" alt="Hide"></div>
+	</div></div>--->
+	<!--main content-->
+	<div id="motogpHeader">
+		
+		<div id="motogpLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2025/moto25_logo.png" alt="Australian Motorcycle Grand Prix 2025"></div>
+		
+	</div>
+	<!--info section--->
+		<div id="motogpInfo">
+			<h1>Australian Motorcycle Grand Prix 2026</h1>
+
+			<div class="motogpInfoSpan">
+				<div data-menubtn="Ticket" class="motogpInfoMod"> 
+					<div class="motogpInfoHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_ticketHero_300x300.jpg"></div>
+					<div class="motogpInfoWrap">
+						<h2>Tickets<br /><br /></h2>
+						<div class="motogpInfoBtn">SEE OPTIONS</div>
+
+					</div>
+					<div class="motogpInfoModDiv"></div>
+				</div>
+				<div data-menubtn="Extra" class="motogpInfoMod">
+					<div class="motogpInfoHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_coachHero_300x300.jpg"></div>
+					<div class="motogpInfoWrap">
+						<h2>Extra<br />Experiences</h2>
+						<div class="motogpInfoBtn">SEE OPTIONS</div>
+
+					</div>
+					<div class="motogpInfoModDiv"></div>
+				</div>
+			</div>
+			<!--
+			<div data-menubtn="Extra" class="motogpInfoMod">
+				<div class="motogpInfoHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_extraHero_300x300.jpg"></div>
+				<div class="motogpInfoWrap">
+					<h2>Optional Extra<br />Experiences</h2>
+					<div class="motogpInfoBtn">SEE OPTIONS</div>
+
+				</div>
+				<div class="motogpInfoModDiv"></div>
+			</div>-->
+			<div class="motogpInfoSpan">
+				<!--Hospitality-->
+				<a href="https://www.motogp.com.au/tickets/hospitality" target="_blank"><div class="motogpInfoModAlt">
+					<div class="motogpInfoHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_hospHero_300x300.jpg"></div>
+					<div class="motogpInfoWrap">
+						<h2>Hospitality<br /><br /></h2>
+						<div class="motogpInfoBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2025/moto25_arrowBtn_img.svg" alt="See Experience"></div>
+						
+					</div>
+					<div class="motogpInfoModDiv"></div>
+				</div></a>
+				<!--camping-->
+				<a href="https://www.motogp.com.au/tickets/campgrounds" target="_blank"><div id="" class="motogpInfoModAlt">
+					<div class="motogpInfoHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_campingHero_300x300.jpg"></div>
+					<div class="motogpInfoWrap">
+						<h2>Campgrounds<br /><br /></h2>
+						<div class="motogpInfoBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2025/moto25_arrowBtn_img.svg" alt="See Experience"></div>
+
+					</div>
+					<div class="motogpInfoModDiv"></div>
+				</div></a>
+				<!--packages-->
+				<div  data-menubtn="Packages"  class="motogpInfoModAlt">
+					<div class="motogpInfoHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_extraHero_300x300.jpg"></div>
+					<div class="motogpInfoWrap">
+						<h2>Packages<br /><br /></h2>
+						<div class="motogpInfoBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2025/moto25_arrowBtn_img.svg" alt="See Experience"></div>
+
+					</div>
+					<div class="motogpInfoModDiv"></div>
+				</div>
+			</div>
+
+
+
+		</div>	
+	
+
+	<!--secltion grandstand area--->
+	<div id="motogpTicketSelectMod">
+		<div id="motogpTicketTicket" class="motogpSubHeader"><h1>General Tickets</h1><div class="motogpSubHeaderCover"></div></div>	
+
+		<!--best available mod--
+			<div id="motogpBestAvailMod"> 
+
+				<h1>Best Available</h1><p>Below is a selection of areas with the best chance of getting tickets.</p>
+				<div id="motogpBestAvailWrap">
+
+				<!----
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="ParkPass" data-eventID=""><div class="motogpBestAvailStand">Stand</div><div class="motogpBestAvailDay">Day</div></div>
+				-->
+				<!--island pass--
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="IslandPass" data-eventID="1APZkAeGkd4Hwgw"><div class="motogpBestAvailStand">ISLAND PASS</div><div class="motogpBestAvailDay">3&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="IslandPass" data-eventID="1aefZbtrfj8ZdC6u"><div class="motogpBestAvailStand">ISLAND PASS</div><div class="motogpBestAvailDay">2&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="IslandPass" data-eventID="16PZk19P6ZAuvCF6"><div class="motogpBestAvailStand">ISLAND PASS</div><div class="motogpBestAvailDay">FRIDAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="IslandPass" data-eventID="1aefZbtrf-OZdCFG"><div class="motogpBestAvailStand">ISLAND PASS</div><div class="motogpBestAvailDay">SATURDAY</div></div>			
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="IslandPass" data-eventID="16PZk19PFZAuvCF2"><div class="motogpBestAvailStand">ISLAND PASS</div><div class="motogpBestAvailDay">SUNDAY</div></div>	
+				<!--club house--
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="TheClubhouse" data-eventID="1APZkAdGkeUM3I-"><div class="motogpBestAvailStand">The Clubhouse</div><div class="motogpBestAvailDay">3&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="TheClubhouse" data-eventID="1ka8vxJFGA2rZYw"><div class="motogpBestAvailStand">The Clubhouse</div><div class="motogpBestAvailDay">2&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="TheClubhouse" data-eventID="1APZk19Gkdjksl7"><div class="motogpBestAvailStand">The Clubhouse</div><div class="motogpBestAvailDay">FRIDAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="TheClubhouse" data-eventID="1APZk19GkdjFolk"><div class="motogpBestAvailStand">The Clubhouse</div><div class="motogpBestAvailDay">SATURDAY</div></div>			
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="TheClubhouse" data-eventID="1APZk19Gkdjaslb"><div class="motogpBestAvailStand">The Clubhouse</div><div class="motogpBestAvailDay">SUNDAY</div></div>		
+				<!--trackside club--
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="TracksideClub" data-eventID="1APZkAdGkeU3wJu"><div class="motogpBestAvailStand">Trackside Club</div><div class="motogpBestAvailDay">3&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="TracksideClub" data-eventID="1APZk1bGkeVWsfv"><div class="motogpBestAvailStand">Trackside Club</div><div class="motogpBestAvailDay">2&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="TracksideClub" data-eventID="1APZk1bGkeVTv4j"><div class="motogpBestAvailStand">Trackside Club</div><div class="motogpBestAvailDay">FRIDAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="TracksideClub" data-eventID="1APZk1bGkegvvp_"><div class="motogpBestAvailStand">Trackside Club</div><div class="motogpBestAvailDay">SATURDAY</div></div>			
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="TracksideClub" data-eventID="1APZk1bGkeg7vpr"><div class="motogpBestAvailStand">Trackside Club</div><div class="motogpBestAvailDay">SUNDAY</div></div>		
+				<!--bass strait--
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="BassStrait" data-eventID="1APZkAeGkdPgwDx"><div class="motogpBestAvailStand">Bass Strait</div><div class="motogpBestAvailDay">3&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="BassStrait" data-eventID="1APZk1oGkdhDKET"><div class="motogpBestAvailStand">Bass Strait</div><div class="motogpBestAvailDay">2&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="BassStrait" data-eventID="1APZk1oGkdhDKIv"><div class="motogpBestAvailStand">Bass Strait</div><div class="motogpBestAvailDay">FRIDAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="BassStrait" data-eventID="1APZk1oGkdjAdIF"><div class="motogpBestAvailStand">Bass Strait</div><div class="motogpBestAvailDay">SATURDAY</div></div>			
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="BassStrait" data-eventID="1APZk1oGkdjAdI1"><div class="motogpBestAvailStand">Bass Strait</div><div class="motogpBestAvailDay">SUNDAY</div></div>		
+				<!--champions grandastand--
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="Champions" data-eventID="1ka8v-8yGAujxGc"><div class="motogpBestAvailStand">Champions Grandstand</div><div class="motogpBestAvailDay">3&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="Champions" data-eventID="1APZk1oGkdjkKIU"><div class="motogpBestAvailStand">Champions Grandstand</div><div class="motogpBestAvailDay">2&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="Champions" data-eventID="1APZk1oGkdjkKIz"><div class="motogpBestAvailStand">Champions Grandstand</div><div class="motogpBestAvailDay">FRIDAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="Champions" data-eventID="1APZk1oGkdjkKIB"><div class="motogpBestAvailStand">Champions Grandstand</div><div class="motogpBestAvailDay">SATURDAY</div></div>			
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="Champions" data-eventID="1APZk1oGkdjkKIH"><div class="motogpBestAvailStand">Champions Grandstand</div><div class="motogpBestAvailDay">SUNDAY</div></div>		
+				<!--doohan pavilion--
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="DoohanPavilion" data-eventID="1ka8v-8yGAGB35e"><div class="motogpBestAvailStand">Doohan Pavilion</div><div class="motogpBestAvailDay">3&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="DoohanPavilion" data-eventID="1APZk1oGkdjAdIC"><div class="motogpBestAvailStand">Doohan Pavilion</div><div class="motogpBestAvailDay">2&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="DoohanPavilion" data-eventID="1APZk1oGkdjAdI8"><div class="motogpBestAvailStand">Doohan Pavilion</div><div class="motogpBestAvailDay">FRIDAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="DoohanPavilion" data-eventID="1APZk1oGkdjAKI3"><div class="motogpBestAvailStand">Doohan Pavilion</div><div class="motogpBestAvailDay">SATURDAY</div></div>			
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="DoohanPavilion" data-eventID="1APZk1oGkdjAKIf"><div class="motogpBestAvailStand">Doohan Pavilion</div><div class="motogpBestAvailDay">SUNDAY</div></div>			
+				<!--gardner straight--
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="GardnerStraight" data-eventID="1ka8v-8yGAu5352"><div class="motogpBestAvailStand">Gardner Straight</div><div class="motogpBestAvailDay">3&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="GardnerStraight" data-eventID="1APZk1oGkdjAKIp"><div class="motogpBestAvailStand">Gardner Straight</div><div class="motogpBestAvailDay">2&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="GardnerStraight" data-eventID="1APZk1oGkdjAKIb"><div class="motogpBestAvailStand">Gardner Straight</div><div class="motogpBestAvailDay">FRIDAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="GardnerStraight" data-eventID="1APZk1oGkdjANIQ"><div class="motogpBestAvailStand">Gardner Straight</div><div class="motogpBestAvailDay">SATURDAY</div></div>			
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="GardnerStraight" data-eventID="1APZk1oGkdjANIj"><div class="motogpBestAvailStand">Gardner Straight</div><div class="motogpBestAvailDay">SUNDAY</div></div>
+				<!--lukey heights--
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="LukeyHeights" data-eventID="1ka8v-8yGAu235b"><div class="motogpBestAvailStand">Lukey Heights</div><div class="motogpBestAvailDay">3&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="LukeyHeights" data-eventID="1APZk1oGkdjANIr"><div class="motogpBestAvailStand">Lukey Heights</div><div class="motogpBestAvailDay">2&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="LukeyHeights" data-eventID="1APZk1oGkdjANIO"><div class="motogpBestAvailStand">Lukey Heights</div><div class="motogpBestAvailDay">FRIDAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="LukeyHeights" data-eventID="1APZk1oGkdjANIx"><div class="motogpBestAvailStand">Lukey Heights</div><div class="motogpBestAvailDay">SATURDAY</div></div>			
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="LukeyHeights" data-eventID="1APZk1oGkdjASI0"><div class="motogpBestAvailStand">Lukey Heights</div><div class="motogpBestAvailDay">SUNDAY</div></div>
+				<!--Siberia--
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="Siberia" data-eventID="1ka8v-8yGAuK35s"><div class="motogpBestAvailStand">Siberia Grandstand</div><div class="motogpBestAvailDay">3&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="Siberia" data-eventID="1APZk1oGkdjASIJ"><div class="motogpBestAvailStand">Siberia Grandstand</div><div class="motogpBestAvailDay">2&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="Siberia" data-eventID="1APZk1oGkdjASII"><div class="motogpBestAvailStand">Siberia Grandstand</div><div class="motogpBestAvailDay">FRIDAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="Siberia" data-eventID="1APZk1oGkdjASIn"><div class="motogpBestAvailStand">Siberia Grandstand</div><div class="motogpBestAvailDay">SATURDAY</div></div>			
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="Siberia" data-eventID="1APZk1oGkdjkdIi"><div class="motogpBestAvailStand">Siberia Grandstand</div><div class="motogpBestAvailDay">SUNDAY</div></div>	
+				<!--Stoner Pavilion--
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="StonerPavilion" data-eventID="1ka8v-8yGAubxGo"><div class="motogpBestAvailStand">Stoner Pavilion</div><div class="motogpBestAvailDay">3&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="StonerPavilion" data-eventID="1APZk1oGkdjkdIm"><div class="motogpBestAvailStand">Stoner Pavilion</div><div class="motogpBestAvailDay">2&#45;DAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="StonerPavilion" data-eventID="1APZk1oGkdjkdIY"><div class="motogpBestAvailStand">Stoner Pavilion</div><div class="motogpBestAvailDay">FRIDAY</div></div>
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="StonerPavilion" data-eventID="1APZk1oGkdjkdIw"><div class="motogpBestAvailStand">Stoner Pavilion</div><div class="motogpBestAvailDay">SATURDAY</div></div>			
+				<div class="motogpBestAvailCard motogpAvailCardNone" data-babtn="StonerPavilion" data-eventID="1APZk1oGkdjkdIV"><div class="motogpBestAvailStand">IStoner Pavilion</div><div class="motogpBestAvailDay">SUNDAY</div></div>				
+				
+				<!--end wrap----
+				</div>
+				<div class="motogpBestAvailBtn"></div>
+
+			</div> -->
+	<!--filters-->
+	<div id="motoToggleFiltersBtn">Show Filters <img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_arrow_img.svg"></div>
+		<div id="motoFiltersMenu">
+		<!-- ticket type -->
+		<div id="ticketTypeFilter" class="motoFiltersWrap">
+			<h1>Ticket Type</h1>
+			<div data-type="general" class="motoFilterBtn"><p>General Admission</p><div class="motoCheckbox motoCheckboxOn"></div></div>
+			<div data-type="reserved" class="motoFilterBtn"><p>Reserved Seating</p><div class="motoCheckbox motoCheckboxOn"></div></div>
+		</div>
+		<!--cover-->
+		<div id="coverTypeFilter" class="motoFiltersWrap">
+			<h1>Grandstand Type</h1>
+			<div data-cover="noCover" class="motoFilterBtn"><p>No Cover</p><div class="motoCheckbox motoCheckboxOn"></div></div>
+			<div data-cover="undercover" class="motoFilterBtn"><p>Undercover (Option)</p><div class="motoCheckbox motoCheckboxOn"></div></div>
+		</div>
+		<!--premium--->
+		<div id="experienceTypeFilter" class="motoFiltersWrap">
+			<h1>Experience Type</h1>
+			<div data-experience="general" class="motoFilterBtn"><p>General Ticket</p><div class="motoCheckbox motoCheckboxOn"></div></div>
+			<div data-experience="premium" class="motoFilterBtn"><p>Premium (Option)</p><div class="motoCheckbox motoCheckboxOn"></div></div>
+		</div>
+
+		</div>
+
+		<div class="motogpSelectWrap"  id="motogpTicketMod">
+			<!--island pass---->
+			<div data-ticket="general" data-cover="noCover" data-experience="general"  data-gsbtn="IslandPass" class="motogpSelectDay">
+				
+				<h2>Island Pass<br />(GA)</h2><div class="motogpVertDiv"></div>
+				<div class="motoTagWrap"><div class="motoTicketTag motogpTag">General Admission</div><div class="motoAcessibleTag motogpTag">Accessible</div><div data-eventID=" " class="motoAvailTag motogpTag"></div></div>
+				<div class="motoInfoWrap">
+					<p>Join us this October when Phillip Island roars to life, and we welcome <strong>MotoGP&trade;</strong> back to Australian shores for a weekend of the fastest motorcycle racing on the planet.
+					</p>
+				</div>
+				<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_islandPass_map.svg" alt="Island Pass"></div>
+				<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+			</div>
+		<!--The Clubhouse----
+		<div data-ticket="general" data-cover="undercover" data-experience="premium" data-gsbtn="Clubhouse"  class="motogpSelectDay">
+				
+			<h2>The<br />Clubhouse</h2><div class="motogpVertDiv"></div>
+				<div class="motoTagWrap"><div class="motoTicketTag motogpTag">Extra</div><div class="motoTicketTag motogpTag">General Admission</div><div class="motoLocationTag motogpTag">Turn 10</div><div class="motoPremiumTag motogpTag">Undercover Option</div><div class="motoPremiumTag motogpTag">Premium</div><div data-eventID=" " class="motoAvailTag motogpTag"> </div></div>
+				<div class="motoInfoWrap">		
+					 <p>The Clubhouse is a fan favourite situated trackside at Lukey Heights. Catch up with mates and kick back with an undercover cash bar while you watch the world&rsquo;s best riders take machine and talent to the edge.</p>
+				</div>
+			<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_theClubhouse_map.svg" alt="The Clubhouse"></div>
+			<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+		</div>-->
+		<!--Trackside Club---->
+				<div data-ticket="general" data-cover="undercover" data-experience="premium" data-gsbtn="TracksideClub"  class="motogpSelectDay">
+				
+					<h4>Trackside Club</h4><div class="motogpVertDiv"></div>
+						<div class="motoTagWrap"><div class="motoTicketTag motogpTag">Extra</div><div class="motoTicketTag motogpTag">General Admission</div><div class="motoLocationTag motogpTag">Main Straight</div><div class="motoPremiumTag motogpTag">Premium</div><div class="motoPremiumTag motogpTag">Undercover Option</div><div data-eventID=" " class="motoAvailTag motogpTag"> </div></div>
+						<div class="motoInfoWrap">
+						 <p>Enjoy the thrill of the track action in style with an undercover cash bar to protect you from the elements and maximum speed views along Gardner Straight.</p>
+						</div>
+					<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto_tracksideClub_map.svg" alt="Trackside Club"></div>
+					<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+				</div>
+			<!--Bass Strait---->
+			<div data-ticket="reserved" data-cover="noCover" data-experience="general" data-gsbtn="BassStrait" class="motogpSelectDay">
+				
+				<h2>Bass Strait<br />Grandstand</h2><div class="motogpVertDiv"></div>
+				<div class="motoTagWrap"><div class="motoTicketTag motogpTag">Reserved Seating</div><div class="motoLocationTag motogpTag">Straight</div><div data-eventID="" class="motoAvailTag motogpTag"> </div></div>
+				<div class="motoInfoWrap">
+					<p>Located on the outfield at the lowest point on the Circuit and backed by the coastline&rsquo;s dramatic undulating terrain and cliffs, the Bass Strait Grandstand provides one of racing&rsquo;s most unique spectator viewing experiences.
+					</p>
+				</div>
+				<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_bassStrait_map.svg" alt="Bass Straight Grandstand"></div>
+				<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+			</div>	
+		<!--Champions Stand---->
+			<div data-ticket="reserved" data-cover="undercover" data-experience="premium"  data-gsbtn="Champions" class="motogpSelectDay">
+				
+				<h2>Champions<br />Grandstand</h2><div class="motogpVertDiv"></div>
+				<div class="motoTagWrap"><div class="motoTicketTag motogpTag">Reserved Seating</div><div class="motoLocationTag motogpTag">Turn 11</div><div class="motoPremiumTag motogpTag">Undercover</div><div class="motoPremiumTag motogpTag">Premium Option</div><div data-eventID=" " class="motoAvailTag motogpTag"> </div></div>
+				<div class="motoInfoWrap">
+					<p>Overlooking Phillip Island&rsquo;s penultimate corner, the Champions Grandstand has a vantage point that will impress even the most seasoned motorcycle fan.
+					</p>
+				</div>
+				<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_champions_map.svg" alt="Champions Grandstand"></div>
+				<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+			</div>
+		<!--Doohan Pavilion---->
+		<div data-ticket="reserved" data-cover="undercover" data-experience="premium" data-gsbtn="Doohan"  class="motogpSelectDay">
+				
+			<h2>Doohan<br />Pavilion</h2><div class="motogpVertDiv"></div>
+			<div class="motoTagWrap"><div class="motoTicketTag motogpTag">Reserved Seating</div><div class="motoLocationTag motogpTag">Turn 2</div><div class="motoPremiumTag motogpTag">Undercover</div><div class="motoPremiumTag motogpTag">Premium Option</div><div data-eventID=" " class="motoAvailTag motogpTag"> </div></div>
+			<div class="motoInfoWrap">
+				
+				<p>Located on the outfield at Turn 2 and overlooking the apex of the Southern Loop, the Doohan Pavillion is one of Phillip Island&rsquo;s marquee Grandstands and a favourite among longtime <strong>MotoGP&trade;</strong> fans.
+				</p>
+			</div>
+			<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_doohan_map.svg" alt="Doohan Pavilion"></div>
+			<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+		</div>
+		<!--Gardner Straight---->
+			<div data-ticket="reserved" data-cover="undercover" data-experience="premium" data-gsbtn="GardnerStraight" class="motogpSelectDay">
+				
+				<h4>Gardner Straight<br />Grandstand</h4><div class="motogpVertDiv"></div>
+				<div class="motoTagWrap"><div class="motoTicketTag motogpTag">Reserved Seating</div><div class="motoLocationTag motogpTag">Main Straight</div><div class="motoPremiumTag motogpTag">Undercover Option</div><div class="motoPremiumTag motogpTag">Premium Option</div><div class="motoAcessibleTag motogpTag">Accessible</div><div data-eventID=" " class="motoAvailTag motogpTag"> </div></div>
+				<div class="motoInfoWrap">
+					
+					<p>Named after Australian motorsport legend and former World Champion Wayne Gardner, the Gardner Straight Grandstand overlooks the start/finish line, with views into the pit lane.
+					</p>
+				</div>
+				<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_gardnerStraight_map.svg" alt="Gardner Straight Grandstand"></div>
+				<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+			</div>			
+		<!--Gardner Premium----
+			<div id="" data-gsbtn="GardnerStraightPremium" class="motogpSelectDay">
+				
+				<h2>Gardner Straight Premium</h2><div class="motogpTag">tag</div>
+				<p>
+
+				</p>
+				<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_gardnerPremium_ico.svg" alt="Gardner Straight Premium"></div>
+				<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+			</div>	--->		
+		<!--Lukey Heights Grandstand---->
+			<div data-ticket="reserved" data-cover="noCover" data-experience="general" data-gsbtn="LukeyHeights" class="motogpSelectDay">
+				
+				<h2>Lukey Heights<br />Grandstand</h2><div class="motogpVertDiv"></div>
+				<div class="motoTagWrap"><div class="motoTicketTag motogpTag">Reserved Seating</div><div class="motoLocationTag motogpTag">Turn 9 &amp; 10</div><div data-eventID=" " class="motoAvailTag motogpTag"> </div></div>
+				<div class="motoInfoWrap">
+					
+					<p>The Lukey Heights Grandstand is located at the apex of the Circuit&rsquo;s steep descent out of Turn 9, providing cross&#45;Circuit views over arguably the track&rsquo;s most challenging and technical section, all the way across to the Southern Loop.
+					</p>
+				</div>
+				<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_lukeyHeights_map.svg" alt="Lukey Heights Grandstand"></div>
+				<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+			</div>				
+		<!--Siberia Grandstand---->
+			<div data-ticket="reserved" data-cover="noCover" data-experience="general"  data-gsbtn="Siberia"  class="motogpSelectDay">
+				
+				<h2>Siberia<br />Grandstand</h2><div class="motogpVertDiv"></div>
+				<div class="motoTagWrap"><div class="motoTicketTag motogpTag">Reserved Seating</div><div class="motoLocationTag motogpTag">Turn 6 &amp; 7</div><!--<div class="motoLocationTag motogpTag">Miller Corner</div>---><div data-eventID=" " class="motoAvailTag motogpTag"> </div></div>
+				<div class="motoInfoWrap">
+					
+					<p>Perched on the eastern side of the Circuit and flanked to the left by the wild waters of Bass Strait, the Siberia Grandstand is a fan favourite and regarded by many as the &lsquo;best seat in the house&rsquo;.
+					</p>
+				</div>
+				<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_siberia_map.svg" alt="Siberia Grandstand"></div>
+				<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+			</div>
+		<!--Stoner Pavilion---->
+			<div data-ticket="reserved" data-cover="undercover" data-experience="premium" data-gsbtn="Stoner"  class="motogpSelectDay">
+				
+				<h2>Stoner<br />Pavilion</h2><div class="motogpVertDiv"></div>
+				<div class="motoTagWrap"><div class="motoTicketTag motogpTag">Reserved Seating</div><div class="motoLocationTag motogpTag">Turn 12</div><div class="motoPremiumTag motogpTag">Undercover</div><div class="motoPremiumTag motogpTag">Premium Option</div><div data-eventID="G5efZ9nTSze1O" class="motoAvailTag motogpTag"> </div></div>
+				<div class="motoInfoWrap">
+					
+					<p>Located on the outfield at Turn 12, Stoner Pavilion is named in recognition of the achievements of an Australian legend: six&#45;time Australian Motorcycle Grand Prix winner and two&#45;time <strong>MotoGP&trade;</strong> World Champion Casey Stoner.
+					</p>
+				</div>
+				<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_stoner_map.svg" alt="Stoner Pavilion"></div>
+				<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+			</div>
+	
+		</div>
+		<div id="motogpGrandstandSelect"></div>
+<!----TICKETS---->
+		<!--Island Pass--->
+		<div id="motogpIslandPassTicket" class="motogpGrandstand"><div class="motogpGrandstandDiv"></div><div class="motogpGrandstandWrap">
+			<h1>Island Pass</h1>
+			<h2>General Admission</h2>
+			<p>Get ready for an electrifying MotoGP&trade; spectacle as it returns to the Island in 2025, promising an unforgettable experience for every fan! Unlock the ultimate flexibility with our Island Pass &#45; your most affordable gateway to all the high&#45;octane action both on and off the track.
+				<br /><br />
+				Step into the heart of the MotoGP&trade; universe with exclusive rider insights at our dynamic Fan Forum Stage. Bring the whole crew and discover endless fun for all ages in our dedicated family zone. Treat your taste buds to a delicious selection of local flavors and dive into the GP Expo, a haven for every motorcycle enthusiast.
+				<br /><br />
+				And the best part? Kids aged 14 and under get FREE entry with any Adult or Concession Island Pass, making it the perfect, budget&#45;friendly family adventure on The Island. Don't let this incredible racing weekend pass you by!
+				
+			</p>		
+		</div>
+			<div class="motogpGrandstandWrap motogpHeroWrap">
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_islandpass_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+				<div class="motogpGrandstandInfo"><p><strong>Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the F&eacute;d&eacute;ration Internationale de Motocyclisme (FIM), this may alter the viewing experience.</strong></p></div>
+			</div>
+			<div class="motogpBtnWrap">
+			<a href="https://www.ticketmaster.com.au/event/25006351B71091B7"><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Fri &#45; Sun</h2><div class="motogpDayBtn"><h1>3</h1><h3>day pass</h3></div></div></a><!--<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sat &#45; Sun</h2><div class="motogpDayBtn"><h1>2</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sunday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Saturday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Friday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a>--->
+			
+			</div>
+		<!--mobile hero-->
+			<div class="motogpGrandstandWrap motogpMobHero">
+				<div class="motogpGrandstandInfo"><p><strong>Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the F&eacute;d&eacute;ration Internationale de Motocyclisme (FIM), this may alter the viewing experience.</strong></p></div>
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_islandpass_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+			</div>			
+			
+		</div>	
+		<!--Bass Strait--->
+		<div id="motogpBassStraitTicket" class="motogpGrandstand"><div class="motogpGrandstandDiv"></div><div class="motogpGrandstandWrap">
+			<h1>Bass Strait<br />Grandstand</h1>
+			<h2>Reserved Seating</h2>
+			<p>Located on the outfield at the lowest point on the Circuit and backed by the coastline&rsquo;s dramatic undulating terrain and cliffs, the Bass Strait Grandstand provides one of racing&rsquo;s most unique spectator viewing experiences.
+				<br /><br />
+				The views from the Bass Strait Grandstand regularly have fans holding their breath as the bikes careen flat out in fifth through the short straight out of Turn 2 before sweeping through Stoner Corner and into the newly named Miller Corner (Turn 4) &#45; one of the Circuit&rsquo;s prime overtaking hotspots and location of Jack Miller&rsquo;s heartbreaking crash in 2022.
+				<br /><br />
+				With a super&#45;screen positioned across the track and with bar and food outlets conveniently located nearby, the Bass Strait Grandstand is an ideal spot for motorsport connoisseurs to enjoy the fast&#45;flowing intricacies of the iconic Phillip Island Grand Prix Circuit.
+				
+			</p>	
+		</div>
+			<div class="motogpGrandstandWrap motogpHeroWrap">
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/motogp_stonerPavilion_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+				<div class="motogpGrandstandInfo"><p><strong>Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the F&eacute;d&eacute;ration Internationale de Motocyclisme (FIM), this may alter the viewing experience.</strong></p></div>
+			</div>
+			<div class="motogpBtnWrap">
+			<a href="https://www.ticketmaster.com.au/event/25006350E5E384CA"><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Fri &#45; Sun</h2><div class="motogpDayBtn"><h1>3</h1><h3>day pass</h3></div></div></a><!--<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sat &#45; Sun</h2><div class="motogpDayBtn"><h1>2</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sunday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Saturday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Friday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a>--->
+				</div>
+		<!--mobile hero-->
+		<div class="motogpGrandstandWrap motogpMobHero">
+				<div class="motogpGrandstandInfo"><p><strong>Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the F&eacute;d&eacute;ration Internationale de Motocyclisme (FIM), this may alter the viewing experience.</strong></p></div>
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/motogp_stonerPavilion_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+		</div>	
+			
+			
+		</div>
+<!--Champion Grandstand--->
+		<div id="motogpChampionsTicket" class="motogpGrandstand"><div class="motogpGrandstandDiv"></div><div class="motogpGrandstandWrap">
+			<h1>Champions<br />Grandstand</h1>
+			<h2>Reserved Seating</h2>
+			<p>Overlooking Phillip Island&rsquo;s penultimate corner, the Champions Grandstand has a vantage point that will impress even the most seasoned motorcycle fan.
+				<br /><br />
+				This is a section of the Circuit that could (and has) decided the fate of the race with one last overtaking opportunity before a final launch down Gardner Straight.
+				<br /><br />
+				The Champions Grandstand backs onto Lukey&rsquo;s Lawn, one of the Circuit&rsquo;s marquee off&#45;track entertainment hubs, meaning you&rsquo;re never far from the action between sessions, with super&#45;screen viewing means you won&rsquo;t miss a moment of racing action on the track.
+						
+			</p>			 
+		</div>
+			<div class="motogpGrandstandWrap motogpHeroWrap">
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_champions_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+				<div class="motogpGrandstandInfo"><p><strong>Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the F&eacute;d&eacute;ration Internationale de Motocyclisme (FIM), this may alter the viewing experience.</strong></p></div>
+			</div>
+			<div class="motogpBtnWrap">
+			<a href="https://www.ticketmaster.com.au/event/25006350F1098E88"><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Fri &#45; Sun</h2><div class="motogpDayBtn"><h1>3</h1><h3>day pass</h3></div></div></a><!--<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sat &#45; Sun</h2><div class="motogpDayBtn"><h1>2</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sunday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Saturday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Friday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a>--->
+				</div>
+		<!--mobile hero-->
+		<div class="motogpGrandstandWrap motogpMobHero">
+				<div class="motogpGrandstandInfo"><p><strong>Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the F&eacute;d&eacute;ration Internationale de Motocyclisme (FIM), this may alter the viewing experience.</strong></p></div>
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_champions_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+		</div>	
+			
+			
+		</div>	
+		
+		
+		<!--Gardner Straight--->
+		<div id="motogpGardnerStraightTicket" class="motogpGrandstand"><div class="motogpGrandstandDiv"></div><div class="motogpGrandstandWrap">
+			<h1>Gardner Straight<br />Grandstand</h1>
+			<h2>Reserved Seating</h2>
+			<p>Named after Australian motorsport legend and former World Champion Wayne Gardner, the Gardner Straight Grandstand overlooks the start/finish line, with views into the pit lane.
+				<br /><br />
+				The Gardner Straight Grandstand puts fans in pole position to feel the rumble of engines as the bikes are pushed to their limits and approach speeds of 350km/hr before disappearing over the horizon.
+				<br /><br />
+				With premium undercover seating options and an accessibility platform for patrons with accessibility requirements, the Gardner Straight Grandstand also backs onto our 2025 GP Expo and main fan hub with a plethora of food, drink, merchandise and off&#45;track entertainment choices.
+				
+			</p>			
+		</div>
+			<div class="motogpGrandstandWrap motogpHeroWrap">
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_gardnerStraight_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+				<div class="motogpGrandstandInfo"><p><strong>Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the F&eacute;d&eacute;ration Internationale de Motocyclisme (FIM), this may alter the viewing experience.</strong></p></div>
+			</div>
+			<div class="motogpBtnWrap">
+			<a href="https://www.ticketmaster.com.au/event/25006350F1098E8C"><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Fri &#45; Sun</h2><div class="motogpDayBtn"><h1>3</h1><h3>day pass</h3></div></div></a><!--<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sat &#45; Sun</h2><div class="motogpDayBtn"><h1>2</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sunday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Saturday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Friday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a>--->
+				</div>
+		<!--mobile hero-->
+			<div class="motogpGrandstandWrap motogpMobHero">
+				<div class="motogpGrandstandInfo"><p><strong>Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the F&eacute;d&eacute;ration Internationale de Motocyclisme (FIM), this may alter the viewing experience.</strong></p></div>
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_gardnerStraight_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+			</div>			
+			
+		</div>					
+		<!--Lukey Heights Grandstands--->
+		<div id="motogpLukeyHeightsTicket" class="motogpGrandstand"><div class="motogpGrandstandDiv"></div><div class="motogpGrandstandWrap">
+			<h1>Lukey Heights<br />Grandstand</h1>
+			<h2>Reserved Seating</h2>
+			<p>The Lukey Heights Grandstand is located at the apex of the Circuit&rsquo;s steep descent out of Turn 9, providing cross&#45;Circuit views over arguably the track&rsquo;s most challenging and technical section, all the way across to the Southern Loop.
+				<br /><br />
+				Turn 9 is one of Phillip Island&rsquo;s most notorious sections, with a long left&#45;hander leading to a blind crest and a tricky downhill run into the Turn 10 hairpin, which is renowned as one of the Circuit&rsquo;s prime overtaking locations.
+				<br /><br />
+				The Lukey Heights Grandstand gives fans some of the best views of this fast&#45;flowing and highly technical part of the Circuit and backs onto Lukey&rsquo;s Lawn, one of the Circuit&rsquo;s marquee off&#45;track entertainment hubs.
+						
+			</p>		
+		</div>
+			<div class="motogpGrandstandWrap motogpHeroWrap">
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_lukeyHeights_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+				<div class="motogpGrandstandInfo"><p><strong>Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the F&eacute;d&eacute;ration Internationale de Motocyclisme (FIM), this may alter the viewing experience.</strong></p></div>
+			</div>
+			<div class="motogpBtnWrap">
+			<a href="https://www.ticketmaster.com.au/event/25006350F1098E8F"><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Fri &#45; Sun</h2><div class="motogpDayBtn"><h1>3</h1><h3>day pass</h3></div></div></a><!--<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sat &#45; Sun</h2><div class="motogpDayBtn"><h1>2</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sunday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Saturday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Friday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a>--->
+				</div>
+		<!--mobile hero-->
+			<div class="motogpGrandstandWrap motogpMobHero">
+				<div class="motogpGrandstandInfo"><p><strong>Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the F&eacute;d&eacute;ration Internationale de Motocyclisme (FIM), this may alter the viewing experience.</strong></p></div>
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_lukeyHeights_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+			</div>			
+			
+		</div>	
+		<!-- Siberia Grandstand--->
+		<div id="motogpSiberiaTicket" class="motogpGrandstand"><div class="motogpGrandstandDiv"></div><div class="motogpGrandstandWrap">
+			<h1>Siberia<br />Grandstand</h1>
+			<h2>Reserved Seating</h2>
+			<p>Perched on the eastern side of the Circuit and flanked to the left by the wild waters of Bass Strait, the Siberia Grandstand is a fan favourite and regarded by many as the &lsquo;best seat in the house.&rsquo;
+				<br /><br />
+			The Grandstand&rsquo;s location provides spectators unmatched views of the bikes negotiating the hairpin at Miller Corner (previously Turn 4), the sight of Jack Miller&rsquo;s heartbreaking incident in 2022.
+			<br /><br />
+			Watch as the riders click through their gears into Turn 5 before flashing through Siberia&rsquo;s sweeping Turn 6 left&#45;hander and roar up towards the northern part of the track.
+			<br /><br />
+			The views across the southern half of the Circuit perfectly illustrate why Phillip Island is regarded as a racing paradise for most motorsport fans.
+			<br /><br />
+			Nearby food, merchandise and bars mean you never have to travel far from your seat, and the super&#45;screen opposite the Grandstand means you won&rsquo;t miss a moment of the action.
+	
+			</p>			
+		</div>
+			<div class="motogpGrandstandWrap motogpHeroWrap">
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_siberiaStand_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+				<div class="motogpGrandstandInfo"><p><strong>Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the F&eacute;d&eacute;ration Internationale de Motocyclisme (FIM), this may alter the viewing experience.
+					<br /><br />
+				This fencing is to ensure the safety of both spectators and riders, and may alter the viewing experience at the Siberia Grandstand. 
+				</strong></p></div>
+			</div>
+			<div class="motogpBtnWrap">
+			<a href="https://www.ticketmaster.com.au/event/25006350F1098E91"><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Fri &#45; Sun</h2><div class="motogpDayBtn"><h1>3</h1><h3>day pass</h3></div></div></a><!--<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sat &#45; Sun</h2><div class="motogpDayBtn"><h1>2</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sunday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Saturday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Friday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a>--->
+				</div>
+		<!--mobile hero-->
+		<div class="motogpGrandstandWrap motogpMobHero">
+				<div class="motogpGrandstandInfo"><p><strong>Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the F&eacute;d&eacute;ration Internationale de Motocyclisme (FIM), this may alter the viewing experience.
+					<br /><br />
+					This fencing is to ensure the safety of both spectators and riders, and may alter the viewing experience at the Siberia Grandstand. </strong></p></div>
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_siberiaStand_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+		</div>			
+			
+			
+		</div>		
+		<!--Doohan Pavilion--->
+		<div id="motogpDoohanTicket" class="motogpGrandstand"><div class="motogpGrandstandDiv"></div><div class="motogpGrandstandWrap">
+			<h1>Doohan<br />Pavilion</h1>
+			<h2>Reserved Seating</h2>
+			<p>Located on the outfield at Turn 2 and overlooking the apex of the Southern Loop, the Doohan Pavillion is one of Phillip Island&rsquo;s marquee Grandstands and a favourite among longtime <strong>MotoGP&trade;</strong> fans.
+				<br /><br />
+				Undercovered seating provides weather protection. Doohan Pavillion puts fans at the nerve centre of the Circuit with views that extend from Doohan Corner (Turn 1) right down to Miller Corner (Turn 4).
+				<br /><br />
+				Tickets into the Doohan Pavillion include access to exclusive nearby facilities, including a private cash bar, food outlets and private TV screens, meaning you won&rsquo;t miss a moment of the on&#45;track action even when you&rsquo;re away from your seat.
+				
+			</p>			
+		</div>
+			<div class="motogpGrandstandWrap motogpHeroWrap">
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_doohanPavilion_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+				<div class="motogpGrandstandInfo"><p><strong>Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the F&eacute;d&eacute;ration Internationale de Motocyclisme (FIM), this may alter the viewing experience.</strong></p></div>
+			</div>
+			<div class="motogpBtnWrap">
+			<a href="https://www.ticketmaster.com.au/event/25006350F1098E8A"><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Fri &#45; Sun</h2><div class="motogpDayBtn"><h1>3</h1><h3>day pass</h3></div></div></a><!--<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sat &#45; Sun</h2><div class="motogpDayBtn"><h1>2</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sunday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Saturday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Friday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a>--->
+				</div>
+		<!--mobile hero-->
+		<div class="motogpGrandstandWrap motogpMobHero">
+				<div class="motogpGrandstandInfo"><p><strong>Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the F&eacute;d&eacute;ration Internationale de Motocyclisme (FIM), this may alter the viewing experience.</strong></p></div>
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_doohanPavilion_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+		</div>		
+			
+		</div>			
+		<!--Stoner Pavilion--->
+		<div id="motogpStonerTicket" class="motogpGrandstand"><div class="motogpGrandstandDiv"></div><div class="motogpGrandstandWrap">
+			<h1>Stoner<br />Pavilion</h1>
+			<h2>Reserved Seating</h2>
+			<p>Located on the outfield at Turn 12, Stoner Pavilion is named in recognition of the achievements of an Australian legend: six&#45;time Australian Motorcycle Grand Prix winner and two&#45;time <strong>MotoGP&trade;</strong> World Champion Casey Stoner.
+				<br /><br />
+				This undercover Grandstand provides views of the track and an infield super&#45;screen to keep you fully enthralled as the action on the track unfolds.
+				<br /><br />
+				With a ticket to Stoner Pavilion, you&rsquo;ll enjoy access to exclusive facilities, including a nearby cash bar, food outlets, as well as private TV screens, so you can be sure you won&rsquo;t miss a moment when you&rsquo;re away from your seat.
+				</p>			
+		</div>
+			<div class="motogpGrandstandWrap motogpHeroWrap">
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_stonerPavilion_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+				<div class="motogpGrandstandInfo"><p><strong>Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the F&eacute;d&eacute;ration Internationale de Motocyclisme (FIM), this may alter the viewing experience.
+					<br /><br />
+					This fencing is to ensure the safety of both spectators and riders, and may alter the viewing experience at the Stoner Pavilion. 
+				</strong></p></div>
+			</div>
+			<div class="motogpBtnWrap">
+			<a href="https://www.ticketmaster.com.au/event/25006350F1098E93"><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Fri &#45; Sun</h2><div class="motogpDayBtn"><h1>3</h1><h3>day pass</h3></div></div></a><!--<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sat &#45; Sun</h2><div class="motogpDayBtn"><h1>2</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sunday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Saturday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Friday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a>--->
+				</div>
+		<!--mobile hero-->
+			<div class="motogpGrandstandWrap motogpMobHero">
+				<div class="motogpGrandstandInfo"><p><strong>Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the F&eacute;d&eacute;ration Internationale de Motocyclisme (FIM), this may alter the viewing experience.
+				<br /><br />
+				This fencing is to ensure the safety of both spectators and riders, and may alter the viewing experience at the Stoner Pavilion. 
+				</strong></p></div>
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_stonerPavilion_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+			</div>			
+			
+		</div>		
+		<!--clubhouse--->
+		<div id="motogpClubhouseTicket" class="motogpGrandstand"><div class="motogpGrandstandDiv"></div><div class="motogpGrandstandWrap">
+			<h1>The Clubhouse</h1>
+			<h2>Island Pass Ticket Included</h2>
+			<p>Elevate your MotoGP&trade; experience in 2025 at <strong>The Clubhouse</strong>, your exclusive trackside haven perfectly positioned at the legendary Turn 10!
+				<br /><br />
+				Feel the adrenaline surge as you witness the intense braking and cornering power of the world's best riders from our dedicated outdoor viewing area at Turn 10. Then, step inside our comfortable undercover marquee to relax and soak in the atmosphere.
+				<br /><br />
+				From this prime location, you'll not only have a spectacular view of the action at Turn 10 but also a thrilling perspective as the bikes power through the challenging Turn 11 and navigate onto Turn 12, setting them up for a breathtaking charge down the home straight.
+				<br /><br />
+				Enjoy the convenience of a private cash bar and easy access to a variety of food options, ensuring you don't miss a moment of the race with our live TV screens. Your Clubhouse access includes the flexibility of an Island Pass, delivering an unparalleled MotoGP&trade; weekend surrounded by fellow enthusiasts and the electrifying energy of the track. Don't just watch the race &#45; immerse yourself in it at The Clubhouse!
+				
+				</p>		
+		</div>
+			<div class="motogpGrandstandWrap motogpHeroWrap">
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_clubhouse_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+				<div class="motogpGrandstandInfo"><p><strong>Note: You do not have to purchase an Island Pass (GA) ticket to access the Clubhouse, as this is already included in the ticket price. Kids also are not free in this area. A junior Clubhouse ticket must be purchased for children to enter this facility.<br /><br />
+					Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the Fédération Internationale de Motocyclisme (FIM), this may alter the viewing experience.  </strong></p></div>
+			</div>
+			<div class="motogpBtnWrap">
+			<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Fri &#45; Sun</h2><div class="motogpDayBtn"><h1>3</h1><h3>day pass</h3></div></div></a><!--<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sat &#45; Sun</h2><div class="motogpDayBtn"><h1>2</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sunday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Saturday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Friday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a>--->
+				
+				</div>
+		<!--mobile hero-->
+		<div class="motogpGrandstandWrap motogpMobHero">
+				<div class="motogpGrandstandInfo"><p><strong>Note: You do not have to purchase an Island Pass (GA) ticket to access the Clubhouse, as this is already included in the ticket price. Kids also are not free in this area. A junior Clubhouse ticket must be purchased for children to enter this facility.<br /><br />
+					Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the Fédération Internationale de Motocyclisme (FIM), this may alter the viewing experience.  
+					</strong></p></div>
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_clubhouse_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+
+		</div>	
+			
+		</div>
+		<!--trackside club--->
+				<div id="motogpTracksideClubTicket" class="motogpGrandstand"><div class="motogpGrandstandDiv"></div><div class="motogpGrandstandWrap">
+					<h1>Trackside Club</h1>
+					<h2>Island Pass Ticket Included</h2>
+					<p>Experience the electrifying energy of the Phillip Island Grand Prix Circuit from the Trackside Club in 2025! Secure your spot in our prime, unreserved viewing area along the exhilarating Gardner Straight.
+						<br /><br />
+						From this fantastic location, you'll not only witness the blistering speeds as the bikes thunder down the front straight but also enjoy sweeping views across the southern loop of the circuit.
+						<br /><br />
+						Escape the elements in our spacious undercover marquee and soak up the race day atmosphere. Grab a drink and mingle in our vibrant outdoor garden or unwind in our comfortable lounge, with convenient access to a private cash bar.
+						<br /><br />
+						With a variety of food options just a stone's throw away and your flexible Island Pass ticket included, the Trackside Club offers the perfect fusion of trackside thrills and relaxed comfort at the heart of the MotoGP&TRADE; action.
+						
+						</p>		
+				</div>
+					<div class="motogpGrandstandWrap motogpHeroWrap">
+						<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/motogp_tracksideClubhouse_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+						<div class="motogpGrandstandInfo"><p><strong>Note: You do not have to purchase an Island Pass (GA) ticket to access Trackside Club, as this is already included in the ticket price. Kids also are not free in this area. A junior ticket must be purchased for children to enter this facility.<br /><br />
+							Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the Fédération Internationale de Motocyclisme (FIM), this may alter the viewing experience.  </strong></p></div>
+					</div>
+					<div class="motogpBtnWrap">
+			<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Fri &#45; Sun</h2><div class="motogpDayBtn"><h1>3</h1><h3>day pass</h3></div></div></a><!--<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sat &#45; Sun</h2><div class="motogpDayBtn"><h1>2</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sunday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Saturday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Friday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a>--->
+						</div>
+				<!--mobile hero-->
+				<div class="motogpGrandstandWrap motogpMobHero">
+						<div class="motogpGrandstandInfo"><p><strong>Note: You do not have to purchase an Island Pass (GA) ticket to access Trackside Club, as this is already included in the ticket price. Kids also are not free in this area. A junior ticket must be purchased for children to enter this facility.<br /><br />
+							Please note, as part of our ongoing commitment to safety, enhanced debris fencing has been installed at certain locations around the circuit to align with global motorsport standards and the safety requirements of the Fédération Internationale de Motocyclisme (FIM), this may alter the viewing experience.  
+							</strong></p></div>
+						<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/motogp_tracksideClubhouse_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+		
+				</div>	
+					
+				</div>	
+	</div>	
+	<!--end stand mod--->
+
+	<!--Extras -->
+	<div id="motogpExtraMod">	
+		<div class="motogpSubHeader"><h1>Extra Experiences</h1><div class="motogpSubHeaderCover"></div></div>
+		<div class="motogpExtraWrap">	
+
+
+		<!--Hero Walk----
+		<div data-experience="premium" data-gsbtn="Herowalk"  class="motogpSelectDay">
+				
+			<h2>Hero Walk</h2><div class="motogpVertDiv"></div>
+				<div class="motoTagWrap"><div class="motoTicketTag motogpTag">Extra</div><div class="motoTicketTag motogpTag">General Admission</div><div class="motoPremiumTag motogpTag">Premium</div></div>
+				<div class="motoInfoWrap">
+
+			
+						<p>Hero Walk returns to the Qatar Airways Australian Motorcycle Grand Prix 2024, once again giving fans the chance to welcome riders to the circuit each morning. Motorsport fans will have the opportunity to interact with their favourite MotoGP&trade; riders.</p>
+				</div>
+			<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_islandPass_map.svg" alt="Hero Walk"></div>
+			<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+		</div>	-->		
+		<!--The Clubhouse------
+		<div data-ticket="general" data-cover="undercover" data-experience="premium" data-gsbtn="Clubhouse"  class="motogpSelectDay">
+				
+			<h2>The<br />Clubhouse</h2><div class="motogpVertDiv"></div>
+				<div class="motoTagWrap"><div class="motoTicketTag motogpTag">Extra</div><div class="motoTicketTag motogpTag">General Admission</div><div class="motoLocationTag motogpTag">Turn 10</div><div class="motoPremiumTag motogpTag">Undercover Option</div><div class="motoPremiumTag motogpTag">Premium</div><div data-eventID=" " class="motoAvailTag motogpTag"> </div></div>
+				<div class="motoInfoWrap">
+
+			
+						<p>The Clubhouse is a fan favourite situated trackside at Lukey Heights. Catch up with mates and kick back with an undercover cash bar while you watch the world&rsquo;s best riders take machine and talent to the edge.</p>
+				</div>
+			<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_theClubhouse_map.svg" alt="The Clubhouse"></div>
+			<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+		</div>
+		<!--Trackside Club----
+				<div data-ticket="general" data-cover="undercover" data-experience="premium" data-gsbtn="TracksideClub"  class="motogpSelectDay">
+				
+					<h4>Trackside Club</h4><div class="motogpVertDiv"></div>
+						<div class="motoTagWrap"><div class="motoTicketTag motogpTag">Extra</div><div class="motoTicketTag motogpTag">General Admission</div><div class="motoLocationTag motogpTag">Main Straight</div><div class="motoPremiumTag motogpTag">Premium</div><div data-eventID=" " class="motoAvailTag motogpTag"> </div></div>
+						<div class="motoInfoWrap">					
+								<p>Enjoy the thrill of the track action in style with an undercover cash bar to protect you from the elements and maximum speed views along Gardner Straight.</p>
+						</div>
+					<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto_tracksideClub_map.svg" alt="Trackside Club"></div>
+					<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+				</div> -->
+		<!--Catch a coach---->
+				<div data-ticket="general" data-gsbtn="Catchacoach" data-experience="premium" data-cover="undercover" class="motogpSelectDay">
+				
+					<h3>Catch&#45;a&#45;Coach</h3><div class="motogpVertDiv"></div>
+						<div class="motoTagWrap"><div class="motoTicketTag motogpTag">Transport</div><div class="motoTicketTag motogpTag">Extra</div><div data-eventID=" " class="motoAvailTag motogpTag"> </div></div>
+						<div class="motoInfoWrapLong">
+						
+								<p>Forget petrol prices, parking costs and designated drivers. Just sit back, relax in five&#45;star coach comfort, and be driven straight to the track and back again with our Catch&#45;a&#45;Coach service.</p>
+						</div>
+					<!--<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_theClubhouse_map.svg" alt="The Clubhouse"></div>-->
+					<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+				</div>	
+		<!--Campgrounds----
+		<div data-ticket="general" data-gsbtn="Campgrounds" data-experience="premium" data-cover="undercover" class="motogpSelectDay">
+				
+			<h3>Campgrounds</h3><div class="motogpVertDiv"></div>
+				<div class="motoTagWrap"><div class="motoTicketTag motogpTag">Extra</div><div data-eventID=" " class="motoAvailTag motogpTag"> </div></div>
+				<div class="motoInfoWrapLong">
+				
+						<p>Nothing says ultimate racing weekend like camping with your mates on &lsquo;The Island&rsquo;!  With nearby amenities and after&#45;hours entertainment provided, camping at The Island is an immersive experience that&rsquo;ll have you living and breathing motorcycle racing for the weekend.</p>
+				</div>
+			<!--<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_theClubhouse_map.svg" alt="The Clubhouse"></div>--
+			<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+		</div>
+		<!--Paddock Pass----
+		<div data-ticket="general" data-gsbtn="PaddockPass" data-experience="premium" class="motogpSelectDay">
+				
+			<h2>Paddock<br />Pass</h2><div class="motogpVertDiv"></div>
+				<div class="motoTagWrap"><div class="motoTicketTag motogpTag">Extra</div><div class="motoPremiumTag motogpTag">Premium</div><div data-eventID=" " class="motoAvailTag motogpTag"> </div></div>
+				<div class="motoInfoWrapLong">
+				
+						<p>A Paddock Pass allows you to wander the Paddock, meet your favourite riders from MotoGP&trade;, Moto 2&trade;, and Moto 3&trade;, and share the same space with key personnel.</p>
+				</div>
+			<!--<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_theClubhouse_map.svg" alt="The Clubhouse"></div>--
+			<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+		</div>
+		<!--Helicoper----
+		<div data-ticket="general" data-gsbtn="Joyflight" data-experience="premium" class="motogpSelectDay">
+				
+			<h4>Phillip Island<br />MotoGP<sup>&trade;</sup> Joyflight</h4><div class="motogpVertDiv"></div>
+				<div class="motoTagWrap"><div class="motoTicketTag motogpTag">Extra</div><div class="motoPremiumTag motogpTag">Premium</div><div data-eventID=" " class="motoAvailTag motogpTag"> </div></div>
+				<div class="motoInfoWrapLong">			
+						<p>Enjoy the excitement and thrill of flying with breathtaking views of the Phillip Island Grand Prix circuit and Bass Strait!*<br /><br />
+							<em>*Subject to weather conditions</em>
+						</p>
+				</div>
+			<!--<div class="motogpSelectMap"><img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto_theClubhouse_map.svg" alt="The Clubhouse"></div>--
+
+
+			<div class="motogpSelectBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2021/v2/ausgp21_ticket_white_ico.svg" alt="Tickets">Select<br /> Day</div>
+		</div>-->
+		 <!--end joyflight--->
+				<!--<div data-menubtn="Campgrounds" class="motogpInfoSubMod">
+					<h3>Campgrounds</h3>
+					<div class="motogpInfoSubBtn">SEE OPTIONS</div>
+					<div class="motogpInfoModDiv"></div>
+				</div> -->
+
+				<!--<div data-menubtn="Coach" class="motogpInfoSubMod">
+					<h3>Catch&#45;a&#45;Coach</h3>
+					<div class="motogpInfoSubBtn">SEE OPTIONS</div>
+					<div class="motogpInfoModDiv"></div>
+				</div> -->
+
+				<!--<div data-menubtn="Clubhouse" class="motogpInfoSubMod">
+					<h3>The Clubhouse</h3>
+					<div class="motogpInfoSubBtn">SEE OPTIONS</div>
+					<div class="motogpInfoModDiv"></div>
+				</div> -->
+	
+				<!--<div data-menubtn="TracksideClub" class="motogpInfoSubMod">
+					<h3>Trackside Club</h3>
+					<div class="motogpInfoSubBtn">SEE OPTIONS</div>
+					<div class="motogpInfoModDiv"></div>
+				</div>	-->		
+
+				<!--<div data-menubtn="HeroWalk" class="motogpInfoSubMod">
+					<h3>Hero Walk</h3>
+					<div class="motogpInfoSubBtn">SEE OPTIONS</div>
+					<div class="motogpInfoModDiv"></div>
+				</div>	-->	
+		</div>
+<!--Campgrounds---<div id="motogpCampgroundsMod"></div>
+		<div id="motogpCampgroundsTicket" class="motogpGrandstand"><div class="motogpGrandstandDiv"></div><div class="motogpGrandstandWrap">
+			<h1>Campgrounds</h1>
+			<h2>Extra (MotoGP<sup>&trade;</sup> entry not included)</h2>
+			<p>Nothing says ultimate racing weekend like camping with your mates on &lsquo;The Island&rsquo;!
+				<br /><br />
+				With nearby amenities and after&#45;hours entertainment provided, camping at The Island is an immersive experience that&rsquo;ll have you living and breathing motorcycle racing for the weekend.
+				<br /><br />
+				In 2024, campers have multiple site options that range from Premium Trackside sites to Pre&#45;Pitched sites to ensure that regardless of your propensity to camp, we have a site to suit your needs.
+				<br /><br />
+				Please note there are specific entry terms and conditions to the MotoGP&trade; Campgrounds
+			</p>		
+		</div>
+			<div class="motogpGrandstandWrap motogpHeroWrap">
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_campgrounds_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+				<div class="motogpGrandstandInfo"><p><strong>Please note that your campground site does not grant you access to the circuit, and a valid ticket to the event is also required to enter the circuit.</strong></p></div>
+			</div>
+		<div class="motogpBtnWrap"><a href="https://www.motogp.com.au/tickets/campgrounds"><div class="motogpMultiDayMod"><h2>Thu &#45; Sun</h2><div class="motogpDayBtn"><h1>4</h1><h3>nights</h3></div></div></a></div>
+		<!--mobile hero--
+			<div class="motogpGrandstandWrap motogpMobHero">
+				<div class="motogpGrandstandInfo"><p><strong>Please note that your campground site does not grant you access to the circuit, and a valid ticket to the event is also required to enter the circuit.</strong></p></div>
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_campgrounds_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+			</div>	
+			
+		</div>-->
+<!--Hero Walk---
+<div id="motogpHerowalkTicket" class="motogpGrandstand"><div class="motogpGrandstandDiv"></div><div class="motogpGrandstandWrap">
+	<h1>Hero Walk</h1>
+	<p>Hero Walk returns to the Qatar Airways Australian Motorcycle Grand Prix 2024, once again giving fans the chance to welcome riders to the circuit each morning. Motorsport fans will have the opportunity to interact with their favourite MotoGP&trade; riders.
+		<br /><br />
+		Hero Walk is situated along the riders&rsquo; route to the MotoGP&trade; Paddock and includes roving performers and a DJ. It will be the best position for fans to get a selfie or autograph with the event&rsquo; s stars, with limited tickets available.
+		<br /><br />
+		All proceeds of each ticket purchase will go to Movember, the leading charity changing the face of men&rsquo;s health on a global scale. Since 2003, the charity has created a men&rsquo; s health movement, funding men&rsquo; s health projects around the world, challenging the status quo, shaking up men&rsquo;s health research and transforming the way health services reach and support men. 
+		
+		</p>		
+</div>
+	<div class="motogpGrandstandWrap motogpHeroWrap">
+		<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_heroWalk_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+		<div class="motogpGrandstandInfo"><p><strong></strong></p></div>
+	</div>
+	<div class="motogpBtnWrap">
+		<!---	<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Fri &#45; Sun</h2><div class="motogpDayBtn"><h1>3</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sat &#45; Sun</h2><div class="motogpDayBtn"><h1>2</h1><h3>day pass</h3></div></div></a><a href="h"><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sunday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Saturday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a><a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Friday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a>
+		
+		</div>-->
+<!--mobile hero--
+<div class="motogpGrandstandWrap motogpMobHero">
+		<div class="motogpGrandstandInfo"><p><strong> 
+			</strong></p></div>
+		<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_heroWalk_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+
+</div>	
+	
+</div> -->
+		
+		<!--Hero Walk--->
+		<div id="motogpHeroWalkTicket" class="motogpGrandstand"><div class="motogpGrandstandDiv"></div><div class="motogpGrandstandWrap">
+			<h1>Hero Walk</h1>
+			<h2>Extra (MotoGP<sup>&trade;</sup> entry not included)</h2>
+			<p></p>		
+		</div>
+			<div class="motogpGrandstandWrap motogpHeroWrap">
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/motogp_herowalk_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+				<div class="motogpGrandstandInfo"><p><strong></strong></p></div>
+			</div>
+		<div class="motogpBtnWrap">
+		<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Fri &#45; Sun</h2><div class="motogpDayBtn"><h1>3</h1><h3>day pass</h3></div></div></a>
+		<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sat &#45; Sun</h2><div class="motogpDayBtn"><h1>2</h1><h3>day pass</h3></div></div></a>
+		<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sunday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a>
+		<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Saturday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a>
+		<a href=""><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Friday</h2><div class="motogpDayBtn"><h1>1</h1><h3>day pass</h3></div></div></a></div>
+		<!--mobile hero-->
+		<div class="motogpGrandstandWrap motogpMobHero">
+				<div class="motogpGrandstandInfo"><p><strong></strong></p></div>
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/motogp_herowalk_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+
+		</div>	
+			
+		</div>	
+
+
+<!--Catch a coach---><div id="motogpCatchacoachMod"></div>
+		<div id="motogpCatchacoachTicket" class="motogpGrandstand"><div class="motogpGrandstandDiv"></div><div  class="motogpGrandstandWrap">
+			<h1>Catch&#45;a&#45;Coach</h1>
+			<h2> Does not include entry to MotoGP<sup>&trade;</sup></h2>
+			<p>Forget petrol prices, parking costs and designated drivers. Just sit back, relax in five&#45;star coach comfort, and be driven straight to the track and back again with our Catch&#45;a&#45;Coach service.<br /><br />
+				One&#45;way trips are available to and from Melbourne and Phillip Island &#45; pick the option which best suits your needs.
+				
+				
+				<strong>See full Catch&#45;a&#45;Coach information below the purchase buttons.</strong>
+				</p></div>
+			<div class="motogpGrandstandWrap motogpHeroWrap">
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2023/moto23_coachHero_700x400.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+				<!--<div class="motogpGrandstandInfo"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>-->
+			</div>
+
+			<h4>Select your trip on the event page:</h4>	
+			<div class="motogpBtnWrap">
+				<a href="https://www.ticketmaster.com.au/event/2500629EDB6820FF"><div class="motogpMultiDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><div class="motogpDayBtn"><h3>CBD / Cranbourne / Clayton</h3></div></div></a>
+				<!--<a href="https://www.ticketmaster.com.au/event/250062F2BC214C2A"><div class="motogpMultiDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><div class="motogpDayBtn"><h3>Ringwood / Traralgon</h3></div></div></a>-->
+			</div>			
+	<!---	<h4>Return Trip &#45;Melboune CBD to Circuit Return</h4>	
+		<div class="motogpBtnWrap">
+			<a href="https://www.ticketmaster.com.au/event/2500629ECB671FD3"><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Friday</h2><div class="motogpDayBtn"><h3>Return</h3></div></div></a>
+			<a href="https://www.ticketmaster.com.au/event/2500629ED4432081"><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Saturday</h2><div class="motogpDayBtn"><h3>Return</h3></div></div></a>
+			<a href="https://www.ticketmaster.com.au/event/2500629ED4482094"><div class="motogpDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sunday</h2><div class="motogpDayBtn"><h3>Return</h3></div></div></a>
+		</div>
+		
+		<h4>Return Trip &#45; Cranbourne to Circuit Return </h4>	
+		<div class="motogpBtnWrap">
+			<a href="https://www.ticketmaster.com.au/event/25006143EE26331A"><div class="motogpMultiDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sunday</h2><div class="motogpDayBtn"><h3>Return</h3></div></div></a>
+		</div>
+		<h4>Return Trip &#45; Clayton to Circuit Return</h4>	
+		<div class="motogpBtnWrap">
+			<a href="https://www.ticketmaster.com.au/event/25006143EE053316"><div class="motogpMultiDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>Sunday</h2><div class="motogpDayBtn"><h3>Return</h3></div></div></a>
+		</div> -->
+		<div class="motogpFullWidthWrap">
+			<p>
+				<strong>CBD to Circuit Service</strong><br />
+				<strong>Departures from Southern Cross Station Coach Terminal (Fri&#45;Sun): Arrive between the times below and hop on the next available coach.</strong><br />
+				• Friday: 6:30 AM &#45; 9:30 AM<br />
+				• Saturday: 6:00 AM &#45; 9:30 AM<br />
+				• Sunday: 6:00 AM &#45; 9:30 AM<br />
+				<strong>Return Departures from Circuit (Gate 3):</strong><br />
+				• Friday: 3:30 PM &#45; 5:30 PM<br />
+				• Saturday: 3:30 PM &#45; 5:30 PM<br />
+				• Sunday: 2:30 PM &#45; 5:00 PM<br />
+				Last coach departs when gates close. Ensure reaching Gate 3 coach stop before gates close.
+				<br /><br />
+				<strong>Catch-a-Coach services drop off/pick up at Gate 3 on Gap Road at Phillip Island Grand Prix Circuit, with exceptions:</strong><br />
+				• Thursday: Departure 2:00pm from Southern Cross Station. Drop&#45;off: Gate 1, Cowes V/Line Bus Stop (Thompson Ave/Chapel Street).<br />
+				• Monday: Pick&#45;up Cowes V/Line Bus Stop 11:00am (Thompson Ave/Chapel Street), Gate 1 at 11:30am.<br />
+				<br /><br />
+				<strong>Clayton Service: Saturday and Sunday Only</strong><br />
+				<strong>Pick&#45;Up:</strong><br />
+				• Departs 7:00 AM from Monash University Clayton car park, off Wellington road. (Google Maps: <a href="https://www.google.com/maps/search/?api=1&query=-37.9135,145.139" target="_blank">Location</a>, <a href="https://www.google.com/maps/search/?api=1&query=Monash+University+Clayton+car+park" target="_blank">Nearby Parking</a>)<br />
+				Return Departure from Circuit (Gate 3):<br />
+				• 4:00 PM
+				<br /><br />
+				<strong>Cranbourne Service: Saturday and Sunday Only</strong><br />
+				<strong>Pick&#45;Up:</strong><br />
+				• Departs 7:30 AM from Cranbourne Highway Service Road, KFC<br />
+				<strong>Return Departure from Circuit (Gate 3):</strong><br />
+				• 4:00 PM
+				<br /><br />
+				<strong>Ringwood Service: Saturday and Sunday Only</strong><br />
+				Pick&#45;Up:<br />
+				• Departs 6:30 AM from Route 742 stop at Ringwood Station Bus interchange<br />
+				<strong>Return Departure from Circuit (Gate 3):</strong><br />
+				• Saturday: 5:30 PM<br />
+				• Sunday: 3:30 PM
+				<br /><br />
+				<strong>Traralgon via Warragul Service: Saturday and Sunday Only</strong><br />
+				<strong>Pick up:</strong><br />
+				• Departs 6:00 AM from Traralgon Station Rail Replacement Stop<br />
+				• Departs 7:00 AM from Warragul Station Rail Replacement Stop<br />
+				<strong>Return Departure from Circuit (Gate 3):</strong><br />
+				• Saturday: 5:30 PM<br />
+				• Sunday: 3:30 PM
+				<br /><br />
+				*All times are subject to change.
+				<br /><br />
+				<strong>A pre&#45;booked wheelchair&#45;accessible bus will operate from Melbourne (Southern Cross Coach Terminal 1) to Gate 3 each day of the event.</strong> Email <a href="mailto:ticketing@grandprix.com.au">ticketing@grandprix.com.au</a> for availability and to secure a spot. Bookings are essential for this service.
+
+				
+			</p>		
+		</div>
+			
+		<!--mobile hero-->
+			<div class="motogpGrandstandWrap motogpMobHero">
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2022/motogp_catchacoach_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+				<!--<div class="motogpGrandstandInfo"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>-->
+			</div>	
+			
+		</div>	
+		<!--Paddock Pass--->
+		<div id="motogpPaddockPassTicket" class="motogpGrandstand"><div class="motogpGrandstandDiv"></div><div class="motogpGrandstandWrap">
+			<h1>Paddock Pass</h1>
+			<h2>Extra (MotoGP<sup>&trade;</sup> entry not included)</h2>
+			<p>Don&rsquo;t miss the ultimate opportunity that access to the MotoGP&trade; paddock provides with our limited Paddock Pass allocation.
+				<br /><br />
+				A Paddock Pass allows you to wander the Paddock, meet your favourite riders from MotoGP&trade;, Moto 2&trade;, and Moto 3&trade;, and share the same space with key personnel.
+				<br /><br />
+				A Paddock Pass is availabe as a 3 day pass (Fri, Sat, Sun) or single day pass. Secure your pass today before they all run out!
+				</p>		
+		</div>
+			<div class="motogpGrandstandWrap motogpHeroWrap">
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/motogp_paddockPass_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+				<div class="motogpGrandstandInfo"><p><strong>Please note that a Paddock Pass does not entitle you to entry to the Phillip Island Grand Prix Circuit. You will need to be holding a General Admission, Grandstand or Hospitality ticket to enter the venue.</strong></p></div>
+			</div>
+			<div class="motogpBtnWrap">
+				<a href="https://am.ticketmaster.com/motogpau/buy/PaddockPass"><div class="motogpMultiDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2></h2><div class="motogpDayBtn"><h3>Select Day</h3></div></div></a>
+			</div>
+		<!--mobile hero-->
+		<div class="motogpGrandstandWrap motogpMobHero">
+				<div class="motogpGrandstandInfo"><p><strong>Please note that a Paddock Pass does not entitle you to entry to the Phillip Island Grand Prix Circuit. You will need to be holding a General Admission, Grandstand or Hospitality ticket to enter the venue.</strong></p></div>
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/motogp_paddockPass_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+
+		</div>	
+			
+		</div>
+
+		<!--Helicoper Joyflight--->
+		<div id="motogpJoyflightTicket" class="motogpGrandstand"><div class="motogpGrandstandDiv"></div><div class="motogpGrandstandWrap">
+			<h1>Phillip Island MotoGP&trade; Joyflight</h1>
+			<h2>Extra (MotoGP&trade; entry not included)</h2>
+			<p>Want to enjoy the excitement and thrill of flight whilst visiting the Phillip Island Grand Prix Circuit? Professional Helicopter Services will be conducting their highly popular joy flights for the general public throughout this year's event.
+				<br /><br />
+				These sensational scenics provide a safe and spectacular way to absorb all the excitement from above! <br /><br />
+				The flight takes you on one of their most scenic flight patterns around the entire racing Circuit. You'll have breathtaking views of Phillip Island and the Bass Strait. <br /><br />
+				Whether it's your first time in a helicopter or you're already a seasoned flyer, the fun of a flight at this year's event is not to be missed! <br /><br />
+				<strong>Tour Inclusions:</strong><br /> 
+				&bull; 6-8 minute scenic flight (approximate). <br />
+				&bull; Departures from our exclusive helipad situated opposite Gate 7. <br />
+				<strong>Terms & Conditions:</strong> <br />
+				&bull; Tickets are valid for one (1) Joy Flight per person between 17th - 19th October 2025. <br />
+				&bull; Joy Flights operate between 10:00am and 4:00pm daily, weather permitting.  <br />
+				&bull; Present your ticket to the staff at the PHS Helipad to redeem your Joy Flight. <br />
+				&bull; Flight routes are constant, flight times are approximate only and may vary according to helicopter type, number of passengers and/or weather conditions. <br />
+				&bull; Patrons under the age of 16 must be accompanied by an adult with a valid Joy Flight ticket <br />
+				&bull; Items larger than a handbag cannot be taken on the flight. Limited storage of larger bags is available at the helipad. PHS take no responsibility for patrons' items stored.<br />
+				&bull; Due to safety protocols there is no photography allowed before boarding. A professional photographer will take a souvenir photo should you wish to purchase. Once in the aircraft mobile phones and small cameras are permitted.<br />
+				&bull; Your ticket will be valid for use across the three days of the event. Please be aware that the weather can be unpredictable at this event, so our recommendation is to take your flight as soon as weather permits. Please allow at least 30 minutes for safety briefing and manifesting to the aircraft.<br />
+				&bull; This flight ticket is not an event ticket. A ticket to the Australian Motorcycle Grand Prix 2025 is required to gain access to our Joy Flights located within the grounds. <br />
+				&bull; For further terms and conditions visit <a href="https://phs.com.au/" target="_blank">www.phs.com.au</a><br />
+				
+				</p>		
+		</div>
+			<div class="motogpGrandstandWrap motogpHeroWrap">
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/motogp_helicopterJoyride_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+				<div class="motogpGrandstandInfo"><p><strong>For further terms and conditions visit <a href="https://phs.com.au/" target="_blank">www.phs.com.au</a></strong></p></div>
+			</div>
+		<div class="motogpBtnWrap">
+		<a href="https://www.ticketmaster.com.au/event/2500629EA69F135A"><div class="motogpMultiDayMod"><div class="motoAvailTagSpan"><div data-eventID="" class="motoAvailTag motogpTag"></div></div><h2>FRI, SAT or SUN</h2><div class="motogpDayBtn"><h3>Select Ticket</h3></div></div></a></div>
+		<!--mobile hero-->
+		<div class="motogpGrandstandWrap motogpMobHero">
+				<div class="motogpGrandstandInfo"><p><strong>For further terms and conditions visit <a href="https://phs.com.au/" target="_blank">www.phs.com.au</a></strong></p></div>
+				<div class="motogpHero motogpGrandstandHero"><img data-src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/motogp_helicopterJoyride_668x375.jpg" src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2024/moto24_fallbackHero_668x375.jpg"></div>
+
+		</div>	
+			
+		</div>	
+
+	</div>
+
+<!--Packages-->
+	<div id="motogpPackagesMod">	
+		<div class="motogpSubHeader"><h1>Packages</h1><div class="motogpSubHeaderCover"></div></div>
+		<div class="motogpPackageWrap">	
+		<p>Get ready for the ultimate <strong>Australian Motorcycle Grand Prix 2025</strong> experience on the Island.
+			<br /><br />
+			Our Ticket Packages are your gateway to an unforgettable weekend. Imagine arriving to a pre&#45;pitched tent, or securing your spot in the Grandstand or with an Island Pass. Simplify your journey with Catch&#45;a&#45;Coach transfers and elevate your access with Saturday or Sunday Paddock Passes.
+			<br /><br />
+			Score exclusive merchandise bundles and be among the first to register for the homecoming ride with our early bird offer. Explore our range of packages to tailor your perfect <strong>MotoGP&trade;</strong> adventure &#45; not every package includes all these perks, so find the one that fuels your passion.
+			</p>
+		<!--Package--->
+		<div  class="motogpPackageCard">
+			<h2>Doohan Camping</h2>
+			<h3>Package</h3>
+			<div class="motogpHoriDiv"></div>				
+						<p> &bull; Pre&#45;Pitched tent in Trackside<br />
+							&bull; 3&#45;Day Doohan Pavilion<br />
+							&bull; Saturday Hero Walk<br />
+							&bull; Sunday Paddock Pass<br />
+							&bull; Homecoming Ride Earlybird<br />
+							&bull; Merch Bundle</p>
+							<a href="https://www.ticketmaster.com.au/event/250061439CE922C2?did=package"><div class="motogpPackBtn">Select Package</div></a>
+		</div>
+		<!--Package--->
+		<div  class="motogpPackageCard">
+			<h2>Island Pass Camping</h2>
+			<h3>Package</h3>
+			<div class="motogpHoriDiv"></div>				
+						<p> &bull; Pre&#45;Pitched tent in Highside South<br />
+							&bull; 3&#45;Day Island Pass (GA)<br />
+							&bull; Saturday Paddock Pass<br />
+							&bull; Sunday Hero Walk<br />
+							&bull; Homecoming Ride Earlybird<br />
+							&bull; Merch Bundle
+							</p>
+							<a href="https://www.ticketmaster.com.au/event/25006142D5F32D72?did=package"><div class="motogpPackBtn">Select Package</div></a>
+		</div>
+		<!--Package--->
+		<div  class="motogpPackageCard">
+			<h2>3&#45;Day Lukey Heights</h2>
+			<h3>Package</h3>
+			<div class="motogpHoriDiv"></div>				
+						<p> &bull; 3&#45;Day Lukey Heights Grandstand<br />
+							&bull; Catch&#45;a&#45;Coach Transfers<br />
+							&bull; Sunday Paddock Pass<br />
+							&bull; Merch Bundle
+							</p>
+							<a href="https://www.ticketmaster.com.au/event/250061439D3D22D8?did=package"><div class="motogpPackBtn">Select Package</div></a>
+		</div>
+		<!--Package--->
+		<div  class="motogpPackageCard">
+			<h2>2&#45;Day Lukey Heights</h2>
+			<h3>Package</h3>
+			<div class="motogpHoriDiv"></div>				
+						<p> &bull; 2&#45;Day Lukey Heights Grandstand<br />
+							&bull; Catch&#45;a&#45;Coach Transfers<br />
+							&bull; Saturday Paddock Pass<br />
+							&bull; Merch Bundle
+							</p>
+							<a href="https://www.ticketmaster.com.au/event/25006291DC163A1E?did=package"><div class="motogpPackBtn">Select Package</div></a>
+		</div>		
+		</div>	
+	</div>
+<!--end packages-->
+<div id="motogpFaqMod">
+<!--TM Faqs--->
+<div class="motogpFaqWrap">
+	<div class="motogpSubHeader"><h1>FAQ&rsquo;s &amp; Event Information</h1><div class="motogpSubHeaderCover"></div></div>
+	<div class="motogpInfoCard">
+		<div class="motogpInfoHead">
+			<img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2025/moto25_customerService_ico.svg"><h2>General<br />FAQ&rsquo;s</h2>
+		</div>
+		<p>Have a question? View our FAQs regarding when we go on sale, ticket prices, grandstand locations and more.</p>
+	
+		<a href="https://help.ticketmaster.com.au/hc/en-au/articles/35058329260177-Australian-Motorcycle-Grand-Prix-2025" target="_blank"><div class="motoInfoBtn"><h3>All Your Answers Here</h3></div></a>
+	</div>
+	<!--TM Faqs--->
+	<div class="motogpInfoCard">
+		<div class="motogpInfoHead">
+			<img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2025/moto25_track_ico.svg"><h2>Event<br />Information</h2>
+		</div>
+		<p>For all your general event information on-track and off-track check out the Australian Motorcycle Grand Prix site.</p>
+	
+		<a href="https://www.motogp.com.au/" target="_blank"><div class="motoInfoBtn"><h3>See More</h3></div></a>
+	</div>			
+	<!--Hosp--->
+	<div class="motogpInfoCard">
+		<div class="motogpInfoHead">
+			<img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2025/moto25_hospitality_ico.svg"><h2>Hospitality<br />FAQ&rsquo;s</h2>
+		</div>
+		<p>Access information on Hospitality Tickets, arrival tips, and more on the Motorcycle Grand Prix site.</p>
+	
+		<a href="https://www.motogp.com.au/tickets/hospitality" target="_blank"><div class="motoInfoBtn"><h3>See More</h3></div></a>
+	</div>
+	<!--<div class="ausgpHero ausgpFaqHero">
+		<img src="https://s1.ticketm.net/tm/en-au/img/static/formula1/2024/ausgp_faq_hero_445x250v2.jpg">s
+		<div class="ausgpStripe ausgpFaqStripe"></div>
+	</div>-->		
+</div>
+	
+<!--products--->	
+<div class="motogpFaqWrap">
+	<h1>Product Information</h1>
+	<!--Collector Ticket--->
+	<div data-infobtn="Collector" class="motogpInfoCard motoProdCard">
+		<div class="motogpInfoHead">
+			<img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2025/moto25_collector_ico.svg"><h2>Souvenir <br />Ticket</h2>
+		</div>
+		<p>Want a memento? Grab a Souvenir  ticket.</p>
+	
+		<div class="motoInfoBtn"><h3>Read More</h3></div>
+	</div>
+	<!--Aisle seating--->
+	<div data-infobtn="Aisle" class="motogpInfoCard motoProdCard">
+		<div class="motogpInfoHead">
+			<img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2025/moto25_aisle_ico.svg"><h2>Aisle<br />Seating</h2>
+		</div>
+		<p>Looking to add some added comfort to your race day? We've got you covered with Aisle Seat Tickets!</p>
+	
+		<div class="motoInfoBtn"><h3>Read More</h3></div>
+	</div>
+	<!--In Demand---
+	<div data-infobtn="Demand" class="motogpInfoCard motoProdCard">
+		<div class="motogpInfoHead">
+			<img src="https://s1.ticketm.net/tm/en-au/img/static/motogp/2025/moto25_inDemand_ico.svg"><h2>In Demand<br />Tickets</h2>
+		</div>
+		<p>Want to ensure you&rsquo;re in the most in demand areas of the circuit?</p>
+	
+		<div class="motoInfoBtn"><h3>Read More</h3></div>
+	</div> -->
+</div>
+<!--products description--->		
+<div id="motogpFaqCollectorMod" class="motogpFaqTextWrap">
+	<div class="motogpFaqModDiv"></div>
+	<h1>Souvenir  Tickets</h1>
+	<p>If you're looking for a small piece of memorabilia to remember your Australian Motorcycle Grand Prix 2025 experience by, look no further than a limited&#45;edition Souvenir Ticket.
+<br /><br />
+Souvenir tickets are only made available for selected events and can be purchased through the normal purchase processes &#45; be sure to select a 'Souvenir Ticket' ticket type when choosing your tickets. They incur a $15 surcharge.
+<br /><br />
+Souvenir Tickets are a cherished keepsake and a lasting memento of the event. Souvenir Tickets are the same design as Collector Tickets, however they are mailed out after the event and do not include a lanyard or provide entry; instead, your mobile ticket will grant access on the day. Please note, Souvenir Tickets can only be purchased with an Australian postal address, so double&#45;check that your Ticketmaster account details are up to date.  Expected delivery &#45; 4 weeks post event. Souvenir Tickets incur an additional $15 fee per ticket.
+<br /><br />
+<em>*Souvenir Tickets are not eligible for Resale.</em>
+
+		</p>	
+	</div>
+<!--products description--->	
+<div id="motogpFaqAisleMod" class="motogpFaqTextWrap">
+	<div class="motogpFaqModDiv"></div>
+	<h1>What are Aisle Seat Tickets?</h1>
+	<p>Looking to add some added comfort to your race day? We've got you covered with Aisle Seat Tickets!
+		<br /><br />
+		Aisle Seat Tickets are available in all Grandstands, covering the first 4 seats from each aisle. They incur a $15 surcharge.
+		</p>
+</div>
+<!--products description---d	
+<div id="motogpFaqDemandMod" class="motogpFaqTextWrap">
+	<div class="motogpFaqModDiv"></div>
+	<h1>What are In Demand Tickets?</h1>
+	<p>Looking to add some added comfort to your race day? We've got you covered with Aisle Seat Tickets!
+		<br /><br />
+		These premium tickets are available in all grandstands. They incur a $15 surcharge.
+		
+		</p>
+</div>	-->	
+	
+</div>	
+
+</div>
+<!--end mods-->
+<div id="motoPattern"></div>
+</div>
+
+
+
+
+<script type="text/javascript">
+var $j = jQuery.noConflict();
+//global arrays
+ticketTypeList = ["general","reserved"]
+coverTypeList = ["noCover","undercover"]
+experienceTypeList = ["general","premium"]
+$j(document).ready(function () {	
+			//https://app.ticketmaster.com/inventory-status/v1/availability?apikey=fX5ZPZ9XBmerGANqKPGx4Xd8Yah19cCK&events=
+			//AWS endpoint https://yy01pgbtxk.execute-api.us-east-1.amazonaws.com/dev?events=
+			// test data 
+            $j.ajax({
+               type: 'GET',
+               url: /*"https://953lrs6ve3.execute-api.us-east-1.amazonaws.com/prod/?events=1APZkAeGkd4Hwgw,1aefZbtrfj8ZdC6u,16PZk19P6ZAuvCF6,1aefZbtrf-OZdCFG,16PZk19PFZAuvCF2,1APZkAdGkeUM3I-,1ka8vxJFGA2rZYw,1APZk19Gkdjksl7,1APZk19GkdjFolk,1APZk19Gkdjaslb,1APZk1bGkeVWsfv,1APZkAdGkeU3wJu,1APZk1bGkeVTv4j,1APZk1bGkegvvp_,1APZk1bGkeg7vpr,1APZkAeGkdPgwDx,1APZk1oGkdhDKET,1APZk1oGkdhDKIv,1APZk1oGkdjAdIF,1APZk1oGkdjAdI1,1ka8v-8yGAujxGc,1APZk1oGkdjkKIU,1APZk1oGkdjkKIz,1APZk1oGkdjkKIB,1APZk1oGkdjkKIH,1ka8v-8yGAGB35e,1APZk1oGkdjAdIC,1APZk1oGkdjAdI8,1APZk1oGkdjAKI3,1APZk1oGkdjAKIf,1ka8v-8yGAu5352,1APZk1oGkdjAKIp,1APZk1oGkdjAKIb,1APZk1oGkdjANIQ,1APZk1oGkdjANIj,1ka8v-8yGAu235b,1APZk1oGkdjANIr,1APZk1oGkdjANIO,1APZk1oGkdjANIx,1APZk1oGkdjASI0,1ka8v-8yGAu235b,1APZk1oGkdjANIr,1APZk1oGkdjANIO,1APZk1oGkdjANIx,1APZk1oGkdjASI0,1ka8v-8yGAuK35s,1APZk1oGkdjASIJ,1APZk1oGkdjASII,1APZk1oGkdjASIn,1APZk1oGkdjkdIi,1ka8v-8yGAubxGo,1APZk1oGkdjkdIm,1APZk1oGkdjkdIY,1APZk1oGkdjkdIw,1APZk1oGkdjkdIV"*/"",
+               dataType: 'html',
+				success: function(data) {
+					var availData = JSON.parse(data);
+					
+					$j.each(availData, function(key,value){
+						var availID = value.eventId
+						var availClass = value.status
+						//console.log(availID)
+						 $j('.motoAvailTag').each(function () {
+							 var eventID = $j(this).attr('data-eventID');
+							//console.log(eventID)
+							 	if (eventID == availID) {
+									// console.log(eventID)
+									$j(this).addClass(availClass)
+									}
+								});
+							//$j('#availMod').append($j('<div id='+ value.eventId +' class="availBtn ' + value.status + '">''</div'));
+						})	
+					},
+                    error: function (xhr, ajaxOptions, thrownError) { //if the retrieve is unsuccessful then we need to handle that somehow
+
+                       // console.log("error cant read data");
+                    }
+                });			
+	///end  doc ready function	
+	imageLoader();
+	});	
+//menu scrolls	
+$j(".motogpInfoWrap,.motogpInfoWrapLr, .motogpInfoMod,.motogpInfoModAlt, .motogpMenuWrap button").click(
+	function(){
+		var scrollTarget = $j(this).attr("data-menubtn")
+
+		 $j('html, body').animate({ scrollTop: $j("#motogp" + scrollTarget + "Mod").offset().top + -100}, 1000);	
+	})	
+//grandstand scroll & expand
+$j(".motogpSelectDay").click(
+	function(){
+		var scrollTarget = $j(this).attr("data-gsbtn")
+		closeGrandstands()
+		$j("#motogp" + scrollTarget + "Ticket").fadeIn(500);
+		$j('html, body').animate({ scrollTop: $j("#motogp" + scrollTarget + "Ticket").offset().top + -100}, 1500);	
+	})
+//campgrounds and catch a coach scrolls
+$j("#motoCoachBtn").click(
+	function(){
+		closeGrandstands()
+		$j("#motogpCatchacoachTicket").fadeIn(500);
+		$j('html, body').animate({ scrollTop: $j("#motogpCatchacoachMod").offset().top + -100}, 1500);	
+	})	
+$j("#motoCampgroundsBtn").click(
+	function(){
+		closeGrandstands()
+		$j("#motogpCampgroundsTicket").fadeIn(500);
+		$j('html, body').animate({ scrollTop: $j("#motogpCampgroundsMod").offset().top + -100}, 1500);	
+	})		
+function closeGrandstands(){
+		$j(".motogpGrandstand").fadeOut(0);
+}	
+$j(".motoProdCard").click(
+	function(){
+		var scrollTarget = $j(this).attr("data-infobtn")
+		$j('html, body').animate({ scrollTop: $j("#motogpFaq"+scrollTarget+"Mod").offset().top + -100}, 1500);	
+	})	
+
+//show menu on scroll
+/*
+$j(document).scroll(function() {
+    var pageTop = $j(document).scrollTop();
+    var scollTarget = $j("#motogpSelectStandMod").offset().top;
+    if (pageTop > scollTarget) {
+        $j("#motogpMenu").fadeIn(500);
+    } else {
+        $j("#motogpMenu").fadeOut(500);
+    }
+});	*/
+//toggle menu on mobile
+$j("#motogpMenuHide").click(
+		function(){
+			$j("#motogpMenuToggle").css("left","1%").css("right","");
+			$j(".motogpMenuWrap").slideUp(500);
+			$j(this).fadeOut(50);
+			$j("#motogpMenuShow").fadeIn(50);		
+		});
+	$j("#motogpMenuShow").click(
+		function(){
+			$j("#motogpMenuToggle").css("right","1%").css("left","");
+			$j(".motogpMenuWrap").slideDown(500);
+			$j(this).fadeOut(50);
+			$j("#motogpMenuHide").fadeIn(50);	
+		});
+//toggle filter buttons
+$j(".motoFilterBtn").click(
+		function(){
+			$j(this).children(".motoCheckbox").toggleClass("motoCheckboxOn");
+			$j(this).children(".motoCheckbox").toggleClass("motoCheckboxOff");
+			eventsToDisplay()
+		});
+//toggle ticket type
+	$j(document).on('click', "#ticketTypeFilter .motoFilterBtn", function () {
+				var toggleFilter = $j(this).data('type');
+				
+				if((jQuery.inArray(toggleFilter, ticketTypeList) != -1)){
+					ticketTypeList.splice( $j.inArray(toggleFilter, ticketTypeList), 1 );
+				} else {
+					ticketTypeList.push(toggleFilter);
+				}					
+				eventsToDisplay();			
+		})
+//toggle cover type
+$j(document).on('click', "#coverTypeFilter .motoFilterBtn", function () {
+				var toggleFilter = $j(this).data('cover');
+				
+				if((jQuery.inArray(toggleFilter, coverTypeList) != -1)){
+					coverTypeList.splice( $j.inArray(toggleFilter, coverTypeList), 1 );
+				} else {
+					coverTypeList.push(toggleFilter);
+				}					
+				eventsToDisplay();			
+		})
+//toggle experience type
+$j(document).on('click', "#experienceTypeFilter .motoFilterBtn", function () {
+				var toggleFilter = $j(this).data('experience');
+				
+				if((jQuery.inArray(toggleFilter, experienceTypeList) != -1)){
+					experienceTypeList.splice( $j.inArray(toggleFilter, experienceTypeList), 1 );
+				} else {
+					experienceTypeList.push(toggleFilter);
+				}					
+				eventsToDisplay();			
+		})			
+//filter
+let eventsToDisplay	= function(){
+	//run through stands
+	$j('.motogpSelectDay').each(function () {
+		let ticketType = $j(this).data('ticket');
+		let standCover = $j(this).data('cover');
+		let experienceType = $j(this).data('experience');
+
+		if((jQuery.inArray(ticketType, ticketTypeList) != -1 && jQuery.inArray(standCover, coverTypeList) != -1  && jQuery.inArray(experienceType, experienceTypeList) != -1 )){
+				$j(this).fadeIn(500);
+				//eventCount = eventCount + 1;
+
+		} else {
+				$j(this).fadeOut(0);
+		}
+});
+
+}//end filter
+$j("#motoToggleFiltersBtn").click(
+		function(){
+			$j("#motoFiltersMenu").fadeToggle(500);
+			$j(this).children("img").toggleClass("motoRotate")
+		});
+
+//lazy image loading
+
+let imageLoader = function(){
+	//set targets
+	//const lazyImagesLightBox = document.querySelectorAll(".vrcLbEventHero img")
+	const lazyImagesHero = document.querySelectorAll(".motogpHero img")
+
+	let options ={
+		root: null, //set viewport as root
+		rootMargin: '0px' //we can tweak this + or - if we want, i guess to preload before scroll etc if we want
+		
+	};
+
+	const handleIntersection = (entries, observer) => {
+ 		entries.forEach((entry) => {
+ 
+   		if (entry.isIntersecting) {
+      		const img = entry.target;
+      		const src = img.getAttribute("data-src");
+      		// Replace the placeholder with the actual image source
+      		img.src = src;
+      		// Stop observing the image
+      	observer.unobserve(img);
+   		 }
+ 	 });
+	};
+	//call the observer browser API
+	const observer = new IntersectionObserver(handleIntersection, options);
+	//interate through target(s) when obvserved
+	lazyImagesHero.forEach((image) => {
+ 		 observer.observe(image);
+	});
+} 
+
+//best avail module
+$j(".motogpBestAvailBtn").click(
+	function(){
+		$j("#motogpBestAvailWrap").toggleClass('motogpBestAvailToggle')
+		$j(this).toggleClass('motogpBestAvailBtnToggle')
+	}
+)
+$j(".motogpBestAvailCard").click(
+	function(){
+		var currentGrandstand = $j(this).data('babtn');
+		closeGrandstands()
+		$j("#motogp" + currentGrandstand).delay(300).fadeIn(1500);
+		$j('html, body').animate({ scrollTop: $j("#motogpGrandstandSelect").offset().top}, 1500);	
+});
+
+function bestAvailCheck(){
+	bestAvailCount = 0;
+	$j.ajax({
+               type: 'GET',
+               url: "https://953lrs6ve3.execute-api.us-east-1.amazonaws.com/prod/?events=1APZkAeGkd4Hwgw,1aefZbtrfj8ZdC6u,16PZk19P6ZAuvCF6,1aefZbtrf-OZdCFG,16PZk19PFZAuvCF2,1APZkAdGkeUM3I-,1ka8vxJFGA2rZYw,1APZk19Gkdjksl7,1APZk19GkdjFolk,1APZk19Gkdjaslb,1APZk1bGkeVWsfv,1APZkAdGkeU3wJu,1APZk1bGkeVTv4j,1APZk1bGkegvvp_,1APZk1bGkeg7vpr,1APZkAeGkdPgwDx,1APZk1oGkdhDKET,1APZk1oGkdhDKIv,1APZk1oGkdjAdIF,1APZk1oGkdjAdI1,1ka8v-8yGAujxGc,1APZk1oGkdjkKIU,1APZk1oGkdjkKIz,1APZk1oGkdjkKIB,1APZk1oGkdjkKIH,1ka8v-8yGAGB35e,1APZk1oGkdjAdIC,1APZk1oGkdjAdI8,1APZk1oGkdjAKI3,1APZk1oGkdjAKIf,1ka8v-8yGAu5352,1APZk1oGkdjAKIp,1APZk1oGkdjAKIb,1APZk1oGkdjANIQ,1APZk1oGkdjANIj,1ka8v-8yGAu235b,1APZk1oGkdjANIr,1APZk1oGkdjANIO,1APZk1oGkdjANIx,1APZk1oGkdjASI0,1ka8v-8yGAu235b,1APZk1oGkdjANIr,1APZk1oGkdjANIO,1APZk1oGkdjANIx,1APZk1oGkdjASI0,1ka8v-8yGAuK35s,1APZk1oGkdjASIJ,1APZk1oGkdjASII,1APZk1oGkdjASIn,1APZk1oGkdjkdIi,1ka8v-8yGAubxGo,1APZk1oGkdjkdIm,1APZk1oGkdjkdIY,1APZk1oGkdjkdIw,1APZk1oGkdjkdIV",
+               dataType: 'html',
+				success: function(data) {
+					var availData = JSON.parse(data);
+					
+					$j.each(availData, function(key,value){
+						var availID = value.eventId
+						var availClass = value.status
+						//console.log(availID)
+						 $j('.motogpBestAvailCard').each(function () {
+							 var eventID = $j(this).attr('data-eventid');
+							//console.log(eventID)
+							 	if (eventID == availID) {
+									
+									$j(this).addClass(motogpAvailMapper(availClass))
+									//count 
+									if ((availClass == "TICKETS_AVAILABLE") || (availClass == "FEW_TICKETS_LEFT")){
+										bestAvailCount ++
+
+										}
+
+									}
+								});
+
+						})	
+					},
+                    error: function (xhr, ajaxOptions, thrownError) { 
+
+                       // console.log("error cant read data");
+                    }
+                });	
+			//run counter
+			setTimeout(bestAvailCounter, 1500)
+			}
+//adjust module based on visible numbers
+function bestAvailCounter(){
+
+	if (bestAvailCount == 0){
+		$j("#motogpBestAvailMod").fadeOut(0)
+	}
+	
+	if ((bestAvailCount <= 9 )&&(window.matchMedia('(min-width: 1000px)').matches)){
+		$j(".motogpBestAvailBtn").fadeOut(0)
+	}
+
+
+}
+
+//availMapper	
+function motogpAvailMapper(data){
+	switch (data){
+			default:return ""
+			case "TICKETS_NOT_AVAILABLE":return "motogpAvailCardNone";
+			case "FEW_TICKETS_LEFT":return "motogpAvailCardFew";
+			case "TICKETS_AVAILABLE":return "motogpAvailCardAvail";	
+
+	}
+}	
+//after load check avail for each button
+window.addEventListener("load", (event) => {
+	//bestAvailCheck();
+});
+
+</script>
+
+[% PROCESS "layout/frame/bottom.tt" %]
