@@ -1,0 +1,371 @@
+[% # text to be displayed within <title></title>
+page_title = NRL Super Round 2026 - Christchurch | 24, 25 & 26 April 2026, One New Zealand Stadium | Buy Tickets Official Ticketmaster site." %]
+[% static_has_responsive_header_footer = 1; enable_leader_board = 0; %]
+[% PROCESS "layout/frame/top.tt" %]
+<!--cut for on sale-->
+ <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />
+ <!--delete for on sale-->
+	
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.typekit.net/ogg8bnl.css">
+<link href="https://s1.ticketm.net/tm/en-au/img/static/fonts/averta.css" type="text/css" rel="stylesheet" />
+
+<style type="text/css">
+	:root {
+		--srr-blk:#19000a;
+		--srr-blue:#0a0087;
+		--srr-lblue:#00ffff;
+	  }
+@media only screen and (min-width: 0px) and (max-width: 1000px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE !!!! IMPORTANT*/ 
+}
+@media only screen and (min-width: 1000px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE !!!! IMPORTANT*/ 
+	}
+#contentWrap, #mainContent {
+    background-color: #fff;overflow: visible;padding:0 !important;}
+	body{background: #fff;}
+
+
+/*desktop */	
+@media only screen and (min-width: 1000px){
+	#srrContent{background-color: #fff;width:100%;height:auto;overflow:hidden;padding:1px 0px;margin:0px auto;position: relative;display:block;}
+	
+	#srrMenuWrap{width:100%;height:auto;margin:0px auto 0px;display:block;position:relative;z-index:200;}
+	#srrMenu{width:100%;height:50px;margin:0px auto;padding:0px;display:block;position:absolute;top:0;left:0;right:0;z-index:201;font-family:"acumin-pro-condensed", sans-serif,fallback;text-align: center;background:#fff;}
+	#srrMenu button{width:auto;height:auto;margin:0px 15px 0px 15px;padding:12px 26px 12px 0px;display:inline-block;font-family:"acumin-pro-condensed", sans-serif,fallback;font-weight:normal;text-transform:uppercase;color:#000;font-size:20px;border:0;outline:0;cursor:pointer;box-sizing:border-box !important;background:url("srr_down_arrow_img.svg") no-repeat;background-size:auto 20px;background-position:right 0px top 14px;}
+	.srrMenuArrow{display:none;}
+	.srrMenuToggle{position:fixed !important;top:0px;left:0px;right:0px;margin:0px auto;}
+	.srrSubMenuLogo{width:auto;height:25px;display:inline-block;margin:0px 20px 10px 0px;box-sizing: border-box !important;vertical-align: bottom;}
+	.srrSubMenuLogo img{width:auto;height:25px;}
+
+	#srrHeader{width:100%;height:550px;background:url('https://s1.ticketm.net/tm/en-au/img/static/superrugby/pattern_default.svg') center center repeat-x, #fff;border-bottom:5px solid var(--srr-lblue);background-size:auto 750px;position: relative;margin:0px auto 0px;padding:1px 1px 0px 1px;box-sizing:border-box!important;text-align: center;display:block;overflow:hidden;}
+	#srrHeader img{width:auto;height:550px;display:block;margin:70px auto 0px;}
+
+	#srrLogo{width:1100px;height:auto;display:block;margin:20px auto 20px;text-align:left;}
+	#srrLogo img{width:300px;height:auto;display:block;margin:0px;}
+	/**/
+	#srrEventMod{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:0px auto;}
+	#srrSubMenu{width:auto;height:auto;display:flex;justify-content: center;align-items: center;padding:50px 0px 0px 0px;margin:0px auto;text-align: left;}
+	.srrSubMenuBtn{width:auto;height:auto;display:inline-block;padding:10px;margin:5px 30px 5px 0px;border-bottom:2px solid var(--srr-blue);border-top:2px solid var(--srr-blue);background:url("https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_right_arrow_img.svg") no-repeat, rgba(250,250,250,.0);background-size:auto 25px;background-position:right 5px bottom 15px;cursor:pointer;user-select:none;transition:ease-in-out .3s all;vertical-align: top;}
+	.srrSubMenuBtn:hover{background:url("https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_right_arrow_img.svg") no-repeat, rgba(250,250,250,.1);background-position:right 0px bottom 15px;background-size:auto 22px;}
+	.srrSubMenuBtn h1{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:44px;font-weight:700;color:#000;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}
+	.srrSubMenuBtn h2{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:28px;font-weight:normal;color:var(--srr-blue);text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}
+	.srrEventInfoLogo{width:auto;height:95px;display:inline-block;margin:-10px 35px 0px 0px;box-sizing: border-box !important;vertical-align: top;}
+	.srrEventInfoLogo img{width:auto;height:100%;}
+
+	#srrEventInfo{width:100%;height:auto;margin:50px auto;display:flex;flex-wrap: wrap;align-content: flex-start;justify-content: space-between;align-items: flex-start;}
+	#srrEventInfo h1{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:60px;font-weight:700;color:var(--srr-blue);text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;text-transform: uppercase;display:inline-block;}
+	#srrEventInfo h2{width:100%;font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:90px;font-weight:700;color:#000;text-align:left;margin:-70px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;display:inline-block;text-transform: uppercase;}
+	#srrEventInfo h3{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:50px;font-weight:normal;color:#000;text-align:right;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;display:inline-block;}		
+	#srrEventInfo p{width:100%;font-family:"Averta", sans-serif,fallback;font-size:22px;font-weight:normal;color:#000;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}
+	#srrEventInfo a{color:#000;}	
+	.srrHoriDiv{width:100%;height:2px; margin:0px auto;background:var(--srr-blue);}
+
+	/*ticket mod*/
+	#srrTicketBanner{width:100%;height:150px;background:url('https://s1.ticketm.net/tm/en-au/img/static/superrugby/pattern_default.svg') center center repeat-x, #fff;background-size:auto 750px;margin:0px 0px 50px 0px;display:flex;flex-wrap: nowrap;align-items: center;justify-content: center;}
+	#srrTicketBanner h3{width:100%;max-width:1100px;font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:56px;font-weight:600;color:#000;text-align:left;margin:0px auto;padding:0px 0px 0px 0px;display:block;box-sizing: border-box !important;} 
+	#srrTicketsMod{width:100%;max-width:1100px;height:auto;display:flex;position: relative;margin:0px auto 50px;flex-wrap: nowrap;justify-content: space-between;align-items: flex-start;}
+	.srrTicketWrap{width:530px;max-width:550px;height:auto;display:inline-block;position: relative;margin:25px auto; }
+	#srrTicketsMod .srrTicketWrap h3{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:46px;font-weight:700;color:var(--srr-blue);text-align:left;margin:10px 0px 40px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;} 
+	.srrTicketWrap p{font-family:"Averta", sans-serif,fallback;font-size:16px;font-weight:normal;color:#000;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;} 
+	.srrTicketBtn{width:100%;height:auto;display:block;margin:10px auto;padding:10px;border-bottom:2px solid #000;background:url("https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_right_arrow_img.svg") no-repeat;background-size:auto 25px;background-position:right 5px bottom 15px;cursor:pointer;user-select:none;transition:ease-in-out .3s all;box-sizing: border-box !important;} 
+	.srrTicketBtn:hover{background:url("https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_right_arrow_img.svg") no-repeat, rgba(250,250,250,.1);background-position:right 0px bottom 15px;background-size:auto 22px;}
+	.srrTicketBtn h1{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:40px;font-weight:700;color:#000;text-align:left;margin:0px 0px 15px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	.srrTicketBtn sup{font-size:20px;}
+	.srrTicketBtn h2{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:28px;font-weight:normal;color:#000;text-align:left;margin:0px 0px 10px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	.srrTicketWrap a{text-decoration: none;color:#000;}
+	/*Next Level Experiences*/
+	.srrExpBanner{width:100%;height:150px;background:url('https://s1.ticketm.net/tm/en-au/img/static/superrugby/pattern_default.svg') center center repeat-x, #fff;background-size:auto 750px;display:flex;flex-wrap: nowrap;align-items: center;justify-content: center;}
+	.srrExpBanner h3{width:100%;max-width:1100px;font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:56px;font-weight:600;color:#000;text-align:left;margin:0px auto;padding:0px 0px 0px 0px;display:block;box-sizing: border-box !important;} 
+	#srrExpMod{width:100%;height:auto;position: relative;margin:0px auto;}
+	#srrExpMod .srrTicketWrap h3{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:46px;font-weight:normal;color:#fff;text-align:left;margin:10px 0px 10px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;text-transform: uppercase;} 
+	.srrExpWrap{width:100%;max-width:1100px;height:auto;display:flex;position: relative;margin:0px auto;flex-wrap: wrap;justify-content: space-between;align-items: flex-start;}
+	.srrExpHero{width:100%;height:auto;margin:0px auto;padding:20px 0px 0px 0px;}
+	.srrExpHero img{width:100%;height:auto;border-right:2px solid #fff;border-bottom:2px solid #fff;}
+	.srrTable{width:100%;height:auto;display:block;margin:20px 0px 0px 0px;padding:0px;border-top:2px solid #fff;border-left:2px solid #fff;border-right:2px solid #fff;box-sizing:border-box !important;}
+	.srrTable h4{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:20px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	.srrRow{width:100%;height:auto;margin:0px;padding:10px;display:block;border-bottom:2px solid #fff;box-sizing:border-box !important;}
+	.srrExpBtn{width:100%;height:auto;display:block;margin:10px auto;padding:10px;border-bottom:2px solid #000;background:url("https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_right_arrow_img.svg") no-repeat;background-size:auto 25px;background-position:right 5px bottom 15px;cursor:pointer;user-select:none;transition:ease-in-out .3s all;box-sizing: border-box !important;} 
+	.srrExpBtn:hover{background:url("https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_right_arrow_img.svg") no-repeat, rgba(250,250,250,.1);background-position:right 0px bottom 15px;background-size:auto 22px;}
+	.srrExpBtn h1{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:40px;font-weight:700;color:#000;text-align:left;margin:0px 0px 15px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	.srrExpBtn h2{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:28px;font-weight:normal;color:#000;text-align:left;margin:0px 0px 10px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	/**/
+	#srrFAQsMod{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:100px auto 50px;}
+	#srrFAQsMod h3{width:100%;max-width:1100px;font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:56px;font-weight:700;color:#000;text-align:left;margin:0px auto;padding:0px 0px 0px 0px;display:block;box-sizing: border-box !important;} 
+	#srrFAQsMod h2{width:100%;max-width:1100px;font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:26px;font-weight:700;color:var(--srr-blue);text-align:left;margin:20px auto;padding:0px 0px 0px 0px;display:block;box-sizing: border-box !important;} 
+	.srrFAQ{width:100%;height:auto;margin:10px auto 0px;border-bottom:2px solid #000;box-sizing:border-box !important;cursor:pointer;}
+	.srrQ{width:100%;height:auto;padding:5px;box-sizing:border-box !important;font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:22px;font-weight:600;color:#000;text-align:left;margin:0px;text-transform: uppercase;position:relative;}
+	.srrQ img{width:25px;height:auto;right:2px;top:0px;position:absolute;transition:ease-in-out all .5s;}
+	.srrRotate{transform: rotate(180deg);}
+	.srrA{width:100%;height:auto;padding:5px 5px 10px 5px;box-sizing:border-box !important;font-family:"Averta", sans-serif,fallback;font-size:20px;font-weight:normal;color:#000;text-align:left;margin:0px;display:none;}
+
+	#srrFooter{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:50px auto 50px;}
+	.socialWrap{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:0px auto 20px;text-align: center;}
+	.socialWrap img{width:40px;height:auto;margin:10px;display:inline-block;box-sizing: border-box !important;}
+	.srrPartners{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:0px auto 0px;}
+	.srrPartners img{width:450px;height:auto;display:block;margin:0px auto;}
+
+	}
+/*mobile -----------------*/
+	@media only screen and (min-width: 0px) and (max-width: 1000px){	
+	.srrSubMenuLogo{width:auto;height:25px;display:none;margin:0px 20px 10px 0px;box-sizing: border-box !important;}
+	.srrSubMenuLogo img{width:auto;height:25px;}
+
+	#srrMenuWrap{width:100%;height:50px;margin:0px auto 0;text-align: left;display:block;overflow:hidden;z-index:200;top:0;left:0;right:0;position: absolute;}
+	#srrMenu{width:100%;height:50px;margin:0px 0px;padding:0px 20px;display:block;position:absolute;top:0;left:0;right:0;z-index:201;background:#fff;font-family:"ClashDisplay-Medium", sans-serif,fallback;text-align: center;white-space: nowrap;overflow:hidden;box-sizing:border-box !important;}
+	#srrMenu button{width:auto;height:50px;margin:0px 5px;padding:12px 20px 12px 0px;display:inline-block;font-family:"acumin-pro-condensed", sans-serif,fallback;font-weight:normal;text-transform:uppercase;color:#000;font-size:16px;border:0;outline:0;cursor:pointer;box-sizing:border-box !important;background:url("https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg") no-repeat, rgba(250,250,250,.0);background-size:auto 10px;background-position:right 4px top 19px;}
+	.srrMenuArrow{height:50px;width:auto;margin:0px 0px;display:block;position: absolute;z-index:202;}
+	.srrMenuArrow img{height:auto;width:8px !important;padding:14px 10px;}
+	.srrArrowRight{top:0;right:0;background:linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);}
+	.srrArrowLeft{top:0;left:0;transform:rotate(180deg);background:linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);}
+
+	#srrContent{background-color: #fff;width:100%;height:auto;overflow:hidden;padding:1px 0px;margin:0px auto;position: relative;display:block;}
+
+	#srrHeader{width:100%;height:auto;background:url('https://s1.ticketm.net/tm/en-au/img/static/superrugby/pattern_default.svg') center center repeat-x, #fff;border-bottom:5px solid var(--srr-lblue);background-size:auto 750px;position: relative;margin:0px auto 0px;padding:1px 1px 0px 1px;box-sizing:border-box!important;text-align: center;display:block;overflow:hidden;}
+	#srrHeader img{width:100%;height:auto;display:block;margin:70px auto 0px;}
+
+	/**/
+	#srrEventMod{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:0px auto;}
+	#srrSubMenu{width:auto;height:auto;display:block;padding:50px 0px 0px 0px;margin:0px auto;text-align: left;}
+	.srrSubMenuBtn{width:100%;height:auto;display:inline-block;padding:10px 25px 10px 10px;margin:5px 30px 5px 0px;border-bottom:2px solid var(--srr-blue);border-top:2px solid var(--srr-blue);background:url("https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_right_arrow_img.svg") no-repeat, rgba(250,250,250,.0);background-size:auto 25px;background-position:right 5px bottom 5px;cursor:pointer;user-select:none;vertical-align: top;box-sizing: border-box !important;}
+	.srrSubMenuBtn h1{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:36px;line-height:32px;font-weight:700;color:#000;text-align:left;margin:0px 0px 10px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}
+	.srrSubMenuBtn h2{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:26px;line-height:22px;font-weight:normal;color:var(--srr-blue);text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}
+	.srrEventInfoLogo{width:auto;height:95px;display:block;margin:0px auto;box-sizing: border-box !important;}
+	.srrEventInfoLogo img{width:auto;height:100%;display:block;margin:0px auto;}
+
+	#srrEventInfo{width:100%;height:auto;margin:50px auto;display:flex;flex-wrap: wrap;align-content: flex-start;justify-content: center;align-items: flex-start;}
+	#srrEventInfo h1{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:50px;font-weight:700;color:var(--srr-blue);text-align:center;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;text-transform: uppercase;}
+	#srrEventInfo h2{width:100%;font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:50px;font-weight:700;color:#000;text-align:center;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;text-transform: uppercase;}
+	#srrEventInfo h3{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:44px;line-height:40px;font-weight:normal;color:#000;text-align:center;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}		
+	#srrEventInfo p{width:100%;font-family:"Averta", sans-serif,fallback;font-size:22px;font-weight:normal;color:#000;text-align:center;margin:0px 0px 0px 0px;padding:10px;box-sizing: border-box !important;}
+	#srrEventInfo a{color:#000;}	
+	.srrHoriDiv{width:100%;height:2px; margin:0px auto;background:var(--srr-blue);}
+
+	/*ticket mod*/
+	#srrTicketBanner{width:100%;min-height:150px;height:auto;background:url('https://s1.ticketm.net/tm/en-au/img/static/superrugby/pattern_default.svg') center center repeat-x, #fff;background-size:auto 750px;margin:0px 0px 50px 0px;display:flex;flex-wrap: nowrap;align-items: center;justify-content: center;}
+	#srrTicketBanner h3{width:100%;max-width:1100px;font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:50px;line-height:46px;font-weight:600;color:#000;text-align:center;margin:0px auto;padding:20px;display:block;box-sizing: border-box !important;} 
+	#srrTicketsMod{width:100%;max-width:1100px;height:auto;display:flex;position: relative;margin:0px auto 50px;flex-wrap: wrap;justify-content: space-between;align-items: flex-start;}
+	.srrTicketWrap{width:100%;max-width:550px;height:auto;display:block;position: relative;margin:25px auto; }
+	#srrTicketsMod .srrTicketWrap h3{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:46px;font-weight:700;color:var(--srr-blue);text-align:center;margin:10px 0px 40px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;} 
+	.srrTicketWrap p{font-family:"Averta", sans-serif,fallback;font-size:16px;font-weight:normal;color:#000;text-align:center;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;} 
+	.srrTicketBtn{width:100%;height:auto;display:block;margin:10px auto;padding:10px;border-bottom:2px solid #000;background:url("https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_right_arrow_img.svg") no-repeat;background-size:auto 25px;background-position:right 5px bottom 15px;cursor:pointer;user-select:none;transition:ease-in-out .3s all;box-sizing: border-box !important;} 
+	.srrTicketBtn h1{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:40px;font-weight:700;color:#000;text-align:left;margin:0px 0px 15px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	.srrTicketBtn sup{font-size:20px;}
+	.srrTicketBtn h2{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:28px;font-weight:normal;color:#000;text-align:left;margin:0px 0px 10px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	.srrTicketWrap a{text-decoration: none;color:#000;}
+	/*Next Level Experiences*/
+	.srrExpBanner{width:100%;min-height:150px;height:auto;background:url('https://s1.ticketm.net/tm/en-au/img/static/superrugby/pattern_default.svg') center center repeat-x, #fff;background-size:auto 750px;margin:0px 0px 50px 0px;display:flex;flex-wrap: nowrap;align-items: center;justify-content: center;}
+	.srrExpBanner h3{width:100%;max-width:1100px;font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:50px;line-height:46px;font-weight:600;color:#000;text-align:center;margin:0px auto;padding:20px;display:block;box-sizing: border-box !important;} 
+	#srrExpMod{width:100%;height:auto;position: relative;margin:0px auto;}
+	#srrExpMod .srrTicketWrap h3{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:46px;font-weight:normal;color:#fff;text-align:left;margin:10px 0px 10px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;text-transform: uppercase;} 
+	.srrExpWrap{width:100%;max-width:1100px;height:auto;display:flex;position: relative;margin:0px auto;flex-wrap: wrap;justify-content: space-between;align-items: flex-start;}
+	.srrExpHero{width:100%;height:auto;margin:0px auto;padding:20px 0px 0px 0px;}
+	.srrExpHero img{width:100%;height:auto;border-right:2px solid #fff;border-bottom:2px solid #fff;}
+	.srrTable{width:100%;height:auto;display:block;margin:20px 0px 0px 0px;padding:0px;border-top:2px solid #fff;border-left:2px solid #fff;border-right:2px solid #fff;box-sizing:border-box !important;}
+	.srrTable h4{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:20px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	.srrRow{width:100%;height:auto;margin:0px;padding:10px;display:block;border-bottom:2px solid #fff;box-sizing:border-box !important;}
+	.srrExpBtn{width:100%;height:auto;display:block;margin:10px auto;padding:10px;border-bottom:2px solid #000;background:url("https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_right_arrow_img.svg") no-repeat;background-size:auto 25px;background-position:right 5px bottom 15px;cursor:pointer;user-select:none;transition:ease-in-out .3s all;box-sizing: border-box !important;} 
+	.srrExpBtn h1{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:40px;font-weight:700;color:#000;text-align:left;margin:0px 0px 15px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	.srrExpBtn h2{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:28px;font-weight:normal;color:#000;text-align:left;margin:0px 0px 10px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
+	/**/
+	#srrFAQsMod{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:100px auto 50px;}
+	#srrFAQsMod h3{width:100%;max-width:1100px;font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:46px;font-weight:700;color:#000;text-align:center;margin:0px auto;padding:0px 0px 0px 0px;display:block;box-sizing: border-box !important;} 
+	#srrFAQsMod h2{width:100%;max-width:1100px;font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:26px;font-weight:700;color:var(--srr-blue);text-align:center;margin:20px auto;padding:0px 0px 0px 0px;display:block;box-sizing: border-box !important;} 
+	.srrFAQ{width:100%;height:auto;margin:10px auto 0px;border-bottom:2px solid #000;box-sizing:border-box !important;cursor:pointer;}
+	.srrQ{width:100%;height:auto;padding:5px;box-sizing:border-box !important;font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:22px;font-weight:600;color:#000;text-align:left;margin:0px;text-transform: uppercase;position:relative;}
+	.srrQ img{width:25px;height:auto;right:2px;top:0px;position:absolute;transition:ease-in-out all .5s;}
+	.srrRotate{transform: rotate(180deg);}
+	.srrA{width:100%;height:auto;padding:5px 5px 10px 5px;box-sizing:border-box !important;font-family:"Averta", sans-serif,fallback;font-size:20px;font-weight:normal;color:#000;text-align:left;margin:0px;display:none;}
+
+	#srrFooter{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:50px auto 50px;}
+	.socialWrap{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:0px auto 20px;text-align: center;}
+	.socialWrap img{width:40px;height:auto;margin:10px;display:inline-block;box-sizing: border-box !important;}
+	.srrPartners{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:0px auto 0px;}
+	.srrPartners img{width:450px;height:auto;display:block;margin:0px auto;}
+
+	}
+
+</style>
+
+
+<div id="srrContent">
+
+
+	<div id="srrMenuWrap">
+		<div class="srrMenuArrow srrArrowLeft"><img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_menu_arrow_wht_img.svg"></div>		
+		<div id="srrMenu"><div class="srrSubMenuLogo"><img src="https://placehold.co/335x25"></div><button data-btn="Tickets">GENERAL TICKETS</button><button data-btn="Exp">HOSPITALITY &amp; PREMIUM</button><button data-btn="FAQs">FAQ&rsquo;s</button></div>
+		<div class="srrMenuArrow srrArrowRight"><img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_menu_arrow_wht_img.svg"></div>
+	</div>
+
+		<!--header-->
+		<div id="srrHeader">
+
+			<img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/2025/svns26_header_players.png">
+
+		</div>
+	<div id="srrEventMod"> 
+		<div id="srrSubMenu">
+			<div class="srrEventInfoLogo"><img src="https://placehold.co/200x95"></div>
+			<div class="srrSubMenuBtn" data-btn="Tickets"><h1>GENERAL TICKETS</h1><h2>SEE OPTIONS</h2></div>
+			<div class="srrSubMenuBtn" data-btn="Exp"><h1>HOSPITALITY TICKETS</h1><h2>SEE OPTIONS</h2></div>
+		</div>
+		<div id="srrEventInfo">
+			
+			<h1>One NZ Stadium</h1>			<h3>FRI 25, SAT 26 &amp; <br />SUN 27 APR 2026</h3>
+			<h2>Christchurch</h2>
+
+			<p>Super Round 2026 brings three days of world-class rugby and family-friendly fun to &#332;tautahi Christchurch. Fans from across New Zealand, Australia, Fiji, and the Pacific come together to celebrate at the brand-new One NZ Stadium.
+					<br /><br />
+			From 24&#45;26 April, 10 teams play five high-stakes matches across one blockbuster weekend under the brand new One NZ Stadium's 25,000-seat fixed roof in the heart of the city.		
+			</p>
+		</div>
+
+	</div>
+	<!--<div class="svnsHoriDiv"></div>-->
+	<!--Tickets-->
+	<div id="srrTicketBanner"><h3>GENERAL ADMISSION &amp; RESERVED</h3></div>
+	<div id="srrTicketsMod"> 
+		
+		<!--single day-->
+		<div class="srrTicketWrap">
+			<h3>SINGLE DAY PASS</h3>
+			<a href="" target="_blank"><div class="srrTicketBtn">
+				<h1>FRIDAY 25<sup>th</sup></h1>
+				<h2>Find Tickets</h2>
+			</div></a>
+			<a href="" target="_blank"><div class="srrTicketBtn">
+				<h1>SATURDAY 26<sup>th</sup></h1>
+				<h2>Find Tickets</h2>
+			</div></a>
+			<a href="" target="_blank"><div class="srrTicketBtn">
+				<h1>SUNDAY 27<sup>th</sup></h1>
+				<h2>Find Tickets</h2>
+			</div></a>			
+		</div>
+		<!--multi day-->
+		<div class="srrTicketWrap">
+			<h3>MULTI&#45;DAY PASS</h3>
+
+			<a href="" target="_blank"><div class="srrTicketBtn">
+				<h1>2 Day Pass</h1>
+				<h2>Find Tickets</h2>
+			</div></a>
+			<a href="" target="_blank"><div class="srrTicketBtn">
+				<h1>3 Day Pass</h1>
+				<h2>Find Tickets</h2>
+			</div></a>
+		</div>
+
+	</div>
+	<!--Experiences-->
+
+
+	<!--Corp Box-->
+	<div class="srrExpBanner"><h3>HOSPITALITY &amp; PREMIUM OPTIONS</h3></div>
+	<div  id="srrExpMod" class="srrExpWrap">
+			<div class="srrTicketWrap">
+
+				<p>Wolf succulents chartreuse hexagon PBR&B. +1 iPhone adaptogen YOLO aesthetic. Butcher normcore gorpcore, franzen hell of pitchfork lumbersexual paleo gatekeep put a bird on it poutine food truck meggings organic literally. Tilde banh mi PBR&B af, kitsch distillery subway tile forage.
+				<br /><br />
+				Typewriter cred echo park Brooklyn, neutral milk hotel wayfarers bodega boys raw denim same 3 wolf moon thundercats salvia. Shoreditch cred jean shorts etsy distillery, pok pok bespoke.
+				</p>
+
+				<a href="" target="_blank"><div class="srrExpBtn">
+					<h1>Explore Options</h1>
+					<h2>SEE OPTIONS</h2>
+				</div></a>
+		
+			</div>
+			<!--hero img-->
+			<div class="srrTicketWrap">
+				<div class="srrExpHero"><img src="https://placehold.co/532x355"></div>
+			</div>
+	</div>
+
+	<!--FAQs-->
+	<div id="srrFAQsMod">
+
+		<h3>FREQUENTLY ASKED QUESTIONS</h3>
+		<h2>EVENT INFORMATION</h2>
+		<!--Q-->
+		<div class="srrFAQ">
+			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
+			<div class="srrA">Answer</div>
+		</div>
+		<!--Q-->
+		<div class="srrFAQ">
+			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
+			<div class="srrA">Answer</div>
+		</div>
+		<h2>PRICES &amp; INFORMATION</h2>
+		<!--Q-->
+		<div class="srrFAQ">
+			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
+			<div class="srrA">Answer</div>
+		</div>
+		<!--Q-->
+		<div class="srrFAQ">
+			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
+			<div class="srrA">Answer</div>
+		</div>	
+		<!--Q-->
+		<div class="srrFAQ">
+			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
+			<div class="srrA">Answer</div>
+		</div>
+		<!--Q-->
+		<div class="srrFAQ">
+			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
+			<div class="srrA">Answer</div>
+		</div>
+		<!--Q-->
+		<div class="srrFAQ">
+			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
+			<div class="srrA">Answer</div>
+		</div>
+		<!--Q-->
+		<div class="srrFAQ">
+			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
+			<div class="srrA">Answer</div>
+		</div>
+		<!--Q-->
+		<div class="srrFAQ">
+			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
+			<div class="srrA">Answer</div>
+		</div>
+	</div>
+	<!--footer--> 
+	<div id="srrFooter">
+		<div class="socialWrap"><a href="" target="_blank"><img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_fb_ico.svg" alt="Facebook"></a><a href="" target="_blank"><img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_ig_ico.svg" alt="instagram"></a></div>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var $j = jQuery.noConflict();
+//scroll
+$j("#srrMenu button, .srrSubMenuBtn").click(
+	function(){
+
+		var scrollTarget = $j(this).attr("data-btn")
+		$j('html, body').animate({ scrollTop: $j("#srr" + scrollTarget + "Mod").offset().top + -150}, 1000);	
+	})		
+//mobile menu	
+$j(".srrArrowRight").click(
+	function(){
+		$j("#srrMenu").animate({scrollLeft:"+=250px"}, "slow");
+	});
+$j(".srrArrowLeft").click(
+	function(){
+		$j("#srrMenu").animate({scrollLeft:"-=250px"}, "slow");
+	});
+//FAQs
+$j(".srrFAQ").click(
+	function(){
+		$j(this).children(".srrA").fadeToggle(300);
+		$j(this).children(".srrQ").children("img").toggleClass("srrRotate");
+	});
+
+</script>
+[% PROCESS "layout/frame/bottom.tt" %]
