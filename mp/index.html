@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="https://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="https://www.facebook.com/2008/fbml" lang="en" xml:lang="en">
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Ticketmaster Australia | Image Supply Guidelines" /><meta name="rating" content="general" />
+ <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Ticketmaster X Melbourne Park" /><meta name="rating" content="general" />
 <meta name="copyright" content="2025, Ticketmaster" />
 <meta name="expires" content="never" />
 <meta name="distribution" content="global" />
@@ -332,8 +332,8 @@
 	//notes: date filtering and counters next, 
 	$j = jQuery.noConflict();
 	//the server name could change so I put it here so it was easy to find
-	let availLocation = "https://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_events.json";
-	//let availLocation = "mp_events.json";
+	//let availLocation = "https://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_events.json";
+	let availLocation = "mp_events.json";
 
 	//experienceTypeList = [];
 	//fullPubExperienceTypeList = [];
@@ -384,8 +384,8 @@
 							let eventType = value.event_type;
 							//build card
 							//console.log(eventList)
-							let  newEvent = $j("<div data-eventtype='"+value.event_type+"' data-sortdate="+sortDate+" class='mpEventCard mp"+value.event_type+"Card'><!--card top--><div class='mpCardTop'><div class='mpTopLid'>"+value.event_subtype+"</div><div class='mpCardHero'><img src='http://s1.ticketm.net/tm/en-au/img/static/melbpark/heroimg/"+value.event_img+"'></div></div><!--card middle--><div class='mpCardMid'><div class='mpEventName'><h1>"+value.event_name+"</h1></div><div class='mpEventDate'><h2>"+value.event_date+"</h2></div><div class='mpEventTime'><h3>"+value.event_time+"</h3></div><div class='mpEventDesc'><p>"+value.event_desc+"</p></div></div><!--card bottom--><div class='mpCardBot'><div class='mpCardVenue'><h1>"+value.event_venue+"</h1><div class='mpCardVenueArrow'><img src='http://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_rightArrow_b_bg.svg' alt='Venue'></div></div><a href='"+value.event_link+"?brand=melbpark'><div class='mpCardBtn'><div class='mpCardPrice'><h1>TICKETS FROM</h1><h2>$"+value.event_price+"*</h2></div><p>Available via Ticketmaster</p></div></div></a></div>");	
-							let newEvent2 = $j("<div data-eventtype='"+value.event_type+"' data-sortdate="+sortDate+" class='mpEventCard mp"+value.event_type+"Card'><!--card top--><div class='mpCardTop'><div class='mpTopLid'>"+value.event_subtype+"</div><div class='mpCardHero'><img src='http://s1.ticketm.net/tm/en-au/img/static/melbpark/heroimg/"+value.event_img+"'></div></div><!--card middle--><div class='mpCardMid'><div class='mpEventName'><h1>"+value.event_name+"</h1></div><div class='mpEventDate'><h2>"+value.event_date+"</h2></div><div class='mpEventTime'><h3>"+value.event_time+"</h3></div><div class='mpEventDesc'><p>"+value.event_desc+"</p></div></div><!--card bottom--><div class='mpCardBot'><div class='mpCardVenue'><h1>"+value.event_venue+"</h1><div class='mpCardVenueArrow'><img src='http://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_rightArrow_b_bg.svg' alt='Venue'></div></div><a href='"+value.event_link+"?brand=melbpark'><div class='mpCardBtn'><div class='mpCardPrice'><h1>TICKETS FROM</h1><h2>$"+value.event_price+"*</h2></div><p>Available via Ticketmaster</p></div></div></a></div>");	
+							let  newEvent = $j("<div data-eventtype='"+value.event_type+"' data-sortdate="+sortDate+" class='mpEventCard mp"+value.event_type+"Card'><!--card top--><div class='mpCardTop'><div class='mpTopLid'>"+value.event_subtype+"</div><div class='mpCardHero'><img src='http://s1.ticketm.net/tm/en-au/img/static/melbpark/heroimg/"+value.event_img+"'></div></div><!--card middle--><div class='mpCardMid'><div class='mpEventName'><h1>"+value.event_name+"</h1></div><div class='mpEventDate'><h2>"+value.event_date+"</h2></div><div class='mpEventTime'><h3>"+value.event_time+"</h3></div><div class='mpEventDesc'><p>"+value.event_desc+"</p></div></div><!--card bottom--><div class='mpCardBot'><div class='mpCardVenue'><h1>"+value.event_venue+"</h1><div class='mpCardVenueArrow'><img src='http://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_rightArrow_b_bg.svg' alt='Venue'></div></div><a target='_blank' href='"+value.event_link+"?brand=melbpark'><div class='mpCardBtn'><div class='mpCardPrice'><h1>TICKETS FROM</h1><h2>$"+value.event_price+"*</h2></div><p>Available via Ticketmaster</p></div></div></a></div>");	
+							let newEvent2 = $j("<div data-eventtype='"+value.event_type+"' data-sortdate="+sortDate+" class='mpEventCard mp"+value.event_type+"Card'><!--card top--><div class='mpCardTop'><div class='mpTopLid'>"+value.event_subtype+"</div><div class='mpCardHero'><img src='http://s1.ticketm.net/tm/en-au/img/static/melbpark/heroimg/"+value.event_img+"'></div></div><!--card middle--><div class='mpCardMid'><div class='mpEventName'><h1>"+value.event_name+"</h1></div><div class='mpEventDate'><h2>"+value.event_date+"</h2></div><div class='mpEventTime'><h3>"+value.event_time+"</h3></div><div class='mpEventDesc'><p>"+value.event_desc+"</p></div></div><!--card bottom--><div class='mpCardBot'><div class='mpCardVenue'><h1>"+value.event_venue+"</h1><div class='mpCardVenueArrow'><img src='http://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_rightArrow_b_bg.svg' alt='Venue'></div></div><a target='_blank' href='"+value.event_link+"?brand=melbpark'><div class='mpCardBtn'><div class='mpCardPrice'><h1>TICKETS FROM</h1><h2>$"+value.event_price+"*</h2></div><p>Available via Ticketmaster</p></div></div></a></div>");	
 		
 						
 							//combine elements
