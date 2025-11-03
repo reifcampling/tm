@@ -44,10 +44,21 @@
 	#mpContent{width:100%; position:relative;text-align: center; background:#fff;margin:0px auto 0px ;padding:0px 0px 50px 0px;display:block;box-sizing: border-box !important}
 
 	/* Header */
-	#mpHeader{width:100%;height:450px;margin:0px auto;padding:1px 0px 0px 0px;position: relative;background-size:cover;box-sizing: border-box !important;}
-	#mpLogo{width:90%;max-width:1100px;height:auto;padding:0px 0px 0px 0px;margin:0px auto 0px;display:block;z-index:99;position: relative;border-radius:0px;transform: translateY(185px)}
+	#mpHeader{width:100%;height:450px;margin:0px auto;padding:1px 0px 0px 0px;display:flex;justify-content: center;align-items: center;position: relative;background-size:cover;box-sizing: border-box !important;}
+	#mpLogo{width:90%;max-width:1100px;height:auto;padding:0px 0px 0px 0px;margin:-35px auto 0px;display:block;z-index:99;position: relative;border-radius:0px;}
 	#mpLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
+
 	.mpHeaderAll{background:url('http://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_header_desktop.png') center center no-repeat, var(--mp-blu);background-size:cover;}
+	.mpHeaderMusic{background:url('http://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_header_music_desktop.png') center center no-repeat, var(--mp-lblu);background-size:cover;}	
+	.mpHeaderSport{background:url('http://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_header_sport_desktop.png') center center no-repeat, var(--mp-gre);background-size:cover;}	
+	.mpHeaderOther{background:url('http://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_header_other_desktop.png') center center no-repeat, var(--mp-orn);background-size:cover;}	
+
+
+	#mpHeaderPromoMusic,#mpHeaderPromoSport,#mpHeaderPromoOther{display:none}
+
+	.mpHeaderPromo{width:1100px;height:auto;margin:-35px auto 0px;;padding:0;}
+	.mpHeaderPromo h1{font-family: "Averta",fallback;font-size:50px;line-height:50px;font-weight:700;text-align:left;color:#fff;margin:0px 0px 10px 0px;padding:0 ;text-shadow: 1px 1px 2px #000;}
+	.mpHeaderPromo p{font-family: "Averta",fallback;font-size:30px;line-height:30px;font-weight:500;text-align:left;color:#fff;margin:0px 0px 10px 0px;padding:0 ;text-shadow: 1px 1px 2px #000;;}
 
 	#mpTabWrap{width:100%;height:65px;display:flex;flex-wrap:wrap;justify-content: flex-start;align-items: flex-end;margin:0px auto 0px;padding:0px 0px 0px 0px;position: relative;z-index:49;position: absolute;bottom:30px;left:0;right:0;box-sizing: border-box !important;}
 	#mpTabs{width:100%;max-width:1100px;height:65px;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: flex-end;margin:0px auto 0px;padding:0px 0px 0px 0px;position: relative;z-index:49;}
@@ -65,8 +76,6 @@
 	.mpTabDivMusic{background:var(--mp-lblu);}
 	.mpTabDivSport{background:var(--mp-gre);}
 	.mpTabDivOther{background:var(--mp-orn);}
-
-
 
 	/*drop down & buttons*/
 	#mpFilterWrap{width:100%;max-width:1100px;height:28px;display:flex;flex-wrap:nowrap;justify-content: flex-end;align-items: flex-start;column-gap:10px;margin:0px auto 0px;padding:0px 0px 0px 0px;position: relative;z-index:54;}
@@ -160,7 +169,25 @@
 <div id="mpContent">
 <!--mp header content-->
     <div id="mpHeader" class="mpHeaderAll">
+
         <div id="mpLogo"><img src="http://s1.ticketm.net/tm/en-au/img/static/melbpark/mp-logo.svg" alt="Melbourne Park"></div>
+		<!--promo sections-->
+		<!--music-->
+		<div id="mpHeaderPromoMusic" class="mpHeaderPromo">
+			<h1>R&#220;F&#220;S DU SOL</h1>
+			<p>Inhale / Exhale World Tour 2025<br />NOW ON SALE!</p>
+		</div>
+		<!--Sport-->
+		<div id="mpHeaderPromoSport" class="mpHeaderPromo">
+			<h1>Melbourne Victory FC vs Melbourne City FC</h1>
+			<p>The Melbourne Derby Comes to AAMI Park!</p>
+		</div>
+		<!--Other-->
+		<div id="mpHeaderPromoOther" class="mpHeaderPromo">
+			<h1>The Wiggles</h1>
+			<p>Tree of Wisdom Big Show Arena Spectacular</p>
+		</div>
+
 
 		<div id="mpTabWrap" class="mpAllOn">
 				<div id="mpTabs">
@@ -305,8 +332,8 @@
 	//notes: date filtering and counters next, 
 	$j = jQuery.noConflict();
 	//the server name could change so I put it here so it was easy to find
-	//let availLocation = "https://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_events.json";
-	let availLocation = "mp_events.json";
+	let availLocation = "https://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_events.json";
+	//let availLocation = "mp_events.json";
 
 	//experienceTypeList = [];
 	//fullPubExperienceTypeList = [];
@@ -477,7 +504,12 @@ $j(document).on('click', '.mpTabAll.mpTabOff', function () {
 	//change tab
 	$j('.mpTabOn').removeClass('mpTabOn').addClass('mpTabOff')
 	$j(this).removeClass('mpTabOff').addClass('mpTabOn')
-	//change div
+	//change header
+	$j("#mpHeader").removeClass('mpHeaderMusic').removeClass('mpHeaderSport').removeClass('mpHeaderOther').addClass('mpHeaderAll')
+	$j('#mpHeaderPromoMusic').fadeOut(0)
+	$j('#mpHeaderPromoSport').fadeOut(0)
+	$j('#mpHeaderPromoOther').fadeOut(0)	
+	$j('#mpLogo').fadeIn(0)
 	$j('.mpTabHoriDiv').removeClass('mpTabDivMusic').removeClass('mpTabDivSport').removeClass('mpTabDivOther').addClass('mpTabDivAll')
 	//show events
 	$j("#mpEventStreamMusic").fadeOut(0)
@@ -491,7 +523,12 @@ $j(document).on('click', '.mpTabMusic.mpTabOff', function () {
 	//change tab
 	$j('.mpTabOn').removeClass('mpTabOn').addClass('mpTabOff')
 	$j(this).removeClass('mpTabOff').addClass('mpTabOn')
-	//change div
+	//change header
+	$j("#mpHeader").removeClass('mpHeaderAll').removeClass('mpHeaderSport').removeClass('mpHeaderOther').addClass('mpHeaderMusic')
+	$j('#mpLogo').fadeOut(0)
+	$j('#mpHeaderPromoSport').fadeOut(0)
+	$j('#mpHeaderPromoOther').fadeOut(0)	
+	$j('#mpHeaderPromoMusic').fadeIn(0)
 	$j('.mpTabHoriDiv').removeClass('mpTabDivAll').removeClass('mpTabDivSport').removeClass('mpTabDivOther').addClass('mpTabDivMusic')
 	//show events
 	$j("#mpEventStreamAll").fadeOut(0)	
@@ -504,7 +541,12 @@ $j(document).on('click', '.mpTabSport.mpTabOff', function () {
 	//change tab
 	$j('.mpTabOn').removeClass('mpTabOn').addClass('mpTabOff')
 	$j(this).removeClass('mpTabOff').addClass('mpTabOn')
-	//change div
+	//change header
+	$j("#mpHeader").removeClass('mpHeaderAll').removeClass('mpHeaderMusic').removeClass('mpHeaderOther').addClass('mpHeaderSport')
+	$j('#mpLogo').fadeOut(0)
+	$j('#mpHeaderPromoMusic').fadeOut(0)
+	$j('#mpHeaderPromoOther').fadeOut(0)	
+	$j('#mpHeaderPromoSport').fadeIn(0)
 	$j('.mpTabHoriDiv').removeClass('mpTabDivAll').removeClass('mpTabDivMusic').removeClass('mpTabDivOther').addClass('mpTabDivSport')
 	//show events
 	$j("#mpEventStreamAll").fadeOut(0)	
@@ -513,11 +555,16 @@ $j(document).on('click', '.mpTabSport.mpTabOff', function () {
 	//
 	$j("#mpEventStreamSport").fadeIn(0).css("display","flex")	
 })
-$j(document).on('click', '.mpTabSport.mpTabOff', function () {
+$j(document).on('click', '.mpTabOther.mpTabOff', function () {
 	//change tab
 	$j('.mpTabOn').removeClass('mpTabOn').addClass('mpTabOff')
 	$j(this).removeClass('mpTabOff').addClass('mpTabOn')
-	//change div
+	//change header
+	$j("#mpHeader").removeClass('mpHeaderAll').removeClass('mpHeaderMusic').removeClass('mpHeaderSport').addClass('mpHeaderOther')
+	$j('#mpLogo').fadeOut(0)
+	$j('#mpHeaderPromoMusic').fadeOut(0)
+	$j('#mpHeaderPromoSport').fadeOut(0)	
+	$j('#mpHeaderPromoOther').fadeIn(0)
 	$j('.mpTabHoriDiv').removeClass('mpTabDivAll').removeClass('mpTabDivMusic').removeClass('mpTabDivSport').addClass('mpTabDivOther')
 	//show events
 	$j("#mpEventStreamAll").fadeOut(0)	
