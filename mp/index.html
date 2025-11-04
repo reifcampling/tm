@@ -85,8 +85,9 @@
 	.mpMenuDropDown{width:245px;height:auto;background:#fff;position: absolute;top:30px;left:0;right:0px;padding:10px 0px;border-radius:10px;text-align: left;display:inline-block;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;transition: ease-in-out all .3s;/*clip-path:polygon(0 7%, 3% 0%, 100% 0, 100% 93%, 97% 100%, 0 100%);*/;box-sizing:border-box !important;}
 	.mpDropDownBtn{width:calc(100% - 4px);height:25px;background:var(--rl-dblue);margin:2px;padding:2px 5px 2px 12px;border-radius:0px;border:0;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;clip-path:polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);white-space: nowrap;text-overflow: ellipsis;position:relative;}
 	.mpDropDownBtn h2{font-family: "Averta",fallback;font-size:14px;line-height:14px;font-weight:700;text-align:left;color:var(--mp-blu);margin:0;padding:0;display:inline-block;}	
-	.mpMenuDownArrow{width:10.5px;height:13px;right:10px;top:5px;position: absolute;transition: ease-in-out all .5s;}
+	.mpMenuDownArrow{width:10.5px;height:13px;right:10px;top:5px;position: absolute;transition: ease-in-out all .2s;}
 	.mpMenuDownArrow img{width:100%;height:auto;}
+	.mpArrowRot{transform: rotate(180deg);}
 	.mpDropDownOff{display:none !important;opacity:1 !important;}
 	.mpDropDownOn{display:block !important;opacity:1 !important;}
 
@@ -179,7 +180,7 @@
 		</div>
 		<!--Sport-->
 		<div id="mpHeaderPromoSport" class="mpHeaderPromo">
-			<h1>Melbourne Victory FC vs Melbourne City FC</h1>
+			<h1>Melbourne Victory FC vs<br />Melbourne City FC</h1>
 			<p>The Melbourne Derby Comes to AAMI Park!</p>
 		</div>
 		<!--Other-->
@@ -201,33 +202,33 @@
 		</div> 
     </div><!--filter menu-->
 	<div id="mpFilterWrap"><!--venues-->
-		<div id="mpVenuMenu" class="mpMenu">
+		<div  id="mpVenuBtn" class="mpMenu">
 			<div class="mpMenuBtn"><h1>VENUE</h1><div class="mpMenuDownArrow"><img src="http://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_downArrow_w.svg"></div></div>
-			<div class="mpMenuDropDown mpDropDownOff">
-				<div data-filterbtn="" class="mpDropDownBtn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>AAMI Park</h2></div>
-				<div data-filterbtn="" class="mpDropDownBtn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Centerpiece</h2></div>
-				<div data-filterbtn="" class="mpDropDownBtn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>John Cain Arena</h2></div>
-				<div data-filterbtn="" class="mpDropDownBtn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Margaret Court Arena</h2></div>
-				<div data-filterbtn="" class="mpDropDownBtn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Melbourne Rectangular Arena</h2></div>
-				<div data-filterbtn="" class="mpDropDownBtn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Rod Laver Arena</h2></div>
+			<div id="mpVenuMenu" class="mpMenuDropDown mpDropDownOff">
+				<div data-filterbtn="" class="mpDropDownBtn mpFilterBtnOn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>AAMI Park</h2></div>
+				<div data-filterbtn="" class="mpDropDownBtn mpFilterBtnOn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Centerpiece</h2></div>
+				<div data-filterbtn="" class="mpDropDownBtn mpFilterBtnOn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>John Cain Arena</h2></div>
+				<div data-filterbtn="" class="mpDropDownBtn mpFilterBtnOn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Margaret Court Arena</h2></div>
+				<div data-filterbtn="" class="mpDropDownBtn mpFilterBtnOn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Melbourne Rectangular Arena</h2></div>
+				<div data-filterbtn="" class="mpDropDownBtn mpFilterBtnOn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Rod Laver Arena</h2></div>
 			</div>
 		</div><!--genre-->
-		<div id="mpGenreMenu" class="mpMenu">
+		<div id="mpGenreBtn" class="mpMenu">
 			<div class="mpMenuBtn"><h1>GENRE</h1><div class="mpMenuDownArrow"><img src="http://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_downArrow_w.svg"></div></div>
-			<div class="mpMenuDropDown mpDropDownOff">
-				<div data-filterbtn="" class="mpDropDownBtn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Sport</h2></div>
-				<div data-filterbtn="" class="mpDropDownBtn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Music</h2></div>
-				<div data-filterbtn="" class="mpDropDownBtn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Other</h2></div>
-				<div data-filterbtn="" class="mpDropDownBtn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Basketball</h2></div>
-				<div data-filterbtn="" class="mpDropDownBtn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Football</h2></div>
-				<div data-filterbtn="" class="mpDropDownBtn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Tennis</h2></div>
+			<div id="mpGenreMenu" class="mpMenuDropDown mpDropDownOff">
+				<div data-filterbtn="" class="mpDropDownBtn mpFilterBtnOn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Sport</h2></div>
+				<div data-filterbtn="" class="mpDropDownBtn mpFilterBtnOn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Music</h2></div>
+				<div data-filterbtn="" class="mpDropDownBtn mpFilterBtnOn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Other</h2></div>
+				<div data-filterbtn="" class="mpDropDownBtn mpFilterBtnOn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Basketball</h2></div>
+				<div data-filterbtn="" class="mpDropDownBtn mpFilterBtnOn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Football</h2></div>
+				<div data-filterbtn="" class="mpDropDownBtn mpFilterBtnOn"><div class="mpCheckBox mpCheckBoxOn"></div><h2>Tennis</h2></div>
 			</div>
 		</div><!--genre-->
-		<div id="mpSortMenu" class="mpMenu">
+		<div id="mpSortBtn" class="mpMenu">
 			<div class="mpMenuBtn"><h1>SORT</h1><div class="mpMenuDownArrow"><img src="http://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_downArrow_w.svg"></div></div>
-			<div class="mpMenuDropDown mpDropDownOff">
-				<div data-filterbtn="" class="mpDropDownBtn"><div class="mpRadioBtn mpRadioBtnOn"></div><h2>Date (soonest)</h2></div>
-				<div data-filterbtn="" class="mpDropDownBtn"><div class="mpRadioBtn mpRadioBtnOff"></div><h2>Date (furthest)</h2></div>
+			<div id="mpSortMenu"  class="mpMenuDropDown mpDropDownOff">
+				<div data-filterbtn="" class="mpDropDownBtn mpFilterBtnOn"><div class="mpRadioBtn mpRadioBtnOn"></div><h2>Date (soonest)</h2></div>
+				<div data-filterbtn="" class="mpDropDownBtn mpFilterBtnOn"><div class="mpRadioBtn mpRadioBtnOff"></div><h2>Date (furthest)</h2></div>
 			</div>
 		</div>
 
@@ -332,8 +333,8 @@
 	//notes: date filtering and counters next, 
 	$j = jQuery.noConflict();
 	//the server name could change so I put it here so it was easy to find
-	//let availLocation = "https://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_events.json";
-	let availLocation = "mp_events.json";
+	let availLocation = "https://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_events.json";
+	//let availLocation = "mp_events.json";
 
 	//experienceTypeList = [];
 	//fullPubExperienceTypeList = [];
@@ -573,6 +574,110 @@ $j(document).on('click', '.mpTabOther.mpTabOff', function () {
 	//
 	$j("#mpEventStreamOther").fadeIn(0).css("display","flex")	
 })
+//drop down clicks
+//venue
+	$j(document).on('click', '#mpVenuBtn', function (e) {
+	
+			if ($j(e.target).closest('#mpVenuMenu').length !== 0)
+			{return false;}
+			//open
+				if($j(this).children('.mpMenuDropDown').hasClass('mpDropDownOff')){
+				$j("#mpVenuMenu").removeClass('mpDropDownOff').addClass('mpDropDownOn');
+				$j('#mpVenuBtn .mpMenuDownArrow').addClass('mpArrowRot')
+				//fade out		
+				$j("#mpGenreMenu").removeClass('mpDropDownOn').addClass('mpDropDownOff');
+				$j("#mpGenreMenuBtn .mpMenuDownArrow").removeClass('mpArrowRot');
+				$j("#mpSortMenu").removeClass('mpDropDownOn').addClass('mpDropDownOff');
+				$j("#mpSortBtn .mpMenuDownArrow").removeClass('mpArrowRot');			
+				}
+			//close
+				else if($j(this).children('.mpMenuDropDown').hasClass('mpDropDownOn')){
+				$j("#mpVenuMenu").removeClass('mpDropDownOn').addClass('mpDropDownOff');
+				$j(this).children('.mpMenuBtn').children(".mpMenuDownArrow").removeClass('mpArrowRot')
+				}
+		});
+//genre
+	$j(document).on('click', '#mpGenreBtn', function (e) {
+	
+			if ($j(e.target).closest('#mpGenreMenu').length !== 0)
+			{return false;}
+			//open
+				if($j(this).children('.mpMenuDropDown').hasClass('mpDropDownOff')){
+				$j("#mpGenreMenu").removeClass('mpDropDownOff').addClass('mpDropDownOn');
+				$j('#mpGenreBtn .mpMenuBtn').children('.mpMenuDownArrow').addClass('mpArrowRot')
+				//fade out		
+				$j("#mpVenuMenu").removeClass('mpDropDownOn').addClass('mpDropDownOff');
+				$j("#mpVenuMenuBtn .mpMenuDownArrow").removeClass('mpArrowRot');
+				$j("#mpSortMenu").removeClass('mpDropDownOn').addClass('mpDropDownOff');
+				$j("#mpSortBtn .mpMenuDownArrow").removeClass('mpArrowRot');			
+				}
+			//close
+				else if($j(this).children('.mpMenuDropDown').hasClass('mpDropDownOn')){
+				$j("#mpGenreMenu").removeClass('mpDropDownOn').addClass('mpDropDownOff');
+				$j('#mpGenreBtn .mpMenuBtn').children(".mpMenuDownArrow").removeClass('mpArrowRot')
+				}
+		});
+//genre
+	$j(document).on('click', '#mpSortBtn', function (e) {
+	
+			if ($j(e.target).closest('#mpSortMenu').length !== 0)
+			{return false;}
+			//open
+				if($j(this).children('.mpMenuDropDown').hasClass('mpDropDownOff')){
+				$j("#mpSortMenu").removeClass('mpDropDownOff').addClass('mpDropDownOn');
+				$j('#mpSortBtn .mpMenuBtn').children('.mpMenuDownArrow').addClass('mpArrowRot')
+				//fade out		
+				$j("#mpVenuMenu").removeClass('mpDropDownOn').addClass('mpDropDownOff');
+				$j("#mpVenuMenuBtn").children('.mpMenuBtn').children(".mpMenuDownArrow").removeClass('mpArrowRot');
+				$j("#mpGenreMenu").removeClass('mpDropDownOn').addClass('mpDropDownOff');
+				$j("#mpGenreBtn").children('.mpMenuBtn').children(".mpMenuDownArrow").removeClass('mpArrowRot');			
+				}
+			//close
+				else if($j(this).children('.mpMenuDropDown').hasClass('mpDropDownOn')){
+				$j("#mpSortMenu").removeClass('mpDropDownOn').addClass('mpDropDownOff');
+				$j('#mpSortBtn .mpMenuBtn').children(".mpMenuDownArrow").removeClass('mpArrowRot')
+				}
+		});
+//click anywhere close menu's
+	$j(document).on('click', 'body', function (e) {
+			if (($j(e.target).closest('#mpFilterWrap').length !== 0)) 
+			{return false;}
+			$j("#mpVenuMenu").removeClass('mpDropDownOn').addClass('mpDropDownOff');
+			$j("#mpVenuBtn").children('.mpMenuBtn').children('.mpMenuDownArrow').removeClass('mpArrowRot')
+			$j("#mpGenreMenu").removeClass('mpDropDownOn').addClass('mpDropDownOff');
+			$j("#mpGenreBtn").children('.mpMenuBtn').children('.mpMenuDownArrow').removeClass('mpArrowRot')
+			$j("#mpSortMenu").removeClass('mpDropDownOn').addClass('mpDropDownOff');
+			$j("#mpSortBtn").children('.mpMenuBtn').children('.mpMenuDownArrow').removeClass('mpArrowRot')
+		
+		});		
+//CheckBox
+$j(document).on('click', '.mpDropDownBtn', function () {
+			if ($j(this).hasClass('mpFilterBtnOff')) {
+				$j(this).removeClass('mpFilterBtnOff').addClass('mpFilterBtnOn');
+				$j(this).children('.mpCheckBox').removeClass('mpCheckBoxOff').addClass('mpCheckBoxOn');
+			} else if ($j(this).hasClass('mpFilterBtnOn')) {
+				$j(this).removeClass('mpFilterBtnOn').addClass('mpFilterBtnOff');
+				$j(this).children('.mpCheckBox').removeClass('mpCheckBoxOn').addClass('mpCheckBoxOff');
+			}
+		});
+
+//radio button
+$j(document).on('click', '.sortRadioBtn', function () {
+			if ($j(this).hasClass('mpFilterBtnOff')) {
+				$j(this).removeClass('mpFilterBtnOff').addClass('mpFilterBtnOn');
+				$j(this).children('.wacRadioBtn').removeClass('wacRadioBtnOff').addClass('wacRadioBtnOn');
+				$j(this).siblings('.sortRadioBtn').removeClass('mpFilterBtnOn').addClass('mpFilterBtnOff');
+				$j(this).siblings('.sortRadioBtn').children('.wacRadioBtn').removeClass('wacRadioBtnOn').addClass('wacRadioBtnOff');
+			} else if ($j(this).hasClass('mpFilterBtnOn')) {
+				return
+			}
+		});
+//fix drop down behavior
+//new header images
+//checkbox and radio box clicks
+//mobile optimisations
+//main filtering
+//		
 </script>
 </body>
 </html>
