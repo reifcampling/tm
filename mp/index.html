@@ -98,7 +98,7 @@
 
 	/*sort menu*/
 	.mpRadioBtn{width:15px;height:15px;display:inline-block;margin:0px 5px 0px 0px;padding:0px;border-radius:15px;box-sizing:border-box !important;}
-	.mpRadioBtnOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_radio_on_w_img.svg")center right no-repeat,var(--mp-yel);background-size:15px;}
+	.mpRadioBtnOn{background:var(--mp-yel);background-size:15px;box-shadow:inset 0px 0px 0px 5px var(--mp-blu);}
 	.mpRadioBtnOff{background:#fff;box-shadow:inset 0px 0px 0px 2px var(--mp-yel);}
 
 	/*event streams*/
@@ -228,7 +228,7 @@
 			<div class="mpMenuBtn"><h1>SORT</h1><div class="mpMenuDownArrow"><img src="http://s1.ticketm.net/tm/en-au/img/static/melbpark/mp_downArrow_w.svg"></div></div>
 			<div id="mpSortMenu"  class="mpMenuDropDown mpDropDownOff">
 				<div data-filterbtn="" class="mpDropDownBtn mpFilterBtnOn"><div class="mpRadioBtn mpRadioBtnOn"></div><h2>Date (soonest)</h2></div>
-				<div data-filterbtn="" class="mpDropDownBtn mpFilterBtnOn"><div class="mpRadioBtn mpRadioBtnOff"></div><h2>Date (furthest)</h2></div>
+				<div data-filterbtn="" class="mpDropDownBtn mpFilterBtnOff"><div class="mpRadioBtn mpRadioBtnOff"></div><h2>Date (furthest)</h2></div>
 			</div>
 		</div>
 
@@ -662,19 +662,26 @@ $j(document).on('click', '.mpDropDownBtn', function () {
 		});
 
 //radio button
-$j(document).on('click', '.sortRadioBtn', function () {
-			if ($j(this).hasClass('mpFilterBtnOff')) {
+$j(document).on('click', '#mpSortMenu .mpFilterBtnOff', function () {
+				$j(this).siblings('.mpFilterBtnOn').children('.mpRadioBtn').removeClass('mpRadioBtnOn').addClass('mpRadioBtnOff');
+				$j(this).siblings('.mpFilterBtnOn').removeClass('mpFilterBtnOn').addClass('mpFilterBtnOff');
+				//
 				$j(this).removeClass('mpFilterBtnOff').addClass('mpFilterBtnOn');
-				$j(this).children('.wacRadioBtn').removeClass('wacRadioBtnOff').addClass('wacRadioBtnOn');
-				$j(this).siblings('.sortRadioBtn').removeClass('mpFilterBtnOn').addClass('mpFilterBtnOff');
-				$j(this).siblings('.sortRadioBtn').children('.wacRadioBtn').removeClass('wacRadioBtnOn').addClass('wacRadioBtnOff');
-			} else if ($j(this).hasClass('mpFilterBtnOn')) {
-				return
-			}
+				$j(this).children('.mpRadioBtn').removeClass('mpRadioBtnOff').addClass('mpRadioBtnOn');
+				//
+
+
+
 		});
+$j(document).on('click', '#mpSortMenu .mpFilterBtnOn', function () {
+
+	
+
+		});		
 //fix drop down behavior
 //new header images
-//checkbox and radio box clicks
+//ad / promo spots
+//add footer
 //mobile optimisations
 //main filtering
 //		
