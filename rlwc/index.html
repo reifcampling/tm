@@ -81,21 +81,16 @@ page_title = "Rugby League World Cup 2026 | Australia and New Zealand | Buy Tick
 	.rlMenuDownArrow{width:10px;height:auto;right:5px;top:22px;position: absolute;transition: ease-in-out all .5s;}
 	.rlMenuDownArrow img{width:100%;height:auto;}
 	.rlArrowRot{transform: rotate(180deg);}
-	/*feature tiles*/
-	#rlFeatureScroller{width:auto;height:auto;margin:50px 0px 20px 0px;padding:0px 0px;overflow: hidden;position: relative;display:block;;box-sizing: border-box !important;overflow-x: scroll; overflow-y: hidden; white-space: nowrap;position:relative;display:none}
-	#rlFeatureEvents{width:100%;height:auto;display:flex;margin:0px auto;white-space:nowrap;flex-wrap: nowrap;flex-direction: row;align-items:safe center;justify-content:safe center;column-gap: 10px;position:relative;;z-index:99;}
-	.rlFeatureEvent{width:150px;height:auto;background:var(--rl-pur);border-radius:5px;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;border:1px solid #fff;position:relative;overflow:hidden;cursor:pointer;user-drag: none; -webkit-user-drag: none;user-select: none;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
-	.rlFeatureEvent img{width:100%;height:auto;}
-	.rlFeatureEvent a{user-drag: none; -webkit-user-drag: none;user-select: none;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
-	.rlFeatureEvent:hover{box-shadow:rgb(0 0 0 / 30%) 0px 4px 6px 2px;opacity:.95;}
-	.rlFeaturePh{background:rgba(0,0,0,.2);}
+
+
 	#rlPubResetAllFeat,#rlHospResetAllFeat{width:190px;height:24px;text-align: center;margin:4px auto 0px;padding:4px 0px;font-family:"RLWC Backs","Averta",fallback;font-size:16px;line-height:16px;font-weight:700;color:var(--rl-dblue);background:var(--rl-cream);display:block;position: relative;clip-path:polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);box-sizing: border-box !important;text-transform: uppercase;transform: translateX(210px);cursor:pointer;}
-
-	#rlFeatEventPips{display:none;}
 	/*menu icons*/
-
+	.rlSelectIco{width:30px;height:30px;margin:0px 0px 0px 0px;display:inline-block;border-radius:0px 0px 0px 0px;box-sizing: border-box !important;}
+	.rlCalIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_date_d_ico.svg") center center no-repeat;background-size:25px 25px;}
+	.rlVenueIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_location_d_ico.svg") center center no-repeat;background-size:20px 20px;}
+	.rlTeamIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_cup_d_ico.svg") center center no-repeat;background-size:20px 20px;}
 	/*menu counters*/
-	.rlMenuCounter{width:24px;height:24px;border-radius:20px;background:#fff;font-family:"afc num","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;color:var(--wac-pur);text-align:center;margin:4px 8px;padding:4px 0px;display:none;box-sizing:border-box !important;}
+	.rlMenuCounter{width:24px;height:24px;border-radius:20px;background:var(--rl-lblue);font-family:"RLWC Forwards","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;color:var(--rl-dblue);text-align:center;margin:4px 3px;padding:4px 0px;display:none;box-sizing:border-box !important;}
 
 	/*calendar*/
 	#rlPubCalendarMenu,#rlHospCalendarMenu{width:285px;height:auto;padding:5px 5px 10px 5px;display:none;background:var(--rl-cream);position:absolute;top:59px;left:-55px;box-sizing:border-box !important;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;user-select:none;}
@@ -237,7 +232,7 @@ page_title = "Rugby League World Cup 2026 | Australia and New Zealand | Buy Tick
 
 	.rlSelectLable{width:125px;height:24px;text-align: center;margin:0px auto 4px;padding:4px 0px;font-family:"RLWC Backs","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;color:var(--rl-dblue);background:var(--rl-cream);display:block;position: relative;clip-path:polygon(6px 0%, 100% 0, 119px 100%, 0% 100%);box-sizing: border-box !important;text-transform: uppercase;}
 	.rlSelectBtn{width:100%;height:auto;display:block;margin:0px auto 4px 0px;overflow:visible;position: relative;box-sizing: border-box !important;}
-	.rlSelectTitle{width:100%;height:55px;padding:0px 25px;background:var(--rl-cream);cursor:pointer;text-align: center;display:flex;flex-wrap:nowrap;align-items: center;justify-content:center;box-sizing: border-box !important;position: relative;}
+	.rlSelectTitle{width:100%;height:55px;padding:0px 25px 0px 31%;background:var(--rl-cream);cursor:pointer;text-align: center;display:flex;flex-wrap:nowrap;align-items: center;justify-content:flex-start;box-sizing: border-box !important;position: relative;}
 	.rlSelectBtn h1{font-family:"RLWC Forwards","Averta",fallback;font-size:28px;line-height:28px;font-weight:bold;color:var(--rl-dblue);text-align:center;margin:0px 0px;display:inline-block;padding:2px 0px 0px 0px;user-select:none;}
 	.rlSelectBtn h2{font-family:"RLWC Forwards","Averta",fallback;font-size:14px;line-height:14px;font-weight:bold;color:#fff;text-align:center;margin:0px 0px 0 0px;padding:0px 0px;display:block;user-select:none;}
 	.rlMenuVertDivDark{width:2px;height:20px;background:var(--rl-pur);right:2px;top:5px;position: absolute;}
@@ -257,9 +252,12 @@ page_title = "Rugby League World Cup 2026 | Australia and New Zealand | Buy Tick
 
 	#rlFeatEventPips{display:none;}
 	/*menu icons*/
-
+	.rlSelectIco{width:30px;height:30px;margin:0px 0px 0px 0px;display:inline-block;border-radius:0px 0px 0px 0px;box-sizing: border-box !important;}
+	.rlCalIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_date_d_ico.svg") center center no-repeat;background-size:25px 25px;}
+	.rlVenueIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_location_d_ico.svg") center center no-repeat;background-size:20px 20px;}
+	.rlTeamIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_cup_d_ico.svg") center center no-repeat;background-size:20px 20px;}
 	/*menu counters*/
-	.rlMenuCounter{width:24px;height:24px;border-radius:20px;background:#fff;font-family:"afc num","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;color:var(--wac-pur);text-align:center;margin:4px 8px;padding:4px 0px;display:none;box-sizing:border-box !important;}
+		.rlMenuCounter{width:24px;height:24px;border-radius:20px;background:var(--rl-lblue);font-family:"RLWC Forwards","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;color:var(--rl-dblue);text-align:center;margin:4px 3px;padding:4px 0px;display:none;box-sizing:border-box !important;}
 
 	/*calendar*/
 	#rlPubCalendarMenu,#rlHospCalendarMenu{min-width:290px;max-width:335px;width:100%;height:auto;padding:5px 5px 10px 5px;display:none;background:var(--rl-cream);box-sizing:border-box !important;user-select:none;}
@@ -396,7 +394,7 @@ page_title = "Rugby League World Cup 2026 | Australia and New Zealand | Buy Tick
 	
 		<!--calendar selection---->
 		<div id="rlPubSelectDate" class="rlSelectBtn">
-			<div class="rlSelectTitle"><div class="rlelectIco rlCalIco"><div id="rlPubDateMenuCounter" class="rlMenuCounter"></div></div><h1>DATE</h1><div class='rlMenuDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_down_arrow_b_img.svg'></div></div>
+			<div class="rlSelectTitle"><div class="rlSelectIco rlCalIco"><div id="rlPubDateMenuCounter" class="rlMenuCounter"></div></div><h1>DATE</h1><div class='rlMenuDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_down_arrow_b_img.svg'></div></div>
 			
 		<!---session selected----->
 		<!--cal----><div id="rlPubCalendarMenu" class="rlDropDownOff">
@@ -499,7 +497,7 @@ page_title = "Rugby League World Cup 2026 | Australia and New Zealand | Buy Tick
 		</div><!--Team select-----><div id="rlPubSelectTeam" class="rlSelectBtn">
 			<div class="rlSelectTitle"><div class="rlSelectIco rlTeamIco"><div id="rlPubTeamMenuCounter" class="rlMenuCounter"></div></div><h1>TEAM</h1><div class='rlMenuDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_down_arrow_b_img.svg'></div></div>		
 		<!--Team Menu-----><div id="rlPubTeamMenu" class="rlDropDownMenu rlDropDownOff">
-			<div class="rlDropDownLid"><h3>Select A Team / Country</h3><div id="clearTeamFilters"  class="rlClearMenuBtn">clear</div></div>
+			<div class="rlDropDownLid"><h3>Select A Team / Country</h3><div id="clearPubTeamFilters"  class="rlClearMenuBtn">clear</div></div>
 			<div class="rlDropDownKey"><h3>Men's</h3><div class="rlDropDownGenderIcon"><img src="https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_mens_ico.svg" alt=""></div><h3>Women's</h3><div class="rlDropDownGenderIcon"><img src="https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_womens_ico.svg" alt=""></div></div>
 			<div id="teamPubFilterAllBtn" data-filterFull="All" data-filterbtn="All" class="rlDropDownBtn rlFilterBtnOn rlTeamFilterBtn"><div class="rlCheckBox rlCheckBoxOn"></div><h4>Show All</h4></div>
 				<div class="rlDropDownHorDiv"></div>
@@ -977,7 +975,7 @@ $j(document).on('click', '#rlPubSortMenu .sortRadioBtn[data-filterbtnlab="Recomm
 })
 
 //reset buttons - pub
-let wacPubResetAll = function(){
+let rlPubResetAll = function(){
 	//reset arrays
 	dateListPub.length = 0;
 	teamListPub.length = 0;
@@ -987,61 +985,40 @@ let wacPubResetAll = function(){
 	packListPub.length = 0;
 	packListPub.push("All")	
 	//reset buttons
-	$j("#wacPubWrapper .wacDropDownBtn").removeClass('rlFilterBtnOn').addClass('rlFilterBtnOff');
-	$j("#wacPubWrapper .rlCheckBox").removeClass('rlCheckBoxOn').addClass('rlCheckBoxOff');
- 	$j("#wacPubWrapper .wacDay").removeClass('wacCalDayOn').addClass('wacCalDayOff');
+	$j("#rlPubSearchBarWrap .rlDropDownBtn").removeClass('rlFilterBtnOn').addClass('rlFilterBtnOff');
+	$j("#rlPubSearchBarWrap .rlCheckBox").removeClass('rlCheckBoxOn').addClass('rlCheckBoxOff');
+ 	$j("#rlPubSearchBarWrap .rlDay").removeClass('rlCalDayOn').addClass('rlCalDayOff');
 
-	$j("#wacPubVenueMenu").removeClass('wacDropDownOn').addClass('wacDropDownOff');
-	$j("#wacPubSelectVenue").children('.wacSelectTitle').children(".wacMenuDownArrow").removeClass('wacCardArrowRot');
-
-	$j("#wacPubTeamMenu").removeClass('wacDropDownOn').addClass('wacDropDownOff');
-	$j("#wacPubSelectTeam").children('.wacSelectTitle').children(".wacMenuDownArrow").removeClass('wacCardArrowRot');
-
-	$j("#wacPubTicketMenu").removeClass('wacDropDownOn').addClass('wacDropDownOff');
-	$j("#wacPubSelectTicket").children('.wacSelectTitle').children(".wacMenuDownArrow").removeClass('wacCardArrowRot');
-
-	$j("#wacPubCalendarMenu").removeClass('wacDropDownOn').addClass('wacDropDownOff');
-	$j("#wacPubSelectDate").children('.wacSelectTitle').children(".wacMenuDownArrow").removeClass('wacCardArrowRot');
+	$j("#rlPubVenueMenu").removeClass('rlDropDownOn').addClass('wacDropDownOff');
+	$j("#rlPubTeamMenu").removeClass('wacDropDownOn').addClass('wacDropDownOff');
+	$j("rlPubCalendarMenu").removeClass('wacDropDownOn').addClass('wacDropDownOff');
+	$j(".rlSelectBtn .rlMenuDownArrow").removeClass('rlArrowRot');
 
 	//turn on 'all' buttons
 	$j("#venuePubFilterAllBtn").removeClass('rlFilterBtnOff').addClass('rlFilterBtnOn');
 	$j("#venuePubFilterAllBtn").children(".rlCheckBox").removeClass('rlCheckBoxOff').addClass('rlCheckBoxOn');
 	$j("#teamPubFilterAllBtn").removeClass('rlFilterBtnOff').addClass('rlFilterBtnOn');
 	$j("#teamPubFilterAllBtn").children(".rlCheckBox").removeClass('rlCheckBoxOff').addClass('rlCheckBoxOn');
-	$j("#ticketPubFilterAllBtn").removeClass('rlFilterBtnOff').addClass('rlFilterBtnOn');
-	$j("#ticketPubFilterAllBtn").children(".rlCheckBox").removeClass('rlCheckBoxOff').addClass('rlCheckBoxOn');
 
 	cardsToDisplayPub()
 	dateCounterPub();
 	venueCounterPub();
 	teamCounterPub();
-	ticketCounterPub();
+
 };	
 //reset from feature tiles
-$j(document).on('click', '#wacPubResetAllFeat,#errorPubResetFilterBtn', function () {	
-	wacPubResetAll();
+$j(document).on('click', '#rlPubResetAllFeat,#errorPubResetFilterBtn', function () {	
+	rlPubResetAll();
 	//scrollToEvents();
 });
 //reload data error btn
 $j(document).on('click', '#errorPubReloadDataBtn', function () {	
-	wacPubResetAll();
+	rlPubResetAll();
 	loadData()
 	cardsToDisplayPub();
 	$j("#errorPubReloadDataBtn").fadeOut(0)
 });
 
-//reset from feature tiles
-$j(document).on('click', '#wacHospResetAllFeat,#errorHospResetFilterBtn', function () {	
-	wacHospResetAll();
-	//scrollToEvents();
-});
-//reload data error btn
-$j(document).on('click', '#errorHospReloadDataBtn', function () {	
-	wacHospResetAll();
-	loadData()
-	cardsToDisplayHosp();
-	$j("#errorHospReloadDataBtn").fadeOut(0)
-});
 //scroll to events
 let scrollToEventsHosp = function(){
 	$j('html, body').animate({ scrollTop: $j("#").offset().top}, 1000);
@@ -1049,23 +1026,23 @@ let scrollToEventsHosp = function(){
 /*clear menus*/
 //Pub
 $j(document).on('click', '#clearPubDateFilters', function () {	
-		dateListNumPub.length = 0;
-		$j("#wacPubCalendarMenu .wacDay").removeClass("wacCalDayOn").addClass("wacCalDayOff");
+		dateListPub.length = 0;
+		$j("#rlPubCalendarMenu .rlDay").removeClass("rlCalDayOn").addClass("rlCalDayOff");
 		cardsToDisplayPub();
 		dateCounterPub();
 		});	
 $j(document).on('click', '#clearPubVenueFilters', function () {	
 		venueListPub.length = 0;
-		$j("#wacPubVenueMenu .wacVenueFilterBtn").removeClass("rlFilterBtnOn").addClass("rlFilterBtnOff");
-		$j("#wacPubVenueMenu .wacVenueFilterBtn").children(".rlCheckBox").removeClass("rlCheckBoxOn").addClass("rlCheckBoxOff");
+		$j("#rlPubVenueMenu .rlVenueFilterBtn").removeClass("rlFilterBtnOn").addClass("rlFilterBtnOff");
+		$j("#rlPubVenueMenu .rlVenueFilterBtn").children(".rlCheckBox").removeClass("rlCheckBoxOn").addClass("rlCheckBoxOff");
 
 		cardsToDisplayPub();
 		venueCounterPub();
 		});		
 $j(document).on('click', '#clearPubTeamFilters', function () {	
 		teamListPub.length = 0;
-		$j("#wacPubTeamMenu .wacTeamFilterBtn").removeClass("rlFilterBtnOn").addClass("rlFilterBtnOff");
-		$j("#wacPubTeamMenu .wacTeamFilterBtn").children(".rlCheckBox").removeClass("rlCheckBoxOn").addClass("rlCheckBoxOff");
+		$j("#rlPubTeamMenu .rlTeamFilterBtn").removeClass("rlFilterBtnOn").addClass("rlFilterBtnOff");
+		$j("#rlPubTeamMenu .rlTeamFilterBtn").children(".rlCheckBox").removeClass("rlCheckBoxOn").addClass("rlCheckBoxOff");
 		cardsToDisplayPub();
 		teamCounterPub();
 		});		
@@ -1085,7 +1062,7 @@ var toggleDate = $j(this).data('filterdate');
 		}
 		//console.log(dateListPub)	
 		cardsToDisplayPub();
-		//dateCounterPub();
+		dateCounterPub();
 	})
 //venue Filter Check
 $j(document).on('click', "#rlPubVenueMenu .rlVenueFilterBtn", function () {
@@ -1100,7 +1077,7 @@ var toggleVenue = $j(this).data('filterbtn');
 		}
 		console.log(venueListPub)		
 		cardsToDisplayPub();
-		//venueCounterPub();
+		venueCounterPub();
 	})
 //venue any/all
 $j(document).on('click', "#rlPubVenueMenu .rlVenueFilterBtn", function () {
@@ -1121,7 +1098,7 @@ $j(document).on('click', "#rlPubVenueMenu .rlVenueFilterBtn", function () {
 					});
 				}
 				cardsToDisplayPub();
-			//	venueCounterPub();
+				venueCounterPub();
 });
 //team Filter Check 
 $j(document).on('click', "#rlPubTeamMenu .rlTeamFilterBtn ", function () {
@@ -1136,7 +1113,7 @@ var toggleTeam = $j(this).data('filterfull');
 		}	
 		console.log(teamListPub,toggleTeam)			
 		cardsToDisplayPub();
-		//teamCounterPub();
+		teamCounterPub();
 	})
 
 //teams any/all
@@ -1158,39 +1135,39 @@ $j(document).on('click', "#rlPubTeamMenu .rlTeamFilterBtn", function () {
 					});
 				}
 				cardsToDisplayPub();
-			//	teamCounterPub();
+				teamCounterPub();
 });
 //menu counters - pub
 let venueCounterPub = function(){
 	let venueCountLength = jQuery.grep(venueListPub, function(value) {
 						return value != "All";});
 	let venueCount = venueCountLength.length			
-	document.getElementById('wacPubVenueMenuCounter').innerHTML = venueCount.toString();
+	document.getElementById('rlPubVenueMenuCounter').innerHTML = venueCount.toString();
 	if((venueCount >= 1)){
-			$j("#wacPubVenueMenuCounter").fadeIn(0);
+			$j("#rlPubVenueMenuCounter").fadeIn(0);
 	}else if((venueCount == 0)){
-			$j("#wacPubVenueMenuCounter").fadeOut(0);
+			$j("#rlPubVenueMenuCounter").fadeOut(0);
 	}
 }
 let dateCounterPub = function(){
 	let dateCount = dateListPub.length	
 
-	document.getElementById('wacPubDateMenuCounter').innerHTML = dateCount.toString();
+	document.getElementById('rlPubDateMenuCounter').innerHTML = dateCount.toString();
 	if((dateCount >= 1)){
-			$j("#wacPubDateMenuCounter").fadeIn(0);
+			$j("#rlPubDateMenuCounter").fadeIn(0);
 	}else if((dateCount == 0)){
-			$j("#wacPubDateMenuCounter").fadeOut(0);
+			$j("#rlPubDateMenuCounter").fadeOut(0);
 	}
 }
 let teamCounterPub = function(){
 	let teamCountLength = jQuery.grep(teamListPub, function(value) {
 						return value != "All";});
 	let teamCount = teamCountLength.length
-	document.getElementById('wacPubTeamMenuCounter').innerHTML = teamCount.toString();
+	document.getElementById('rlPubTeamMenuCounter').innerHTML = teamCount.toString();
 	if((teamCount >= 1)){
-			$j("#wacPubTeamMenuCounter").fadeIn(0);
+			$j("#rlPubTeamMenuCounter").fadeIn(0);
 	}else if((teamCount == 0)){
-			$j("#wacPubTeamMenuCounter").fadeOut(0);
+			$j("#rlPubTeamMenuCounter").fadeOut(0);
 	}
 }
 
