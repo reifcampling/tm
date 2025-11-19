@@ -719,11 +719,11 @@ page_title = "Rugby League World Cup 2026 | Australia and New Zealand | Buy Tick
                             let matchType = event.match_type.replace(/\s/g, '');    
 							//build card
 							//top span
-							//console.log(matchType)
+		
 							let  newEvent = $j("<div id='"+event.event_name+"' class='rlEventCard' data-teams='"+discoTeams+"' data-venue='"+event.venue_name+"' data-date='"+event.event_date+"' data-sortdate='"+sortDate+"' data-eventcode='"+event.event_name+"'><!--card top--><div class='rlCardTop'><div class='rlTopLid'><div class='rlLocCity rlCityIco'>"+event.host_city+"</div><div class='rlLocCountry rlCountry"+hostCountry+"Ico'>"+event.host_country+"</div></div><div class='rlCardHero'><div class='rlHeaderTag'>"+event.match_type+"</div><img src='https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/heroimg/rlwc_"+event.tm_event_name+".jpg'></div></div>");	
 								
 							//mid span
-							if(matchType == "Single"){	
+							if(matchType == "SingleMatch"){	
 								eventMidSpan = $j("<!--card middle--><div class='rlCardMid'><div class='rlVsWrap'><h1>"+eventTeam01+" v "+eventTeam02+"</h1></div><div class='rlTeamWrap'><h2>"+event.offer_desc_game1+"</h2></div></div>")
 							}
 							if(matchType == "DoubleHeader"){	
