@@ -191,7 +191,7 @@ page_title = "Rugby League World Cup 2026 | Australia and New Zealand | Buy Tick
 	.rlCardVenue{width:100%;max-width:300px;height:auto;display:flex;flex-wrap: nowrap;justify-content: center;align-items: center;margin:0;padding:0;position:relative;}
 	.rlCardVenueIco, .rlCardDateIco{height:25px;width:25px;min-width:25px;display:inline-block;margin:0 10px 0px 0px;padding:0;}
 	.rlCardVenueIco img,.rlCardDateIco img{width:100%;height:auto;display:block;} 
-	.rlCardDate h1{font-family:"RLWC Backs","Averta",fallback;font-size:14px;line-height:16px;font-weight:600;text-align:left;color:var(--rl-cream);margin:0;padding:0;display:inline-block;}
+	.rlCardDate h1{font-family:"RLWC Backs","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:left;color:var(--rl-cream);margin:0;padding:0;display:inline-block;}
 	.rlCardVenue h1{font-family:"RLWC Backs","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:center;color:var(--rl-cream);margin:0;padding:0;display:inline-block;}
 	/*over ride QBS font size*/.rlEventCard[data-eventcode='EQNQO31'] .rlCardVenue h1{font-size:14px;}
 	.rlInfoAndPrice{width:100%;height:auto;display:flex;flex-wrap:nowrap;justify-content: center;align-items: center;margin:10px 0px 0px 0px;padding:0;position:relative;}
@@ -206,8 +206,26 @@ page_title = "Rugby League World Cup 2026 | Australia and New Zealand | Buy Tick
 	.rlCityIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_location_d_ico.svg") no-repeat;background-position:left 6px top 4px;background-size:16px;}
 	.rlCountryAustraliaIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_aus_d_ico.svg") no-repeat;background-position:right 6px top 2px;background-size:20px;}
 	.rlCountryNewZealandIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_nz_d_ico.svg") no-repeat;background-position:right 6px top 2px;background-size:20px;}
-
-
+	/*lightbox*/
+	.rlLightBox{width:100%;height:100%;margin:0px;position:fixed;background:rgba(0,0,0,.2);backdrop-filter: blur(5px);z-index:201;display:none;top:0;right:0;left:0;justify-content: safe center; align-items: center;flex-direction: column;overflow-y: scroll;}
+	.rlLbContent{width:900px;height:auto;margin:0;padding:0;background:var(--rl-cream);border-top:5px solid var(--rl-lblue);box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;box-sizing: border-box !important;position:relative;}
+	.rlLbClose{width:45px;height:45px;background:url(rlwc_close_img.svg) center center no-repeat,var(--rl-lblue);background-size:100% 100%, 100% 100%;cursor:pointer;position:absolute;right:-50px;top:-5px;margin:0;padding:0;}
+	.rlLbTop{width:100%;height:90px;margin:0;padding:0;background:var(--rl-dblue);display: flex;justify-content: center;align-items: center;}
+	.rlLbTop h1{font-family:"RLWC Forwards","Averta",fallback;font-size:24px;line-height:24px;font-weight:600;text-align:center;color:var(--rl-cream);margin:0;padding:0 ;}
+	.rlLbBotWrap{width:100%;height:auto;margin:30px 0px 0px 0px;padding:0;background:var(--rl-cream);display: flex;box-sizing: border-box !important;}
+	.rlLbBlurb{width:calc(100% - 300px);height:auto;margin:0;padding:0px 60px 30px 30px;box-sizing: border-box !important;}
+	.rlLbBlurb p{font-family:"RLWC Backs","Averta",fallback;font-size:16px;line-height:20px;font-weight:400;text-align:left;color:#000;margin:0;padding:0;}
+	.rlLbInfo{width:300px;height:auto;margin:0;padding:0;background:var(--rl-dblue);display: flex;flex-wrap: wrap;align-content: space-between;align-items: stretch;justify-content: flex-start;}
+	.rlLbInfoTop{width:100%;height:auto;margin:0;padding:0;}
+	.rlLbInfoDate,.rlLbInfoVenue,.rlLbInfoLocation{width:330px;height:50px;margin:20px 0px 0px -40px;padding:0px 0px 0px 30px;border-radius:5px;box-sizing: border-box !important;}
+	.rlLbInfoDate{background:url('https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_date_d_ico.svg')no-repeat,var(--rl-lblue);background-size:40px 40px;background-position:top 3px left 5px;}
+	.rlLbInfoVenue{background:url('https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_venue_d_ico.svg')no-repeat,var(--rl-lblue);background-size:35px 35px;background-position:top 7px left 8px}
+	.rlLbInfoLocation{background:url('https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_location_d_ico.svg')no-repeat,var(--rl-lblue);background-size:30px 30px;background-position:top 9px left 8px}
+	.rlLbInfoDate h2, .rlLbInfoVenue h2, .rlLbInfoLocation h2{font-family:"RLWC Forwards","Averta",fallback;font-size:24px;line-height:24px;font-weight:700;text-align:center;color:var(--rl-dblue);margin:0;padding:0;}
+	.rlLbInfoBot{width:100%;height:auto;margin:0;padding:0;}
+	.rlLbInfoBot h1{font-family:"RLWC Backs","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:center;color:var(--rl-cream);margin:0px 10px 0px 0px;padding:0 ;display:inline-block;}
+	.rlLbInfoBot h2{font-family:"RLWC Forwards","Averta",fallback;font-size:24px;line-height:24px;font-weight:500;text-align:center;color:var(--rl-lblue);margin:0;padding:0 ;display:inline-block;}
+	.rlLbBtn{width:calc(100% - 20px);height:auto;display:block;margin:10px auto 10px;padding:10px 10px 8px 10px;position:relative;background:var(--rl-lblue);border-radius:5px;font-family:"RLWC Forwards","Averta",fallback;font-size:24px;line-height:24px;font-weight:700;text-align:center;color:var(--rl-dblue);box-sizing: border-box !important;cursor:pointer;}
 }
 	
 /*mobile & tablet */
@@ -351,7 +369,7 @@ page_title = "Rugby League World Cup 2026 | Australia and New Zealand | Buy Tick
 	.rlCardVenue{width:100%;max-width:300px;height:auto;display:flex;flex-wrap: nowrap;justify-content: center;align-items: center;margin:0;padding:0;position:relative;}
 	.rlCardVenueIco, .rlCardDateIco{height:25px;width:25px;min-width:25px;display:inline-block;margin:0 10px 0px 0px;padding:0;}
 	.rlCardVenueIco img,.rlCardDateIco img{width:100%;height:auto;display:block;} 
-	.rlCardDate h1{font-family:"RLWC Backs","Averta",fallback;font-size:14px;line-height:16px;font-weight:600;text-align:left;color:var(--rl-cream);margin:0;padding:0;display:inline-block;}
+	.rlCardDate h1{font-family:"RLWC Backs","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:left;color:var(--rl-cream);margin:0;padding:0;display:inline-block;}
 	.rlCardVenue h1{font-family:"RLWC Backs","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:center;color:var(--rl-cream);margin:0;padding:0;display:inline-block;}
 	/*over ride QBS font size*/.rlEventCard[data-eventcode='EQNQO31'] .rlCardVenue h1{font-size:14px;}
 	.rlInfoAndPrice{width:100%;height:auto;display:flex;flex-wrap:nowrap;justify-content: center;align-items: center;margin:10px 0px 0px 0px;padding:0;position:relative;}
@@ -446,12 +464,12 @@ page_title = "Rugby League World Cup 2026 | Australia and New Zealand | Buy Tick
 				<h3>November 2026</h3></div>
 				<!--week 3---->
 				<div class="rlCalWrap">
-				<div class=" rlNoEventDay">26</div>
-				<div class=" rlNoEventDay">27</div>
-				<div class=" rlNoEventDay">28</div>
-				<div class=" rlNoEventDay">29</div>
-				<div class=" rlNoEventDay">30</div>
-				<div class=" rlNoEventDay">31</div>
+					<div class=" rlNoEventDay">26</div>
+					<div class=" rlNoEventDay">27</div>
+					<div class=" rlNoEventDay">28</div>
+					<div class=" rlNoEventDay">29</div>
+					<div class=" rlNoEventDay">30</div>
+					<div class=" rlNoEventDay">31</div>
 					<div  data-filterdate="2026-11-01"  data-filterbtn="" class="rlDay rlCalDayOff">01</div>
 				</div>
 				<!--week 4---->
@@ -628,6 +646,43 @@ page_title = "Rugby League World Cup 2026 | Australia and New Zealand | Buy Tick
 				</div>
 			</div>
 			<!--end card-->
+			<!--lightbox start--
+			<div class='rlLightBox'>
+				<div class='rlLbContent'><div class='rlLbClose'></div>
+					<div class='rlLbTop'><h1>New Zealand vs Fiji (M) | New Zealand vs Fiji (M) | New Zealand vs Fiji (M)</h1></div>
+					<div class='rlLbBotWrap'>
+						<div class='rlLbBlurb'><p>A momentous triple-header at CommBank Stadium marks the end of the RLWC 2026 Round Games. The Australian Jillaroos take on Wales in Game 1, followed by Lebanon and France in Game 2. The triple-header ends with the battle of the Pacific, with Tonga set to take on Samoa in a historic rugby league rivalry.
+								<br /><br />
+						Game 1: Sunday 1 November 2026, 4:00pm AEDT<br />
+						Game 2: Sunday 1 November 2026, 6:00pm AEDT<br />
+						Game 3: Sunday 1 November 2026, 8:00pm AEDT
+						<br /><br />
+						Tickets from $19 for adults and $49 for families (AUD)
+						<br /><br />
+						Sit in your country's dedicated supporter bay in the following sections:<br />
+						&bull; Tonga: Section 104 - 106<br />
+						&bull; Samoa: Section 123 - 125<br />
+						&bull; Lebanon: Section 107<br />
+						&bull;  France: Section 122<br />
+						&bull;  Australia: Section 103<br />
+						&bull; Wales: Section 126<br />
+						<br />
+						Alcohol Free Zone: Section 102</p></div>
+						<div class='rlLbInfo'>
+							<div class='rlLbInfoTop'>
+								<div class='rlLbInfoDate'><h2>+event.event_date+</h2></div>					
+								<div class='rlLbInfoVenue'><h2>+event.venue_name+</h2></div>		
+								<div class='rlLbInfoLocation'><h2>+event.host_city+","+event.host_country+"</h2></div>		
+							</div>
+							<div class='rlLbInfoBot'>
+								<h1>from</h1><h2>+event.event_price+</h2>	
+								<div class='rlLbBtn'>+event.button_text+</h2></div>		
+							</div>
+						</div>		
+					</div>
+				</div>
+			</div>
+			--lightbox end-->
 		</div>
 
 	</div>
@@ -738,10 +793,11 @@ page_title = "Rugby League World Cup 2026 | Australia and New Zealand | Buy Tick
 								eventMidSpan = $j("<!--card middle--><div class='rlCardMid'><div class='rlHeaderTag'>"+event.match_type+"</div><div class='rlVsWrap'><h2>"+eventTeam01+" v "+eventTeam02+"</h2><div class='rlVsDiv'></div><h2>"+eventTeam03+" v "+eventTeam04+"</h2><h2>"+eventTeam05+" v "+eventTeam06+"</h2></div><div class='rlTeamWrap'><h2>"+event.offer_desc_game1+"</h2><h2>"+event.offer_desc_game2+"</h2><h2>"+event.offer_desc_game3+"</h2></div></div>")
 							}
 							//bottom span							
-							let eventBotSpan = $j("<!--card bottom--><div class='rlCardBot'><div class='rlCardVenue'><div class='rlCardVenueIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_venue_l_ico.svg' alt='Venue Icon'></div><h1>"+event.venue_name+"</h1></div><div class='rlCardDate'><div class='rlCardDateIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_date_l_ico.svg' alt='Date Icon'></div><h1>"+eventDateShort+"</h1></div><div class='rlInfoAndPrice'><div class='rlInfoBtn'>more info</div><div class='rlPriceDiv'></div><div class='rlCardPrice'><h1>from</h1><h2>$"+event.price_from+"</h2></div></div><a href='"+event.buy_link+"' target='_blank'><div class='rlCardBtn'>"+event.button_text+"</div></a></div></div>");		
-						
+							let eventBotSpan = $j("<!--card bottom--><div class='rlCardBot'><div class='rlCardVenue'><div class='rlCardVenueIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_venue_l_ico.svg' alt='Venue Icon'></div><h1>"+event.venue_name+"</h1></div><div class='rlCardDate'><div class='rlCardDateIco'><img src='https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_date_l_ico.svg' alt='Date Icon'></div><h1>"+eventDateShort+"</h1></div><div class='rlInfoAndPrice'><div class='rlInfoBtn' data-eventcode='"+event.event_name+"'>more info</div><div class='rlPriceDiv'></div><div class='rlCardPrice'><h1>from</h1><h2>$"+event.price_from+"</h2></div></div><a href='"+event.buy_link+"' target='_blank'><div class='rlCardBtn'>"+event.button_text+"</div></a></div></div>");		
+							//lightbox
+							let eventLightBox = $j("<!--lightbox start--><div class='rlLightBox'><div class='rlLbContent'><div class='rlLbClose'></div><div class='rlLbTop'><h1></h1></div><div class='rlLbBotWrap'><div class='rlLbBlurb'><p></p></div><div class='rlLbInfo'><div class='rlLbInfoTop'><div class='rlLbInfoDate'><h2>"+eventDateShort+"</h2></div><div class='rlLbInfoVenue'><h2>"+event.venue_name+"</h2></div><div class='rlLbInfoLocation'><h2>"+event.host_city+", "+event.host_country+"</h2></div></div><div class='rlLbInfoBot'><h1>from</h1><h2>$"+event.price_from+"</h2><div class='rlLbBtn'>"+event.button_text+"</h2></div></div></div></div></div></div><!--lightbox end-->");
 							//combine elements
-							newEvent.append(eventMidSpan,eventBotSpan);
+							newEvent.append(eventMidSpan,eventBotSpan,eventLightBox);
 							//append to div
 
 							eventListDiv.append(newEvent);
@@ -982,6 +1038,21 @@ $j(document).on('click', '#rlPubSortMenu .sortRadioBtn[data-filterbtnlab="Latest
 $j(document).on('click', '#rlPubSortMenu .sortRadioBtn[data-filterbtnlab="Recommended"]', function () {
 	//loadData()
 	//cardsToDisplayPub()
+})
+//lightbox clicks
+$j(document).on('click', '.rlInfoBtn', function () {
+	targetLb = $j(this).data('eventcode')
+	console.log(targetLb)
+	$j('.rlEventCard[data-eventcode='+targetLb+'] .rlLightBox').fadeIn(500).css("display","flex");
+})
+$j(document).on('click', '.rlLbClose', function () {
+	$j('.rlLightBox').fadeOut(250);
+})
+$j(document).on('click', '.rlLightBox', function (e) {
+
+	if ($j(e.target).closest('.rlLbContent').length !== 0)
+			{return false;}
+	$j('.rlLightBox').fadeOut(250);
 })
 
 //reset buttons - pub
