@@ -217,14 +217,14 @@ page_title = "Rugby League World Cup 2026 | Australia and New Zealand | Buy Tick
 	.rlLbBlurb p{font-family:"RLWC Backs","Averta",fallback;font-size:16px;line-height:20px;font-weight:400;text-align:left;color:#000;margin:0;padding:0;}
 	.rlLbInfo{width:300px;height:auto;margin:0;padding:0;background:var(--rl-dblue);display: flex;flex-wrap: wrap;align-content: space-between;align-items: stretch;justify-content: flex-start;}
 	.rlLbInfoTop{width:100%;height:auto;margin:0;padding:0;}
-	.rlLbInfoDate,.rlLbInfoVenue,.rlLbInfoLocation{width:330px;height:50px;margin:20px 0px 0px -40px;padding:0px 0px 0px 30px;border-radius:5px;box-sizing: border-box !important;}
+	.rlLbInfoDate,.rlLbInfoVenue,.rlLbInfoLocation{width:330px;height:50px;margin:20px 0px 0px -40px;padding:0px 0px 0px 50px;border-radius:5px;box-sizing: border-box !important;display:flex;flex-wrap: nowrap;justify-content: center;align-items: center;}
 	.rlLbInfoDate{background:url('https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_date_d_ico.svg')no-repeat,var(--rl-lblue);background-size:40px 40px;background-position:top 3px left 5px;}
 	.rlLbInfoVenue{background:url('https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_venue_d_ico.svg')no-repeat,var(--rl-lblue);background-size:35px 35px;background-position:top 7px left 8px}
-	.rlLbInfoLocation{background:url('https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_location_d_ico.svg')no-repeat,var(--rl-lblue);background-size:30px 30px;background-position:top 9px left 8px}
-	.rlLbInfoDate h2, .rlLbInfoVenue h2, .rlLbInfoLocation h2{font-family:"RLWC Forwards","Averta",fallback;font-size:24px;line-height:24px;font-weight:700;text-align:center;color:var(--rl-dblue);margin:0;padding:0;}
-	.rlLbInfoBot{width:100%;height:auto;margin:0;padding:0;}
-	.rlLbInfoBot h1{font-family:"RLWC Backs","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:center;color:var(--rl-cream);margin:0px 10px 0px 0px;padding:0 ;display:inline-block;}
-	.rlLbInfoBot h2{font-family:"RLWC Forwards","Averta",fallback;font-size:24px;line-height:24px;font-weight:500;text-align:center;color:var(--rl-lblue);margin:0;padding:0 ;display:inline-block;}
+	.rlLbInfoLocation{background:url('https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_location_d_ico.svg')no-repeat,var(--rl-lblue);background-size:30px 30px;background-position:top 9px left 11px}
+	.rlLbInfoDate h2, .rlLbInfoVenue h2, .rlLbInfoLocation h2{font-family:"RLWC Forwards","Averta",fallback;font-size:20px;line-height:20px;font-weight:700;text-align:center;color:var(--rl-dblue);margin:0;padding:0;}
+	.rlLbInfoBot{width:100%;height:auto;margin:20px 0px 0px 0px;padding:0;}
+	.rlLbInfoBot h1{font-family:"RLWC Backs","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:center;color:var(--rl-cream);margin:0px 10px 0px 0px;padding:0 ;display:inline-block;}
+	.rlLbInfoBot h2{font-family:"RLWC Forwards","Averta",fallback;font-size:36px;line-height:36px;font-weight:500;text-align:center;color:var(--rl-lblue);margin:0;padding:0 ;display:inline-block;}
 	.rlLbBtn{width:calc(100% - 20px);height:auto;display:block;margin:10px auto 10px;padding:10px 10px 8px 10px;position:relative;background:var(--rl-lblue);border-radius:5px;font-family:"RLWC Forwards","Averta",fallback;font-size:24px;line-height:24px;font-weight:700;text-align:center;color:var(--rl-dblue);box-sizing: border-box !important;cursor:pointer;}
 }
 	
@@ -814,7 +814,7 @@ page_title = "Rugby League World Cup 2026 | Australia and New Zealand | Buy Tick
 	//parseUrl()
 
 	//sortEventsRecommended()
-	//setTimeout(loadEventDescription, 1000)
+	setTimeout(loadEventDescription, 1000)
 	//brand test
 
 	//imageLoader()
@@ -1252,9 +1252,48 @@ let teamCounterPub = function(){
 	}
 }
 
-//URL token filtering
+//fetch event bio for each card
+function loadEventDescription(){
+$j.ajax({
+		   type: 'GET',
+		   url: "https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_event_desc.json",
+		   dataType: 'html',
+			success: function(data) {
+				rlEventDescData = JSON.parse(data);
+				//console.log(rlEventDescData)
+				//store description data in variable to be called below
+			},
+			error: function (xhr, ajaxOptions, thrownError) { //			   
+			}
+		});
+}
+//fetch event description data on button click
+$j(document).on('click', ".rlInfoBtn", wacFetchEventBio = function () {
 
+let eventCardID = $j(this).parent('.rlInfoAndPrice').parent(".rlCardBot").parent('.rlEventCard').data('eventcode');
+let eventDescDiv = $j(this).parent('.rlInfoAndPrice').parent(".rlCardBot").siblings('.rlLightBox').children(".rlLbContent").children(".rlLbBotWrap").children(".rlLbBlurb").children("p");
+let eventTitleDiv = $j(this).parent('.rlInfoAndPrice').parent(".rlCardBot").siblings('.rlLightBox').children(".rlLbContent").children(".rlLbTop").children("h1");
 
+	if(eventDescDiv.hasClass('descAdded')){
+		return
+		} else { 
+			$j.each(rlEventDescData, function (key, value) {
+				//set values from json
+				let eventDescID = value.event_code; 
+				let eventDescText = value.evemt_desc;
+				let eventTitleText = value.event_title;
+
+				//find the card ID in the split array
+				//if true append text to description div and add class to stop rerun
+				if(eventDescID == eventCardID){
+					eventDescDiv.append(eventDescText);
+					eventTitleDiv.append(eventTitleText);
+					eventDescDiv.addClass("descAdded")
+				}
+			})
+		}
+
+})
 
 //close notice via url token
 let hideNoticeURL = function(){
