@@ -54,15 +54,15 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	.brcSelectTitle h1{font-family:"Tusker","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;color:#fff;text-align:center;margin:0px 0px;display:inline-block;padding:0px 0px 0px 0px;user-select:none;}
 
 	.brcMenuDiv{width:2px;height:30px;background:#fff;position: relative;display:inline-block;margin:0;padding:0;}
-	.brcMenuDownArrow{width:18px;height:auto;right:15px;top:13px;position: absolute;transition: ease-in-out all .8s;}
-	.brcMenuDownArrow img{width:100%;height:auto;}
+	.brcMenuDownArrow{width:18px;height:auto;right:15px;top:10px;display:block;position: absolute;transition: ease-in-out all .8s;}
+	.brcMenuDownArrow img{width:18px;height:10px;margin:4px 0px;display:block;position: relative;box-sizing: border-box !important;z-index:49;}
 	.brcArrowRot{transform: rotate(180deg);}
-	#brcResetAllFeat{width:190px;height:24px;text-align: center;margin:4px auto 0px;padding:4px 0px;font-family:"Tusker","Averta",fallback;font-size:16px;line-height:16px;font-weight:700;color:var(--rl-dblue);background:var(--rl-cream);display:block;position: relative;box-sizing: border-box !important;text-transform: uppercase;transform: translateX(210px);cursor:pointer;}
+	#brcResetAllFeat{width:120px;height:auto;text-align: center;margin:4px auto 0px;padding:8px 0px 6px 0px;font-family:"Tusker","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;color:#000;background:#fff;display:inline-block;position: relative;box-sizing: border-box !important;text-transform: uppercase;cursor:pointer;border:1px solid #000;}
 	/*menu counters*/
-	.brcMenuCounter{width:24px;height:24px;border-radius:20px;background:var(--rl-lblue);font-family:"Tusker","Averta",fallback;font-size:16px;line-height:16px;font-weight:bold;color:var(--rl-dblue);text-align:center;margin:4px 3px;padding:4px 0px;display:none;box-sizing:border-box !important;}
+	.brcMenuCounter{width:24px;height:24px;border-radius:20px;background:var(--brc-pink);font-family:"Tusker","Averta",fallback;font-size:15px;line-height:15px;font-weight:700;color:#000;text-align:center;margin:0px;padding:6px 0px;display:none;position:absolute;top:7px;right:11px;box-sizing:border-box !important;z-index: 50;}
 
 	/*drop down & buttons*/
-	.brcDropDownMenu{width:auto;height:auto;background:rgba(0,0,0,.85);position: absolute;top:44px;left:0px;padding:0px 2px 6px 2px;border-radius:0px;text-align: left;display:inline-block;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;transition: ease-in-out all .3s;border:1px solid #fff;box-sizing: border-box !important;}
+	.brcDropDownMenu{width:auto;height:auto;background:rgba(0,0,0,.95);position: absolute;top:44px;left:0px;padding:0px 2px 6px 2px;border-radius:0px;text-align: left;display:inline-block;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;transition: ease-in-out all .3s;border:1px solid #fff;box-sizing: border-box !important;}
 	.brcDropDownBtn{width:calc(100% - 4px);height:34px;background:none;margin:2px;padding:0px 10px 0px 10px;border-bottom:1px solid #fff;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;white-space: nowrap;text-overflow: ellipsis;position:relative;}
 	.brcDropDownBtn h3{font-family:"Averta","Averta",fallback;font-size:18px;line-height:18px;font-weight:500;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
 	.brcDropDownBtn h4{font-family:"Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
@@ -185,7 +185,7 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	</div>--><!---Search Bar----->
 	<div id="brcSearchBar"><div id="brcSearchBarWrap">
 		<!--Raceday Select-----><div id="brcSelectRaceday" class="brcSearchBarBtn">
-			<div class="brcSelectTitle"><h1>Race Day &amp; Date</h1><div class='brcMenuDownArrow'><div id="brcRaceDayMenuCounter" class="brcMenuCounter"></div><img src='https://s1.ticketm.net/tm/en-au/img/static/brc/brc_downArrow_hh_img.svg'></div></div>		
+			<div class="brcSelectTitle"><h1>Race Day &amp; Date</h1><div id="brcRaceDayMenuCounter" class="brcMenuCounter"></div><div class='brcMenuDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/brc/brc_downArrow_hh_img.svg'></div></div>		
 		<!--Raceday Menu----->
 		<div id="brcRacedayMenu" class="brcDropDownMenu brcDropDownOff">
 			<div class="brcDropDownSubHead"><h3>Select A Raceday</h3><div id="clearRaceDayFilters"  class="brcClearMenuBtn">clear</div></div>
@@ -195,7 +195,7 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 			<!--<div data-filterbtn="" class="brcDropDownBtn brcFilterBtnOff brcRaceDayFilterBtn"><div class="brcCheckBox brcCheckBoxOff"></div><h2>SAT 20 DEC</h2><span class="brcDropDownDot"></span><h4>Grand Prix Stakes</h4></div>-->
 		</div></div>
 		<!--event type-----><div id="brcSelectEvent" class="brcSearchBarBtn">
-			<div class="brcSelectTitle"><h1>Ticket Options</h1><div class='brcMenuDownArrow'><div id="brcEventMenuCounter" class="brcMenuCounter"></div><img src='https://s1.ticketm.net/tm/en-au/img/static/brc/brc_downArrow_hh_img.svg'></div></div>		
+			<div class="brcSelectTitle"><h1>Ticket Options</h1><div id="brcEventMenuCounter" class="brcMenuCounter"></div><div class='brcMenuDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/brc/brc_downArrow_hh_img.svg'></div></div>		
 		<!--event Menu-----><div id="brcEventMenu" class="brcDropDownMenu brcDropDownOff">
 			<div class="brcDropDownSubHead"><h3>Select A Racecouse</h3><div id="clearEventFilters"  class="brcClearMenuBtn">clear</div></div>
 			<div id="eventFilterAllBtn" data-filterbtn="All" class="brcDropDownBtn brcFilterBtnOn brcEventFilterBtn"><div class="brcCheckBox brcCheckBoxOn"></div><h3>Show All</h3></div>
@@ -204,7 +204,7 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 		</div> 
 		</div>
 		<!--venue selection-----><div id="brcSelectVenue" class="brcSearchBarBtn">
-			<div class="brcSelectTitle"><h1>Racecourse</h1><div class='brcMenuDownArrow'><div id="brcVenueMenuCounter" class="brcMenuCounter"></div><img src='https://s1.ticketm.net/tm/en-au/img/static/brc/brc_downArrow_hh_img.svg'></div></div>		
+			<div class="brcSelectTitle"><h1>Racecourse</h1><div id="brcVenueMenuCounter" class="brcMenuCounter"></div><div class='brcMenuDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/brc/brc_downArrow_hh_img.svg'></div></div>		
 		<!--Venue Menu-----><div id="brcVenueMenu" class="brcDropDownMenu brcDropDownOff">
 			<div class="brcDropDownSubHead"><h3>Select An Event</h3><div id="clearEventFilters"  class="brcClearMenuBtn">clear</div></div>
 			<div id="eventFilterAllBtn" data-filterbtn="All" class="brcDropDownBtn brcFilterBtnOn brcVenueFilterBtn"><div class="brcCheckBox brcCheckBoxOn"></div><h3>Show All</h3></div>
@@ -213,8 +213,8 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 			<div data-filterbtn="Eagle Farm Racecourse" class="brcDropDownBtn brcFilterBtnOff brcVenueFilterBtn"><div class="brcCheckBox brcCheckBoxOff"></div><h4>Eagle Farm Racecourse</h4></div>
 		</div> 
 		</div>
-	
-	</div>	<div id="brcPubResetAllFeat">Reset Selection</div></div><!----end search bar ----></div><!---end header--->
+		
+	</div><div id="brcResetAllFeat">Reset Selection</div></div><!----end search bar ----></div><!---end header--->
 	<div id="brcEvents">	
 
 		<!--counter and date sort--
@@ -660,7 +660,7 @@ let rlPubResetAll = function(){
 
 	cardsToDisplayPub()
 	dateCounterPub();
-	venueCounterPub();
+	venueCounter();
 	teamCounterPub();
 
 };	
@@ -688,7 +688,7 @@ $j(document).on('click', '#clearPubVenueFilters', function () {
 		$j("#brcVenueMenu .rlVenueFilterBtn").children(".rlCheckBox").removeClass("rlCheckBoxOn").addClass("rlCheckBoxOff");
 
 		cardsToDisplayPub();
-		venueCounterPub();
+		venueCounter();
 		});		
 $j(document).on('click', '#clearPubTeamFilters', function () {	
 		teamListPub.length = 0;
@@ -711,7 +711,7 @@ var toggleRaceDay = $j(this).data('filterbtn');
 			raceDayList.push(toggleRaceDay)	
 		}	
 		cardsToDisplayPub();
-		//venueCounterPub();
+		raceDayCounter();
 	})
 //race day any/all
 $j(document).on('click', "#brcRacedayMenu .brcRaceDayFilterBtn", function () {
@@ -732,7 +732,7 @@ $j(document).on('click', "#brcRacedayMenu .brcRaceDayFilterBtn", function () {
 					});
 				}
 				cardsToDisplayPub();
-				//venueCounterPub();
+				raceDayCounter();
 });
 //Event Filter Check
 $j(document).on('click', "#brcEventMenu .brcEventFilterBtn", function () {
@@ -747,7 +747,7 @@ var toggleEvent = $j(this).data('filterbtn');
 		}	
 
 		cardsToDisplayPub();
-		//eventCounterPub();
+		eventCounter();
 	})
 //Event any/all
 $j(document).on('click', "#brcEventMenu .brcEventFilterBtn", function () {
@@ -768,7 +768,7 @@ $j(document).on('click', "#brcEventMenu .brcEventFilterBtn", function () {
 					});
 				}
 				cardsToDisplayPub();
-				//venueCounterPub();
+				eventCounter();
 });
 //venue Filter Check
 $j(document).on('click', "#brcVenueMenu .brcVenueFilterBtn", function () {
@@ -783,7 +783,7 @@ var toggleVenue = $j(this).data('filterbtn');
 		}	
 
 		cardsToDisplayPub();
-		//venueCounterPub();
+		venueCounter();
 	})
 //venue any/all
 $j(document).on('click', "#brcVenueMenu .brcVenueFilterBtn", function () {
@@ -804,11 +804,11 @@ $j(document).on('click', "#brcVenueMenu .brcVenueFilterBtn", function () {
 					});
 				}
 				cardsToDisplayPub();
-				//venueCounterPub();
+				venueCounter();
 });
 
 //menu counters - pub
-let venueCounterPub = function(){
+let venueCounter = function(){
 	let venueCountLength = jQuery.grep(venueList, function(value) {
 						return value != "All";});
 	let venueCount = venueCountLength.length			
@@ -819,33 +819,34 @@ let venueCounterPub = function(){
 			$j("#brcVenueMenuCounter").fadeOut(0);
 	}
 }
-let dateCounterPub = function(){
-	let dateCount = dateListPub.length	
-
-	document.getElementById('rlPubDateMenuCounter').innerHTML = dateCount.toString();
-	if((dateCount >= 1)){
-			$j("#rlPubDateMenuCounter").fadeIn(0);
-	}else if((dateCount == 0)){
-			$j("#rlPubDateMenuCounter").fadeOut(0);
-	}
-}
-let teamCounterPub = function(){
-	let teamCountLength = jQuery.grep(teamListPub, function(value) {
+let raceDayCounter = function(){
+	let raceDayCountLength = jQuery.grep(raceDayList, function(value) {
 						return value != "All";});
-	let teamCount = teamCountLength.length
-	document.getElementById('rlPubTeamMenuCounter').innerHTML = teamCount.toString();
-	if((teamCount >= 1)){
-			$j("#rlPubTeamMenuCounter").fadeIn(0);
-	}else if((teamCount == 0)){
-			$j("#rlPubTeamMenuCounter").fadeOut(0);
+	let raceDayCount = raceDayCountLength.length			
+	document.getElementById('brcRaceDayMenuCounter').innerHTML = raceDayCount.toString();
+	if((raceDayCount >= 1)){
+			$j("#brcRaceDayMenuCounter").fadeIn(0);
+	}else if((raceDayCount == 0)){
+			$j("#brcRaceDayMenuCounter").fadeOut(0);
 	}
 }
-
+let eventCounter = function(){
+	let eventCountLength = jQuery.grep(eventNameList, function(value) {
+						return value != "All";});
+	let eventCount = eventCountLength.length			
+	document.getElementById('brcEventMenuCounter').innerHTML = eventCount.toString();
+	if((eventCount >= 1)){
+			$j("#brcEventMenuCounter").fadeIn(0);
+	}else if((eventCount == 0)){
+			$j("#brcEventMenuCounter").fadeOut(0);
+	}
+}
 //fetch event bio for each card
+/*
 function loadEventDescription(){
 $j.ajax({
 		   type: 'GET',
-		   url: "https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/rlwc_event_desc.json",
+		   url: "https://s1.ticketm.net/tm/en-au/img/static/",
 		   dataType: 'html',
 			success: function(data) {
 				rlEventDescData = JSON.parse(data);
@@ -883,7 +884,7 @@ let eventTitleDiv = $j(this).parent('.rlInfoAndPrice').parent(".rlCardBot").sibl
 		}
 
 })
-
+*/
 //empty all the arrays 
 let emptyFullListsOnLoad = function(){
 	dateList.length = 0;
