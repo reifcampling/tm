@@ -185,6 +185,8 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacAnnounceWrap h1,.wacAnnounce h1{font-family:"ClashDisplay","Averta",fallback;font-size:29px;line-height:32px;font-weight:700;text-align:center;color:#000;margin:0;padding:0 0px 20px 0px;}
 	.wacAnnounceWrap p,.wacAnnounce p{font-family:"ClashDisplay","Averta",fallback;font-size:18px;line-height:18px;font-weight:normal;text-align:center;color:#000;margin:0;padding:0 ;}
 	.wacAnnounceWrap em{font-size: 14px !important;}
+	#wacBannerPromo{width:94%;max-width:950px;height:auto;border-radius:10px;padding:0px;margin:20px auto;display:block;background:var(--wac-lgrey);box-sizing: border-box !important;position:relative;overflow:hidden;}
+	#wacBannerPromo img{width:100%;height:auto;}
 	/*event counter*/
 	#wacPubSubHeader,#wacHospSubHeader{display:flex;justify-content: space-between;}
 	#wacPubCounter,#wacHospCounter{width:auto;display:inline-block;background:#fff;border-radius:5px;padding:0px;margin:10px 0px 10px 10px;box-shadow:inset 0px 0px 0px 1px var(--wac-grey);box-sizing: border-box !important;}
@@ -212,6 +214,10 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacSeriesPassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
 	.wacStadiumPassTicket,.wacStadiumSeriesTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_stadPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
 	.wacPlayOffPassTicket,.wacKnockoutPassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_playoffPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	/*match*/
+	.wacMATCHClubTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_matchClub_ico.png") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	.wacMATCHOpenBoxTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_matchOpenBox_ico.png") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	.wacMATCHPrivateSuiteTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_matchPrivateSuite_ico.png") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
 	/*state icons*/
 	.wacCardState{height:40px;min-width:100px;width:auto;font-family:"ClashDisplay","Averta",fallback;font-size:13px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:14px 10px 13px 38px;border-radius:0px 10px 0px 0px;display:inline-block;box-sizing:border-box !important;}
 	.wacCardStatePER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-orn);background-size:24px;background-position:left 10px top 8px;}
@@ -223,7 +229,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacCardStateGCCSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_nsw_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 8px;}
 
 	#wacPubEventStream .wacCardHero{width:300px;height:166px;}
-	#wacHospEventStream .wacCardHero{width:300px;height:147px;overflow: hidden !important;}
+	#wacHospEventStream .wacCardHero{width:300px;height:166px;overflow: hidden !important;}
 	.wacCardHero{margin:0 auto;padding:0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_hero_fallback_img.svg') center center,var(--wac-lgrey);z-index:49;position:relative;box-sizing: border-box !important;display: flex;display:flex;align-items: center;justify-content: center;flex-wrap: nowrap;}
 	.wacCardHero img{width:100%;height:auto;position:relative;z-index:50}
 	.wacCardType{width:100%;height:auto;min-height:60px;font-family:"ClashDisplay","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:center;color:var(--wac-char);text-transform:uppercase;margin:0;padding:5px 10px;display: flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
@@ -292,8 +298,8 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacLightbox{width:100%;height:100%;margin:0px;position:fixed;background:rgba(0,0,0,.4);z-index:201;display:none;top:0;right:0;left:0;justify-content: safe center; align-items: center;flex-direction: column;overflow-y: scroll;}
 	.wacLbContent{width:600px;height:auto;background:#fff;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;border-radius:10px;box-sizing: border-box !important;position:relative;}
 	.wacLbTopWrap{width:calc(100% - 20px);height:36px;display:flex;align-items: center;justify-content: space-between;flex-direction: row;flex-wrap: nowrap;column-gap: 10px;margin:10px auto;box-sizing: border-box !important;}
-	.wacLbEventName{width:calc(100% - 30px);height:36px;background:var(--wac-pur);border-radius:10px;font-family:"ClashDisplay","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:center;color:#fff;display:flex;align-items: center;justify-content: flex-start;flex-direction: row;flex-wrap: nowrap;position: relative;}
-	.wacTypeIcon{width:36px;height:36px;display:inline-block;margin:0 10px 0px 10px;border-radius:10px 0px 0px 10px;}
+	.wacLbEventName{width:calc(100% - 30px);height:36px;background:var(--wac-pur);border-radius:10px;font-family:"ClashDisplay","Averta",fallback;font-size:18px;line-height:18px;font-weight:600;text-align:center;color:#fff;display:flex;align-items: center;justify-content: flex-start;flex-direction: row;flex-wrap: nowrap;position: relative;padding:0px 0px 0px 20px;}
+	.wacTypeIcon{width:36px;height:36px;display:none;margin:0 10px 0px 10px;border-radius:10px 0px 0px 10px;}
 	.wacLbStateIco{min-width:100px;width:auto;height:36px;font-family:"ClashDisplay","Averta",fallback;font-size:13px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:11px 10px 11px 43px;border-radius:0px 10px 10px 0px;border-left:10px solid #fff;display:inline-block;box-sizing:border-box !important;position: absolute;top:0;right:-1px;}
 	.wacLbCloseBtn{width:30px;height:30px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-pur);background-size:10px 10px;border-radius:20px;position:relative;cursor:pointer;display:inline-block;}
 	.wacLbMidWrap{width:calc(100% - 20px);height:auto;display:flex;align-items: flex-start;justify-content: space-around;flex-direction: row;flex-wrap: nowrap;column-gap: 10px;margin:10px auto;box-sizing: border-box !important;}
@@ -317,8 +323,8 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacLbPrice p{font-family:"ClashDisplay","Averta",fallback;font-size:10px;line-height:10px;font-weight:bold;text-align:center;color:var(--wac-char);margin:0 0px 0px 0px;padding:0px 0px;display:block;}
 	.wacLbPrice h1{font-family:"afc num","Averta",fallback;font-size:26px;line-height:26px;font-weight:normal;text-align:center;color:var(--wac-blu);margin:0px 0px 0px 0px;padding:0px 0px;display:block;}
 	.wacLbBtn{width:400px;height:40px;padding:12px 0px;margin:0px auto 0px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;letter-spacing:0px;font-weight:bold;text-align:center;color:#fff;background:var(--wac-pur);border-radius:5px;box-sizing:border-box !important;}
-	.wacLbContent a{text-decoration: none;color: var(--wac-dblu);}
 
+	.wacTypeIcon{display:none;}
 	/*lb icons*/
 	.wacLbStatePER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-orn);background-size:24px;background-position:left 10px top 6px;}
 	.wacLbStateSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_nsw_w_ico.svg") no-repeat,var(--wac-pnk);background-size:24px;background-position:left 10px top 6px;}
@@ -478,6 +484,8 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacAnnounceWrap h1,.wacAnnounce h1{font-family:"ClashDisplay","Averta",fallback;font-size:22px;line-height:22px;font-weight:700;text-align:center;color:#000;margin:0;padding:20px 0px 20px 0px;}
 	.wacAnnounceWrap p,.wacAnnounce p{font-family:"ClashDisplay","Averta",fallback;font-size:18px;line-height:18px;font-weight:normal;text-align:center;color:#000;margin:0;padding:0 ;}
 	.wacAnnounceWrap em{font-size: 14px !important;}
+	#wacBannerPromo{width:94%;max-width:950px;height:auto;border-radius:10px;padding:0px;margin:20px auto;display:block;background:var(--wac-lgrey);box-sizing: border-box !important;position:relative;overflow:hidden;}
+	#wacBannerPromo img{width:100%;height:auto;}
 	/*event counter*/
 	#wacPubSubHeader,#wacHospSubHeader{display:flex;justify-content: space-between;}
 	#wacPubCounter,#wacHospCounter{width:auto;display:inline-block;background:#fff;border-radius:5px;padding:0px;margin:10px 0px 10px 10px;box-shadow:inset 0px 0px 0px 1px var(--wac-grey);box-sizing: border-box !important;}
@@ -505,6 +513,10 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacSeriesPassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
 	.wacStadiumPassTicket,.wacStadiumSeriesTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_stadPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
 	.wacPlayOffPassTicket,.wacKnockoutPassTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_playoffPass_ico.svg") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	/*match*/
+	.wacMATCHClubTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_matchClub_ico.png") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	.wacMATCHOpenBoxTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_matchOpenBox_ico.png") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
+	.wacMATCHPrivateSuiteTicket{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_matchPrivateSuite_ico.png") no-repeat,var(--wac-dgrey);background-size:24px;background-position:left 10px top 8px;}
 	/*state icons*/
 	.wacCardState{height:40px;min-width:100px;width:auto;font-family:"ClashDisplay","Averta",fallback;font-size:13px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:14px 10px 13px 38px;border-radius:0px 10px 0px 0px;display:inline-block;box-sizing:border-box !important;}
 	.wacCardStatePER{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_wa_w_ico.svg") no-repeat,var(--wac-orn);background-size:24px;background-position:left 10px top 8px;}
@@ -516,7 +528,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacCardStateGCCSYD{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_map_qld_nsw_w_ico.svg") no-repeat,var(--wac-pur);background-size:24px;background-position:left 10px top 8px;}
 
 	#wacPubEventStream .wacCardHero{width:300px;height:166px;}
-	#wacHospEventStream .wacCardHero{width:300px;height:147px;}
+	#wacHospEventStream .wacCardHero{width:300px;height:166px;}
 	.wacCardHero{margin:0 auto;padding:0px;background:var(--wac-lgrey);z-index:49;position:relative;box-sizing: border-box !important;display: flex;display:flex;align-items: center;justify-content: center;flex-wrap: nowrap;}
 	.wacCardHero img{width:100%;height:auto;position:relative;z-index:50}
 	.wacCardType{width:100%;height:auto;min-height:60px;font-family:"ClashDisplay","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;text-align:center;color:var(--wac-char);text-transform:uppercase;margin:0;padding:5px 10px;display: flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
@@ -583,8 +595,8 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	.wacLightbox{width:100%;height:100%;margin:0px;position:fixed;background:rgba(0,0,0,.4);z-index:201;display:none;top:0;right:0;left:0;justify-content: safe center; align-items: center;flex-direction: column;overflow-y: scroll;}
 	.wacLbContent{max-width:600px;width:96%;height:auto;background:#fff;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;border-radius:10px;box-sizing: border-box !important;position:relative;}
 	.wacLbTopWrap{width:calc(100% - 20px);height:55px;display:flex;align-items: center;justify-content: space-between;flex-direction: row;flex-wrap: nowrap;column-gap: 5px;margin:10px auto;box-sizing: border-box !important;}
-	.wacLbEventName{max-width:400px;height:55px;background:var(--wac-pur);border-radius:10px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:left;color:#fff;display:flex;align-items: center;justify-content: flex-start;flex-direction: row;flex-wrap: nowrap;}
-	.wacTypeIcon{width:36px;height:36px;display:inline-block;margin:0 10px 0px 10px;border-radius:0px 0px 0px 0px;}
+	.wacLbEventName{max-width:400px;height:55px;background:var(--wac-pur);border-radius:10px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:left;color:#fff;display:flex;align-items: center;justify-content: flex-start;flex-direction: row;flex-wrap: nowrap;padding:0px 0px 0px 20px;}
+	.wacTypeIcon{width:36px;height:36px;display:none;margin:0 10px 0px 10px;border-radius:0px 0px 0px 0px;}
 	.wacLbStateIco{min-width:100px;width:auto;height:55px;font-family:"ClashDisplay","Averta",fallback;font-size:16px;line-height:14px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0px 0px 0px 10px;padding:23px 5px 0px 5px;border-radius:0px 10px 10px 0px;border-left:2px solid #fff;display:flex;align-items: center;justify-content: center;box-sizing:border-box !important;}
 	.wacLbCloseBtn{width:30px;height:30px;background:url('https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_close_w_ico.svg') no-repeat center center,var(--wac-pur);background-size:10px 10px;border-radius:20px;position:relative;cursor:pointer;display:inline-block;}
 	.wacLbMidWrap{width:calc(100% - 20px);height:auto;display:flex;align-items: flex-start;justify-content: space-around;flex-direction: row;flex-wrap: nowrap;column-gap: 10px;margin:10px auto;box-sizing: border-box !important;}
@@ -643,7 +655,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 }
 @media only screen and (min-width: 0px) and (max-width: 449.99px){	
 
-	.wacTypeIcon{width:36px;height:36px;display:inline-block;margin:0 5px 0px 0px;border-radius:0px 0px 0px 0px;}
+	.wacTypeIcon{width:36px;height:36px;display:none;margin:0 5px 0px 0px;border-radius:0px 0px 0px 0px;}
 /*small displays LB icon*/
 	.wacPackagIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_pack_w_ico.svg") no-repeat;background-size:25px;background-position:left 3px top 3px;}
 	.wacSingleEventIco{background:url("https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_tix_single_w_ico.svg") no-repeat;background-size:25px;background-position:left 3px top 3px;}
@@ -866,6 +878,8 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 </p>
 			</div>
 		</div>-->
+		<!--christmas promo-->
+		<div id="wacBannerPromo"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_giftbanner_2025.jpg" alt="Give the Gift Of Football"></div>
 		<!--AUS-->
 		<div id="wacAusNotice" class="wacNotice"><div class="wacCloseNoticeBtn"></div>
 			
@@ -1105,7 +1119,7 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 			<div data-filterFull="India" data-filterbtn="IND" class="wacDropDownBtn wacFilterBtnOff wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><div class="wacDropDownFlag wacINDFlag"></div><h3>IND</h3><span class="wacDropDownDot"></span><h4>India</h4></div>
 			<div data-filterFull="IRIran" data-filterbtn="IRN" class="wacDropDownBtn wacFilterBtnOff wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><div class="wacDropDownFlag wacIRNFlag"></div><h3>IRN</h3><span class="wacDropDownDot"></span><h4>IR Iran</h4></div>
 			<div data-filterFull="Japan" data-filterbtn="JPN" class="wacDropDownBtn wacFilterBtnOff wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><div class="wacDropDownFlag wacJPNFlag"></div><h3>JPN</h3><span class="wacDropDownDot"></span><h4>Japan</h4></div>
-			<div data-filterFull="KoreaRepublic" data-filterbtn="KOR" class="wacDropDownBtn wacFilterBtnOff wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><div class="wacDropDownFlag wacKORFlag"></div><h3>KOR</h3><span class="wacDropDownDot"></span><h4>Korea ReHosplic</h4></div>
+			<div data-filterFull="KoreaRepublic" data-filterbtn="KOR" class="wacDropDownBtn wacFilterBtnOff wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><div class="wacDropDownFlag wacKORFlag"></div><h3>KOR</h3><span class="wacDropDownDot"></span><h4>Korea Republic</h4></div>
 			<div data-filterFull="Philippines" data-filterbtn="PHI" class="wacDropDownBtn wacFilterBtnOff wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><div class="wacDropDownFlag wacPHIFlag"></div><h3>PHI</h3><span class="wacDropDownDot"></span><h4>Philippines</h4></div>
 			<div data-filterFull="Uzbekistan" data-filterbtn="UZB" class="wacDropDownBtn wacFilterBtnOff wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><div class="wacDropDownFlag wacUZBFlag"></div><h3>UZB</h3><span class="wacDropDownDot"></span><h4>Uzbekistan</h4></div>
 			<div data-filterFull="Vietnam" data-filterbtn="VIE" class="wacDropDownBtn wacFilterBtnOff wacTeamFilterBtn"><div class="wacCheckBox wacCheckBoxOff"></div><div class="wacDropDownFlag wacVIEFlag"></div><h3>VIE</h3><span class="wacDropDownDot"></span><h4>Vietnam</h4></div>
@@ -1208,6 +1222,8 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 		<div class="wacSponsorSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_CreditSaison_logo.png" alt="Credit Saison"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_Neom_logo.png" alt="Neom"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_Qatar_logo.png" alt="Qatar Airways"></div>
 		<h1>OFFICIAL GLOBAL SUPPORTERS</h1>
 		<div class="wacSponsorSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_Kelme_logo.png" alt="Kelme"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_Midea_logo.png" alt="Midea"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_Visa_logo.png" alt="Visa"></div>
+		   <h1>OFFICIAL REGIONAL PARTNERS</h1>
+		<div class="wacSponsorSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_AnytimeFitness_logo.png" alt="Anytime Fitness"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_Aveeno_logo.png" alt="Aveeno"><img src="https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_CommBank_logo.png" alt="CommBank"></div>
 </div>
 <div id="wacFooter">
 	<div id="wacFooterWrap">
@@ -1225,10 +1241,10 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 
 <!---js scripts--->
 <script type="text/javascript">
-	//notes: date filtering and counters next, 
+	//notes: URL eventcode filter
 	$j = jQuery.noConflict();
 	//the server name could change so I put it here so it was easy to find
-	let availLocation = "https://d1qeon7qw4jcrw.cloudfront.net/awac_sandbox";
+	let availLocation = "https://d1qeon7qw4jcrw.cloudfront.net/awac";
 	//sandbox link >>> https://d1qeon7qw4jcrw.cloudfront.net/awac_sandbox
 
 	let dates;
@@ -1243,15 +1259,17 @@ page_title = "AFC Women's Asian Cup 2026 | Buy Tickets and Packs | Gold Coast St
 	teamListHosp = ["Australia","Bangladesh","ChinaPR","ChineseTaipei","DPRKorea","India","IRIran","Japan","KoreaRepublic","Philippines","Vietnam","Uzbekistan","TBC"]
 
  	teamListPubURL = ["AustraliaURL","BangladeshURL","ChinaPRURL","ChineseTaipeiURL","DPRKoreaURL","IndiaURL","IRIranURL","JapanURL","KoreaRepublicURL","PhilippinesURL","VietnamURL","UzbekistanURL"]
-	teamListHospURL = ["AustraliaURL","BangladeshURL","ChinaPRURL","ChineseTaipeiURL","DPRKoreaURL","IndiaURL","IRIranURL","JapanURL","KoreaRepublicURL","PhilippinesURL","VietnamURL","UzbekistanURL"]
+	teamListHospURL = ["AustraliaURL","BangladeshURL","ChinaPRURL","ChineseTaipeiURL","DPRKoreaURL","IndiaURL","IRIranURL","JapanURL","KoreaRepublicURL","PhilippinesURL","VietnamURL","UzbekistanURL","2AURL","1BURL",,"1AURL","1CURL","SF1T1URL","SF2T1URL","PO1T1URL","PO2T1URL","TBCURL"]
 	brandListURL = ["ausURL","banURL","chnURL","tpeURL","prkURL","indURL","irnURL","jpnURL","korURL","phiURL","vieURL","uzbURL"]
 
 	venueListPub = ["PerthStadium","PerthRectangularStadium","GoldCoastStadium","StadiumAustralia","WesternSydneyStadium"];
 	venueListHosp = ["PerthStadium","PerthRectangularStadium","GoldCoastStadium","StadiumAustralia","WesternSydneyStadium"];
 	venueListPubURL = ["PerthStadiumURL","PerthRectangularStadiumURL","GoldCoastStadiumURL","StadiumAustraliaURL","WesternSydneyStadiumURL"];	
+	venueListHospURL = ["PerthStadiumURL","PerthRectangularStadiumURL","GoldCoastStadiumURL","StadiumAustraliaURL","WesternSydneyStadiumURL"];	
+
 	packListPub = ["PremiumPass","TeamSeries","CitySeries","StadiumSeries","KnockoutPass","FinalsPass","SingleEvent"]
 	packListHosp = ["MATCHClub","MATCHOpenBox","MATCHPrivateSuite","SingleEvent"]
-	packListPubURL = ["PremiumPassURL","TeamSeriesURL","CitySeriesURL","StadiumSeriesURL","KnockoutPassURL","FinalsPassURL","SingleEventURL"]
+	packListHospURL = ["MATCHClubURL","MATCHOpenBoxURL","MATCHPrivateSuiteURL","SingleEventURL"]
 	discoveryFilterArr = []; 
 	const allUrlVars = getUrlVars(); 
 	//eventCount = 0;
@@ -2536,7 +2554,7 @@ function getUrlVars(){
 	wacURLs = [];
 	wacFilterList = ["URL","venueType","teamType","dateInc","ticketType","hideNotice","brand","buyFlow"]//this doesnt do anything :) just for keeping track of the trigger tags
 
-	// finally got the filtering to work and not slow down when tracking paramaters were present by restricting it to numbers (so as long as an event name doesnt include a number? we good)
+
 	var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split("=").join('&').split('&').filter(hashes => /[a-zA-Z]/.test(hashes));
 
     for(var i = 0; i < hashes.length; i++)
@@ -2553,7 +2571,11 @@ function getUrlVars(){
 
 	//seshType = search(urlVars, 'raceDay');
 	venueTypeFound = search(urlVars, 'venueType');
+	venueTypeHFound = search(urlVars, 'venueTypeH');
+
 	teamTypeFound = search(urlVars, 'teamType');
+
+
 	ticketTypeFound = search(urlVars, 'ticketType');
 	dateIncludeFound = search(urlVars, 'dateInc');
 	countryFound = search(urlVars, 'brand');
@@ -2569,9 +2591,15 @@ let parseUrl = function(){
 		if(jQuery.inArray("venueType", venueTypeFound) != -1){
 			parseVenueTypeURL()
 			}
+		if(jQuery.inArray("venueTypeH", venueTypeHFound) != -1){
+			parseVenueTypeHURL()
+			}
 		if(jQuery.inArray("teamType", teamTypeFound) != -1){
 			parseTeamTypeURL()
 			}
+		if(jQuery.inArray("teamTypeH", teamTypeFound) != -1){
+			parseTeamTypeHURL()
+			}			
 		if(jQuery.inArray("ticketType", ticketTypeFound) != -1){
 			parseTicketTypeURL()
 			}
@@ -2592,6 +2620,7 @@ let parseUrl = function(){
 			}	
 	}; 
 }
+//pub
 let parseVenueTypeURL = function(){
 	var urlVenTypeFilter = []
 	
@@ -2617,6 +2646,32 @@ let parseVenueTypeURL = function(){
 	cardsToDisplayPub();
 	venueCounterPub();
 }
+let parseVenueTypeHURL = function(){
+	var urlVenTypeFilter = []
+	
+	//reset buttons
+	$j('#wacHospVenueMenu').children('.wacVenueFilterBtn').removeClass('wacFilterBtnOn').addClass('wacFilterBtnOff')    
+	$j('#wacHospVenueMenu').children('.wacVenueFilterBtn').children('.wacCheckBox').removeClass('wacCheckBoxOn').addClass('wacCheckBoxOff')
+	//run through URL vars and match with the race day set
+
+	$j.grep(wacURLs, function(urlFound){
+		if(jQuery.inArray(urlFound, venueListHospURL) != -1){
+			//match arrays - remove URL from end of current found variable
+			urlVenueTypeFound = urlFound.replace('URL','')
+			//push match to new array
+			urlVenTypeFilter.push(urlVenueTypeFound);
+			console.log(urlVenTypeFilter)
+			//activate checkbox 
+			$j('#wacHospVenueMenu .wacVenueFilterBtn[data-filterbtn='+urlVenueTypeFound+']').removeClass('wacFilterBtnOff').addClass('wacFilterBtnOn') 
+			$j('#wacHospVenueMenu .wacVenueFilterBtn[data-filterbtn='+urlVenueTypeFound+']').children('.wacCheckBox').removeClass('wacCheckBoxOff').addClass('wacCheckBoxOn')
+	}
+	});
+	//clear array, push found filter array into global array
+	venueListHosp.length = 0;
+	venueListHosp = urlVenTypeFilter
+	cardsToDisplayHosp();
+	venueCounterHosp();
+}
 let parseTeamTypeURL = function(){
 	var urlTeamTypeFilter = []
 	
@@ -2641,6 +2696,31 @@ let parseTeamTypeURL = function(){
 	teamListPub = urlTeamTypeFilter
 	cardsToDisplayPub();
 	teamCounterPub();
+}
+let parseTeamTypeHURL = function(){
+	var urlTeamTypeFilter = []
+	
+	//reset buttons
+	$j('#wacHospTeamMenu').children('.wacTeamFilterBtn').removeClass('wacFilterBtnOn').addClass('wacFilterBtnOff')    
+	$j('#wacHospTeamMenu').children('.wacTeamFilterBtn').children('.wacCheckBox').removeClass('wacCheckBoxOn').addClass('wacCheckBoxOff')
+	//run through URL vars and match with the race day set
+
+	$j.grep(wacURLs, function(urlFound){
+		if(jQuery.inArray(urlFound, teamListHospURL) != -1){
+			//match arrays - remove URL from end of current found variable
+			urlteamTypeFound = urlFound.replace('URL','')
+			//push match to new array
+			urlTeamTypeFilter.push(urlteamTypeFound);
+			//activate checkbox 
+			$j('#wacHospTeamMenu .wacTeamFilterBtn[data-filterfull='+urlteamTypeFound+']').removeClass('wacFilterBtnOff').addClass('wacFilterBtnOn') 
+			$j('#wacHospTeamMenu .wacTeamFilterBtn[data-filterfull='+urlteamTypeFound+']').children('.wacCheckBox').removeClass('wacCheckBoxOff').addClass('wacCheckBoxOn')
+	}
+	});
+	//clear array, push found filter array into global array
+	teamListHosp.length = 0;
+	teamListHosp = urlTeamTypeFilter
+	cardsToDisplayHosp();
+	teamCounterHosp();
 }
 let parseTicketTypeURL = function(){
 	var urlTicketTypeFilter = []
