@@ -57,15 +57,15 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	.brcMenuDownArrow{width:18px;height:auto;right:15px;top:10px;display:block;position: absolute;transition: ease-in-out all .8s;}
 	.brcMenuDownArrow img{width:18px;height:10px;margin:4px 0px;display:block;position: relative;box-sizing: border-box !important;z-index:49;}
 	.brcArrowRot{transform: rotate(180deg);}
-	#brcResetAllFeat{width:120px;height:auto;text-align: center;margin:4px auto 0px;padding:8px 0px 6px 0px;font-family:"Tusker","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;color:#000;background:#fff;display:inline-block;position: relative;box-sizing: border-box !important;text-transform: uppercase;cursor:pointer;border:1px solid #000;}
+
 	/*menu counters*/
 	.brcMenuCounter{width:24px;height:24px;border-radius:20px;background:var(--brc-pink);font-family:"Tusker","Averta",fallback;font-size:15px;line-height:15px;font-weight:700;color:#000;text-align:center;margin:0px;padding:6px 0px;display:none;position:absolute;top:7px;right:11px;box-sizing:border-box !important;z-index: 50;}
 
 	/*drop down & buttons*/
 	.brcDropDownMenu{width:auto;height:auto;background:rgba(0,0,0,.95);position: absolute;top:44px;left:0px;padding:0px 2px 6px 2px;border-radius:0px;text-align: left;display:inline-block;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;transition: ease-in-out all .3s;border:1px solid #fff;box-sizing: border-box !important;}
-	.brcDropDownBtn{width:calc(100% - 4px);height:34px;background:none;margin:2px;padding:0px 10px 4px 10px;border-bottom:1px solid #fff;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;white-space: nowrap;text-overflow: ellipsis;position:relative;}
+	.brcDropDownBtn{width:calc(100% - 4px);height:34px;background:none;margin:2px;padding:0px 10px 2px 10px;border-bottom:1px solid #fff;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;white-space: nowrap;text-overflow: ellipsis;position:relative;}
 	.brcDropDownBtn h3{font-family:"Averta","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
-	.brcDropDownBtn h4{font-family:"Averta",fallback;font-size:18px;line-height:18px;font-weight:600;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
+	.brcDropDownBtn h4{font-family:"Averta",fallback;font-size:18px;line-height:18px;font-weight:600;text-align:left;color:#fff;margin:0;padding:0px 0px 2px 0px;display:inline-block;}	
 	.brcDropDownBtn h2{font-family:"Averta","Averta",fallback;width:90px;font-size:14px;line-height:14px;font-weight:600;text-align:left;color:var(--brc-pink);margin:0;padding:0;display:inline-block;text-transform: uppercase;}	
 	.brcDropDownSubHead{width:calc(100% - 4px);height:34px;background:none;margin:2px;padding:2px 5px;display:flex;flex-wrap:nowrap;justify-content: space-between;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;border-top:2px solid var(--rl-dblue);border-bottom:1px solid #fff;}
 	.brcDropDownSubHead h3{font-family:"Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
@@ -85,35 +85,38 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	#brcEventType{width:275px;}
 
 	/*sort menu*/
-	#rlPubSortMenu,#rlHospSortMenu{width:auto;height:auto;margin:10px;display:none;box-sizing: border-box !important;position: relative;z-index:50;}
-	.rlSortBtn{font-family:"Tusker","Averta",fallback;font-size:14px;line-height:14px;font-weight:600;text-align:left;color:var(--wac-char);margin:0;padding:5px;text-decoration: underline;cursor:pointer;}
-	.rlSortDropDown{width:200px;height:auto;background:var(--wac-lgrey);position: absolute;top:25px;right:0px;padding:10px 0px 12px 0px;border-radius:10px;text-align: left;display:none;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;transition: ease-in-out all .3s;}
-	.rlSortDropDown h3{font-family:"Tusker","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:left;color:var(--wac-char);margin:0;padding:0px 0px 0px 10px;display:inline-block;}
-	.sortRadioBtn{width:calc(100% - 4px);height:25px;background:#fff;margin:2px;padding:2px 5px;border-radius:5px;border:1px solid var(--wac-grey);display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;}
+	#brcSortMenu{width: 150px;height:auto;margin:10px 0px 10px 0px;display:block;box-sizing: border-box !important;position: relative;z-index:50;}
+	.brcSortBtn{font-family:"Tusker","Averta",fallback;font-size:14px;line-height:14px;font-weight:600;text-align:right;color:#000;margin:0;padding:5px;text-decoration: underline;cursor:pointer;user-select:none;}
+	.brcSortDropDown{width:150px;height:auto;background:#fff;position: absolute;top:25px;right:0px;padding:10px 0px 6px 0px;border:1px solid #000;border-radius:0px;text-align: left;display:none;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;transition: ease-in-out all .3s;}
+	.brcSortDropDown h3{font-family:"Tusker","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#585858;margin:0;padding:0px 0px 10px 10px;display:inline-block;}
+	.sortRadioBtn{width:calc(100% - 4px);height:25px;background:#fff;margin:2px;padding:2px 5px;border-radius:5px;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;}
 	.sortRadioBtn h4{font-family:"Tusker","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0 ;display:inline-block;}
-	.rlRadioBtn{width:15px;height:15px;display:inline-block;margin:0px 5px 0px 0px;padding:0px;border-radius:15px;box-sizing:border-box !important;}
-	.rlRadioBtnOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/rugbyleaguewc/https://s1.ticketm.net/tm/en-au/img/static/afc/2025/wac_radio_on_w_img.svg")center right no-repeat,var(--wac-pur);background-size:15px;}
-	.rlRadioBtnOff{background:#fff;box-shadow:inset 0px 0px 0px 2px var(--wac-grey);}
+	.brcRadioBtn{width:15px;height:15px;display:inline-block;margin:0px 5px 0px 0px;padding:0px;border-radius:15px;box-sizing:border-box !important;}
+	.brcRadioBtnOn{background:url("brc_radio_on_img.svg")center right no-repeat,#000;background-size:15px;}
+	.brcRadioBtnOff{background:#fff;box-shadow:inset 0px 0px 0px 3px #585858;}
+
+	#brcResetAllFeat{width:120px;height:26px;text-align: center;margin:4px auto 0px;padding:6px 0px 6px 0px;font-family:"Tusker","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;color:#000;background:#fff;display:inline-block;position: relative;box-sizing: border-box !important;text-transform: uppercase;cursor:pointer;border:1px solid #000;}
 	/*event stream styles*/
 	#brcEvents{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;background:#fff;padding:1px ;position: relative; box-sizing:border-box !important;}
 	#brcEventStream{margin:0px auto;padding:16px 0px;position:relative;display:flex;flex-wrap: wrap;flex-direction: row;align-content: flex-start;justify-content: space-around;column-gap: 24px;row-gap: 24px;}
 	
 	/*error message*/
-	#rlPubEventErrors,#rlHospEventErrors{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;padding:0px;position: relative; box-sizing:border-box !important;display:flex;flex-wrap: nowrap;justify-content: center;flex-direction: row;}
-	.rlErrorMessage{width:100%;max-width:500px;height:auto;margin:0px;border-radius:10px;background:var(--rl-dblue);display: none;}
-	.rlErrorMessage img{width:100%;height:auto;margin:0px;}
-	.rlErrorMessage h1{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:22px;line-height:22px;font-weight:700;color:var(--rl-lblue);padding:24px 0px 16px 0px;margin:0px;box-sizing:border-box !important;}
-	.rlErrorMessage p{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:16px;font-weight:400;color:#fff;padding:0px 0px 0px 0px;margin:0px;box-sizing:border-box !important;line-height: 24px;}
-	.rlErrorResetBtn{width:220px;height:auto;display:block;padding:16px 15px;margin:26px auto 46px;background:var(--rl-lblue);color:var(--rl-dblue);font-family:"poppins","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:700;border-radius:5px;box-sizing:border-box !important;cursor:pointer;}
-
+	#brcEventErrors{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;padding:0px;position: relative; box-sizing:border-box !important;display:flex;flex-wrap: nowrap;justify-content: center;flex-direction: row;}
+	.brcErrorMessage{width:100%;max-width:500px;height:auto;margin:0px;border-radius:0px;background:#fff;border:2px solid #000;display: none;}
+	.brcErrorMessage img{width:100%;height:auto;margin:0px;}
+	.brcErrorMessage h1{font-family:"Tusker", sans-serif, fallback;text-align:center;font-size:22px;line-height:22px;font-weight:700;color:#000;padding:24px 0px 16px 0px;margin:0px;text-transform: uppercase;box-sizing:border-box !important;}
+	.brcErrorMessage p{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:16px;font-weight:400;color:#000;padding:0px 0px 0px 0px;margin:0px;box-sizing:border-box !important;line-height: 24px;}
+	.brcErrorResetBtn{width:220px;height:auto;display:block;padding:16px 15px;margin:26px auto 26px;background:#000;color:#fff;font-family:"Tusker","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:700;border-radius:5px;box-sizing:border-box !important;cursor:pointer;text-transform: uppercase;}
+	.brcErrorAltBtn{width:220px;height:auto;display:block;padding:16px 15px 14px 15px;margin:26px auto 26px;background:#fff;color:#000;border:1px solid #000;font-family:"Tusker","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:500;border-radius:5px;box-sizing:border-box !important;cursor:pointer;text-transform: uppercase;}
+	.brcErrorMessage a{text-decoration: none;}
 	/*event counter*/
-	#rlPubSubHeader,#rlHospSubHeader{display:flex;justify-content: space-between;}
-	#rlPubCounter,#rlHospCounter{width:auto;display:inline-block;background:var(--rl-dblue);padding:0px;margin:10px 0px 10px 10px;box-sizing: border-box !important;}
-	#rlPubEventCount,#rlHospEventCount{font-family:"Tusker","Averta",fallback;font-size:12px;line-height:12px;font-weight:600;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
-	#rlPubEventCountTotal,#rlHospEventCountTotal{font-family:"Tusker","Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
-	.rlounterWrap{width:60px;height:24px;background:var(--rl-dblue);padding:5px 0px;display:inline-block;color:#fff !important;box-sizing: border-box !important;border-left:2px solid var(--rl-lblue);}
-	.rlounterWrap p{color:#fff !important;padding:0px 1px!important;margin:0px !important;}
-	#rlPubCounter p,#rlHospCounter p{display:inline-block;font-family:"Tusker","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:center;color:var(--rl-lblue);margin:0;padding:0px 10px 0px 0px;}
+	#brcSubHeader{display:flex;justify-content: space-between;align-items: center;}
+	#brcCounter{width: 150px;height:auto;display:inline-block;background:#fff;padding:0px 0px 0px 0px;margin:10px 0px 10px 0px;text-align:left;border:1px solid #000;box-sizing: border-box !important;}
+	#brcEventCount{font-family:"Averta",fallback;font-size:15px;line-height:15px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+	#brcEventCountTotal{font-family:"Averta",fallback;font-size:15px;line-height:15px;font-weight:600;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+	.brcCounterWrap{width:60px;height:24px;background:#000;padding:4px 0px;display:inline-block;text-align:center;color:#000 !important;/*border-right:1px solid #000;*/box-sizing: border-box !important;}
+	.brcCounterWrap p{color:#fff !important;padding:0px 1px!important;margin:0px !important;}
+	#brcCounter p{display:inline-block;font-family:"Tusker","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:center;color:#000;margin:0;padding:0px 10px 0px 0px;}
 
 	/*event card*/
 	.brcEventCard{width:300px;height:auto;background:#fff;padding:0px 0px 0px;user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;justify-content: space-between;border:1px solid #000;box-sizing: border-box !important;overflow:visible;}
@@ -168,18 +171,18 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	.brcSelectTitle h1{font-family:"Tusker","Averta",fallback;font-size:20px;line-height:20px;font-weight:600;color:#fff;text-align:center;margin:0px 0px;display:inline-block;padding:0px 0px 0px 0px;user-select:none;}
 
 	.brcMenuDiv{width:2px;height:30px;background:#fff;position: relative;display:inline-block;margin:0;padding:0;}
-	.brcMenuDownArrow{width:18px;height:auto;right:15px;top:10px;display:block;position: absolute;transition: ease-in-out all .8s;}
+	.brcMenuDownArrow{width:18px;height:auto;right:15px;top:15px;display:block;position: absolute;transition: ease-in-out all .8s;}
 	.brcMenuDownArrow img{width:18px;height:10px;margin:4px 0px;display:block;position: relative;box-sizing: border-box !important;z-index:49;}
 	.brcArrowRot{transform: rotate(180deg);}
-	#brcResetAllFeat{width:120px;height:auto;text-align: center;margin:4px auto 0px;padding:8px 0px 6px 0px;font-family:"Tusker","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;color:#000;background:#fff;display:inline-block;position: relative;box-sizing: border-box !important;text-transform: uppercase;cursor:pointer;border:1px solid #000;}
+	#brcResetAllFeat{width:120px;height:auto;text-align: center;margin:4px auto 12px;padding:8px 0px 6px 0px;font-family:"Tusker","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;color:#000;background:#fff;display:inline-block;position: relative;box-sizing: border-box !important;text-transform: uppercase;cursor:pointer;border:1px solid #000;}
 	/*menu counters*/
-	.brcMenuCounter{width:24px;height:24px;border-radius:20px;background:var(--brc-pink);font-family:"Tusker","Averta",fallback;font-size:15px;line-height:15px;font-weight:700;color:#000;text-align:center;margin:0px;padding:6px 0px;display:none;position:absolute;top:7px;right:11px;box-sizing:border-box !important;z-index: 50;}
+	.brcMenuCounter{width:24px;height:24px;border-radius:20px;background:var(--brc-pink);font-family:"Tusker","Averta",fallback;font-size:15px;line-height:15px;font-weight:700;color:#000;text-align:center;margin:0px;padding:6px 0px;display:none;position:absolute;top:12px;right:11px;box-sizing:border-box !important;z-index: 50;}
 
 	/*drop down & buttons*/
 	.brcDropDownMenu{width:100%;height:auto;background:rgba(0,0,0,.95);position: relative;padding:0px 2px 6px 2px;margin:5px 0px 0px 0px;border-radius:0px;text-align: left;display:block;transition: ease-in-out all .3s;border:1px solid #fff;box-sizing: border-box !important;}
-	.brcDropDownBtn{width:calc(100% - 4px);min-height:34px;height:auto;background:none;margin:2px;padding:0px 10px 0px 10px;border-bottom:1px solid #fff;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;text-overflow: ellipsis;position:relative;white-space: wrap;}
+	.brcDropDownBtn{width:calc(100% - 4px);min-height:34px;height:auto;background:none;margin:2px;padding:0px 10px 2px 10px;border-bottom:1px solid #fff;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;text-overflow: ellipsis;position:relative;white-space: wrap;}
 	.brcDropDownBtn h3{font-family:"Averta","Averta",fallback;font-size:18px;line-height:18px;font-weight:500;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
-	.brcDropDownBtn h4{font-family:"Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
+	.brcDropDownBtn h4{font-family:"Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:left;color:#fff;margin:0;padding:0px 0px 2px 0px;display:inline-block;}	
 	.brcDropDownBtn h2{font-family:"Averta","Averta",fallback;width:90px;font-size:14px;line-height:14px;font-weight:600;text-align:left;color:var(--brc-pink);margin:0;padding:0;display:inline-block;text-transform: uppercase;}	
 	.brcDropDownSubHead{width:calc(100% - 4px);height:34px;background:none;margin:2px;padding:2px 5px;display:flex;flex-wrap:nowrap;justify-content: space-between;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;border-top:2px solid var(--rl-dblue);border-bottom:1px solid #fff;}
 	.brcDropDownSubHead h3{font-family:"Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
@@ -192,11 +195,6 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	.brcCheckBoxOff{background:url("https://s1.ticketm.net/tm/en-au/img/static/brc/brc_checkbox_off_img.svg")bottom left no-repeat;background-size:14px;}
 
 	.brcDropDownDot{height:10px;width:10px;display:inline-block;background:url('https://s1.ticketm.net/tm/en-au/img/static/brc/brc_circ_halfhalf_img.svg') no-repeat center center;margin:0px 7px 0px 7px;border-radius:5px;}
-
-	#brcRaceday{width:300px;}
-	#brcVenueMenu{width:295px;}
-	#brcTicketType{width:185px;}
-	#brcEventType{width:275px;}
 
 	/*sort menu*/
 	#rlPubSortMenu,#rlHospSortMenu{width:auto;height:auto;margin:10px;display:none;box-sizing: border-box !important;position: relative;z-index:50;}
@@ -213,12 +211,14 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	#brcEventStream{margin:0px auto;padding:16px 0px;position:relative;display:flex;flex-wrap: wrap;flex-direction: row;align-content: flex-start;justify-content: space-around;column-gap: 24px;row-gap: 24px;}
 	
 	/*error message*/
-	#rlPubEventErrors,#rlHospEventErrors{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;padding:0px;position: relative; box-sizing:border-box !important;display:flex;flex-wrap: nowrap;justify-content: center;flex-direction: row;}
-	.rlErrorMessage{width:100%;max-width:500px;height:auto;margin:0px;border-radius:10px;background:var(--rl-dblue);display: none;}
-	.rlErrorMessage img{width:100%;height:auto;margin:0px;}
-	.rlErrorMessage h1{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:22px;line-height:22px;font-weight:700;color:var(--rl-lblue);padding:24px 0px 16px 0px;margin:0px;box-sizing:border-box !important;}
-	.rlErrorMessage p{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:16px;font-weight:400;color:#fff;padding:0px 0px 0px 0px;margin:0px;box-sizing:border-box !important;line-height: 24px;}
-	.rlErrorResetBtn{width:220px;height:auto;display:block;padding:16px 15px;margin:26px auto 46px;background:var(--rl-lblue);color:var(--rl-dblue);font-family:"poppins","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:700;border-radius:5px;box-sizing:border-box !important;cursor:pointer;}
+	#brcEventErrors{width:100%;height:auto;max-width:1000px;margin:0px auto 0px;padding:0px;position: relative; box-sizing:border-box !important;display:flex;flex-wrap: nowrap;justify-content: center;flex-direction: row;}
+	.brcErrorMessage{width:100%;max-width:500px;height:auto;margin:0px;padding:0px 10px;border-radius:0px;background:#fff;border:2px solid #000;display: none; box-sizing:border-box !important;}
+	.brcErrorMessage img{width:100%;height:auto;margin:0px;}
+	.brcErrorMessage h1{font-family:"Tusker", sans-serif, fallback;text-align:center;font-size:22px;line-height:22px;font-weight:700;color:#000;padding:24px 0px 16px 0px;margin:0px;text-transform: uppercase;box-sizing:border-box !important;}
+	.brcErrorMessage p{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:16px;font-weight:400;color:#000;padding:0px 0px 0px 0px;margin:0px;box-sizing:border-box !important;line-height: 24px;}
+	.brcErrorResetBtn{width:220px;height:auto;display:block;padding:16px 15px;margin:26px auto 26px;background:#000;color:#fff;font-family:"Tusker","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:700;border-radius:5px;box-sizing:border-box !important;cursor:pointer;text-transform: uppercase;}
+	.brcErrorAltBtn{width:220px;height:auto;display:block;padding:16px 15px 14px 15px;margin:26px auto 26px;background:#fff;color:#000;border:1px solid #000;font-family:"Tusker","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:500;border-radius:5px;box-sizing:border-box !important;cursor:pointer;text-transform: uppercase;}
+	.brcErrorMessage a{text-decoration: none;}
 
 	/*event counter*/
 	#rlPubSubHeader,#rlHospSubHeader{display:flex;justify-content: space-between;}
@@ -317,46 +317,48 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 			<div class="brcSelectTitle"><h1>Racecourse</h1><div id="brcVenueMenuCounter" class="brcMenuCounter"></div><div class='brcMenuDownArrow'><img src='https://s1.ticketm.net/tm/en-au/img/static/brc/brc_downArrow_hh_img.svg'></div></div>		
 		<!--Venue Menu-----><div id="brcVenueMenu" class="brcDropDownMenu brcDropDownOff">
 			<div class="brcDropDownSubHead"><h3>Select An Event</h3><div id="clearEventFilters"  class="brcClearMenuBtn">clear</div></div>
-			<div id="eventFilterAllBtn" data-filterbtn="All" class="brcDropDownBtn brcFilterBtnOn brcVenueFilterBtn"><div class="brcCheckBox brcCheckBoxOn"></div><h3>Show All</h3></div>
+			<div id="venueFilterAllBtn" data-filterbtn="All" class="brcDropDownBtn brcFilterBtnOn brcVenueFilterBtn"><div class="brcCheckBox brcCheckBoxOn"></div><h3>Show All</h3></div>
 				
 			<div data-filterbtn="Doomben Racecourse" class="brcDropDownBtn brcFilterBtnOff brcVenueFilterBtn"><div class="brcCheckBox brcCheckBoxOff"></div><h4>Doomben Racecourse</h4></div>
 			<div data-filterbtn="Eagle Farm Racecourse" class="brcDropDownBtn brcFilterBtnOff brcVenueFilterBtn"><div class="brcCheckBox brcCheckBoxOff"></div><h4>Eagle Farm Racecourse</h4></div>
 		</div> 
 		</div>
 		
-	</div><div id="brcResetAllFeat">Reset Selection</div></div><!----end search bar ----></div><!---end header--->
+	</div></div><!----end search bar ----></div><!---end header--->
 	<div id="brcEvents">	
 
-		<!--counter and date sort--
-		<div id="rlPubSubHeader">
-			<div id="rlPubCounter"><div class="rlounterWrap"><div id="rlPubEventCount"></div><p> / </p><div id="rlPubEventCountTotal"></div></div><p>&nbsp; events shown</p></div>		
-			<!--sort menu--
-			<div id="rlPubSortMenu">
-					<div class="rlSortBtn">Sort Events:</div> 
-					<div class="rlSortDropDown">
+		<!--counter and date sort---->
+		<div id="brcSubHeader">
+			<div id="brcCounter"><div class="brcCounterWrap"><div id="brcEventCount"></div><p> / </p><div id="brcEventCountTotal"></div></div><p>&nbsp; events shown</p></div>	
+			<div id="brcResetAllFeat">Reset Selection</div>	
+			<!--sort menu---->
+			<div id="brcSortMenu">
+					<div class="brcSortBtn">Sort Events:</div> 
+					<div class="brcSortDropDown">
 						<h3>Sort Events By:</h3>
-						<!--<div data-filterbtnlab="Recommended" class="rlFilterBtnOn sortRadioBtn"><div class="rlRadioBtn rlRadioBtnOn"></div><h4>Default</h4></div>--
-						<div data-filterbtnlab="Earliest" class="rlFilterBtnOff sortRadioBtn"><div class="rlRadioBtn rlRadioBtnOff"></div><h4>Earliest Date</h4></div>	
-						<div data-filterbtnlab="Latest" class="rlFilterBtnOff sortRadioBtn"><div class="rlRadioBtn rlRadioBtnOff"></div><h4>Furthest Date</h4></div>
+						<!--<div data-filterbtnlab="Recommended" class="rlFilterBtnOn sortRadioBtn"><div class="rlRadioBtn rlRadioBtnOn"></div><h4>Default</h4></div>---->
+						<div data-filterbtnlab="Earliest" class="brcFilterBtnOn sortRadioBtn"><div class="brcRadioBtn brcRadioBtnOn"></div><h4>Earliest Date</h4></div>	
+						<div data-filterbtnlab="Latest" class="brcFilterBtnOff sortRadioBtn"><div class="brcRadioBtn brcRadioBtnOff"></div><h4>Furthest Date</h4></div>
 					</div>
 			</div>
-		</div>-->
-		<!--error span--
-		<div id="rlPubEventErrors">
-			<!--error message tickets--
-			<div id="rlPubErrorNoTickets" class="rlErrorMessage">
+		</div>
+		<!--error span---->
+		<div id="brcEventErrors">
+			<!--error message tickets---->
+			<div id="brcErrorNoTickets" class="brcErrorMessage">
 				<h1>Scratched?</h1>
 				<p>Your search didn&rsquo;t match any of our available tickets.
 					<br />Adjust your filters to see what tickets are available.</p>
-				<div id="errorPubResetFilterBtn" class="rlErrorResetBtn">RESET FILTERS</div>
+				<div id="errorResetFilterBtn" class="brcErrorResetBtn">RESET FILTERS</div>
 			</div>
-			<!--error message--
-			<div id="rlPubErrorConnection" class="rlErrorMessage">
+			<!--error message---->
+			<div id="brcErrorConnection" class="brcErrorMessage">
 				<h1>Scratched?</h1>
 				<p>We&rsquo;re unable to connec to out servers, please try refreshing the page or reload the data.</p>
-				<div id="errorPubReloadDataBtn" class="rlErrorResetBtn">RELOAD DATA</div>
+				<div id="errorReloadDataBtn" class="brcErrorResetBtn">RELOAD DATA</div>
+				<a href="https://www.ticketmaster.com.au/artist/xxx" target="_blank"><div class="brcErrorAltBtn">View Events On Artist Page</div></a>
 			</div>
-		</div>-->
+		</div>
 
       	<div id="brcEventStream"> 
 
@@ -387,7 +389,7 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 
 <!---js scripts--->
 <script type="text/javascript">
-	//notes: url filters
+	//notes: url filters, clear buttons
 	$j = jQuery.noConflict();
 	
 	let availLocation = "https://d1qeon7qw4jcrw.cloudfront.net/brc";
@@ -442,6 +444,7 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 							let options = { weekday: 'short', day: '2-digit', month: 'short', year: 'numeric' ,  timeZone: "Australia/Melbourne"};
 							let eventDateShort = new Intl.DateTimeFormat('en-AU', options).format(eventdate).replace(',', '');
 							let ticketType = event.event_type_category.replace(/\s/g, '');//removes spaces
+							let sortDate = event.event_date.replace("-","").replace("-","");
 							//sets + map
 							raceDayNameSet.add(event.event_day_desc)
 							eventNameSet.add(event.offer_desc)
@@ -451,7 +454,7 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 							//build card
 							//top span
 								//"+event.image_ref_link+"
-							let  newEvent = $j("<!--event card--><div class='brcEventCard' data-eventcode='"+event.tm_event_name+"' data-raceday='"+event.event_day_desc+"' data-venue='"+event.venue_name_desc+"' data-tickettype='"+ticketType+"' data-eventname='"+event.offer_desc+"'><!--card top--><div class='brcCardTop'><div class='brcEventHero'><img src='' alt='"+event.event_desc+"'></div><div class='brcTicketTypeWrap brc"+ticketType+"Wrap'><div class='brcTicketType'>"+event.event_type_category+"</div></div></div><!--card mid--><div class='brcCardMid'><div class='brcRaceDay'><h1>"+event.event_day_desc+"</h1></div><div class='brcEventName'><h2>"+event.offer_desc+"</h2></div></div><!--card bot--><div class='brcCardBot'><div class='brcCardDiv'></div><div class='brcCardVenue'><h1>"+event.venue_name_desc+"</h1></div><div class='brcCardDate'><h1>"+eventDateShort+"</h1></div><div class='brcCardPrice'><h3>from:</h3><h1>$"+event.price_from+"</h1><h2>"+event.unit+"</h2></div><div class='brcCardHalfDiv'></div><div class='brcCardHalfDiv'></div><a href='"+event.buy_link+"' target='_blank'><div class='brcCardBtn'>"+event.button_text+"</div></div></a></div>");	
+							let  newEvent = $j("<!--event card--><div class='brcEventCard' data-eventcode='"+event.tm_event_name+"' data-raceday='"+event.event_day_desc+"' data-venue='"+event.venue_name_desc+"' data-tickettype='"+ticketType+"' data-eventname='"+event.offer_desc+"' data-sortdate='"+sortDate+"'><!--card top--><div class='brcCardTop'><div class='brcEventHero'><img src='' alt='"+event.event_desc+"'></div><div class='brcTicketTypeWrap brc"+ticketType+"Wrap'><div class='brcTicketType'>"+event.event_type_category+"</div></div></div><!--card mid--><div class='brcCardMid'><div class='brcRaceDay'><h1>"+event.event_day_desc+"</h1></div><div class='brcEventName'><h2>"+event.offer_desc+"</h2></div></div><!--card bot--><div class='brcCardBot'><div class='brcCardDiv'></div><div class='brcCardVenue'><h1>"+event.venue_name_desc+"</h1></div><div class='brcCardDate'><h1>"+eventDateShort+"</h1></div><div class='brcCardPrice'><h3>from:</h3><h1>$"+event.price_from+"</h1><h2>"+event.unit+"</h2></div><div class='brcCardHalfDiv'></div><div class='brcCardHalfDiv'></div><a href='"+event.buy_link+"' target='_blank'><div class='brcCardBtn'>"+event.button_text+"</div></div></a></div>");	
 								
 							//append to div
 
@@ -466,8 +469,8 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	createRaceDayList();
 	createEventList();
 	emptyFullListsOnLoad();
-	cardsToDisplayPub();
-
+	cardsToDisplay();
+	//setTimeout(sortButtonList, 500)
 	//getUrlVars()
 	//parseUrl()
 
@@ -502,6 +505,7 @@ function createRaceDayList(){
 	for (var iX = 0; iX < raceDayList.length; iX++) {
 		raceDayList[iX] = raceDayList[iX].replace(/\s/g, '');
 	}*/
+
 	$j.each(buttonArray, function(index,value){
 		let raceName = value//.replace(/[^\w\s]/gi, '').replace(/\s/g, '');//removes special characters and spaces
 		let raceDateLong = new Date(raceDaysAndDatesMap.get(raceName))
@@ -509,33 +513,41 @@ function createRaceDayList(){
 		let raceDateMedium = new Intl.DateTimeFormat('en-AU', optionsMedium).format(raceDateLong);
 		let raceDateData = raceDaysAndDatesMap.get(raceName).replace('-','').replace('-','');//new Intl.DateTimeFormat('en-US', optionsDataTag).format(raceDateLong).replace("/","").replace("/","");
 
-		let newButton = $j("<div data-filterbtn='"+raceName+"'' class='brcDropDownBtn brcFilterBtnOff brcRaceDayFilterBtn'><div class='brcCheckBox brcCheckBoxOff'></div><h2>"+raceDateShort+"</h2><span class='brcDropDownDot'></span><h4>"+raceName+"</h4></div>");
+		let newButton = $j("<div data-filterbtn='"+raceName+"' class='brcDropDownBtn brcFilterBtnOff brcRaceDayFilterBtn'><div class='brcCheckBox brcCheckBoxOff'></div><h2>"+raceDateShort+"</h2><span class='brcDropDownDot'></span><h4>"+raceName+"</h4></div>");
 		//append to drop down
 		raceDayListDiv.append(newButton);
 })
 
-}function createEventList(){
+}
+function createEventList(){
 	let buttonArray = Array.from(eventNameSet);
 	let eventListDiv = $j("#brcEventMenu");
 	eventNameList = Array.from(eventNameSet)//.join(',').replace(/,/g, '/').replace(/'/g, '').split("/");
+	//eventNameList.sort()
+	buttonArray.sort()
 
 
 	$j.each(buttonArray, function(index,value){
 		let eventName = value//.replace(/[^\w\s]/gi, '').replace(/\s/g, '');//removes special characters and spaces
-		let newButton = $j("<div data-filterbtn='"+eventName+"'' class='brcDropDownBtn brcFilterBtnOff brcEventFilterBtn brcEventSort'><div class='brcCheckBox brcCheckBoxOff'></div><h4>"+eventName+"</h4></div>");
+		let newButton = $j("<div data-filterbtn='"+eventName+"' data-sortlabel='"+eventName.replace(/[^\w\s]/gi, '').replace(/\s/g, '')+"' class='brcDropDownBtn brcFilterBtnOff brcEventFilterBtn brcEventSort'><div class='brcCheckBox brcCheckBoxOff'></div><h4>"+eventName+"</h4></div>");
 		//append to drop down
 		eventListDiv.append(newButton);
-		sortButtonList()
+		//sortButtonList()
 })
-
+/*
 function sortButtonList(){
-	$j('#brcEventMenu').children('.brcEventSort').sort(function (a, b) {		
-				return $j(a).data('filterbtn') - $j(b).data('filterbtn');					
-			}).appendTo('#brcEventMenu');
+	$j('#brcEventMenu').children('.brcEventSort').sort(function (a, b) {	
+	
+				return $j(a).data('sortlabel') - $j(b).data('sortlabel');					
+			})
+			.appendTo('#brcEventMenu');
 	}
+}*/
+
 }
-///conditionals for event cards - PUBLIC
-function cardsToDisplayPub(){
+
+///conditionals for event cards
+function  cardsToDisplay(){
 
 	eventCountPlus = 0;
 	eventCountMinus = 0;
@@ -565,27 +577,27 @@ function cardsToDisplayPub(){
 		}		
 		});
 		//console.log(eventDate,dateListPub)
-		//eventCounterPub();
+		eventCount();
 		
 }
 //counters
-let eventCounterPub = function(){
+let eventCount = function(){
 
-	document.getElementById('rlPubEventCount').innerHTML = eventCountPubPlus.toString();
-	document.getElementById('rlPubEventCountTotal').innerHTML = eventCountPubTotal.toString();
+	document.getElementById('brcEventCount').innerHTML =  eventCountPlus.toString();
+	document.getElementById('brcEventCountTotal').innerHTML = eventCountTotal.toString();
 	//let wacHospCard = document.getElementById('wacHospCard');
 
-	if((eventCountPubPlus == 0)){
-		$j("#rlPubErrorNoTickets").fadeIn(500)
+	if(( eventCountPlus == 0)){
+		$j("#brcErrorNoTickets").fadeIn(500)
 	} 
-	if((eventCountPubPlus >= 1)){
-		$j("#rlPubErrorNoTickets").fadeOut(0)	
+	if(( eventCountPlus >= 1)){
+		$j("#brcErrorNoTickets").fadeOut(0)	
 	}
 	/*promo card code
-	if(eventCountPubPlus <=3 || eventCountPubTotal !== eventCountPubPlus){
+	if( eventCountPlus <=3 || eventCountPubTotal !==  eventCountPlus){
 		$j("#wacHospCard").fadeOut(0);	
 	}
-	if(eventCountPubPlus >=3 ){
+	if( eventCountPlus >=3 ){
 		$j(wacHospCard).insertAfter('.wacEventCard[data-childnum=3]')
 		$j("#wacHospCard").fadeIn(0).css("display","flex");	
 	}*/
@@ -681,55 +693,54 @@ $j(document).on('click', '.brcDropDownBtn', function () {
 
 //sort menu
 //pub
-	$j(document).on('click', '#rlPubSortMenu .rlSortBtn', function (e) {
-			if ($j(e.target).closest('#rlPubSortMenu .rlSortDropDown').length !== 0)
+	$j(document).on('click', '#brcSortMenu .brcSortBtn', function (e) {
+			if ($j(e.target).closest('#brcSortMenu .brcSortDropDown').length !== 0)
 			{return false;}
 			//open
-			$j(".rlSortDropDown").fadeIn(500);
+			$j(".brcSortDropDown").fadeIn(500);
 		});
 	$j(document).on('click', 'body', function (e) {
-			if (($j(e.target).closest('#rlPubSortMenu').length !== 0)) 
+			if (($j(e.target).closest('#brcSortMenu').length !== 0)) 
 			{return false;}
-			$j("#rlPubSortMenu .rlSortDropDown").fadeOut(0);
+			$j("#brcSortMenu .brcSortDropDown").fadeOut(0);
 		});
 //radio button
 $j(document).on('click', '.sortRadioBtn', function () {
-			if ($j(this).hasClass('rlFilterBtnOff')) {
-				$j(this).removeClass('rlFilterBtnOff').addClass('rlFilterBtnOn');
-				$j(this).children('.rlRadioBtn').removeClass('rlRadioBtnOff').addClass('rlRadioBtnOn');
-				$j(this).siblings('.sortRadioBtn').removeClass('rlFilterBtnOn').addClass('rlFilterBtnOff');
-				$j(this).siblings('.sortRadioBtn').children('.rlRadioBtn').removeClass('rlRadioBtnOn').addClass('rlRadioBtnOff');
-			} else if ($j(this).hasClass('rlFilterBtnOn')) {
+			if ($j(this).hasClass('brcFilterBtnOff')) {
+				$j(this).removeClass('brcFilterBtnOff').addClass('brcFilterBtnOn');
+				$j(this).children('.brcRadioBtn').removeClass('brcRadioBtnOff').addClass('brcRadioBtnOn');
+				$j(this).siblings('.sortRadioBtn').removeClass('brcFilterBtnOn').addClass('brcFilterBtnOff');
+				$j(this).siblings('.sortRadioBtn').children('.brcRadioBtn').removeClass('brcRadioBtnOn').addClass('brcRadioBtnOff');
+			} else if ($j(this).hasClass('brcFilterBtnOn')) {
 				return
 			}
 		});
 //sort by soonest 
 //pub
-$j(document).on('click', '#rlPubSortMenu .sortRadioBtn[data-filterbtnlab="Earliest"]', function () {
-			$j('#rlPubEventStream .rlEventCard').sort(function (a, b) {
+$j(document).on('click', '#brcSortMenu .sortRadioBtn[data-filterbtnlab="Earliest"]', function () {
+			$j('#brcEventStream .brcEventCard').sort(function (a, b) {
 				return $j(a).data('sortdate') - $j(b).data('sortdate');
 			})
-			.appendTo('#rlPubEventStream');
-			cardsToDisplayPub()
+			.appendTo('#brcEventStream');
+			cardsToDisplay()
 		});
 //sort by furthers	
 //pub	
-$j(document).on('click', '#rlPubSortMenu .sortRadioBtn[data-filterbtnlab="Latest"]', function () {
-			$j('#rlPubEventStream .rlEventCard').sort(function (a, b) {
+$j(document).on('click', '#brcSortMenu .sortRadioBtn[data-filterbtnlab="Latest"]', function () {
+			$j('#brcEventStream .brcEventCard').sort(function (a, b) {
 				return $j(b).data('sortdate') - $j(a).data('sortdate');
 			})
-			.appendTo('#rlPubEventStream');
-			cardsToDisplayPub()
+			.appendTo('#brcEventStream');
+			cardsToDisplay()
 		});
 
-$j(document).on('click', '#rlPubSortMenu .sortRadioBtn[data-filterbtnlab="Recommended"]', function () {
+$j(document).on('click', '#brcSortMenu .sortRadioBtn[data-filterbtnlab="Recommended"]', function () {
 	//loadData()
-	//cardsToDisplayPub()
+	// cardsToDisplay()
 })
 //lightbox clicks
 $j(document).on('click', '.rlInfoBtn', function () {
 	targetLb = $j(this).data('eventcode')
-	console.log(targetLb)
 	$j('.rlEventCard[data-eventcode='+targetLb+'] .rlLightBox').fadeIn(500).css("display","flex");
 })
 $j(document).on('click', '.rlLbClose', function () {
@@ -743,47 +754,48 @@ $j(document).on('click', '.rlLightBox', function (e) {
 })
 
 //reset buttons - pub
-let rlPubResetAll = function(){
+let brcResetAll = function(){
 	//reset arrays
-	dateListPub.length = 0;
-	teamListPub.length = 0;
-	teamListPub.push("All")	
+	raceDayList.length = 0;
+  	raceDayList.push("All")
 	venueList.length = 0;
 	venueList.push("All")	
-	packListPub.length = 0;
-	packListPub.push("All")	
+	eventNameList.length = 0;
+	eventNameList.push("All")	
 	//reset buttons
-	$j("#rlPubSearchBarWrap .rlDropDownBtn").removeClass('rlFilterBtnOn').addClass('rlFilterBtnOff');
-	$j("#rlPubSearchBarWrap .rlCheckBox").removeClass('rlCheckBoxOn').addClass('rlCheckBoxOff');
- 	$j("#rlPubSearchBarWrap .rlDay").removeClass('rlCalDayOn').addClass('rlCalDayOff');
+	$j("#brcSearchBarWrap .brcDropDownBtn").removeClass('brcFilterBtnOn').addClass('brcFilterBtnOff');
+	$j("#brcSearchBarWrap .brcCheckBox").removeClass('brcCheckBoxOn').addClass('brcCheckBoxOff');
 
-	$j("#brcVenueMenu").removeClass('rlDropDownOn').addClass('wacDropDownOff');
-	$j("#rlPubTeamMenu").removeClass('wacDropDownOn').addClass('wacDropDownOff');
-	$j("rlPubCalendarMenu").removeClass('wacDropDownOn').addClass('wacDropDownOff');
-	$j(".brcSearchBarBtn .rlMenuDownArrow").removeClass('rlArrowRot');
+	$j("#brcRacedayMenu").removeClass('brcDropDownOn').addClass('brcDropDownOff');
+	$j("#brcEventMenu").removeClass('brcDropDownOn').addClass('brcDropDownOff');
+	$j("#brcVenueMenu").removeClass('brcDropDownOn').addClass('brcDropDownOff');
+
+	$j(".brcSearchBarBtn .brcMenuDownArrow").removeClass('brcArrowRot');
 
 	//turn on 'all' buttons
-	$j("#venuePubFilterAllBtn").removeClass('rlFilterBtnOff').addClass('rlFilterBtnOn');
-	$j("#venuePubFilterAllBtn").children(".rlCheckBox").removeClass('rlCheckBoxOff').addClass('rlCheckBoxOn');
-	$j("#teamPubFilterAllBtn").removeClass('rlFilterBtnOff').addClass('rlFilterBtnOn');
-	$j("#teamPubFilterAllBtn").children(".rlCheckBox").removeClass('rlCheckBoxOff').addClass('rlCheckBoxOn');
+	$j("#racedayFilterAllBtn").removeClass('brcFilterBtnOff').addClass('brcFilterBtnOn');
+	$j("#racedayFilterAllBtn").children(".brcCheckBox").removeClass('brcCheckBoxOff').addClass('brcCheckBoxOn');
+	$j("#eventFilterAllBtn").removeClass('brcFilterBtnOff').addClass('brcFilterBtnOn');
+	$j("#eventFilterAllBtn").children(".brcCheckBox").removeClass('brcCheckBoxOff').addClass('brcCheckBoxOn');
+	$j("#venueFilterAllBtn").removeClass('brcFilterBtnOff').addClass('brcFilterBtnOn');
+	$j("#venueFilterAllBtn").children(".brcCheckBox").removeClass('brcCheckBoxOff').addClass('brcCheckBoxOn');
 
-	cardsToDisplayPub()
-	dateCounterPub();
+	cardsToDisplay()
+	raceDayCounter();
 	venueCounter();
-	teamCounterPub();
+	eventCounter()
 
 };	
 //reset from feature tiles
-$j(document).on('click', '#rlPubResetAllFeat,#errorPubResetFilterBtn', function () {	
-	rlPubResetAll();
+$j(document).on('click', '#brcResetAllFeat,#errorResetFilterBtn', function () {	
+	brcResetAll();
 	//scrollToEvents();
 });
 //reload data error btn
 $j(document).on('click', '#errorPubReloadDataBtn', function () {	
-	rlPubResetAll();
+	brcResetAll();
 	loadData()
-	cardsToDisplayPub();
+	 cardsToDisplay();
 	$j("#errorPubReloadDataBtn").fadeOut(0)
 });
 
@@ -797,14 +809,14 @@ $j(document).on('click', '#clearPubVenueFilters', function () {
 		$j("#brcVenueMenu .rlVenueFilterBtn").removeClass("rlFilterBtnOn").addClass("rlFilterBtnOff");
 		$j("#brcVenueMenu .rlVenueFilterBtn").children(".rlCheckBox").removeClass("rlCheckBoxOn").addClass("rlCheckBoxOff");
 
-		cardsToDisplayPub();
+		 cardsToDisplay();
 		venueCounter();
 		});		
 $j(document).on('click', '#clearPubTeamFilters', function () {	
 		teamListPub.length = 0;
 		$j("#rlPubTeamMenu .rlTeamFilterBtn").removeClass("rlFilterBtnOn").addClass("rlFilterBtnOff");
 		$j("#rlPubTeamMenu .rlTeamFilterBtn").children(".rlCheckBox").removeClass("rlCheckBoxOn").addClass("rlCheckBoxOff");
-		cardsToDisplayPub();
+		 cardsToDisplay();
 		teamCounterPub();
 		});		
 
@@ -820,7 +832,7 @@ var toggleRaceDay = $j(this).data('filterbtn');
 			//select
 			raceDayList.push(toggleRaceDay)	
 		}	
-		cardsToDisplayPub();
+		 cardsToDisplay();
 		raceDayCounter();
 	})
 //race day any/all
@@ -841,7 +853,7 @@ $j(document).on('click', "#brcRacedayMenu .brcRaceDayFilterBtn", function () {
 						return value != "All";				
 					});
 				}
-				cardsToDisplayPub();
+				 cardsToDisplay();
 				raceDayCounter();
 });
 //Event Filter Check
@@ -856,7 +868,7 @@ var toggleEvent = $j(this).data('filterbtn');
 			eventNameList.push(toggleEvent)	
 		}	
 
-		cardsToDisplayPub();
+		 cardsToDisplay();
 		eventCounter();
 	})
 //Event any/all
@@ -877,7 +889,7 @@ $j(document).on('click', "#brcEventMenu .brcEventFilterBtn", function () {
 						return value != "All";				
 					});
 				}
-				cardsToDisplayPub();
+				 cardsToDisplay();
 				eventCounter();
 });
 //venue Filter Check
@@ -892,7 +904,7 @@ var toggleVenue = $j(this).data('filterbtn');
 			venueList.push(toggleVenue)	
 		}	
 
-		cardsToDisplayPub();
+		 cardsToDisplay();
 		venueCounter();
 	})
 //venue any/all
@@ -913,7 +925,7 @@ $j(document).on('click', "#brcVenueMenu .brcVenueFilterBtn", function () {
 						return value != "All";				
 					});
 				}
-				cardsToDisplayPub();
+				 cardsToDisplay();
 				venueCounter();
 });
 
@@ -1054,7 +1066,7 @@ window.addEventListener("load", (event) => {
 });*/
 </script>
 
-
+[% PROCESS "layout/frame/bottom.tt" %]
 
 
 
