@@ -1232,7 +1232,7 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 							let offerTag = event.ticket_offer_desc.replace(/\s/g, '');
 							//console.log(eventDateShort)
 							experienceTypeSet.add(event.experience_filter)
-							urlExperienceTypeSet.add(event.experience_filter.replace(/\s/g, '') + "URL")
+						//	urlExperienceTypeSet.add(event.experience_filter.replace(/\s/g, '') + "URL")
 							experienceTypeAndBuyFlow.set(event.experience_filter+"",""+eventFlow)
 							//console.log(experienceTypeAndBuyFlow)
 							dateSet.add(event.event_date)
@@ -1633,16 +1633,18 @@ function createExperienceTypeList(){
 			if(experienceName.length === 1){
                let expString = experienceName.toString();
                     buttonSet.add(expString)
+                    urlExperienceTypeSet.add(expString.replace(/\s/g, '') + "URL")
 					//buttonArray.push(expString)
 			}
 			if(experienceName.length >= 2){
                 //run through the array
                 $j.each(experienceName, function(index,value){
-                    console.log(value)
+                   // console.log(value)
                     let buyFlow = "ao-tickets";
                     let expString = value.toString();
                      experienceTypeAndBuyFlow.set(expString+"",""+buyFlow)
                      buttonSet.add(expString)
+                     urlExperienceTypeSet.add(expString.replace(/\s/g, '') + "URL")
 					// buttonArray.push(expString)
                 })
 			}		
@@ -1678,7 +1680,7 @@ function pubCardsToDisplay(){
 		let eventPrice = $j(this).data('price');
 		let discoFilter = $j(this).data('discoveryfilter');
 		let eventCard = $j(this).data('arcid')
-        console.log(experienceType)
+    //    console.log(experienceType)
 		if((jQuery.inArray(eventDate, pubDateList) != -1 || (pubDateList.length == 0)) //date
 		//&& (jQuery.inArray(experienceType, fullPubExperienceTypeList) != -1 ||  jQuery.inArray("Any", fullPubExperienceTypeList) != -1)   //exp filter type
         && ((matchExperiencePub() === true) || jQuery.inArray("Any", fullPubExperienceTypeList) != -1)
@@ -2567,6 +2569,7 @@ let parseUrl = function(){
 let parseExpTypeURL = function(){
 	var urlExpTypeFilter = []
 	urlPubExperienceTypeList = Array.from(urlExperienceTypeSet);
+    console.log(urlPubExperienceTypeList)
 	//reset buttons
 	$j('#aoPubTicketMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
 	$j('#aoPubTicketMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
