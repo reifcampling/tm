@@ -17,6 +17,7 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 <!--brc font-->
 <link href="https://s1.ticketm.net/tm/en-au/img/static/brc/fonts/brc_fonts.css" type="text/css" rel="stylesheet" />
+<link href="https://s1.ticketm.net/tm/en-au/img/static/brc/fonts/figtree.css " type="text/css" rel="stylesheet" />
 <style type="text/css">
 	:root{
 		--brc-pink:#EACDD0;	
@@ -64,11 +65,11 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	/*drop down & buttons*/
 	.brcDropDownMenu{width:auto;height:auto;background:rgba(0,0,0,.95);position: absolute;top:44px;left:0px;padding:0px 2px 6px 2px;border-radius:0px;text-align: left;display:inline-block;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;transition: ease-in-out all .3s;border:1px solid #fff;box-sizing: border-box !important;}
 	.brcDropDownBtn{width:calc(100% - 4px);height:34px;background:none;margin:2px;padding:0px 10px 2px 10px;border-bottom:1px solid #fff;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;white-space: nowrap;text-overflow: ellipsis;position:relative;}
-	.brcDropDownBtn h3{font-family:"Averta","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
-	.brcDropDownBtn h4{font-family:"Averta",fallback;font-size:18px;line-height:18px;font-weight:600;text-align:left;color:#fff;margin:0;padding:0px 0px 2px 0px;display:inline-block;}	
-	.brcDropDownBtn h2{font-family:"Averta","Averta",fallback;width:90px;font-size:14px;line-height:14px;font-weight:600;text-align:left;color:var(--brc-pink);margin:0;padding:0;display:inline-block;text-transform: uppercase;}	
+	.brcDropDownBtn h3{font-family:"Figtree","Averta","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
+	.brcDropDownBtn h4{font-family:"Figtree","Averta",fallback;font-size:18px;line-height:18px;font-weight:600;text-align:left;color:#fff;margin:0;padding:0px 0px 2px 0px;display:inline-block;}	
+	.brcDropDownBtn h2{font-family:"Figtree","Averta","Averta",fallback;width:90px;font-size:14px;line-height:14px;font-weight:600;text-align:left;color:var(--brc-pink);margin:0;padding:0;display:inline-block;text-transform: uppercase;}	
 	.brcDropDownSubHead{width:calc(100% - 4px);height:34px;background:none;margin:2px;padding:2px 5px;display:flex;flex-wrap:nowrap;justify-content: space-between;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;border-top:2px solid var(--rl-dblue);border-bottom:1px solid #fff;}
-	.brcDropDownSubHead h3{font-family:"Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
+	.brcDropDownSubHead h3{font-family:"Figtree","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
 	.brcClearMenuBtn{display:inline-block;font-family:"Tusker","Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:left;color:#fff;background:none;margin:0;padding:2px 4px;text-decoration: underline;cursor:pointer;}
 	.brcDropDownOff{display:none !important;opacity:0 !important;}
 	.brcDropDownOn{display:block !important;opacity:1 !important;}
@@ -88,9 +89,9 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	#brcSortMenu{width: 150px;height:auto;margin:10px 0px 10px 0px;display:block;box-sizing: border-box !important;position: relative;z-index:50;}
 	.brcSortBtn{font-family:"Tusker","Averta",fallback;font-size:14px;line-height:14px;font-weight:600;text-align:right;color:#000;margin:0;padding:5px;text-decoration: underline;cursor:pointer;user-select:none;}
 	.brcSortDropDown{width:150px;height:auto;background:#fff;position: absolute;top:25px;right:0px;padding:10px 0px 6px 0px;border:1px solid #000;border-radius:0px;text-align: left;display:none;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;transition: ease-in-out all .3s;}
-	.brcSortDropDown h3{font-family:"Tusker","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#585858;margin:0;padding:0px 0px 10px 10px;display:inline-block;}
+	.brcSortDropDown h3{font-family:"Figtree","Tusker","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#585858;margin:0;padding:0px 0px 10px 10px;display:inline-block;}
 	.sortRadioBtn{width:calc(100% - 4px);height:25px;background:#fff;margin:2px;padding:2px 5px;border-radius:5px;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;}
-	.sortRadioBtn h4{font-family:"Tusker","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0 ;display:inline-block;}
+	.sortRadioBtn h4{font-family:"Figtree","Tusker","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0 ;display:inline-block;}
 	.brcRadioBtn{width:15px;height:15px;display:inline-block;margin:0px 5px 0px 0px;padding:0px;border-radius:15px;box-sizing:border-box !important;}
 	.brcRadioBtnOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/brc/brc_radio_on_img.svg")center right no-repeat,#000;background-size:15px;}
 	.brcRadioBtnOff{background:#fff;box-shadow:inset 0px 0px 0px 3px #585858;}
@@ -106,15 +107,15 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	.brcErrorMessage{width:100%;max-width:500px;height:auto;margin:0px;border-radius:0px;background:#fff;border:2px solid #000;display: none;}
 	.brcErrorMessage img{width:100%;height:auto;margin:0px;}
 	.brcErrorMessage h1{font-family:"Tusker", sans-serif, fallback;text-align:center;font-size:22px;line-height:22px;font-weight:700;color:#000;padding:24px 0px 16px 0px;margin:0px;text-transform: uppercase;box-sizing:border-box !important;}
-	.brcErrorMessage p{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:16px;font-weight:400;color:#000;padding:0px 0px 0px 0px;margin:0px;box-sizing:border-box !important;line-height: 24px;}
+	.brcErrorMessage p{font-family:"Figtree","Averta", sans-serif, fallback;text-align:center;font-size:16px;font-weight:400;color:#000;padding:0px 0px 0px 0px;margin:0px;box-sizing:border-box !important;line-height: 24px;}
 	.brcErrorResetBtn{width:220px;height:auto;display:block;padding:16px 15px;margin:26px auto 26px;background:#000;color:#fff;font-family:"Tusker","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:700;border-radius:5px;box-sizing:border-box !important;cursor:pointer;text-transform: uppercase;}
 	.brcErrorAltBtn{width:220px;height:auto;display:block;padding:16px 15px 14px 15px;margin:26px auto 26px;background:#fff;color:#000;border:1px solid #000;font-family:"Tusker","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:500;border-radius:5px;box-sizing:border-box !important;cursor:pointer;text-transform: uppercase;}
 	.brcErrorMessage a{text-decoration: none;}
 	/*event counter*/
 	#brcSubHeader{display:flex;justify-content: space-between;align-items: center;}
 	#brcCounter{width: 150px;height:auto;display:inline-block;background:#fff;padding:0px 0px 0px 0px;margin:10px 0px 10px 0px;text-align:left;border:1px solid #000;box-sizing: border-box !important;}
-	#brcEventCount{font-family:"Averta",fallback;font-size:15px;line-height:15px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
-	#brcEventCountTotal{font-family:"Averta",fallback;font-size:15px;line-height:15px;font-weight:600;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+	#brcEventCount{font-family:"Figtree","Averta",fallback;font-size:15px;line-height:15px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+	#brcEventCountTotal{font-family:"Figtree","Averta",fallback;font-size:15px;line-height:15px;font-weight:600;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
 	.brcCounterWrap{width:60px;height:24px;background:#000;padding:4px 0px;display:inline-block;text-align:center;color:#000 !important;/*border-right:1px solid #000;*/box-sizing: border-box !important;}
 	.brcCounterWrap p{color:#fff !important;padding:0px 1px!important;margin:0px !important;}
 	#brcCounter p{display:inline-block;font-family:"Tusker","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:center;color:#000;margin:0;padding:0px 10px 0px 0px;}
@@ -129,23 +130,23 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	.brcGeneralPublicWrap .brcTicketType{background:var(--brc-grey);}
 	.brcBRCMemberWrap{background:var(--brc-lpink);}
 	.brcBRCMemberWrap .brcTicketType{background:var(--brc-pink);}
-	.brcTicketType{width:150px;height:26px;border-radius:0px 0px 15px 0px;font-family:"Averta",fallback;font-size:14px;line-height:14px;font-weight:600;text-align:left;color:#000;margin:0;padding:6px 12px;text-transform:uppercase;box-sizing: border-box !important;}
+	.brcTicketType{width:150px;height:26px;border-radius:0px 0px 15px 0px;font-family:"Figtree","Averta",fallback;font-size:14px;line-height:14px;font-weight:700;text-align:left;color:#000;margin:0;padding:6px 12px;text-transform:uppercase;box-sizing: border-box !important;}
 	.brcCardMid{width:100%;max-width:300px;height:auto;min-height: 105px;display:flex;flex-wrap: wrap;align-items: flex-start;justify-content: center;margin:0px;padding:0px 12px 0px 12px;position:relative;box-sizing: border-box !important;}
 	.brcRaceDay{width:100%;max-width:300px;height:auto;margin:0px;padding:0px;position:relative;box-sizing: border-box !important;}
 	.brcRaceDay h1{font-family:"Tusker","Averta",fallback;font-size:22px;line-height:22px;font-weight:500;text-align:left;color:#676767;margin:0;padding:24px 0px 12px 0px;text-transform: uppercase;}
 	.brcEventName{width:100%;max-width:300px;height:auto;margin:0px;padding:0px;position:relative;box-sizing: border-box !important;}
-	.brcEventName h2{font-family:"Averta",fallback;font-size:24px;line-height:24px;font-weight:700;text-align:left;color:#000;margin:0;padding:0px 0px 12px 0px;text-transform: uppercase;}
+	.brcEventName h2{font-family:"Figtree","Averta",fallback;font-size:24px;line-height:24px;font-weight:700;text-align:left;color:#000;margin:0;padding:0px 0px 12px 0px;text-transform: uppercase;}
 	.brcCardBot{width:100%;max-width:300px;height:auto;display:flex;flex-wrap: wrap;align-items: flex-start;justify-content:  space-between;margin:0px;padding:0px 12px 12px 12px;position:relative;box-sizing: border-box !important;}
 	.brcCardDiv{width:100%;height:2px;margin:0px auto 12px;display:block;background:#000;}
 	.brcCardHalfDiv{width:134px;height:2px;margin:0px auto 12px;display:inline-block;background:#000;}
 	.brcCardVenue{width:100%;max-width:300px;height:30px;margin:0px;padding:3px 0px 12px 28px;background:url("https://s1.ticketm.net/tm/en-au/img/static/brc/brc_loc_d_ico.svg") no-repeat;background-position:left -1px top 0px;background-size:20px 20px;position:relative;box-sizing: border-box !important;}
-	.brcCardVenue h1{font-family:"Tusker","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0px 0px;}
+	.brcCardVenue h1{font-family:"Figtree","Averta",fallback;font-size:16px;line-height:16px;font-weight:700;text-align:left;color:#000;margin:0;padding:0px 0px;}
 	.brcCardDate{width:48%;max-width:138px;height:30px;margin:0px;padding:3px 0px 0px 28px;background:url("https://s1.ticketm.net/tm/en-au/img/static/brc/brc_cal_d_ico.svg") no-repeat;background-position:left 0px top 0px;background-size:18px 18px;position:relative;box-sizing: border-box !important;}
-	.brcCardDate h1{font-family:"Tusker","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0px 0px;}
+	.brcCardDate h1{font-family:"Figtree","Tusker","Averta",fallback;font-size:16px;line-height:16px;font-weight:700;text-align:left;color:#000;margin:0;padding:0px 0px;}
 	.brcCardPrice{width:48%;max-width:138px;height:30px;margin:0px;padding:0px 0px 0px 0px;display:flex;flex-wrap:nowrap;justify-content: space-around;position:relative;box-sizing: border-box !important;}
 	.brcCardPrice h1{font-family:"Tusker","Averta",fallback;font-size:22px;line-height:22px;font-weight:500;text-align:center;color:#585858;margin:0;padding:0px 0px;}
-	.brcCardPrice h2{font-family:"Tusker","Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#000;margin:0;padding:8px 0px 0px 0px;}
-	.brcCardPrice h3{font-family:"Tusker","Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#000;margin:0;padding:0px 0px;}
+	.brcCardPrice h2{font-family:"Figtree","Tusker","Averta",fallback;font-size:12px;line-height:12px;font-weight:700;text-align:center;color:#000;margin:0;padding:8px 0px 0px 0px;}
+	.brcCardPrice h3{font-family:"Figtree","Tusker","Averta",fallback;font-size:12px;line-height:12px;font-weight:700;text-align:center;color:#000;margin:0;padding:0px 0px;}
 	.brcCardBot a{width:100%;height:auto;text-decoration: none;}
 	.brcCardBtn{width:100%;height:44px;padding:9px 0px;margin:0px auto 0px;font-family:"Tusker","Averta",fallback;font-size:24px;line-height:24px;font-weight:600;text-align:center;color:#000;border:2px solid #000;box-sizing:border-box !important;}
 	.brcEventCard[data-tickettype='GeneralPublic'] .brcCardBtn{background:url('https://s1.ticketm.net/tm/en-au/img/static/brc/brc_rightArrow_d_img.svg') no-repeat,var(--brc-grey);background-position:top 10px right 25px;background-size:auto 22px;}
@@ -182,11 +183,11 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	/*drop down & buttons*/
 	.brcDropDownMenu{width:100%;height:auto;background:rgba(0,0,0,.95);position: relative;padding:0px 2px 6px 2px;margin:5px 0px 0px 0px;border-radius:0px;text-align: left;display:block;transition: ease-in-out all .3s;border:1px solid #fff;box-sizing: border-box !important;}
 	.brcDropDownBtn{width:calc(100% - 4px);min-height:34px;height:auto;background:none;margin:2px;padding:0px 10px 2px 10px;border-bottom:1px solid #fff;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;text-overflow: ellipsis;position:relative;white-space: wrap;}
-	.brcDropDownBtn h3{font-family:"Averta","Averta",fallback;font-size:18px;line-height:18px;font-weight:500;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
-	.brcDropDownBtn h4{font-family:"Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:left;color:#fff;margin:0;padding:0px 0px 2px 0px;display:inline-block;}	
-	.brcDropDownBtn h2{font-family:"Averta","Averta",fallback;width:90px;font-size:14px;line-height:14px;font-weight:600;text-align:left;color:var(--brc-pink);margin:0;padding:0;display:inline-block;text-transform: uppercase;}	
+	.brcDropDownBtn h3{font-family:"Figtree","Averta","Averta",fallback;font-size:18px;line-height:18px;font-weight:500;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
+	.brcDropDownBtn h4{font-family:"Figtree","Averta",fallback;font-size:16px;line-height:16px;font-weight:600;text-align:left;color:#fff;margin:0;padding:0px 0px 2px 0px;display:inline-block;}	
+	.brcDropDownBtn h2{font-family:"Figtree","Averta","Averta",fallback;width:90px;font-size:14px;line-height:14px;font-weight:600;text-align:left;color:var(--brc-pink);margin:0;padding:0;display:inline-block;text-transform: uppercase;}	
 	.brcDropDownSubHead{width:calc(100% - 4px);height:34px;background:none;margin:2px;padding:2px 5px;display:flex;flex-wrap:nowrap;justify-content: space-between;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;border-bottom:1px solid #fff;}
-	.brcDropDownSubHead h3{font-family:"Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
+	.brcDropDownSubHead h3{font-family:"Figtree","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
 	.brcClearMenuBtn{display:inline-block;font-family:"Tusker","Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:left;color:#fff;background:none;margin:0;padding:2px 4px;text-decoration: underline;cursor:pointer;}
 	.brcDropDownOff{display:none !important;opacity:0 !important;}
 	.brcDropDownOn{display:block !important;opacity:1 !important;}
@@ -201,9 +202,9 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	#brcSortMenu{width: 150px;height:auto;margin:10px 0px 10px 0px;display:block;box-sizing: border-box !important;position: relative;z-index:50;}
 	.brcSortBtn{font-family:"Tusker","Averta",fallback;font-size:14px;line-height:14px;font-weight:600;text-align:right;color:#000;margin:0;padding:5px;text-decoration: underline;cursor:pointer;user-select:none;}
 	.brcSortDropDown{width:150px;height:auto;background:#fff;position: absolute;top:25px;right:0px;padding:10px 0px 6px 0px;border:1px solid #000;border-radius:0px;text-align: left;display:none;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;transition: ease-in-out all .3s;}
-	.brcSortDropDown h3{font-family:"Tusker","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#585858;margin:0;padding:0px 0px 10px 10px;display:inline-block;}
+	.brcSortDropDown h3{font-family:"Figtree","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#585858;margin:0;padding:0px 0px 10px 10px;display:inline-block;}
 	.sortRadioBtn{width:calc(100% - 4px);height:25px;background:#fff;margin:2px;padding:2px 5px;border-radius:5px;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;}
-	.sortRadioBtn h4{font-family:"Tusker","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0 ;display:inline-block;}
+	.sortRadioBtn h4{font-family:"Figtree","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0 ;display:inline-block;}
 	.brcRadioBtn{width:15px;height:15px;display:inline-block;margin:0px 5px 0px 0px;padding:0px;border-radius:15px;box-sizing:border-box !important;}
 	.brcRadioBtnOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/brc/brc_radio_on_img.svg")center right no-repeat,#000;background-size:15px;}
 	.brcRadioBtnOff{background:#fff;box-shadow:inset 0px 0px 0px 3px #585858;}
@@ -226,8 +227,8 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 
 	#brcSubHeader{display:flex;justify-content: space-between;align-items: center;}
 	#brcCounter{width: 150px;height:auto;display:inline-block;background:#fff;padding:0px 0px 0px 0px;margin:10px 0px 10px 0px;text-align:left;border:1px solid #000;box-sizing: border-box !important;}
-	#brcEventCount{font-family:"Averta",fallback;font-size:15px;line-height:15px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
-	#brcEventCountTotal{font-family:"Averta",fallback;font-size:15px;line-height:15px;font-weight:600;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+	#brcEventCount{font-family:"Figtree","Averta",fallback;font-size:15px;line-height:15px;font-weight:500;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
+	#brcEventCountTotal{font-family:"Figtree","Averta",fallback;font-size:15px;line-height:15px;font-weight:600;text-align:center;color:#fff;text-transform:uppercase;margin:0;padding:0px 0px;display:inline-block;}
 	.brcCounterWrap{width:60px;height:24px;background:#000;padding:4px 0px;display:inline-block;text-align:center;color:#000 !important;/*border-right:1px solid #000;*/box-sizing: border-box !important;}
 	.brcCounterWrap p{color:#fff !important;padding:0px 1px!important;margin:0px !important;}
 	#brcCounter p{display:inline-block;font-family:"Tusker","Averta",fallback;font-size:14px;line-height:14px;font-weight:500;text-align:center;color:#000;margin:0;padding:0px 10px 0px 0px;}
@@ -242,23 +243,23 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	.brcGeneralPublicWrap .brcTicketType{background:var(--brc-grey);}
 	.brcBRCMemberWrap{background:var(--brc-lpink);}
 	.brcBRCMemberWrap .brcTicketType{background:var(--brc-pink);}
-	.brcTicketType{width:150px;height:26px;border-radius:0px 0px 15px 0px;font-family:"Averta",fallback;font-size:14px;line-height:14px;font-weight:600;text-align:left;color:#000;margin:0;padding:7px 12px;box-sizing: border-box !important;}
+	.brcTicketType{width:150px;height:26px;border-radius:0px 0px 15px 0px;font-family:"Figtree","Averta",fallback;font-size:14px;line-height:14px;font-weight:700;text-align:left;text-transform:uppercase;color:#000;margin:0;padding:7px 12px;box-sizing: border-box !important;}
 	.brcCardMid{width:100%;max-width:300px;height:auto;min-height: 105px;display:flex;flex-wrap: wrap;align-items: flex-start;justify-content: center;margin:0px;padding:0px 12px 0px 12px;position:relative;box-sizing: border-box !important;}
 	.brcRaceDay{width:100%;max-width:300px;height:auto;margin:0px;padding:0px;position:relative;box-sizing: border-box !important;}
 	.brcRaceDay h1{font-family:"Tusker","Averta",fallback;font-size:22px;line-height:22px;font-weight:500;text-align:left;color:#676767;margin:0;padding:24px 0px 12px 0px;text-transform: uppercase;}
 	.brcEventName{width:100%;max-width:300px;height:auto;margin:0px;padding:0px;position:relative;box-sizing: border-box !important;}
-	.brcEventName h2{font-family:"Tusker","Averta",fallback;font-size:24px;line-height:24px;font-weight:700;text-align:left;color:#000;margin:0;padding:0px 0px 12px 0px;text-transform: uppercase;}
+	.brcEventName h2{font-family:"Figtree","Averta",fallback;font-size:24px;line-height:24px;font-weight:700;text-align:left;color:#000;margin:0;padding:0px 0px 12px 0px;text-transform: uppercase;}
 	.brcCardBot{width:100%;max-width:300px;height:auto;display:flex;flex-wrap: wrap;align-items: flex-start;justify-content:  space-between;margin:0px;padding:0px 12px 12px 12px;position:relative;box-sizing: border-box !important;}
 	.brcCardDiv{width:100%;height:2px;margin:0px auto 12px;display:block;background:#000;}
 	.brcCardHalfDiv{width:134px;height:2px;margin:0px auto 12px;display:inline-block;background:#000;}
 	.brcCardVenue{width:100%;max-width:300px;height:30px;margin:0px;padding:3px 0px 12px 28px;background:url("https://s1.ticketm.net/tm/en-au/img/static/brc/brc_loc_d_ico.svg") no-repeat;background-position:left -1px top 0px;background-size:20px 20px;position:relative;box-sizing: border-box !important;}
-	.brcCardVenue h1{font-family:"Tusker","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0px 0px;}
+	.brcCardVenue h1{font-family:"Figtree","Averta",fallback;font-size:16px;line-height:16px;font-weight:700;text-align:left;color:#000;margin:0;padding:0px 0px;}
 	.brcCardDate{width:48%;max-width:138px;height:30px;margin:0px;padding:3px 0px 0px 28px;background:url("https://s1.ticketm.net/tm/en-au/img/static/brc/brc_cal_d_ico.svg") no-repeat;background-position:left 0px top 0px;background-size:18px 18px;position:relative;box-sizing: border-box !important;}
-	.brcCardDate h1{font-family:"Tusker","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0px 0px;}
+	.brcCardDate h1{font-family:"Figtree","Averta",fallback;font-size:16px;line-height:16px;font-weight:700;text-align:left;color:#000;margin:0;padding:0px 0px;}
 	.brcCardPrice{width:48%;max-width:138px;height:30px;margin:0px;padding:0px 0px 0px 0px;display:flex;flex-wrap:nowrap;justify-content: space-around;position:relative;box-sizing: border-box !important;}
 	.brcCardPrice h1{font-family:"Tusker","Averta",fallback;font-size:22px;line-height:22px;font-weight:500;text-align:center;color:#585858;margin:0;padding:0px 0px;}
-	.brcCardPrice h2{font-family:"Tusker","Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#000;margin:0;padding:8px 0px 0px 0px;}
-	.brcCardPrice h3{font-family:"Tusker","Averta",fallback;font-size:12px;line-height:12px;font-weight:500;text-align:center;color:#000;margin:0;padding:0px 0px;}
+	.brcCardPrice h2{font-family:"Figtree","Averta",fallback;font-size:12px;line-height:12px;font-weight:700;text-align:center;color:#000;margin:0;padding:8px 0px 0px 0px;}
+	.brcCardPrice h3{font-family:"Figtree","Averta",fallback;font-size:12px;line-height:12px;font-weight:700;text-align:center;color:#000;margin:0;padding:0px 0px;}
 	.brcCardBot a{width:100%;height:auto;text-decoration: none;}
 	.brcCardBtn{width:100%;height:44px;padding:9px 0px;margin:0px auto 0px;font-family:"Tusker","Averta",fallback;font-size:24px;line-height:24px;font-weight:600;text-align:center;color:#000;border:2px solid #000;box-sizing:border-box !important;}
 	.brcEventCard[data-tickettype='GeneralPublic'] .brcCardBtn{background:url('https://s1.ticketm.net/tm/en-au/img/static/brc/brc_rightArrow_d_img.svg') no-repeat,var(--brc-grey);background-position:top 10px right 25px;background-size:auto 22px;}
@@ -454,7 +455,7 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 							//let sessionType = event.session_type.replace(/\s/g, '');//removes spaces
 							//let sessionTypeCase = event.session_type.toLowerCase();
 							let eventdate = new Date(event.event_date)
-							let options = { weekday: 'short', day: '2-digit', month: 'short', year: 'numeric' ,  timeZone: "Australia/Melbourne"};
+							let options = { weekday: 'short', day: '2-digit', month: 'short',  timeZone: "Australia/Melbourne"};
 							let eventDateShort = new Intl.DateTimeFormat('en-AU', options).format(eventdate).replace(',', '');
 							let ticketType = event.event_type_category.replace(/\s/g, '');//removes spaces
 							let sortDate = event.event_date.replace("-","").replace("-","");
