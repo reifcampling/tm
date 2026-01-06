@@ -126,11 +126,11 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	.brcEventHero {width:298px;height:150px;max-height:150px;background:url('https://s1.ticketm.net/tm/en-au/img/static/brc/brc_secondaryLogo_img.svg') no-repeat center center, #000;background-size:auto 70%;border-bottom:2px solid #000;}
 	.brcEventHero img {width:100%;height:auto;display:block;margin:0 auto;}
 	.brcTicketTypeWrap{width:100%;height:26px;margin:0;padding:0;text-align: left;}
-	.brcGeneralPublicWrap{background:var(--brc-lgrey);}
+	.brcGeneralPublicWrap{background:var(--brc-lgrey);display:none;}
 	.brcGeneralPublicWrap .brcTicketType{background:var(--brc-grey);}
-	.brcBRCMemberWrap{background:var(--brc-lpink);}
-	.brcBRCMemberWrap .brcTicketType{background:var(--brc-pink);}
-	.brcBothWrap{background:var(--brc-lpink);}
+	.brcMembersWrap{background:var(--brc-lpink);}
+	.brcMembersWrap .brcTicketType{background:var(--brc-pink);}
+	.brcBothWrap{background:var(--brc-lpink);display:none;}
 	.brcBothWrap .brcTicketType{background:var(--brc-pink);}	
 	.brcTicketType{width:150px;height:26px;border-radius:0px 0px 15px 0px;font-family:"Figtree","Averta",fallback;font-size:14px;line-height:14px;font-weight:700;text-align:left;color:#000;margin:0;padding:6px 12px;text-transform:uppercase;box-sizing: border-box !important;}
 	.brcCardMid{width:100%;max-width:300px;height:auto;min-height: 105px;display:flex;flex-wrap: wrap;align-items: flex-start;justify-content: center;margin:0px;padding:0px 12px 0px 12px;position:relative;box-sizing: border-box !important;}
@@ -152,9 +152,9 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	.brcCardBot a{width:100%;height:auto;text-decoration: none;}
 	.brcCardBtn{width:100%;height:44px;padding:9px 0px;margin:0px auto 0px;font-family:"Figtree","Averta",fallback;font-size:24px;line-height:24px;font-weight:700;text-align:center;color:#000;border:2px solid #000;box-sizing:border-box !important;}
 	.brcEventCard[data-tickettype='GeneralPublic'] .brcCardBtn{background:url('https://s1.ticketm.net/tm/en-au/img/static/brc/brc_rightArrow_d_img.svg') no-repeat,var(--brc-grey);background-position:top 10px right 25px;background-size:auto 22px;}
-	.brcEventCard[data-tickettype='BRCMember'] .brcCardBtn{background:var(--brc-pink);}	
+	.brcEventCard[data-tickettype='Members'] .brcCardBtn{background:var(--brc-pink);}	
 }
-	
+
 /*mobile & tablet */
 @media only screen and (min-width: 0px) and (max-width: 999.99px){	
 
@@ -241,10 +241,12 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	.brcEventHero {width:298px;height:150px;max-height:150px;background:url('https://s1.ticketm.net/tm/en-au/img/static/brc/brc_secondaryLogo_img.svg') no-repeat center center, #000;background-size:auto 70%;border-bottom:2px solid #000;}
 	.brcEventHero img {width:100%;height:auto;display:block;margin:0 auto;}
 	.brcTicketTypeWrap{width:100%;height:26px;margin:0;padding:0;text-align: left;}
-	.brcGeneralPublicWrap{background:var(--brc-lgrey);}
+	.brcGeneralPublicWrap{background:var(--brc-lgrey);display:none;}
 	.brcGeneralPublicWrap .brcTicketType{background:var(--brc-grey);}
-	.brcBRCMemberWrap{background:var(--brc-lpink);}
-	.brcBRCMemberWrap .brcTicketType{background:var(--brc-pink);}
+	.brcMembersWrap{background:var(--brc-lpink);display:none;}
+	.brcMembersWrap .brcTicketType{background:var(--brc-pink);}
+	.brcBothWrap{background:var(--brc-lpink);display:none;}
+	.brcBothWrap .brcTicketType{background:var(--brc-pink);}
 	.brcTicketType{width:150px;height:26px;border-radius:0px 0px 15px 0px;font-family:"Figtree","Averta",fallback;font-size:14px;line-height:14px;font-weight:700;text-align:left;text-transform:uppercase;color:#000;margin:0;padding:7px 12px;box-sizing: border-box !important;}
 	.brcCardMid{width:100%;max-width:300px;height:auto;min-height: 105px;display:flex;flex-wrap: wrap;align-items: flex-start;justify-content: center;margin:0px;padding:0px 12px 0px 12px;position:relative;box-sizing: border-box !important;}
 	.brcRaceDay{width:100%;max-width:300px;height:auto;margin:0px;padding:0px;position:relative;box-sizing: border-box !important;}
@@ -265,7 +267,7 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	.brcCardBot a{width:100%;height:auto;text-decoration: none;}
 	.brcCardBtn{width:100%;height:44px;padding:9px 0px;margin:0px auto 0px;font-family:"Figtree","Averta",fallback;font-size:24px;line-height:24px;font-weight:700;text-align:center;color:#000;border:2px solid #000;box-sizing:border-box !important;}
 	.brcEventCard[data-tickettype='GeneralPublic'] .brcCardBtn{background:url('https://s1.ticketm.net/tm/en-au/img/static/brc/brc_rightArrow_d_img.svg') no-repeat,var(--brc-grey);background-position:top 10px right 25px;background-size:auto 22px;}
-	.brcEventCard[data-tickettype='BRCMember'] .brcCardBtn{background:var(--brc-pink);}	
+	.brcEventCard[data-tickettype='Members'] .brcCardBtn{background:var(--brc-pink);}	
 }
 
 @media only screen and (min-width: 1300px) and (max-width: 3840px){	
@@ -338,7 +340,7 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 
 			<div data-filterbtn="Both" class="brcDropDownBtn brcFilterBtnOff brcTicketFilterBtn"><div class="brcCheckBox brcCheckBoxOff"></div><h4>Both</h4></div>	
 			<div data-filterbtn="GeneralPublic" class="brcDropDownBtn brcFilterBtnOff brcTicketFilterBtn"><div class="brcCheckBox brcCheckBoxOff"></div><h4>General Public</h4></div>
-			<div data-filterbtn="BRCMember" class="brcDropDownBtn brcFilterBtnOff brcTicketFilterBtn"><div class="brcCheckBox brcCheckBoxOff"></div><h4>Members</h4></div>
+			<div data-filterbtn="Members" class="brcDropDownBtn brcFilterBtnOff brcTicketFilterBtn"><div class="brcCheckBox brcCheckBoxOff"></div><h4>Members</h4></div>
 		</div> 
 		</div>		
 	</div><div id="brcResetAllFeatMob">RESET SELECTION</div></div><!----end search bar ----></div><!---end header--->
