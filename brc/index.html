@@ -415,6 +415,7 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	//sets
 	raceDayNameSet = new Set()
 	eventNameSet = new Set()
+	raceDayAndDateSet = new Set()
 	dateSet  = new Set()
 	raceDaysAndDatesMap = new Map()
 
@@ -458,22 +459,25 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 							//let sessionType = event.session_type.replace(/\s/g, '');//removes spaces
 							//let sessionTypeCase = event.session_type.toLowerCase();
 							let eventdate = new Date(event.event_date)
-							console.log(event.event_date)
-							console.log(eventdate)
+							//console.log(event.event_date)
+							//console.log(eventdate)
 							let options = { weekday: 'short', day: '2-digit', month: 'short', timeZone: "Australia/Melbourne"};
 							let eventDateShort = new Intl.DateTimeFormat('en-AU', options).format(eventdate).replace(',', '');
 							let ticketType = event.event_type_category.replace(/\s/g, '');//removes spaces
 							let sortDate = event.event_date.replace("-","").replace("-","");
 							//sets + map
 							raceDayNameSet.add(event.event_day_desc)
+
 							eventNameSet.add(event.offer_desc)
 							dateSet.add(event.event_date)
-							raceDaysAndDatesMap.set(event.event_day_desc+"",""+event.event_date)
 
+							raceDaysAndDatesMap.set(eventDateShort+", "+event.event_day_desc+"",""+event.event_date)							
+							raceDayAndDateSet.add(eventDateShort+", "+event.event_day_desc)
+							//console.log(raceDaysAndDatesMap)
 							//build card
 							//top span
 								//"+event.image_ref_link+"
-							let  newEvent = $j("<!--event card--><div class='brcEventCard' data-eventcode='"+event.tm_event_name+"' data-raceday='"+event.event_day_desc+"' data-venue='"+event.venue_name_desc+"' data-tickettype='"+ticketType+"' data-eventname='"+event.offer_desc+"' data-sortdate='"+sortDate+"'><!--card top--><div class='brcCardTop'><div class='brcEventHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/brc/heroimg/"+event.image_ref_link+".jpg' alt='"+event.event_desc+"'></div><div class='brcTicketTypeWrap brc"+ticketType+"Wrap'><div class='brcTicketType'>"+event.event_type_category+"</div></div></div><!--card mid--><div class='brcCardMid'><div class='brcRaceDay'><h1>"+event.event_day_desc+"</h1></div><div class='brcEventName'><h2>"+event.offer_desc+"</h2></div></div><!--card bot--><div class='brcCardBot'><div class='brcCardDiv'></div><div class='brcCardDate'><h1>"+eventDateShort+"</h1></div><div class='brcCardVenue'><h1>"+event.venue_name_desc+"</h1></div><div class='brcCardPrice'><h3>FROM:</h3><h1>"+event.price_from+"</h1><h2>"+event.unit+"</h2></div><div class='brcCardHalfDiv'></div><div class='brcCardHalfDiv'></div><a href='"+event.buy_link+"' target='_blank'><div class='brcCardBtn'>"+event.button_text+"</div></div></a></div>");	
+							let  newEvent = $j("<!--event card--><div class='brcEventCard' data-eventcode='"+event.tm_event_name+"' data-date='"+event.event_date+"' data-raceday='"+event.event_day_desc+"' data-venue='"+event.venue_name_desc+"' data-tickettype='"+ticketType+"' data-eventname='"+event.offer_desc+"' data-sortdate='"+sortDate+"'><!--card top--><div class='brcCardTop'><div class='brcEventHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/brc/heroimg/"+event.image_ref_link+".jpg' alt='"+event.event_desc+"'></div><div class='brcTicketTypeWrap brc"+ticketType+"Wrap'><div class='brcTicketType'>"+event.event_type_category+"</div></div></div><!--card mid--><div class='brcCardMid'><div class='brcRaceDay'><h1>"+event.event_day_desc+"</h1></div><div class='brcEventName'><h2>"+event.offer_desc+"</h2></div></div><!--card bot--><div class='brcCardBot'><div class='brcCardDiv'></div><div class='brcCardDate'><h1>"+eventDateShort+"</h1></div><div class='brcCardVenue'><h1>"+event.venue_name_desc+"</h1></div><div class='brcCardPrice'><h3>FROM:</h3><h1>"+event.price_from+"</h1><h2>"+event.unit+"</h2></div><div class='brcCardHalfDiv'></div><div class='brcCardHalfDiv'></div><a href='"+event.buy_link+"' target='_blank'><div class='brcCardBtn'>"+event.button_text+"</div></div></a></div>");	
 								
 							//append to div
 
@@ -511,28 +515,23 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 
 //construct race day list  > append to drop down
 function createRaceDayList(){
-	let buttonArray = Array.from(raceDayNameSet);
+	let buttonArray = Array.from(raceDayAndDateSet);
 	let raceDayListDiv = $j("#brcRacedayMenu");
-	raceDayList = Array.from(raceDayNameSet)//.join(',').replace(/,/g, '/').replace(/'/g, '').split("/");
-
+	raceDayList = Array.from(raceDayNameSet)
+	dateList = Array.from(dateSet)
 	let options = { weekday: 'short', day: '2-digit', month: 'short',timeZone: "Australia/Melbourne" };
-	let optionsMedium = { weekday: 'short', day: '2-digit', month: 'short', year:'numeric',timeZone: "Australia/Melbourne" };
-	let optionsDataTag = { year: '2-digit', month: '2-digit',day: '2-digit',timeZone: "Australia/Melbourne" };
-
-	//run through array and remove spaces
-	/*
-	for (var iX = 0; iX < raceDayList.length; iX++) {
-		raceDayList[iX] = raceDayList[iX].replace(/\s/g, '');
-	}*/
+	//let optionsMedium = { weekday: 'short', day: '2-digit', month: 'short', year:'numeric',timeZone: "Australia/Melbourne" };
+	//let optionsDataTag = { year: '2-digit', month: '2-digit',day: '2-digit',timeZone: "Australia/Melbourne" };
 
 	$j.each(buttonArray, function(index,value){
-		let raceName = value//.replace(/[^\w\s]/gi, '').replace(/\s/g, '');//removes special characters and spaces
-		let raceDateLong = new Date(raceDaysAndDatesMap.get(raceName))
-		let raceDateShort = new Intl.DateTimeFormat('en-AU', options).format(raceDateLong).replace(',','');
-		let raceDateMedium = new Intl.DateTimeFormat('en-AU', optionsMedium).format(raceDateLong);
-		let raceDateData = raceDaysAndDatesMap.get(raceName).replace('-','').replace('-','');//new Intl.DateTimeFormat('en-US', optionsDataTag).format(raceDateLong).replace("/","").replace("/","");
+		let raceName = value//.replace(/[^\w\s]/gi, '').replace(/\s/g, '');//removes special characters and spaces\
 
-		let newButton = $j("<div data-filterbtn='"+raceName+"' class='brcDropDownBtn brcFilterBtnOff brcRaceDayFilterBtn'><div class='brcCheckBox brcCheckBoxOff'></div><h2>"+raceDateShort+"</h2><span class='brcDropDownDot'></span><h4>"+raceName+"</h4></div>");
+		//let raceDateLong = new Date(raceDaysAndDatesMap.get(raceName))
+		//let raceDateShort = new Intl.DateTimeFormat('en-AU', options).format(raceDateLong).replace(',','');
+		//let raceDateMedium = new Intl.DateTimeFormat('en-AU', optionsMedium).format(raceDateLong);
+		let raceDateData = raceDaysAndDatesMap.get(raceName)//.replace('-','').replace('-','');//new Intl.DateTimeFormat('en-US', optionsDataTag).format(raceDateLong).replace("/","").replace("/","");
+		//console.log(raceDaysAndDatesMap)
+		let newButton = $j("<div data-filterbtn='"+raceDateData+"' class='brcDropDownBtn brcFilterBtnOff brcRaceDayFilterBtn'><div class='brcCheckBox brcCheckBoxOff'></div><!--<h2></h2><span class='brcDropDownDot'></span>--><h4>"+raceName+"</h4></div>");
 		//append to drop down
 		raceDayListDiv.append(newButton);
 })
@@ -581,7 +580,7 @@ function  cardsToDisplay(){
 
 		let eventID = $j(this).data('eventcode')
 		if(
-		((jQuery.inArray(raceDay,raceDayList) != -1) || jQuery.inArray("All", raceDayList) != -1) && //Race Day
+		((jQuery.inArray(eventDate,dateList) != -1) || jQuery.inArray("All", dateList) != -1) && //Race date
 		((jQuery.inArray(venueType,venueList) != -1) || jQuery.inArray("All", venueList) != -1)  && //Venue
 		((jQuery.inArray(eventName,eventNameList) != -1) || jQuery.inArray("All", eventNameList) != -1) && //event
 		((jQuery.inArray(ticketType,ticketTypeList) != -1) || jQuery.inArray("All", ticketTypeList) != -1) //ticket type
@@ -807,6 +806,8 @@ let brcResetAll = function(){
 	//reset arrays
 	raceDayList.length = 0;
   	raceDayList.push("All")
+	dateList.length = 0;
+	dateList.push("All")
 	venueList.length = 0;
 	venueList.push("All")	
 	eventNameList.length = 0;
@@ -859,7 +860,7 @@ let scrollToEventsHosp = function(){
 /*clear menus*/	
 //race day
 $j(document).on('click', '#clearRaceDayFilters', function () {	
-		raceDayList.length = 0;
+		dateList.length = 0;
 		$j("#brcRacedayMenu .brcRaceDayFilterBtn").removeClass("brcilterBtnOn").addClass("brcFilterBtnOff");
 		$j("#brcRacedayMenu .brcRaceDayFilterBtn").children(".brcCheckBox").removeClass("brcCheckBoxOn").addClass("brcCheckBoxOff");
 
@@ -899,12 +900,12 @@ $j(document).on('click', '#clearTicketFilters', function () {
 $j(document).on('click', "#brcRacedayMenu .brcRaceDayFilterBtn", function () {
 var toggleRaceDay = $j(this).data('filterbtn');
 		
-		if((jQuery.inArray(toggleRaceDay, raceDayList) != -1)){
+		if((jQuery.inArray(toggleRaceDay, dateList) != -1)){
 			//unselect
-			raceDayList.splice($j.inArray(toggleRaceDay, raceDayList), 1 );		
+			dateList.splice($j.inArray(toggleRaceDay, dateList), 1 );		
 		} else {
 			//select
-			raceDayList.push(toggleRaceDay)	
+			dateList.push(toggleRaceDay)	
 		}	
 		 cardsToDisplay();
 		raceDayCounter();
@@ -916,14 +917,14 @@ $j(document).on('click', "#brcRacedayMenu .brcRaceDayFilterBtn", function () {
 				if(btnTarget == "All" && $j("#racedayFilterAllBtn").hasClass('brcFilterBtnOn')){ //the target all button classes are reversed because the main toggle happens first.
 					$j(this).siblings(".brcRaceDayFilterBtn").removeClass('brcFilterBtnOn').addClass('brcFilterBtnOff');
 					$j(this).siblings(".brcRaceDayFilterBtn").children('.brcCheckBox').removeClass('brcCheckBoxOn').addClass('brcCheckBoxOff');
-					raceDayList.length = 0;
-					raceDayList.push("All")
+					dateList.length = 0;
+					dateList.push("All")
 				}
 				//unselect
 				else if ((btnTarget != "All") && ($j(this).hasClass('brcFilterBtnOn'))){
 					$j("#racedayFilterAllBtn").removeClass('brcFilterBtnOn').addClass('brcFilterBtnOff');
 					$j("#racedayFilterAllBtn").children('.brcCheckBox').removeClass('brcCheckBoxOn').addClass('brcCheckBoxOff');
-					raceDayList = jQuery.grep(raceDayList, function(value) {
+					dateList = jQuery.grep(dateList, function(value) {
 						return value != "All";				
 					});
 				}
@@ -1051,7 +1052,7 @@ let venueCounter = function(){
 	}
 }
 let raceDayCounter = function(){
-	let raceDayCountLength = jQuery.grep(raceDayList, function(value) {
+	let raceDayCountLength = jQuery.grep(dateList, function(value) {
 						return value != "All";});
 	let raceDayCount = raceDayCountLength.length			
 	document.getElementById('brcRaceDayMenuCounter').innerHTML = raceDayCount.toString();
@@ -1132,6 +1133,8 @@ let emptyFullListsOnLoad = function(){
 	dateList.length = 0;
 	raceDayList.length = 0;
 	raceDayList.push("All")
+	dateList.length = 0;
+	dateList.push("All")	
 	eventNameList.length = 0;
 	eventNameList.push("All")
 	venueList.length = 0;
