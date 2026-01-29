@@ -1,0 +1,755 @@
+[% # text to be displayed within <title></title>
+page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Tickets Official Ticketmaster site |" %]
+[% static_has_responsive_header_footer = 1; enable_leader_board = 0; %]
+[% PROCESS "layout/frame/top.tt" %]
+<!--cut for on sale----->
+ <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />
+ <!--delete for on sale-->
+<!--libs--->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link href="https://s1.ticketm.net/tm/en-au/img/static/fonts/averta.css" type="text/css" rel="stylesheet" />
+
+<style type="text/css">
+	/*css var*/
+	:root {
+		--sres-purp:rgba(98,47,141,1);
+		--sres-dpurp:rgb(78, 34, 107);
+		--sres-yel:#fdb94d;
+		--sres-cream:#FEFCEE;
+	  }
+@media only screen and (min-width: 0px) and (max-width: 999px){	
+	.frame{width: 100% !important;background-color: #FEFCEE !important} /*FIX FOR TM HEADER CODE*/ 
+	#mainContent {background-color:#FEFCEE!important;padding: 0px 0px 0px 0px !important}
+}
+@media only screen and (min-width: 1000px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE */ 
+	#mainContent {padding: 0px 0px 0px 0px !important;background-color:#FEFCEE !important;}
+	body{background-color: #FEFCEE;}
+}	
+
+
+@media only screen and (min-width: 1000px){	
+
+	#sresContent{width:100%;height:auto;position:relative;margin:0px auto;background:var(--sres-cream);background-size:contain;padding:0px 0px 1px 0px;z-index: 9;box-sizing:  border-box !important;}
+	#sresHeader{width:100%;height:500px;margin:0px;padding:0px;position: relative;background:url("sres26_header.webp") no-repeat center center;background-size:cover;overflow:visible;border-bottom:10px solid var(--sres-purp);z-index:11;box-sizing:  border-box !important;}
+
+	#sresLogo{width:330px;height:230px;margin:0 auto 0;display:block;transform:translate(-550px, 100px);position: relative;z-index: 11;text-align: center;}
+	#sresLogo img{width:auto;margin:0px 10px; height:100%;position: relative;z-index: 11;display:inline-block;}
+	
+	#sresMenuWrap{width:900px;height:50px;border-radius:10px;background:rgba(98,47,141,.8);margin:10px auto;display:block;position: absolute;top:0;left:0;right:0;z-index: 100;}
+	#sresMenu{width:100%;height:50px;margin:0px;display:flex;flex-wrap:nowrap;}
+	#sresMenu button{font-family:"Averta","Open Sans",fallback;font-size:18px;line-height:18px;font-weight:800;text-align:center;color:#fff;margin:0px auto 0px;padding:0px 0px;background:none;outline:0;border:0;box-sizing:  border-box !important;}
+
+	#sresSearchBarWrap{width:610px;height:70px;margin:50px auto 0px;display:block;box-sizing:  border-box !important;}
+	#sresSearchBar{width:auto;height:auto;margin:0;display:flex;flex-wrap: nowrap;column-gap:10px;padding:0px;box-sizing:  border-box !important;}
+	.sresSearchBtn{width:300px;height:70px;margin:0;padding:0px;background:var(--sres-yel);border:2px solid #fff;display:flex;flex-wrap: nowrap;align-items: center;position:relative;box-sizing:  border-box !important;user-select:none;cursor:pointer;}
+	.sresBtnIco{width:34px;height:34px;margin:0px 0px 0px 30px;padding:0;display:inline-block;}
+	.sresBtnIco img{width:100%;height:auto;}
+	.sresSearchBtn h1{font-family:"Averta","Open Sans",fallback;font-size:36px;line-height:36px;font-weight:800;text-align:center;color:var(--sres-purp);margin:0px auto 0px;padding:0px 0px;display:inline-block;}
+	.sresBtnArrow{width:20px;height:auto;margin:0 30px 0px 0px;padding:0;display:inline-block;transition: ease-in-out .6s all;}
+	.sresBtnArrow img{width:100%;height:auto;}
+	.sresBtnArrowRot{transform: rotate(180deg);}
+	.sresLeftBtn{border-radius:10px 0px 0px 10px;}
+	.sresRightBtn{border-radius:0px 10px 10px 0px;}
+	#sresCalWrap{width:300px;height:auto;margin:0;padding:0;background:#fff;box-shadow: 0px 4px 0px 2px rgb(98 47 141 / 20%);border-radius:10px;border:solid var(--sres-purp);border-width:2px 2px 15px 2px ;position:absolute;top:75px;left:-2px;right:0px;cursor:default;box-sizing:  border-box !important;}
+	.sresDropDown{width:300px;height:auto;margin:0;padding:0 0px 10px 0px;background:#fff;box-shadow: 0px 4px 0px 2px rgb(98 47 141 / 20%);border-radius:10px;border:solid var(--sres-purp);border-width:2px 2px 15px 2px ;position:absolute;top:75px;left:-2px;right:0px;cursor:default;box-sizing:  border-box !important;}
+	.sresDropDownOn{display:block;}
+	.sresDropDownOff{display:none;}
+	.sresDropDownHeader{width:100%;height:35px;margin:0;padding:0;background:#EBEBEB;border-radius:10px 10px 0px 0px;}	
+	.sresDropDownHeader h2{font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:800;text-align:left;color:#000;margin:0px auto 0px;padding:10px 15px;box-sizing:  border-box !important;}
+	.sresDayWrap{width:calc(100% - 20px);height:auto;display:flex;white-space: nowrap;text-align: center;margin:10px 10px 0px 10px;flex-wrap: nowrap;justify-content: space-between;flex-direction: row;box-sizing:  border-box !important;}
+	.sresDay{width:32px;height:auto;font-family:"Averta","Open Sans",fallback;font-size:20px;line-height:20px;font-weight:700;text-align:center;color:#000;margin:0px auto 0px;padding:0px 0px;box-sizing:  border-box !important;}
+	.sresCalDay{width:32px;height:32px;font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:700;text-align:center;margin:0px auto 0px;padding:0px 0px;border-radius:20px;box-sizing:  border-box !important;display:flex;justify-content: center;align-items: center;user-select:none;}
+	.noDay{width:32px;height:32px;font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:700;text-align:center;margin:0px auto 0px;padding:0px 0px;border-radius:20px;box-sizing:  border-box !important;display:flex;justify-content: center;align-items: center;background:#D9D9D9;box-shadow: 2px 2px 0px 1px rgb(0 0 0 / 06%);color:#868686;user-select:none;}
+
+	.calDayOn.weekDay{background:rgb(128 77 171);box-shadow: 2px 2px 0px 1px rgb(98 47 141 / 20%);border:2px solid rgb(50 20 75);color:#fff;cursor:pointer;}
+	.calDayOn.easterDay{background:#ffd28a;box-shadow: 2px 2px 0px 1px rgb(253 185 77 / 40%);border:2px solid #f19400;color:#000;cursor:pointer;}
+	.calDayOff.weekDay{background:var(--sres-purp);box-shadow: 2px 2px 0px 1px rgb(98 47 141 / 20%);color:#fff;cursor:pointer;}
+	.calDayOff.easterDay{background:var(--sres-yel);box-shadow: 2px 2px 0px 1px rgb(253 185 77 / 40%);color:#000;cursor:pointer;}
+	.sresCalKey{width:100%;height:auto;display:block;margin:0px auto;padding:10px 0px;box-sizing:  border-box !important;}
+	.sresCalRow{width:calc(100% - 20px);height:auto;display:flex;justify-content: flex-start;align-items: center;flex-wrap: nowrap;text-align: center;margin:5px 10px 0px 15px;box-sizing:  border-box !important;}
+	.sresCalRow h3{height:auto;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:14px;line-height:14px;font-weight:bold;text-align:left;color:#000;margin:0px 0px 0px 0px;padding:0px 0px;box-sizing:  border-box !important;}
+	.sresEasterKey{width:20px;height:20px;background:var(--sres-yel);display:inline-block;margin:0px 10px;border-radius:20px;}
+
+	.sresDropDown h4{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:14px;line-height:14px;font-weight:bold;text-align:left;color:#535353;margin:10px 0px 0px 10px;padding:0px 0px;box-sizing:  border-box !important;}
+	.sresDropDownBtn{width:calc(100% - 20px);height:auto;display:flex;white-space: nowrap;text-align: center;margin:10px 0px 0px 0px;padding:0px 10px 0px 10px;flex-wrap: nowrap;justify-content: space-between;flex-wrap: wrap;justify-content: flex-start;flex-direction: row;box-sizing: border-box !important;align-content: center;align-items: center;cursor:pointer;}
+	.sresDropDownBtn h3{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#000;margin:0px 0px 0px 10px;padding:0px 0px;display:inline-block;box-sizing:  border-box !important;}
+	.sresCheckBox{width:16px;height:16px;margin:0px;padding:0;border-radius:2px;display:inline-block;box-shadow: 2px 2px 0px 1px rgb(98 47 141 / 20%);box-sizing: border-box !important;}
+	.sresCheckBoxOn{background:url('sres_tick_w_img.svg') no-repeat,var(--sres-purp);background-size:16px 16px;}
+	.sresCheckBoxOff{border:2px solid var(--sres-purp);}
+	/*event stream*/
+	#sresEvents{width:100%;height:auto;margin:0;padding:0;background:var(--sres-cream);display:block;position:relative;z-index:10;box-sizing:  border-box !important;}
+	#sresEventStream{width:100%;max-width:1300px;margin:0px auto;padding:50px 0px;display:flex;justify-content: center;align-items: stretch;align-content: flex-start;flex-wrap: wrap;column-gap: 20px;row-gap: 20px;box-sizing:  border-box !important;}
+	.sresEventCard{width:300px;height:auto;background:#fff;padding:0px 0px 0px;border-radius:10px;border:2px solid var(--sres-purp);user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;justify-content: space-between;box-sizing: border-box !important;overflow:visible;box-shadow: 0px 8px 0px 4px rgb(98 47 141 / 20%);}
+	.sresCardTop{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:0;position:relative;}
+	.sresCardDate{width:100%;max-width:300px;height:36px;display:flex;justify-content: center;align-items: center;margin:0;padding:0;position:relative;background:var(--sres-purp);border-radius:6px 6px 0px 0px;}
+	.sresCardDate img{width:20px;height:20px;margin:0px 10px 0px 0px;display:inline-block;}
+	.sresCardDate h1{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:16px;font-weight:900;text-align:center;color:#fff;margin:0px 0px 0px 0px;padding:0px 0px;text-transform: uppercase;}
+	.sresCardHero{width:296px;height:157px;margin:0;padding:0;display:block;}
+	.sresCardHero img{width:100%;height:auto;}
+	.sresEasterTag{width:100%;background:var(--sres-yel);margin:0px 0px;padding:0px 0px;box-sizing: border-box !important;display:none;}
+	.sresEasterTag h1{font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:900;text-align:center;color:var(--sres-purp);margin:0px 0px;padding:4px 0px;}
+	.sresEventCard[data-date='2026-04-03'] .sresEasterTag,.sresEventCard[data-date='2026-04-04'] .sresEasterTag,.sresEventCard[data-date='2026-04-05'] .sresEasterTag,.sresEventCard[data-date='2026-04-06'] .sresEasterTag{display:block;}
+	.sresCardMid{width:100%;max-width:300px;height:auto;display:flex;flex-wrap: wrap;align-content: space-between;justify-content: center;margin:0;padding:0;position:relative;}
+	.sresCardTitle{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:30px 10px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:26px;line-height:26px;font-weight:900;text-align:center;color:var(--sres-purp);position:relative;box-sizing: border-box !important;}
+	.sresEventType{width:100%;max-width:300px;height:auto;margin:0;padding:0px 10px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:20px;font-weight:bold;text-align:center;color:#000;position:relative;display:flex;flex-wrap: nowrap;justify-content: center;align-items: center;column-gap:10px;box-sizing: border-box !important;}
+	.sresEventType img{width:34px;height:34px;margin:0;padding:0;display:inline-block;border-radius:10px;box-shadow:0px 2px 0px 1px rgb(98 47 141 / 20%);}
+	.sresCardBot{width:100%;max-width:300px;height:auto;display:flex;flex-wrap: wrap;align-content: space-between;justify-content: center;margin:0;padding:0;position:relative;}
+	.sresInfoBtn{width:120px;height:auto;margin:20px auto;font-family:"Averta","Open Sans",fallback;display:inline-block;border-bottom:4px solid var(--sres-purp);font-size:18px;line-height:18px;font-weight:900;text-align:center;color:var(--sres-purp);}
+	.sresTixBtn{width:100%;margin:0px 0px 10px 0px;padding:10px 20px;background:var(--sres-purp);border-radius:5px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:18px;line-height:18px;font-weight:900;text-align:center;color:#fff;box-sizing:  border-box !important;} 
+	.sresCardBot a{width:calc(100% - 20px);margin:0px auto;display: block;}
+
+	/*upsells*/
+	#sresExtras{width:100%;height:auto;margin:0;padding:50px 0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/sres/2024/sres24_wave_top_w_ico.svg') top -2px center repeat-x , var(--sres-purp);background-size: 80px 20px;display:block;position:relative;z-index:12;box-sizing:  border-box !important;}
+	#sresExtras h3{font-family:"Averta","Open Sans",fallback;display:block;font-size:40px;line-height:40px;font-weight:900;text-align:center;color:var(--sres-cream);margin:0px 0px 0px 0px;padding:0px 40px;text-transform: uppercase;}
+	#sresExtraStream{width:100%;max-width:1300px;margin:0px auto;padding:50px 0px;display:flex;justify-content: center;align-items: stretch;align-content: flex-start;flex-wrap: wrap;column-gap: 20px;row-gap: 30px;box-sizing:  border-box !important;}
+	.sresExtrasCard{width:300px;height:auto;background:#fff;padding:0px 0px 40px 0px;border-radius:10px;border:2px solid var(--sres-dpurp);user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;justify-content: flex-start;box-sizing: border-box !important;overflow:visible;box-shadow: 0px 8px 0px 4px #fefcee61;position: relative;}
+	.sresExtrasCardTop{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:0;position:relative;}
+	.sresExtraHeader{width:100%;max-width:300px;height:44px;display:flex;justify-content: center;align-items: center;margin:0;padding:0;position:relative;background:var(--sres-cream);border-radius:6px 6px 0px 0px;border-bottom:2px solid var(--sres-purp);box-sizing: border-box !important;}
+	.sresExtraHeader h1{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:16px;font-weight:900;text-align:center;color:var(--sres-purp);margin:0px 0px 0px 0px;padding:0px 0px;text-transform: uppercase;}
+	.sresExtraHeader img{width:30px;height:30px;margin:0px 10px 0px 0px;display:inline-block;}
+	.sresExtrasCardHero{width:296px;height:157px;margin:0;padding:0;display:block;}
+	.sresExtrasCardHero img{width:100%;height:auto;}
+	.sresExtrasCardMid{width:100%;max-width:300px;height:auto;display:flex;flex-wrap: wrap;align-content: space-between;justify-content: center;margin:0;padding:0;position:relative;}
+	.sresExtrasCardTitle{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:30px 10px 0px 10px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:26px;line-height:26px;font-weight:bold;text-align:center;color:var(--sres-purp);position:relative;box-sizing: border-box !important;}
+	.sresExtrasCardMid p{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:10px 20px 30px 20px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:18px;line-height:18px;font-weight:normal;text-align:center;color:#000;position:relative;box-sizing: border-box !important;}
+	.sresExtrasCardBot{width:100%;max-width:300px;height:auto;display:flex;flex-wrap: wrap;align-content: space-between;justify-content: center;margin:0;padding:0;}
+	.sresExtrasBtn{width:calc(100% - 20px);margin:0px 0px 0px 0px;padding:10px 20px;background:var(--sres-purp);border-radius:5px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:18px;line-height:18px;font-weight:900;text-align:center;color:#fff;position:absolute;bottom:10px;left:10px;right:0;box-sizing:  border-box !important;}
+	/*lightbox*/
+	 .sresLightboxBg{width:100%;height:100%;margin:0px;position:fixed;background:rgba(0,0,0,.2);backdrop-filter: blur(5px);z-index:201;display:none;top:0;right:0;left:0;justify-content: safe center; align-items: center;flex-direction: column;overflow-y: scroll;}
+	 .sresLightboxCont{width:700px;height:auto;background:#fff;box-shadow: 0px 8px 0px 4px rgb(98 47 141 / 20%);border-radius:10px;border:2px solid var(--sres-purp);box-sizing: border-box !important;position:relative;z-index: 203;display: flex;flex-direction: row;flex-wrap: nowrap;align-content: flex-start;justify-content: center;align-items: flex-start;}
+	 .sresExtrasCard .sresLightboxCont{box-shadow: 0px 8px 0px 4px #fefcee61;}
+	 .sresLbClose{width:100px;height:38px;background:var(--sres-yel);border-radius:5px;border:2px solid var(--sres-purp);font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:20px;font-weight:900;text-align:center;color:var(--sres-purp);margin:0px 0px 0px 0px;padding:6px 0px;text-transform: uppercase;position: absolute;top:-43px;right:0px;cursor:pointer;z-index: 202;box-sizing: border-box !important;}
+	 .sresLbTop{width:40%;max-width:300px;height:100%;display:block;margin:0;padding:0 0px 20px 0px;position:relative;border-radius:10px 0px 0px 0px;background:var(--sres-purp);overflow:hidden;box-sizing: border-box !important;}
+	 .sresLbHero{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:0;position:relative;border-radius:10px 0px 0px 0px;overflow:hidden;}
+	 .sresLbHero img{width:100%;height:auto;}
+	 .sresLbTop h1{margin:20px 0px;padding:0px 0px;font-family:"Averta","Open Sans",fallback;display:block;font-size:30px;line-height:30px;font-weight:900;text-align:center;color:#fff;box-sizing: border-box !important;}
+	 .sresLbHorDiv{width:70%;height:2px;background:#fff;margin:0px auto;display:block;}
+	 .sresLbTicketType{width:100%;max-width:300px;height:auto;display:flex;justify-content: flex-start;align-items: center;margin:0;padding:20px 0px 0px 20px;position:relative;background:var(--sres-purp);border-radius:6px 6px 0px 0px;}
+	 .sresLbTicketType h2{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:24px;line-height:24px;font-weight:600;text-align:center;color:#fff;margin:0px 0px 0px 0px;padding:0px 0px;text-transform: uppercase;}
+	 .sresLbTicketType img{width:20px;height:20px;margin:0px 10px 0px 0px;display:inline-block;}
+	 .sresLbBot{width:60%;height:auto;display:block;margin:0;padding:0px 0px 20px 0px;border-radius:0px 10px 0px 0px;position:relative;}
+	 .sresLbBot p{width:100%;height:auto;display:block;margin:0;padding:20px;font-family:"Averta","Open Sans",fallback;display:block;font-size:18px;line-height:22px;font-weight:normal;text-align:left;color:#000;position:relative;box-sizing: border-box !important;}
+	.sresLbBot li{width:100%;height:auto;display:block;margin:0;padding:10px 0px 0px 20px;font-family:"Averta","Open Sans",fallback;display:block;font-size:18px;line-height:18px;font-weight:normal;text-align:left;color:#000;position:relative;box-sizing: border-box !important;}
+	.sresLbBot ul{width:100%;height:auto;display:block;margin:0;padding:0px;font-family:"Averta","Open Sans",fallback;display:block;font-size:18px;line-height:18px;font-weight:normal;text-align:left;color:#000;position:relative;box-sizing: border-box !important;}
+	  
+	/*errors*/
+	#sresEventErrors{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;padding:0px;position: relative; box-sizing:border-box !important;display:flex;flex-wrap: nowrap;justify-content: center;flex-direction: row;}
+	.sresErrorMessage{width:94%;max-width:500px;height:auto;margin:0px;padding:20px;border-radius:10px;background:#efefef;display: none;box-sizing:border-box !important;text-align: center;}
+	.sresErrorMessage h1{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:22px;line-height:22px;font-weight:700;color:#000;padding:1px 0px 16px 0px;margin:0px;box-sizing:border-box !important;}
+	.sresErrorMessage p{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:16px;font-weight:400;color:var(--sres-purp);padding:0px 0px 0px 0px;margin:0px;box-sizing:border-box !important;line-height: 24px;}
+	.sresErrorMessage a{text-decoration:none;}
+	.sresErrorResetBtn{width:195px;height:auto;display:inline-block;padding:16px 5px;margin:20px 5px 0px;background:var(--sres-purp);color:#000;font-family:"poppins","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:700;border-radius:4px;box-sizing:border-box !important;cursor:pointer;}
+}
+/*mobile*/
+@media only screen and (max-width: 999.99px) {	
+
+}
+
+</style>
+<div id="sresContent">
+<!--Menu-->
+<div id="sresMenuWrap"><div id="sresMenu"><button data-menubtn="">Tickets</button><button data-menubtn="">Groups</button><button data-menubtn="">Special Tickets &amp; Offers</button></div></div>
+<!--SRES Header-->
+		<div id="sresHeader">
+			<div id="sresLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_logo.png"></div>
+
+			<div id="sresSearchBarWrap"><div id="sresSearchBar"> 
+				<!--Cal Btn-->
+				<div id="sresMenuCal" class="sresSearchBtn sresLeftBtn">
+					<div class="sresBtnIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_cal_p_ico.svg"></div>
+					<h1>DATE</h1>
+					<div class="sresBtnArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_downarrow_w_img.svg"></div>
+					<!--calendar-->
+					<div id="sresCalWrap" class="sresDropDownOff">
+						<div class="sresDropDownHeader"><h2>APRIL 2026</h2></div>
+						<div class="sresDayWrap"><div class="sresDay">M</div><div class="sresDay">T</div><div class="sresDay">W</div><div class="sresDay">T</div><div class="sresDay">F</div><div class="sresDay">S</div><div class="sresDay">S</div></div>
+						<!--week 1-->
+						<div class="sresDayWrap">
+							<div class="noDay"></div>
+							<div class="noDay"></div>
+							<div class="noDay">01</div> 
+							<div data-calday="2026-04-02" class="sresCalDay calDayOff weekDay">02</div>
+							<div data-calday="2026-04-03" class="sresCalDay calDayOff easterDay">03</div>
+							<div data-calday="2026-04-04" class="sresCalDay calDayOff easterDay">04</div>
+							<div data-calday="2026-04-05" class="sresCalDay calDayOff easterDay">05</div>
+						</div>
+						<!--week 2-->
+						<div class="sresDayWrap">
+							<div data-calday="2026-04-06" class="sresCalDay calDayOff easterDay">06</div>
+							<div data-calday="2026-04-07" class="sresCalDay calDayOff weekDay">07</div>
+							<div data-calday="2026-04-08" class="sresCalDay calDayOff weekDay">08</div>
+							<div data-calday="2026-04-09" class="sresCalDay calDayOff weekDay">09</div>
+							<div data-calday="2026-04-10" class="sresCalDay calDayOff weekDay">10</div>
+							<div data-calday="2026-04-11" class="sresCalDay calDayOff weekDay">11</div>
+							<div data-calday="2026-04-12" class="sresCalDay calDayOff weekDay">12</div>
+						</div>
+						<!--week 3-->
+						<div class="sresDayWrap">
+							<div data-calday="2026-04-13" class="sresCalDay calDayOff weekDay">13</div>
+							<div class="noDay">14</div>
+							<div class="noDay"></div>
+							<div class="noDay"></div>
+							<div class="noDay"></div>
+							<div class="noDay"></div>
+							<div class="noDay"></div>
+						</div>
+						<div class="sresCalKey"> 
+							<div class="sresCalRow"><h3>EASTER WEEKEND DAY:</h3><span class="sresEasterKey"></span></div>
+							<div class="sresCalRow"><h3>SENIOR&rsquo;S DAY: WED 8th</h3></div>
+							<div class="sresCalRow"><h3>KID&rsquo;S DAY:THU 9th</h3></div>
+						</div>
+					</div>
+				</div>
+				<!--Tix Btn-->
+				<div id="sresMenuTix" class="sresSearchBtn sresRightBtn">
+					<div class="sresBtnIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_tix_p_ico.svg"></div>
+					<h1>TICKET</h1>
+					<div class="sresBtnArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_downarrow_w_img.svg"></div>
+					<!--calendar-->
+					<div id="sresTicketWrap" class="sresDropDown sresDropDownOff">
+						<div class="sresDropDownHeader"><h2>TICKET / ENTRY TYPE</h2></div>
+						<h4>ENTRY TYPE</h4>
+						<div data-filterbtn="All Day Ticket" class="sresDropDownBtn sresDropDownBtnOn sresEventBtn"><div class="sresCheckBox sresCheckBoxOn"></div><h3>All Day Ticket</h3></div>
+						<div data-filterbtn="After 4pm Ticket" class="sresDropDownBtn sresDropDownBtnOn sresEventBtn"><div class="sresCheckBox sresCheckBoxOn"></div><h3>After 4pm Entry</h3></div>
+						<div data-filterbtn="All Day Ticket + Reserved Seat" class="sresDropDownBtn sresDropDownBtnOn sresEventBtn"><div class="sresCheckBox sresCheckBoxOn"></div><h3>All Day + Reserved Seat</h3></div>						
+						<div data-filterbtn="Royal Suites" class="sresDropDownBtn sresDropDownBtnOn sresEventBtn"><div class="sresCheckBox sresCheckBoxOn"></div><h3>Royal Suite</h3></div>
+						<h4>TICKET TYPE</h4>
+						<div data-filterbtn="General Admission" class="sresDropDownBtn sresDropDownBtnOn sresTicketBtn"><div class="sresCheckBox sresCheckBoxOn"></div><h3>General Admission</h3></div>						
+						<div data-filterbtn="Reserved Seat" class="sresDropDownBtn sresDropDownBtnOn sresTicketBtn"><div class="sresCheckBox sresCheckBoxOn"></div><h3>Reserved Seat</h3></div>
+					</div>
+				</div>
+
+
+			</div></div>
+		</div>
+<!--event stream-->		
+	<div id="sresEvents"> 
+
+		<div id="sresEventStream">
+
+			<!--<div class="sresEventCard"><!--lightbox--<div class="sresLightbox"></div>
+				<!--card top---<div class="sresCardTop">
+					<div class="sresCardDate"><img src="sres_cal_w_ico.svg" alt="Date Icon"><h1>FRIDAY, 6TH APRIL</h1></div>
+					<div class="sresCardHero"><img src="sres26_alldayticket_hero.jpg" alt="Hero Image"></div>
+				</div><!--card mid--
+				<div class="sresCardMid">
+					<div class="sresCardTitle">All Day Ticket</div>
+					<div class="sresEventType"><img src="sres_ga_p_ico.svg">GENERAL ADMISSION</div>
+				</div><!--card bot--
+				<div class="sresCardBot">
+					<div class="sresInfoBtn">MORE INFO</div>
+					<div class="sresTixBtn">SEE TICKETS</div>
+				</div>			
+			</div>-->
+
+
+			<!--error span-->
+			<div id="sresEventErrors">
+				<!--error message tickets-->
+				<div id="sresErrorNoTickets" class="sresErrorMessage">
+					<h1>Woops</h1>
+					<p>Your search didn&rsquo;t match any of our available tickets.
+						<br />Please adjust your filters to see what tickets are available.</p>
+					<div id="errorResetFilterBtn" class="sresErrorResetBtn">RESET FILTERS</div>
+				</div>
+				<!--error message-->
+				<div id="sresErrorConnection" class="sresErrorMessage">
+					<h1>Woops</h1>
+					<p>We&rsquo;re unable to connect to our servers, please try refreshing the page or reload the data. </p>
+					<div id="errorReloadDataBtn" class="sresErrorResetBtn">RELOAD DATA</div><a href="https://www.ticketmaster.com.au/artist/2036596" target="_blank"><div class="sresErrorResetBtn">VISIT EVENTS PAGE</div></a>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+<!--event extras-->
+<div id="sresExtras">	
+	<h3>EVENT EXTRAS &amp; OFFERS</h3>
+	<div id="sresExtraStream">
+		<!-- RASF Donation-->
+			<div class="sresExtrasCard">
+				<!--lightbox--><div class="sresLightboxBg"><div class="sresLightboxCont"><div class="sresLbClose">CLOSE</div>
+					<div class="sresLbTop">
+						<div class="sresLbHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_RASFDonation_hero.jpg" alt=""></div>
+						<h1>RASF Donation</h1>
+						<div class="sresLbHorDiv"></div>
+						<!--<div class="sresLbDate"><img src=""></div>--->
+						<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_w_ico.svg"><h2>Event Extra</h2></div>
+						<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_res_w_ico.svg"><h2>Reserved Seat</h2></div>
+					</div>
+					<div class="sresLbBot">
+						<p>Help the RAS Foundation build strong, vibrant, and resilient rural communities through capacity building grants, education and skills development. Your donation will help rural Australians realise their potential and achieve their ambitions through grants and scholarships.
+							<br /><br />
+							<strong>$5</strong> could help a rural student access post-secondary education
+							<br /><br />
+							<strong>$10</strong> could provide extra agriculture resources for rural and regional schools
+							<br /><br />
+							<strong>$20</strong> could help a country school student visit the Sydney Royal Easter Show
+							<br /><br />
+							<strong>$50</strong> could help bring a remote school to Sydney to access extra-curricular activities
+							<br /><br />
+							<strong></strong>$100</strong> could provide one Ag in a Box teacher & student resource kit to one rural school
+							</p>
+						
+					</div>
+				</div>			
+				</div>
+				<!--card top---><div class="sresExtrasCardTop">
+					<div class="sresExtraHeader"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_p_ico.svg" alt="Event Extra Icon"><h1>EVENT EXRTA</h1></div>
+					<div class="sresExtrasCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_RASFDonation_hero.jpg" alt="RASF Donation"></div>
+				</div><!--card mid-->
+				<div class="sresExtrasCardMid">
+					<div class="sresExtrasCardTitle">RASF Donation</div>
+					<p>Help the RAS Foundation build strong, vibrant, and resilient rural communities through capacity building grants, education, and skills development.</p>
+				</div><!--card bot-->
+				<div class="sresExtrasCardBot">
+					<div class="sresExtrasBtn">MORE INFO</div>
+				</div>			
+			</div>
+		<!--Angus Steakhouse-->
+			<div class="sresExtrasCard">
+				<!--lightbox--><div class="sresLightboxBg"><div class="sresLightboxCont"><div class="sresLbClose">CLOSE</div>
+					<div class="sresLbTop">
+						<div class="sresLbHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_Steakhouse_hero.png" alt=""></div>
+						<h1>Angus Steakhouse</h1>
+						<div class="sresLbHorDiv"></div>
+						<!--<div class="sresLbDate"><img src=""></div>--->
+						<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_w_ico.svg"><h2>Event Extra</h2></div>
+						<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_res_w_ico.svg"><h2>Reserved Seat</h2></div>
+					</div>
+					<div class="sresLbBot">
+						<p><strong>The Angus Steakhouse</strong> is a key feature of our Nashville-inspired Honky Tonk, located on Hawkesbury Street,  where guests can enjoy mouthwatering steaks, delicious sides, and an unforgettable atmosphere. Indulge in hearty meals paired with live music, bringing the spirit of Nashville right to your table. Purchase a $50 dining voucher and receive a free kid&rsquo;s meal valued at $15 for lunch or dinner. This offer is strictly limited, is not redeemable for cash, and bookings are strongly encouraged.
+							<br /><br />
+						<strong>Two sittings are available for both lunch and dinner:</strong></p>
+						<ul>
+							<li><strong>Lunch:</strong> 12:00 PM &#45; 1:30 PM | 1:30 PM &#45; 3:00 PM</li>
+							<li><strong>Dinner:</strong> 6:00 PM &#45; 7:30 PM | 7:30 PM &#45; 9:00 PM</li>
+						</ul>
+						
+					</div>
+				</div>			
+				</div>
+				<!--card top---><div class="sresExtrasCardTop">
+					<div class="sresExtraHeader"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_p_ico.svg" alt="Event Extra Icon"><h1>EVENT EXRTA</h1></div>
+					<div class="sresExtrasCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_Steakhouse_hero.png" alt="Angus Steakhouse"></div>
+				</div><!--card mid-->
+				<div class="sresExtrasCardMid">
+					<div class="sresExtrasCardTitle">Angus Steakhouse</div>
+					<p>Buy a $50 dining voucher and get a free kid&rsquo;s meal ($15 value) at our Nashville-inspired Steakhouse.</p>
+				</div><!--card bot-->
+				<div class="sresExtrasCardBot">
+					<div class="sresExtrasBtn">MORE INFO</div>
+				</div>			
+			</div>
+		<!--Charchuterie-->
+			<div class="sresExtrasCard">
+				<!--lightbox--><div class="sresLightboxBg"><div class="sresLightboxCont"><div class="sresLbClose">CLOSE</div>
+					<div class="sresLbTop">
+						<div class="sresLbHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_Charcuterie_hero.jpg" alt="Charcuterie or Cheese Board"></div>
+						<h1>Charcuterie or Cheese Board &#45; Tyrrell&rsquo;s Wine Bar</h1>
+						<div class="sresLbHorDiv"></div>
+						<!--<div class="sresLbDate"><img src=""></div>--->
+						<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_w_ico.svg"><h2>Event Extra</h2></div>
+						<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_res_w_ico.svg"><h2>Reserved Seat</h2></div>
+					</div>
+					<div class="sresLbBot">
+						<p>Treat yourself to a Sydney Royal Cheese or Charcuterie Board for two, served with two glasses of Tyrrell&rsquo;s wine.
+							<br /><br />
+							The Cheese Board includes three Sydney Royal award-winning cheeses with grapes, apple & thyme paste and crackers.
+							<br /><br />
+							The Charcuterie Board includes three Sydney Royal charcuteries with condiments and fresh bread &#45; the perfect pairing for your day at the Show.				
+					</div>
+				</div>			
+				</div>
+				<!--card top---><div class="sresExtrasCardTop">
+					<div class="sresExtraHeader"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_p_ico.svg" alt="Event Extra Icon"><h1>EVENT EXRTA</h1></div>
+					<div class="sresExtrasCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_Charcuterie_hero.jpg" alt="Charcuterie or Cheese Board"></div>
+				</div><!--card mid-->
+				<div class="sresExtrasCardMid">
+					<div class="sresExtrasCardTitle">Charcuterie or Cheese Board &#45; Tyrrell&rsquo;s Wine Bar </div>
+					<p>Add a Sydney Royal Cheese or Charcuterie Board with two glasses of Tyrrell&rsquo;s wine &#45; perfect for sharing.</p>
+				</div><!--card bot-->
+				<div class="sresExtrasCardBot">
+					<div class="sresExtrasBtn">MORE INFO</div>
+				</div>			
+			</div>	
+		<!--Big Bush BBQ-->
+			<div class="sresExtrasCard">
+				<!--lightbox--><div class="sresLightboxBg"><div class="sresLightboxCont"><div class="sresLbClose">CLOSE</div>
+					<div class="sresLbTop">
+						<div class="sresLbHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_BigBushBBQ_hero.jpg" alt=""></div>
+						<h1>Big Bush BBQ</h1>
+						<div class="sresLbHorDiv"></div>
+						<!--<div class="sresLbDate"><img src=""></div>--->
+						<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_w_ico.svg"><h2>Event Extra</h2></div>
+						<!--<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_res_w_ico.svg"><h2>Reserved Seat</h2></div>-->
+					</div>
+					<div class="sresLbBot">
+						<p>The beloved sausage sizzle takes on new meaning at the Big Bush BBQ, where every dollar goes back into rural communities. Each day of the Show, a different NSW Show Society steps up to fire up the grill and fundraise for their local community.
+							<br /><br />
+							Visitors can enjoy a delicious sausage sizzle while knowing their contribution directly helps create positive change for our friends in the bush. It&rsquo;s more than just a snack &#45; it&rsquo;s a way to give back!
+							<br /><br />
+							<strong>Find us at the Schmidt Arena between 9am &#45; 3:30pm.</strong></p>
+
+						
+					</div>
+				</div>			
+				</div>
+				<!--card top---><div class="sresExtrasCardTop">
+					<div class="sresExtraHeader"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_p_ico.svg" alt="Event Extra Icon"><h1>EVENT EXRTA</h1></div>
+					<div class="sresExtrasCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_BigBushBBQ_hero.jpg" alt="Big Bush BBQ "></div>
+				</div><!--card mid-->
+				<div class="sresExtrasCardMid">
+					<div class="sresExtrasCardTitle">Big Bush BBQ </div>
+					<p>Pre-purchase a $5 sausage sizzle + bottle of water and support NSW Show Societies. Every dollar goes back into rural communities.</p>
+				</div><!--card bot-->
+				<div class="sresExtrasCardBot">
+					<div class="sresExtrasBtn">MORE INFO</div>
+				</div>			
+			</div>
+		<!--RASF Give & Gather Bag -->
+			<div class="sresExtrasCard">
+				<!--lightbox--><div class="sresLightboxBg"><div class="sresLightboxCont"><div class="sresLbClose">CLOSE</div>
+					<div class="sresLbTop">
+						<div class="sresLbHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_GiveAndGather_hero.jpg" alt=""></div>
+						<h1>RASF Give & Gather Bag </h1>
+						<div class="sresLbHorDiv"></div>
+						<!--<div class="sresLbDate"><img src=""></div>--->
+						<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_w_ico.svg"><h2>Event Extra</h2></div>
+						<!--<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_res_w_ico.svg"><h2>Reserved Seat</h2></div>-->
+					</div>
+					<div class="sresLbBot">
+						<p>The RAS Foundation is offering the Give & Gather Bag at the 2026 Sydney Royal Easter Show. It&rsquo;s a great way to explore the Show and enjoy incredible value on food, lifestyle, and rides, whilst supporting rural and regional communities across NSW. 
+
+					<strong>For $30, each bag includes:</strong></p>
+					<ul><li>Exclusive giveaways;</li>
+					<li>Discount vouchers for rides, food, and shopping; and</li>
+					<li>A Show map to help you find participating exhibitors and redeem your offers.</li>
+					</ul>
+					<p>Every bag sold supports the RAS Foundation's Community Futures Grants.<br /><br />
+					Collect your Give & Gather Bag at the collection point inside the main entry (until 2pm) or from the Arts & Craft Kiosk in Hall 5.</p>
+
+						
+					</div>
+				</div>			
+				</div>
+				<!--card top---><div class="sresExtrasCardTop">
+					<div class="sresExtraHeader"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_p_ico.svg" alt="Event Extra Icon"><h1>EVENT EXRTA</h1></div>
+					<div class="sresExtrasCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_GiveAndGather_hero.jpg" alt="RASF Give & Gather Bag "></div>
+				</div><!--card mid-->
+				<div class="sresExtrasCardMid">
+					<div class="sresExtrasCardTitle">RASF Give & Gather Bag</div>
+					<p>For just $30, you get over $80 worth of goodies plus $300+ in vouchers to redeem at the Show. <br /><br />
+						All proceeds support the RAS Foundation. Limited stock, don't miss out!</p>
+				</div><!--card bot-->
+				<div class="sresExtrasCardBot">
+					<div class="sresExtrasBtn">MORE INFO</div>
+				</div>			
+			</div>			
+		<!--Bianco Carnivale  -->
+			<div class="sresExtrasCard">
+				<!--lightbox--><div class="sresLightboxBg"><div class="sresLightboxCont"><div class="sresLbClose">CLOSE</div>
+					<div class="sresLbTop">
+						<div class="sresLbHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_Bianco_hero.jpg" alt=""></div>
+						<h1>Bianco Carnivale</h1>
+						<div class="sresLbHorDiv"></div>
+						<!--<div class="sresLbDate"><img src=""></div>--->
+						<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_w_ico.svg"><h2>Event Extra</h2></div>
+						<!--<div class="sresLbTicketType"><img src="sres_res_w_ico.svg"><h2>Reserved Seat</h2></div>-->
+					</div>
+					<div class="sresLbBot">
+						<p>Bianco proudly introduces a brand-new attraction for the 2026 Sydney Royal Easter Show.<br /><br />
+								Welcome to Bianco Carnivale (carnival), located in the iconic Woolworths Fresh Food Dome. Step into an authentic Italian market, celebrating traditional flavours and timeless recipes.<br /><br />
+								From Antipasti, Handmade Ravioli, Garlic Prawns and Arancini, to Homemade Tiramisu, Gelato and a Classic Affogato, Bianco Carnivale has you covered. Find a seat, take in the view, and enjoy Italian Cocktails or Classic Beverages while soaking up the unforgettable atmosphere of Sydney&rsquo;s largest show.<br /><br />
+								<strong>SHOW OFFER:</strong> 1 x Classico & 1 x Dessert for $26 (SAVING UP TO $10)<br /><br />
+								Menu can be found at <a href="https://www.eastershow.com.au/ticket-information">eastershow.com.au/ticket-information</a></p>			
+					</div>
+				</div>			
+				</div>
+				<!--card top---><div class="sresExtrasCardTop">
+					<div class="sresExtraHeader"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_p_ico.svg" alt="Event Extra Icon"><h1>EVENT EXRTA</h1></div>
+					<div class="sresExtrasCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_Bianco_hero.jpg" alt="Angus Steakhouse"></div>
+				</div><!--card mid-->
+				<div class="sresExtrasCardMid">
+					<div class="sresExtrasCardTitle">Bianco Carnivale</div>
+					<p>An Italian market experience with a Classico dish and dessert for $26.</p>
+				</div><!--card bot-->
+				<div class="sresExtrasCardBot">
+					<div class="sresExtrasBtn">MORE INFO</div>
+				</div>			
+			</div>		
+
+
+	</div>
+
+</div>	
+</div>
+<!--info pop ups-->
+<!--general ticket
+<p>Entry to the Show from 8:30am.<br />Same day return public transport.<br />Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day. Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p>-->
+<!--after 4pm
+<p>Entry to the Show from 4:00pm.<br />Same day return public transport.<br />Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p><h1>Additional Information</h1><p></p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day. Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p>-->
+<!--all day plus res
+<p>Entry to the Show from 8:30am.<br />Same day return public transport.<br />Guaranteed Seat from 5pm in the Sydney Royal Stand at ENGIE Stadium for the night&#45;time Entertainment.<br /><strong>Premium Reserve Seating</strong> located in the Sky Deck, access from 5pm excluding Easter Sunday with access not premitted until 5:30pm. Included in your ticket price is a welcome drink and a delicious meal. Please note that Companion Card Tickets do not include a drink or meal.</p><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day. Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p>-->
+<!--royal suites
+<p>Entry to the Show from 8:30am<br />Same day return public transport.<br />Access to your private suite at ENGIE Stadium from 12:00pm<br />Sydney Royal Grand Champion Grazing Menu, served from 5pm through to the end of the night&#45;time Entertainment.<br />Premium Beverage Package including Wine, Beers and Soft Drinks</p><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day. Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p>-->
+<script type="text/javascript">
+var $j = jQuery.noConflict();
+
+	//upsells, add kids/seniors day banners to cards, pop ups, menu counters, bread crumbs, expire cards, availability
+	eventCount = 0;
+
+	 eventTypeList = ["All Day Ticket","After 4pm Ticket","All Day Ticket + Reserved Seat","Royal Suites"];
+	 ticketTypeList = ["General Admission","Reserved Seat"]
+	 DateList = ["2026-04-02","2026-04-03","2026-04-04","2026-04-05","2026-04-06","2026-04-07","2026-04-08","2026-04-09","2026-04-10","2026-04-11","2026-04-12","2026-04-13"]
+	$j(document).ready(function () {
+			//load the container div
+            let eventListDiv = $j("#sresEventStream");
+
+			let epPublic = "https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_event_data.json"
+			//get the data file
+             $j.ajax({
+               type: 'GET',
+               url: epPublic,
+               dataType: 'html',
+				success: function(data) {
+					let eventData = JSON.parse(data);
+					//let eventList = eventData.events;
+						
+					$j.each(eventData, function(key,value){
+					
+						let eventdate = new Date(value.event_date)
+						let options = { weekday: 'long', day: '2-digit', month: 'long',  timeZone: "Australia/Sydney"};
+						let eventDateShort = new Intl.DateTimeFormat('en-AU', options).format(eventdate)//.replace(',', '');year: 'numeric' , 
+
+						let ticketType = value.entry_type.replace(/\s/g, '');//removes spaces
+						let eventType = value.event_name.replace(/\s/g, '');
+						//build card
+						let newEvent = $j("<div class='sresEventCard' data-date='"+value.event_date+"' data-availid'"+value.event_date+"' data-eventtype='"+value.event_name+"' data-tickettype='"+value.entry_type+"' data-childnum=''><!--lightbox--><div class='sresLightboxBg'></div><!--card top---><div class='sresCardTop'><div class='sresCardDate'><img src='sres_cal_w_ico.svg' alt='Date Icon'><h1>"+eventDateShort+"</h1></div><div class='sresCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_"+eventType+"_hero.jpg' alt='Hero Image'></div><div class='sresEasterTag'><h1>EASER WEEKEND</h1></div></div><!--card mid--><div class='sresCardMid'><div class='sresCardTitle'>"+value.event_name+"</div><div class='sresEventType'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_"+ticketType+"_p_ico.svg'>"+value.entry_type+"</div></div><!--card bot--><div class='sresCardBot'><div class='sresInfoBtn'>MORE INFO</div><a href='"+value.event_link+"' target='_blank'><div class='sresTixBtn'>SEE TICKETS</div></div></div></div>");
+						//apends event data into an element
+						eventListDiv.append(newEvent);
+
+						})	
+					//call on load functions
+					emptyFullListsOnLoad();
+					cardsToDisplay();
+					},
+                    error: function (xhr, ajaxOptions, thrownError) { 
+
+                       $j("#sresErrorConnection").fadeIn(100);
+                    }
+					
+                });
+		
+		//doc ready end
+
+		});
+///conditionals for event cards
+function cardsToDisplay(){
+
+	eventCountPlus = 0;
+	eventCountMinus = 0;
+
+	//run through each card and check against filters
+	$j('.sresEventCard').each(function () {
+		let cardEventDate = $j(this).data('date')
+		let cardEventType = $j(this).data('eventtype')
+		let cardTicketType = $j(this).data('tickettype');
+		//console.log(cardEventDate,DateList)
+		//console.log(cardTicketType,ticketTypeList)
+		//console.log(cardEventType,eventTypeList)		
+		if(
+		((jQuery.inArray(cardEventDate,DateList) != -1) || (DateList.length == 0)) && //date 
+		(jQuery.inArray(cardTicketType,ticketTypeList) != -1) && //event
+		(jQuery.inArray(cardEventType,eventTypeList) != -1)  //ticket	
+			
+		){				
+				$j(this).fadeIn(500);		
+				eventCountPlus ++;
+				//document.getElementById(eventID).setAttribute("data-childnum",eventCountPubPlus)
+		} else {
+				$j(this).fadeOut(250);
+				eventCountMinus ++;
+				//document.getElementById(eventID).setAttribute("data-childnum","m"+eventCountPubMinus)
+		}		
+		});
+		eventCounter();
+
+}
+//menu clicks
+$j(document).on('click', '#sresMenuTix', function (e) {
+			if($j(e.target).closest('#sresTicketWrap').length !== 0)
+			{return false;}
+			//open
+				if($j(this).children('#sresTicketWrap').hasClass('sresDropDownOff')){
+				$j("#sresTicketWrap").removeClass('sresDropDownOff').addClass('sresDropDownOn');
+				$j(this).children('.sresBtnArrow').addClass('sresBtnArrowRot')
+				//fade out		
+				$j("#sresCalWrap").removeClass('sresDropDownOn').addClass('sresDropDownOff');
+				$j("#sresCalWrap").children(".sresBtnArrow").removeClass('sresBtnArrowRot');			
+				}
+			//close
+				else if($j(this).children('.sresDropDown').hasClass('sresDropDownOn')){
+				$j("#sresTicketWrap").removeClass('sresDropDownOn').addClass('sresDropDownOff');
+				$j(this).children(".sresBtnArrow").removeClass('sresBtnArrowRot');
+				}
+		});
+$j(document).on('click', '#sresMenuCal', function (e) {
+			if($j(e.target).closest('#sresCalWrap').length !== 0)
+			{return false;}
+			//open
+				if($j(this).children('#sresCalWrap').hasClass('sresDropDownOff')){
+				$j("#sresCalWrap").removeClass('sresDropDownOff').addClass('sresDropDownOn');
+				$j(this).children('.sresBtnArrow').addClass('sresBtnArrowRot')
+				//fade out		
+				$j("#sresTicketWrap").removeClass('sresDropDownOn').addClass('sresDropDownOff');
+				$j("#sresTicketWrap").children(".sresBtnArrow").removeClass('sresBtnArrowRot');			
+				}
+			//close
+				else if($j(this).children('#sresCalWrap').hasClass('sresDropDownOn')){
+				$j("#sresCalWrap").removeClass('sresDropDownOn').addClass('sresDropDownOff');
+				$j(this).children(".sresBtnArrow").removeClass('sresBtnArrowRot');
+				}
+		});
+//drop down clicks
+$j(document).on('click', '.sresDropDownBtn', function () {
+			if ($j(this).hasClass('sresDropDownBtnOff')) {
+				$j(this).removeClass('sresDropDownBtnOff').addClass('sresDropDownBtnOn');
+				$j(this).children('.sresCheckBox').removeClass('sresCheckBoxOff').addClass('sresCheckBoxOn');
+			} else if ($j(this).hasClass('sresDropDownBtnOn')) {
+				$j(this).removeClass('sresDropDownBtnOn').addClass('sresDropDownBtnOff');
+				$j(this).children('.sresCheckBox').removeClass('sresCheckBoxOn').addClass('sresCheckBoxOff');
+			}
+		});
+//calendar clicks 
+$j(document).on('click', '.sresCalDay', function () {
+			if ($j(this).hasClass('calDayOff')) {
+				$j(this).removeClass('calDayOff').addClass('calDayOn');
+			} else if ($j(this).hasClass('calDayOn')) {
+				$j(this).removeClass('calDayOn').addClass('calDayOff');
+			}
+		});
+//click anywhere menu
+	$j(document).on('click', 'body', function (e) {
+			if (($j(e.target).closest('#sresSearchBar').length !== 0)) 
+			{return false;}
+			$j("#sresCalWrap").removeClass('sresDropDownOn').addClass('sresDropDownOff');
+			$j("#sresTicketWrap").removeClass('sresDropDownOn').addClass('sresDropDownOff');
+			$j("#sresSearchBar .sresBtnArrow").removeClass('sresBtnArrowRot');
+		
+		});
+//dates Filter Check
+$j(document).on('click', ".sresCalDay", function () {
+var toggleDate = $j(this).data('calday');
+
+		if((jQuery.inArray(toggleDate, DateList ) != -1)){
+			//unselect
+			DateList.splice($j.inArray(toggleDate, DateList), 1 );					
+		} else {
+			//select
+			DateList.push(toggleDate)	
+		}				
+		cardsToDisplay();
+		//dateCounter();
+	})
+//dates Filter Check
+$j(document).on('click', ".sresEventBtn", function () {
+var toggleFilter = $j(this).data('filterbtn');
+
+		if((jQuery.inArray(toggleFilter, eventTypeList ) != -1)){
+			//unselect
+			eventTypeList.splice($j.inArray(toggleFilter, eventTypeList), 1 );					
+		} else {
+			//select
+			eventTypeList.push(toggleFilter)	
+		}				
+		cardsToDisplay();
+		//dateCounter();
+	})	
+$j(document).on('click', ".sresTicketBtn", function () {
+var toggleFilter = $j(this).data('filterbtn');
+
+		if((jQuery.inArray(toggleFilter, ticketTypeList ) != -1)){
+			//unselect
+			ticketTypeList.splice($j.inArray(toggleFilter, ticketTypeList), 1 );					
+		} else {
+			//select
+			ticketTypeList.push(toggleFilter)	
+		}				
+		cardsToDisplay();
+		//dateCounter();
+	})	
+//counters
+let eventCounter = function(){
+
+	//document.getElementById('wacPubEventCount').innerHTML = eventCountPubPlus.toString();
+	//document.getElementById('wacPubEventCountTotal').innerHTML = eventCountPubTotal.toString();
+	//let wacHospCard = document.getElementById('wacHospCard');
+
+	if((eventCountPlus == 0)){
+		$j("#sresErrorNoTickets").fadeIn(500)
+	} 
+	if((eventCountPlus >= 1)){
+		$j("#sresErrorNoTickets").fadeOut(0)	
+	}
+}
+//lightbox clicks
+$j(document).on('click', ".sresExtrasBtn", function () {
+	$j(this).parent('.sresExtrasCardBot').siblings('.sresLightboxBg').fadeIn(500).css("display","flex")
+
+});
+//close
+$j(document).on('click', ".sresLbClose", function () {
+	$j(this).parent('.sresLightboxCont').parent('.sresLightboxBg').fadeOut(250);
+
+});
+//click bg close
+	$j(document).on('click', '.sresLightboxBg', function (e) {
+			if (($j(e.target).closest('.sresLightboxCont').length !== 0 || $j(e.target).closest('.sresLightboxCont a').length !== 0)) 
+			{return false;}
+			$j(this).fadeOut(250);
+		
+		});
+//availability
+/*
+$j(document).ready(function () {	
+             $j.ajax({
+               type: 'GET',
+			   //https://app.ticketmaster.com/inventory-status/v1/availability?events=1APZkk3Gkd6N-ax&apikey=fX5ZPZ9XBmerGANqKPGx4Xd8Yah19cCK <--- correcet key
+               url: "https://953lrs6ve3.execute-api.us-east-1.amazonaws.com/prod/?events=1APZkk3Gkd6N-ax,1APZkk3GkdrYoqJ,1APZkkKGkd7fo6b,1AefZb0GkD0ixEV,1AefZb0GkDLM3oG,1AefZb0GkMc8omC,1AefZb0GkD0ixED,1AefZb0GkDLze3t,1AefZb0GkMc8sm8,1AefZb0GkD0ixI7,1AefZb0GkDLzwKr,1AefZb0GkMcooRX,1AefZb0GkDLyxKx,1AefZb0GkMcosY4,1AefZb0GkD0ceIu,1AefZb0GkDLB3fS,1AefZb0GkMc3oYb,1AefZb0GkD0ceI2,1AefZb0GkDLBwfD,1AefZb0GkMc3sY-,1AefZb0GkD0c3Io,1AefZb0GkDLDx4M,1AefZb0GkMcKos5,1AefZb0GkD0c3I4,1AefZb0GkDLHxp2,1AefZb0GkMcKsst,1AefZb0GkD0cxIO,1AefZb0GkDLWepp,1AefZb0GkMcfosl,1AefZb0GkD0cxI0,1AefZb0GkDLWwpc,1AefZb0GkMcfssc,1AefZb0GkD0cwIE,1AefZb0GkDLXx0W,1AefZb0GkMc4osU,1AefZb0GkD0iwI1",
+               dataType: 'html',
+				success: function(data) {
+					var availData = JSON.parse(data);
+					
+					$j.each(availData, function(key,value){
+						var availID = value.eventId
+						var availClass = value.status
+
+						 $j('.sresAvailTag').each(function () {
+							 var eventID = $j(this).attr('data-eventID');
+							 	if (eventID == availID) {
+									$j(this).addClass(availClass)
+									}
+								});
+						})	
+					},
+                    error: function (xhr, ajaxOptions, thrownError) { 
+                       // console.log("error cant read data");
+                    }
+                });	
+
+				checkCalDate()		
+
+	///end  doc ready function	
+	});	
+	*/
+let emptyFullListsOnLoad = function(){
+	DateList.length = 0;
+	//ticketTypeList.length = 0;
+	//eventTypeList.length = 0;	
+}
+</script>
+[% PROCESS "layout/frame/bottom.tt" %]
