@@ -528,7 +528,7 @@ var $j = jQuery.noConflict();
 						let ticketType = value.entry_type.replace(/\s/g, '');//removes spaces
 						let eventType = value.event_name.replace(/\s/g, '');
 						//build card
-						let newEvent = $j("<div class='sresEventCard' data-date='"+value.event_date+"' data-availid'"+value.event_date+"' data-eventtype='"+value.event_name+"' data-tickettype='"+value.entry_type+"' data-childnum=''><!--lightbox--><div class='sresLightboxBg'></div><!--card top---><div class='sresCardTop'><div class='sresCardDate'><img src='sres_cal_w_ico.svg' alt='Date Icon'><h1>"+eventDateShort+"</h1></div><div class='sresCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_"+eventType.replace(/[^\w\s]/gi, '')+"_hero.jpg' alt='Hero Image'></div><div class='sresEasterTag'><h1>EASER WEEKEND</h1></div></div><!--card mid--><div class='sresCardMid'><div class='sresCardTitle'>"+value.event_name+"</div><div class='sresEventType'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_"+ticketType+"_p_ico.svg'>"+value.entry_type+"</div></div><!--card bot--><div class='sresCardBot'><div class='sresInfoBtn'>MORE INFO</div><a href='"+value.event_link+"' target='_blank'><div class='sresTixBtn'>SEE TICKETS</div></div></div></div>");
+						let newEvent = $j("<div class='sresEventCard' data-date='"+value.event_date+"' data-availid'"+value.event_date+"' data-eventtype='"+value.event_name+"' data-tickettype='"+value.entry_type+"' data-childnum=''><!--lightbox--><div class='sresLightboxBg'></div><!--card top---><div class='sresCardTop'><div class='sresCardDate'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_cal_w_ico.svg' alt='Date Icon'><h1>"+eventDateShort+"</h1></div><div class='sresCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_"+eventType.replace(/[^\w\s]/gi, '')+"_hero.jpg' alt='Hero Image'></div><div class='sresEasterTag'><h1>EASER WEEKEND</h1></div></div><!--card mid--><div class='sresCardMid'><div class='sresCardTitle'>"+value.event_name+"</div><div class='sresEventType'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_"+ticketType+"_p_ico.svg'>"+value.entry_type+"</div></div><!--card bot--><div class='sresCardBot'><div class='sresInfoBtn'>MORE INFO</div><a href='"+value.event_link+"' target='_blank'><div class='sresTixBtn'>SEE TICKETS</div></div></div></div>");
 						//apends event data into an element
 						eventListDiv.append(newEvent);
 
@@ -542,7 +542,6 @@ var $j = jQuery.noConflict();
                        $j("#sresErrorConnection").fadeIn(100);
                     }
 					
-                });
 		
 		//doc ready end
 
