@@ -79,7 +79,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	.sresCheckBoxOn{background:url('sres_tick_w_img.svg') no-repeat,var(--sres-purp);background-size:16px 16px;}
 	.sresCheckBoxOff{border:2px solid var(--sres-purp);}
 	/*event stream*/
-	#sresEvents{width:100%;height:auto;margin:0;padding:0;background:var(--sres-cream);display:block;position:relative;z-index:10;box-sizing:  border-box !important;}
+	#sresEvents{width:100%;height:auto;margin:0;padding:0;background:var(--sres-cream);display:block;position:relative;z-index:12;box-sizing:  border-box !important;}
 	#sresEventStream{width:100%;max-width:1300px;margin:0px auto;padding:50px 0px;display:flex;justify-content: center;align-items: stretch;align-content: flex-start;flex-wrap: wrap;column-gap: 20px;row-gap: 20px;box-sizing:  border-box !important;}
 	.sresEventCard{width:300px;height:auto;background:#fff;padding:0px 0px 0px;border-radius:10px;border:2px solid var(--sres-purp);user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;justify-content: space-between;box-sizing: border-box !important;overflow:visible;box-shadow: 0px 8px 0px 4px rgb(98 47 141 / 20%);}
 	.sresCardTop{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:0;position:relative;}
@@ -88,9 +88,14 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	.sresCardDate h1{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:16px;font-weight:900;text-align:center;color:#fff;margin:0px 0px 0px 0px;padding:0px 0px;text-transform: uppercase;}
 	.sresCardHero{width:296px;height:157px;margin:0;padding:0;display:block;}
 	.sresCardHero img{width:100%;height:auto;}
+	/*card tags*/
 	.sresEasterTag{width:100%;background:var(--sres-yel);margin:0px 0px;padding:0px 0px;box-sizing: border-box !important;display:none;}
 	.sresEasterTag h1{font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:900;text-align:center;color:var(--sres-purp);margin:0px 0px;padding:4px 0px;}
-	.sresEventCard[data-date='2026-04-03'] .sresEasterTag,.sresEventCard[data-date='2026-04-04'] .sresEasterTag,.sresEventCard[data-date='2026-04-05'] .sresEasterTag,.sresEventCard[data-date='2026-04-06'] .sresEasterTag{display:block;}
+	.sresKidsTag,.sresSeniorsTag{width:100%;background:var(--sres-dpurp);margin:0px 0px;padding:0px 0px;box-sizing: border-box !important;display:none;border-bottom:2px solid var(--sres-yel);border-top:2px solid var(--sres-yel);}
+	.sresKidsTag h1,.sresSeniorsTag h1{font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:900;text-align:center;color:var(--sres-yel);margin:0px 0px;padding:4px 0px;}
+	/*easter days*/.sresEventCard[data-date='2026-04-03'] .sresEasterTag,.sresEventCard[data-date='2026-04-04'] .sresEasterTag,.sresEventCard[data-date='2026-04-05'] .sresEasterTag,.sresEventCard[data-date='2026-04-06'] .sresEasterTag{display:block;}
+	/*kids days*/.sresEventCard[data-date='2026-04-13'] .sresKidsTag{display:block;}
+	/*seniors days*/.sresEventCard[data-date='2026-04-09'] .sresSeniorsTag{display:block;}
 	.sresCardMid{width:100%;max-width:300px;height:auto;display:flex;flex-wrap: wrap;align-content: space-between;justify-content: center;margin:0;padding:0;position:relative;}
 	.sresCardTitle{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:30px 10px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:26px;line-height:26px;font-weight:900;text-align:center;color:var(--sres-purp);position:relative;box-sizing: border-box !important;}
 	.sresEventType{width:100%;max-width:300px;height:auto;margin:0;padding:0px 10px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:20px;font-weight:bold;text-align:center;color:#000;position:relative;display:flex;flex-wrap: nowrap;justify-content: center;align-items: center;column-gap:10px;box-sizing: border-box !important;}
@@ -109,7 +114,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	.sresExtraHeader{width:100%;max-width:300px;height:44px;display:flex;justify-content: center;align-items: center;margin:0;padding:0;position:relative;background:var(--sres-cream);border-radius:6px 6px 0px 0px;border-bottom:2px solid var(--sres-purp);box-sizing: border-box !important;}
 	.sresExtraHeader h1{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:16px;font-weight:900;text-align:center;color:var(--sres-purp);margin:0px 0px 0px 0px;padding:0px 0px;text-transform: uppercase;}
 	.sresExtraHeader img{width:30px;height:30px;margin:0px 10px 0px 0px;display:inline-block;}
-	.sresExtrasCardHero{width:296px;height:157px;margin:0;padding:0;display:block;}
+	.sresExtrasCardHero{width:296px;height:157px;margin:0;padding:0;display:block;border-bottom:2px solid var(--sres-purp)}
 	.sresExtrasCardHero img{width:100%;height:auto;}
 	.sresExtrasCardMid{width:100%;max-width:300px;height:auto;display:flex;flex-wrap: wrap;align-content: space-between;justify-content: center;margin:0;padding:0;position:relative;}
 	.sresExtrasCardTitle{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:30px 10px 0px 10px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:26px;line-height:26px;font-weight:bold;text-align:center;color:var(--sres-purp);position:relative;box-sizing: border-box !important;}
@@ -120,20 +125,26 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	 .sresLightboxBg{width:100%;height:100%;margin:0px;position:fixed;background:rgba(0,0,0,.2);backdrop-filter: blur(5px);z-index:201;display:none;top:0;right:0;left:0;justify-content: safe center; align-items: center;flex-direction: column;overflow-y: scroll;}
 	 .sresLightboxCont{width:700px;height:auto;background:#fff;box-shadow: 0px 8px 0px 4px rgb(98 47 141 / 20%);border-radius:10px;border:2px solid var(--sres-purp);box-sizing: border-box !important;position:relative;z-index: 203;display: flex;flex-direction: row;flex-wrap: nowrap;align-content: flex-start;justify-content: center;align-items: flex-start;}
 	 .sresExtrasCard .sresLightboxCont{box-shadow: 0px 8px 0px 4px #fefcee61;}
-	 .sresLbClose{width:100px;height:38px;background:var(--sres-yel);border-radius:5px;border:2px solid var(--sres-purp);font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:20px;font-weight:900;text-align:center;color:var(--sres-purp);margin:0px 0px 0px 0px;padding:6px 0px;text-transform: uppercase;position: absolute;top:-43px;right:0px;cursor:pointer;z-index: 202;box-sizing: border-box !important;}
-	 .sresLbTop{width:40%;max-width:300px;height:100%;display:block;margin:0;padding:0 0px 20px 0px;position:relative;border-radius:10px 0px 0px 0px;background:var(--sres-purp);overflow:hidden;box-sizing: border-box !important;}
-	 .sresLbHero{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:0;position:relative;border-radius:10px 0px 0px 0px;overflow:hidden;}
+	 .sresLbClose{width:100px;height:38px;background:var(--sres-yel);border-radius:5px;border:2px solid var(--sres-purp);font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:20px;font-weight:900;text-align:center;color:var(--sres-purp);margin:0px 0px 0px 0px;padding:6px 0px;text-transform: uppercase;position: absolute;top:-0px;right:-110px;cursor:pointer;z-index: 202;box-sizing: border-box !important;}
+	 .sresLbTop{width:40%;max-width:300px;height:100%;display:block;margin:0;padding:0 0px 20px 0px;position:relative;border-radius:8px 0px 0px 0px;background:var(--sres-purp);overflow:hidden;box-sizing: border-box !important;}
+	 .sresLbHero{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:0;position:relative;border-radius:8px 0px 0px 0px;overflow:hidden;}
 	 .sresLbHero img{width:100%;height:auto;}
-	 .sresLbTop h1{margin:20px 0px;padding:0px 0px;font-family:"Averta","Open Sans",fallback;display:block;font-size:30px;line-height:30px;font-weight:900;text-align:center;color:#fff;box-sizing: border-box !important;}
+	 .sresLbTop h1{margin:20px 0px;padding:0px 10px;font-family:"Averta","Open Sans",fallback;display:block;font-size:30px;line-height:30px;font-weight:900;text-align:center;color:#fff;box-sizing: border-box !important;}
 	 .sresLbHorDiv{width:70%;height:2px;background:#fff;margin:0px auto;display:block;}
-	 .sresLbTicketType{width:100%;max-width:300px;height:auto;display:flex;justify-content: flex-start;align-items: center;margin:0;padding:20px 0px 0px 20px;position:relative;background:var(--sres-purp);border-radius:6px 6px 0px 0px;}
-	 .sresLbTicketType h2{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:24px;line-height:24px;font-weight:600;text-align:center;color:#fff;margin:0px 0px 0px 0px;padding:0px 0px;text-transform: uppercase;}
-	 .sresLbTicketType img{width:20px;height:20px;margin:0px 10px 0px 0px;display:inline-block;}
-	 .sresLbBot{width:60%;height:auto;display:block;margin:0;padding:0px 0px 20px 0px;border-radius:0px 10px 0px 0px;position:relative;}
-	 .sresLbBot p{width:100%;height:auto;display:block;margin:0;padding:20px;font-family:"Averta","Open Sans",fallback;display:block;font-size:18px;line-height:22px;font-weight:normal;text-align:left;color:#000;position:relative;box-sizing: border-box !important;}
-	.sresLbBot li{width:100%;height:auto;display:block;margin:0;padding:10px 0px 0px 20px;font-family:"Averta","Open Sans",fallback;display:block;font-size:18px;line-height:18px;font-weight:normal;text-align:left;color:#000;position:relative;box-sizing: border-box !important;}
-	.sresLbBot ul{width:100%;height:auto;display:block;margin:0;padding:0px;font-family:"Averta","Open Sans",fallback;display:block;font-size:18px;line-height:18px;font-weight:normal;text-align:left;color:#000;position:relative;box-sizing: border-box !important;}
-	  
+	 .sresLbTicketType, .sresLbDate{width:100%;max-width:300px;height:auto;display:flex;justify-content: flex-start;align-items: center;margin:0;padding:20px 0px 0px 20px;position:relative;background:var(--sres-purp);border-radius:6px 6px 0px 0px;box-sizing: border-box !important;}
+	 .sresLbTicketType h2, .sresLbDate h2{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:24px;font-weight:900;text-align:left;color:#fff;margin:0px 0px 0px 0px;padding:0px 0px;text-transform: uppercase;}
+	 .sresLbTicketType img{width:30px;height:30px;margin:0px 5px 0px -5px;display:inline-block;}
+	 .sresLbDate img{width:20px;height:20px;margin:0px 10px 0px 0px;display:inline-block;}
+	
+	.sresLbBot{width:60%;height:auto;display:block;margin:0;padding:0px 0px 20px 0px;border-radius:0px 10px 0px 0px;position:relative;}
+	.sresLbBotWrap1{width:calc(100% - 20px);height:auto;display:block;margin:10px;padding:20px;background: rgb(98 47 141 / 10%);border-radius:10px;position:relative;box-sizing: border-box !important;}
+	.sresLbBotWrap2{width:calc(100% - 20px);height:auto;display:block;margin:10px;padding:20px;background: rgb(0 0 0 / 10%);border-radius:10px;position:relative;box-sizing: border-box !important;}
+	.sresLbBot h1{width:100%;height:auto;display:block;margin:0;padding:0px 0px 20px 0px;font-family:"Averta","Open Sans",fallback;display:block;font-size:24px;line-height:22px;font-weight:bold;text-align:left;color:#000;position:relative;box-sizing: border-box !important;}
+	.sresLbBot p{width:100%;height:auto;display:block;margin:0;padding:0px;font-family:"Averta","Open Sans",fallback;display:block;font-size:18px;line-height:22px;font-weight:normal;text-align:left;color:#000;position:relative;box-sizing: border-box !important;}
+	.sresLbBot li{width:100%;height:auto;display:block;margin:0;padding:10px 0px 0px 0px;font-family:"Averta","Open Sans",fallback;display:block;font-size:18px;line-height:18px;font-weight:normal;text-align:left;color:#000;position:relative;box-sizing: border-box !important;}
+	.sresLbBot ul{width:100%;height:auto;display:block;margin:0 0px 10px 0px;padding:0px;font-family:"Averta","Open Sans",fallback;display:block;font-size:18px;line-height:18px;font-weight:normal;text-align:left;color:#000;position:relative;list-style:circle;box-sizing: border-box !important;}
+	.sresLbSpan{width:100%;height:auto;display:flex;margin:0;padding:0;}
+	.sresLbSpan img{width:25px;height:25px;margin:0px 10px 10px 0px;border-radius:30px;box-shadow: 0px 4px 0px 0px rgb(98 47 141 / 20%);display:inline-block;}
 	/*errors*/
 	#sresEventErrors{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;padding:0px;position: relative; box-sizing:border-box !important;display:flex;flex-wrap: nowrap;justify-content: center;flex-direction: row;}
 	.sresErrorMessage{width:94%;max-width:500px;height:auto;margin:0px;padding:20px;border-radius:10px;background:#efefef;display: none;box-sizing:border-box !important;text-align: center;}
@@ -264,7 +275,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 
 
 		</div>
-	</div>
+
 <!--event extras-->
 <div id="sresExtras">	
 	<h3>EVENT EXTRAS &amp; OFFERS</h3>
@@ -278,11 +289,13 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 						<div class="sresLbHorDiv"></div>
 						<!--<div class="sresLbDate"><img src=""></div>--->
 						<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_w_ico.svg"><h2>Event Extra</h2></div>
-						<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_res_w_ico.svg"><h2>Reserved Seat</h2></div>
+						<!--<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_res_w_ico.svg"><h2>Reserved Seat</h2></div>-->
 					</div>
 					<div class="sresLbBot">
+						<div class="sresLbBotWrap1">
 						<p>Help the RAS Foundation build strong, vibrant, and resilient rural communities through capacity building grants, education and skills development. Your donation will help rural Australians realise their potential and achieve their ambitions through grants and scholarships.
-							<br /><br />
+						</p></div>
+						<div class="sresLbBotWrap2"><p>
 							<strong>$5</strong> could help a rural student access post-secondary education
 							<br /><br />
 							<strong>$10</strong> could provide extra agriculture resources for rural and regional schools
@@ -291,8 +304,8 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 							<br /><br />
 							<strong>$50</strong> could help bring a remote school to Sydney to access extra-curricular activities
 							<br /><br />
-							<strong></strong>$100</strong> could provide one Ag in a Box teacher & student resource kit to one rural school
-							</p>
+							<strong>$100</strong> could provide one Ag in a Box teacher & student resource kit to one rural school
+						</p></div>
 						
 					</div>
 				</div>			
@@ -318,17 +331,19 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 						<div class="sresLbHorDiv"></div>
 						<!--<div class="sresLbDate"><img src=""></div>--->
 						<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_w_ico.svg"><h2>Event Extra</h2></div>
-						<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_res_w_ico.svg"><h2>Reserved Seat</h2></div>
+						<!--<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_res_w_ico.svg"><h2>Reserved Seat</h2></div>-->
 					</div>
 					<div class="sresLbBot">
+						<div class="sresLbBotWrap1">
 						<p><strong>The Angus Steakhouse</strong> is a key feature of our Nashville-inspired Honky Tonk, located on Hawkesbury Street,  where guests can enjoy mouthwatering steaks, delicious sides, and an unforgettable atmosphere. Indulge in hearty meals paired with live music, bringing the spirit of Nashville right to your table. Purchase a $50 dining voucher and receive a free kid&rsquo;s meal valued at $15 for lunch or dinner. This offer is strictly limited, is not redeemable for cash, and bookings are strongly encouraged.
-							<br /><br />
-						<strong>Two sittings are available for both lunch and dinner:</strong></p>
+						</p></div>
+						<div class="sresLbBotWrap2">
+						<p><strong>Two sittings are available for both lunch and dinner:</strong></p>
 						<ul>
 							<li><strong>Lunch:</strong> 12:00 PM &#45; 1:30 PM | 1:30 PM &#45; 3:00 PM</li>
 							<li><strong>Dinner:</strong> 6:00 PM &#45; 7:30 PM | 7:30 PM &#45; 9:00 PM</li>
 						</ul>
-						
+						</div>
 					</div>
 				</div>			
 				</div>
@@ -353,14 +368,18 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 						<div class="sresLbHorDiv"></div>
 						<!--<div class="sresLbDate"><img src=""></div>--->
 						<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_w_ico.svg"><h2>Event Extra</h2></div>
-						<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_res_w_ico.svg"><h2>Reserved Seat</h2></div>
+						<!--<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_res_w_ico.svg"><h2>Reserved Seat</h2></div>--->
 					</div>
 					<div class="sresLbBot">
-						<p>Treat yourself to a Sydney Royal Cheese or Charcuterie Board for two, served with two glasses of Tyrrell&rsquo;s wine.
-							<br /><br />
-							The Cheese Board includes three Sydney Royal award-winning cheeses with grapes, apple & thyme paste and crackers.
-							<br /><br />
-							The Charcuterie Board includes three Sydney Royal charcuteries with condiments and fresh bread &#45; the perfect pairing for your day at the Show.				
+						<div class="sresLbBotWrap1">
+							<p>Treat yourself to a Sydney Royal Cheese or Charcuterie Board for two, served with two glasses of Tyrrell&rsquo;s wine.
+						</p></div>
+						<div class="sresLbBotWrap2"><p>
+							<strong>The Cheese Board</strong> includes three Sydney Royal award-winning cheeses with grapes, apple & thyme paste and crackers.
+						</p></div>	
+						<div class="sresLbBotWrap2"><p>
+							<strong>The Charcuterie Board</strong> includes three Sydney Royal charcuteries with condiments and fresh bread &#45; the perfect pairing for your day at the Show.		
+						</p></div>		
 					</div>
 				</div>			
 				</div>
@@ -388,12 +407,13 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 						<!--<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_res_w_ico.svg"><h2>Reserved Seat</h2></div>-->
 					</div>
 					<div class="sresLbBot">
-						<p>The beloved sausage sizzle takes on new meaning at the Big Bush BBQ, where every dollar goes back into rural communities. Each day of the Show, a different NSW Show Society steps up to fire up the grill and fundraise for their local community.
+						<div class="sresLbBotWrap1"><p>The beloved sausage sizzle takes on new meaning at the <strong>Big Bush BBQ</strong>, where every dollar goes back into rural communities. Each day of the Show, a different NSW Show Society steps up to fire up the grill and fundraise for their local community.
 							<br /><br />
 							Visitors can enjoy a delicious sausage sizzle while knowing their contribution directly helps create positive change for our friends in the bush. It&rsquo;s more than just a snack &#45; it&rsquo;s a way to give back!
-							<br /><br />
+						</p></div>	
+						<div class="sresLbBotWrap2"><p>
 							<strong>Find us at the Schmidt Arena between 9am &#45; 3:30pm.</strong></p>
-
+						</p></div>	
 						
 					</div>
 				</div>			
@@ -404,7 +424,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 				</div><!--card mid-->
 				<div class="sresExtrasCardMid">
 					<div class="sresExtrasCardTitle">Big Bush BBQ </div>
-					<p>Pre-purchase a $5 sausage sizzle + bottle of water and support NSW Show Societies. Every dollar goes back into rural communities.</p>
+					<p>Pre&#45;purchase a $5 sausage sizzle + bottle of water and support NSW Show Societies. Every dollar goes back into rural communities.</p>
 				</div><!--card bot-->
 				<div class="sresExtrasCardBot">
 					<div class="sresExtrasBtn">MORE INFO</div>
@@ -422,16 +442,20 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 						<!--<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_res_w_ico.svg"><h2>Reserved Seat</h2></div>-->
 					</div>
 					<div class="sresLbBot">
-						<p>The RAS Foundation is offering the Give & Gather Bag at the 2026 Sydney Royal Easter Show. It&rsquo;s a great way to explore the Show and enjoy incredible value on food, lifestyle, and rides, whilst supporting rural and regional communities across NSW. 
-
+					<div class="sresLbBotWrap1">
+						<p>The RAS Foundation is offering the Give & Gather Bag at the 2026 Sydney Royal Easter Show. It&rsquo;s a great way to explore the Show and enjoy incredible value on food, lifestyle, and rides, whilst supporting rural and regional communities across NSW.
+						</p></div> 
+					<div class="sresLbBotWrap2"><p>
 					<strong>For $30, each bag includes:</strong></p>
-					<ul><li>Exclusive giveaways;</li>
-					<li>Discount vouchers for rides, food, and shopping; and</li>
-					<li>A Show map to help you find participating exhibitors and redeem your offers.</li>
+					<ul>
+					<li>&bull; Exclusive giveaways</li>
+					<li>&bull; Discount vouchers for rides, food, and shopping; and</li>
+					<li>&bull; A Show map to help you find participating exhibitors and redeem your offers.</li>
 					</ul>
-					<p>Every bag sold supports the RAS Foundation's Community Futures Grants.<br /><br />
+					</div>
+					<div class="sresLbBotWrap2"><p>Every bag sold supports the RAS Foundation's Community Futures Grants.<br /><br />
 					Collect your Give & Gather Bag at the collection point inside the main entry (until 2pm) or from the Arts & Craft Kiosk in Hall 5.</p>
-
+						</div>
 						
 					</div>
 				</div>			
@@ -461,11 +485,14 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 						<!--<div class="sresLbTicketType"><img src="sres_res_w_ico.svg"><h2>Reserved Seat</h2></div>-->
 					</div>
 					<div class="sresLbBot">
-						<p>Bianco proudly introduces a brand-new attraction for the 2026 Sydney Royal Easter Show.<br /><br />
+						<div class="sresLbBotWrap1"><p>Bianco proudly introduces a brand-new attraction for the 2026 Sydney Royal Easter Show.<br /><br />
 								Welcome to Bianco Carnivale (carnival), located in the iconic Woolworths Fresh Food Dome. Step into an authentic Italian market, celebrating traditional flavours and timeless recipes.<br /><br />
-								From Antipasti, Handmade Ravioli, Garlic Prawns and Arancini, to Homemade Tiramisu, Gelato and a Classic Affogato, Bianco Carnivale has you covered. Find a seat, take in the view, and enjoy Italian Cocktails or Classic Beverages while soaking up the unforgettable atmosphere of Sydney&rsquo;s largest show.<br /><br />
+								From Antipasti, Handmade Ravioli, Garlic Prawns and Arancini, to Homemade Tiramisu, Gelato and a Classic Affogato, Bianco Carnivale has you covered. Find a seat, take in the view, and enjoy Italian Cocktails or Classic Beverages while soaking up the unforgettable atmosphere of Sydney&rsquo;s largest show.
+						</p></div>		
+						<div class="sresLbBotWrap2"><p>
 								<strong>SHOW OFFER:</strong> 1 x Classico & 1 x Dessert for $26 (SAVING UP TO $10)<br /><br />
-								Menu can be found at <a href="https://www.eastershow.com.au/ticket-information">eastershow.com.au/ticket-information</a></p>			
+								Menu can be found at <a href="https://www.eastershow.com.au/ticket-information">eastershow.com.au/ticket-information</a>
+						</p></div>			
 					</div>
 				</div>			
 				</div>
@@ -485,21 +512,30 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 
 	</div>
 
-</div>	
+</div><!--end extras-->
+	</div>
 </div>
 <!--info pop ups-->
-<!--general ticket
-<p>Entry to the Show from 8:30am.<br />Same day return public transport.<br />Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day. Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p>-->
-<!--after 4pm
-<p>Entry to the Show from 4:00pm.<br />Same day return public transport.<br />Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p><h1>Additional Information</h1><p></p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day. Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p>-->
-<!--all day plus res
-<p>Entry to the Show from 8:30am.<br />Same day return public transport.<br />Guaranteed Seat from 5pm in the Sydney Royal Stand at ENGIE Stadium for the night&#45;time Entertainment.<br /><strong>Premium Reserve Seating</strong> located in the Sky Deck, access from 5pm excluding Easter Sunday with access not premitted until 5:30pm. Included in your ticket price is a welcome drink and a delicious meal. Please note that Companion Card Tickets do not include a drink or meal.</p><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day. Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p>-->
-<!--royal suites
-<p>Entry to the Show from 8:30am<br />Same day return public transport.<br />Access to your private suite at ENGIE Stadium from 12:00pm<br />Sydney Royal Grand Champion Grazing Menu, served from 5pm through to the end of the night&#45;time Entertainment.<br />Premium Beverage Package including Wine, Beers and Soft Drinks</p><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day. Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p>-->
+<!--lightbox--<div class="sresLightboxBg"><div class="sresLightboxCont"><div class="sresLbClose">CLOSE</div><div class='sresLbTop'><div class='sresLbHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_"+eventType.replace(/[^\w\s]/gi, '')+"_hero.jpg' alt='Hero Image'></div><h1>"+value.event_name+"</h1><div class='sresLbHorDiv'></div><div class='sresLbDate'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_cal_w_ico.svg' alt='Date Icon'><h2>"+eventDateShort+"</h2></div><div class='sresLbTicketType'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_"+ticketType+"_p_ico.svg'>"+value.entry_type+"</div></div><div class='sresLbBot'>"+value.inclusions_event_blurb+"</div></div></div>-->
+<!--general ticket--
+<div class='sresLightboxBg'><div class='sresLightboxCont'><div class='sresLbClose'>CLOSE</div><div class='sresLbTop'><div class='sresLbHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_"+eventType.replace(/[^\w\s]/gi, '')+"_hero.jpg' alt='Hero Image'></div><h1>"+value.event_name+"</h1><div class='sresLbHorDiv'></div><div class='sresLbDate'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_cal_w_ico.svg' alt='Date Icon'><h2>"+eventDateLb+"</h2></div><div class='sresLbTicketType'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_"+ticketType+"_w_ico.svg'><h2>"+value.entry_type+"</h2></div></div><div class='sresLbBot'><!---"+value.inclusions_event_blurb+"<div class="sresLbBotWrap1"><div class="sresLbSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg"><p>Entry to the Show from 8:30am.</p></div><div class="sresLbSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg"><p>Same day return public transport.</p></div><div class="sresLbSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg"><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class="sresLbBotWrap2"><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day. Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div></div></div></div>-->
+
+<!--after 4pm--
+<div class='sresLightboxBg'><div class='sresLightboxCont'><div class='sresLbClose'>CLOSE</div><div class='sresLbTop'><div class='sresLbHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_"+eventType.replace(/[^\w\s]/gi, '')+"_hero.jpg' alt='Hero Image'></div><h1>"+value.event_name+"</h1><div class='sresLbHorDiv'></div><div class='sresLbDate'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_cal_w_ico.svg' alt='Date Icon'><h2>"+eventDateLb+"</h2></div><div class='sresLbTicketType'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_"+ticketType+"_w_ico.svg'><h2>"+value.entry_type+"</h2></div></div><div class='sresLbBot'><!---"+value.inclusions_event_blurb+"---<div class="sresLbBotWrap1"><div class="sresLbSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg"><p>Entry to the Show from 4:00pm.</p></div><div class="sresLbSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg"><p>Same day return public transport.</p></div><div class="sresLbSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg"><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class="sresLbBotWrap2"><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day. Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div></div></div></div>
+--->
+
+<!--all day plus res--
+<div class='sresLightboxBg'><div class='sresLightboxCont'><div class='sresLbClose'>CLOSE</div><div class='sresLbTop'><div class='sresLbHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_"+eventType.replace(/[^\w\s]/gi, '')+"_hero.jpg' alt='Hero Image'></div><h1>"+value.event_name+"</h1><div class='sresLbHorDiv'></div><div class='sresLbDate'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_cal_w_ico.svg' alt='Date Icon'><h2>"+eventDateLb+"</h2></div><div class='sresLbTicketType'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_"+ticketType+"_w_ico.svg'><h2>"+value.entry_type+"</h2></div></div><div class='sresLbBot'><!---"+value.inclusions_event_blurb+"---<div class="sresLbBotWrap1"><div class="sresLbSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg"><p>Entry to the Show from 8:30am.</p></div><div class="sresLbSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg"><p>Same day return public transport.</p></div><div class="sresLbSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg"><p>Guaranteed Seat from 5pm in the Sydney Royal Stand at ENGIE Stadium for the night&#45;time Entertainment.</p></div></div><div class="sresLbBotWrap1"><div class="sresLbSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_seat_ico.svg"><p><strong>Premium Reserve Seating</strong> located in the Sky Deck, access from 5:00pm excluding Easter Sunday with access not premitted until 5:30pm. Included in your ticket price is a welcome drink and a delicious meal. Please note that Companion Card Tickets do not include a drink or meal.</p></div></div><div class="sresLbBotWrap2"><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day. Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div></div></div></div>-->
+
+
+<!--royal suites--
+<div class="sresLbBotWrap1"><div class="sresLbSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg"><p>Entry to the Show from 8:30am.</p></div><div class="sresLbSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg"><p>Same day return public transport.</p></div><div class="sresLbSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg"><p>Access to your private suite at ENGIE Stadium from 12:00pm.</p></div></div><div class="sresLbBotWrap1"><div class="sresLbSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_food_ico.svg"><p>Sydney Royal Grand Champion Grazing Menu, served from 5pm through to the end of the night&#45;time Entertainment.</p></div><div class="sresLbSpan"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_drink_ico.svg"><p>Premium Beverage Package including Wine, Beers and Soft Drinks</p></div></div></div><div class="sresLbBotWrap2"><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day. Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>
+
+-->
 <script type="text/javascript">
 var $j = jQuery.noConflict();
 
-	//upsells, add kids/seniors day banners to cards, pop ups, menu counters, bread crumbs, expire cards, availability
+	//add kids/seniors day banners to cards, pop ups, menu counters, bread crumbs, expire cards, availability
 	eventCount = 0;
 
 	 eventTypeList = ["All Day Ticket","After 4pm Ticket","All Day Ticket + Reserved Seat","Royal Suites"];
@@ -524,11 +560,12 @@ var $j = jQuery.noConflict();
 						let eventdate = new Date(value.event_date)
 						let options = { weekday: 'long', day: '2-digit', month: 'long',  timeZone: "Australia/Sydney"};
 						let eventDateShort = new Intl.DateTimeFormat('en-AU', options).format(eventdate)//.replace(',', '');year: 'numeric' , 
-
+						let options2 = { weekday: 'short', day: '2-digit', month: 'long',  timeZone: "Australia/Sydney"};
+						let eventDateLb = new Intl.DateTimeFormat('en-AU', options2).format(eventdate)//.replace(',', '');year: 'numeric' , 
 						let ticketType = value.entry_type.replace(/\s/g, '');//removes spaces
 						let eventType = value.event_name.replace(/\s/g, '');
-						//build card
-						let newEvent = $j("<div class='sresEventCard' data-date='"+value.event_date+"' data-availid'"+value.event_date+"' data-eventtype='"+value.event_name+"' data-tickettype='"+value.entry_type+"' data-childnum=''><!--lightbox--><div class='sresLightboxBg'></div><!--card top---><div class='sresCardTop'><div class='sresCardDate'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_cal_w_ico.svg' alt='Date Icon'><h1>"+eventDateShort+"</h1></div><div class='sresCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_"+eventType.replace(/[^\w\s]/gi, '')+"_hero.jpg' alt='Hero Image'></div><div class='sresEasterTag'><h1>EASER WEEKEND</h1></div></div><!--card mid--><div class='sresCardMid'><div class='sresCardTitle'>"+value.event_name+"</div><div class='sresEventType'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_"+ticketType+"_p_ico.svg'>"+value.entry_type+"</div></div><!--card bot--><div class='sresCardBot'><div class='sresInfoBtn'>MORE INFO</div><a href='"+value.event_link+"' target='_blank'><div class='sresTixBtn'>SEE TICKETS</div></div></div></div>");
+						//build card 
+						let newEvent = $j("<div class='sresEventCard' data-date='"+value.event_date+"' data-availid'"+value.event_date+"' data-eventtype='"+value.event_name+"' data-tickettype='"+value.entry_type+"' data-childnum=''><div class='sresLightboxBg'><div class='sresLightboxCont'><div class='sresLbClose'>CLOSE</div><div class='sresLbTop'><div class='sresLbHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_"+eventType.replace(/[^\w\s]/gi, '')+"_hero.jpg' alt='Hero Image'></div><h1>"+value.event_name+"</h1><div class='sresLbHorDiv'></div><div class='sresLbDate'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_cal_w_ico.svg' alt='Date Icon'><h2>"+eventDateLb+"</h2></div><div class='sresLbTicketType'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_"+ticketType+"_w_ico.svg'><h2>"+value.entry_type+"</h2></div></div><div class='sresLbBot'>"+value.inclusions_event_blurb+"</div></div></div><!--card top---><div class='sresCardTop'><div class='sresCardDate'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_cal_w_ico.svg' alt='Date Icon'><h1>"+eventDateShort+"</h1></div><div class='sresCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_"+eventType.replace(/[^\w\s]/gi, '')+"_hero.jpg' alt='Hero Image'></div><div class='sresEasterTag'><h1>EASER WEEKEND</h1></div><div class='sresKidsTag'><h1>KID&rsquo;S DAY</h1></div><div class='sresSeniorsTag'><h1>SENIOR&rsquo;S DAY</h1></div></div><!--card mid--><div class='sresCardMid'><div class='sresCardTitle'>"+value.event_name+"</div><div class='sresEventType'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_"+ticketType+"_p_ico.svg'>"+value.entry_type+"</div></div><!--card bot--><div class='sresCardBot'><div class='sresInfoBtn'>MORE INFO</div><a href='"+value.event_link+"' target='_blank'><div class='sresTixBtn'>SEE TICKETS</div></div></div></div>");
 						//apends event data into an element
 						eventListDiv.append(newEvent);
 
@@ -697,6 +734,11 @@ let eventCounter = function(){
 	}
 }
 //lightbox clicks
+$j(document).on('click', ".sresInfoBtn", function () {
+	$j(this).parent('.sresCardBot').siblings('.sresLightboxBg').fadeIn(500).css("display","flex")
+
+});
+
 $j(document).on('click', ".sresExtrasBtn", function () {
 	$j(this).parent('.sresExtrasCardBot').siblings('.sresLightboxBg').fadeIn(500).css("display","flex")
 
