@@ -44,6 +44,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	#sresSearchBarWrap{width:610px;height:70px;margin:50px auto 0px;display:block;box-sizing:  border-box !important;}
 	#sresSearchBar{width:auto;height:auto;margin:0;display:flex;flex-wrap: nowrap;column-gap:10px;padding:0px;box-sizing:  border-box !important;}
 	.sresSearchBtn{width:300px;height:70px;margin:0;padding:0px;background:var(--sres-yel);border:2px solid #fff;display:flex;flex-wrap: nowrap;align-items: center;position:relative;box-sizing:  border-box !important;user-select:none;cursor:pointer;}
+	.sresSearchBtnWrap{width:300px;height:70px;margin:0;padding:0px;position: relative;}	
 	.sresBtnIco{width:34px;height:34px;margin:0px 0px 0px 30px;padding:3px;display:inline-block;position: relative;box-sizing:  border-box !important;}
 	.sresBtnIco img{width:26px;height:26px;}
 	.sresMenuCounter{width:34px;height:34px;border-radius:20px;font-family:"Averta","Open Sans",fallback;font-size:30px;line-height:30px;font-weight:900;text-align:center;color:#fff;background:var(--sres-purp);margin:0px auto 0px;padding:0px;top:0;left:0;right:0;position: absolute;display:none;box-sizing:  border-box !important;}
@@ -95,6 +96,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	.sresKidsTag,.sresSeniorsTag{width:100%;background:var(--sres-dpurp);margin:0px 0px;padding:0px 0px;box-sizing: border-box !important;display:none;border-bottom:2px solid var(--sres-yel);border-top:2px solid var(--sres-yel);}
 	.sresKidsTag h1,.sresSeniorsTag h1{font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:900;text-align:center;color:var(--sres-yel);margin:0px 0px;padding:4px 0px;}
 	/*easter days*/.sresEventCard[data-date='2026-04-03'] .sresEasterTag,.sresEventCard[data-date='2026-04-04'] .sresEasterTag,.sresEventCard[data-date='2026-04-05'] .sresEasterTag,.sresEventCard[data-date='2026-04-06'] .sresEasterTag{display:block;}
+	.sresEventCard[data-date='2026-04-03'] .sresEasterTag h1:after{content: "EASTER FRIDAY";}
 	/*kids days*/.sresEventCard[data-date='2026-04-13'] .sresKidsTag{display:block;}
 	/*seniors days*/.sresEventCard[data-date='2026-04-09'] .sresSeniorsTag{display:block;}
 	.sresCardMid{width:100%;max-width:300px;height:auto;display:flex;flex-wrap: wrap;align-content: space-between;justify-content: center;margin:0;padding:0;position:relative;}
@@ -156,7 +158,130 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 }
 /*mobile*/
 @media only screen and (max-width: 999.99px) {	
+	#sresContent{width:100%;height:auto;position:relative;margin:0px auto;background:var(--sres-cream);background-size:contain;padding:0px 0px 1px 0px;z-index: 9;box-sizing:  border-box !important;}
+	#sresHeader{width:100%;height:auto;margin:0px;padding:1px 0px;position: relative;background:url("https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_header.webp") no-repeat top center, var(--sres-purp);background-size:auto 575px, 100% 100%;overflow:visible;border-bottom:10px solid var(--sres-purp);z-index:13;box-sizing:  border-box !important;}
 
+	#sresLogo{max-width:330px;width:70%;height:230px;margin:70px auto 0;display:block;position: relative;z-index: 11;text-align: center;}
+	#sresLogo img{width:100%; height:auto;margin:0px 0px;position: relative;z-index: 11;display:inline-block;}
+	
+	#sresMenuWrap{max-width:900px;width:90%;height:auto;border-radius:10px;background:rgba(98,47,141,.8);margin:10px auto;display:block;position: absolute;top:0;left:0;right:0;z-index: 100;}
+	#sresMenu{width:100%;height:50px;margin:0px;display:flex;flex-wrap:nowrap;}
+	#sresMenu button{font-family:"Averta","Open Sans",fallback;font-size:18px;line-height:18px;font-weight:800;text-align:center;color:#fff;margin:0px auto 0px;padding:0px 0px;background:none;outline:0;border:0;box-sizing:  border-box !important;}
+
+	#sresSearchBarWrap{width:90%;max-width:330px;height:auto;margin:50px auto 50px;display:block;box-sizing:  border-box !important;}
+	#sresSearchBar{width:auto;height:auto;margin:0;display:flex;flex-wrap: wrap;justify-content: center;row-gap:10px;padding:0px;box-sizing:  border-box !important;}
+	.sresSearchBtn{width:100%;height:70px;margin:0;padding:0px;background:var(--sres-yel);border:2px solid #fff;display:flex;flex-wrap: nowrap;align-items: center;position:relative;box-sizing:  border-box !important;user-select:none;cursor:pointer;}
+	.sresSearchBtnWrap{width:300px;height:auto;margin:0;padding:0px;position: relative;}	
+	.sresBtnIco{width:34px;height:34px;margin:0px 0px 0px 30px;padding:3px;display:inline-block;position: relative;box-sizing:  border-box !important;}
+	.sresBtnIco img{width:26px;height:26px;}
+	.sresMenuCounter{width:34px;height:34px;border-radius:20px;font-family:"Averta","Open Sans",fallback;font-size:30px;line-height:30px;font-weight:900;text-align:center;color:#fff;background:var(--sres-purp);margin:0px auto 0px;padding:0px;top:0;left:0;right:0;position: absolute;display:none;box-sizing:  border-box !important;}
+	.sresSearchBtn h1{font-family:"Averta","Open Sans",fallback;font-size:36px;line-height:36px;font-weight:800;text-align:center;color:var(--sres-purp);margin:0px auto 0px;padding:0px 0px;display:inline-block;}
+	.sresBtnArrow{width:20px;height:auto;margin:0 30px 0px 0px;padding:0;display:inline-block;transition: ease-in-out .6s all;}
+	.sresBtnArrow img{width:100%;height:auto;}
+	.sresBtnArrowRot{transform: rotate(180deg);}
+	.sresLeftBtn{border-radius:10px;}
+	.sresRightBtn{border-radius:10px;}
+	#sresCalWrap{width:100%;max-width:330px;height:auto;margin:10px 0px 0px 0px;padding:0;background:#fff;box-shadow: 0px 4px 0px 2px rgb(98 47 141 / 20%);border-radius:10px;border:solid var(--sres-purp);border-width:2px 2px 15px 2px ;position:relative;cursor:default;box-sizing:  border-box !important;}
+	.sresDropDown{width:100%;max-width:330px;height:auto;margin:0;padding:0 0px 10px 0px;background:#fff;box-shadow: 0px 4px 0px 2px rgb(98 47 141 / 20%);border-radius:10px;border:solid var(--sres-purp);border-width:2px 2px 15px 2px ;position:relative;cursor:default;box-sizing:  border-box !important;}
+	.sresDropDownOn{display:block;}
+	.sresDropDownOff{display:none;}
+	.sresDropDownHeader{width:100%;height:35px;margin:0;padding:0;background:#EBEBEB;border-radius:10px 10px 0px 0px;}	
+	.sresDropDownHeader h2{font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:800;text-align:left;color:#000;margin:0px auto 0px;padding:10px 15px;box-sizing:  border-box !important;}
+	.sresDayWrap{width:calc(100% - 20px);height:auto;display:flex;white-space: nowrap;text-align: center;margin:10px 10px 0px 10px;flex-wrap: nowrap;justify-content: space-between;flex-direction: row;box-sizing:  border-box !important;}
+	.sresDay{width:32px;height:auto;font-family:"Averta","Open Sans",fallback;font-size:20px;line-height:20px;font-weight:700;text-align:center;color:#000;margin:0px auto 0px;padding:0px 0px;box-sizing:  border-box !important;}
+	.sresCalDay{width:32px;height:32px;font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:700;text-align:center;margin:0px auto 0px;padding:0px 0px;border-radius:20px;box-sizing:  border-box !important;display:flex;justify-content: center;align-items: center;user-select:none;}
+	.noDay{width:32px;height:32px;font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:700;text-align:center;margin:0px auto 0px;padding:0px 0px;border-radius:20px;box-sizing:  border-box !important;display:flex;justify-content: center;align-items: center;background:#D9D9D9;box-shadow: 2px 2px 0px 1px rgb(0 0 0 / 06%);color:#868686;user-select:none;}
+
+	.calDayOn.weekDay{background:rgb(128 77 171);box-shadow: 2px 2px 0px 1px rgb(98 47 141 / 20%);border:2px solid rgb(50 20 75);color:#fff;cursor:pointer;}
+	.calDayOn.easterDay{background:#ffd28a;box-shadow: 2px 2px 0px 1px rgb(253 185 77 / 40%);border:2px solid #f19400;color:#000;cursor:pointer;}
+	.calDayOff.weekDay{background:var(--sres-purp);box-shadow: 2px 2px 0px 1px rgb(98 47 141 / 20%);color:#fff;cursor:pointer;}
+	.calDayOff.easterDay{background:var(--sres-yel);box-shadow: 2px 2px 0px 1px rgb(253 185 77 / 40%);color:#000;cursor:pointer;}
+	.sresCalKey{width:100%;height:auto;display:block;margin:0px auto;padding:10px 0px;box-sizing:  border-box !important;}
+	.sresCalRow{width:calc(100% - 20px);height:auto;display:flex;justify-content: flex-start;align-items: center;flex-wrap: nowrap;text-align: center;margin:5px 10px 0px 15px;box-sizing:  border-box !important;}
+	.sresCalRow h3{height:auto;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:14px;line-height:14px;font-weight:bold;text-align:left;color:#000;margin:0px 0px 0px 0px;padding:0px 0px;box-sizing:  border-box !important;}
+	.sresEasterKey{width:20px;height:20px;background:var(--sres-yel);display:inline-block;margin:0px 10px;border-radius:20px;}
+
+	.sresDropDown h4{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:14px;line-height:14px;font-weight:bold;text-align:left;color:#535353;margin:10px 0px 0px 10px;padding:0px 0px;box-sizing:  border-box !important;}
+	.sresDropDownBtn{width:calc(100% - 20px);height:auto;display:flex;white-space: nowrap;text-align: center;margin:10px 0px 0px 0px;padding:0px 10px 0px 10px;flex-wrap: nowrap;justify-content: space-between;flex-wrap: wrap;justify-content: flex-start;flex-direction: row;box-sizing: border-box !important;align-content: center;align-items: center;cursor:pointer;}
+	.sresDropDownBtn h3{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#000;margin:0px 0px 0px 10px;padding:0px 0px;display:inline-block;box-sizing:  border-box !important;}
+	.sresCheckBox{width:16px;height:16px;margin:0px;padding:0;border-radius:2px;display:inline-block;box-shadow: 2px 2px 0px 1px rgb(98 47 141 / 20%);box-sizing: border-box !important;}
+	.sresCheckBoxOn{background:url('sres_tick_w_img.svg') no-repeat,var(--sres-purp);background-size:16px 16px;}
+	.sresCheckBoxOff{border:2px solid var(--sres-purp);}
+	/*event stream*/
+	#sresEvents{width:100%;height:auto;margin:0;padding:0;background:var(--sres-cream);display:block;position:relative;z-index:12;box-sizing:  border-box !important;}
+	#sresEventStream{width:100%;max-width:1300px;margin:0px auto;padding:50px 0px;display:flex;justify-content: center;align-items: stretch;align-content: flex-start;flex-wrap: wrap;column-gap: 20px;row-gap: 20px;box-sizing:  border-box !important;}
+	.sresEventCard{width:300px;height:auto;background:#fff;padding:0px 0px 0px;border-radius:10px;border:2px solid var(--sres-purp);user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;justify-content: space-between;box-sizing: border-box !important;overflow:visible;box-shadow: 0px 8px 0px 4px rgb(98 47 141 / 20%);}
+	.sresCardTop{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:0;position:relative;}
+	.sresCardDate{width:100%;max-width:300px;height:36px;display:flex;justify-content: center;align-items: center;margin:0;padding:0;position:relative;background:var(--sres-purp);border-radius:6px 6px 0px 0px;}
+	.sresCardDate img{width:20px;height:20px;margin:0px 10px 0px 0px;display:inline-block;}
+	.sresCardDate h1{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:16px;font-weight:900;text-align:center;color:#fff;margin:0px 0px 0px 0px;padding:0px 0px;text-transform: uppercase;}
+	.sresCardHero{width:296px;height:157px;margin:0;padding:0;display:block;}
+	.sresCardHero img{width:100%;height:auto;}
+	/*card tags*/
+	.sresEasterTag{width:100%;background:var(--sres-yel);margin:0px 0px;padding:0px 0px;box-sizing: border-box !important;display:none;}
+	.sresEasterTag h1{font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:900;text-align:center;color:var(--sres-purp);margin:0px 0px;padding:4px 0px;}
+	.sresKidsTag,.sresSeniorsTag{width:100%;background:var(--sres-dpurp);margin:0px 0px;padding:0px 0px;box-sizing: border-box !important;display:none;border-bottom:2px solid var(--sres-yel);border-top:2px solid var(--sres-yel);}
+	.sresKidsTag h1,.sresSeniorsTag h1{font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:900;text-align:center;color:var(--sres-yel);margin:0px 0px;padding:4px 0px;}
+	/*easter days*/.sresEventCard[data-date='2026-04-03'] .sresEasterTag,.sresEventCard[data-date='2026-04-04'] .sresEasterTag,.sresEventCard[data-date='2026-04-05'] .sresEasterTag,.sresEventCard[data-date='2026-04-06'] .sresEasterTag{display:block;}
+	.sresEventCard[data-date='2026-04-03'] .sresEasterTag h1:after{content: "EASTER FRIDAY";}
+	/*kids days*/.sresEventCard[data-date='2026-04-13'] .sresKidsTag{display:block;}
+	/*seniors days*/.sresEventCard[data-date='2026-04-09'] .sresSeniorsTag{display:block;}
+	.sresCardMid{width:100%;max-width:300px;height:auto;display:flex;flex-wrap: wrap;align-content: space-between;justify-content: center;margin:0;padding:0;position:relative;}
+	.sresCardTitle{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:30px 10px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:26px;line-height:26px;font-weight:900;text-align:center;color:var(--sres-purp);position:relative;box-sizing: border-box !important;}
+	.sresEventType{width:100%;max-width:300px;height:auto;margin:0;padding:0px 10px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:20px;font-weight:bold;text-align:center;color:#000;position:relative;display:flex;flex-wrap: nowrap;justify-content: center;align-items: center;column-gap:10px;box-sizing: border-box !important;}
+	.sresEventType img{width:34px;height:34px;margin:0;padding:0;display:inline-block;border-radius:10px;box-shadow:0px 2px 0px 1px rgb(98 47 141 / 20%);}
+	.sresCardBot{width:100%;max-width:300px;height:auto;display:flex;flex-wrap: wrap;align-content: space-between;justify-content: center;margin:0;padding:0;position:relative;}
+	.sresInfoBtn{width:120px;height:auto;margin:20px auto;font-family:"Averta","Open Sans",fallback;display:inline-block;border-bottom:4px solid var(--sres-purp);font-size:18px;line-height:18px;font-weight:900;text-align:center;color:var(--sres-purp);}
+	.sresTixBtn{width:100%;margin:0px 0px 10px 0px;padding:10px 20px;background:var(--sres-purp);border-radius:5px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:18px;line-height:18px;font-weight:900;text-align:center;color:#fff;box-sizing:  border-box !important;} 
+	.sresCardBot a{width:calc(100% - 20px);margin:0px auto;display: block;}
+
+	/*upsells*/
+	#sresExtras{width:100%;height:auto;margin:0;padding:50px 0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/sres/2024/sres24_wave_top_w_ico.svg') top -2px center repeat-x , var(--sres-purp);background-size: 80px 20px;display:block;position:relative;z-index:12;box-sizing:  border-box !important;}
+	#sresExtras h3{font-family:"Averta","Open Sans",fallback;display:block;font-size:40px;line-height:40px;font-weight:900;text-align:center;color:var(--sres-cream);margin:0px 0px 0px 0px;padding:0px 40px;text-transform: uppercase;}
+	#sresExtraStream{width:100%;max-width:1300px;margin:0px auto;padding:50px 0px;display:flex;justify-content: center;align-items: stretch;align-content: flex-start;flex-wrap: wrap;column-gap: 20px;row-gap: 30px;box-sizing:  border-box !important;}
+	.sresExtrasCard{width:300px;height:auto;background:#fff;padding:0px 0px 40px 0px;border-radius:10px;border:2px solid var(--sres-dpurp);user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;justify-content: flex-start;box-sizing: border-box !important;overflow:visible;box-shadow: 0px 8px 0px 4px #fefcee61;position: relative;}
+	.sresExtrasCardTop{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:0;position:relative;}
+	.sresExtraHeader{width:100%;max-width:300px;height:44px;display:flex;justify-content: center;align-items: center;margin:0;padding:0;position:relative;background:var(--sres-cream);border-radius:6px 6px 0px 0px;border-bottom:2px solid var(--sres-purp);box-sizing: border-box !important;}
+	.sresExtraHeader h1{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:16px;font-weight:900;text-align:center;color:var(--sres-purp);margin:0px 0px 0px 0px;padding:0px 0px;text-transform: uppercase;}
+	.sresExtraHeader img{width:30px;height:30px;margin:0px 10px 0px 0px;display:inline-block;}
+	.sresExtrasCardHero{width:296px;height:157px;margin:0;padding:0;display:block;border-bottom:2px solid var(--sres-purp)}
+	.sresExtrasCardHero img{width:100%;height:auto;}
+	.sresExtrasCardMid{width:100%;max-width:300px;height:auto;display:flex;flex-wrap: wrap;align-content: space-between;justify-content: center;margin:0;padding:0;position:relative;}
+	.sresExtrasCardTitle{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:30px 10px 0px 10px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:26px;line-height:26px;font-weight:bold;text-align:center;color:var(--sres-purp);position:relative;box-sizing: border-box !important;}
+	.sresExtrasCardMid p{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:10px 20px 30px 20px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:18px;line-height:18px;font-weight:normal;text-align:center;color:#000;position:relative;box-sizing: border-box !important;}
+	.sresExtrasCardBot{width:100%;max-width:300px;height:auto;display:flex;flex-wrap: wrap;align-content: space-between;justify-content: center;margin:0;padding:0;}
+	.sresExtrasBtn{width:calc(100% - 20px);margin:0px 0px 0px 0px;padding:10px 20px;background:var(--sres-purp);border-radius:5px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:18px;line-height:18px;font-weight:900;text-align:center;color:#fff;position:absolute;bottom:10px;left:10px;right:0;box-sizing:  border-box !important;}
+	/*lightbox*/
+	 .sresLightboxBg{width:100%;height:100%;margin:0px;position:fixed;background:rgba(0,0,0,.2);backdrop-filter: blur(5px);z-index:201;display:none;top:0;right:0;left:0;justify-content: safe center; align-items: center;flex-direction: column;overflow-y: scroll;}
+	 .sresLightboxCont{width:700px;height:auto;background:#fff;box-shadow: 0px 8px 0px 4px rgb(98 47 141 / 20%);border-radius:10px;border:2px solid var(--sres-purp);box-sizing: border-box !important;position:relative;z-index: 203;display: flex;flex-direction: row;flex-wrap: nowrap;align-content: flex-start;justify-content: center;align-items: flex-start;}
+	 .sresExtrasCard .sresLightboxCont{box-shadow: 0px 8px 0px 4px #fefcee61;}
+	 .sresLbClose{width:100px;height:38px;background:var(--sres-yel);border-radius:5px;border:2px solid var(--sres-purp);font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:20px;font-weight:900;text-align:center;color:var(--sres-purp);margin:0px 0px 0px 0px;padding:6px 0px;text-transform: uppercase;position: absolute;top:-0px;right:-110px;cursor:pointer;z-index: 202;box-sizing: border-box !important;}
+	 .sresLbTop{width:40%;max-width:300px;height:100%;display:block;margin:0;padding:0 0px 20px 0px;position:relative;border-radius:8px 0px 0px 0px;background:var(--sres-purp);overflow:hidden;box-sizing: border-box !important;}
+	 .sresLbHero{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:0;position:relative;border-radius:8px 0px 0px 0px;overflow:hidden;}
+	 .sresLbHero img{width:100%;height:auto;}
+	 .sresLbTop h1{margin:20px 0px;padding:0px 10px;font-family:"Averta","Open Sans",fallback;display:block;font-size:30px;line-height:30px;font-weight:900;text-align:center;color:#fff;box-sizing: border-box !important;}
+	 .sresLbHorDiv{width:70%;height:2px;background:#fff;margin:0px auto;display:block;}
+	 .sresLbTicketType, .sresLbDate{width:100%;max-width:300px;height:auto;display:flex;justify-content: center;align-items: center;margin:0;padding:20px 0px 0px 0px;position:relative;background:var(--sres-purp);border-radius:6px 6px 0px 0px;box-sizing: border-box !important;}
+	 .sresLbTicketType h2, .sresLbDate h2{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:24px;font-weight:900;text-align:left;color:#fff;margin:0px 0px 0px 0px;padding:0px 0px;text-transform: uppercase;}
+	 .sresLbTicketType img{width:30px;height:30px;margin:0px 5px 0px -5px;display:inline-block;}
+	 .sresLbDate img{width:20px;height:20px;margin:0px 10px 0px 0px;display:inline-block;}
+	
+	.sresLbBot{width:60%;height:auto;display:block;margin:0;padding:0px 0px 20px 0px;border-radius:0px 10px 0px 0px;position:relative;}
+	.sresLbBotWrap1{width:calc(100% - 20px);height:auto;display:block;margin:10px;padding:20px;background: rgb(98 47 141 / 10%);border-radius:10px;position:relative;box-sizing: border-box !important;}
+	.sresLbBotWrap2{width:calc(100% - 20px);height:auto;display:block;margin:10px;padding:20px;background: rgb(0 0 0 / 10%);border-radius:10px;position:relative;box-sizing: border-box !important;}
+	.sresLbBot h1{width:100%;height:auto;display:block;margin:0;padding:0px 0px 20px 0px;font-family:"Averta","Open Sans",fallback;display:block;font-size:24px;line-height:22px;font-weight:bold;text-align:left;color:#000;position:relative;box-sizing: border-box !important;}
+	.sresLbBot p{width:100%;height:auto;margin:0;padding:0px;font-family:"Averta","Open Sans",fallback;display:block;font-size:16px;line-height:22px;font-weight:normal;text-align:left;color:#000;position:relative;box-sizing: border-box !important;}
+	.sresLbBot li{width:100%;height:auto;display:block;margin:0;padding:10px 0px 0px 0px;font-family:"Averta","Open Sans",fallback;display:block;font-size:18px;line-height:18px;font-weight:normal;text-align:left;color:#000;position:relative;box-sizing: border-box !important;}
+	.sresLbBot ul{width:100%;height:auto;display:block;margin:0 0px 10px 0px;padding:0px;font-family:"Averta","Open Sans",fallback;display:block;font-size:18px;line-height:18px;font-weight:normal;text-align:left;color:#000;position:relative;list-style:circle;box-sizing: border-box !important;}
+	.sresLbSpan{width:100%;height:auto;display:flex;margin:0;padding:0;}
+	.sresLbSpan img{width:25px;height:25px;margin:0px 10px 10px 0px;border-radius:30px;box-shadow: 0px 4px 0px 0px rgb(98 47 141 / 20%);display:inline-block;}
+	/*errors*/
+	#sresEventErrors{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;padding:0px;position: relative; box-sizing:border-box !important;display:flex;flex-wrap: nowrap;justify-content: center;flex-direction: row;}
+	.sresErrorMessage{width:94%;max-width:500px;height:auto;margin:0px;padding:20px;border-radius:10px;background:#efefef;display: none;box-sizing:border-box !important;text-align: center;}
+	.sresErrorMessage h1{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:22px;line-height:22px;font-weight:700;color:#000;padding:1px 0px 16px 0px;margin:0px;box-sizing:border-box !important;}
+	.sresErrorMessage p{font-family:"Averta", sans-serif, fallback;text-align:center;font-size:16px;font-weight:400;color:var(--sres-purp);padding:0px 0px 0px 0px;margin:0px;box-sizing:border-box !important;line-height: 24px;}
+	.sresErrorMessage a{text-decoration:none;}
+	.sresErrorResetBtn{width:195px;height:auto;display:inline-block;padding:16px 5px;margin:20px 5px 0px;background:var(--sres-purp);color:#000;font-family:"poppins","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:700;border-radius:4px;box-sizing:border-box !important;cursor:pointer;}
 }
 
 </style>
@@ -169,11 +294,13 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 
 			<div id="sresSearchBarWrap"><div id="sresSearchBar"> 
 				<!--Cal Btn-->
+				<div class="sresSearchBtnWrap">
 				<div id="sresMenuCal" class="sresSearchBtn sresLeftBtn">
 					<div class="sresBtnIco"><div id="sresDateMenuCount" class="sresMenuCounter"></div><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_cal_p_ico.svg"></div>
 					<h1>DATE</h1>
 					<div class="sresBtnArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_downarrow_w_img.svg"></div>
-					<!--calendar-->
+				</div>
+				<!--calendar-->
 					<div id="sresCalWrap" class="sresDropDownOff">
 						<div class="sresDropDownHeader"><h2>APRIL 2026</h2></div>
 						<div class="sresDayWrap"><div class="sresDay">M</div><div class="sresDay">T</div><div class="sresDay">W</div><div class="sresDay">T</div><div class="sresDay">F</div><div class="sresDay">S</div><div class="sresDay">S</div></div>
@@ -195,10 +322,12 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 					</div>
 				</div>
 				<!--Tix Btn-->
+				<div class="sresSearchBtnWrap">
 				<div id="sresMenuTix" class="sresSearchBtn sresRightBtn">
 					<div class="sresBtnIco"><div id="sresTicketMenuCount" class="sresMenuCounter"></div><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_tix_p_ico.svg"></div>
 					<h1>TICKET</h1>
 					<div class="sresBtnArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_downarrow_w_img.svg"></div>
+				</div>
 					<!--calendar-->
 					<div id="sresTicketWrap" class="sresDropDown sresDropDownOff">
 						<div class="sresDropDownHeader"><h2>TICKET / ENTRY TYPE</h2></div>
@@ -562,7 +691,7 @@ var $j = jQuery.noConflict();
 					let eventData = JSON.parse(data);
 					//let eventList = eventData.events;
 						
-					$j.each(eventData, function(key,value){
+					$j.each(localData, function(key,value){//eventData //tets
 					
 						let eventdate = new Date(value.event_date)
 						let options = { weekday: 'long', day: '2-digit', month: 'long',  timeZone: "Australia/Sydney"};
@@ -572,7 +701,7 @@ var $j = jQuery.noConflict();
 						let ticketType = value.entry_type.replace(/\s/g, '');//removes spaces
 						let eventType = value.event_name.replace(/\s/g, '');
 						//build card 
-						let newEvent = $j("<div class='sresEventCard' data-date='"+value.event_date+"' data-availid='"+value.event_date+"' data-eventtype='"+value.event_name+"' data-tickettype='"+value.entry_type+"' data-childnum=''><div class='sresLightboxBg'><div class='sresLightboxCont'><div class='sresLbClose'>CLOSE</div><div class='sresLbTop'><div class='sresLbHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_"+eventType.replace(/[^\w\s]/gi, '')+"_hero.jpg' alt='Hero Image'></div><h1>"+value.event_name+"</h1><div class='sresLbHorDiv'></div><div class='sresLbDate'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_cal_w_ico.svg' alt='Date Icon'><h2>"+eventDateLb+"</h2></div><div class='sresLbTicketType'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_"+ticketType+"_w_ico.svg'><h2>"+value.entry_type+"</h2></div></div><div class='sresLbBot'><!--"+value.inclusions_event_blurb+"--></div></div></div><!--card top---><div class='sresCardTop'><div class='sresCardDate'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_cal_w_ico.svg' alt='Date Icon'><h1>"+eventDateShort+"</h1></div><div class='sresCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_"+eventType.replace(/[^\w\s]/gi, '')+"_hero.jpg' alt='Hero Image'></div><div class='sresEasterTag'><h1>EASER WEEKEND</h1></div><div class='sresKidsTag'><h1>KID&rsquo;S DAY</h1></div><div class='sresSeniorsTag'><h1>SENIOR&rsquo;S DAY</h1></div></div><!--card mid--><div class='sresCardMid'><div class='sresCardTitle'>"+value.event_name+"</div><div class='sresEventType'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_"+ticketType+"_p_ico.svg'>"+value.entry_type+"</div></div><!--card bot--><div class='sresCardBot'><div class='sresInfoBtn'>MORE INFO</div><a href='"+value.event_link+"' target='_blank'><div class='sresTixBtn'>SEE TICKETS</div></div></div>");
+						let newEvent = $j("<div class='sresEventCard' data-date='"+value.event_date+"' data-availid='"+value.event_date+"' data-eventtype='"+value.event_name+"' data-tickettype='"+value.entry_type+"' data-childnum=''><div class='sresLightboxBg'><div class='sresLightboxCont'><div class='sresLbClose'>CLOSE</div><div class='sresLbTop'><div class='sresLbHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_"+eventType.replace(/[^\w\s]/gi, '')+"_hero.jpg' alt='Hero Image'></div><h1>"+value.event_name+"</h1><div class='sresLbHorDiv'></div><div class='sresLbDate'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_cal_w_ico.svg' alt='Date Icon'><h2>"+eventDateLb+"</h2></div><div class='sresLbTicketType'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_"+ticketType+"_w_ico.svg'><h2>"+value.entry_type+"</h2></div></div><div class='sresLbBot'>"+value.inclusions_event_blurb+"</div></div></div><!--card top---><div class='sresCardTop'><div class='sresCardDate'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_cal_w_ico.svg' alt='Date Icon'><h1>"+eventDateShort+"</h1></div><div class='sresCardHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_"+eventType.replace(/[^\w\s]/gi, '')+"_hero.jpg' alt='Hero Image'></div><div class='sresEasterTag'><h1></h1></div></div><!--card mid--><div class='sresCardMid'><div class='sresCardTitle'>"+value.event_name+"</div><div class='sresEventType'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_"+ticketType+"_p_ico.svg'>"+value.entry_type+"</div></div><!--card bot--><div class='sresCardBot'><div class='sresInfoBtn'>MORE INFO</div><a href='"+value.event_link+"' target='_blank'><div class='sresTixBtn'>SEE TICKETS</div></div></div>");
 						//apends event data into an element
 						eventListDiv.append(newEvent);
 
@@ -628,7 +757,7 @@ $j(document).on('click', '#sresMenuTix', function (e) {
 			if($j(e.target).closest('#sresTicketWrap').length !== 0)
 			{return false;}
 			//open
-				if($j(this).children('#sresTicketWrap').hasClass('sresDropDownOff')){
+				if($j(this).siblings('#sresTicketWrap').hasClass('sresDropDownOff')){
 				$j("#sresTicketWrap").removeClass('sresDropDownOff').addClass('sresDropDownOn');
 				$j(this).children('.sresBtnArrow').addClass('sresBtnArrowRot')
 				//fade out		
@@ -636,7 +765,7 @@ $j(document).on('click', '#sresMenuTix', function (e) {
 				$j("#sresCalWrap").children(".sresBtnArrow").removeClass('sresBtnArrowRot');			
 				}
 			//close
-				else if($j(this).children('.sresDropDown').hasClass('sresDropDownOn')){
+				else if($j(this).siblings('.sresDropDown').hasClass('sresDropDownOn')){
 				$j("#sresTicketWrap").removeClass('sresDropDownOn').addClass('sresDropDownOff');
 				$j(this).children(".sresBtnArrow").removeClass('sresBtnArrowRot');
 				}
@@ -645,7 +774,7 @@ $j(document).on('click', '#sresMenuCal', function (e) {
 			if($j(e.target).closest('#sresCalWrap').length !== 0)
 			{return false;}
 			//open
-				if($j(this).children('#sresCalWrap').hasClass('sresDropDownOff')){
+				if($j(this).siblings('#sresCalWrap').hasClass('sresDropDownOff')){
 				$j("#sresCalWrap").removeClass('sresDropDownOff').addClass('sresDropDownOn');
 				$j(this).children('.sresBtnArrow').addClass('sresBtnArrowRot')
 				//fade out		
@@ -653,7 +782,7 @@ $j(document).on('click', '#sresMenuCal', function (e) {
 				$j("#sresTicketWrap").children(".sresBtnArrow").removeClass('sresBtnArrowRot');			
 				}
 			//close
-				else if($j(this).children('#sresCalWrap').hasClass('sresDropDownOn')){
+				else if($j(this).siblings('#sresCalWrap').hasClass('sresDropDownOn')){
 				$j("#sresCalWrap").removeClass('sresDropDownOn').addClass('sresDropDownOff');
 				$j(this).children(".sresBtnArrow").removeClass('sresBtnArrowRot');
 				}
@@ -826,5 +955,584 @@ let emptyFullListsOnLoad = function(){
 	//ticketTypeList.length = 0;
 	//eventTypeList.length = 0;	
 }
+//test data
+let localData = [
+ {
+   "event_name": "All Day Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-02",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br />Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "After 4pm Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-02",
+   "event_time": "4:00PM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 4:00am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 4:00pm.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket + Reserved Seat",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-02",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Guaranteed Seat from 5pm in the Sydney Royal Stand at ENGIE Stadium for the night&#45;time Entertainment.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_seat_ico.svg'><p><strong>Premium Reserve Seating</strong> located in the Sky Deck, access from 5:00pm excluding Easter Sunday with access not premitted until 5:30pm. Included in your ticket price is a welcome drink and a delicious meal. Please note that Companion Card Tickets do not include a drink or meal.</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "Royal Suites",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-02",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to your private suite at ENGIE Stadium from 12:00pm.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_food_ico.svg'><p>Sydney Royal Grand Champion Grazing Menu, served from 5pm through to the end of the night&#45;time Entertainment.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_drink_ico.svg'><p>Premium Beverage Package including Wine, Beers and Soft Drinks</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-03",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br />Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "After 4pm Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-03",
+   "event_time": "4:00PM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 4:00am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 4:00pm.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket + Reserved Seat",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-03",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Guaranteed Seat from 5pm in the Sydney Royal Stand at ENGIE Stadium for the night&#45;time Entertainment.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_seat_ico.svg'><p><strong>Premium Reserve Seating</strong> located in the Sky Deck, access from 5:00pm excluding Easter Sunday with access not premitted until 5:30pm. Included in your ticket price is a welcome drink and a delicious meal. Please note that Companion Card Tickets do not include a drink or meal.</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "Royal Suites",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-03",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to your private suite at ENGIE Stadium from 12:00pm.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_food_ico.svg'><p>Sydney Royal Grand Champion Grazing Menu, served from 5pm through to the end of the night&#45;time Entertainment.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_drink_ico.svg'><p>Premium Beverage Package including Wine, Beers and Soft Drinks</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-04",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br />Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "After 4pm Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-04",
+   "event_time": "4:00PM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 4:00am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 4:00pm.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket + Reserved Seat",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-04",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Guaranteed Seat from 5pm in the Sydney Royal Stand at ENGIE Stadium for the night&#45;time Entertainment.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_seat_ico.svg'><p><strong>Premium Reserve Seating</strong> located in the Sky Deck, access from 5:00pm excluding Easter Sunday with access not premitted until 5:30pm. Included in your ticket price is a welcome drink and a delicious meal. Please note that Companion Card Tickets do not include a drink or meal.</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "Royal Suites",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-04",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to your private suite at ENGIE Stadium from 12:00pm.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_food_ico.svg'><p>Sydney Royal Grand Champion Grazing Menu, served from 5pm through to the end of the night&#45;time Entertainment.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_drink_ico.svg'><p>Premium Beverage Package including Wine, Beers and Soft Drinks</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-05",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br />Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "After 4pm Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-05",
+   "event_time": "4:00PM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 4:00am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 4:00pm.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket + Reserved Seat",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-05",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Guaranteed Seat from 5pm in the Sydney Royal Stand at ENGIE Stadium for the night&#45;time Entertainment.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_seat_ico.svg'><p><strong>Premium Reserve Seating</strong> located in the Sky Deck, access from 5:00pm excluding Easter Sunday with access not premitted until 5:30pm. Included in your ticket price is a welcome drink and a delicious meal. Please note that Companion Card Tickets do not include a drink or meal.</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "Royal Suites",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-05",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to your private suite at ENGIE Stadium from 12:00pm.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_food_ico.svg'><p>Sydney Royal Grand Champion Grazing Menu, served from 5pm through to the end of the night&#45;time Entertainment.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_drink_ico.svg'><p>Premium Beverage Package including Wine, Beers and Soft Drinks</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-06",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br />Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "After 4pm Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-06",
+   "event_time": "4:00PM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 4:00am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 4:00pm.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket + Reserved Seat",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-06",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Guaranteed Seat from 5pm in the Sydney Royal Stand at ENGIE Stadium for the night&#45;time Entertainment.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_seat_ico.svg'><p><strong>Premium Reserve Seating</strong> located in the Sky Deck, access from 5:00pm excluding Easter Sunday with access not premitted until 5:30pm. Included in your ticket price is a welcome drink and a delicious meal. Please note that Companion Card Tickets do not include a drink or meal.</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "Royal Suites",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-06",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to your private suite at ENGIE Stadium from 12:00pm.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_food_ico.svg'><p>Sydney Royal Grand Champion Grazing Menu, served from 5pm through to the end of the night&#45;time Entertainment.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_drink_ico.svg'><p>Premium Beverage Package including Wine, Beers and Soft Drinks</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-07",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br />Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "After 4pm Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-07",
+   "event_time": "4:00PM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 4:00am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 4:00pm.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket + Reserved Seat",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-07",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Guaranteed Seat from 5pm in the Sydney Royal Stand at ENGIE Stadium for the night&#45;time Entertainment.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_seat_ico.svg'><p><strong>Premium Reserve Seating</strong> located in the Sky Deck, access from 5:00pm excluding Easter Sunday with access not premitted until 5:30pm. Included in your ticket price is a welcome drink and a delicious meal. Please note that Companion Card Tickets do not include a drink or meal.</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "Royal Suites",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-07",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to your private suite at ENGIE Stadium from 12:00pm.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_food_ico.svg'><p>Sydney Royal Grand Champion Grazing Menu, served from 5pm through to the end of the night&#45;time Entertainment.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_drink_ico.svg'><p>Premium Beverage Package including Wine, Beers and Soft Drinks</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-08",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br />Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "After 4pm Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-08",
+   "event_time": "4:00PM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 4:00am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 4:00pm.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket + Reserved Seat",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-08",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Guaranteed Seat from 5pm in the Sydney Royal Stand at ENGIE Stadium for the night&#45;time Entertainment.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_seat_ico.svg'><p><strong>Premium Reserve Seating</strong> located in the Sky Deck, access from 5:00pm excluding Easter Sunday with access not premitted until 5:30pm. Included in your ticket price is a welcome drink and a delicious meal. Please note that Companion Card Tickets do not include a drink or meal.</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "Royal Suites",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-08",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to your private suite at ENGIE Stadium from 12:00pm.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_food_ico.svg'><p>Sydney Royal Grand Champion Grazing Menu, served from 5pm through to the end of the night&#45;time Entertainment.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_drink_ico.svg'><p>Premium Beverage Package including Wine, Beers and Soft Drinks</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-09",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br />Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "After 4pm Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-09",
+   "event_time": "4:00PM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 4:00am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 4:00pm.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket + Reserved Seat",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-09",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Guaranteed Seat from 5pm in the Sydney Royal Stand at ENGIE Stadium for the night&#45;time Entertainment.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_seat_ico.svg'><p><strong>Premium Reserve Seating</strong> located in the Sky Deck, access from 5:00pm excluding Easter Sunday with access not premitted until 5:30pm. Included in your ticket price is a welcome drink and a delicious meal. Please note that Companion Card Tickets do not include a drink or meal.</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "Royal Suites",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-09",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to your private suite at ENGIE Stadium from 12:00pm.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_food_ico.svg'><p>Sydney Royal Grand Champion Grazing Menu, served from 5pm through to the end of the night&#45;time Entertainment.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_drink_ico.svg'><p>Premium Beverage Package including Wine, Beers and Soft Drinks</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-10",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br />Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "After 4pm Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-10",
+   "event_time": "4:00PM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 4:00am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 4:00pm.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket + Reserved Seat",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-10",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Guaranteed Seat from 5pm in the Sydney Royal Stand at ENGIE Stadium for the night&#45;time Entertainment.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_seat_ico.svg'><p><strong>Premium Reserve Seating</strong> located in the Sky Deck, access from 5:00pm excluding Easter Sunday with access not premitted until 5:30pm. Included in your ticket price is a welcome drink and a delicious meal. Please note that Companion Card Tickets do not include a drink or meal.</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "Royal Suites",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-10",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to your private suite at ENGIE Stadium from 12:00pm.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_food_ico.svg'><p>Sydney Royal Grand Champion Grazing Menu, served from 5pm through to the end of the night&#45;time Entertainment.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_drink_ico.svg'><p>Premium Beverage Package including Wine, Beers and Soft Drinks</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-11",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br />Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "After 4pm Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-11",
+   "event_time": "4:00PM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 4:00am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 4:00pm.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket + Reserved Seat",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-11",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Guaranteed Seat from 5pm in the Sydney Royal Stand at ENGIE Stadium for the night&#45;time Entertainment.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_seat_ico.svg'><p><strong>Premium Reserve Seating</strong> located in the Sky Deck, access from 5:00pm excluding Easter Sunday with access not premitted until 5:30pm. Included in your ticket price is a welcome drink and a delicious meal. Please note that Companion Card Tickets do not include a drink or meal.</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "Royal Suites",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-11",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to your private suite at ENGIE Stadium from 12:00pm.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_food_ico.svg'><p>Sydney Royal Grand Champion Grazing Menu, served from 5pm through to the end of the night&#45;time Entertainment.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_drink_ico.svg'><p>Premium Beverage Package including Wine, Beers and Soft Drinks</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-12",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br />Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "After 4pm Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-12",
+   "event_time": "4:00PM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 4:00am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 4:00pm.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket + Reserved Seat",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-12",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Guaranteed Seat from 5pm in the Sydney Royal Stand at ENGIE Stadium for the night&#45;time Entertainment.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_seat_ico.svg'><p><strong>Premium Reserve Seating</strong> located in the Sky Deck, access from 5:00pm excluding Easter Sunday with access not premitted until 5:30pm. Included in your ticket price is a welcome drink and a delicious meal. Please note that Companion Card Tickets do not include a drink or meal.</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "Royal Suites",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-12",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to your private suite at ENGIE Stadium from 12:00pm.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_food_ico.svg'><p>Sydney Royal Grand Champion Grazing Menu, served from 5pm through to the end of the night&#45;time Entertainment.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_drink_ico.svg'><p>Premium Beverage Package including Wine, Beers and Soft Drinks</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-13",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br />Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "After 4pm Ticket",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-13",
+   "event_time": "4:00PM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "General Admission",
+   "access_site_time": "Entry from 4:00am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 4:00pm.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to night&#45;time Entertainment from 5pm at ENGIE Stadium</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "All Day Ticket + Reserved Seat",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-13",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Guaranteed Seat from 5pm in the Sydney Royal Stand at ENGIE Stadium for the night&#45;time Entertainment.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_seat_ico.svg'><p><strong>Premium Reserve Seating</strong> located in the Sky Deck, access from 5:00pm excluding Easter Sunday with access not premitted until 5:30pm. Included in your ticket price is a welcome drink and a delicious meal. Please note that Companion Card Tickets do not include a drink or meal.</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day.<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ },
+ {
+   "event_name": "Royal Suites",
+   "discovery_flow": "TICKETS",
+   "event_date": "2026-04-13",
+   "event_time": "8:30AM",
+   "event_id_reference": "aabbcc",
+   "entry_type": "Reserved Seat",
+   "access_site_time": "Entry from 8:30am",
+   "event_link": "https://placeholder",
+   "more_info_link": " ",
+   "inclusions_event_blurb": "<div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_entry_ico.svg'><p>Entry to the Show from 8:30am.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_transport_ico.svg'><p>Same day return public transport.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_night_ico.svg'><p>Access to your private suite at ENGIE Stadium from 12:00pm.</p></div></div><div class='sresLbBotWrap1'><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_food_ico.svg'><p>Sydney Royal Grand Champion Grazing Menu, served from 5pm through to the end of the night&#45;time Entertainment.</p></div><div class='sresLbSpan'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_drink_ico.svg'><p>Premium Beverage Package including Wine, Beers and Soft Drinks</p></div></div><div class='sresLbBotWrap2'><h1>Additional Information</h1><p>Retail Pavilions & Woolworths Fresh Food Dome opens 9:00am &#45; 7:00pm each day<br /> Easter Long weekend opens 9:00am &#45; 7:30pm<br />Aniamal Pavilions open 9:00am &#45; 7:00pm each day<br />Showbag Pavilion opens 9:30am &#45; 9:30pm every day</p></div>"
+ }
+]
 </script>
 [% PROCESS "layout/frame/bottom.tt" %]
