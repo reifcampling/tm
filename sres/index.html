@@ -47,7 +47,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	.sresSearchBtnWrap{width:300px;height:70px;margin:0;padding:0px;position: relative;}	
 	.sresBtnIco{width:34px;height:34px;margin:0px 0px 0px 30px;padding:3px;display:inline-block;position: relative;box-sizing:  border-box !important;}
 	.sresBtnIco img{width:26px;height:26px;}
-	.sresMenuCounter{width:34px;height:34px;border-radius:20px;font-family:"Averta","Open Sans",fallback;font-size:30px;line-height:30px;font-weight:900;text-align:center;color:#fff;background:var(--sres-purp);margin:0px auto 0px;padding:0px;top:0;left:0;right:0;position: absolute;display:none;box-sizing:  border-box !important;}
+	.sresMenuCounter{width:34px;height:34px;border-radius:20px;font-family:"Averta","Open Sans",fallback;font-size:22px;line-height:30px;font-weight:900;text-align:center;color:#fff;background:var(--sres-purp);margin:0px auto 0px;padding:0px;top:0;left:0;right:0;position: absolute;display:none;box-sizing:  border-box !important;}
 	.sresSearchBtn h1{font-family:"Averta","Open Sans",fallback;font-size:36px;line-height:36px;font-weight:800;text-align:center;color:var(--sres-purp);margin:0px auto 0px;padding:0px 0px;display:inline-block;}
 	.sresBtnArrow{width:20px;height:auto;margin:0 30px 0px 0px;padding:0;display:inline-block;transition: ease-in-out .6s all;}
 	.sresBtnArrow img{width:100%;height:auto;}
@@ -78,7 +78,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	.sresDropDownBtn{width:calc(100% - 20px);height:auto;display:flex;white-space: nowrap;text-align: center;margin:10px 0px 0px 0px;padding:0px 10px 0px 10px;flex-wrap: nowrap;justify-content: space-between;flex-wrap: wrap;justify-content: flex-start;flex-direction: row;box-sizing: border-box !important;align-content: center;align-items: center;cursor:pointer;}
 	.sresDropDownBtn h3{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#000;margin:0px 0px 0px 10px;padding:0px 0px;display:inline-block;box-sizing:  border-box !important;}
 	.sresCheckBox{width:16px;height:16px;margin:0px;padding:0;border-radius:2px;display:inline-block;box-shadow: 2px 2px 0px 1px rgb(98 47 141 / 20%);box-sizing: border-box !important;}
-	.sresCheckBoxOn{background:url('sres_tick_w_img.svg') no-repeat,var(--sres-purp);background-size:16px 16px;}
+	.sresCheckBoxOn{background:url('https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_tick_w_img.svg') no-repeat,var(--sres-purp);background-size:16px 16px;}
 	.sresCheckBoxOff{border:2px solid var(--sres-purp);}
 	/*event stream*/
 	#sresEvents{width:100%;height:auto;margin:0;padding:0;background:var(--sres-cream);display:block;position:relative;z-index:12;box-sizing:  border-box !important;}
@@ -91,14 +91,24 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	.sresCardHero{width:296px;height:157px;margin:0;padding:0;display:block;}
 	.sresCardHero img{width:100%;height:auto;}
 	/*card tags*/
-	.sresEasterTag{width:100%;background:var(--sres-yel);margin:0px 0px;padding:0px 0px;box-sizing: border-box !important;display:none;}
+	.sresEasterTag{width:100%;background:var(--sres-yel);margin:-1px 0px 0px 0px;padding:0px 0px;box-sizing: border-box !important;display:none;}
 	.sresEasterTag h1{font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:900;text-align:center;color:var(--sres-purp);margin:0px 0px;padding:4px 0px;}
 	.sresKidsTag,.sresSeniorsTag{width:100%;background:var(--sres-dpurp);margin:0px 0px;padding:0px 0px;box-sizing: border-box !important;display:none;border-bottom:2px solid var(--sres-yel);border-top:2px solid var(--sres-yel);}
-	.sresKidsTag h1,.sresSeniorsTag h1{font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:900;text-align:center;color:var(--sres-yel);margin:0px 0px;padding:4px 0px;}
-	/*easter days*/.sresEventCard[data-date='2026-04-03'] .sresEasterTag,.sresEventCard[data-date='2026-04-04'] .sresEasterTag,.sresEventCard[data-date='2026-04-05'] .sresEasterTag,.sresEventCard[data-date='2026-04-06'] .sresEasterTag{display:block;}
-	.sresEventCard[data-date='2026-04-03'] .sresEasterTag h1:after{content: "EASTER FRIDAY";}
-	/*kids days*/.sresEventCard[data-date='2026-04-13'] .sresKidsTag{display:block;}
-	/*seniors days*/.sresEventCard[data-date='2026-04-09'] .sresSeniorsTag{display:block;}
+	/*easter days*/
+	.sresEventCard[data-date='2026-04-03'] .sresEasterTag,.sresEventCard[data-date='2026-04-04'] .sresEasterTag,.sresEventCard[data-date='2026-04-05'] .sresEasterTag,.sresEventCard[data-date='2026-04-06'] .sresEasterTag{display:block;}
+	.sresEventCard[data-date='2026-04-03'] .sresEasterTag h1:after{content: "GOOD FRIDAY";}
+	.sresEventCard[data-date='2026-04-04'] .sresEasterTag h1:after{content: "EASTER SATURDAY";}
+	.sresEventCard[data-date='2026-04-05'] .sresEasterTag h1:after{content: "EASTER SUNDAY";}
+	.sresEventCard[data-date='2026-04-06'] .sresEasterTag h1:after{content: "EASTER MONDAY";}
+	/*kids days*/
+	.sresEventCard[data-date='2026-04-13'] .sresEasterTag{width:100%;background:var(--sres-dpurp);margin:-1px 0px 0px 0px;padding:0px 0px;box-sizing: border-box !important;display:block;border-bottom:2px solid var(--sres-yel);border-top:2px solid var(--sres-yel);}
+	.sresEventCard[data-date='2026-04-13'] .sresEasterTag h1{font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:900;text-align:center;color:var(--sres-yel);margin:0px 0px;padding:4px 0px;}
+	.sresEventCard[data-date='2026-04-13'] .sresEasterTag h1:after{content: "KID'S DAY";}
+	/*seniors days*/
+	.sresEventCard[data-date='2026-04-09'] .sresEasterTag{width:100%;background:var(--sres-dpurp);margin:-1px 0px 0px 0px;padding:0px 0px;box-sizing: border-box !important;display:block;border-bottom:2px solid var(--sres-yel);border-top:2px solid var(--sres-yel);}
+	.sresEventCard[data-date='2026-04-09'] .sresEasterTag h1{font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:900;text-align:center;color:var(--sres-yel);margin:0px 0px;padding:4px 0px;}
+	.sresEventCard[data-date='2026-04-09'] .sresEasterTag h1:after{content: "SENIOR'S DAY";}
+
 	.sresCardMid{width:100%;max-width:300px;height:auto;display:flex;flex-wrap: wrap;align-content: space-between;justify-content: center;margin:0;padding:0;position:relative;}
 	.sresCardTitle{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:30px 10px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:26px;line-height:26px;font-weight:900;text-align:center;color:var(--sres-purp);position:relative;box-sizing: border-box !important;}
 	.sresEventType{width:100%;max-width:300px;height:auto;margin:0;padding:0px 10px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:20px;font-weight:bold;text-align:center;color:#000;position:relative;display:flex;flex-wrap: nowrap;justify-content: center;align-items: center;column-gap:10px;box-sizing: border-box !important;}
@@ -126,7 +136,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	.sresExtrasBtn{width:calc(100% - 20px);margin:0px 0px 0px 0px;padding:10px 20px;background:var(--sres-purp);border-radius:5px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:18px;line-height:18px;font-weight:900;text-align:center;color:#fff;position:absolute;bottom:10px;left:10px;right:0;box-sizing:  border-box !important;}
 	/*lightbox*/
 	 .sresLightboxBg{width:100%;height:100%;margin:0px;position:fixed;background:rgba(0,0,0,.2);backdrop-filter: blur(5px);z-index:201;display:none;top:0;right:0;left:0;justify-content: safe center; align-items: center;flex-direction: column;overflow-y: scroll;}
-	 .sresLightboxCont{width:700px;height:auto;background:#fff;box-shadow: 0px 8px 0px 4px rgb(98 47 141 / 20%);border-radius:10px;border:2px solid var(--sres-purp);box-sizing: border-box !important;position:relative;z-index: 203;display: flex;flex-direction: row;flex-wrap: nowrap;align-content: flex-start;justify-content: center;align-items: flex-start;}
+	 .sresLightboxCont{width:900px;height:auto;background:#fff;box-shadow: 0px 8px 0px 4px rgb(98 47 141 / 20%);border-radius:10px;border:2px solid var(--sres-purp);box-sizing: border-box !important;position:relative;z-index: 203;display: flex;flex-direction: row;flex-wrap: nowrap;align-content: flex-start;justify-content: center;align-items: flex-start;}
 	 .sresExtrasCard .sresLightboxCont{box-shadow: 0px 8px 0px 4px #fefcee61;}
 	 .sresLbClose{width:100px;height:38px;background:var(--sres-yel);border-radius:5px;border:2px solid var(--sres-purp);font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:20px;font-weight:900;text-align:center;color:var(--sres-purp);margin:0px 0px 0px 0px;padding:6px 0px;text-transform: uppercase;position: absolute;top:-0px;right:-110px;cursor:pointer;z-index: 202;box-sizing: border-box !important;}
 	 .sresLbTop{width:40%;max-width:300px;height:100%;display:block;margin:0;padding:0 0px 20px 0px;position:relative;border-radius:8px 0px 0px 0px;background:var(--sres-purp);overflow:hidden;box-sizing: border-box !important;}
@@ -139,7 +149,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	 .sresLbTicketType img{width:30px;height:30px;margin:0px 5px 0px -5px;display:inline-block;}
 	 .sresLbDate img{width:20px;height:20px;margin:0px 10px 0px 0px;display:inline-block;}
 	
-	.sresLbBot{width:60%;height:auto;display:block;margin:0;padding:0px 0px 20px 0px;border-radius:0px 10px 0px 0px;position:relative;}
+	.sresLbBot{width:67%;height:auto;display:block;margin:0;padding:0px 0px 20px 0px;border-radius:0px 10px 0px 0px;position:relative;}
 	.sresLbBotWrap1{width:calc(100% - 20px);height:auto;display:block;margin:10px;padding:20px;background: rgb(98 47 141 / 10%);border-radius:10px;position:relative;box-sizing: border-box !important;}
 	.sresLbBotWrap2{width:calc(100% - 20px);height:auto;display:block;margin:10px;padding:20px;background: rgb(0 0 0 / 10%);border-radius:10px;position:relative;box-sizing: border-box !important;}
 	.sresLbBot h1{width:100%;height:auto;display:block;margin:0;padding:0px 0px 20px 0px;font-family:"Averta","Open Sans",fallback;display:block;font-size:24px;line-height:22px;font-weight:bold;text-align:left;color:#000;position:relative;box-sizing: border-box !important;}
@@ -205,7 +215,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	.sresDropDownBtn{width:calc(100% - 20px);height:auto;display:flex;white-space: nowrap;text-align: center;margin:10px 0px 0px 0px;padding:0px 10px 0px 10px;flex-wrap: nowrap;justify-content: space-between;flex-wrap: wrap;justify-content: flex-start;flex-direction: row;box-sizing: border-box !important;align-content: center;align-items: center;cursor:pointer;}
 	.sresDropDownBtn h3{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:16px;line-height:16px;font-weight:bold;text-align:left;color:#000;margin:0px 0px 0px 10px;padding:0px 0px;display:inline-block;box-sizing:  border-box !important;}
 	.sresCheckBox{width:16px;height:16px;margin:0px;padding:0;border-radius:2px;display:inline-block;box-shadow: 2px 2px 0px 1px rgb(98 47 141 / 20%);box-sizing: border-box !important;}
-	.sresCheckBoxOn{background:url('sres_tick_w_img.svg') no-repeat,var(--sres-purp);background-size:16px 16px;}
+	.sresCheckBoxOn{background:url('https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_tick_w_img.svg') no-repeat,var(--sres-purp);background-size:16px 16px;}
 	.sresCheckBoxOff{border:2px solid var(--sres-purp);}
 	/*event stream*/
 	#sresEvents{width:100%;height:auto;margin:0;padding:0;background:var(--sres-cream);display:block;position:relative;z-index:12;box-sizing:  border-box !important;}
@@ -221,11 +231,20 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	.sresEasterTag{width:100%;background:var(--sres-yel);margin:0px 0px;padding:0px 0px;box-sizing: border-box !important;display:none;}
 	.sresEasterTag h1{font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:900;text-align:center;color:var(--sres-purp);margin:0px 0px;padding:4px 0px;}
 	.sresKidsTag,.sresSeniorsTag{width:100%;background:var(--sres-dpurp);margin:0px 0px;padding:0px 0px;box-sizing: border-box !important;display:none;border-bottom:2px solid var(--sres-yel);border-top:2px solid var(--sres-yel);}
-	.sresKidsTag h1,.sresSeniorsTag h1{font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:900;text-align:center;color:var(--sres-yel);margin:0px 0px;padding:4px 0px;}
-	/*easter days*/.sresEventCard[data-date='2026-04-03'] .sresEasterTag,.sresEventCard[data-date='2026-04-04'] .sresEasterTag,.sresEventCard[data-date='2026-04-05'] .sresEasterTag,.sresEventCard[data-date='2026-04-06'] .sresEasterTag{display:block;}
-	.sresEventCard[data-date='2026-04-03'] .sresEasterTag h1:after{content: "EASTER FRIDAY";}
-	/*kids days*/.sresEventCard[data-date='2026-04-13'] .sresKidsTag{display:block;}
-	/*seniors days*/.sresEventCard[data-date='2026-04-09'] .sresSeniorsTag{display:block;}
+	/*easter days*/
+	.sresEventCard[data-date='2026-04-03'] .sresEasterTag,.sresEventCard[data-date='2026-04-04'] .sresEasterTag,.sresEventCard[data-date='2026-04-05'] .sresEasterTag,.sresEventCard[data-date='2026-04-06'] .sresEasterTag{display:block;}
+	.sresEventCard[data-date='2026-04-03'] .sresEasterTag h1:after{content: "GOOD FRIDAY";}
+	.sresEventCard[data-date='2026-04-04'] .sresEasterTag h1:after{content: "EASTER SATURDAY";}
+	.sresEventCard[data-date='2026-04-05'] .sresEasterTag h1:after{content: "EASTER SUNDAY";}
+	.sresEventCard[data-date='2026-04-06'] .sresEasterTag h1:after{content: "EASTER MONDAY";}
+	/*kids days*/
+	.sresEventCard[data-date='2026-04-13'] .sresEasterTag{width:100%;background:var(--sres-dpurp);margin:0px 0px;padding:0px 0px;box-sizing: border-box !important;display:block;border-bottom:2px solid var(--sres-yel);border-top:2px solid var(--sres-yel);}
+	.sresEventCard[data-date='2026-04-13'] .sresEasterTag h1{font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:900;text-align:center;color:var(--sres-yel);margin:0px 0px;padding:4px 0px;}
+	.sresEventCard[data-date='2026-04-13'] .sresEasterTag h1:after{content: "KID'S DAY";}
+	/*seniors days*/
+	.sresEventCard[data-date='2026-04-09'] .sresEasterTag{width:100%;background:var(--sres-dpurp);margin:0px 0px;padding:0px 0px;box-sizing: border-box !important;display:block;border-bottom:2px solid var(--sres-yel);border-top:2px solid var(--sres-yel);}
+	.sresEventCard[data-date='2026-04-09'] .sresEasterTag h1{font-family:"Averta","Open Sans",fallback;font-size:16px;line-height:16px;font-weight:900;text-align:center;color:var(--sres-yel);margin:0px 0px;padding:4px 0px;}
+	.sresEventCard[data-date='2026-04-09'] .sresEasterTag h1:after{content: "SENIOR'S DAY";}
 	.sresCardMid{width:100%;max-width:300px;height:auto;display:flex;flex-wrap: wrap;align-content: space-between;justify-content: center;margin:0;padding:0;position:relative;}
 	.sresCardTitle{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:30px 10px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:26px;line-height:26px;font-weight:900;text-align:center;color:var(--sres-purp);position:relative;box-sizing: border-box !important;}
 	.sresEventType{width:100%;max-width:300px;height:auto;margin:0;padding:0px 10px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:20px;font-weight:bold;text-align:center;color:#000;position:relative;display:flex;flex-wrap: nowrap;justify-content: center;align-items: center;column-gap:10px;box-sizing: border-box !important;}
@@ -253,20 +272,20 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	.sresExtrasBtn{width:calc(100% - 20px);margin:0px 0px 0px 0px;padding:10px 20px;background:var(--sres-purp);border-radius:5px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:18px;line-height:18px;font-weight:900;text-align:center;color:#fff;position:absolute;bottom:10px;left:10px;right:0;box-sizing:  border-box !important;}
 	/*lightbox*/
 	 .sresLightboxBg{width:100%;height:100%;margin:0px;position:fixed;background:rgba(0,0,0,.2);backdrop-filter: blur(5px);z-index:201;display:none;top:0;right:0;left:0;justify-content: safe center; align-items: center;flex-direction: column;overflow-y: scroll;}
-	 .sresLightboxCont{width:700px;height:auto;background:#fff;box-shadow: 0px 8px 0px 4px rgb(98 47 141 / 20%);border-radius:10px;border:2px solid var(--sres-purp);box-sizing: border-box !important;position:relative;z-index: 203;display: flex;flex-direction: row;flex-wrap: nowrap;align-content: flex-start;justify-content: center;align-items: flex-start;}
+	 .sresLightboxCont{max-width:700px;width:96%;height:auto;background:#fff;box-shadow: 0px 8px 0px 4px rgb(98 47 141 / 20%);border-radius:10px;border:2px solid var(--sres-purp);box-sizing: border-box !important;position:relative;z-index: 203;display: flex;flex-wrap: nowrap;align-content: flex-start;justify-content: flex-start;align-items: flex-start;flex-direction: column;margin:20px auto 0px;}
 	 .sresExtrasCard .sresLightboxCont{box-shadow: 0px 8px 0px 4px #fefcee61;}
-	 .sresLbClose{width:100px;height:38px;background:var(--sres-yel);border-radius:5px;border:2px solid var(--sres-purp);font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:20px;font-weight:900;text-align:center;color:var(--sres-purp);margin:0px 0px 0px 0px;padding:6px 0px;text-transform: uppercase;position: absolute;top:-0px;right:-110px;cursor:pointer;z-index: 202;box-sizing: border-box !important;}
-	 .sresLbTop{width:40%;max-width:300px;height:100%;display:block;margin:0;padding:0 0px 20px 0px;position:relative;border-radius:8px 0px 0px 0px;background:var(--sres-purp);overflow:hidden;box-sizing: border-box !important;}
-	 .sresLbHero{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:0;position:relative;border-radius:8px 0px 0px 0px;overflow:hidden;}
+	 .sresLbClose{width:100px;height:38px;background:var(--sres-yel);border-radius:5px;border:2px solid var(--sres-purp);font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:20px;font-weight:900;text-align:center;color:var(--sres-purp);margin:0px 0px 0px 0px;padding:6px 0px;text-transform: uppercase;position: absolute;top:-20px;right:0px;cursor:pointer;z-index: 202;box-sizing: border-box !important;}
+	 .sresLbTop{width:100%;height:100%;display:block;margin:0;padding:0 0px 20px 0px;position:relative;border-radius:8px 0px 0px 0px;background:var(--sres-purp);overflow:hidden;box-sizing: border-box !important;}
+	 .sresLbHero{width:100%;max-width:230px;height:auto;display:block;margin:5px auto 0px;padding:0;position:relative;border-radius:8px;overflow:hidden;}
 	 .sresLbHero img{width:100%;height:auto;}
 	 .sresLbTop h1{margin:20px 0px;padding:0px 10px;font-family:"Averta","Open Sans",fallback;display:block;font-size:30px;line-height:30px;font-weight:900;text-align:center;color:#fff;box-sizing: border-box !important;}
-	 .sresLbHorDiv{width:70%;height:2px;background:#fff;margin:0px auto;display:block;}
-	 .sresLbTicketType, .sresLbDate{width:100%;max-width:300px;height:auto;display:flex;justify-content: center;align-items: center;margin:0;padding:20px 0px 0px 0px;position:relative;background:var(--sres-purp);border-radius:6px 6px 0px 0px;box-sizing: border-box !important;}
+	 .sresLbHorDiv{width:100%;height:2px;background:#fff;margin:0px auto;display:block;}
+	 .sresLbTicketType, .sresLbDate{width:100%;height:auto;display:flex;justify-content: center;align-items: center;margin:0;padding:20px 0px 0px 0px;position:relative;background:var(--sres-purp);border-radius:6px 6px 0px 0px;box-sizing: border-box !important;}
 	 .sresLbTicketType h2, .sresLbDate h2{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:20px;line-height:24px;font-weight:900;text-align:left;color:#fff;margin:0px 0px 0px 0px;padding:0px 0px;text-transform: uppercase;}
 	 .sresLbTicketType img{width:30px;height:30px;margin:0px 5px 0px -5px;display:inline-block;}
 	 .sresLbDate img{width:20px;height:20px;margin:0px 10px 0px 0px;display:inline-block;}
 	
-	.sresLbBot{width:60%;height:auto;display:block;margin:0;padding:0px 0px 20px 0px;border-radius:0px 10px 0px 0px;position:relative;}
+	.sresLbBot{width:100%;height:auto;display:block;margin:0;padding:0px 0px 20px 0px;border-radius:0px 10px 0px 0px;position:relative;}
 	.sresLbBotWrap1{width:calc(100% - 20px);height:auto;display:block;margin:10px;padding:20px;background: rgb(98 47 141 / 10%);border-radius:10px;position:relative;box-sizing: border-box !important;}
 	.sresLbBotWrap2{width:calc(100% - 20px);height:auto;display:block;margin:10px;padding:20px;background: rgb(0 0 0 / 10%);border-radius:10px;position:relative;box-sizing: border-box !important;}
 	.sresLbBot h1{width:100%;height:auto;display:block;margin:0;padding:0px 0px 20px 0px;font-family:"Averta","Open Sans",fallback;display:block;font-size:24px;line-height:22px;font-weight:bold;text-align:left;color:#000;position:relative;box-sizing: border-box !important;}
@@ -317,7 +336,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 							<div data-calday="2026-04-13" class="sresCalDay calDayOff weekDay">13</div><div class="noDay">14</div><div class="noDay"></div><div class="noDay"></div><div class="noDay"></div><div class="noDay"></div><div class="noDay"></div>
 						</div>
 						<div class="sresCalKey"> 
-							<div class="sresCalRow"><h3>EASTER WEEKEND DAY:</h3><span class="sresEasterKey"></span></div><div class="sresCalRow"><h3>SENIOR&rsquo;S DAY: WED 8th</h3></div><div class="sresCalRow"><h3>KID&rsquo;S DAY:THU 9th</h3></div>
+							<div class="sresCalRow"><h3>EASTER WEEKEND DAY:</h3><span class="sresEasterKey"></span></div><div class="sresCalRow"><h3>SENIOR&rsquo;S DAY: THU 9th</h3></div><div class="sresCalRow"><h3>KID&rsquo;S DAY:MON 13th</h3></div>
 						</div>
 					</div>
 				</div>
@@ -469,7 +488,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 					<div class="sresExtrasBtn">MORE INFO</div>
 				</div>			
 			</div>
-		<!--Charchuterie-->
+		<!--Tyrells-->
 			<div class="sresExtrasCard">
 				<!--lightbox--><div class="sresLightboxBg"><div class="sresLightboxCont"><div class="sresLbClose">CLOSE</div>
 					<div class="sresLbTop">
@@ -482,17 +501,21 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 					</div>
 					<div class="sresLbBot">
 						<div class="sresLbBotWrap1">
-							<p>Treat yourself to a Sydney Royal Cheese or Charcuterie Board for two, served with two glasses of Tyrrell&rsquo;s wine.
-
-							<br /><br /><strong>Last pick-up:</strong> 6.30pm daily.
+							<p>The Tyrell's Wine Bar & Deli, located in the Woolworths Fresh Food Dome, offers lovers of fine wine and cheese the chance to indulge in either a Sydney Royal Charcuterie Board or Sydney Royal Cheese Board, stunningly curated by our Executive Chef, Cyril Miletto. Each offering is accompanied by two glasses of Tyrell's wine. <br /><br /> 
+							While each board is prepared to share between two, we bet you'll wish you'd bought your own!
 						</p></div>
 						<div class="sresLbBotWrap2"><p>
-							<strong>The Cheese Board</strong> includes three Sydney Royal award-winning cheeses with grapes, apple & thyme paste and crackers. 
+							<strong>Charcuterie Board</strong> with 2 glasses of Tyrell's wine $35 (for 2 people)<br />
+								3 Sydney Royal charcuteries with condiments and fresh bread.
 						</p></div>	
 						<div class="sresLbBotWrap2"><p>
-							<strong>The Charcuterie Board</strong> includes three Sydney Royal charcuteries with condiments and fresh bread &#45; the perfect pairing for your day at the Show.		
+							<strong>Cheese Board</strong> with 2 glasses of Tyrell's wine $35 (for 2 people)  <br />
+							3 Sydney Royal cheeses with grapes, apple and thyme paste, crackers.  	
 						</p></div>	
-
+						<div class="sresLbBotWrap1"><p>Collect at the Tyrrell's Wine Bar and Deli located in the Woolworths Fresh Food Dome, between 10am and 6.30pm.<br />
+								Please note:  Actual contents in this package differ slightly from the image
+							<p>
+						</p></div>
 					</div>
 				</div>			
 				</div>
