@@ -985,23 +985,25 @@ let ticketCounter = function(){
 //lightbox clicks
 $j(document).on('click', ".sresInfoBtn", function () {
 	$j(this).parent('.sresCardBot').siblings('.sresLightboxBg').fadeIn(500).css("display","flex")
+	$j("#sresMenuWrap").fadeOut(0)
 
 });
 
 $j(document).on('click', ".sresExtrasBtn", function () {
 	$j(this).parent('.sresExtrasCardBot').siblings('.sresLightboxBg').fadeIn(500).css("display","flex")
-
+	$j("#sresMenuWrap").fadeOut(0)
 });
 //close
 $j(document).on('click', ".sresLbClose", function () {
 	$j(this).parent('.sresLightboxCont').parent('.sresLightboxBg').fadeOut(250);
-
+	$j("#sresMenuWrap").fadeIn(0)
 });
 //click bg close
 	$j(document).on('click', '.sresLightboxBg', function (e) {
 			if (($j(e.target).closest('.sresLightboxCont').length !== 0 || $j(e.target).closest('.sresLightboxCont a').length !== 0)) 
 			{return false;}
 			$j(this).fadeOut(250);
+			$j("#sresMenuWrap").fadeIn(0)
 		
 		});
 //availability
