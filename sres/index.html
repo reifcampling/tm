@@ -32,16 +32,19 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 @media only screen and (min-width: 1000px){	
 
 	#sresContent{width:100%;height:auto;position:relative;margin:0px auto;background:var(--sres-cream);background-size:contain;padding:0px 0px 1px 0px;z-index: 9;box-sizing:  border-box !important;}
-	#sresHeader{width:100%;height:500px;margin:0px;padding:0px;position: relative;background:url("https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_header.webp") no-repeat center center;background-size:cover;overflow:visible;border-bottom:10px solid var(--sres-purp);z-index:13;box-sizing:  border-box !important;}
+	#sresHeader{width:100%;height:500px;margin:0px;padding:1px 0px;position: relative;overflow:visible;border-bottom:10px solid var(--sres-purp);z-index:13;box-sizing:  border-box !important;}
 
-	#sresLogo{width:330px;height:230px;margin:0 auto 0;display:block;transform:translate(-550px, 100px);position: relative;z-index: 11;text-align: center;}
+	#sresLogo{width:330px;height:230px;margin:0 auto 0;display:none;transform:translate(-550px, 100px);position: relative;z-index: 11;text-align: center;}
 	#sresLogo img{width:auto;margin:0px 10px; height:100%;position: relative;z-index: 11;display:inline-block;}
 	
-	#sresMenuWrap{width:900px;height:50px;border-radius:10px;background:rgba(98,47,141,.8);margin:10px auto;display:block;position: absolute;top:0;left:0;right:0;z-index: 100;}
+	#sresMenuWrap{width:750px;height:50px;border-radius:10px;background:rgba(98,47,141,.8);border:1px solid #fff;margin:10px auto 0px;display:block;position: absolute;top:0;left:0;right:0;z-index: 100;}
 	#sresMenu{width:100%;height:50px;margin:0px;display:flex;flex-wrap:nowrap;}
-	#sresMenu button{font-family:"Averta","Open Sans",fallback;font-size:18px;line-height:18px;font-weight:800;text-align:center;color:#fff;margin:0px auto 0px;padding:0px 0px;background:none;outline:0;border:0;box-sizing:  border-box !important;}
+	#sresMenu button{font-family:"Averta","Open Sans",fallback;font-size:18px;line-height:18px;font-weight:800;text-align:center;color:#fff;margin:0px auto 0px;padding:0px 20px 0px 0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_downarrow_w_img.svg') no-repeat;background-size:13px auto;background-position:center right 0px;outline:0;border:0;box-sizing:  border-box !important;}
+	#sresMenu button a{text-decoration: none;color:#fff;}
+	.sresMenuToggle{top:0;left:0;right:0;position: fixed !important;}
+	.sresMenuArrow{display:none;}
 
-	#sresSearchBarWrap{width:610px;height:70px;margin:50px auto 0px;display:block;box-sizing:  border-box !important;}
+	#sresSearchBarWrap{width:610px;height:70px;margin:370px auto 0px;display:block;box-sizing:  border-box !important;}
 	#sresSearchBar{width:auto;height:auto;margin:0;display:flex;flex-wrap: nowrap;column-gap:10px;padding:0px;box-sizing:  border-box !important;}
 	.sresSearchBtn{width:300px;height:70px;margin:0;padding:0px;background:var(--sres-yel);border:2px solid #fff;display:flex;flex-wrap: nowrap;align-items: center;position:relative;box-sizing:  border-box !important;user-select:none;cursor:pointer;}
 	.sresSearchBtnWrap{width:300px;height:70px;margin:0;padding:0px;position: relative;}	
@@ -120,8 +123,9 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 
 	/*upsells*/
 	#sresExtras{width:100%;height:auto;margin:0;padding:50px 0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/sres/2024/sres24_wave_top_w_ico.svg') top -2px center repeat-x , var(--sres-purp);background-size: 80px 20px;display:block;position:relative;z-index:12;box-sizing:  border-box !important;}
-	#sresExtras h3{font-family:"Averta","Open Sans",fallback;display:block;font-size:40px;line-height:40px;font-weight:900;text-align:center;color:var(--sres-cream);margin:0px 0px 0px 0px;padding:0px 40px;text-transform: uppercase;}
-	#sresExtraStream{width:100%;max-width:1300px;margin:0px auto;padding:50px 0px;display:flex;justify-content: center;align-items: stretch;align-content: flex-start;flex-wrap: wrap;column-gap: 20px;row-gap: 30px;box-sizing:  border-box !important;}
+	#sresExtras h3,#sresGroupsStream h3{font-family:"Averta","Open Sans",fallback;display:block;font-size:40px;line-height:40px;font-weight:900;text-align:center;color:var(--sres-cream);margin:0px 0px 0px 0px;padding:0px 40px;text-transform: uppercase;}
+	#sresExtras h4,#sresGroupsStream h4{max-width:1000px;display:block;font-family:"Averta","Open Sans",fallback;display:block;font-size:20px;line-height:32px;font-weight:normal;text-align:center;color:var(--sres-cream);margin:20px auto;padding:0px 40px;}
+	#sresExtraStream,#sresGroupsStream{width:100%;max-width:1300px;margin:0px auto;padding:50px 0px;display:flex;justify-content: center;align-items: stretch;align-content: flex-start;flex-wrap: wrap;column-gap: 20px;row-gap: 30px;box-sizing:  border-box !important;}
 	.sresExtrasCard{width:300px;height:auto;background:#fff;padding:0px 0px 40px 0px;border-radius:10px;border:2px solid var(--sres-dpurp);user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;justify-content: flex-start;box-sizing: border-box !important;overflow:visible;box-shadow: 0px 8px 0px 4px #fefcee61;position: relative;}
 	.sresExtrasCardTop{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:0;position:relative;}
 	.sresExtraHeader{width:100%;max-width:300px;height:44px;display:flex;justify-content: center;align-items: center;margin:0;padding:0;position:relative;background:var(--sres-cream);border-radius:6px 6px 0px 0px;border-bottom:2px solid var(--sres-purp);box-sizing: border-box !important;}
@@ -169,14 +173,21 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 /*mobile*/
 @media only screen and (max-width: 999.99px) {	
 	#sresContent{width:100%;height:auto;position:relative;margin:0px auto;background:var(--sres-cream);background-size:contain;padding:0px 0px 1px 0px;z-index: 9;box-sizing:  border-box !important;}
-	#sresHeader{width:100%;height:auto;margin:0px;padding:1px 0px;position: relative;background:url("https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_header.webp") no-repeat top center, var(--sres-purp);background-size:auto 575px, 100% 100%;overflow:visible;border-bottom:10px solid var(--sres-purp);z-index:13;box-sizing:  border-box !important;}
+	#sresHeader{width:100%;height:auto;margin:0px;padding:1px 0px;position: relative;overflow:visible;border-bottom:10px solid var(--sres-purp);z-index:13;box-sizing:  border-box !important;}
 
-	#sresLogo{max-width:330px;width:70%;height:230px;margin:70px auto 0;display:block;position: relative;z-index: 11;text-align: center;}
+	#sresLogo{max-width:330px;width:70%;height:230px;margin:100px auto 150px;display:block;position: relative;z-index: 11;text-align: center;}
 	#sresLogo img{width:100%; height:auto;margin:0px 0px;position: relative;z-index: 11;display:inline-block;}
 	
-	#sresMenuWrap{max-width:900px;width:90%;height:auto;border-radius:10px;background:rgba(98,47,141,.8);margin:10px auto;display:block;position: absolute;top:0;left:0;right:0;z-index: 100;}
-	#sresMenu{width:100%;height:50px;margin:0px;display:flex;flex-wrap:nowrap;}
-	#sresMenu button{font-family:"Averta","Open Sans",fallback;font-size:18px;line-height:18px;font-weight:800;text-align:center;color:#fff;margin:0px auto 0px;padding:0px 0px;background:none;outline:0;border:0;box-sizing:  border-box !important;}
+	#sresMenuWrap{max-width:750px;width:90%;height:50px;border-radius:10px;background:rgba(98,47,141,.8);margin:10px auto;display:block;position: absolute;top:0;left:0;right:0;z-index: 100;}
+	#sresMenu{width:100%;height:50px;margin:0px;padding:0px 25px;display:block;position:absolute;top:0;left:0;right:0;z-index:201;white-space: nowrap;overflow:hidden;box-sizing:  border-box !important;}
+	#sresMenu button{font-family:"Averta","Open Sans",fallback;font-size:18px;line-height:18px;font-weight:800;text-align:center;color:#fff;margin:0px 10px 0px 10px;outline:0;border:0;padding:15px 20px 14px 0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_downarrow_w_img.svg') no-repeat;background-size:13px auto;background-position:center right 0px;box-sizing:  border-box !important;}
+	#sresMenu button a{text-decoration: none;color:#fff;}
+	.sresMenuToggle{top:0;left:0;right:0;position: fixed !important;}
+	.sresMenuArrow{width:28px;height:50px;background:#fff;padding:15px 7px;box-sizing:  border-box !important;z-index:204}
+	.sresMenuArrow img{width:13px;height:auto;display:block;}
+	#sresMenuLeft{position: absolute;left:0;top:0;border-radius:10px 0px 0px 10px;}
+	#sresMenuRight{position: absolute;right:0;top:0;border-radius:0px 10px 10px 0px;}
+	#sresMenuLeft.sresMenuArrow img{transform: rotate(180deg);box-sizing:  border-box !important;}
 
 	#sresSearchBarWrap{width:90%;max-width:330px;height:auto;margin:50px auto 50px;display:block;box-sizing:  border-box !important;}
 	#sresSearchBar{width:auto;height:auto;margin:0;display:flex;flex-wrap: wrap;justify-content: center;row-gap:10px;padding:0px;box-sizing:  border-box !important;}
@@ -255,8 +266,9 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	.sresCardBot a{width:calc(100% - 20px);margin:0px auto;display: block;}
 
 	/*upsells*/
-	#sresExtras{width:100%;height:auto;margin:0;padding:50px 0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/sres/2024/sres24_wave_top_w_ico.svg') top -2px center repeat-x , var(--sres-purp);background-size: 80px 20px;display:block;position:relative;z-index:12;box-sizing:  border-box !important;}
-	#sresExtras h3{font-family:"Averta","Open Sans",fallback;display:block;font-size:40px;line-height:40px;font-weight:900;text-align:center;color:var(--sres-cream);margin:0px 0px 0px 0px;padding:0px 40px;text-transform: uppercase;}
+	#sresExtras,#sresGroupsStream{width:100%;height:auto;margin:0;padding:50px 0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/sres/2024/sres24_wave_top_w_ico.svg') top -2px center repeat-x , var(--sres-purp);background-size: 80px 20px;display:block;position:relative;z-index:12;box-sizing:  border-box !important;}
+	#sresExtras h3 ,#sresGroupsStream h3{font-family:"Averta","Open Sans",fallback;display:block;font-size:40px;line-height:40px;font-weight:900;text-align:center;color:var(--sres-cream);margin:0px 0px 0px 0px;padding:0px 40px;text-transform: uppercase;}
+	#sresExtras h4, #sresGroupsStream h4{max-width:1000px;display:block;font-family:"Averta","Open Sans",fallback;display:block;font-size:20px;line-height:32px;font-weight:normal;text-align:center;color:var(--sres-cream);margin:20px auto;padding:0px 40px;}
 	#sresExtraStream{width:100%;max-width:1300px;margin:0px auto;padding:50px 0px;display:flex;justify-content: center;align-items: stretch;align-content: flex-start;flex-wrap: wrap;column-gap: 20px;row-gap: 30px;box-sizing:  border-box !important;}
 	.sresExtrasCard{width:300px;height:auto;background:#fff;padding:0px 0px 40px 0px;border-radius:10px;border:2px solid var(--sres-dpurp);user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;justify-content: flex-start;box-sizing: border-box !important;overflow:visible;box-shadow: 0px 8px 0px 4px #fefcee61;position: relative;}
 	.sresExtrasCardTop{width:100%;max-width:300px;height:auto;display:block;margin:0;padding:0;position:relative;}
@@ -302,14 +314,32 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	.sresErrorMessage a{text-decoration:none;}
 	.sresErrorResetBtn{width:195px;height:auto;display:inline-block;padding:16px 5px;margin:20px 5px 0px;background:var(--sres-purp);color:#000;font-family:"poppins","Averta", sans-serif, fallback;text-align:center;font-size:18px;line-height:18px;font-weight:700;border-radius:4px;box-sizing:border-box !important;cursor:pointer;}
 }
+/*Headers*/
+@media only screen and (min-width: 1740px){	
+	#sresHeader{background:url("https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_header_hero_3840x750.png") no-repeat bottom center,url("https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_header_background.jpg") no-repeat top center;background-size:auto 500px,cover;}
 
+}
+@media only screen and (min-width: 1000px) and (max-width: 1739.99px){
+	#sresHeader{background:url("https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_header_hero_2560x750.png") no-repeat bottom center,url("https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_header_background.jpg") no-repeat top center;background-size:auto 500px,cover;}
+}
+@media only screen and (min-width: 830px) and (max-width: 999.99px){
+	#sresHeader{background:url("https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_header_hero_mobile.png") no-repeat bottom center,url("https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_header_background_mob.jpg") no-repeat bottom center;background-size:100% auto,cover;}
+}
+
+@media only screen and (max-width: 829.99px) {	
+	#sresHeader{background:url("https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_header_hero_mobile.png") no-repeat bottom center,url("https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_header_background_mob.jpg") no-repeat bottom center;background-size:auto 500px,cover;}
+}
 </style>
 <div id="sresContent">
 <!--Menu-->
-<div id="sresMenuWrap"><div id="sresMenu"><button data-menubtn="">Tickets</button><button data-menubtn="">Groups</button><button data-menubtn="">Special Tickets &amp; Offers</button></div></div>
+<div id="sresMenuWrap">
+	<div id="sresMenuLeft" class="sresMenuArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_rightarrow_p_img.svg"></div>
+	<div id="sresMenu"><button data-menubtn="EventStream">Tickets</button><button data-menubtn="ExtraStream">Event Extra&rsquo;s &amp; Offers</button><button data-menubtn="GroupsStream">Groups Offer</button><button><a href="https://www.rasnsw.com.au/membership/" target="_blank">RAS Membership</a></button></div>
+	<div id="sresMenuRight" class="sresMenuArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_rightarrow_p_img.svg"></div>
+</div>
 <!--SRES Header-->
 		<div id="sresHeader">
-			<div id="sresLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_logo.png"></div>
+			<div id="sresLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_logo_happyplace.png"></div>
 
 			<div id="sresSearchBarWrap"><div id="sresSearchBar"> 
 				<!--Cal Btn-->
@@ -404,54 +434,13 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 
 
 		</div>
-
+</div>
 <!--event extras-->
 <div id="sresExtras">	
 	<h3>EVENT EXTRAS &amp; OFFERS</h3>
 	<div id="sresExtraStream">
-		<!-- RASF Donation-->
-			<div class="sresExtrasCard">
-				<!--lightbox--><div class="sresLightboxBg"><div class="sresLightboxCont"><div class="sresLbClose">CLOSE</div>
-					<div class="sresLbTop">
-						<div class="sresLbHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_RASFDonation_hero.jpg" alt=""></div>
-						<h1>RASF Donation</h1>
-						<div class="sresLbHorDiv"></div>
-						<!--<div class="sresLbDate"><img src=""></div>--->
-						<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_w_ico.svg"><h2>Event Extra</h2></div>
-						<!--<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_res_w_ico.svg"><h2>Reserved Seat</h2></div>-->
-					</div>
-					<div class="sresLbBot">
-						<div class="sresLbBotWrap1">
-						<p>Help the RAS Foundation build strong, vibrant, and resilient rural communities through capacity building grants, education and skills development. Your donation will help rural Australians realise their potential and achieve their ambitions through grants and scholarships.
-						</p></div>
-						<div class="sresLbBotWrap2"><p>
-							<strong>$5</strong> could help a rural student access post-secondary education
-							<br /><br />
-							<strong>$10</strong> could provide extra agriculture resources for rural and regional schools
-							<br /><br />
-							<strong>$20</strong> could help a country school student visit the Sydney Royal Easter Show
-							<br /><br />
-							<strong>$50</strong> could help bring a remote school to Sydney to access extra-curricular activities
-							<br /><br />
-							<strong>$100</strong> could provide one Ag in a Box teacher & student resource kit to one rural school
-						</p></div>
-						
-					</div>
-				</div>			
-				</div>
-				<!--card top---><div class="sresExtrasCardTop">
-					<div class="sresExtraHeader"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_p_ico.svg" alt="Event Extra Icon"><h1>EVENT EXTRA</h1></div>
-					<div class="sresExtrasCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_RASFDonation_hero.jpg" alt="RASF Donation"></div>
-				</div><!--card mid-->
-				<div class="sresExtrasCardMid">
-					<div class="sresExtrasCardTitle">RASF Donation</div>
-					<p>Help the RAS Foundation build strong, vibrant, and resilient rural communities through capacity building grants, education, and skills development.</p>
-				</div><!--card bot-->
-				<div class="sresExtrasCardBot">
-					<div class="sresExtrasBtn">MORE INFO</div>
-				</div>			
-			</div>
-		<!--Angus Steakhouse-->
+
+<!--Angus Steakhouse-->
 			<div class="sresExtrasCard">
 				<!--lightbox--><div class="sresLightboxBg"><div class="sresLightboxCont"><div class="sresLbClose">CLOSE</div>
 					<div class="sresLbTop">
@@ -488,7 +477,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 					<div class="sresExtrasBtn">MORE INFO</div>
 				</div>			
 			</div>
-		<!--Tyrells-->
+<!--Tyrells-->
 			<div class="sresExtrasCard">
 				<!--lightbox--><div class="sresLightboxBg"><div class="sresLightboxCont"><div class="sresLbClose">CLOSE</div>
 					<div class="sresLbTop">
@@ -501,7 +490,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 					</div>
 					<div class="sresLbBot">
 						<div class="sresLbBotWrap1">
-							<p>The Tyrell's Wine Bar & Deli, located in the Woolworths Fresh Food Dome, offers lovers of fine wine and cheese the chance to indulge in either a Sydney Royal Charcuterie Board or Sydney Royal Cheese Board, stunningly curated by our Executive Chef, Cyril Miletto. Each offering is accompanied by two glasses of Tyrell's wine. <br /><br /> 
+							<p>The Tyrell's Wine Bar & Deli, located in the Woolworths Fresh Food Dome, offers lovers of fine wine and cheese the chance to indulge in either a Sydney Royal Charcuterie Board or Sydney Royal Cheese Board, curated by our Executive Chef, Cyril Miletto. Each offering is accompanied by two glasses of Tyrell's wine. <br /><br /> 
 							While each board is prepared to share between two, we bet you'll wish you'd bought your own!
 						</p></div>
 						<div class="sresLbBotWrap2"><p>
@@ -530,8 +519,8 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 				<div class="sresExtrasCardBot">
 					<div class="sresExtrasBtn">MORE INFO</div>
 				</div>			
-			</div>	
-		<!--Big Bush BBQ-->
+			</div>
+<!--Big Bush BBQ-->
 			<div class="sresExtrasCard">
 				<!--lightbox--><div class="sresLightboxBg"><div class="sresLightboxCont"><div class="sresLbClose">CLOSE</div>
 					<div class="sresLbTop">
@@ -566,7 +555,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 					<div class="sresExtrasBtn">MORE INFO</div>
 				</div>			
 			</div>
-		<!--RASF Give & Gather Bag -->
+<!--RASF Give & Gather Bag -->
 			<div class="sresExtrasCard">
 				<!--lightbox--><div class="sresLightboxBg"><div class="sresLightboxCont"><div class="sresLbClose">CLOSE</div>
 					<div class="sresLbTop">
@@ -609,6 +598,52 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 					<div class="sresExtrasBtn">MORE INFO</div>
 				</div>			
 			</div>			
+<!-- RASF Donation-->
+			<div class="sresExtrasCard">
+				<!--lightbox--><div class="sresLightboxBg"><div class="sresLightboxCont"><div class="sresLbClose">CLOSE</div>
+					<div class="sresLbTop">
+						<div class="sresLbHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_RASFDonation_hero.jpg" alt=""></div>
+						<h1>RASF Donation</h1>
+						<div class="sresLbHorDiv"></div>
+						<!--<div class="sresLbDate"><img src=""></div>--->
+						<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_w_ico.svg"><h2>Event Extra</h2></div>
+						<!--<div class="sresLbTicketType"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_res_w_ico.svg"><h2>Reserved Seat</h2></div>-->
+					</div>
+					<div class="sresLbBot">
+						<div class="sresLbBotWrap1">
+						<p>Help the RAS Foundation build strong, vibrant, and resilient rural communities through capacity building grants, education and skills development. Your donation will help rural Australians realise their potential and achieve their ambitions through grants and scholarships.
+						</p></div>
+						<div class="sresLbBotWrap2"><p>
+							<strong>$5</strong> could help a rural student access post-secondary education
+							<br /><br />
+							<strong>$10</strong> could provide extra agriculture resources for rural and regional schools
+							<br /><br />
+							<strong>$20</strong> could help a country school student visit the Sydney Royal Easter Show
+							<br /><br />
+							<strong>$50</strong> could help bring a remote school to Sydney to access extra-curricular activities
+							<br /><br />
+							<strong>$100</strong> could provide one Ag in a Box teacher & student resource kit to one rural school
+						</p></div>
+						
+					</div>
+				</div>			
+				</div>
+				<!--card top---><div class="sresExtrasCardTop">
+					<div class="sresExtraHeader"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_p_ico.svg" alt="Event Extra Icon"><h1>EVENT EXTRA</h1></div>
+					<div class="sresExtrasCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_RASFDonation_hero.jpg" alt="RASF Donation"></div>
+				</div><!--card mid-->
+				<div class="sresExtrasCardMid">
+					<div class="sresExtrasCardTitle">RASF Donation</div>
+					<p>Help the RAS Foundation build strong, vibrant, and resilient rural communities through capacity building grants, education, and skills development.</p>
+				</div><!--card bot-->
+				<div class="sresExtrasCardBot">
+					<div class="sresExtrasBtn">MORE INFO</div>
+				</div>			
+			</div>
+
+		
+
+		
 		<!--Bianco Carnivale  -->
 			<div class="sresExtrasCard">
 				<!--lightbox--><div class="sresLightboxBg"><div class="sresLightboxCont"><div class="sresLbClose">CLOSE</div>
@@ -639,7 +674,8 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 				</div><!--card mid-->
 				<div class="sresExtrasCardMid">
 					<div class="sresExtrasCardTitle">Bianco Carnivale</div>
-					<p>An Italian market experience with a Classico dish and dessert for $26.</p>
+					<p>An Italian market experience with a Classico dish and Dessert for $26 (SAVE UP TO $10)
+</p>
 				</div><!--card bot-->
 				<div class="sresExtrasCardBot">
 					<div class="sresExtrasBtn">MORE INFO</div>
@@ -648,11 +684,40 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 
 
 	</div>
-
-
+	<!--groups-->
+	<h3>GROUP OFFERS</h3>
+	<h4>The Sydney Royal Easter Show brings the country to the city in a celebration of Australia's rural traditions. <br />
+	There's something for everyone - from farmyard friends to the thrill of the carnival, arts and crafts to award-winning produce, and an incredible line-up of food, entertainment and fun.</h4>
+	<div id="sresGroupsStream">
+		<!--school groups-->
+				<div class="sresExtrasCard"><!--card top---><div class="sresExtrasCardTop">
+					<div class="sresExtraHeader"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_p_ico.svg" alt="OFFER Icon"><h1>OFFER</h1></div>
+					<div class="sresExtrasCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_Bianco_hero.jpg" alt="Angus Steakhouse"></div>
+				</div><!--card mid-->
+				<div class="sresExtrasCardMid">
+					<div class="sresExtrasCardTitle">Groups of 50+</div>
+					<p> </p>
+				</div><!--card bot-->
+				<div class="sresExtrasCardBot">
+					<a href="https://www.ticketmaster.com.au/explore/sres-school-groups" target="_blank"><div class="sresExtrasBtn">MORE INFO</div></a>
+				</div>			
+			</div>
+		<!--reg groups-->
+				<div class="sresExtrasCard"><!--card top---><div class="sresExtrasCardTop">
+					<div class="sresExtraHeader"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_prem_p_ico.svg" alt="OFFER Icon"><h1>OFFER</h1></div>
+					<div class="sresExtrasCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_Bianco_hero.jpg" alt="Angus Steakhouse"></div>
+				</div><!--card mid-->
+				<div class="sresExtrasCardMid">
+					<div class="sresExtrasCardTitle">School Groups</div>
+					<p></p>
+				</div><!--card bot-->
+				<div class="sresExtrasCardBot">
+					<a href="https://shops.ticketmasterpartners.com/sres-groups" target="_blank"><div class="sresExtrasBtn">MORE INFO</div></a>
+				</div>			
+			</div>
+	</div>
 
 </div><!--end extras-->
-	</div>
 </div>
 <!--info pop ups-->
 <!--lightbox--<div class="sresLightboxBg"><div class="sresLightboxCont"><div class="sresLbClose">CLOSE</div><div class='sresLbTop'><div class='sresLbHero'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres26_"+eventType.replace(/[^\w\s]/gi, '')+"_hero.jpg' alt='Hero Image'></div><h1>"+value.event_name+"</h1><div class='sresLbHorDiv'></div><div class='sresLbDate'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_cal_w_ico.svg' alt='Date Icon'><h2>"+eventDateShort+"</h2></div><div class='sresLbTicketType'><img src='https://s1.ticketm.net/tm/en-au/img/static/sres/2026/sres_"+ticketType+"_p_ico.svg'>"+value.entry_type+"</div></div><div class='sresLbBot'>"+value.inclusions_event_blurb+"</div></div></div>-->
@@ -693,8 +758,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 <script type="text/javascript">
 var $j = jQuery.noConflict();
 
-	//add kids/seniors day banners to cards, pop ups, menu counters, bread crumbs, expire cards, availability
-	//add member link to header https://www.rasnsw.com.au/membership/
+	// bread crumbs, expire cards//expire cal buttons, availability
 	eventCount = 0;
 
 	 eventTypeList = ["All Day Ticket","After 4pm Ticket","All Day Ticket + Reserved Seat","Royal Suites"];
@@ -978,6 +1042,33 @@ let emptyFullListsOnLoad = function(){
 	//ticketTypeList.length = 0;
 	//eventTypeList.length = 0;	
 }
+
+//menu scrolls
+$j("#sresMenu button").click(
+	function(){
+		var scrollTarget = $j(this).attr("data-menubtn")
+
+		 $j('html, body').animate({ scrollTop: $j("#sres" + scrollTarget).offset().top + -50}, 1000);	
+})
+//mobile menus nav left / right
+$j("#sresMenuRight").click(
+	function(){
+		$j("#sresMenu").animate({scrollLeft:"+=250px"}, "slow");
+	});
+$j("#sresMenuLeft").click(
+	function(){
+		$j("#sresMenu").animate({scrollLeft:"-=250px"}, "slow");
+	});
+//sticky menu
+$j(document).scroll(function() {
+    var pageTop = $j(document).scrollTop();
+    var scollTarget = $j("#sresHeader").offset().top;
+    if (pageTop > scollTarget) {
+		$j("#sresMenuWrap").addClass("sresMenuToggle");		
+    } else {
+		$j("#sresMenuWrap").removeClass("sresMenuToggle");
+    }
+});	
 //test data
 let localData = [
  {
