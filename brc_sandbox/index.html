@@ -65,7 +65,7 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	.brcMenuCounter{width:24px;height:24px;border-radius:20px;background:var(--brc-pink);font-family:"Figtree","Averta",fallback;font-size:15px;line-height:15px;font-weight:700;color:#000;text-align:center;margin:0px;padding:6px 0px;display:none;position:absolute;top:7px;right:11px;box-sizing:border-box !important;z-index: 50;}
 
 	/*drop down & buttons*/
-	.brcDropDownMenu{width:auto;height:auto;background:rgba(0,0,0,.95);position: absolute;top:44px;left:0px;padding:0px 2px 6px 2px;border-radius:0px;text-align: left;display:inline-block;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;transition: ease-in-out all .3s;border:1px solid #fff;box-sizing: border-box !important;}
+	.brcDropDownMenu{width:auto;height:auto;max-height:500px;overflow-y:scroll;overflow-x:hidden;background:rgba(0,0,0,.95);position: absolute;top:44px;left:0px;padding:0px 2px 6px 2px;border-radius:0px;text-align: left;display:inline-block;box-shadow:rgba(0, 0, 0, .25) 0px 2px 5px 0;transition: ease-in-out all .3s;border:1px solid #fff;box-sizing: border-box !important;}
 	.brcDropDownBtn{width:calc(100% - 4px);height:34px;background:none;margin:2px;padding:0px 10px 2px 10px;border-bottom:1px solid #fff;display:flex;flex-wrap:nowrap;justify-content: flex-start;align-items: center;box-sizing:border-box !important;cursor:pointer;user-select:none;white-space: nowrap;text-overflow: ellipsis;position:relative;}
 	.brcDropDownBtn h3{font-family:"Figtree","Averta","Averta",fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:#fff;margin:0;padding:0;display:inline-block;}	
 	.brcDropDownBtn h4{font-family:"Figtree","Averta",fallback;font-size:18px;line-height:18px;font-weight:600;text-align:left;color:#fff;margin:0;padding:0px 0px 2px 0px;display:inline-block;}	
@@ -1197,6 +1197,127 @@ let imageLoader = function(){
 window.addEventListener("load", (event) => {
 		
 });*/
+
+function heroImgMapperTest(data){
+	switch (data){
+			//General Admission - Eagle Farm
+			case "brc_EQEF214":
+			case "brc_EQEF228":
+			case "brc_EQEF307":	
+			case "brc_EQEF321":	
+			case "brc_EQEF404":		
+			case "brc_EQEF418":	
+			case "brc_EQEF425":	
+			return "brc_GENADMIN_EF";
+			//General Admission - Doomben
+			case "brc_EQBD221":
+			case "brc_EQDB328":	
+			return "brc_GENADMIN_DM";
+			//the 10,000 room
+			case "brc_EQDB221R":
+			case "brc_EQDB328R":	
+			case "brc_EQDB411R":	
+			return "brc_10000ROOM";
+			//ascot bar
+			case "brc_EQEF214A":
+			case "brc_EQEF228A":
+			case "brc_EQEF307A":
+			case "brc_EQEF321A":	
+			case "brc_EQEF404A":	
+			case "brc_EQEF418A":	
+			case "brc_EQEF425A":	
+			return "brc_ASCOT";
+			//champagne bar 
+			case "brc_EQEF214C":
+			case "brc_EQEF218W":
+			case "brc_EQEF228C":
+			case "brc_EQEF307C":
+			case "brc_EQEF321C":	
+			case "brc_EQEF325W":	
+			case "brc_EQEF404C":	
+			case "brc_EQEF408W":	
+			case "brc_EQEF418C":	
+			case "brc_EQEF425C":	
+			case "brc_EQEF506W":	
+			return "brc_CHAMPAGNE";
+			//champions bar courtyard
+			case "brc_EQDB225W":
+			case "brc_EQDB311W":	
+			case "brc_EQDB318W":
+			case "brc_EQDB401W":	
+			case "brc_EQDB415W":		
+			case "brc_EQDB422W":		
+			case "brc_EQDB527W":	
+			case "brc_EQDB603W":	
+			case "brc_EQDB610W":	
+			case "brc_EQDB617W":	
+			case "brc_EQDB624W":	
+			return "brc_CHAMPIONSBAR";
+			//east terraces and hometurn dining 
+			case "brc_EQBQ221D":
+			case "brc_EQDB328D":	
+			case "brc_EQDB411D":	
+			return "brc_HOMETURNDINING";
+			//falvelon bar
+			case "brc_EQDB221F":
+			case "brc_EQDB328F":	
+			case "brc_EQDB411F":	
+			return "brc_FALVELON";
+			//lower levels squires perch
+			case "brc_EQEF307L":
+			return "brc_SQUIRES_LOW";
+			//members reserve day pass - Eagle Farm
+			case "brc_EQEF214M":
+			case "brc_EQEF228M":
+			case "brc_EQEF307M":
+			case "brc_EQEF321C":
+			case "brc_EQEF404M":	
+			case "brc_EQDB411M":	
+			case "brc_EQEF418M":	
+			case "brc_EQEF425M":	
+			case "brc_EQEF321M":
+			return "brc_MEMBRES_EF";
+			//members reserve day pass - Doomben
+			case "brc_EQDB221M":
+			case "brc_EQDB328M":	
+			return "brc_MEMBRES_DM";
+			//moreton dining
+			case "brc_EQEF214D":
+			case "brc_EQEF228D":
+			case "brc_EQEF307D":
+			case "brc_EQEF321D":	
+			case "brc_EQEF404D":	
+			case "brc_EQEF418D":	
+			case "brc_EQEF425D":	
+			return "brc_MORETON";
+			//sunset siore
+			case "brc_EQEF320":
+			return "brc_SUNSETSOIRE";
+			//the society rooftop
+			case "brc_EQEF307S":
+			return "brc_SOCIETYROOF";
+			//trackside package - Eagle Farm
+			case "brc_EQEF214T":
+			case "brc_EQEF228T":
+			case "brc_EQEF307T":	
+			case "brc_EQEF321T":	
+			case "brc_EQEF404T":	
+			case "brc_EQEF418T":	
+			case "brc_EQEF425T":	
+			return "brc_GENADMIN_EF";
+			//trackside package - Doomben
+			case "brc_EQDB221T":
+			case "brc_EQDB328T":	
+			case "brc_EQDB411T":	
+			return "brc_GENADMIN_DM";
+			//upper level squires perch
+			case "brc_EQEF307U":
+			return "brc_SQUIRES_UP";
+			//FALLBACK
+			default:return "brc_BRC"
+	}
+}
+
 </script>
 
 [% PROCESS "layout/frame/bottom.tt" %]
