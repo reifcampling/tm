@@ -650,7 +650,7 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 	#aoEventStreamGP .aoNIGHTSESSION{color:#fff;background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_nightSession_ico.svg") no-repeat, var(--ao-dblue);background-size:12px 12px;background-position:top 10px left 15px;}
 	#aoEventStreamGP .twilightSession{color:#fff;background:var(--ao-gold);}
 
-	#aoEventStreamGP .eventHero{width:100%;max-width:304px;height:auto;max-height:110px;padding:0px;margin:0px;display:block;box-sizing: border-box !important;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_placeholder_hero.jpg") center center;background-size:cover;position: relative;flex-grow: 0;}
+	#aoEventStreamGP .eventHero{width:304px;height:110px;padding:0px;margin:0px;display:block;box-sizing: border-box !important;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_placeholder_hero.jpg") center center;background-size:cover;position: relative;flex-grow: 0;}
 	.eventHero img{width:100%;max-width:304px;height:auto;display:block;border:0;outline:0;}
 	.eventOfferTag{font-family:"poppins","Averta", sans-serif, fallback;font-size:12px;line-height:12px;font-weight:bold;color:#fff;background:#000;position:absolute;bottom:8px;left:8px;padding:6px 10px 4px;display:inline-block;margin:0px 0px ;box-sizing: border-box !important;border-radius:3px;}
 	.offerTag{display:none;}
@@ -981,13 +981,7 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 		</div>
 		<!--error span-->
 		<div id="aoEventErrorsGP">
-			<!--prem exp ad card-->
-			<div id="aoPxPromoCard">				
-				<div id="aoPxPromoCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_aoRes_promoTile.jpg"></div>
-				<!--<div class="aoPxPromoCardBtn">ViEW TICKETS + HOSPITALITY</div>-->
-				<!--<div id="aoPxPromoCardLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_AOReserve_white_logo.svg" alt="AO RESERVE PREMIUM EXPERIENCE"></div>-->
-			</div>
-			<!--end card-->
+
 			<!--error message-->
 			<div class="aoErrorMessage">
 				<img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_error_background_v2_img.svg">
@@ -999,6 +993,13 @@ page_title = "Australian Open 2026, 12 JAN - 1 FEB | AO Hits Different | Melbour
 		</div>
       	<div id="aoEventStreamGP">
 		<!--public cards-->
+		<!--prem exp ad card-->
+			<div id="aoPxPromoCard">				
+				<div id="aoPxPromoCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_aoRes_promoTile.jpg"></div>
+				<!--<div class="aoPxPromoCardBtn">ViEW TICKETS + HOSPITALITY</div>-->
+				<!--<div id="aoPxPromoCardLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_AOReserve_white_logo.svg" alt="AO RESERVE PREMIUM EXPERIENCE"></div>-->
+			</div>
+			<!--end card-->
 		</div>
 	</div>
 	<!--end public wrapper-->
@@ -1142,13 +1143,12 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 	//notes: date filtering and counters next, 
 	$j = jQuery.noConflict();
 	//the server name could change so I put it here so it was easy to find
-	let availLocation = "https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao_data_multi_exp_test.json";
+	let availLocation = "ao_data.json";
 	//TM only link >>> https://dixntprqcqdcg.cloudfront.net/ao_tm
 	//sandbox link >>> https://d1qeon7qw4jcrw.cloudfront.net/ao_sandbox
 	//prod link    >>> https://d1qeon7qw4jcrw.cloudfront.net/ao
 	//local 	   >>> http://localhost:1337/ao_sandbox_mock.json
-	//mock data    >>> https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao_data_multi_exp_test.json
-
+	//mock data    >>> https://www.ticketmaster.com.au/ausopen/ao_sandbox_mock.json
 	let dates;
 	let eventList = [];
 	ticketTypeList = [];
@@ -1232,12 +1232,11 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 							let offerTag = event.ticket_offer_desc.replace(/\s/g, '');
 							//console.log(eventDateShort)
 							experienceTypeSet.add(event.experience_filter)
-						//	urlExperienceTypeSet.add(event.experience_filter.replace(/\s/g, '') + "URL")
+							urlExperienceTypeSet.add(event.experience_filter.replace(/\s/g, '') + "URL")
 							experienceTypeAndBuyFlow.set(event.experience_filter+"",""+eventFlow)
 							//console.log(experienceTypeAndBuyFlow)
 							dateSet.add(event.event_date)
 							//build card
-
 							let newEvent = $j("<div class='eventCard "
 												+eventFlow+" "
 												+event.event_date+"' data-expfilter='"
@@ -1623,37 +1622,10 @@ function createListsFromSet(){
 };
 
 function createExperienceTypeList(){
-
-	let buttonArrayTemp = Array.from(experienceTypeSet);	
-	//const buttonArray = []
-    buttonSet = new Set();
-
-	$j.each(buttonArrayTemp, function(index,value){
-		let experienceName = value.split(",")
-			if(experienceName.length === 1){
-               let expString = experienceName.toString();
-                    buttonSet.add(expString)
-                    urlExperienceTypeSet.add(expString.replace(/\s/g, '') + "URL")
-					//buttonArray.push(expString)
-			}
-			if(experienceName.length >= 2){
-                //run through the array
-                $j.each(experienceName, function(index,value){
-                   // console.log(value)
-                    let buyFlow = "ao-tickets";
-                    let expString = value.toString();
-                     experienceTypeAndBuyFlow.set(expString+"",""+buyFlow)
-                     buttonSet.add(expString)
-                     urlExperienceTypeSet.add(expString.replace(/\s/g, '') + "URL")
-					// buttonArray.push(expString)
-                })
-			}		
-})
-    //make a new array from the unique set+
-    let buttonArray = Array.from(buttonSet);	
+	let buttonArray = Array.from(experienceTypeSet);	
 
 	$j.each(buttonArray, function(index,value){
-		//console.log(value)
+
 		let experienceTypeClean = value.replace(/\s/g, '');//removes special >> .replace(/[^\w\s]/gi, '') characters and spaces
 		let experienceFlow = experienceTypeAndBuyFlow.get(value)
 		let newButton = $j("<div data-filterbtnlab='"+ experienceTypeClean +"' data-buyflow='"+ experienceFlow +"' class='aoFilterListBtn aoFilterBtnOff ticketFilterBtn' id='"+ experienceTypeClean +"FilterBtn'><div class='aoCheckBox'></div><h4>"+ value +"</h4></div>");
@@ -1675,15 +1647,14 @@ function pubCardsToDisplay(){
 	//run through each card and check against filters
 	$j('.ao-tickets').each(function () {
 		let eventDate = $j(this).data('dateurl');
-		experienceType = $j(this).data('expfilter').split(",");;
+		let experienceType = $j(this).data('expfilter');
 		let sessionType = $j(this).data('session');	
 		let eventPrice = $j(this).data('price');
 		let discoFilter = $j(this).data('discoveryfilter');
 		let eventCard = $j(this).data('arcid')
-    //    console.log(experienceType)
+
 		if((jQuery.inArray(eventDate, pubDateList) != -1 || (pubDateList.length == 0)) //date
-		//&& (jQuery.inArray(experienceType, fullPubExperienceTypeList) != -1 ||  jQuery.inArray("Any", fullPubExperienceTypeList) != -1)   //exp filter type
-        && ((matchExperiencePub() === true) || jQuery.inArray("Any", fullPubExperienceTypeList) != -1)
+		&& (jQuery.inArray(experienceType, fullPubExperienceTypeList) != -1 ||  jQuery.inArray("Any", fullPubExperienceTypeList) != -1)   //exp filter type
 		&& (jQuery.inArray(sessionType, fullPubSessionTypeList) != -1 || jQuery.inArray("Any", fullPubSessionTypeList) != -1) //session type		
 		
 		//price is > min set price and < max price or > max slider price
@@ -1692,6 +1663,7 @@ function pubCardsToDisplay(){
 				$j(this).fadeIn(500);		
 				pubEventCountPlus ++;
 				document.getElementById(eventCard).setAttribute("data-childnum",pubEventCountPlus)
+				console.log(pubEventCountPlus)
 		} else {
 				$j(this).fadeOut(250);
 				pubEventCountMinus ++;
@@ -1699,14 +1671,6 @@ function pubCardsToDisplay(){
 		}		
 		});
 		pubEventCounter();
-}
-matchExperiencePub = function(){
-		expFound = false;
-		fullPubExperienceTypeList.forEach(function(currentExp){ 
-                //console.log(currentExp)
-				if(jQuery.inArray(currentExp, experienceType) != -1){expFound = true;}			
-		})
-		return expFound;	
 }
 function premCardsToDisplay(){
 	premEventCountPlus = 0;
@@ -1742,7 +1706,7 @@ function premCardsToDisplay(){
 let pubEventCounter = function(){
 	pubEventCountTotal = pubEventCountPlus - pubEventCountMinus;
 	let aoPXCard = document.getElementById('aoPxPromoCard');
-
+	console.log(pubEventCountPlus)
 	document.getElementById('aoPubCount').innerHTML = pubEventCountPlus.toString();
 	if((pubEventCountPlus == 0)){
 		$j("#aoEventErrorsGP .aoErrorMessage").fadeIn(500)
@@ -2254,7 +2218,7 @@ var toggleSession = $j(this).data('filterbtnlab');
 //pub sessions any/all
 $j(document).on('click', ".sessionFilterBtn", function () {
 
-				console.log(sessionTypeList)
+				
 		});
 //pub sessions any/all
 $j(document).on('click', "#aoPubSessionMenu .sessionFilterBtn", function () {
@@ -2569,7 +2533,6 @@ let parseUrl = function(){
 let parseExpTypeURL = function(){
 	var urlExpTypeFilter = []
 	urlPubExperienceTypeList = Array.from(urlExperienceTypeSet);
-    console.log(urlPubExperienceTypeList)
 	//reset buttons
 	$j('#aoPubTicketMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
 	$j('#aoPubTicketMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
@@ -2621,8 +2584,8 @@ let parseSeshTypeURL = function(){
 	var urlSeshTypeFilter = []
 	urlPubSessionTypeList = urlSessionTypeList;
 	//reset buttons
-	$j('#aoPubSessionMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
-	$j('#aoPubSessionMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
+	$j('#aoPubSessionMenu').children('.sessionFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
+	$j('#aoPubSessionMenu').children('.sessionFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
 	//run through URL vars and match with the race day set
 	$j.grep(aoURLs, function(urlFound){
 		if(jQuery.inArray( urlFound, urlPubSessionTypeList) != -1){
@@ -2632,8 +2595,8 @@ let parseSeshTypeURL = function(){
 			urlSeshTypeFilter.push(urlSeshTypeFound);
 			
 			//activate checkbox
-			$j("#"+urlSeshTypeFound+"FilterBtn").removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn');
-			$j("#"+urlSeshTypeFound+"FilterBtn").children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive');
+			$j('#aoPubSessionMenu .sessionFilterBtn[data-filterbtnlab='+urlSeshTypeFound+']').removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn');
+			$j('#aoPubSessionMenu .sessionFilterBtn[data-filterbtnlab='+urlSeshTypeFound+']').children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive');
 	}
 	});
 	//clear array, push found filter array into global array
@@ -2646,20 +2609,19 @@ let parseSeshTypePXURL = function(){
 	var urlSeshTypePXFilter = []
 	urlPremSessionTypeList = urlSessionTypeList;
 	//reset buttons
-	$j('#aoPremSessionMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
-	$j('#aoPremSessionMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
+	$j('#aoPremSessionMenu').children('.sessionFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
+	$j('#aoPremSessionMenu').children('.sessionFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
 	//run through URL vars and match with the race day set
 	$j.grep(aoURLs, function(urlFound){
 		if(jQuery.inArray( urlFound, urlPremSessionTypeList) != -1){
 			//match arrays - remove URL from end of current found variable
 			urlSeshTypePXFound = urlFound.replace('URL','')
-			//console.log(urlFound)
 			//push match to new array
 			urlSeshTypePXFilter.push(urlSeshTypePXFound);
 			
 			//activate checkbox
-			$j("#"+urlSeshTypePXFound+"FilterBtn").removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn');
-			$j("#"+urlSeshTypePXFound+"FilterBtn").children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive');
+			$j('#aoPremSessionMenu .sessionFilterBtn[data-filterbtnlab='+urlSeshTypePXFound+']').removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn');
+			$j('#aoPremSessionMenu .sessionFilterBtn[data-filterbtnlab='+urlSeshTypePXFound+']').children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive');
 	}
 	});
 	//clear array, push found filter array into global array
@@ -2873,62 +2835,62 @@ let loadFeatureTiles = function(){
 	let currentDatePull = new Date()
 	let options = {  day: '2-digit', month: '2-digit', year: 'numeric', timeZone: "Australia/Melbourne"};
 	let currentDate = new Intl.DateTimeFormat('en-AU', options).format(currentDatePull).split("/").reverse().join("/");
-	let currentDateNum = currentDate.replace("/","").replace("/",".")
-/*
-	let testData =     [
+	let currentDateNum = currentDate.replace("/","").replace("/",".")//202601.10
+
+
+let testDataFeat =       [
     {
-      "name": "Tuesday Showdown",
-      "date_start": "11-12-2025",
-      "date_end": "11-22-2025",
+      "name": "Student Ground Pass",
+      "date_start": "22-01-2026",
+      "date_end": "02-02-2027",
       "order": 1,
-      "img_d": "https://ausopen.com/sites/default/files/202512/11/card-carousel-tuesday-showdown-235-x-150-2x.png",
-      "img_m": "https://ausopen.com/sites/default/files/202512/11/card-carousel-tuesday-showdown-180-x-180-2x.png",
-      "tag": "13 JAN",
-      "exp_filter": "?dateInc=jan13&?expType=OpeningWeekURL"
+      "img_d": "http://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/featuretiles/ao26_Week2UniStudentTicket_235x150.jpg",
+      "img_m": "http://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/featuretiles/ao26_Week2UniStudentTicket_180x180.jpg",
+      "tag": "27 JAN &#45; 01 FEB",
+      "exp_filter": "?dateInc=jan27&jan28&jan29&jan30&jan31&feb01&expType=GroundPassURL&seshType=ALLDAYURL"
     },
     {
-      "name": "Wednesday Showdown",
-      "date_start": "11-12-2025",
-      "date_end": "11-22-2025",
+      "name": "Night Ground Passes",
+      "date_start": "22-01-2026",
+      "date_end": "31-01-2027",
       "order": 2,
-      "img_d": "https://ausopen.com/sites/default/files/202512/11/card-carousel-1-point-slam-235-x-150-2x.png",
-      "img_m": "https://ausopen.com/sites/default/files/202512/11/card-carousel-1-point-slam-180-x-180-2x_0.png",
-      "tag": "14 JAN",
-      "exp_filter": "?dateInc=jan14&?expType=OpeningWeekURL"
+      "img_d": "https://ausopen.com/sites/default/files/202601/16/ground-pass-nights-desktop-235x150-2x.png",
+      "img_m": "https://ausopen.com/sites/default/files/202601/16/ground-pass-nights-mobile-180x180-2x_0.png",
+      "tag": "18 JAN &#45; 01 FEB",
+      "exp_filter": "?expType=GroundPassURL&seshType=NIGHTSESSIONURL"
     },
-    {
-      "name": "AO LIVE: Cassian",
-      "date_start": "11-12-2025",
-      "date_end": "11-22-2025",
+      {
+      "name": "Spacey Jane",
+      "date_start": "22-01-2026",
+      "date_end": "29-01-2027",
       "order": 3,
-      "img_d": "https://ausopen.com/sites/default/files/202511/17/card-carousel-ao-live-cassian-235-x-150-2x.png",
-      "img_m": "https://ausopen.com/sites/default/files/202511/17/card-carousel-ao-live-cassian-180-x-180-2x.png",
-      "tag": "15 JAN",
-      "exp_filter": "?dateInc=jan15&expType=AOLIVEURL&aoLiveBrand"
+      "img_d": "https://ausopen.com/sites/default/files/202511/6/card-carousel-ao-live-spacey-jane-235-x-150-2x.png",
+      "img_m": "http://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/featuretiles/ao26_aoLive_SpaceyJane_180x180.png",
+      "tag": "29 JAN",
+      "exp_filter": "?dateInc=jan29&expType=AOLIVEURL&aoLiveBrand"
     },
-    {
-      "name": "Friday Showdown",
-      "date_start": "11-12-2025",
-      "date_end": "11-22-2025",
+        {
+      "name": "The Veronicas/Sophie Tucker",
+      "date_start": "22-01-2026",
+      "date_end": "30-01-2027",
       "order": 4,
-      "img_d": "https://ausopen.com/sites/default/files/202512/11/card-carousel-friday-showdown-235-x-150-2x.png",
-      "img_m": "https://ausopen.com/sites/default/files/202512/11/card-carousel-friday-showdown-180-x-180-2x.png",
-      "tag": "16 JAN",
-      "exp_filter": "?dateInc=jan16&?expType=OpeningWeekURL"
-    },
+      "img_d": "http://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/featuretiles/ao26_Veronicas_235x150.png",
+      "img_m": "http://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/featuretiles/ao26_Veronicas_180x186.png",
+      "tag": "30 Jan",
+      "exp_filter": "?dateInc=jan30&expType=AOLIVEURL&aoLiveBrand"
+     },
     {
-      "name": "Kids Tennis Day",
-      "date_start": "11-12-2025",
-      "date_end": "11-22-2025",
+      "name": "AO LIVE: Peggy Gou",
+      "date_start": "22-01-2026",
+      "date_end": "02-02-2027",
       "order": 5,
-      "img_d": "https://ausopen.com/sites/default/files/202512/11/card-carousel-ktd-235-x-150-2x.png",
-      "img_m": "https://ausopen.com/sites/default/files/202512/11/card-carousel-ktd-180-x-180-2x.png",
-      "tag": "17 JAN",
-      "exp_filter": "?dateInc=jan14&?expType=OpeningWeekURL"
+      "img_d": "https://ausopen.com/sites/default/files/202511/6/card-carousel-ao-live-peggy-gou-235-x-150-2x.png",
+      "img_m": "https://ausopen.com/sites/default/files/202511/6/card-carousel-ao-live-peggy-gou-180-x-180-2x.png",
+      "tag": "01 FEB",
+      "exp_filter": "?dateInc=feb01&expType=AOLIVEURL&aoLiveBrand"
     }
-   ]*/
-
-
+   ]
+	
 	cardCounter = 0;
 	$j.ajax({
                type: 'GET',
@@ -2936,12 +2898,12 @@ let loadFeatureTiles = function(){
                dataType: 'html',
 				success: function(data) {
 					let tilesData = JSON.parse(data);
-					let featTileList = tilesData//testData;//;tilesData
+					let testDataFeat = tilesData//testData;//;tilesData
 
 					$j.each(featTileList, function(key,value){
 						let startDate = value.date_start.replace("-","/").replace("-","/").split("/").reverse().join("/").replace("/","").replace("/",".");
 						let endDate = value.date_end.replace("-","/").replace("-","/").split("/").reverse().join("/").replace("/","").replace("/",".");
-
+						
 						
 						//build card
 						let newFeatTile = $j("<div class='aoFeatureEvent' id='featCard0"
@@ -3022,10 +2984,8 @@ $j(document).on('click', ".aoFeatPip", function () {
 /*
 			//100 / number of cards = %'s'
 			let percentOfCards = 100/cardCounter
-			console.log(percentOfCards)
 			//get width of scroller, div by 100 to get 1%
 			let percentageOfScroller = scrollerWidth / 100
-			console.log(percentageOfScroller)
 			//get target card number (eg 3) and turn to a percent (eg 3xpercentOfCards=75%)
 			let scrollTargetPercent = featTarget*percentOfCards
 			//times the above percent by the 1% value of scroller width = target from left in px
@@ -3037,7 +2997,6 @@ $j(document).on('click', ".aoFeatPip", function () {
 			var diff = left - width/2
 			//select
 				if($j(this).hasClass("aoFeatPipOn")){
-					//console.log("im already active")
 				}
 				//unselect
 				else if ($j(this).hasClass("aoFeatPipOff")){
@@ -3131,6 +3090,8 @@ if (window.matchMedia('(min-width: 741px) and (max-width: 999.999px)').matches) 
 window.addEventListener("load", (event) => {
 		
 });
+
+
 </script>
 
 
