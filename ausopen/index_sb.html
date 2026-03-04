@@ -1128,11 +1128,11 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 
 <div id="tmFooter">
 
-	<p>&copy; 1999&#45;2025 Ticketmaster. All rights reserved.<br />&copy; 2025 Tennis Australia</p>
+	<p>&copy; 1999&#45;2026 Ticketmaster. All rights reserved.<br />&copy; 2026 Tennis Australia</p>
 
 	<a href="https://www.ticketmaster.com.au/h/purchase.html" target="_self"><button>Purchase Policy</button></a> | <a href="https://www.ticketmaster.com.au/privacy" target="_self"><button>Privacy Policy</button></a> | <a href="https://www.ticketmaster.com.au/h/cookies.html" target="_self"><button>Cookie Policy</button></a><br /><br />
 	<div id="aoMasterCardLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/ao_masterCardIco.svg" alt="Master Card"> The Australian Open prefers Mastercard&reg; <br />
-Mastercard is a registered trademark, and the circles design is a trademark of Mastercard International Incorporated. &copy;2025 Mastercard</div>
+Mastercard is a registered trademark, and the circles design is a trademark of Mastercard International Incorporated. &copy;2026 Mastercard</div>
 </div>
 <!--END OF BODY-->
 
@@ -1159,7 +1159,7 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 	sessionTypeList = ["DAYSESSION","NIGHTSESSION","ALLDAY", "ANY"];
 	sessionTypePremList = ["DAYSESSION","NIGHTSESSION","ANY"];//"ALLDAY",
 	urlSessionTypeList = ["DAYSESSIONURL","NIGHTSESSIONURL","ALLDAYURL", "ANYURL"];
-	dateNameList = ["jan12","jan13","jan14","jan15","jan16","jan17","jan18","jan19","jan20","jan21","jan22","jan23","jan24","jan25","jan26","jan27","jan28","jan29","jan30","jan31","feb01"];
+	dateNameList = ["jan11","jan12","jan13","jan14","jan15","jan16","jan17","jan18","jan19","jan20","jan21","jan22","jan23","jan24","jan25","jan26","jan27","jan28","jan29","jan30","jan31"];
 	fullPubSessionTypeList = [];
 	fullPremSessionTypeList = [];	
 	venueList = ["Rod Laver Arena","Margaret Court Arena","John Cain Arena","Ground Pass Only"];
@@ -1432,12 +1432,12 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 	createExperienceTypeList();	
 	emptyFullListsOnLoad();
 //	defaultSortPublic();
-	defaultSortPremium();
+//	defaultSortPremium();
 	pubCardsToDisplay();
 	premCardsToDisplay();
 	setTimeout(getUrlVars,500)
 	setTimeout(parseUrl,1000)
- 	setTimeout(loadFeatureTiles, 1000);
+ //	setTimeout(loadFeatureTiles, 1000);
 	imageLoader()
 
 				},
@@ -2795,39 +2795,27 @@ let emptyFullListsOnLoad = function(){
 function dayMapper(data){
 	switch (data){
 			default:return ""
-			case "jan12":return "2026-01-12";
-			case "jan13":return "2026-01-13";
-			case "jan14":return "2026-01-14";
-			case "jan15":return "2026-01-15";
-			case "jan16":return "2026-01-16";
-			case "jan17":return "2026-01-17";
-			case "jan18":return "2026-01-18";
-			case "jan19":return "2026-01-19";
-			case "jan20":return "2026-01-20";
-			case "jan21":return "2026-01-21";
-			case "jan22":return "2026-01-22";
-			case "jan23":return "2026-01-23";
-			case "jan24":return "2026-01-24";
-			case "jan25":return "2026-01-25";
-			case "jan26":return "2026-01-26";
-			case "jan27":return "2026-01-27";
-			case "jan28":return "2026-01-28";
-			case "jan29":return "2026-01-29";
-			case "jan30":return "2026-01-30";
-			case "jan31":return "2026-01-31";
-			case "feb01":return "2026-02-01";
-	}
-}
-//link mapper for AO Reserve lightbox out going
-function aoResLinkMapper(data){
-	switch (data){
-			default:return "aoNoLink"
-			case "On-CourtSeats":return "https://ausopen.com/aoreserve/on-court-by-piper-heidsieck";
-			case "TheBistro":return "https://ausopen.com/aoreserve/bistro";
-			case "AOGlasshouse":return "https://ausopen.com/aoreserve/ao-glasshouse";
-			case "RiversideSocial":return "https://ausopen.com/aoreserve/riverside-social";
-			case "ChampionsRooftop":return "https://ausopen.com/aoreserve/champions-rooftop";			
-			case "Suites":return "https://ausopen.com/aoreserve/suites";		
+			case "jan11":return "2027-01-11";
+			case "jan12":return "2027-01-12";
+			case "jan13":return "2027-01-13";
+			case "jan14":return "2027-01-14";
+			case "jan15":return "2027-01-15";
+			case "jan16":return "2027-01-16";
+			case "jan17":return "2027-01-17";
+			case "jan18":return "2027-01-18";
+			case "jan19":return "2027-01-19";
+			case "jan20":return "2027-01-20";
+			case "jan21":return "2027-01-21";
+			case "jan22":return "2027-01-22";
+			case "jan23":return "2027-01-23";
+			case "jan24":return "2027-01-24";
+			case "jan25":return "2027-01-25";
+			case "jan26":return "2027-01-26";
+			case "jan27":return "2027-01-27";
+			case "jan28":return "2027-01-28";
+			case "jan29":return "2027-01-29";
+			case "jan30":return "2027-01-30";
+			case "jan31":return "2027-01-31";
 	}
 }
 //switch data for sessions into a number to sort
