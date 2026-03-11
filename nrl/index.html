@@ -1,0 +1,4044 @@
+[% # text to be displayed within <title></title>
+page_title = "NRL Season 2026, LET'S GO! | Buy NRL Tickets | Ticketmaster Australia, Official Tickets" %]
+[% static_has_responsive_header_footer = 1; enable_leader_board = 0; %]
+[% PROCESS "layout/frame/top.tt" %]
+<!--cut for on sale----->
+ <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />
+<!--libs--->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link href="https://s1.ticketm.net/tm/en-au/img/static/fonts/averta.css" type="text/css" rel="stylesheet" />
+<link href="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/font/tp2_font.css" type="text/css" rel="stylesheet" />
+
+<style type="text/css">
+:root {
+		--nrl-blk:#111111;
+		--nrl-gree:#00CF5D;
+		--nrl-grey:#EFEFEF;
+		--nrl-lbron:#9E2B64;
+		--nrl-dbron:#6C1D45;
+		--nrl-lraid:#002856;
+		--nrl-draid:#00162F;
+		--nrl-lbull:#2026CB;
+		--nrl-dbull:#121570;
+		--nrl-lshar:#1F7EB2;
+		--nrl-dshar:#15679F;
+		--nrl-ldolp:#E0121A;
+		--nrl-ddolp:#BD0F16;
+		--nrl-ltita:#047DB0;
+		--nrl-dtita:#084970;
+		--nrl-lsea:#6C1D45;
+		--nrl-dsea:#500128;
+		--nrl-lstor:#592B8C;
+		--nrl-dstor:#4F1782;
+		--nrl-lknig:#003B73;
+		--nrl-dknig:#002B5D;
+		--nrl-lcow:#0C2340;
+		--nrl-dcow:#0C192F;
+		--nrl-leels:#002D72;
+		--nrl-deels:#001B46;
+		--nrl-lpant:#2C2F30;
+		--nrl-dpant:#1F2122;
+		--nrl-lrabb:#003B19;
+		--nrl-drabb:#002B11;
+		--nrl-ldrag:#CD232C;
+		--nrl-ddrag:#A6121C;
+		--nrl-lroos:#0B2D5B;
+		--nrl-droos:#072046;
+		--nrl-lwarr:#151F6D;
+		--nrl-dwarr:#0E1557;
+		--nrl-ltige:#262626;
+		--nrl-dtige:#161616;				
+	  }	
+#mainContent{padding: 0px 0px 0px 0px !important;background: #fff;}
+@media only screen and (min-width: 0px) and (max-width: 999.99px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE !!!! IMPORTANT*/ 
+	#mainContent{padding: 0px 0px 0px 0px !important;background: #fff;}
+}
+@media only screen and (min-width: 1000px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE */ d
+	#mainContent{padding: 0px 0px 0px 0px !important;background: #fff;}
+}	
+
+@media only screen and (min-width: 1000px) {	
+	#nrlContainer{width:100%;height:auto;margin:0 auto;display:block;padding:1px;background:var(--nrl-blk);position:relative;box-sizing: border-box !important;}
+
+	#nrlHeader{width:100%;max-width:1010px;height:auto;display:block;margin:20px auto;}
+	#nrlHeader img{width:390px;height:auto;margin:50px auto; display:block;}
+	/*teams*/
+	#nrlTeams{width:100%;max-width:1013px;height:auto;border-radius:15px;margin:0 auto 60px;display:flex;flex-wrap: wrap;justify-content:center;align-items: flex-start;column-gap:20px;row-gap:20px;padding:20px;background:#fff;z-index:49;position:relative;box-sizing: border-box !important;}
+	.nrlTeamCard{width:310px;height:155px;margin:0;padding:0;display:flex;flex-wrap: nowrap;box-shadow:0px 2px 0px 2px #E0E0E0;border-radius:10px;}
+	.nrlTeamLogo{width:155px;height:155px;margin:0px;padding:0px;border-radius:10px 0px 0px 10px;display:flex;justify-content: center;align-items: center;flex-wrap: nowrap;overflow:hidden;box-sizing: border-box !important;}
+	.nrlTeamLogo img{width:120px;height:120px;}
+	.nrlTeamInfo{width:155px;height:155px;margin:0px;padding:10px;background:#EFEFEF;border-radius:0px 10px 10px 0px;display:flex;flex-wrap: wrap;align-content: space-between;justify-content: center;box-sizing: border-box !important;}
+	.nrlTeamInfo h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:18px;line-height:22px;font-style:normal;font-weight:800;color:var(--nrl-blk);text-align:center;text-transform:uppercase;padding:0px;margin:0px;}
+	.nrlTeamInfo h2{font-family:"TP2","Averta",sans-serif,fallback;font-size:18px;line-height:18px;font-style:normal;font-weight:800;color:var(--nrl-blk);text-align:center;text-transform:uppercase;padding:0px;margin:0px;}
+	.nrlBtnWrap{width:100%;height:auto;display:block;padding:0;margin:0;}
+	.nrlBtnWrap a{text-decoration:none;}
+	.nrlMembBtn{width:100%;height:30px;border-radius:0px 5px 5px 0px;background:var(--nrl-grey);font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:800;color:var(--nrl-blk);padding:8px 0px 6px 10px;margin:0px;position:relative;box-sizing: border-box !important;}
+	.nrlTixBtn{width:100%;height:30px;border-radius:0px 5px 5px 0px;font-family:"TP2","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:800;color:var(--nrl-grey);padding:8px 0px 5px 10px;margin:5px 0px 0px 0px;box-sizing: border-box !important;}
+	.nrlMembBtnIco{width:8px;height:12px;mask:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center center no-repeat;mask-size:8px 12px;right:4px;top:7.5px;position:absolute;}
+	/*rounds*/
+	#nrlRounds{width:100%;max-width:1110px;height:auto;margin:0 auto 0px;display:block;padding:0px;position:relative;z-index:50;box-sizing: border-box !important;}
+	.nrlTitle{width:100%;height:auto;background:none;max-width:1100px;margin:60px auto 20px;padding:0px 0px 0px 60px;box-sizing: border-box !important;}
+	.nrlTitle h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:900;color:#D1D1D1;text-align:left;text-transform:uppercase;padding:0px;margin:0px;display:inline-block;width:auto;border-bottom:5px solid var(--nrl-gree);}
+	.nrlRoundsWrap{width:100%;max-width:1110px;height:auto;margin:0 auto 0px;display:flex;flex-wrap: wrap;justify-content:center;align-items: flex-start;column-gap:1px;row-gap:1px;padding:0px;background:var(--nrl-blk);position:relative;box-sizing: border-box !important;}
+	.nrlRound{width:40px;height:60px;padding:12px 0px 0px 0px;margin:0px;user-select:none;cursor:pointer;transition:ease-in-out .3s all;box-sizing: border-box !important;}
+	.nrlRound:hover{opacity:70%;}
+	.nrlRound:hover .nrlRoundChev{margin:4px auto 0px;}
+	.nrlRound h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:900;text-align:center;text-transform:uppercase;padding:0px;margin:0px;}
+	.nrlRoundOn{background:#3D3D3D;border-bottom:5px solid var(--nrl-gree);}
+	.nrlRoundOn h1{color:var(--nrl-gree);}
+	.nrlRoundOff{background:#282828;border-bottom:5px solid #949494;}
+	.nrlRoundOff h1{color:#fff;}
+	.nrlRoundPast{background:#282828;border-bottom:5px solid #4A4A4A;}	
+	.nrlRoundPast h1{color:#888888;}
+	.nrlRoundOff .nrlRoundChev, .nrlRoundPast .nrlRoundChev{width:14px;height:9px;margin:0px auto;padding:0;mask:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_down_sing_img.svg") center center no-repeat;mask-size:14px 9px;background-color:#fff;transition:ease-in-out .3s all;}
+	.nrlRoundOn .nrlRoundChev, .nrlRoundPast .nrlRoundChev{width:16px;height:10px;margin:0px auto;padding:0;mask:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_down_sing_img.svg") center center no-repeat;mask-size:16px 10px;background-color:var(--nrl-gree);transition:ease-in-out .3s all;}
+	/*drop down menus*/
+	.nrlFilterWrap{width:100%;max-width:1090px;height:auto;margin:20px auto 0px;display:none;flex-wrap:wrap;column-gap:10px;padding:0px 0px;position:relative;box-sizing: border-box !important;}
+	.nrlFilterDropDown{width:auto;height:auto;margin:0;padding:0;background:none;display:block;position:relative;}
+	.nrlFilterBtn{width:240px;height:40px;margin:0px 0px 0px 0px;padding:0;background:#282828;border-radius:0px 5px 5px 0px;border-right:5px solid #949494;display:flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;user-select:none;cursor:pointer;box-sizing: border-box !important;}
+	.nrlFilterBtn h2{font-family:"TP2","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:400;color:#D1D1D1;text-align:left;text-transform:uppercase;padding:0px;margin:0px;display:inline-block;width:auto;}
+	.nrlFilterBtn h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:20px;line-height:20px;font-style:normal;font-weight:900;color:#D1D1D1;text-align:left;text-transform:uppercase;padding:0px;margin:0px;display:inline-block;width:auto;}
+	.nrlBtnIco{width:25px;height:25px;display:inline-block;margin:0px 10px 0px 14px;padding:0;}
+	.nrlBtnIco img{width:auto;height:auto;}
+	.nrlBtnCounter{}
+	.nrlBtnChev{width:9px;height:14px;margin:0px 14px 0px 10px;padding:0;display:inline-block;}
+	.nrlBtnChev img{width:100%;height:auto;}
+	.nrlDropDownSubHead{width:100%;height:auto;padding:5px 0px;margin:0;background:#343434;position:relative;box-sizing: border-box !important;}
+	.nrlDropDown{width:auto;height:auto;margin:0px 0px 0px 0px;padding:0;background:#474747;position:absolute;left:0px;top:50px;box-shadow:0px 0px 4px 2px rgba(17,17,17,.2);}
+	.nrlDropDownOn{display:block !important;opacity:1 !important;}
+	.nrlDropDownOff{display:none !important;opacity:0 !important;}
+
+	.nrlCheckBoxBtn{width:100%;height:auto;padding:6px 10px;margin:2px 0px;display:flex;align-items: center;justify-content: flex-start;flex-wrap: nowrap;user-select:none;cursor:pointer;box-sizing: border-box !important;}
+	.nrlCheckBoxBtn h3{font-family:"TP2","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:400;color:#D1D1D1;text-align:left;padding:0px 0px;margin:0px 0px;display:inline-block;}
+	.nrlCheckBox{width:16px;height:16px;min-width:16px;display:inline-block;margin:0px 10px 0px 0px;padding:0px;box-sizing:border-box !important;}
+	.nrlCheckBoxOn{background:url("nrl_26_checkbox_img.svg") no-repeat center center , var(--nrl-gree);}
+	.nrlCheckBoxOff{background:none;box-shadow:inset 0px 0px 0px 2px var(--nrl-gree);}
+	.nrlDropDownBotLid{width:100%;height:auto;display:block;padding:0;margin:10px 0px 0px 0px;}
+	.nrlLeftLid{width:33px;height:5px;background:var(--nrl-gree);display:inline-block;padding:0;margin:0 5px 0px 0px;}
+	.nrlRightLid{width:calc(100% - 38px);height:5px;background:#949494;display:inline-block;padding:0;margin:0;}
+
+	.nrlResetBtn{width:115px;height:40px;margin:0;padding:0;background:#282828;border-radius:0px 5px 5px 0px;border-right:5px solid #949494;display:flex;align-items: center;justify-content: center;flex-wrap: nowrap;float:right;user-select:none;cursor:pointer;box-sizing: border-box !important;}
+	.nrlResetBtn h2{font-family:"TP2","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:400;color:#D1D1D1;text-align:left;text-transform:uppercase;padding:0px;margin:0px;display:inline-block;width:auto;}
+	/*tags*/
+	#nrlTagWrap{width:100%;max-width:1110px;height:auto;margin:20px auto 0px;padding:0px 0px;position:relative;display:flex;flex-wrap:wrap;column-gap:1px;row-gap:1px;box-sizing: border-box !important;}
+	.nrlRoundTag{width:130px;height:auto;background:#2E2E2E;display:none;font-family:"TP2","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:400;color:#D1D1D1;text-align:left;text-transform:uppercase;padding:7px 0px 4px 7px;margin:0px 2px 2px 0px;box-sizing: border-box !important;}
+	/*matches*/
+	#nrlMatches{width:100%;max-width:1110px;height:auto;margin:0px auto 0px;display:block;padding:0px 0px;position:relative;box-sizing: border-box !important;}
+	#nrlMatchWrap{width:100%;max-width:1110px;height:auto;margin:0px auto 0px;padding:0px 0px;position:relative;display:flex;flex-wrap:wrap;column-gap:2px;row-gap:2px;box-sizing: border-box !important;}
+	.nrlMatch{width:130px;height:auto;background:#2E2E2E;margin:0;padding:0px 0px 30px 0px;display:none;flex-wrap: nowrap;flex-direction: column;align-items: center;justify-content: flex-start;position: relative;}
+	.nrlMatchTD{width:100%;height:auto;display:block;padding:10px 10px 10px 10px;margin:0;box-sizing: border-box !important;}
+	.nrlMatchTD h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:600;color:#D1D1D1;text-align:left;padding:0px 0px;margin:0px 0px;display:inline-block;}
+	.nrlMatchTD p{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:600;color:var(--nrl-gree);text-align:left;padding:0px 0px;margin:0px 5px;display:inline-block;}
+	.nrlTeamWrap{width:100%;height:auto;display:block;padding:10px 10px 10px 10px;margin:0;box-sizing: border-box !important;}
+	.nrlHomeT,.nrlAwayT{width:100%;height:18px;display:flex;flex-wrap: nowrap;flex-direction: row;justify-content: flex-start;padding:0px;margin:0;font-family:"TP2","Averta",sans-serif,fallback;font-size:18px;line-height:18px;font-style:normal;font-weight:400;color:#D1D1D1;text-align:left;box-sizing: border-box !important;}
+	.nrlHomeT img,	.nrlAwayT img{width:18px;height:18px;display:inline-block;padding:0px;margin:0px 4px 0px 0px;box-sizing: border-box !important;}
+	.nrlVenueWrap{width:100%;height:auto;display:block;padding:10px 10px 10px 10px;margin:0;box-sizing: border-box !important;text-align: right;}
+	.nrlVenueWrap h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:600;color:#D1D1D1;text-align:right;padding:0px 0px;margin:0px 0px;display:block;}
+	.nrlVenueWrap p{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:600;color:var(--nrl-gree);text-align:right;padding:0px 0px;margin:0px 5px;display:inline-block;}
+	.nrlVenueWrap h2{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:400;color:#D1D1D1;text-align:right;padding:0px 0px;margin:0px 0px;display:inline-block;}
+	.nrlMatchBtn{width:calc(100% - 10px);height:25px;border-radius:0px 5px 5px 0px;font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;text-align:center;text-transform:uppercase;font-weight:800;color:var(--nrl-blk);padding:6px 0px 5px 0px;margin:5px 0px 5px 0px;position:absolute;bottom:0px;left:5px;right:5px;box-sizing: border-box !important;}
+   .nrlFindTicketsBtn{background:var(--nrl-gree);}
+   .nrlMatchCentreBtn{background:var(--nrl-gree);}
+   .nrlTBCBtn{background:#6d6d6d}
+	.nrlMatch a{width:calc(100% - 10px);text-decoration:none;}
+
+	/*byes*/
+	#nrlByeWrap{width:100%;max-width:1110px;height:auto;margin:2px auto 20px;padding:0px 0px;position:relative;display:flex;flex-wrap:wrap;column-gap:2px;row-gap:2px;box-sizing: border-box !important;}
+	.nrlMatchBye{width:auto !important; min-width:130px;display:none;flex-direction: row;}
+	.nrlByeLeft,.nrlByeRight{width:auto;display:inline-block;padding:10px;box-sizing: border-box !important;}
+	.nrlByeLeft h2{padding:0px;margin:0;font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:400;color:#D1D1D1;text-align:left;box-sizing: border-box !important;}
+	.nrlByeLeft h1{padding:0px;margin:0;font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:700;color:#D1D1D1;text-align:left;box-sizing: border-box !important;}
+
+	.nrlByeRight img{width:30px;height:30px;}
+}
+
+@media only screen and (max-width: 999.99px) {	
+	#nrlContainer{width:100%;height:auto;margin:0 auto;display:block;padding:1px;background:var(--nrl-blk);position:relative;box-sizing: border-box !important;}
+
+	#nrlHeader{width:100%;max-width:1010px;height:auto;display:block;margin:20px auto;}
+	#nrlHeader img{width:120px;height:auto;margin:0px auto; display:block;}
+
+	#nrlTeams{width:90%;max-width:1013px;height:auto;border-radius:15px;margin:0 auto 60px;display:flex;flex-wrap: wrap;justify-content:center;align-items: flex-start;column-gap:20px;row-gap:20px;padding:20px;background:#fff;position:relative;box-sizing: border-box !important;}
+	.nrlTeamCard{max-width:400px;width:100%;height:155px;margin:0;padding:0;display:flex;flex-wrap: nowrap;box-shadow:0px 2px 0px 2px #E0E0E0;border-radius:10px;}
+	.nrlTeamLogo{width:calc(100% - 155px);height:155px;margin:0px;padding:0;display:flex;justify-content: center;align-items: center;flex-wrap: nowrap;border-radius:10px 0px 0px 10px;overflow:hidden;box-sizing: border-box !important;}
+	.nrlTeamLogo img{width:130px;height:130px;}
+	.nrlTeamInfo{width:155px;height:155px;margin:0px;padding:10px;background:#EFEFEF;border-radius:0px 10px 10px 0px;display:flex;flex-wrap: wrap;align-content: space-between;justify-content: center;box-sizing: border-box !important;}
+	.nrlTeamInfo h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:18px;line-height:22px;font-style:normal;font-weight:800;color:var(--nrl-blk);text-align:center;text-transform:uppercase;padding:0px;margin:0px;}
+	.nrlTeamInfo h2{font-family:"TP2","Averta",sans-serif,fallback;font-size:18px;line-height:18px;font-style:normal;font-weight:800;color:var(--nrl-blk);text-align:center;text-transform:uppercase;padding:0px;margin:0px;}
+	.nrlBtnWrap{width:100%;height:auto;display:block;padding:0;margin:0;}
+	.nrlBtnWrap a{text-decoration:none;}
+	.nrlMembBtn{width:100%;height:30px;border-radius:0px 5px 5px 0px;background:var(--nrl-grey);font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:800;color:var(--nrl-blk);padding:6px 0px 6px 10px;margin:0px;position:relative;box-sizing: border-box !important;}
+	.nrlTixBtn{width:100%;height:30px;border-radius:0px 5px 5px 0px;font-family:"TP2","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:800;color:var(--nrl-grey);padding:6px 0px 5px 10px;margin:5px 0px 0px 0px;box-sizing: border-box !important;}
+	.nrlMembBtnIco{width:8px;height:12px;mask:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center center no-repeat;mask-size:8px 12px;right:4px;top:7.5px;position:absolute;}
+
+   /*rounds*/
+	#nrlRounds{width:100%;max-width:1110px;height:auto;margin:0 auto 0px;display:block;padding:0px;position:relative;z-index:50;box-sizing: border-box !important;}
+	.nrlTitle{width:100%;height:auto;background:none;max-width:1100px;margin:60px auto 20px;padding:0px 0px 0px 60px;box-sizing: border-box !important;}
+	.nrlTitle h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:900;color:#D1D1D1;text-align:center;text-transform:uppercase;padding:0px;margin:0px;display:inline-block;width:auto;border-bottom:5px solid var(--nrl-gree);}
+	.nrlRoundsWrap{width:100%;max-width:1110px;height:auto;margin:0 auto 0px;display:flex;flex-wrap: wrap;justify-content:center;align-items: center;column-gap:1px;row-gap:1px;padding:0px 10px;background:var(--nrl-blk);position:relative;box-sizing: border-box !important;}
+	.nrlRound{width:40px;height:60px;padding:12px 0px 0px 0px;margin:0px;user-select:none;cursor:pointer;transition:ease-in-out .3s all;box-sizing: border-box !important;}
+	.nrlRound:hover{opacity:70%;}
+	.nrlRound:hover .nrlRoundChev{margin:4px auto 0px;}
+	.nrlRound h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:900;text-align:center;text-transform:uppercase;padding:0px;margin:0px;}
+	.nrlRoundOn{background:#3D3D3D;border-bottom:5px solid var(--nrl-gree);}
+	.nrlRoundOn h1{color:var(--nrl-gree);}
+	.nrlRoundOff{background:#282828;border-bottom:5px solid #949494;}
+	.nrlRoundOff h1{color:#fff;}
+	.nrlRoundPast{background:#282828;border-bottom:5px solid #4A4A4A;}	
+	.nrlRoundPast h1{color:#888888;}
+	.nrlRoundOff .nrlRoundChev, .nrlRoundPast .nrlRoundChev{width:14px;height:9px;margin:0px auto;padding:0;mask:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_down_sing_img.svg") center center no-repeat;mask-size:14px 9px;background-color:#fff;transition:ease-in-out .3s all;}
+	.nrlRoundOn .nrlRoundChev, .nrlRoundPast .nrlRoundChev{width:16px;height:10px;margin:0px auto;padding:0;mask:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_down_sing_img.svg") center center no-repeat;mask-size:16px 10px;background-color:var(--nrl-gree);transition:ease-in-out .3s all;}
+	/*drop down menus*/
+	.nrlFilterWrap{width:100%;max-width:1090px;height:auto;margin:20px auto 0px;display:none;flex-wrap:wrap;column-gap:10px;padding:0px 0px;position:relative;box-sizing: border-box !important;}
+	.nrlFilterDropDown{width:auto;height:auto;margin:0;padding:0;background:none;display:block;position:relative;}
+	.nrlFilterBtn{width:240px;height:40px;margin:0px 0px 0px 0px;padding:0;background:#282828;border-radius:0px 5px 5px 0px;border-right:5px solid #949494;display:flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;user-select:none;cursor:pointer;box-sizing: border-box !important;}
+	.nrlFilterBtn h2{font-family:"TP2","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:400;color:#D1D1D1;text-align:left;text-transform:uppercase;padding:0px;margin:0px;display:inline-block;width:auto;}
+	.nrlFilterBtn h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:20px;line-height:20px;font-style:normal;font-weight:900;color:#D1D1D1;text-align:left;text-transform:uppercase;padding:0px;margin:0px;display:inline-block;width:auto;}
+	.nrlBtnIco{width:25px;height:25px;display:inline-block;margin:0px 10px 0px 14px;padding:0;}
+	.nrlBtnIco img{width:auto;height:auto;}
+	.nrlBtnCounter{}
+	.nrlBtnChev{width:9px;height:14px;margin:0px 14px 0px 10px;padding:0;display:inline-block;}
+	.nrlBtnChev img{width:100%;height:auto;}
+	.nrlDropDownSubHead{width:100%;height:auto;padding:5px 0px;margin:0;background:#343434;position:relative;box-sizing: border-box !important;}
+	.nrlDropDown{width:auto;height:auto;margin:0px 0px 0px 0px;padding:0;background:#474747;position:absolute;left:0px;top:50px;box-shadow:0px 0px 4px 2px rgba(17,17,17,.2);}
+	.nrlDropDownOn{display:block !important;opacity:1 !important;}
+	.nrlDropDownOff{display:none !important;opacity:0 !important;}
+
+	.nrlCheckBoxBtn{width:100%;height:auto;padding:6px 10px;margin:2px 0px;display:flex;align-items: center;justify-content: flex-start;flex-wrap: nowrap;user-select:none;cursor:pointer;box-sizing: border-box !important;}
+	.nrlCheckBoxBtn h3{font-family:"TP2","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:400;color:#D1D1D1;text-align:left;padding:0px 0px;margin:0px 0px;display:inline-block;}
+	.nrlCheckBox{width:16px;height:16px;min-width:16px;display:inline-block;margin:0px 10px 0px 0px;padding:0px;box-sizing:border-box !important;}
+	.nrlCheckBoxOn{background:url("nrl_26_checkbox_img.svg") no-repeat center center , var(--nrl-gree);}
+	.nrlCheckBoxOff{background:none;box-shadow:inset 0px 0px 0px 2px var(--nrl-gree);}
+	.nrlDropDownBotLid{width:100%;height:auto;display:block;padding:0;margin:10px 0px 0px 0px;}
+	.nrlLeftLid{width:33px;height:5px;background:var(--nrl-gree);display:inline-block;padding:0;margin:0 5px 0px 0px;}
+	.nrlRightLid{width:calc(100% - 38px);height:5px;background:#949494;display:inline-block;padding:0;margin:0;}
+
+	.nrlResetBtn{width:115px;height:40px;margin:0;padding:0;background:#282828;border-radius:0px 5px 5px 0px;border-right:5px solid #949494;display:flex;align-items: center;justify-content: center;flex-wrap: nowrap;float:right;user-select:none;cursor:pointer;box-sizing: border-box !important;}
+	.nrlResetBtn h2{font-family:"TP2","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:400;color:#D1D1D1;text-align:left;text-transform:uppercase;padding:0px;margin:0px;display:inline-block;width:auto;}
+	/*tags*/
+	#nrlTagWrap{width:100%;max-width:1110px;height:auto;margin:20px auto 0px;padding:0px 0px;position:relative;display:flex;flex-wrap:wrap;justify-content:center;align-items: center;column-gap:1px;row-gap:1px;box-sizing: border-box !important;}
+	.nrlRoundTag{width:130px;height:auto;background:#2E2E2E;display:none;font-family:"TP2","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:400;color:#D1D1D1;text-align:left;text-transform:uppercase;padding:7px 0px 4px 7px;margin:0px 2px 2px 0px;box-sizing: border-box !important;}
+	/*matches*/
+	#nrlMatches{width:100%;max-width:1110px;height:auto;margin:0px auto 0px;display:block;padding:0px 0px;position:relative;box-sizing: border-box !important;}
+	#nrlMatchWrap{width:100%;max-width:1110px;height:auto;margin:0px auto 0px;padding:0px 0px;position:relative;display:flex;flex-wrap:wrap;justify-content:center;column-gap:2px;row-gap:2px;box-sizing: border-box !important;}
+	.nrlMatch{width:130px;height:auto;background:#2E2E2E;margin:0;padding:0px 0px 30px 0px;display:none;flex-wrap: nowrap;flex-direction: column;align-items: center;justify-content: flex-start;position: relative;}
+	.nrlMatchTD{width:100%;height:auto;display:block;padding:10px 10px 10px 10px;margin:0;box-sizing: border-box !important;}
+	.nrlMatchTD h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:600;color:#D1D1D1;text-align:left;padding:0px 0px;margin:0px 0px;display:inline-block;}
+	.nrlMatchTD p{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:600;color:var(--nrl-gree);text-align:left;padding:0px 0px;margin:0px 5px;display:inline-block;}
+	.nrlTeamWrap{width:100%;height:auto;display:block;padding:10px 10px 10px 10px;margin:0;box-sizing: border-box !important;}
+	.nrlHomeT,.nrlAwayT{width:100%;height:18px;display:flex;flex-wrap: nowrap;flex-direction: row;justify-content: flex-start;padding:0px;margin:0;font-family:"TP2","Averta",sans-serif,fallback;font-size:18px;line-height:18px;font-style:normal;font-weight:400;color:#D1D1D1;text-align:left;box-sizing: border-box !important;}
+	.nrlHomeT img,	.nrlAwayT img{width:18px;height:18px;display:inline-block;padding:0px;margin:0px 4px 0px 0px;box-sizing: border-box !important;}
+	.nrlVenueWrap{width:100%;height:auto;display:block;padding:10px 10px 10px 10px;margin:0;box-sizing: border-box !important;text-align: right;}
+	.nrlVenueWrap h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:600;color:#D1D1D1;text-align:right;padding:0px 0px;margin:0px 0px;display:block;}
+	.nrlVenueWrap p{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:600;color:var(--nrl-gree);text-align:right;padding:0px 0px;margin:0px 5px;display:inline-block;}
+	.nrlVenueWrap h2{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:400;color:#D1D1D1;text-align:right;padding:0px 0px;margin:0px 0px;display:inline-block;}
+	.nrlMatchBtn{width:calc(100% - 10px);height:25px;border-radius:0px 5px 5px 0px;font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;text-align:center;text-transform:uppercase;font-weight:800;color:var(--nrl-blk);padding:6px 0px 5px 0px;margin:5px 0px 5px 0px;position:absolute;bottom:0px;left:5px;right:5px;box-sizing: border-box !important;}
+   .nrlFindTicketsBtn{background:var(--nrl-gree);}
+   .nrlMatchCentreBtn{background:var(--nrl-gree);}
+   .nrlTBCBtn{background:#6d6d6d}
+	.nrlMatch a{width:calc(100% - 10px);text-decoration:none;}
+
+	/*byes*/
+	#nrlByeWrap{width:100%;max-width:1110px;height:auto;margin:2px auto 20px;padding:0px 0px;position:relative;display:flex;flex-wrap:wrap;justify-content:center;column-gap:2px;row-gap:2px;box-sizing: border-box !important;}
+	.nrlMatchBye{width:auto !important; min-width:130px;display:none;flex-direction: row;}
+	.nrlByeLeft,.nrlByeRight{width:auto;display:inline-block;padding:10px;box-sizing: border-box !important;}
+	.nrlByeLeft h2{padding:0px;margin:0;font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:400;color:#D1D1D1;text-align:left;box-sizing: border-box !important;}
+	.nrlByeLeft h1{padding:0px;margin:0;font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:700;color:#D1D1D1;text-align:left;box-sizing: border-box !important;}
+
+	.nrlByeRight img{width:30px;height:30px;}
+}
+/*team branding*/
+	#nrlBroncos .nrlTeamLogo{background:var(--nrl-lbron);}#nrlBroncos .nrlTixBtn{background:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center right 5px no-repeat,var(--nrl-dbron);background-size:8px 12px;}#nrlBroncos .nrlMembBtn{border:2px solid var(--nrl-dbron);}#nrlBroncos .nrlTeamInfo{border:2px solid var(--nrl-lbron);}#nrlBroncos .nrlMembBtnIco{background-color:var(--nrl-dbron);}
+	#nrlRaiders .nrlTeamLogo{background:var(--nrl-lraid);}#nrlRaiders .nrlTixBtn{background:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center right 5px no-repeat,var(--nrl-draid);background-size:8px 12px;}#nrlRaiders .nrlMembBtn{border:2px solid var(--nrl-draid);background-size:8px 12px;}#nrlRaiders .nrlTeamInfo{border:2px solid var(--nrl-lraid);}#nrlRaiders .nrlMembBtnIco{background-color:var(--nrl-draid);}
+	#nrlBulldogs .nrlTeamLogo{background:var(--nrl-lbull);}#nrlBulldogs .nrlTixBtn{background:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center right 5px no-repeat,var(--nrl-dbull);background-size:8px 12px;}#nrlBulldogs .nrlMembBtn{border:2px solid var(--nrl-dbull);background-size:8px 12px;}#nrlBulldogs .nrlTeamInfo{border:2px solid var(--nrl-lbull);}#nrlBulldogs .nrlMembBtnIco{background-color:var(--nrl-dbull);}
+	#nrlSharks .nrlTeamLogo{background:var(--nrl-lshar);}#nrlSharks .nrlTixBtn{background:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center right 5px no-repeat,var(--nrl-dshar);background-size:8px 12px;}#nrlSharks .nrlMembBtn{border:2px solid var(--nrl-dshar);}#nrlSharks .nrlTeamInfo{border:2px solid var(--nrl-lshar);}#nrlSharks .nrlMembBtnIco{background-color:var(--nrl-dshar);}
+	#nrlDolphins .nrlTeamLogo{background:var(--nrl-ldolp);}#nrlDolphins .nrlTixBtn{background:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center right 5px no-repeat,var(--nrl-ddolp);background-size:8px 12px;}#nrlDolphins .nrlMembBtn{border:2px solid var(--nrl-ddolp);background-size:8px 12px;}#nrlDolphins .nrlTeamInfo{border:2px solid var(--nrl-ldolp);}#nrlDolphins .nrlMembBtnIco{background-color:var(--nrl-ddolp);}
+	#nrlTitans .nrlTeamLogo{background:var(--nrl-ltita);}#nrlTitans .nrlTixBtn{background:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center right 5px no-repeat,var(--nrl-dtita);background-size:8px 12px;}#nrlTitans .nrlMembBtn{border:2px solid var(--nrl-dtita);background-size:8px 12px;}#nrlTitans .nrlTeamInfo{border:2px solid var(--nrl-ltita);}#nrlTitans .nrlMembBtnIco{background-color:var(--nrl-dtita);}
+	#nrlSeaEagles .nrlTeamLogo{background:var(--nrl-lsea);}#nrlSeaEagles .nrlTixBtn{background:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center right 5px no-repeat,var(--nrl-dsea);background-size:8px 12px;}#nrlSeaEagles .nrlMembBtn{border:2px solid var(--nrl-dsea);background-size:8px 12px;}#nrlSeaEagles .nrlTeamInfo{border:2px solid var(--nrl-lsea);}#nrlSeaEagles .nrlMembBtnIco{background-color:var(--nrl-dsea);}
+	#nrlStorm .nrlTeamLogo{background:var(--nrl-lstor);}#nrlStorm .nrlTixBtn{background:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center right 5px no-repeat,var(--nrl-dstor);background-size:8px 12px;}#nrlStorm .nrlMembBtn{border:2px solid var(--nrl-dstor);background-size:8px 12px;}#nrlStorm .nrlTeamInfo{border:2px solid var(--nrl-lstor);}#nrlStorm .nrlMembBtnIco{background-color:var(--nrl-dstor);}
+	#nrlKnights .nrlTeamLogo{background:var(--nrl-lknig);}#nrlKnights .nrlTixBtn{background:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center right 5px no-repeat,var(--nrl-dknig);background-size:8px 12px;}#nrlKnights .nrlMembBtn{border:2px solid var(--nrl-dknig);background-size:8px 12px;}#nrlKnights .nrlTeamInfo{border:2px solid var(--nrl-lknig);}#nrlKnights .nrlMembBtnIco{background-color:var(--nrl-dknig);}
+	#nrlCowboys .nrlTeamLogo{background:var(--nrl-lcow);}#nrlCowboys .nrlTixBtn{background:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center right 5px no-repeat,var(--nrl-dcow);background-size:8px 12px;}#nrlCowboys .nrlMembBtn{border:2px solid var(--nrl-dcow);background-size:8px 12px;}#nrlCowboys .nrlTeamInfo{border:2px solid var(--nrl-lcow);}#nrlCowboys .nrlMembBtnIco{background-color:var(--nrl-dcow);}
+	#nrlEels .nrlTeamLogo{background:var(--nrl-leels);}#nrlEels .nrlTixBtn{background:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center right 5px no-repeat,var(--nrl-deels);background-size:8px 12px;}#nrlEels .nrlMembBtn{border:2px solid var(--nrl-deels);background-size:8px 12px;}#nrlEels .nrlTeamInfo{border:2px solid var(--nrl-leels);}#nrlEels .nrlMembBtnIco{background-color:var(--nrl-deels);}
+	#nrlPanthers .nrlTeamLogo{background:var(--nrl-lpant);}#nrlPanthers .nrlTixBtn{background:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center right 5px no-repeat,var(--nrl-dpant);background-size:8px 12px;}#nrlPanthers .nrlMembBtn{border:2px solid var(--nrl-dpant);background-size:8px 12px;}#nrlPanthers .nrlTeamInfo{border:2px solid var(--nrl-lpant);}#nrlPanthers .nrlMembBtnIco{background-color:var(--nrl-dpant);}
+	#nrlRabbitohs .nrlTeamLogo{background:var(--nrl-lrabb);}#nrlRabbitohs .nrlTixBtn{background:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center right 5px no-repeat,var(--nrl-drabb);background-size:8px 12px;}#nrlRabbitohs .nrlMembBtn{border:2px solid var(--nrl-drabb);background-size:8px 12px;}#nrlRabbitohs .nrlTeamInfo{border:2px solid var(--nrl-lrabb);}#nrlRabbitohs .nrlMembBtnIco{background-color:var(--nrl-drabb);}
+	#nrlDragons .nrlTeamLogo{background:var(--nrl-ldrag);}#nrlDragons .nrlTixBtn{background:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center right 5px no-repeat,var(--nrl-ddrag);background-size:8px 12px;}#nrlDragons .nrlMembBtn{border:2px solid var(--nrl-ddrag);background-size:8px 12px;}#nrlDragons .nrlTeamInfo{border:2px solid var(--nrl-ldrag);}#nrlDragons .nrlMembBtnIco{background-color:var(--nrl-ddrag);}
+	#nrlRoosters .nrlTeamLogo{background:var(--nrl-lroos);}#nrlRoosters .nrlTixBtn{background:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center right 5px no-repeat,var(--nrl-droos);background-size:8px 12px;}#nrlRoosters .nrlMembBtn{border:2px solid var(--nrl-droos);background-size:8px 12px;} #nrlRoosters .nrlTeamInfo{border:2px solid var(--nrl-lroos);}#nrlRoosters .nrlMembBtnIco{background-color:var(--nrl-droos);}
+	#nrlWarriors .nrlTeamLogo{background:var(--nrl-lwarr);}#nrlWarriors .nrlTixBtn{background:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center right 5px no-repeat,var(--nrl-dwarr);background-size:8px 12px;}#nrlWarriors .nrlMembBtn{border:2px solid var(--nrl-dwarr);background-size:8px 12px;}#nrlWarriors .nrlTeamInfo{border:2px solid var(--nrl-lwarr);}#nrlWarriors .nrlMembBtnIco{background-color:var(--nrl-dwarr);}
+	#nrlTigers .nrlTeamLogo{background:var(--nrl-ltige);}#nrlTigers .nrlTixBtn{background:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg") center right 5px no-repeat,var(--nrl-dtige);background-size:8px 12px;}#nrlTigers .nrlMembBtn{border:2px solid var(--nrl-dtige);background-size:8px 12px;}#nrlTigers .nrlTeamInfo{border:2px solid var(--nrl-ltige);}#nrlTigers .nrlMembBtnIco{background-color:var(--nrl-dtige);}
+</style>
+
+<!---BODY CONTENT ETC----->
+
+<div id="nrlContainer">
+
+	<!--header-->
+	<div id="nrlHeader"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl26_secondary_logo.svg" alt="NRL Season 2206 LETS GO!"></div>
+
+	<!--rounds-->
+	<div id="nrlRounds">
+		<div class="nrlTitle"><h1>BROWSE MATCHES BY ROUND</h1></div>
+
+		<div class="nrlRoundsWrap">
+			<div class="nrlRound nrlRoundOff" data-round="01"><h1>01</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="02"><h1>02</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="03"><h1>03</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="04"><h1>04</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="05"><h1>05</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="06"><h1>06</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="07"><h1>07</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="08"><h1>08</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="09"><h1>09</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="10"><h1>10</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="11"><h1>11</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="12"><h1>12</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="13"><h1>13</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="14"><h1>14</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="15"><h1>15</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="16"><h1>16</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="17"><h1>17</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="18"><h1>18</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="19"><h1>19</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="20"><h1>20</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="21"><h1>21</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="22"><h1>22</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="23"><h1>23</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="24"><h1>24</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="25"><h1>25</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="26"><h1>26</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="27"><h1>27</h1><div class="nrlRoundChev"></div></div>
+
+		</div>
+		<div class="nrlFilterWrap">
+			<!--teams-->
+			<div id="nrlTeamMenu" class="nrlFilterDropDown">
+				<div class="nrlFilterBtn"><div class="nrlBtnIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_shield_ico.svg" alt=""><div class="nrlBtnCounter"></div></div><h2>FILTER BY:</h2><h1>TEAM</h1><div class="nrlBtnChev"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg"></div></div>
+				<div class="nrlDropDown nrlDropDownOff">
+					<div class="nrlDropDownSubHead">
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOn"><div class="nrlCheckBox nrlCheckBoxOn"></div><h3>Show All Teams</h3></div>
+					</div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Brisbane Broncos</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Canberra Raiders</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Canterbury-Bankstown Bulldogs</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Cronulla-Sutherland Sharks</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Dolphins</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Gold Coast Titans</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Manly-Warringah Sea Eagles</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Melbourne Storm</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Newcastle Knights</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>North Queensland Cowboys</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Parramatta Eels</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Penrith Panthers</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>South Sydney Rabbitohs</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>St. George Illawarra Dragons</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Sydney Roosters</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Warriors</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Wests Tigers</h3></div>
+						<div class="nrlDropDownBotLid"><div class="nrlLeftLid"></div><div class="nrlRightLid"></div></div>
+				</div>
+			</div>
+			<!--venue-->
+			<div id="nrlVenueMenu" class="nrlFilterDropDown">
+				<div class="nrlFilterBtn"><div class="nrlBtnIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_venue_ico.svg" alt=""><div class="nrlBtnCounter"></div></div><h2>FILTER BY:</h2><h1>VENUE</h1><div class="nrlBtnChev"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg"></div></div>
+				<div class="nrlDropDown nrlDropDownOff">
+					<div class="nrlDropDownSubHead">
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOn"><div class="nrlCheckBox nrlCheckBoxOn"></div><h3>Show All Veneus</h3></div>
+					</div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>4 Pines Park (NSW)</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Accor Stadium (NSW)</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Allianz Stadium (NSW)</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Cbus Super Stadium (QLD)</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>CommBank Stadium (NSW)</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Go Media Stadium (NZ)</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>McDonald Jones Stadium (NSW)</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Optus Stadium (WA)</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Queensland Country Bank Stadium (QLD)</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>WIN Stadium (NSW)</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3></h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3></h3></div>
+						<div class="nrlDropDownBotLid"><div class="nrlLeftLid"></div><div class="nrlRightLid"></div></div>
+				</div>
+			</div>
+			<!--state-->
+			<div id="nrlStateMenu" class="nrlFilterDropDown">
+				<div class="nrlFilterBtn"><div class="nrlBtnIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_map_ico.svg" alt=""><div class="nrlBtnCounter"></div></div><h2>FILTER BY:</h2><h1>STATE</h1><div class="nrlBtnChev"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg"></div></div>
+				<div class="nrlDropDown nrlDropDownOff">
+					<div class="nrlDropDownSubHead">
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOn"><div class="nrlCheckBox nrlCheckBoxOn"></div><h3>Show All Veneus</h3></div>
+					</div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Australian Capital Territory</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>New South Wales</h3></div>
+						<!--<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Northern Territory</h3></div>--->
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Queensland</h3></div>
+						<!--<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>South Australia</h3></div>--->
+						<!--<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Tasmania</h3></div>--->
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Victoria</h3></div>
+						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOff" data-filterbtn=""><div class="nrlCheckBox nrlCheckBoxOff"></div><h3>Western Australia</h3></div>
+						<div class="nrlDropDownBotLid"><div class="nrlLeftLid"></div><div class="nrlRightLid"></div></div>
+				</div>
+			</div>
+			<!--reset-->
+			<div id="nrlResetAllBtn" class="nrlResetBtn"><h2>RESET ALL</h2></div>
+		</div>
+		<!--matches-->
+		<div id="nrlMatches">
+			<!--tags-->
+			<div id="nrlTagWrap"><div id="nrlRoundTag01" class="nrlRoundTag">ROUND 01</div><div id="nrlRoundTag02" class="nrlRoundTag">ROUND 02</div><div id="nrlRoundTag03" class="nrlRoundTag">ROUND 03</div><div id="nrlRoundTag04" class="nrlRoundTag">ROUND 04</div><div id="nrlRoundTag05" class="nrlRoundTag">ROUND 05</div><div id="nrlRoundTag06" class="nrlRoundTag">ROUND 06</div><div id="nrlRoundTag07" class="nrlRoundTag">ROUND 07</div><div id="nrlRoundTag08" class="nrlRoundTag">ROUND 08</div><div id="nrlRoundTag09" class="nrlRoundTag">ROUND 09</div><div id="nrlRoundTag10" class="nrlRoundTag">ROUND 10</div><div id="nrlRoundTag11" class="nrlRoundTag">ROUND 11</div><div id="nrlRoundTag12" class="nrlRoundTag">ROUND 12</div><div id="nrlRoundTag13" class="nrlRoundTag">ROUND 13</div><div id="nrlRoundTag14" class="nrlRoundTag">ROUND 14</div><div id="nrlRoundTag15" class="nrlRoundTag">ROUND 15</div><div id="nrlRoundTag16" class="nrlRoundTag">ROUND 16</div><div id="nrlRoundTag17" class="nrlRoundTag">ROUND 17</div><div id="nrlRoundTag18" class="nrlRoundTag">ROUND 18</div><div id="nrlRoundTag19" class="nrlRoundTag">ROUND 19</div><div id="nrlRoundTag20" class="nrlRoundTag">ROUND 20</div><div id="nrlRoundTag21" class="nrlRoundTag">ROUND 21</div><div id="nrlRoundTag22" class="nrlRoundTag">ROUND 22</div><div id="nrlRoundTag23" class="nrlRoundTag">ROUND 23</div><div id="nrlRoundTag24" class="nrlRoundTag">ROUND 24</div><div id="nrlRoundTag25" class="nrlRoundTag">ROUND 25</div><div id="nrlRoundTag26" class="nrlRoundTag">ROUND 26</div><div id="nrlRoundTag27" class="nrlRoundTag">ROUND 27</div></div>
+				<div id="nrlMatchWrap">
+				<!--matches-->
+
+				<!--base event
+				<div class='nrlMatch' data-round='value.round' data-hometeam='' data-awayteam='' data-venue='' data-state='' data-matchdate=''>
+					<div class='nrlMatchTD'><h1>value.date</h1><p>/</p><h1>value.time</h1></div>
+					<div class='nrlTeamWrap'><div class='nrlHomeT'><img src='https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_"+value.hometeam+"_sm_img'>value.hometeam</div><div class='nrlAwayT'><img src='https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_"+value.awayteam+"_logo.svg'>value.awayteam</div></div>
+					<div class='nrlVenueWrap'><h1>value.venue</h1><p>/</p><h2>value.state</h2></div>
+					<a href='' target='_blank'><div class='nrlMatchBtn'>value.btnstyle</div></a>
+				</div>-->
+			</div>
+			<div id="nrlByeWrap">
+				<!--base bye
+				<div class='nrlMatch nrlMatchBye' data-round='"+value.round+"' data-hometeam='"+value.hometeam+"' data-awayteam='"+value.awayteam+"' data-venue='"+value.venue+"' data-state='"+value.state+"' data-matchdate='"+value.date+"'><div class='nrlByeLeft'><h2>BYE</h2><h1>"+value.hometeam+"</h1></div><div class='nrlByeRight'><img src='https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/team_img/nrl_26_"+homeTeam+"_sm_img.svg'></div></div>--> 
+			</div>
+		
+		</div>
+	</div>
+	<!--teams UPDATE CLIENT LINKS TO VENUE ARTIST PAGES-->	
+		<div class="nrlTitle"><h1>BROWSE MATCHES BY TEAM</h1></div>
+	<div id="nrlTeams"> 
+
+		<!--BRISBANE BRONCOS-->
+		<div id="nrlBroncos" class="nrlTeamCard">
+			<div class="nrlTeamLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_broncos_logo.svg" alt="BRISBANE BRONCOS"></div>
+			<div class="nrlTeamInfo">
+				<h1>BRISBANE BRONCOS</h1>
+				<div class="nrlBtnWrap">
+					<a href="https://am.ticketmaster.com/brisbanebroncos/#/" target="_blank"><div class="nrlMembBtn">MEMBERSHIPS<div class="nrlMembBtnIco"></div></div></a>
+					<a href="https://www.ticketmaster.com.au/brisbane-broncos/artist/35421" target="_blank"><div class="nrlTixBtn">FIND TICKETS</div></a>
+				</div>
+			</div>
+		</div>
+		<!--CANBERRA RAIDERS-->
+		<div id="nrlRaiders" class="nrlTeamCard">
+			<div class="nrlTeamLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_raiders_logo.svg" alt="CANBERRA RAIDERS"></div>
+			<div class="nrlTeamInfo">
+				<h1>CANBERRA RAIDERS</h1>
+				<div class="nrlBtnWrap">
+					<a href="https://www.raiders.com.au/membership/" target="_blank"><div class="nrlMembBtn">MEMBERSHIPS<div class="nrlMembBtnIco"></div></div></a>
+					<a href="https://www.ticketmaster.com.au/canberra-raiders/artist/1297221" target="_blank"><div class="nrlTixBtn">FIND TICKETS</div></a>
+				</div>
+				
+			</div>
+		</div>
+		<!--BULLDOGS-->
+		<div id="nrlBulldogs" class="nrlTeamCard">
+			<div class="nrlTeamLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_bulldogs_logo.svg" alt="BULLDOGS"></div>
+			<div class="nrlTeamInfo">
+				<h2>CANTERBURY-BANKSTOWN BULLDOGS</h2>
+				<div class="nrlBtnWrap">
+				<!--<a href="" target="_blank"><div class="nrlMembBtn">MEMBERSHIPS<div class="nrlMembBtnIco"></div></div></a>-->
+					<a href="https://www.ticketmaster.com.au/canterbury-bankstown-bulldogs/artist/1297222" target="_blank"><div class="nrlTixBtn">FIND TICKETS</div></a>
+				</div>
+				
+			</div>
+		</div>
+		<!--SHARKS-->
+		<div id="nrlSharks" class="nrlTeamCard">
+			<div class="nrlTeamLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_sharks_logo.svg" alt="SHARKS"></div>
+			<div class="nrlTeamInfo">
+				<h2>Cronulla&#45;Sutherland Sharks</h2>
+				<div class="nrlBtnWrap">
+					<!--<a href="" target="_blank"><div class="nrlMembBtn">MEMBERSHIPS<div class="nrlMembBtnIco"></div></div></a>--->
+					<a href="https://www.ticketmaster.com.au/cronulla-sutherland-sharks/artist/1297223" target="_blank"><div class="nrlTixBtn">FIND TICKETS</div></a>
+				</div>
+				
+			</div>
+		</div>
+		<!--DOLPHINS--> 
+		<div id="nrlDolphins" class="nrlTeamCard">
+			<div class="nrlTeamLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_dolphins_logo.svg" alt="DOLPHINS"></div>
+			<div class="nrlTeamInfo">
+				<h1>DOLPHINS</h1>
+				<div class="nrlBtnWrap">
+					<a href="https://membership.dolphinsnrl.com.au/packages" target="_blank"><div class="nrlMembBtn">MEMBERSHIPS<div class="nrlMembBtnIco"></div></div></a>
+					<a href="https://www.ticketmaster.com.au/dolphins-tickets/artist/2970797" target="_blank"><div class="nrlTixBtn">FIND TICKETS</div></a>
+				</div>		
+			</div>
+		</div>
+		<!--TITANS-->
+		<div id="nrlTitans" class="nrlTeamCard">
+			<div class="nrlTeamLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_titans_logo.svg" alt="TITANS"></div>
+			<div class="nrlTeamInfo">
+				<h1>GOLD COAST TITANS</h1>
+				<div class="nrlBtnWrap">
+					<a href="https://membership.titans.com.au/" target="_blank"><div class="nrlMembBtn">MEMBERSHIPS<div class="nrlMembBtnIco"></div></div></a>
+					<a href="https://www.ticketmaster.com.au/gold-coast-titans/artist/1297224" target="_blank"><div class="nrlTixBtn">FIND TICKETS</div></a>
+				</div>			
+			</div>
+		</div>
+		<!--SEA EAGLES-->
+		<div id="nrlSeaEagles" class="nrlTeamCard">
+			<div class="nrlTeamLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_sea_eagles_logo.svg" alt="SEA EAGLES"></div>
+			<div class="nrlTeamInfo">
+				<h2>Manly&#45;Warringah Sea Eagles</h2>
+				<div class="nrlBtnWrap">
+					<a href="https://membership.seaeagles.com.au/" target="_blank"><div class="nrlMembBtn">MEMBERSHIPS<div class="nrlMembBtnIco"></div></div></a>
+					<a href="https://www.ticketmaster.com.au/manly-warringah-sea-eagles/artist/1297216" target="_blank"><div class="nrlTixBtn">FIND TICKETS</div></a>
+				</div>			
+			</div>
+		</div>
+		<!--MELBOURNE STORM-->
+		<div id="nrlStorm" class="nrlTeamCard">
+			<div class="nrlTeamLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_storm_logo.svg" alt="MELBOURNE STORM"></div>
+			<div class="nrlTeamInfo">
+				<h1>MELBOURNE STORM</h1>
+				<div class="nrlBtnWrap">
+					<a href="https://experience.melbournestorm.com.au/" target="_blank"><div class="nrlMembBtn">MEMBERSHIPS<div class="nrlMembBtnIco"></div></div></a>
+					<a href="https://www.ticketmaster.com.au/melbourne-storm/artist/1157378" target="_blank"><div class="nrlTixBtn">FIND TICKETS</div></a>
+				</div>
+				
+			</div>
+		</div>
+		<!--NEWCASTLE KNIGHTS--> 
+		<div id="nrlKnights" class="nrlTeamCard">
+			<div class="nrlTeamLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_knights_logo.svg" alt="NEWCASTLE KNIGHTS"></div>
+			<div class="nrlTeamInfo">
+				<h1>NEWCASTLE KNIGHTS</h1>
+				<div class="nrlBtnWrap">
+					<a href="https://knightshub.com.au/" target="_blank"><div class="nrlMembBtn">MEMBERSHIPS<div class="nrlMembBtnIco"></div></div></a>
+					<a href="https://www.ticketmaster.com.au/newcastle-knights-tickets/artist/1109827" target="_blank"><div class="nrlTixBtn">FIND TICKETS</div></a>
+				</div>
+				
+			</div>
+		</div>
+		<!--NORTHQUEENSLAND COWBOYS-->
+		<div id="nrlCowboys" class="nrlTeamCard">
+			<div class="nrlTeamLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_cowboys_logo.svg" alt="NORTHQUEENSLAND COWBOYS"></div>
+			<div class="nrlTeamInfo">
+				<h2>NORTH QUEENSLAND COWBOYS</h2>
+				<div class="nrlBtnWrap">
+					<a href="https://www.cowboys.com.au/membership/" target="_blank"><div class="nrlMembBtn">MEMBERSHIPS<div class="nrlMembBtnIco"></div></div></a>
+					<a href="https://www.ticketmaster.com.au/north-queensland-toyota-cowboys/artist/35444" target="_blank"><div class="nrlTixBtn">FIND TICKETS</div></a>
+				</div>
+				
+			</div>            
+		</div>
+		<!--Parramatta Eels-->
+		<div id="nrlEels" class="nrlTeamCard">
+			<div class="nrlTeamLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_eels_logo.svg" alt="Parramatta Eels"></div>
+			<div class="nrlTeamInfo">
+				<h1>Parramatta Eels</h1>
+				<div class="nrlBtnWrap">
+					<a href="https://shop.parraeels.com.au/pages/membership" target="_blank"><div class="nrlMembBtn">MEMBERSHIPS<div class="nrlMembBtnIco"></div></div></a>
+					<a href="https://www.ticketmaster.com.au/parramatta-eels/artist/1297220" target="_blank"><div class="nrlTixBtn">FIND TICKETS</div></a>
+				</div>
+				
+			</div>
+		</div>
+		<!--Penrith Panthers-->
+		<div id="nrlPanthers" class="nrlTeamCard">
+			<div class="nrlTeamLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_panthers_logo.svg" alt="Penrith Panthers"></div>
+			<div class="nrlTeamInfo">
+				<h1>Penrith Panthers</h1>
+				<div class="nrlBtnWrap">
+					<a href="https://www.penrithpanthers.com.au/membership/" target="_blank"><div class="nrlMembBtn">MEMBERSHIPS<div class="nrlMembBtnIco"></div></div></a>
+					<a href="https://www.ticketmaster.com.au/penrith-panthers/artist/1297218" target="_blank"><div class="nrlTixBtn">FIND TICKETS</div></a>
+				</div>
+				
+			</div>
+		</div>
+		<!--South Sydney Rabbitohs-->
+		<div id="nrlRabbitohs" class="nrlTeamCard">
+			<div class="nrlTeamLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_rabbitohs_logo.svg" alt="South Sydney Rabbitohs"></div>
+			<div class="nrlTeamInfo">
+				<h2>South Sydney Rabbitohs</h2>
+				<div class="nrlBtnWrap">
+					<a href="https://www.rabbitohs.com.au/membership/" target="_blank"><div class="nrlMembBtn">MEMBERSHIPS<div class="nrlMembBtnIco"></div></div></a>
+					<a href="https://www.ticketmaster.com.au/south-sydney-rabbitohs/artist/1294882" target="_blank"><div class="nrlTixBtn">FIND TICKETS</div></a>
+				</div>
+				
+			</div>
+		</div>
+		<!--St George Illawarra Dragons-->
+		<div id="nrlDragons" class="nrlTeamCard">
+			<div class="nrlTeamLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_stgeorge_logo.svg" alt="St George Illawarra Dragons"></div>
+			<div class="nrlTeamInfo">
+				<h2>St George Illawarra Dragons</h2>
+				<div class="nrlBtnWrap">
+					<!--<a href="" target="_blank"><div class="nrlMembBtn">MEMBERSHIPS<div class="nrlMembBtnIco"></div></div></a>-->
+					<a href="https://www.ticketmaster.com.au/st-george-illawarra-dragons/artist/1279428" target="_blank"><div class="nrlTixBtn">FIND TICKETS</div></a>
+				</div>
+				
+			</div>
+		</div>
+		<!--Sydney Roosters-->
+		<div id="nrlRoosters" class="nrlTeamCard">
+			<div class="nrlTeamLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_roosters_logo.svg" alt="Sydney Roosters"></div>
+			<div class="nrlTeamInfo">
+				<h1>Sydney Roosters</h1>
+				<div class="nrlBtnWrap">
+					<a href="https://www.roosters.com.au/membership/" target="_blank"><div class="nrlMembBtn">MEMBERSHIPS<div class="nrlMembBtnIco"></div></div></a>
+					<a href="https://www.ticketmaster.com.au/sydney-roosters/artist/1279429" target="_blank"><div class="nrlTixBtn">FIND TICKETS</div></a>
+				</div>
+				
+			</div>
+		</div>
+		<!--NEW ZEALAND WARRIORS-->
+		<div id="nrlWarriors" class="nrlTeamCard">
+			<div class="nrlTeamLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_warriors_logo.svg" alt="NEW ZEALAND WARRIORS"></div>
+			<div class="nrlTeamInfo">
+				<h1>NEW ZEALAND WARRIORS</h1>
+				<div class="nrlBtnWrap">
+					<a href="https://am.ticketmaster.com/nzwarriors/" target="_blank"><div class="nrlMembBtn">MEMBERSHIPS<div class="nrlMembBtnIco"></div></div></a>
+					<a href="https://www.ticketmaster.co.nz/one-new-zealand-warriors/artist/1297217" target="_blank"><div class="nrlTixBtn">FIND TICKETS</div></a>
+				</div>
+				
+			</div>
+		</div>		
+		<!--WESTS TIGERS-->
+		<div id="nrlTigers" class="nrlTeamCard">
+			<div class="nrlTeamLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_tigers_logo.svg" alt="WESTS TIGERS"></div>
+			<div class="nrlTeamInfo">
+				<h1>WESTS TIGERS</h1>
+				<div class="nrlBtnWrap">
+					<!--<a href="" target="_blank"><div class="nrlMembBtn">MEMBERSHIPS<div class="nrlMembBtnIco"></div></div></a>-->
+					<a href="https://www.ticketmaster.com.au/wests-tigers/artist/1297219" target="_blank"><div class="nrlTixBtn">FIND TICKETS</div></a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<!--other rugby-->
+</div>
+
+
+<script type="text/javascript">
+
+	//add round tags, add byes, add double headers
+
+	$j = jQuery.noConflict();
+	
+	currentRound = "";
+	eventCount = 0;
+	 stateList = ["VIC","NSW","QLD","ACT","NT","WA","SA","TAS","TBC","Any"];
+	 venueList = ["4 Pines Park","Accor Stadium","Allianz Stadium","Cbus Super Stadium","CommBank Stadium","Go Media Stadium","Queensland Country Bank Stadium","WIN Stadium","Any"];
+	 teamList = ["Any","Broncos","Raiders","Bulldogs","Sharks","Dolphines","Titans","Sea Eagles","Storm","Knights","Cowboys","Eels","Panthers","Rabbitohs","Dragons","Roosters","Warriors","Tigers"]
+
+	
+	 $j(document).ready(function () {
+			//load the container div
+            let eventListDiv = $j("#nrlMatchWrap");
+			let byeListDiv = $j("#nrlByeWrap");
+
+			let epPublic = "https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl26_fixture.json" //
+			let epSandBox = ""
+			//get the data file
+             $j.ajax({
+               type: 'GET',
+               url: epPublic,
+               dataType: 'html',
+				success: function(data) {
+					let eventData = JSON.parse(data); 
+					let eventList = testEventData.events;//localDataTest.events//eventData.events
+						//console.log(testData)
+						$j.each(eventList, function(key,value){
+						let matchType = value.matchtype;
+						//home and away team
+						let homeTeam = value.hometeam.replace(/\s/g, '');
+						let awayTeam = value.awayteam.replace(/\s/g, '');
+
+						//build round tile
+						if(matchType == 'single'){
+							let newEvent = $j("<div class='nrlMatch nrlMatchSingle' data-round='"+value.round+"' data-hometeam='"+value.hometeam+"' data-awayteam='"+value.awayteam+"' data-venue='"+value.venue+"' data-state='"+value.state+"' data-matchdate='"+value.date+"'><div class='nrlMatchTD'><h1>"+value.date+"</h1><p>/</p><h1>"+value.locatTime+"</h1></div><div class='nrlTeamWrap'><div class='nrlHomeT'><img src='https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/team_img/nrl_26_"+homeTeam+"_sm_img.svg'>"+value.hometeam+"</div><div class='nrlAwayT'><img src='https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/team_img/nrl_26_"+awayTeam+"_sm_img.svg'>"+value.awayteam+"</div></div><div class='nrlVenueWrap'><h1>"+value.venue+"</h1><p>/</p><h2>"+value.state+"</h2></div><a href='"+value.url+"' target='_blank'><div class='nrlMatchBtn nrl"+value.btnstyle.replace(/\s/g, '')+"Btn'>"+value.btnstyle+"</div></a></div>");
+						//apends event				
+							eventListDiv.append(newEvent);
+						}
+						//bye
+						if(matchType == 'bye'){
+							let newEvent = $j("<div class='nrlMatch nrlMatchBye' data-round='"+value.round+"' data-hometeam='"+value.hometeam+"' data-awayteam='"+value.awayteam+"' data-venue='"+value.venue+"' data-state='"+value.state+"' data-matchdate='"+value.date+"'><div class='nrlByeLeft'><h2>BYE</h2><h1>"+value.hometeam+"</h1></div><div class='nrlByeRight'><img src='https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/team_img/nrl_26_"+homeTeam+"_sm_img.svg'></div></div>");
+						//apends event				
+							byeListDiv.append(newEvent);
+						}
+						})	
+
+					},
+                    error: function (xhr, ajaxOptions, thrownError) { 
+
+                       $j("#nrlError").fadeIn(100);
+                    }
+					
+                });
+				//checkRoundDate();
+		//doc ready end
+		});
+
+//conditionals 
+function roundsToDisplay(){
+	matchCountPlus = 0;
+	matchCountMinus = 0;
+//itterate through rounds
+	$j('.nrlMatch').each(function () {
+		let matchRound = $j(this).data('round');
+		let matchDate = $j(this).data('date');
+		let matchState = $j(this).data('state');
+		let matchVenue = $j(this).data('venue');
+		let matchHomeTeam = $j(this).data('hometeam');
+		let matchAwayTeam = $j(this).data('awayteam');
+
+		if((currentRound == matchRound) &&   //round 
+		(jQuery.inArray(matchVenue, venueList) != -1 || jQuery.inArray("Any", matchVenue, venueList) != -1 || (matchVenue == "bye")) //venue
+
+		){			
+				$j(this).fadeIn(500).css("display","flex");		
+				matchCountPlus ++;
+		} else {
+				$j(this).fadeOut(0);
+				matchCountMinus ++;
+
+		}		
+		});
+		//matchCounter();
+}
+
+//round click
+$j(document).on('click', '.nrlRound', function () {
+	//switch previous off
+		$j('.nrlRound[data-round="'+currentRound+'"]').removeClass('nrlRoundOn').addClass('nrlRoundOff')
+		$j('.nrlRoundTag').fadeOut(0);
+	//set round and turn things on
+	 	currentRound = $j(this).data('round');
+		$j('#nrlRoundTag'+currentRound).fadeIn(0);
+		$j(this).removeClass('nrlRoundOff').addClass('nrlRoundOn')
+		roundsToDisplay();
+});
+
+//checkbox
+$j(document).on('click', '.nrlCheckBoxBtn', function () {
+			if ($j(this).hasClass('nrlCheckBoxBtnOff')) {
+				$j(this).removeClass('nrlCheckBoxBtnOff').addClass('nrlCheckBoxBtnOn');
+				$j(this).children('.nrlCheckBox').removeClass('nrlCheckBoxOff').addClass('nrlCheckBoxOn');
+			} else if ($j(this).hasClass('nrlCheckBoxBtnOn')) {
+				$j(this).removeClass('nrlCheckBoxBtnOn').addClass('nrlCheckBoxBtnOff');
+				$j(this).children('.nrlCheckBox').removeClass('nrlCheckBoxOn').addClass('nrlCheckBoxOff');
+			}
+		});
+//open drop down menus
+	$j(document).on('click', '.nrlFilterBtn', function (e) {
+		let targetMenu = $j(this).parent().attr('id')
+			if($j(e.target).closest('#'+targetMenu+' .nrlDropDown').length !== 0)
+			{return false;}
+			//open drop down
+				if($j('#'+targetMenu+' .nrlDropDown').hasClass('nrlDropDownOff')){
+					$j('#'+targetMenu+' .nrlDropDown').removeClass('nrlDropDownOff').addClass('nrlDropDownOn');
+				//fade out non-target
+					$j(".nrlFilterDropDown:not(#"+targetMenu+")").children('.nrlDropDown').removeClass('nrlDropDownOn').addClass('nrlDropDownOff');
+				}
+			//close
+				else if($j('#'+targetMenu+' .nrlDropDown').hasClass('nrlDropDownOn')){
+				$j('#'+targetMenu+' .nrlDropDown').removeClass('nrlDropDownOn').addClass('nrlDropDownOff');
+				}
+		});	
+//click anywhere close drop downs
+	$j(document).on('click', 'body', function (e) {
+			if (($j(e.target).closest('.nrlFilterWrap').length !== 0)) 
+			{return false;}
+			$j(".nrlDropDown").removeClass('nrlDropDownOn').addClass('nrlDropDownOff');
+		
+		});		
+
+
+testEventData = {"events": [
+{ "round": "01",
+    "matchtype":"single",
+    "hometeam": "Storm",
+    "awayteam": "Eels",
+    "venue": "AAMI Park",
+    "state": "VIC",
+    "url": "",
+    "date": "THU MAR 05",
+    "locatTime": "8:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "01",
+    "matchtype":"single",
+    "hometeam": "Warriors",
+    "awayteam": "Roosters",
+    "venue": "Go Media Stadium",
+    "state": "NZ",
+    "url": "https://www.ticketmaster.co.nz/one-new-zealand-warriors-v-sydney-auckland-06-03-2026/event/2400637BE7F2486D",
+    "date": "FRI MAR 06",
+    "locatTime": "6:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "01",
+    "matchtype":"single",
+    "hometeam": "Broncos",
+    "awayteam": "Panthers",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "FRI MAR 06",
+    "locatTime": "7:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "01",
+    "matchtype":"single",
+    "hometeam": "Sharks",
+    "awayteam": "Titans",
+    "venue": "Ocean Protect Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "SAT MAR 07",
+    "locatTime": "5:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "01",
+    "matchtype":"single",
+    "hometeam": "Sea Eagles",
+    "awayteam": "Raiders",
+    "venue": "4 Pines Park",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sea-eagles-brookvale-07-03-2026/event/1300642D84C5298A",
+    "date": "SAT MAR 07",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "01",
+    "matchtype":"single",
+    "hometeam": "Dolphins",
+    "awayteam": "Rabbitohs",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "SUN MAR 08",
+    "locatTime": "4:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+   { "round": "01",
+    "matchtype":"bye",
+    "hometeam": "Tigers",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "bye"
+ },
+  { "round": "02",
+    "matchtype":"single",
+    "hometeam": "Broncos",
+    "awayteam": "Eels",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "THU MAR 12",
+    "locatTime": "7:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "02",
+    "matchtype":"single",
+    "hometeam": "Warriors",
+    "awayteam": "Raiders",
+    "venue": "Go Media Stadium",
+    "state": "NZ",
+    "url": "https://www.ticketmaster.co.nz/one-new-zealand-warriors-v-canberra-auckland-13-03-2026/event/240063828DE42A25",
+    "date": "FRI MAR 13",
+    "locatTime": "6:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "02",
+    "matchtype":"single",
+    "hometeam": "Roosters",
+    "awayteam": "Rabbitohs",
+    "venue": "Allianz Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sydney-roosters-sydney-13-03-2026/event/2500643C9588838C",
+    "date": "FRI MAR 13",
+    "locatTime": "8:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "02",
+    "matchtype":"single",
+    "hometeam": "Tigers",
+    "awayteam": "Cowboys",
+    "venue": "Leichhardt Oval",
+    "state": "NSW",
+    "url": "",
+    "date": "SAT MAR 14",
+    "locatTime": "3:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "02",
+    "matchtype":"single",
+    "hometeam": "Dragons",
+    "awayteam": "Storm",
+    "venue": "WIN Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-dragons-v-wollongong-14-03-2026/event/1300643CEE8D921E",
+    "date": "SAT MAR 14",
+    "locatTime": "5:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "02",
+    "matchtype":"single",
+    "hometeam": "Panthers",
+    "awayteam": "Sharks",
+    "venue": "Carrington Park",
+    "state": "NSW",
+    "url": "",
+    "date": "SAT MAR 14",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "02",
+    "matchtype":"single",
+    "hometeam": "Sea Eagles",
+    "awayteam": "Knights",
+    "venue": "4 Pines Park",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sea-eagles-brookvale-15-03-2026/event/1300642DAED65591",
+    "date": "SUN MAR 15",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "02",
+    "matchtype":"single",
+    "hometeam": "Dolphins",
+    "awayteam": "Titans",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "SUN MAR 15",
+    "locatTime": "6:15pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+   { "round": "02",
+    "matchtype":"bye",
+    "hometeam": "Bulldogs",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "bye"
+ },
+  { "round": "03",
+    "matchtype":"single",
+    "hometeam": "Raiders",
+    "awayteam": "Bulldogs",
+    "venue": "GIO Stadium",
+    "state": "ACT",
+    "url": "",
+    "date": "THU mar 19",
+    "locatTime": "8:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "03",
+    "matchtype":"single",
+    "hometeam": "Roosters",
+    "awayteam": "Panthers",
+    "venue": "Allianz Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sydney-roosters-sydney-20-03-2026/event/25006442C6523BCE",
+    "date": "FRI MAR 20",
+    "locatTime": "6:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "03",
+    "matchtype":"single",
+    "hometeam": "Storm",
+    "awayteam": "Broncos",
+    "venue": "AAMI Park",
+    "state": "VIC",
+    "url": "",
+    "date": "FRI MAR 20",
+    "locatTime": "8:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "03",
+    "matchtype":"single",
+    "hometeam": "Knights",
+    "awayteam": "Warriors",
+    "venue": "McDonald Jones Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "SAT MAR 21",
+    "locatTime": "3:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "03",
+    "matchtype":"single",
+    "hometeam": "Sharks",
+    "awayteam": "Dolphins",
+    "venue": "Ocean Protect Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "SAT MAR 21",
+    "locatTime": "5:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "03",
+    "matchtype":"single",
+    "hometeam": "Rabbitohs",
+    "awayteam": "Tigers",
+    "venue": "Polytec Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "SAT MAR 21",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "03",
+    "matchtype":"single",
+    "hometeam": "Eels",
+    "awayteam": "Dragons",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-parramatta-eels-parramatta-22-03-2026/event/2500642DCD5BCB88",
+    "date": "SUN MAR 22",
+    "locatTime": "4:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "03",
+    "matchtype":"single",
+    "hometeam": "Cowboys",
+    "awayteam": "Titans",
+    "venue": "Queensland Country Bank Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-cowboys-v-townsville-22-03-2026/event/2500643E91B1827D",
+    "date": "SUN MAR 22",
+    "locatTime": "6:15pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "03",
+    "matchtype":"bye",
+    "hometeam": "Sea Eagles",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "bye"
+ },
+  { "round": "04",
+    "matchtype":"single",
+    "hometeam": "Sea Eagles",
+    "awayteam": "Roosters",
+    "venue": "4 Pines Park",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sea-eagles-brookvale-26-03-2026/event/1300642DAF1255D4",
+    "date": "THU MAR 26",
+    "locatTime": "8:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "04",
+    "matchtype":"single",
+    "hometeam": "Warriors",
+    "awayteam": "Tigers",
+    "venue": "Go Media Stadium",
+    "state": "NZ",
+    "url": "https://www.ticketmaster.co.nz/one-new-zealand-warriors-v-west-auckland-27-03-2026/event/240063828E012A43",
+    "date": "FRI MARH 27",
+    "locatTime": "6:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "04",
+    "matchtype":"single",
+    "hometeam": "Broncos",
+    "awayteam": "Dolphins",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "FRI MAR 27",
+    "locatTime": "8:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "04",
+    "matchtype":"single",
+    "hometeam": "Bulldogs",
+    "awayteam": "Knights",
+    "venue": "Accor Stadium",
+    "state": "",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-bulldogs-v-sydney-olympic-park-28-03-2026/event/2500643697ECE2CA",
+    "date": "SAT MAR 28",
+    "locatTime": "3:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "04",
+    "matchtype":"single",
+    "hometeam": "Panthers",
+    "awayteam": "Eels",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-penrith-panthers-parramatta-28-03-2026/event/2500638F84172FBB",
+    "date": "SAT MAR 28",
+    "locatTime": "6:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "04",
+    "matchtype":"single",
+    "hometeam": "Cowboys",
+    "awayteam": "Storm",
+    "venue": "Queensland Country Bank Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-cowboys-v-townsville-28-03-2026/event/250064419ADB699B",
+    "date": "SAT MAR 28",
+    "locatTime": "6:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "04",
+    "matchtype":"single",
+    "hometeam": "Raiders",
+    "awayteam": "Sharks",
+    "venue": "GIO Stadium",
+    "state": "ACT",
+    "url": "",
+    "date": "SUN MAR 29",
+    "locatTime": "4:15pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "04",
+    "matchtype":"single",
+    "hometeam": "Titans",
+    "awayteam": "Dragons",
+    "venue": "Cbus Super Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-gold-coast-robina-gold-coast-29-03-2026/event/250063838AC7448E",
+    "date": "SUN MAR 29",
+    "locatTime": "6:15pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "04",
+    "matchtype":"bye",
+    "hometeam": "Rabbitohs",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "bye"
+ },
+  { "round": "05",
+    "matchtype":"single",
+    "hometeam": "Dolphins",
+    "awayteam": "Sea Eagles",
+    "venue": "Kayo Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "THU APR 02",
+    "locatTime": "8:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "05",
+    "matchtype":"single",
+    "hometeam": "Rabbitohs",
+    "awayteam": "Bulldogs",
+    "venue": "Accor Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-rabbitohs-v-sydney-olympic-park-03-04-2026/event/25006444EB1A51C8",
+    "date": "FRI APR 03",
+    "locatTime": "4:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "05",
+    "matchtype":"single",
+    "hometeam": "Panthers",
+    "awayteam": "Storm",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-penrith-panthers-parramatta-03-04-2026/event/2500638FCD17533A",
+    "date": "FRI APR 03",
+    "locatTime": "4:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "05",
+    "matchtype":"single",
+    "hometeam": "Dragons",
+    "awayteam": "Cowboys",
+    "venue": "Jubilee Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "SAT APR 04",
+    "locatTime": "5:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "05",
+    "matchtype":"single",
+    "hometeam": "Titans",
+    "awayteam": "Broncos",
+    "venue": "Cbus Super Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-gold-coast-robina-gold-coast-04-04-2026/event/25006383B3EC618C",
+    "date": "SAT APR 04",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "05",
+    "matchtype":"single",
+    "hometeam": "Sharks",
+    "awayteam": "Warriors",
+    "venue": "Ocean Protect Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "SUN APR 05",
+    "locatTime": "2:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "05",
+    "matchtype":"single",
+    "hometeam": "Knights",
+    "awayteam": "Raiders",
+    "venue": "McDonald Jones Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "SUN APR 05",
+    "locatTime": "4:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "05",
+    "matchtype":"single",
+    "hometeam": "Eels",
+    "awayteam": "Tigers",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-parramatta-eels-parramatta-06-04-2026/event/2500642FDE026DB3",
+    "date": "SUN APR 05",
+    "locatTime": "4:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "05",
+    "matchtype":"bye",
+    "hometeam": "Roosters",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "bye"
+ },
+  { "round": "06",
+    "matchtype":"single",
+    "hometeam": "Bulldogs",
+    "awayteam": "Panthers",
+    "venue": "Accor Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-bulldogs-v-sydney-olympic-park-09-04-2026/event/2500644284F7183B",
+    "date": "THU APR 09",
+    "locatTime": "7:50pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "06",
+    "matchtype":"single",
+    "hometeam": "Dragons",
+    "awayteam": "Sea Eagles",
+    "venue": "WIN Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-dragons-v-wollongong-10-04-2026/event/1300643DE6158A12",
+    "date": "FRI APR 10",
+    "locatTime": "6:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "06",
+    "matchtype":"single",
+    "hometeam": "Broncos",
+    "awayteam": "Cowboys",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "FRI APR 10",
+    "locatTime": "8:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "06",
+    "matchtype":"single",
+    "hometeam": "Rabbitohs",
+    "awayteam": "Raiders",
+    "venue": "Optus Stadium",
+    "state": "WA",
+    "url": "https://www.ticketmaster.com.au/nrl-double-header-burswood-11-04-2026/event/25006449C7CA4401",
+    "date": "SAT APR 11",
+    "locatTime": "3:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "06",
+    "matchtype":"single",
+    "hometeam": "Sharks",
+    "awayteam": "Roosters",
+    "venue": "Optus Stadium",
+    "state": "WA",
+    "url": "https://www.ticketmaster.com.au/nrl-double-header-burswood-11-04-2026/event/25006449C7CA4401",
+    "date": "SAT APR 11",
+    "locatTime": "5:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "06",
+    "matchtype":"single",
+    "hometeam": "Storm",
+    "awayteam": "Warriors",
+    "venue": "AAMI Park",
+    "state": "VIC",
+    "url": "",
+    "date": "SAT APR 11",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "06",
+    "matchtype":"single",
+    "hometeam": "Eels",
+    "awayteam": "Titans",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-parramatta-eels-parramatta-12-04-2026/event/2500642FEAFA944E",
+    "date": "SUN APR 12",
+    "locatTime": "2:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "06",
+    "matchtype":"single",
+    "hometeam": "Tigers",
+    "awayteam": "Knights",
+    "venue": "Campbelltown Sports Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "SUN APR 12",
+    "locatTime": "4:06pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "06",
+    "matchtype":"bye",
+    "hometeam": "Dolphins",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "bye"
+ },
+  { "round": "07",
+    "matchtype":"single",
+    "hometeam": "Cowboys",
+    "awayteam": "Sea Eagles",
+    "venue": "Queensland Country Bank Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-cowboys-v-townsville-16-04-2026/event/250064419AF169CD",
+    "date": "THU APR 16",
+    "locatTime": "7:50pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "07",
+    "matchtype":"single",
+    "hometeam": "Raiders",
+    "awayteam": "Storm",
+    "venue": "GIO Stadium",
+    "state": "ACT",
+    "url": "",
+    "date": "FRI APR 17",
+    "locatTime": "6:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "07",
+    "matchtype":"single",
+    "hometeam": "Dolphins",
+    "awayteam": "Panthers",
+    "venue": "TIO Stadium",
+    "state": "Darwin",
+    "url": "",
+    "date": "FRI APR 17",
+    "locatTime": "8:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "07",
+    "matchtype":"single",
+    "hometeam": "Warriors",
+    "awayteam": "Titans",
+    "venue": "Go Media Stadium",
+    "state": "NZ",
+    "url": "https://www.ticketmaster.co.nz/one-new-zealand-warriors-v-gold-auckland-18-04-2026/event/240063828E2A2A62",
+    "date": "SAT APR 18",
+    "locatTime": "3:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "07",
+    "matchtype":"single",
+    "hometeam": "Rabbitohs",
+    "awayteam": "Dragons",
+    "venue": "Accor Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-rabbitohs-v-sydney-olympic-park-18-04-2026/event/25006449C9744483",
+    "date": "SAT APR 18",
+    "locatTime": "5:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "07",
+    "matchtype":"single",
+    "hometeam": "Tigers",
+    "awayteam": "Broncos",
+    "venue": "Campbelltown Sports Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "SAT APR 18",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "07",
+    "matchtype":"single",
+    "hometeam": "Roosters",
+    "awayteam": "Knights",
+    "venue": "Allianz Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sydney-roosters-sydney-19-04-2026/event/25006442C6573BD1",
+    "date": "SUN APR 19",
+    "locatTime": "2:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "07",
+    "matchtype":"single",
+    "hometeam": "Eels",
+    "awayteam": "Bulldogs",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-parramatta-eels-parramatta-19-04-2026/event/2500642FEAF09421",
+    "date": "SUN APR 19",
+    "locatTime": "4:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "07",
+    "matchtype":"bye",
+    "hometeam": "Sharks",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "bye"
+ },
+  { "round": "08",
+    "matchtype":"single",
+    "hometeam": "Tigers",
+    "awayteam": "Raiders",
+    "venue": "Leichhardt Oval",
+    "state": "NSW",
+    "url": "",
+    "date": "THU APR 23",
+    "locatTime": "7:50pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "08",
+    "matchtype":"single",
+    "hometeam": "Cowboys",
+    "awayteam": "Sharks",
+    "venue": "Queensland Country Bank Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-cowboys-v-townsville-24-04-2026/event/250064419AF669D8",
+    "date": "FRI APR 24",
+    "locatTime": "6:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "08",
+    "matchtype":"single",
+    "hometeam": "Broncos",
+    "awayteam": "Bulldogs",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "FRI APR 24",
+    "locatTime": "8:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "08",
+    "matchtype":"single",
+    "hometeam": "Dragons",
+    "awayteam": "Roosters",
+    "venue": "Allianz Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "SAT APR 25",
+    "locatTime": "4:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "TBC"
+ },
+  { "round": "08",
+    "matchtype":"single",
+    "hometeam": "Warriors",
+    "awayteam": "Dolphins",
+    "venue": "Hnry Stadium",
+    "state": "NZ",
+    "url": "",
+    "date": "SAT APR 25",
+    "locatTime": "6:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "08",
+    "matchtype":"single",
+    "hometeam": "Storm",
+    "awayteam": "Rabbitohs",
+    "venue": "AAMI Park",
+    "state": "VIC",
+    "url": "",
+    "date": "SAT APR 25",
+    "locatTime": "8:10pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "08",
+    "matchtype":"single",
+    "hometeam": "Knights",
+    "awayteam": "Panthers",
+    "venue": "McDonald Jones Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "SUN APR 26",
+    "locatTime": "2:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "08",
+    "matchtype":"single",
+    "hometeam": "Sea Eagles",
+    "awayteam": "Eels",
+    "venue": "4 Pines Park",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sea-eagles-brookvale-26-04-2026/event/1300642DAF395601",
+    "date": "SUN APR 26",
+    "locatTime": "4:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ }, 
+  { "round": "08",
+    "matchtype":"bye",
+    "hometeam": "Titans",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "09",
+    "matchtype":"single",
+    "hometeam": "Bulldogs",
+    "awayteam": "Cowboys",
+    "venue": "Accor Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-bulldogs-v-sydney-olympic-park-01-05-2026/event/2500644285011840",
+    "date": "FRI MAY 01",
+    "locatTime": "6:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "09",
+    "matchtype":"single",
+    "hometeam": "Dolphins",
+    "awayteam": "Storm",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "09",
+    "matchtype":"single",
+    "hometeam": "Titans",
+    "awayteam": "Raiders",
+    "venue": "Cbus Super Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-gold-coast-robina-gold-coast-02-05-2026/event/25006383B3F56191",
+    "date": "SAT MAY 02",
+    "locatTime": "3:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "09",
+    "matchtype":"single",
+    "hometeam": "Eels",
+    "awayteam": "Warriors",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-parramatta-eels-parramatta-02-05-2026/event/2500642FEB039470",
+    "date": "SAT MAY 02",
+    "locatTime": "5:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "09",
+    "matchtype":"single",
+    "hometeam": "Roosters",
+    "awayteam": "Broncos",
+    "venue": "Allianz Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sydney-roosters-sydney-02-05-2026/event/25006442C65D3BD8",
+    "date": "SAT MAY 02",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "09",
+    "matchtype":"single",
+    "hometeam": "Knights",
+    "awayteam": "Rabbitohs",
+    "venue": "McDonald Jones Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "09",
+    "matchtype":"single",
+    "hometeam": "Sharks",
+    "awayteam": "Tigers",
+    "venue": "Ocean Protect Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "09",
+    "matchtype":"single",
+    "hometeam": "Panthers",
+    "awayteam": "Sea Eagles",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-penrith-panthers-parramatta-03-05-2026/event/2500638FCD265344",
+    "date": "SUN MAY 03",
+    "locatTime": "6:15pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ }, 
+  { "round": "09",
+    "matchtype":"bye",
+    "hometeam": "Dragons",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "10",
+    "matchtype":"single",
+    "hometeam": "Dolphins",
+    "awayteam": "Bulldogs",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "10",
+    "matchtype":"single",
+    "hometeam": "Roosters",
+    "awayteam": "Titans",
+    "venue": "Polytec Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "10",
+    "matchtype":"single",
+    "hometeam": "Cowboys",
+    "awayteam": "Eels",
+    "venue": "Queensland Country Bank Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-cowboys-v-townsville-08-05-2026/event/250064419AFB69E1",
+    "date": "FRI MAY 08",
+    "locatTime": "8:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "10",
+    "matchtype":"single",
+    "hometeam": "Dragons",
+    "awayteam": "Knights",
+    "venue": "WIN Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-dragons-v-wollongong-09-05-2026/event/1300643DE6328A1A",
+    "date": "SAT MAY 09",
+    "locatTime": "3:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "10",
+    "matchtype":"single",
+    "hometeam": "Rabbitohs",
+    "awayteam": "Sharks",
+    "venue": "Accor Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-rabbitohs-v-sydney-olympic-park-09-05-2026/event/25006449C9914494",
+    "date": "SAT MAY 09",
+    "locatTime": "05:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "10",
+    "matchtype":"single",
+    "hometeam": "Sea Eagles",
+    "awayteam": "Broncos",
+    "venue": "4 Pines Park",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sea-eagles-brookvale-09-05-2026/event/1300642DAF6F561F",
+    "date": "SAT MAY 09",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "10",
+    "matchtype":"single",
+    "hometeam": "Storm",
+    "awayteam": "Tigers",
+    "venue": "AAMI Park",
+    "state": "VIC",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "10",
+    "matchtype":"single",
+    "hometeam": "Raiders",
+    "awayteam": "Panthers",
+    "venue": "GIO Stadium",
+    "state": "ACT",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ }, 
+  { "round": "10",
+    "matchtype":"bye",
+    "hometeam": "Warriors",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "11",
+    "matchtype":"single",
+    "hometeam": "Sharks",
+    "awayteam": "Bulldogs",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "11",
+    "matchtype":"single",
+    "hometeam": "Rabbitohs",
+    "awayteam": "Dolphins",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "11",
+    "matchtype":"single",
+    "hometeam": "Tigers",
+    "awayteam": "Sea Eagles",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "11",
+    "matchtype":"single",
+    "hometeam": "Roosters",
+    "awayteam": "Cowboys",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "11",
+    "matchtype":"single",
+    "hometeam": "Eels",
+    "awayteam": "Storm",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "11",
+    "matchtype":"single",
+    "hometeam": "Titans",
+    "awayteam": "Knights",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "11",
+    "matchtype":"single",
+    "hometeam": "Warriors",
+    "awayteam": "Broncos",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+ { "round": "11",
+    "matchtype":"single",
+    "hometeam": "Panthers",
+    "awayteam": "Dragons",
+    "venue": "Suncorp Stadiumb",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ }, 
+  { "round": "11",
+    "matchtype":"bye",
+    "hometeam": "Raiders",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "12",
+    "matchtype":"single",
+    "hometeam": "Raiders",
+    "awayteam": "Dolphins",
+    "venue": "GIO Stadium",
+    "state": "ACT",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "12",
+    "matchtype":"single",
+    "hometeam": "Bulldogs",
+    "awayteam": "Storm",
+    "venue": "Accor Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-bulldogs-v-sydney-olympic-park-22-05-2026/event/2500644285081844",
+    "date": "FRI MAY 22",
+    "locatTime": "8:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "12",
+    "matchtype":"single",
+    "hometeam": "Dragons",
+    "awayteam": "Warriors",
+    "venue": "Jubilee Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "12",
+    "matchtype":"single",
+    "hometeam": "Sea Eagles",
+    "awayteam": "Titans",
+    "venue": "4 Pines Park",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sea-eagles-brookvale-23-05-2026/event/1300642DAF965636",
+    "date": "SAT MAY 23",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "12",
+    "matchtype":"single",
+    "hometeam": "Cowboys",
+    "awayteam": "Rabbitohs",
+    "venue": "Queensland Country Bank Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-cowboys-v-townsville-08-05-2026/event/250064419AFB69E1",
+    "date": "SUN MAY 24",
+    "locatTime": "4:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ }, 
+  { "round": "12",
+    "matchtype":"bye",
+    "hometeam": "Broncos",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "12",
+    "matchtype":"bye",
+    "hometeam": "Eels",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "12",
+    "matchtype":"bye",
+    "hometeam": "Knights",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "12",
+    "matchtype":"bye",
+    "hometeam": "Panthers",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "12",
+    "matchtype":"bye",
+    "hometeam": "Roosters",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "12",
+    "matchtype":"bye",
+    "hometeam": "Sharks",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "12",
+    "matchtype":"bye",
+    "hometeam": "Tigers",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "13",
+    "matchtype":"single",
+    "hometeam": "Sharks",
+    "awayteam": "Sea Eagles",
+    "venue": "Ocean Protect Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "13",
+    "matchtype":"single",
+    "hometeam": "Knights",
+    "awayteam": "Eels",
+    "venue": "McDonald Jones Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "13",
+    "matchtype":"single",
+    "hometeam": "Tigers",
+    "awayteam": "Bulldogs",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "SAT MAY 30",
+    "locatTime": "5:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "TBC"
+ },
+  { "round": "13",
+    "matchtype":"single",
+    "hometeam": "Storm",
+    "awayteam": "Roosters",
+    "venue": "AAMI Park",
+    "state": "VIC",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+ { "round": "13",
+    "matchtype":"single",
+    "hometeam": "Broncos",
+    "awayteam": "Dragons",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "13",
+    "matchtype":"single",
+    "hometeam": "Raiders",
+    "awayteam": "Cowboys",
+    "venue": "GIO Stadium",
+    "state": "ACT",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "13",
+    "matchtype":"single",
+    "hometeam": "Panthers",
+    "awayteam": "Warriors",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-parramatta-eels-parramatta-02-05-2026/event/2500642FEB039470",
+    "date": "SUN MAY 31",
+    "locatTime": "6:15pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ }, 
+  { "round": "13",
+    "matchtype":"bye",
+    "hometeam": "Dolphins",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "13",
+    "matchtype":"bye",
+    "hometeam": "Rabbitohs",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "13",
+    "matchtype":"bye",
+    "hometeam": "Titans",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "14",
+    "matchtype":"single",
+    "hometeam": "Sea Eagles",
+    "awayteam": "Rabbitohs",
+    "venue": "4 Pines Park",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sea-eagles-brookvale-04-06-2026/event/1300642DAFBE564C",
+    "date": "THU JUN 04",
+    "locatTime": "7:50pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "14",
+    "matchtype":"single",
+    "hometeam": "Storm",
+    "awayteam": "Knights",
+    "venue": "AAMI Park",
+    "state": "VIC",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "14",
+    "matchtype":"single",
+    "hometeam": "Raiders",
+    "awayteam": "Roosters",
+    "venue": "GIO Stadium",
+    "state": "ACT",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "14",
+    "matchtype":"single",
+    "hometeam": "Cowboys",
+    "awayteam": "Dolphins",
+    "venue": "Queensland Country Bank Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-cowboys-v-townsville-06-06-2026/event/250064419B0669F8",
+    "date": "SAT JUN 06",
+    "locatTime": "5:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "14",
+    "matchtype":"single",
+    "hometeam": "Broncos",
+    "awayteam": "Titans",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "14",
+    "matchtype":"single",
+    "hometeam": "Tigers",
+    "awayteam": "Panthers",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "TBC"
+ },
+  { "round": "14",
+    "matchtype":"single",
+    "hometeam": "Sharks",
+    "awayteam": "Dragons",
+    "venue": "Ocean Protect Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "14",
+    "matchtype":"single",
+    "hometeam": "Bulldogs",
+    "awayteam": "Eels",
+    "venue": "Accor Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-bulldogs-v-sydney-olympic-park-08-06-2026/event/2500643DE1A76193",
+    "date": "MON JUN 08",
+    "locatTime": "4:50pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ }, 
+  { "round": "15",
+    "matchtype":"bye",
+    "hometeam": "Warriors",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "15",
+    "matchtype":"single",
+    "hometeam": "Rabbitohs",
+    "awayteam": "Broncos",
+    "venue": "Accor Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-rabbitohs-v-sydney-olympic-park-11-06-2026/event/25006449C9AF44A7",
+    "date": "THU JUN 11",
+    "locatTime": "7:50pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "15",
+    "matchtype":"single",
+    "hometeam": "Dolphins",
+    "awayteam": "Roosters",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "15",
+    "matchtype":"single",
+    "hometeam": "Warriors",
+    "awayteam": "Sharks",
+    "venue": "Go Media Stadium",
+    "state": "NZ",
+    "url": "https://www.ticketmaster.co.nz/one-new-zealand-warriors-v-cronulla-auckland-13-06-2026/event/240063828E432A6D",
+    "date": "SAT JUN 13",
+    "locatTime": "7:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "15",
+    "matchtype":"single",
+    "hometeam": "Eels",
+    "awayteam": "Raiders",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-parramatta-eels-parramatta-13-06-2026/event/2500642FEB1394A9",
+    "date": "SAT JUN 13",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "15",
+    "matchtype":"single",
+    "hometeam": "Tigers",
+    "awayteam": "Titans",
+    "venue": "Leichhardt Oval",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ }, 
+  { "round": "15",
+    "matchtype":"bye",
+    "hometeam": "Bulldogs",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "15",
+    "matchtype":"bye",
+    "hometeam": "Cowboys",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "15",
+    "matchtype":"bye",
+    "hometeam": "Dragons",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "15",
+    "matchtype":"bye",
+    "hometeam": "Knights",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "15",
+    "matchtype":"bye",
+    "hometeam": "Panthers",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "15",
+    "matchtype":"bye",
+    "hometeam": "Sea Eagles",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "15",
+    "matchtype":"bye",
+    "hometeam": "Storm",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "16",
+    "matchtype":"single",
+    "hometeam": "Knights",
+    "awayteam": "Dragons",
+    "venue": "McDonald Jones Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "16",
+    "matchtype":"single",
+    "hometeam": "Tigers",
+    "awayteam": "Dolphins",
+    "venue": "Campbelltown Sports Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "16",
+    "matchtype":"single",
+    "hometeam": "Titans",
+    "awayteam": "Panthers",
+    "venue": "Cbus Super Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-gold-coast-robina-gold-coast-20-06-2026/event/25006383B402619D",
+    "date": "SAT JUN 20",
+    "locatTime": "5:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "16",
+    "matchtype":"single",
+    "hometeam": "Bulldogs",
+    "awayteam": "Sea Eagles",
+    "venue": "Accor Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-bulldogs-v-sydney-olympic-park-20-06-2026/event/2500644285131846",
+    "date": "SAT JUN 20",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "16",
+    "matchtype":"single",
+    "hometeam": "Warriors",
+    "awayteam": "Cowboys",
+    "venue": "One NZ Stadium",
+    "state": "NZ",
+    "url": "https://www.ticketmaster.co.nz/one-new-zealand-warriors-v-north-christchurch-21-06-2026/event/2400642ED230393D",
+    "date": "SUN JUN 21",
+    "locatTime": "2:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "16",
+    "matchtype":"single",
+    "hometeam": "Storm",
+    "awayteam": "Raiders",
+    "venue": "AAMI Park",
+    "state": "VIC",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "16",
+    "matchtype":"single",
+    "hometeam": "Roosters",
+    "awayteam": "Sharks",
+    "venue": "Allianz Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sydney-roosters-sydney-21-06-2026/event/25006442C6623BDA",
+    "date": "SUN JUN 21",
+    "locatTime": "6:15pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ }, 
+  { "round": "16",
+    "matchtype":"bye",
+    "hometeam": "Eels",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "16",
+    "matchtype":"bye",
+    "hometeam": "Broncos",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "16",
+    "matchtype":"bye",
+    "hometeam": "Rabbitohs",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "17",
+    "matchtype":"single",
+    "hometeam": "Eels",
+    "awayteam": "Rabbitohs",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-parramatta-eels-parramatta-25-06-2026/event/2500642FEB1A94BC",
+    "date": "THU JUN 25",
+    "locatTime": "7:50pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "17",
+    "matchtype":"single",
+    "hometeam": "Titans",
+    "awayteam": "Bulldogs",
+    "venue": "Cbus Super Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-gold-coast-robina-gold-coast-26-06-2026/event/25006383B40A61A2",
+    "date": "THU JUN 25",
+    "locatTime": "7:50pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "17",
+    "matchtype":"single",
+    "hometeam": "Broncos",
+    "awayteam": "Roosters",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "17",
+    "matchtype":"single",
+    "hometeam": "Dolphins",
+    "awayteam": "Warriors",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "17",
+    "matchtype":"single",
+    "hometeam": "Cowboys",
+    "awayteam": "Panthers",
+    "venue": "Queensland Country Bank Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-cowboys-v-townsville-27-06-2026/event/250064419B0A6A02",
+    "date": "SAT JUN 27",
+    "locatTime": "5:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "17",
+    "matchtype":"single",
+    "hometeam": "Sea Eagles",
+    "awayteam": "Storm",
+    "venue": "4 Pines Park",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sea-eagles-brookvale-27-06-2026/event/1300642DB00856A2",
+    "date": "SAT JUN 27",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "17",
+    "matchtype":"single",
+    "hometeam": "Raiders",
+    "awayteam": "Dragons",
+    "venue": "GIO Stadium",
+    "state": "ACT",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "17",
+    "matchtype":"single",
+    "hometeam": "Knights",
+    "awayteam": "Tigers",
+    "venue": "McDonald Jones Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ }, 
+  { "round": "17",
+    "matchtype":"bye",
+    "hometeam": "Sharks",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "18",
+    "matchtype":"single",
+    "hometeam": "Panthers",
+    "awayteam": "Rabbitohs",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "FRI JUL 03",
+    "locatTime": "8:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "TBC"
+ },
+  { "round": "18",
+    "matchtype":"single",
+    "hometeam": "Dragons",
+    "awayteam": "Tigers",
+    "venue": "Jubilee Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "18",
+    "matchtype":"single",
+    "hometeam": "Broncos",
+    "awayteam": "Sharks",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "18",
+    "matchtype":"single",
+    "hometeam": "Eels",
+    "awayteam": "Sea Eagles",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-parramatta-eels-parramatta-05-07-2026/event/2500642FEB2094CF",
+    "date": "SUN JUL 05",
+    "locatTime": "2:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "18",
+    "matchtype":"single",
+    "hometeam": "Knights",
+    "awayteam": "Dolphins",
+    "venue": "McDonald Jones Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ }, 
+  { "round": "18",
+    "matchtype":"bye",
+    "hometeam": "Bulldogs",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "18",
+    "matchtype":"bye",
+    "hometeam": "Cowboys",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "18",
+    "matchtype":"bye",
+    "hometeam": "Raiders",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "18",
+    "matchtype":"bye",
+    "hometeam": "Roosters",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "18",
+    "matchtype":"bye",
+    "hometeam": "Storm",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "18",
+    "matchtype":"bye",
+    "hometeam": "Titans",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "18",
+    "matchtype":"bye",
+    "hometeam": "Warriors",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "19",
+    "matchtype":"single",
+    "hometeam": "Tigers",
+    "awayteam": "Warriors",
+    "venue": "Campbelltown Sports Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "19",
+    "matchtype":"single",
+    "hometeam": "Dolphins",
+    "awayteam": "Sharks",
+    "venue": "Kayo Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "19",
+    "matchtype":"single",
+    "hometeam": "Bulldogs",
+    "awayteam": "Raiders",
+    "venue": "Accor Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-bulldogs-v-sydney-olympic-park-11-07-2026/event/250064428527184D",
+    "date": "SAT JUL 11",
+    "locatTime": "5:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "19",
+    "matchtype":"single",
+    "hometeam": "Roosters",
+    "awayteam": "Eels",
+    "venue": "Allianz Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sydney-roosters-sydney-11-07-2026/event/25006442C6673BDC",
+    "date": "SAT JUL 11",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "19",
+    "matchtype":"single",
+    "hometeam": "Rabbitohs",
+    "awayteam": "Knights",
+    "venue": "Accor Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-rabbitohs-v-sydney-olympic-park-12-07-2026/event/25006449CB97452E",
+    "date": "SUN JUL 12",
+    "locatTime": "2:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "19",
+    "matchtype":"single",
+    "hometeam": "Sea Eagles",
+    "awayteam": "Cowboys",
+    "venue": "4 Pines Park",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sea-eagles-brookvale-12-07-2026/event/1300642DB02956BD",
+    "date": "SUN JUL 12",
+    "locatTime": "4:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "19",
+    "matchtype":"single",
+    "hometeam": "Storm",
+    "awayteam": "Titans",
+    "venue": "AAMI Park",
+    "state": "VIC",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "19",
+    "matchtype":"bye",
+    "hometeam": "Broncos",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "19",
+    "matchtype":"bye",
+    "hometeam": "Dragons",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ }, 
+  { "round": "19",
+    "matchtype":"bye",
+    "hometeam": "Panthers",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "20",
+    "matchtype":"single",
+    "hometeam": "Panthers",
+    "awayteam": "Broncos",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "TBC"
+ },
+  { "round": "20",
+    "matchtype":"single",
+    "hometeam": "Sharks",
+    "awayteam": "Knights",
+    "venue": "Ocean Protect Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "20",
+    "matchtype":"single",
+    "hometeam": "Roosters",
+    "awayteam": "Storm",
+    "venue": "Allianz Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sydney-roosters-sydney-17-07-2026/event/25006442C66C3BE0",
+    "date": "FRI JUL 17",
+    "locatTime": "7:50pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "20",
+    "matchtype":"single",
+    "hometeam": "Raiders",
+    "awayteam": "Rabbitohs",
+    "venue": "GIO Stadium",
+    "state": "ACT",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "20",
+    "matchtype":"single",
+    "hometeam": "Warriors",
+    "awayteam": "Dragons",
+    "venue": "Go Media Stadium",
+    "state": "NZ",
+    "url": "https://www.ticketmaster.co.nz/one-new-zealand-warriors-v-st-auckland-18-07-2026/event/240063828E5A2A7C",
+    "date": "SAT JUL 18",
+    "locatTime": "7:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "20",
+    "matchtype":"single",
+    "hometeam": "Bulldogs",
+    "awayteam": "Tigers",
+    "venue": "Accor Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-bulldogs-v-sydney-olympic-park-18-07-2026/event/2500644285321852",
+    "date": "SAT JUL 18",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "20",
+    "matchtype":"single",
+    "hometeam": "Titans",
+    "awayteam": "Sea Eagles",
+    "venue": "Cbus Super Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-gc-titans-robina-gold-coast-19-07-2026/event/25006383B42861AE",
+    "date": "SUN JUL 19",
+    "locatTime": "2:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "20",
+    "matchtype":"single",
+    "hometeam": "Dolphins",
+    "awayteam": "Cowboys",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ }, 
+  { "round": "20",
+    "matchtype":"bye",
+    "hometeam": "Eels",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "21",
+    "matchtype":"single",
+    "hometeam": "Eels",
+    "awayteam": "Panthers",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-parramatta-eels-parramatta-23-07-2026/event/2500642FEB2594E4",
+    "date": "THU JUL 23",
+    "locatTime": "7:50pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "21",
+    "matchtype":"single",
+    "hometeam": "Knights",
+    "awayteam": "Roosters",
+    "venue": "McDonald Jones Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "21",
+    "matchtype":"single",
+    "hometeam": "Rabbitohs",
+    "awayteam": "Storm",
+    "venue": "Accor Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-rabbitohs-v-sydney-olympic-park-24-07-2026/event/25006449C9FE44BD",
+    "date": "FRI JUL 24",
+    "locatTime": "8:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "21",
+    "matchtype":"single",
+    "hometeam": "Raiders",
+    "awayteam": "Tigers",
+    "venue": "GIO Stadium",
+    "state": "ACT",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "21",
+    "matchtype":"single",
+    "hometeam": "Bulldogs",
+    "awayteam": "Warriors",
+    "venue": "Accor Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-bulldogs-v-sydney-olympic-park-25-07-2026/event/25006442853A185E",
+    "date": "SAT JUL 25",
+    "locatTime": "5:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "21",
+    "matchtype":"single",
+    "hometeam": "Cowboys",
+    "awayteam": "Broncos",
+    "venue": "Queensland Country Bank Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-cowboys-v-townsville-25-07-2026/event/250064419B0F6A2C",
+    "date": "SAT JUL 25",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "21",
+    "matchtype":"single",
+    "hometeam": "Dragons",
+    "awayteam": "Titans",
+    "venue": "Jubilee Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "21",
+    "matchtype":"single",
+    "hometeam": "Sea Eagles",
+    "awayteam": "Sharks",
+    "venue": "4 Pines Park",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sea-eagles-brookvale-26-07-2026/event/1300642DB06356FA",
+    "date": "SUN JUL 26",
+    "locatTime": "4:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ }, 
+  { "round": "21",
+    "matchtype":"bye",
+    "hometeam": "Dolphins",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "22",
+    "matchtype":"single",
+    "hometeam": "Cowboys",
+    "awayteam": "Roosters",
+    "venue": "Queensland Country Bank Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-cowboys-v-townsville-30-07-2026/event/250064419B146A37",
+    "date": "THU JUL 30",
+    "locatTime": "7:50pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "22",
+    "matchtype":"single",
+    "hometeam": "Dragons",
+    "awayteam": "Dolphins",
+    "venue": "WIN Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-dragons-v-wollongong-31-07-2026/event/1300643DE64F8A58",
+    "date": "FRI JUL 31",
+    "locatTime": "6:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "22",
+    "matchtype":"single",
+    "hometeam": "Storm",
+    "awayteam": "Bulldogs",
+    "venue": "AAMI Park",
+    "state": "VIC",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "22",
+    "matchtype":"single",
+    "hometeam": "Titans",
+    "awayteam": "Warriors",
+    "venue": "Cbus Super Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-gold-coast-robina-gold-coast-01-08-2026/event/25006383B43261BA",
+    "date": "SAT AUG 01",
+    "locatTime": "3:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "22",
+    "matchtype":"single",
+    "hometeam": "Panthers",
+    "awayteam": "Rabbitohs",
+    "venue": "Glen Willow Oval",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "22",
+    "matchtype":"single",
+    "hometeam": "Broncos",
+    "awayteam": "Knights",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "22",
+    "matchtype":"single",
+    "hometeam": "Sharks",
+    "awayteam": "Rabbitohs",
+    "venue": "Ocean Protect Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "22",
+    "matchtype":"single",
+    "hometeam": "Tigers",
+    "awayteam": "Eels",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "SUN AUG 02",
+    "locatTime": "4:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "TBC"
+ }, 
+  { "round": "22",
+    "matchtype":"bye",
+    "hometeam": "Sea Eagles",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "23",
+    "matchtype":"single",
+    "hometeam": "Titans",
+    "awayteam": "Cowboys",
+    "venue": "Cbus Super Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-gold-coast-robina-gold-coast-06-08-2026/event/25006383B44061BD",
+    "date": "THU AUG 06",
+    "locatTime": "7:50pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "23",
+    "matchtype":"single",
+    "hometeam": "Warriors",
+    "awayteam": "Panthers",
+    "venue": "Go Media Stadium",
+    "state": "NZ",
+    "url": "https://www.ticketmaster.co.nz/one-new-zealand-warriors-v-penrith-auckland-07-08-2026/event/240063828E6B2A89",
+    "date": "FRI AUG 07",
+    "locatTime": "8:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "23",
+    "matchtype":"single",
+    "hometeam": "Roosters",
+    "awayteam": "Bulldogs",
+    "venue": "Allianz Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sydney-roosters-sydney-07-08-2026/event/25006442C6713BE2",
+    "date": "FRI AUG 07",
+    "locatTime": "8:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "23",
+    "matchtype":"single",
+    "hometeam": "Storm",
+    "awayteam": "Sea Eagles",
+    "venue": "HBF Park",
+    "state": "WA",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "23",
+    "matchtype":"single",
+    "hometeam": "Dolphins",
+    "awayteam": "Broncos",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "23",
+    "matchtype":"single",
+    "hometeam": "Rabbitohs",
+    "awayteam": "Eels",
+    "venue": "Allianz Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "SAT AUG 08",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "23",
+    "matchtype":"single",
+    "hometeam": "Raiders",
+    "awayteam": "Knights",
+    "venue": "GIO Stadium",
+    "state": "ACT",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "23",
+    "matchtype":"single",
+    "hometeam": "Dragons",
+    "awayteam": "Sharks",
+    "venue": "Jubilee Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ }, 
+  { "round": "23",
+    "matchtype":"bye",
+    "hometeam": "Tigers",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "24",
+    "matchtype":"single",
+    "hometeam": "Panthers",
+    "awayteam": "Roosters",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "THU AUG 13",
+    "locatTime": "7:50pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "TBC"
+ },
+  { "round": "24",
+    "matchtype":"single",
+    "hometeam": "Sea Eagles",
+    "awayteam": "Roosters",
+    "venue": "4 Pines Park",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sea-eagles-brookvale-14-08-2026/event/1300642DB09A5720",
+    "date": "FRI AUG 14",
+    "locatTime": "6:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "24",
+    "matchtype":"single",
+    "hometeam": "Bulldogs",
+    "awayteam": "Rabbitohs",
+    "venue": "Accor Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-bulldogs-v-sydney-olympic-park-14-08-2026/event/2500644285411862",
+    "date": "FRI AUG 14",
+    "locatTime": "8:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "24",
+    "matchtype":"single",
+    "hometeam": "Sharks",
+    "awayteam": "Raiders",
+    "venue": "Ocean Protect Stadium",
+    "state": "",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "24",
+    "matchtype":"single",
+    "hometeam": "Eels",
+    "awayteam": "Cowboys",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-parramatta-eels-parramatta-15-08-2026/event/2500642FEB2C94FC",
+    "date": "SAT AUG 15",
+    "locatTime": "5:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "24",
+    "matchtype":"single",
+    "hometeam": "Broncos",
+    "awayteam": "Warriors",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "24",
+    "matchtype":"single",
+    "hometeam": "Knights",
+    "awayteam": "Titans",
+    "venue": "McDonald Jones Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "24",
+    "matchtype":"single",
+    "hometeam": "Tigers",
+    "awayteam": "Dragons",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "SUN AUG 16",
+    "locatTime": "4:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "TBC"
+ }, 
+  { "round": "24",
+    "matchtype":"bye",
+    "hometeam": "Storm",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "25",
+    "matchtype":"single",
+    "hometeam": "Storm",
+    "awayteam": "Panthers",
+    "venue": "AAMI Park",
+    "state": "VIC",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "25",
+    "matchtype":"single",
+    "hometeam": "Raiders",
+    "awayteam": "Broncos",
+    "venue": "GIO Stadium",
+    "state": "ACT",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "25",
+    "matchtype":"single",
+    "hometeam": "Dolphins",
+    "awayteam": "Eels",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "25",
+    "matchtype":"single",
+    "hometeam": "Knights",
+    "awayteam": "Sea Eagles",
+    "venue": "McDonald Jones Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "25",
+    "matchtype":"single",
+    "hometeam": "Rabbitohs",
+    "awayteam": "Warriors",
+    "venue": "Accor Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-rabbitohs-v-sydney-olympic-park-22-08-2026/event/25006449CA1D44CB",
+    "date": "SAT AUG 22",
+    "locatTime": "5:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "25",
+    "matchtype":"single",
+    "hometeam": "Dragons",
+    "awayteam": "Bulldogs",
+    "venue": "Allianz Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "SAT AUG 22",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "TBC"
+ },
+  { "round": "25",
+    "matchtype":"single",
+    "hometeam": "Titans",
+    "awayteam": "Sharks",
+    "venue": "Cbus Super Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-gc-titans-robina-gold-coast-23-08-2026/event/25006383B44861C1",
+    "date": "SUN AUG 23",
+    "locatTime": "2:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "25",
+    "matchtype":"single",
+    "hometeam": "Roosters",
+    "awayteam": "Tigers",
+    "venue": "Allianz Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sydney-roosters-sydney-23-08-2026/event/25006442C6793BE7",
+    "date": "SUN AUG 23",
+    "locatTime": "4:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ }, 
+  { "round": "25",
+    "matchtype":"bye",
+    "hometeam": "Cowboys",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "26",
+    "matchtype":"single",
+    "hometeam": "Broncos",
+    "awayteam": "Storm",
+    "venue": "Suncorp Stadium",
+    "state": "QLD",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "26",
+    "matchtype":"single",
+    "hometeam": "Sea Eagles",
+    "awayteam": "Dragons",
+    "venue": "4 Pines Park",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sea-eagles-brookvale-28-08-2026/event/1300642DB0C85748",
+    "date": "FRI AUG 28",
+    "locatTime": "6:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "26",
+    "matchtype":"single",
+    "hometeam": "Panthers",
+    "awayteam": "Bulldogs",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "26",
+    "matchtype":"single",
+    "hometeam": "Titans",
+    "awayteam": "Rabbitohs",
+    "venue": "Cbus Super Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-gc-titans-robina-gold-coast-29-08-2026/event/25006383B46B61CD",
+    "date": "SAT AUG 29",
+    "locatTime": "3:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "26",
+    "matchtype":"single",
+    "hometeam": "Roosters",
+    "awayteam": "Dolphins",
+    "venue": "Allianz Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-sydney-roosters-sydney-29-08-2026/event/25006442C67F3BEE",
+    "date": "SAT AUG 29",
+    "locatTime": "5:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "26",
+    "matchtype":"single",
+    "hometeam": "Cowboys",
+    "awayteam": "Tigers",
+    "venue": "Queensland Country Bank Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-cowboys-v-townsville-29-08-2026/event/250064419B1E6A60",
+    "date": "SAT AUG 29",
+    "locatTime": "7:35pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "26",
+    "matchtype":"single",
+    "hometeam": "Warriors",
+    "awayteam": "Knights",
+    "venue": "Go Media Stadium",
+    "state": "NZ",
+    "url": "https://www.ticketmaster.co.nz/one-new-zealand-warriors-v-newcastle-auckland-30-08-2026/event/240063828E8B2A97",
+    "date": "SUN AUG 30",
+    "locatTime": "4:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "26",
+    "matchtype":"single",
+    "hometeam": "Eels",
+    "awayteam": "Sharks",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-parramatta-eels-parramatta-30-08-2026/event/2500642FEB329512",
+    "date": "SUN AUG 30",
+    "locatTime": "4:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "26",
+    "matchtype":"bye",
+    "hometeam": "Raiders",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "bye"
+ },
+  { "round": "27",
+    "matchtype":"single",
+    "hometeam": "Bulldogs",
+    "awayteam": "Broncos",
+    "venue": "Accor Stadium",
+    "state": "NSW",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-bulldogs-v-sydney-olympic-park-03-09-2026/event/25006442854A1868",
+    "date": "THU SEP 03",
+    "locatTime": "7:50pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "27",
+    "matchtype":"single",
+    "hometeam": "Titans",
+    "awayteam": "Dolphins",
+    "venue": "Cbus Super Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-gold-coast-robina-gold-coast-04-09-2026/event/25006383B47461D5",
+    "date": "FIR SEP 04",
+    "locatTime": "6:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "27",
+    "matchtype":"single",
+    "hometeam": "Rabbitohs",
+    "awayteam": "Roosters",
+    "venue": "Allianz Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "FRI SEP 04",
+    "locatTime": "8:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "TBC"
+ },
+  { "round": "27",
+    "matchtype":"single",
+    "hometeam": "Warriors",
+    "awayteam": "Sea Eagles",
+    "venue": "Go Media Stadium",
+    "state": "NZ",
+    "url": "https://www.ticketmaster.co.nz/one-new-zealand-warriors-v-manly-auckland-05-09-2026/event/240063828EA72AA1",
+    "date": "SAT SEP 05",
+    "locatTime": "5:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "27",
+    "matchtype":"single",
+    "hometeam": "Cowboys",
+    "awayteam": "Raiders",
+    "venue": "Queensland Country Bank Stadium",
+    "state": "QLD",
+    "url": "https://www.ticketmaster.com.au/2025-nrl-telstra-premiership-cowboys-v-townsville-05-09-2026/event/250064419B256AA5",
+    "date": "SAT SEP 05",
+    "locatTime": "5:30pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "27",
+    "matchtype":"single",
+    "hometeam": "Sharks",
+    "awayteam": "Storm",
+    "venue": "Ocean Protect Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "",
+    "locatTime": "0:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Match Centre"
+ },
+  { "round": "27",
+    "matchtype":"single",
+    "hometeam": "Dragons",
+    "awayteam": "Eels",
+    "venue": "WIN Stadium",
+    "state": "",
+    "url": "https://www.ticketmaster.com.au/2026-nrl-telstra-premiership-dragons-v-wollongong-06-09-2026/event/1300643DE6BD8AB4",
+    "date": "SUN SEP 06",
+    "locatTime": "2:00pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "Find Tickets"
+ },
+  { "round": "27",
+    "matchtype":"single",
+    "hometeam": "Panthers",
+    "awayteam": "Tigers",
+    "venue": "CommBank Stadium",
+    "state": "NSW",
+    "url": "",
+    "date": "SUN SEP 06",
+    "locatTime": "4:05pm",
+    "eventID": "",
+    "tmMember": "none",
+    "btnstyle": "TBC"
+ },
+  { "round": "27",
+    "matchtype":"bye",
+    "hometeam": "Knights",
+    "awayteam": "bye",
+    "venue": "bye",
+    "state": "bye",
+    "url": "",
+    "date": "bye",
+    "locatTime": "bye",
+    "eventID": "",
+    "tmMember": "bye",
+    "btnstyle": "Fbye"
+ }
+]}
+
+</script>	
+[% PROCESS "layout/frame/bottom.tt" %]
