@@ -157,7 +157,7 @@ page_title = "NRL Season 2026, LET'S GO! | Buy NRL Tickets | Ticketmaster Austra
 @media only screen and (max-width: 999.99px) {	
 	#nrlContainer{width:100%;height:auto;margin:0 auto;display:block;padding:1px;background:var(--nrl-blk);position:relative;box-sizing: border-box !important;}
 
-	#nrlHeader{width:100%;max-width:1010px;height:auto;display:block;margin:20px auto;}
+	#nrlHeader{width:100%;max-width:1010px;height:auto;display:block;margin:50px auto 20px;}
 	#nrlHeader img{width:70%;max-width:390px;height:auto;margin:0px auto; display:block;}
 
 	#nrlTeams{width:90%;max-width:1013px;height:auto;border-radius:15px;margin:0 auto 60px;display:flex;flex-wrap: wrap;justify-content:center;align-items: flex-start;column-gap:20px;row-gap:20px;padding:20px;background:#fff;position:relative;box-sizing: border-box !important;}
@@ -620,9 +620,13 @@ page_title = "NRL Season 2026, LET'S GO! | Buy NRL Tickets | Ticketmaster Austra
 	currentRound = "";
 	eventCount = 0;
 	 stateList = ["VIC","NSW","QLD","ACT","NT","WA","SA","TAS","TBC","Any"];
-	 venueList = ["4 Pines Park","Accor Stadium","Allianz Stadium","Cbus Super Stadium","CommBank Stadium","Go Media Stadium","Queensland Country Bank Stadium","WIN Stadium","Any"];
-	 teamList = ["Any","Broncos","Raiders","Bulldogs","Sharks","Dolphines","Titans","Sea Eagles","Storm","Knights","Cowboys","Eels","Panthers","Rabbitohs","Dragons","Roosters","Warriors","Tigers"]
+    //TM AAMI Park || 4 Pines Park,Accor Stadium,Allianz Stadium,Cbus Super Stadium,CommBank Stadium,Go Media Stadium,HBF Park,One NZ Stadium,Optus Stadium,Queensland Country Bank Stadium,WIN Stadium
 
+    //Not tm || Campbelltown Sports Stadium,Carrington Park,GIO Stadium,Glen Willow Oval,Hnry Stadium,Jubilee Stadium,Kayo Stadium,Leichhardt Oval,McDonald Jones Stadium,Ocean Protect Stadium,Polytec Stadium,Suncorp Stadium,TIO Stadium
+
+	 venueList = ["4 Pines Park","Accor Stadium","Allianz Stadium","Cbus Super Stadium","CommBank Stadium","Go Media Stadium","HBF Park","One NZ Stadium","Optus Stadium","Queensland Country Bank Stadium","WIN Stadium","Any"];
+	 teamList = ["Any","Broncos","Raiders","Bulldogs","Sharks","Dolphines","Titans","Sea Eagles","Storm","Knights","Cowboys","Eels","Panthers","Rabbitohs","Dragons","Roosters","Warriors","Tigers"]
+   
 	
 	 $j(document).ready(function () {
 			//load the container div
@@ -745,7 +749,7 @@ $j(document).on('click', '.nrlCheckBoxBtn', function () {
 		
 		});		
 
-
+/*
 testEventData = {"events": [
 { "round": "01",
     "matchtype":"single",
@@ -4037,6 +4041,6 @@ testEventData = {"events": [
     "btnstyle": "Fbye"
  }
 ]}
-
+*/
 </script>	
 [% PROCESS "layout/frame/bottom.tt" %]
