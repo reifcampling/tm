@@ -642,7 +642,7 @@ page_title = "NRL Season 2026, LET'S GO! | Buy NRL Tickets | Ticketmaster Austra
                dataType: 'html',
 				success: function(data) {
 					let eventData = JSON.parse(data); 
-					let eventList = testEventData.events;//localDataTest.events//eventData.events
+					let eventList = eventData.events;//localDataTest.events//eventData.events
 						//console.log(testData)
 						$j.each(eventList, function(key,value){
 						let matchType = value.matchtype;
