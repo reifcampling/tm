@@ -85,6 +85,8 @@ page_title = "NRL Season 2026, LET'S GO! | Buy NRL Tickets | Ticketmaster Austra
 	.nrlRound{width:38px;height:60px;padding:12px 0px 0px 0px;margin:0px;user-select:none;cursor:pointer;transition:ease-in-out .3s all;box-sizing: border-box !important;}
 	.nrlRound:hover{opacity:70%;}
 	.nrlRound:hover .nrlRoundChev{margin:4px auto 0px;}
+	.nrlBrdLeft{border-radius:5px 0px 0px 0px;}
+	.nrlBrdRight{border-radius:0px 5px 0px 0px;}
 	.nrlRound h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:900;text-align:center;text-transform:uppercase;padding:0px;margin:0px;}
 	.nrlRoundOn{background:#3D3D3D;border-bottom:5px solid var(--nrl-gree);}
 	.nrlRoundOn h1{color:var(--nrl-gree);}
@@ -92,19 +94,21 @@ page_title = "NRL Season 2026, LET'S GO! | Buy NRL Tickets | Ticketmaster Austra
 	.nrlRoundOff h1{color:#fff;}
 	.nrlRoundPast{background:#282828;border-bottom:5px solid #4A4A4A;}	
 	.nrlRoundPast h1{color:#888888;}
-	.nrlRoundOff .nrlRoundChev, .nrlRoundPast .nrlRoundChev{width:14px;height:9px;margin:0px auto;padding:0;mask:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_down_sing_img.svg") center center no-repeat;mask-size:14px 9px;background-color:#fff;transition:ease-in-out .3s all;}
-	.nrlRoundOn .nrlRoundChev, .nrlRoundPast .nrlRoundChev{width:16px;height:10px;margin:0px auto;padding:0;mask:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_down_sing_img.svg") center center no-repeat;mask-size:16px 10px;background-color:var(--nrl-gree);transition:ease-in-out .3s all;}
+	.nrlRoundOff .nrlRoundChev{width:14px;height:9px;margin:0px auto;padding:0;mask:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_down_sing_img.svg") center center no-repeat;mask-size:14px 9px;background-color:#fff;transition:ease-in-out .3s all;}
+	.nrlRoundPast .nrlRoundChev{width:14px;height:9px;margin:0px auto;padding:0;mask:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_down_sing_img.svg") center center no-repeat;mask-size:14px 9px;background-color:#888888;transition:ease-in-out .3s all;}
+	.nrlRoundOn .nrlRoundChev{width:16px;height:10px;margin:0px auto;padding:0;mask:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_down_sing_img.svg") center center no-repeat;mask-size:16px 10px;background-color:var(--nrl-gree);transition:ease-in-out .3s all;}
 	/*drop down menus*/
 	.nrlFilterWrap{width:100%;max-width:1056px;height:auto;margin:20px auto 0px;display:none;flex-wrap:wrap;column-gap:10px;padding:0px 0px;position:relative;z-index:52;box-sizing: border-box !important;}
 	.nrlFilterDropDown{width:auto;height:auto;margin:0;padding:0;background:none;display:block;position:relative;}
-	.nrlFilterBtn{width:240px;height:40px;margin:0px 0px 0px 0px;padding:0;background:#282828;border-radius:0px 5px 5px 0px;border-right:5px solid #949494;display:flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;user-select:none;cursor:pointer;box-sizing: border-box !important;}
-	.nrlFilterBtn h2{font-family:"TP2","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:400;color:#D1D1D1;text-align:left;text-transform:uppercase;padding:0px;margin:0px;display:inline-block;width:auto;}
-	.nrlFilterBtn h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:20px;line-height:20px;font-style:normal;font-weight:900;color:#D1D1D1;text-align:left;text-transform:uppercase;padding:0px;margin:0px;display:inline-block;width:auto;}
-	.nrlBtnIco{width:25px;height:25px;display:inline-block;margin:0px 10px 0px 14px;padding:0;}
-	.nrlBtnIco img{width:auto;height:auto;}
-	.nrlBtnCounter{}
-	.nrlBtnChev{width:9px;height:14px;margin:0px 14px 0px 10px;padding:0;display:inline-block;}
-	.nrlBtnChev img{width:100%;height:auto;}
+	.nrlFilterBtn{width:240px;height:40px;margin:0px 0px 0px 0px;padding:0px 42px 0px 0px;background:#282828;border-radius:0px 5px 5px 0px;border-right:5px solid #949494;display:flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;user-select:none;cursor:pointer;position:relative;box-sizing: border-box !important;}
+	.nrlFilterBtn h2{font-family:"TP2","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:400;color:#D1D1D1;text-align:left;text-transform:uppercase;padding:0px;margin:2px 0px 0px 0px;display:inline-block;width:auto;}
+	.nrlFilterBtn h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:20px;line-height:20px;font-style:normal;font-weight:900;color:#D1D1D1;text-align:left;text-transform:uppercase;padding:0px;margin:2px 0px 0px 0px;display:inline-block;width:auto;}
+	.nrlBtnIco{width:25px;height:25px;display:inline-block;margin:0px 10px 0px 14px;padding:0;position: relative;}
+	.nrlBtnIco img{width:auto;height:auto;z-index:54;display:block;position:relative;}
+	.nrlBtnCounter{width:25px;height:25px;font-family:"TP2","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:900;color:var(--nrl-blk);background:var(--nrl-gree);border-radius:15px;text-align:center;text-transform:uppercase;padding:6px 0px 0px 0px;margin:0px 0px 0px 0px;display:none;position: absolute;top:0;left:0;z-index:54;box-sizing: border-box !important;}
+	.nrlBtnChev{width:14px;height:14px;margin:0px 0px 0px 0px;padding:0;display:inline-block;position:absolute;right:14px;transition:ease-in-out .3s;}
+	.nrlBtnChev img{width:9px;height:14px;margin:0px 0px 0px 3px;}
+	.nrlRotate{transform: rotate(90deg);}
 	.nrlDropDownSubHead{width:100%;height:auto;padding:5px 0px;margin:0;background:#343434;position:relative;box-sizing: border-box !important;}
 	.nrlDropDown{width:auto;height:auto;max-height:350px;overflow-y:scroll;overflow-x:hidden;margin:0px 0px 0px 0px;padding:0;background:#474747;position:absolute;left:0px;top:50px;box-shadow:0px 0px 4px 2px rgba(17,17,17,.2);}
 	.nrlDropDownOn{display:block !important;opacity:1 !important;}
@@ -190,21 +194,23 @@ page_title = "NRL Season 2026, LET'S GO! | Buy NRL Tickets | Ticketmaster Austra
 	.nrlRoundOff h1{color:#fff;}
 	.nrlRoundPast{background:#282828;border-bottom:5px solid #4A4A4A;}	
 	.nrlRoundPast h1{color:#888888;}
-	.nrlRoundOff .nrlRoundChev, .nrlRoundPast .nrlRoundChev{width:14px;height:9px;margin:0px auto;padding:0;mask:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_down_sing_img.svg") center center no-repeat;mask-size:14px 9px;background-color:#fff;transition:ease-in-out .3s all;}
-	.nrlRoundOn .nrlRoundChev, .nrlRoundPast .nrlRoundChev{width:16px;height:10px;margin:0px auto;padding:0;mask:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_down_sing_img.svg") center center no-repeat;mask-size:16px 10px;background-color:var(--nrl-gree);transition:ease-in-out .3s all;}
+	.nrlRoundOff .nrlRoundChev{width:14px;height:9px;margin:0px auto;padding:0;mask:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_down_sing_img.svg") center center no-repeat;mask-size:14px 9px;background-color:#fff;transition:ease-in-out .3s all;}
+	.nrlRoundPast .nrlRoundChev{width:14px;height:9px;margin:0px auto;padding:0;mask:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_down_sing_img.svg") center center no-repeat;mask-size:14px 9px;background-color:#888888;transition:ease-in-out .3s all;}
+	.nrlRoundOn .nrlRoundChev{width:16px;height:10px;margin:0px auto;padding:0;mask:url("https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_down_sing_img.svg") center center no-repeat;mask-size:16px 10px;background-color:var(--nrl-gree);transition:ease-in-out .3s all;}
 	/*drop down menus*/
 	.nrlFilterWrap{width:100%;max-width:1090px;height:auto;margin:20px auto 0px;display:none;flex-wrap:wrap;justify-content: center;align-content: flex-start;column-gap:10px;padding:0px 0px;z-index:52;position:relative;box-sizing: border-box !important;}
 	.nrlFilterDropDown{max-width:340px;width:100%;height:auto;margin:0px 0px 5px 0px;padding:0;background:none;display:block;position:relative;}
-	.nrlFilterBtn{width:100%;height:40px;margin:0px 0px 0px 0px;padding:0;background:#282828;border-radius:0px 5px 5px 0px;border-right:5px solid #949494;display:flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;user-select:none;cursor:pointer;box-sizing: border-box !important;}
+	.nrlFilterBtn{width:100%;height:40px;margin:0px 0px 0px 0px;padding:0px 42px 0px 0px;background:#282828;border-radius:0px 5px 5px 0px;border-right:5px solid #949494;display:flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;user-select:none;cursor:pointer;box-sizing: border-box !important;}
 	.nrlFilterBtn h2{font-family:"TP2","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:400;color:#D1D1D1;text-align:left;text-transform:uppercase;padding:0px;margin:0px;display:inline-block;width:auto;}
 	.nrlFilterBtn h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:20px;line-height:20px;font-style:normal;font-weight:900;color:#D1D1D1;text-align:left;text-transform:uppercase;padding:0px;margin:0px;display:inline-block;width:auto;}
-	.nrlBtnIco{width:25px;height:25px;display:inline-block;margin:0px 10px 0px 14px;padding:0;}
-	.nrlBtnIco img{width:auto;height:auto;}
-	.nrlBtnCounter{}
-	.nrlBtnChev{width:9px;height:14px;margin:0px 14px 0px 10px;padding:0;display:inline-block;}
-	.nrlBtnChev img{width:100%;height:auto;}
+	.nrlBtnIco{width:25px;height:25px;display:inline-block;margin:0px 10px 0px 14px;padding:0;position: relative;}
+	.nrlBtnIco img{width:auto;height:auto;z-index:54;display:block;position:relative;}
+	.nrlBtnCounter{width:25px;height:25px;font-family:"TP2","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:900;color:var(--nrl-blk);background:var(--nrl-gree);border-radius:15px;text-align:center;text-transform:uppercase;padding:6px 0px 0px 0px;margin:0px 0px 0px 0px;display:none;position: absolute;top:0;left:0;z-index:54;box-sizing: border-box !important;}
+	.nrlBtnChev{width:14px;height:14px;margin:0px 0px 0px 0px;padding:0;display:inline-block;position:absolute;right:14px;transition:ease-in-out .3s;}
+	.nrlBtnChev img{width:9px;height:14px;margin:0px 0px 0px 3px;}
+	.nrlRotate{transform: rotate(90deg);}
 	.nrlDropDownSubHead{width:100%;height:auto;padding:5px 0px;margin:0;background:#343434;position:relative;box-sizing: border-box !important;}
-	.nrlDropDown{width:auto;height:auto;margin:0px 0px 0px 0px;padding:0;background:#474747;position:relative;box-shadow:0px 0px 4px 2px rgba(17,17,17,.2);}
+	.nrlDropDown{width:auto;height:auto;margin:5px 0px 0px 0px;padding:0;background:#474747;position:relative;box-shadow:0px 0px 4px 2px rgba(17,17,17,.2);}
 	.nrlDropDownOn{display:block !important;opacity:1 !important;}
 	.nrlDropDownOff{display:none !important;opacity:0 !important;}
    /*scroll bar*/
@@ -287,39 +293,39 @@ page_title = "NRL Season 2026, LET'S GO! | Buy NRL Tickets | Ticketmaster Austra
 		<div class="nrlTitle"><h1>BROWSE MATCHES BY ROUND</h1></div>
 
 		<div class="nrlRoundsWrap">
-			<div class="nrlRound nrlRoundOff" data-round="01"><h1>01</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="02"><h1>02</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="03"><h1>03</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="04"><h1>04</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="05"><h1>05</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="06"><h1>06</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="07"><h1>07</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="08"><h1>08</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="09"><h1>09</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="10"><h1>10</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="11"><h1>11</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="12"><h1>12</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="13"><h1>13</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="14"><h1>14</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="15"><h1>15</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="16"><h1>16</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="17"><h1>17</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="18"><h1>18</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="19"><h1>19</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="20"><h1>20</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="21"><h1>21</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="22"><h1>22</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="23"><h1>23</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="24"><h1>24</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="25"><h1>25</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="26"><h1>26</h1><div class="nrlRoundChev"></div></div>
-			<div class="nrlRound nrlRoundOff" data-round="27"><h1>27</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff nrlBrdLeft" data-round="01" data-enddate="2026-03-09"><h1>01</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="02" data-enddate="2026-03-15"><h1>02</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="03" data-enddate="2026-03-22"><h1>03</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="04" data-enddate="2026-03-29"><h1>04</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="05" data-enddate="2026-04-06"><h1>05</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="06" data-enddate="2026-04-12"><h1>06</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="07" data-enddate="2026-04-19"><h1>07</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="08" data-enddate="2026-04-26"><h1>08</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="09" data-enddate="2026-05-03"><h1>09</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="10" data-enddate="2026-05-10"><h1>10</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="11" data-enddate="2026-05-17"><h1>11</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="12" data-enddate="2026-05-24"><h1>12</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="13" data-enddate="2026-05-31"><h1>13</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="14" data-enddate="2026-06-08"><h1>14</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="15" data-enddate="2026-06-14"><h1>15</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="16" data-enddate="2026-06-21"><h1>16</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="17" data-enddate="2026-06-28"><h1>17</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="18" data-enddate="2026-07-05"><h1>18</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="19" data-enddate="2026-07-12"><h1>19</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="20" data-enddate="2026-07-19"><h1>20</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="21" data-enddate="2026-07-26"><h1>21</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="22" data-enddate="2026-08-02"><h1>22</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="23" data-enddate="2026-08-09"><h1>23</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="24" data-enddate="2026-08-16"><h1>24</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="25" data-enddate="2026-08-23"><h1>25</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff" data-round="26" data-enddate="2026-08-30"><h1>26</h1><div class="nrlRoundChev"></div></div>
+			<div class="nrlRound nrlRoundOff nrlBrdRight" data-round="27" data-enddate="2026-09-06"><h1>27</h1><div class="nrlRoundChev"></div></div>
 
 		</div>
 		<div class="nrlFilterWrap">
 			<!--teams-->
 			<div id="nrlTeamMenu" class="nrlFilterDropDown">
-				<div class="nrlFilterBtn"><div class="nrlBtnIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_shield_ico.svg" alt=""><div class="nrlBtnCounter"></div></div><h2>FILTER BY:</h2><h1>TEAM</h1><div class="nrlBtnChev"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg"></div></div>
+				<div class="nrlFilterBtn"><div class="nrlBtnIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_shield_ico.svg" alt=""><div id="nrlTeamCount" class="nrlBtnCounter"></div></div><h2>FILTER BY:</h2><h1>TEAM</h1><div class="nrlBtnChev"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg"></div></div>
 				<div class="nrlDropDown nrlDropDownOff">
 					<div class="nrlDropDownSubHead">
 						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOn" data-filterbtn="All"><div class="nrlCheckBox nrlCheckBoxOn"></div><h3>Show All Teams</h3></div>
@@ -346,7 +352,7 @@ page_title = "NRL Season 2026, LET'S GO! | Buy NRL Tickets | Ticketmaster Austra
 			</div>
 			<!--venue-->
 			<div id="nrlVenueMenu" class="nrlFilterDropDown">
-				<div class="nrlFilterBtn"><div class="nrlBtnIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_venue_ico.svg" alt=""><div class="nrlBtnCounter"></div></div><h2>FILTER BY:</h2><h1>VENUE</h1><div class="nrlBtnChev"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg"></div></div>
+				<div class="nrlFilterBtn"><div class="nrlBtnIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_venue_ico.svg" alt=""><div id="nrlVenueCount" class="nrlBtnCounter"></div></div><h2>FILTER BY:</h2><h1>VENUE</h1><div class="nrlBtnChev"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg"></div></div>
 				<div class="nrlDropDown nrlDropDownOff">
 					<div class="nrlDropDownSubHead">
 						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOn" data-filterbtn="All"><div class="nrlCheckBox nrlCheckBoxOn"></div><h3>Show All Veneus</h3></div>
@@ -382,7 +388,7 @@ page_title = "NRL Season 2026, LET'S GO! | Buy NRL Tickets | Ticketmaster Austra
 			</div>
 			<!--state-->
 			<div id="nrlStateMenu" class="nrlFilterDropDown">
-				<div class="nrlFilterBtn"><div class="nrlBtnIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_map_ico.svg" alt=""><div class="nrlBtnCounter"></div></div><h2>FILTER BY:</h2><h1>STATE</h1><div class="nrlBtnChev"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg"></div></div>
+				<div class="nrlFilterBtn"><div class="nrlBtnIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_map_ico.svg" alt=""><div id="nrlStateCount" class="nrlBtnCounter"></div></div><h2>FILTER BY:</h2><h1>STATE</h1><div class="nrlBtnChev"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_chev_right_sing_img.svg"></div></div>
 				<div class="nrlDropDown nrlDropDownOff">
 					<div class="nrlDropDownSubHead">
 						<div class="nrlCheckBoxBtn nrlCheckBoxBtnOn"  data-filterbtn="All"><div class="nrlCheckBox nrlCheckBoxOn"></div><h3>Show All Veneus</h3></div>
@@ -637,7 +643,7 @@ page_title = "NRL Season 2026, LET'S GO! | Buy NRL Tickets | Ticketmaster Austra
 
 <script type="text/javascript">
 
-	//filtering, counters on menu, add double headers, grey out passed rounds, next / prev rounds button
+	//counters on menu, rotate chevron, add double headers, grey out passed rounds, next / prev rounds button
 
 	$j = jQuery.noConflict();
 	
@@ -694,7 +700,7 @@ page_title = "NRL Season 2026, LET'S GO! | Buy NRL Tickets | Ticketmaster Austra
                     }
 					
                 });
-				//checkRoundDate();
+			checkRoundDate();
             emptyFullListsOnLoad();
 		//doc ready end
 		});
@@ -761,12 +767,14 @@ $j(document).on('click', '.nrlCheckBoxBtn', function () {
 			//open drop down
 				if($j('#'+targetMenu+' .nrlDropDown').hasClass('nrlDropDownOff')){
 					$j('#'+targetMenu+' .nrlDropDown').removeClass('nrlDropDownOff').addClass('nrlDropDownOn');
+					$j(this).children('.nrlBtnChev').addClass('nrlRotate');
 				//fade out non-target
 					$j(".nrlFilterDropDown:not(#"+targetMenu+")").children('.nrlDropDown').removeClass('nrlDropDownOn').addClass('nrlDropDownOff');
 				}
 			//close
 				else if($j('#'+targetMenu+' .nrlDropDown').hasClass('nrlDropDownOn')){
 				$j('#'+targetMenu+' .nrlDropDown').removeClass('nrlDropDownOn').addClass('nrlDropDownOff');
+				$j(this).children('.nrlBtnChev').removeClass('nrlRotate');
 				}
 		});	
 //click anywhere close drop downs
@@ -774,7 +782,7 @@ $j(document).on('click', '.nrlCheckBoxBtn', function () {
 			if (($j(e.target).closest('.nrlFilterWrap').length !== 0)) 
 			{return false;}
 			$j(".nrlDropDown").removeClass('nrlDropDownOn').addClass('nrlDropDownOff');
-		
+			$j('.nrlBtnChev').removeClass('nrlRotate');
 		});		
 //add & remove items from the array
 //team check
@@ -790,7 +798,7 @@ var toggleTeam = $j(this).data('filterbtn');
 		}
 
 		roundsToDisplay();
-		//TeamCounter();
+		teamCounter();
 	}) 
 //venue any/all
 $j(document).on('click', "#nrlTeamMenu .nrlCheckBoxBtn", function () {
@@ -811,7 +819,7 @@ $j(document).on('click', "#nrlTeamMenu .nrlCheckBoxBtn", function () {
 					});
 				}
 				roundsToDisplay();
-		//TeamCounter();
+				teamCounter();
 });
 //venue check
 $j(document).on('click', "#nrlVenueMenu .nrlCheckBoxBtn", function () {
@@ -826,7 +834,7 @@ var toggleVenue = $j(this).data('filterbtn');
 		}
 
 		roundsToDisplay();
-		//TeamCounter();
+		venueCounter();
 	}) 
 //venue any/all
 $j(document).on('click', "#nrlVenueMenu .nrlCheckBoxBtn", function () {
@@ -847,7 +855,7 @@ $j(document).on('click', "#nrlVenueMenu .nrlCheckBoxBtn", function () {
 					});
 				}
 				roundsToDisplay();
-		//TeamCounter();
+				venueCounter();
 });
 //state check
 $j(document).on('click', "#nrlStateMenu .nrlCheckBoxBtn", function () {
@@ -862,7 +870,7 @@ var toggleState = $j(this).data('filterbtn');
 		}
 
 		roundsToDisplay();
-		//TeamCounter();
+		stateCounter();
 	}) 
 //state any/all
 $j(document).on('click', "#nrlStateMenu .nrlCheckBoxBtn", function () {
@@ -883,9 +891,51 @@ $j(document).on('click', "#nrlStateMenu .nrlCheckBoxBtn", function () {
 					});
 				}
 				roundsToDisplay();
-		//TeamCounter();
+				stateCounter();
 });
+//counters for menus
+let teamCounter = function(){
+	let teamCountLength = jQuery.grep(teamList, function(value) {
+						return value != "All";});
+	let teamCount = teamCountLength.length			
+	document.getElementById('nrlTeamCount').innerHTML = teamCount//.toString();
 
+	if((teamCount >= 1)){
+			$j("#nrlTeamCount").fadeIn(200);
+			$j("#nrlTeamMenu .nrlBtnIco img").fadeOut(0)
+	}else if((teamCount == 0)){
+			$j("#nrlTeamCount").fadeOut(200);
+			$j("#nrlTeamMenu .nrlBtnIco img").fadeIn(0)
+	}
+}
+let venueCounter = function(){
+	let venueCountLength = jQuery.grep(venueList, function(value) {
+						return value != "All";});
+	let venueCount = venueCountLength.length			
+	document.getElementById('nrlVenueCount').innerHTML = venueCount//.toString();
+
+	if((venueCount >= 1)){
+			$j("#nrlVenueCount").fadeIn(200);
+			$j("#nrlVenueMenu .nrlBtnIco img").fadeOut(0)
+	}else if((venueCount == 0)){
+			$j("#nrlVenueCount").fadeOut(200);
+			$j("#nrlVenueMenu .nrlBtnIco img").fadeIn(0)
+	}
+}
+let stateCounter = function(){
+	let stateCountLength = jQuery.grep(stateList, function(value) {
+						return value != "All";});
+	let stateCount = stateCountLength.length			
+	document.getElementById('nrlStateCount').innerHTML = stateCount//.toString();
+
+	if((stateCount >= 1)){
+			$j("#nrlStateCount").fadeIn(200);
+			$j("#nrlStateMenu .nrlBtnIco img").fadeOut(0)
+	}else if((stateCount == 0)){
+			$j("#nrlStateCount").fadeOut(200);
+			$j("#nrlStateMenu .nrlBtnIco img").fadeIn(0)
+	}
+}
 //empty lists on load to enable >>> the wildcard 'all' for filters
 let emptyFullListsOnLoad = function(){
 	teamList.length = 0;
@@ -894,6 +944,22 @@ let emptyFullListsOnLoad = function(){
 	venueList.push("All")
    stateList.length = 0;
 	stateList.push("All")
+}
+//check round date, grey out past
+let checkRoundDate	= function(){
+	let currentDate = new Date();
+
+	$j('.nrlRound').each(function () {
+		let roundDate = new Date($j(this).data('enddate'));
+		if(currentDate > roundDate){
+			//console.log(roundDate,"round past")
+			$j(this).addClass("nrlRoundPast");
+
+			} else {
+			return
+			}
+	});
+
 }
 /*
 testEventData = 
