@@ -1,0 +1,1634 @@
+[% # text to be displayed within <title></title>
+page_title = "Sell On Ticketmaster | Sell Your Tickets Easily And Securely | Ticketmaster Australia, Official Tickets" %]
+[% static_has_responsive_header_footer = 1; enable_leader_board = 0; %]
+[% PROCESS "layout/frame/top.tt" %]
+<style>
+  /*HOST overrides*/
+  #mainContent {padding: 0 !important;}
+  html {font-size: 16px!important;}
+  .frame {width: 100% !important;max-width: 100%;}
+  .search-full-input {font-weight: normal;}
+  .search-button {top: 9px;}
+  #mainContent *:not(.box-sizing) {box-sizing: border-box;}
+  .frame p:last-child{margin-bottom: 15px;}
+  .blue-search-input {font-size: 1.13rem!important;}
+
+  .footer__secondary-linkgroup {
+      font-size: 0.875rem;
+  }
+
+  .footer__copyright {
+    font-size: 0.875rem;
+  }
+
+  @media (min-width: 46.25em) {
+      .footer__primary {
+          font-size: 1rem;
+      }
+
+      .footer__tou {
+        font-size: 1rem;
+      }
+  }
+  @media (min-width: 23.4375em) {
+      .footer__mobile {
+          font-size: 0.875rem
+      }
+      .footer__list-mini-copyright-text {
+          font-size: 0.875rem
+      }
+      .blue-search-input {font-size: 1rem!important;}
+      .page__content-header {
+        font-size: 1rem;
+      }
+      .footer__toumob {
+          font-size: 0.875rem;
+      }
+  }
+
+</style>
+
+
+<div class="staticpage">
+   <div class="frame">
+
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link rel="preconnect" href="https://s1.ticketm.net" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+     <link rel="preload" as="image" href="https://s1.ticketm.net/tm/en-us/img/static/all-in/header_bg_small.jpg" />
+     <link rel="preload" as="image" href="https://s1.ticketm.net/tm/en-us/img/static/all-in/header_bg_wide.jpg" />
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+     <script>
+
+    $(document).ready(function($){
+
+        /*FAQs dropdowns*/
+        resetDropdownHeight();
+
+        $( window ).on( "resize",function() {
+            resetDropdownHeight();
+        });
+
+        $('.feature-dropdown').removeClass('open');
+
+        $('.feature-dropdown').on('click', function() {
+            resetDropdownHeight();
+           if (  $(this).closest( ".feature-dropdown" ).hasClass('open') ){
+                $('.feature-dropdown').removeClass('open');
+            } else {
+                $(this).css('max-height', calcREM($(this).children( 'dd' ).outerHeight() + $(this).children( 'dt' ).outerHeight()) );
+                $('.feature-dropdown').removeClass('open');
+                $(this).closest( ".feature-dropdown" ).addClass('open');
+            }
+        });
+
+        // Add adwords banner if awtrc=true
+        let query = window.query || window.location.search;
+        if (query.indexOf('awtrc=true') >= 0) {
+            $('.main-nav').before('<div class="adwords-banner-bespoke-container">Our marketplace includes resale tickets. Prices are set by the ticket seller, and may be above or below face value.</div>');
+            $('.main-nav').addClass('adwords-text-visible');
+            $('.header .container').addClass('pt-12').addClass('pt-lg-10');
+        }
+
+    });
+
+    function resetDropdownHeight() {
+        $('.feature-dropdown').each(function(){
+            const heightTransitionRatio = 1000;
+            let dtOuterHeight = $(this).children('dt').outerHeight();
+            let ddOuterHeight = $(this).children('dd').outerHeight();
+            
+            $(this).css('max-height', calcREM(dtOuterHeight) );
+            $(this).css('transition', 'max-height ' +  (dtOuterHeight + ddOuterHeight) / heightTransitionRatio + 's linear, border-bottom 0.3s ease-out, background-color 0.6s ease-out');
+        });
+    }
+
+    function calcREM(px) {
+        if( !isNaN(px) ){
+            var remInPx = parseFloat($('html').css('font-size'));
+            return (parseFloat(px) / remInPx).toString() + 'rem';
+        }
+    }
+
+</script>
+
+<!--
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "How do I list and sell my tickets with Ticketmaster?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sign in to My Account, click or tap My Tickets then select your event.
+Click or tap the Sell button*.
+Select and price the ticket(s) you'd like to sell. Or, if an instant offer is available, choose Review & Accept Offer.
+Tell us how you'd like to get paid.
+Review your listing or accept your offer, then you're all set.
+*Some events may not allow their tickets to be resold or certain ticket types may not be resold — this decision is up to the Event Organizer."
+    }
+  },{
+    "@type": "Question",
+    "name": "How do I edit or remove my listing?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "If you're editing or removing a listing on Ticketmaster.com, follow these steps:
+Sign in to My Account
+Tap My Tickets
+Tap your event to view your tickets
+Tap Edit Listing or Cancel Listing
+If editing your listing, set your new price and tap update; if removing your listing, confirm and complete
+If you're editing or removing a listing using the Ticketmaster App, follow these steps:
+Sign in to My Account
+Tap My Tickets
+Tap your event to view your tickets
+Tap Cancel Listing"
+    }
+  },{
+    "@type": "Question",
+    "name": "How and when do I get paid after selling my tickets?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Your payout will be sent typically within 7 business days after the event.
+
+To check on the status of your posted tickets, sign in to My Account. We will also notify you via email if your tickets are sold. 
+To get paid for the tickets you sell, there are a few important steps you'll want to follow. Make sure your account is up to date with a.) a valid method for your payout b.) a valid card on file to refund the buyer in case the event is postponed or canceled and c.) Tax Identification Information. This information can be updated in your Seller Details in My Account. 
+If your payout method is a bank account, make sure you have confirmed the microdeposits sent to your account within 7 days of adding your bank account to your Seller Details.
+Please note, Canadian fans can only list a ticket for sale for U.S. events if they have a U.S. bank account for payment and a U.S. tax identification number."
+    }
+  },{
+    "@type": "Question",
+    "name": "How do I verify the two Ticketmaster deposits to get paid by direct deposit?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Find the two deposits (each less than $1) in the checking account you used for your seller profile. Please note: these deposits may take 3–5 business days to appear after you add your bank account information. You will need to note the deposit amounts within 7 days of adding your bank account.
+Go to Ticketmaster.com and sign in to My Account. (You can't verify these deposits using the Ticketmaster app.)
+Click Payment Options.
+Click the Verify Now button in the alert under Selling Tickets.
+Enter the deposit amounts in the boxes.
+Click Submit.
+You'll get paid typically within 7 business days after the event once taxpayer information is validated."
+    }
+  },{
+    "@type": "Question",
+    "name": "Do I have to pay a fee to list my tickets?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Creating a listing to sell your tickets is always free. When your tickets are sold, a seller fee is collected from the total selling price of your tickets. During the listing process you'll be able to preview all listing details, including the seller fee."
+    }
+  },{
+    "@type": "Question",
+    "name": "My ticket type can't be sold. Why?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not all events or ticket types are approved for resale by the Event Organizer — they have the discretion to change resale options at any time. If resale is not available, you'll see a message detailing that the Event Organizer has not enabled resale for your event, and therefore selling your tickets through Ticketmaster is not an option. Some VIP tickets, commemorative tickets, will call and charity tickets can't be resold. Additionally, fans do not currently have the option to resell tickets on Ticketmaster.com to events where Ticketmaster is not the primary ticket provider."
+    }
+  },{
+    "@type": "Question",
+    "name": "My ticket can't be listed for resale at the price I want. Why?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For some events, the Event Organizer has placed price restrictions on the resale of tickets. When the Event Organizer places price restrictions on resale tickets, your resale price per ticket cannot fall outside of the minimum or maximum set. If it does, you'll see an alert notifying you to change your price."
+    }
+  },{
+    "@type": "Question",
+    "name": "Why can't I select the country that matches my bank account or debit card information when I try to list my ticket for sale?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In order to sell a ticket for an event in another country, you must have a valid bank account or debit card and tax identification number with the country where your event is located. For events in the U.S., you can select a U.S. checking account, a U.S. savings account, or U.S. debit card. For events in Canada, you can select either a CAN checking account or CAN savings account."
+    }
+  },{
+    "@type": "Question",
+    "name": "What tickets are eligible for resale?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ticket resale eligibility depends on the event. Most tickets bought on Ticketmaster can be resold, but the Event Organizer makes the final decision. To learn more about listing your tickets on Ticketmaster, including how to find out if they're eligible for resale, check out the information on this Help Page."
+    }
+  },{
+    "@type": "Question",
+    "name": "What's the difference between transferring and selling a ticket?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "When you transfer a ticket, you're sending it directly to a friend or someone you know—so if you sell a ticket on another resale site or platform other than Ticketmaster, that transfer process applies. On the other hand, when you sell a ticket on Ticketmaster, we void the old one and reissue an entirely new ticket to protect both the buyer and the seller."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can I sell a mobile ticket from my phone?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, you can sell mobile tickets directly from your phone using the Ticketmaster App."
+    }
+  }]
+}
+</script>
+-->
+     
+     <style>
+
+  /* EMBEDDING AVERTA */
+  @font-face {
+    font-family: 'AvertaBlack';
+    src: url("https://s1.ticketm.net/en-us/img/static/fonts/Averta-Black.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'AvertaBold';
+    src: url("https://s1.ticketm.net/en-us/img/static/fonts/Averta-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'AvertaSemiBold';
+    src: url("https://s1.ticketm.net/en-us/img/static/fonts/Averta-Semibold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'AvertaRegular';
+    src: url("https://s1.ticketm.net/en-us/img/static/fonts/Averta-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+
+  :root {
+    --smallTextRatio: 3;
+    --mediumTextRatio: 1.5;
+  }
+
+  body {
+    scroll-behavior: smooth;
+    font-family: 'AvertaRegular', helvetica, arial, sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    overflow-x: hidden;
+    color: #121212;
+    box-sizing: border-box;
+  }
+
+  * {
+      margin: 0;
+      font-family: 'AvertaRegular', helvetica, arial, sans-serif;
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .row>* {
+    padding-right: calc(var(--bs-gutter-x) * .675);
+    padding-left: calc(var(--bs-gutter-x) * .675);
+  }
+
+  .noPadding {
+    padding: 0px!important;
+  }
+
+  .noMargin {
+    margin: 0px!important;
+  }
+
+  .noHeight {
+    height: 0px!important;
+  }
+
+  #mainContent img {
+    max-width: inherit;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .w-160 {
+    width: 160%;
+  }
+
+  .underline {
+    font-family: inherit;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem; 
+    text-decoration-color: #024DDF;
+  }
+
+  #contentWrap, .staticpage {
+    background-color: #ffffff;
+    color: #121212;
+  }
+
+  p {
+    margin: 0 0 2rem;
+  }
+
+  a{
+    color:#024DDF;
+    font-weight: 600;
+  }
+
+  hr {
+    width: 150vw;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    border-top: 1px solid #121212;
+    margin-left: -50vw;
+  }
+
+  section {
+    position: relative;
+  }
+
+  /* Full width page */
+  .frame {
+    width: 100% !important;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  /* pills */
+  .pill {
+    font-family: 'AvertaSemiBold', helvetica, arial, sans-serif;
+    white-space: normal;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border-radius: 1.5rem;
+    padding: 0.75rem 0.75rem;
+    color: #ffffff;
+    background-color: #121212;
+    display: inline-block;
+    margin-right: 0.25rem;
+    margin-bottom: 0rem;
+  }
+
+  .pill.earth {
+    background-color: #048851;
+  }
+
+  .pill.jupiter {
+    background-color: #FFB939;
+    color: #121212;
+  }
+
+  .pill.callisto {
+    background-color: #A733FF;
+  }
+
+  .pill.granite {
+    background-color: #646464;
+  }
+
+  /* buttons */
+  .btn {
+    white-space: normal;
+    margin-bottom: 0.25rem;
+    text-shadow: none;
+    font-size: 1rem !important;
+    border-radius: 0.25rem;
+    padding: 1rem 1.5rem;
+    background-color: #024DDF;
+    color: #ffffff;
+    transition: all 0.3s;
+
+  }
+  .btn {
+    white-space: normal;
+    margin-bottom: 0.25rem;
+    text-shadow: none;
+    font-size: 1.25rem !important;
+    border-radius: 0.25rem;
+    padding: 1rem 3rem;
+    background-color: #024DDF;
+    color: #ffffff;
+    transition: all 0.3s;
+    line-height: 1.5rem !important;
+  }
+
+  .btn:hover, .btn:active, .btn:focus {
+    background-color: #023eb2;
+    outline:none!important;
+    color: #fff!important;
+  }
+
+
+  /* COMMON CONTENT CSS */
+  .why-choose, .darkgrey {
+    z-index: 1;
+  }
+
+  .flexible {
+    position: relative;
+  }
+
+  .staticpage .header h1, 
+  .staticpage .why-choose h2, 
+  .staticpage .why-choose h3, 
+  .staticpage .flexible h2, 
+  .staticpage .darkgrey h2, 
+  .staticpage h1, 
+  .staticpage h2, 
+  .staticpage h3, 
+  .staticpage .darkgrey .callout p, 
+  .staticpage .sub-header p {
+    font-family:'AvertaBlack', helvetica, arial, sans-serif;
+    text-transform:uppercase;
+    display: inline-block;
+    padding-bottom: 1rem;
+    position: relative;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: left;
+    font-size: 2.065rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.05rem;
+    text-wrap: wrap;
+  }
+
+  .darkgrey h2, .why-choose h3 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    letter-spacing: 0rem;
+  }
+
+  .tmaccount {
+    width: 100vw;
+    margin-bottom: 0;
+    border-top: 1px solid #d6d6d6;
+    margin-left: 0vw;
+  }
+
+  .tmaccount a {
+    float: right;
+  }
+
+  .tmaccount h2 {
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    letter-spacing: 0rem;
+  }
+
+  .darkgrey .callout p {
+    font-family: 'AvertaBlack', helvetica, arial, sans-serif;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .header::after, .box-black-bottom-right::after {
+    content: '';
+    position: absolute;
+    display: block;
+    float: right;
+    bottom: 0;
+    right: 0;
+    max-width: 3.5rem;
+    width: 3.5rem;
+    height: 6rem;
+    z-index: -1;
+  }
+
+  .header::after {
+    background-color: #FFFFFF;
+  }
+
+  .box-black-bottom-right::after {
+    background-color: #121212;
+    z-index: 0;
+  }
+
+  .flexible::before{
+    content: '';
+  /*  background-color: #121212; */
+    position: absolute;
+    display: block;
+    float: left;
+    top: 0;
+    left: 0;
+    max-width: 3.5rem;
+    width: 3.5rem;
+    height: 6rem;
+  }
+
+  /* why-choose SECTION CSS */
+  .staticpage .big-event h2, 
+  .staticpage .why-choose h2 {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+  }
+
+  .staticpage .sell-easily h2 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+
+  .staticpage .big-event h3 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+
+  .why-choose .question {
+    font-size: 1rem;
+    line-height: 1.125rem;
+    font-weight: bold;
+  }
+
+  .why-choose .answer {
+    font-size: 1rem;
+    line-height: 1.125rem;
+  }
+
+  .feature-dropdown.why1 {
+    max-height: 7.75rem;
+  }
+
+  .feature-dropdown.why2 {
+    max-height: 7.75rem;
+  }
+
+  .feature-dropdown.why3 {
+    max-height: 7.75rem;
+  }
+
+  .feature-dropdown.why4 {
+    max-height: 7.75rem; 
+  }
+
+  .why-expanded-text {
+    position: relative;
+    left: -1.25rem;
+  }
+
+
+  .staticpage .how-it-works p {
+    font-weight: bold;
+  }
+
+  .staticpage .how-it-works p.small {
+    font-weight: normal;
+  }
+
+  .staticpage .how-it-works .carousel-item .row div:first-child {
+    min-height: 15rem;
+  }
+
+  .staticpage .how-it-works h3 {
+    font-weight: bold;
+  }
+
+
+  /* DARK GREY SECTION CSS */
+  .darkgrey {
+    background: #121212;
+    color: #fff;
+  }
+
+  .darkgrey .callout p {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    letter-spacing: 0rem;
+    white-space: nowrap;
+  }
+  
+  
+  /* NEW ADDITIONS 7/24/2025 */
+  
+/* BLUE SECTIONS CSS */
+
+.blue .btn{
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.blue {
+  background: #024DDF;
+  color: #fff;
+  position: relative;
+}
+.blue a{
+  color: #fff;
+}
+.blue h2 {
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  letter-spacing: 0rem;
+}
+.blue p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+}
+
+.blue::before{
+  content: '';
+  background-color: #121212;
+  position: absolute;
+  display: block;
+  float: left;
+  bottom: 0;
+  right: 0;
+  max-width: 3.5rem;
+  width: 3.5rem;
+  height: 5rem;
+}
+
+@media (min-width: 1200px) {
+ .blue::before{
+    max-width: 14rem;
+    width: 14rem;
+    height: 10rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .blue h2 {
+    font-size: 5.2rem;
+    line-height: 4.1rem;
+    letter-spacing: -0.1rem;
+    max-width: 50rem;
+  }
+
+  .blue::before{
+    max-width: 14rem;
+    width: 14rem;
+    height: 10rem;
+  }
+
+}
+
+
+.blue-top-left .btn{
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.blue-top-left {
+  background: #024DDF;
+  color: #fff;
+  position: relative;
+}
+.blue-top-left a{
+  color: #fff;
+}
+.blue-top-left h2 {
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  letter-spacing: 0rem;
+}
+.blue-top-left p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+}
+
+.blue-top-left::before{
+  content: '';
+  background-color: #ffffff;
+  position: absolute;
+  display: block;
+  float: left;
+  top: 0;
+  left: 0;
+  max-width: 3.5rem;
+  width: 3.5rem;
+  height: 5rem;
+}
+
+@media (min-width: 1200px) {
+ .blue-top-left::before{
+    max-width: 14rem;
+    width: 14rem;
+    height: 10rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .blue-top-left h2 {
+    font-size: 5.2rem;
+    line-height: 4.1rem;
+    letter-spacing: -0.1rem;
+    max-width: 50rem;
+  }
+
+  .blue-top-left::before{
+    max-width: 14rem;
+    width: 14rem;
+    height: 10rem;
+  }
+
+}
+
+
+
+  /* FAQs SECTION CSS */
+  #faqs h2 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    letter-spacing: 0rem;
+  }
+
+  .feature-dropdown:last-child {
+    border-bottom: none;
+  }
+
+  .staticpage .img-big-event {
+    position: relative;
+    top: 0rem;
+    max-width: 100%;
+  }
+
+  .staticpage .img-slide {
+    position: relative;
+    top: 0rem;
+    max-width: 100%;
+  }
+
+
+
+  /*Dropdowns*/
+  .feature-dropdown-list{
+    margin:0 0 2rem;
+  }
+
+  .feature-dropdown-list .feature-dropdown{
+    z-index: 1;
+  }
+
+  .feature-dropdown {
+    box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    cursor: pointer;
+    max-height: 9rem;
+    transition: max-height 0.6s linear, border-bottom 0.3s ease-out, background-color 0.6s ease-out;
+    border-bottom: 1px solid rgba(214, 214, 214, 1);
+    overflow: hidden;
+    margin: 0 calc(50% - 75vw);
+    padding: 0 calc(75vw - 50%);
+  }
+
+  .feature-dropdown.open {
+    background-color: #f6f6f6;
+    margin-top: -1px;
+    padding-top: 1px;
+    border-bottom: 1px solid rgba(214, 214, 214, 0);
+  }
+
+  .feature-dropdown button {
+      font-family: 'AvertaSemiBold', helvetica, arial, sans-serif;
+      -webkit-appearance: button;
+      appearance: button;
+      -webkit-writing-mode: horizontal-tb !important;
+      writing-mode: horizontal-tb !important;
+      text-rendering: auto;
+      word-spacing: normal;
+      text-indent: 0px;
+      text-shadow: none;
+      display: inline-block;
+      text-align: center;
+      align-items: flex-start;
+      cursor: default;
+      box-sizing: border-box;
+      color: inherit;
+      font-weight: normal;
+      font-size: 1.75rem;
+      line-height: 2rem;
+      letter-spacing: inherit;
+      text-align: inherit;
+      text-transform: inherit;
+      background-color: transparent;
+      position: relative;
+      width: 100%;
+      margin: initial;
+      border-width: 0px;
+      border-style: initial;
+      border-color: initial;
+      border-image: initial;
+      padding: 1rem 2.5em 1rem 0;
+      cursor: pointer;
+  }
+
+  .feature-dropdown .question p {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .feature-dropdown svg {
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      top: 1rem;
+      right: -0.5rem;
+      margin-left: auto;
+      transform: none;
+      fill: #121212;
+      transition: transform 0.2s ease-out 0s;
+  }
+
+  .feature-dropdown dt {
+    padding-top: 1.5rem;
+    padding-bottom: calc(1.5rem - 1px);
+    border-bottom: none;
+    transition: border-bottom 0.3s linear;
+  }
+
+  .feature-dropdown.open dt {
+    border-bottom: none;
+  }
+
+  .feature-dropdown dd {
+    display: none;
+    margin: 0;
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+    display: block;
+    padding-bottom: 2rem;
+  }
+
+  .feature-dropdown dd p {
+    margin-bottom: 1rem;
+  }
+
+  .feature-dropdown.open svg {
+      transform: rotate(180deg);
+  }
+
+
+  .how-to-sell video {
+    width: 166%;
+    height: auto;
+    max-height: 500px;
+    overflow: visible;
+  }
+
+  .how-to-sell video.video-sell {
+    padding-left: 12%;
+    width: 133%;
+  }
+
+  .how-to-sell video.video-chart {
+      padding-left: 0%;
+  }
+
+  .how-to-sell video.video-sold {
+    padding-left: 12%;
+    width: 133%;
+  }
+
+
+  /* ADDITIONAL BOOTSTRAP PADDING */
+  .pe-6 {
+    padding-right: 1em !important;
+  }
+  .pb-7 {
+    padding-bottom: 5em !important;
+  }
+  .pb-8 {
+    padding-bottom: 8em !important;
+  }
+  .pb-12 {
+    padding-bottom: 12em !important;
+  }
+  .pt-7 {
+    padding-top: 4em !important;
+  }
+  .pt-8 {
+    padding-top: 6em !important;
+  }
+  .pt-12 {
+    padding-top: 8em !important;
+  }
+  .ps-7 {
+    padding-left: 1em !important;
+  }
+
+
+
+
+  /*Media queries*/
+
+  /*576px*/
+  /* SM SMALL */
+  @media (min-width: 576px) {
+
+    .why-expanded-text {
+      left: -0.75rem;
+    }
+
+    .how-to-sell video {
+      width: auto;
+      height: 62%;
+      max-height: 390px;
+    }
+
+    .how-to-sell video.video-sell {
+        padding-left: 23%;
+        width: auto;
+    }
+
+    .how-to-sell video.video-chart {
+        padding-left: 0%;
+        width: auto;
+    }
+
+    .how-to-sell video.video-sold {
+        padding-left: 23%;
+        width: auto;
+    }
+
+  }
+
+
+  /*768px*/
+  /* MD MEDIUM */
+  @media (min-width: 768px) {
+
+    .pb-md-7 {
+      padding-bottom: 6rem !important;
+    }
+
+    .ps-7 {
+      padding-left: 1.5em !important;
+    }
+
+    .pe-6 {
+      padding-right: 1.5em !important;
+    }
+
+
+    .white h2, .white h3, .why-choose h2, .darkgrey .callout p {
+      font-size: 3.38rem;
+      line-height: 2.75rem;
+      letter-spacing: 0rem;
+      white-space: nowrap;
+    }
+
+    .why-choose .question {
+      font-size: 1rem;
+      line-height: 1.125rem;
+      font-weight: bold;
+    }
+
+    .how-to-sell video {
+      width: auto;
+      height: 90%;
+      max-height: 350px;
+    }
+
+
+    .how-to-sell video.video-sell {
+        padding-left: 25%;
+    }
+
+    .how-to-sell video.video-chart {
+        padding-left: 0%;
+    }
+
+    .how-to-sell video.video-sold {
+        padding-left: 25%;
+    }
+
+  }
+
+
+  /*992px*/
+  /* LG LARGE */
+  @media (min-width: 992px) {
+
+    .ps-7 {
+      padding-left: 2em !important;
+    }
+    .pe-6 {
+      padding-right: 4rem !important;
+    }
+    .pb-7 {
+      padding-bottom: 5em !important;
+    }
+    .pb-8 {
+      padding-bottom: 8em !important;
+    }
+    .pt-8 {
+      padding-top: 6em !important;
+    }
+    .pt-12 {
+      padding-top: 12em !important;
+    }
+    .pb-lg-8 {
+      padding-bottom: 8em !important;
+    }
+
+    .header::after, .box-black-bottom-right::after {
+      max-width: 8.62rem;
+      width: 8.62rem;
+      height: 5rem;
+    }
+
+    .flexible::before{
+      max-width: 8.62rem;
+      width: 8.62rem;
+      height: 5rem;
+    }
+
+    .white h2, .darkgrey .callout p {
+      font-size: 5.2rem;
+      line-height: 4.1rem;
+      letter-spacing: -0.1rem;
+      white-space: nowrap;
+    }
+
+    .darkgrey h2, .why-choose h2, .why-choose h3 {
+      font-size: 3.4rem;
+      line-height: 2.7rem;
+      letter-spacing: 0rem;
+    }
+
+    #faqs h2 {
+      font-size: 1.75rem;
+      line-height: 1.75rem;
+      letter-spacing: 0rem;
+    }
+
+    .feature-dropdown dt {
+      border-bottom: 1px solid rgba(214, 214, 214, 1);
+      transition: border-bottom 0.5s linear;
+      transition-delay: 0.6s;
+    }
+    
+    .feature-dropdown.open dt {
+      transition: border-bottom 0.1s linear;
+    }
+
+
+    .feature-dropdown.open dt {
+      border-bottom: 1px solid rgba(214, 214, 214, 0);
+    }
+
+    .feature-dropdown {
+      border-bottom: none;
+    }
+
+    .feature-dropdown.open {
+      border-bottom: none;
+    }
+    
+    .staticpage .header h1, 
+    .staticpage .why-choose h2,
+    .staticpage .why-choose h3, 
+    .staticpage .how-it-works h2, 
+    .staticpage .flexible h2, 
+    .staticpage .darkgrey h2,
+    .staticpage .darkgrey .callout p, 
+    .staticpage .sub-header p {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      font-size: 5.2rem;
+      line-height: 4.5rem;
+      letter-spacing: -0.1rem;
+    }
+
+    .staticpage .big-event h2, 
+    .staticpage .why-choose h2,
+    .staticpage .how-to-sell h3 {
+      font-size: 3.25rem;
+      line-height: 2.75rem;
+    }
+
+    .staticpage .how-to-sell h2  {
+      font-size: 5.25rem;
+      line-height: 4.125rem;
+    }
+
+    .how-to-sell video {
+      width: auto;
+      height: 85%;
+      max-height: 500px;
+    }
+
+
+
+    .pt-lg-10 {
+      padding-top: 10rem !important;
+    }
+
+  }
+
+
+  /*1200px*/
+  /* XL EXTRA LARGE */
+  @media (min-width: 1200px) {
+
+    .header::after, .box-black-bottom-right::after {
+      max-width: 14rem;
+      width: 14rem;
+      height: 10rem;
+    }
+    
+    .flexible::before{
+      max-width: 14rem;
+      width: 14rem;
+      height: 10rem;
+    }
+
+    .btn {
+      white-space: normal;
+      margin-bottom: 0.25rem;
+      text-shadow: none;
+      font-size: 1.25rem !important;
+      border-radius: 0.25rem;
+      padding: 1rem 3rem;
+      background-color: #024DDF;
+      color: #ffffff;
+      transition: all 0.3s;
+    }
+
+    .tmaccount h2 {
+      font-size: 4rem;
+      line-height: 3.38rem;
+      letter-spacing: 0rem;
+    }
+
+    .how-to-sell video {
+      width: auto;
+      height: 93%;
+      max-height: 500px;
+    }
+
+    .how-to-sell video.video-sell {
+        padding-left: 23%;
+    }
+
+    .how-to-sell video.video-chart {
+        padding-left: 0%;
+    }
+
+    .how-to-sell video.video-sold {
+        padding-left: 23%;
+    }
+
+    .pt-xl-7 {
+      padding-top: 5rem !important;
+    }
+
+    .pt-xl-8 {
+      padding-top: 6rem !important;
+    }
+
+    .pt-xl-9 {
+      padding-top: 8rem !important;
+    }
+    
+    .pb-xl-8 {
+      padding-bottom: 6rem !important;
+    }
+
+
+  }
+
+
+  /*1400px*/
+  /* XXL EXTRA EXTRA LARGE */
+  @media (min-width: 1400px){
+
+    .sticker {
+      left: -4rem;
+      bottom: -2rem;
+      position: relative;
+    }
+
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1248px;
+    }
+
+    .ps-7 {
+      padding-left: 5em !important;
+    }
+    .pe-6 {
+      padding-right: 6rem !important;
+    }
+
+  }
+
+
+
+
+.adwords-banner-bespoke-container {
+    background: #262626;
+    color: #fff;
+    font-size: 12px;
+    padding: 8px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+@media (min-width: 300px){
+  .adwords-text-visible {
+      top: 82px;
+  }
+}
+
+@media (min-width: 329px){
+  .adwords-text-visible {
+      top: 62px;
+  }
+}
+
+@media (min-width: 637px){
+  .adwords-text-visible {
+      top: 35px;
+  }
+}
+
+  
+
+</style>
+
+         <!-- START DARK GREY BLOCK -->
+         <section id="darkgrey" class="darkgrey noPadding header">
+            <div class="container pt-8 pt-xl-8 pb-lg-3 pb-xl-3 pb-xxl-5">
+               <div class="row callout">
+                  <div class="noHeight col-xl-2 d-none d-xl-block">
+                     <svg aria-label="Illustration of a digital ticket" class="sticker" width="244" height="240" viewBox="0 0 244 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g filter="url(#filter0_d_2776_6441)">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M184.631 19.8622C188.1 17.6831 190.152 16.3993 190.152 16.3993L192.804 11.6272C184.251 8.56978 174.86 7.4549 165.237 8.75981C134.378 12.9364 112.408 40.4072 114.683 71.0241C116.219 70.851 117.792 70.5343 119.264 69.9979C122.17 68.938 123.63 66.0283 124.924 62.975C126.646 40.783 143.642 22.0243 166.616 18.9162C172.817 18.0758 178.9 18.4517 184.631 19.8622Z" fill="white"/>
+                     <path d="M142.341 41.4842L176.228 49.5628L141.343 195.743L41.4121 171.917L76.2973 25.7407L110.18 33.8194" fill="white"/>
+                     <path d="M107.973 122.449L110.942 136.224L123.984 141.596L111.788 148.669L110.71 162.724L100.202 153.319L86.4886 156.63L92.1949 143.741L84.8008 131.735L98.8318 133.175L107.973 122.444V122.449Z" fill="#024DDF"/>
+                     <path d="M152.405 102.047L75.9727 84.0793L74.2692 91.3017L150.701 109.269L152.405 102.047Z" fill="#024DDF"/>
+                     <path d="M119.183 109.372L72.5859 98.4185L70.8825 105.641L117.48 116.595L119.183 109.372Z" fill="#024DDF"/>
+                     <path d="M155.133 90.4297L78.3281 72.3763L86.0945 39.4409L162.899 57.4944L155.133 90.4297ZM81.378 70.4928L153.242 87.3849L159.845 59.3821L87.9811 42.4899L81.378 70.4928Z" fill="#024DDF"/>
+                     <path d="M149.114 81.5809L153.561 62.7296L92.0954 48.2805L87.6492 67.1317L149.114 81.5809Z" fill="#024DDF"/>
+                     <path d="M163.45 143.605L151.082 131.992L148.641 129.703L135.854 117.701L172.448 113.546L170.053 121.544L165.929 135.341L163.45 143.609V143.605Z" fill="#024DDF"/>
+                     <path d="M57.5989 219.121C56.4441 219.67 55.2513 220.169 54.0203 220.599H54.0119C52.8401 221.013 51.6346 221.372 50.3994 221.659C49.841 221.79 49.2784 221.913 48.7158 222.018C30.9327 225.338 13.285 214.696 6.68613 197.081C6.26313 195.954 5.88243 194.792 5.55248 193.61C5.32829 192.812 5.12948 192.001 4.95182 191.173C4.95182 191.144 4.93913 191.118 4.9349 191.089C4.30885 188.162 4.00429 185.257 4.00006 182.402C3.97045 164.649 15.4508 149.036 32.2483 144.995C32.7686 144.872 33.2889 144.758 33.8219 144.657L34.5114 144.522C35.5773 144.34 36.6433 144.201 37.705 144.116H37.7135C38.9952 144.006 40.2727 143.977 41.5375 144.015C58.6691 144.471 74.003 157.347 77.8862 175.523C81.7736 193.699 73.0428 211.706 57.5947 219.113L57.5989 219.121Z" fill="white"/>
+                     <path d="M57.7698 219.92L48.7345 222.056L32.25 144.961L41.3742 143.221L57.7741 219.915L57.7698 219.92Z" fill="white"/>
+                     <path d="M84.9861 174.015C89.4234 194.763 77.4143 215.274 57.77 219.919C37.6646 224.67 17.28 211.076 12.6566 189.446C8.03314 167.815 21.0828 147.089 41.3701 143.221C61.2006 139.441 80.5488 153.259 84.9903 174.011H84.9861V174.015Z" fill="#024DDF"/>
+                     <path d="M201.969 203.366L197.794 189.916L112.74 216.267L116.915 229.718C118.087 233.379 138.04 230.465 161.508 223.197C184.977 215.929 203.081 207.057 201.973 203.374L201.969 203.366Z" fill="white"/>
+                     <path d="M135.917 213.446L130.143 214.844L134.098 231.124L139.872 229.726L135.917 213.446Z" fill="#024DDF"/>
+                     <path d="M141.246 212.149L138.797 212.741L142.752 229.02L145.201 228.429L141.246 212.149Z" fill="#024DDF"/>
+                     <path d="M157.293 209.438C180.808 202.154 198.946 193.268 197.804 189.59C196.662 185.912 176.675 188.834 153.156 196.119C129.641 203.404 111.503 212.289 112.645 215.967C113.787 219.645 133.774 216.723 157.293 209.438Z" fill="#024DDF"/>
+                     <mask id="mask0_2776_6441" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="112" y="188" width="86" height="30">
+                     <path d="M157.295 209.438C180.81 202.154 198.948 193.268 197.806 189.59C196.664 185.912 176.677 188.834 153.158 196.119C129.643 203.404 111.505 212.289 112.647 215.967C113.789 219.645 133.776 216.723 157.295 209.438Z" fill="white"/>
+                     </mask>
+                     <g mask="url(#mask0_2776_6441)">
+                     <path d="M138.892 114.995L137.843 114.294L66.5918 220.136L67.6408 220.837L138.892 114.995Z" fill="#121212"/>
+                     <path d="M141.591 116.802L140.444 116.034L69.1934 221.875L70.3397 222.644L141.591 116.802Z" fill="#121212"/>
+                     <path d="M144.428 118.711L143.282 117.942L72.0312 223.784L73.1776 224.553L144.428 118.711Z" fill="#121212"/>
+                     <path d="M147.27 120.616L146.124 119.847L74.873 225.689L76.0194 226.457L147.27 120.616Z" fill="#121212"/>
+                     <path d="M150.114 122.525L148.968 121.756L77.7168 227.598L78.8631 228.366L150.114 122.525Z" fill="#121212"/>
+                     <path d="M152.954 124.429L151.807 123.661L80.5566 229.502L81.703 230.271L152.954 124.429Z" fill="#121212"/>
+                     <path d="M155.8 126.337L154.653 125.569L83.4023 231.411L84.5487 232.179L155.8 126.337Z" fill="#121212"/>
+                     <path d="M158.639 128.242L157.493 127.474L86.2422 233.315L87.3885 234.084L158.639 128.242Z" fill="#121212"/>
+                     <path d="M161.479 130.147L160.333 129.378L89.082 235.22L90.2284 235.989L161.479 130.147Z" fill="#121212"/>
+                     <path d="M164.317 132.052L163.171 131.283L91.9199 237.125L93.0663 237.893L164.317 132.052Z" fill="#121212"/>
+                     <path d="M167.157 133.96L166.011 133.192L94.7598 239.033L95.9061 239.802L167.157 133.96Z" fill="#121212"/>
+                     <path d="M170.009 135.866L168.862 135.097L97.6113 240.939L98.7577 241.707L170.009 135.866Z" fill="#121212"/>
+                     <path d="M172.839 137.774L171.692 137.005L100.441 242.847L101.588 243.616L172.839 137.774Z" fill="#121212"/>
+                     <path d="M175.682 139.679L174.536 138.91L103.285 244.752L104.432 245.521L175.682 139.679Z" fill="#121212"/>
+                     <path d="M178.522 141.582L177.376 140.814L106.125 246.656L107.271 247.424L178.522 141.582Z" fill="#121212"/>
+                     <path d="M181.368 143.487L180.222 142.718L108.971 248.56L110.117 249.329L181.368 143.487Z" fill="#121212"/>
+                     <path d="M184.2 145.396L183.054 144.628L111.803 250.469L112.949 251.238L184.2 145.396Z" fill="#121212"/>
+                     <path d="M187.042 147.301L185.895 146.532L114.645 252.374L115.791 253.143L187.042 147.301Z" fill="#121212"/>
+                     <path d="M189.885 149.21L188.739 148.442L117.488 254.283L118.635 255.052L189.885 149.21Z" fill="#121212"/>
+                     <path d="M192.727 151.114L191.581 150.346L120.33 256.187L121.476 256.956L192.727 151.114Z" fill="#121212"/>
+                     <path d="M195.565 153.019L194.419 152.25L123.168 258.092L124.314 258.861L195.565 153.019Z" fill="#121212"/>
+                     <path d="M198.411 154.924L197.264 154.155L126.014 259.997L127.16 260.766L198.411 154.924Z" fill="#121212"/>
+                     <path d="M201.249 156.836L200.102 156.068L128.852 261.909L129.998 262.678L201.249 156.836Z" fill="#121212"/>
+                     <path d="M204.091 158.736L202.944 157.968L131.693 263.81L132.84 264.578L204.091 158.736Z" fill="#121212"/>
+                     <path d="M206.936 160.641L205.79 159.873L134.539 265.714L135.685 266.483L206.936 160.641Z" fill="#121212"/>
+                     <path d="M209.774 162.55L208.628 161.782L137.377 267.624L138.523 268.392L209.774 162.55Z" fill="#121212"/>
+                     <path d="M212.618 164.455L211.472 163.686L140.221 269.528L141.367 270.296L212.618 164.455Z" fill="#121212"/>
+                     <path d="M215.454 166.364L214.307 165.595L143.057 271.437L144.203 272.205L215.454 166.364Z" fill="#121212"/>
+                     <path d="M218.294 168.264L217.147 167.495L145.896 273.337L147.043 274.106L218.294 168.264Z" fill="#121212"/>
+                     <path d="M221.132 170.173L219.985 169.405L148.734 275.246L149.881 276.015L221.132 170.173Z" fill="#121212"/>
+                     <path d="M223.971 172.078L222.825 171.309L151.574 277.151L152.721 277.92L223.971 172.078Z" fill="#121212"/>
+                     <path d="M226.815 173.982L225.669 173.213L154.418 279.055L155.564 279.823L226.815 173.982Z" fill="#121212"/>
+                     <path d="M229.661 175.891L228.515 175.122L157.264 280.964L158.41 281.732L229.661 175.891Z" fill="#121212"/>
+                     <path d="M232.503 177.799L231.356 177.031L160.105 282.872L161.252 283.641L232.503 177.799Z" fill="#121212"/>
+                     <path d="M235.341 179.7L234.194 178.931L162.943 284.773L164.09 285.541L235.341 179.7Z" fill="#121212"/>
+                     <path d="M238.178 181.609L237.032 180.84L165.781 286.682L166.928 287.45L238.178 181.609Z" fill="#121212"/>
+                     <path d="M241.02 183.513L239.874 182.745L168.623 288.586L169.769 289.355L241.02 183.513Z" fill="#121212"/>
+                     <path d="M243.862 185.418L242.716 184.65L171.465 290.491L172.611 291.26L243.862 185.418Z" fill="#121212"/>
+                     </g>
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M206.377 35.547C219.583 43.4018 228.783 57.4561 229.744 73.9385C231.279 100.337 211.106 122.981 184.685 124.514C177.054 124.957 169.732 123.589 163.146 120.785L161.217 125.219L158.23 129.737C166.454 133.411 175.658 135.223 185.273 134.666C217.307 132.808 241.761 105.354 239.9 73.3473C239.007 58.0262 232.248 44.4407 221.926 34.639L206.377 35.5428V35.547Z" fill="#024DDF"/>
+                     <path d="M189.914 0.668457L201.94 11.6948L204.313 13.8696L216.745 25.2676L181.111 29.2668L183.455 21.6569L187.49 8.53596L189.914 0.67268V0.668457Z" fill="white"/>
+                     </g>
+                     <defs>
+                     <filter id="filter0_d_2776_6441" x="0" y="0.668457" width="244" height="238.63" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                     <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                     <feOffset dy="4"/>
+                     <feGaussianBlur stdDeviation="2"/>
+                     <feComposite in2="hardAlpha" operator="out"/>
+                     <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                     <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2776_6441"/>
+                     <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2776_6441" result="shape"/>
+                     </filter>
+                     </defs>
+                     </svg>
+                  </div>
+                  <div class="col-10 col-lg-9 col-xl-8 col-xxl-7 offset-lg-1 offset-xl-0 offset-xxl-1 pe-4 pe-xxl-0">
+                     <h1 class="text-end" aria-label="Sell on Ticketmaster.  When you're out, get other fans in">SELL ON<br> TICKETMASTER</h1>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- END DARK GREY BLOCK -->
+
+         <main>
+
+         <!-- START WHITE BLOCK -->
+         <section class="big-event sell-easily noPadding">
+            <div class="container pt-4 pb-7 pt-xl-5">
+               
+               <div class="row pb-5 pb-lg-8 pt-xl-4 sub-header">
+                  <div class="col-12 col-md-8">
+                     <p aria-hidden="true" class="text-start">Plans change,<br/>we get it</p>
+                  </div>
+                  <div class="col-12 col-md-4 col-xl-3 align-items-md-center d-flex justify-content-end pt-3 pt-md-0">
+
+                  </div>
+               </div>
+
+               <div class="row pt-5 pt-lg-0">
+                  <div class="col-12 col-lg-5 col-sm-6 pe-sm-5">
+                     <div class="container">
+                        <div class="row col-10 col-sm-12 p-0">
+                           <h2 class="text-start pb-4 pb-lg-5">SELL YOUR TICKETS EASILY AND SECURELY</h2>
+                        </div>
+                        <div class="row col-12">
+                           <p class="pb-5">When life happens and your plans change, get other fans into the event by selling your tickets on Ticketmaster. With fans looking for tickets every day, your listing will be tagged with a Verified Resale label, which lets buyers know your tickets are legit.</p>
+                        </div>
+                        <div class="row col-12 ps-3">
+                           <a class="btn btn-tertiary col-12 col-md-10 col-lg-8 col-xxl-7 d-none d-sm-block" href="https://www.ticketmaster.com.au/user/orders" aria-label="Sell your tickets through Ticketmaster">Sell Tickets</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-7 align-items-md-center d-flex justify-content-end">
+                     <video class="object-fit-contain" autoplay muted loop playsinline aria-label="Video showing how to sell tickets on Ticketmaster" poster="https://s1.ticketm.net/tm/en-au/img/static/sell/FirstAnimationFull_fallback.png">
+                        <source src="https://s1.ticketm.net/tm/en-au/img/static/sell/FirstAnimationFull.mp4" type="video/mp4"/>
+                     </video> 
+                  </div>
+                  <div class="col-12 d-block d-sm-none pt-5">
+                     <a class="btn btn-tertiary col-12" href="https://www.ticketmaster.com/user/orders"  aria-label="Sell your tickets through Ticketmaster">Sell Tickets</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+		 
+		 <section class="how-to-sell big-event noPadding">
+            <div class="container pt-4 pb-8 pt-xl-5">
+
+               <div class="row pb-4 pb-md-5 pt-md-5">
+                  <div class="col-12">
+                     <h2 class="text-center">HOW TO SELL <br /> YOUR TICKETS:</h2>
+                  </div>
+               </div>
+
+               <div class="row pb-7">
+                  <div class="col-12 col-sm-6 col-lg-5 align-items-md-center d-flex">
+                     <div class="container">
+                        <div class="row">
+                           <h3 class="text-start pb-3 pb-lg-5">CHANGE OF<br> PLANS?</h3>
+                        </div>
+                        <div class="row">
+                           <p>When you can no longer make it and the Event Organizer has opted to let fans sell tickets, you can quickly list them from <a href="https://www.ticketmaster.com.au/user/orders" aria-label="Your Ticketmaster account">your account</a>. Just select your event, then click or tap the sell button. </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-6 offset-lg-1 overflow-visible align-items-center d-flex">
+                     <video class="video-sell object-fit-cover" autoplay muted loop playsinline aria-label="Video showing how to list tickets for sale on Ticketmaster" poster="https://s1.ticketm.net/tm/en-au/img/static/sell/Animation_SellTickets_v2_fallback.png">
+                        <source src="https://s1.ticketm.net/tm/en-au/img/static/sell/Animation_SellTickets_v2.mp4" type="video/mp4" />
+                     </video>
+                  </div>
+			   </div>
+				  
+			   <div class="row pb-7">
+                  <div class="col-12 col-sm-6 col-lg-5 align-items-md-center d-flex">
+                     <div class="container">
+                        <div class="row">
+                           <h3 class="text-start pb-3 pb-lg-5">YOU&rsquo;RE IN<br> CONTROL</h3>
+                        </div>
+                        <div class="row">
+                           <p>Check exactly how much you'll be paid based on the price you&rsquo;ve set. And you can change your ticket price or remove your listing at any time.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-6 offset-lg-1 overflow-visible align-items-center d-flex">
+
+                     <video class="video-chart object-fit-cover" autoplay muted loop playsinline aria-label="Video showing how to set ticket prices on Ticketmaster" poster="https://s1.ticketm.net/tm/en-au/img/static/sell/Animation_Chart_v2_fallback.png">
+                        <source src="https://s1.ticketm.net/tm/en-au/img/static/sell/Animation_Chart_v2.mp4" type="video/mp4" />
+                     </video> 
+
+                  </div>
+               </div>
+			   
+			   <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-5 align-items-md-center d-flex">
+                     <div class="container">
+                        <div class="row">
+                           <h3 class="text-start pb-3 pb-lg-5">SIT BACK AND<br> GET PAID</h3>
+                        </div>
+                        <div class="row">
+                           <p class="pb-3">When your tickets sell, no need to worry about the rest - we'll handle getting the tickets to the buyer. Our payment provider will then process your payment to your chosen payment method, and you&rsquo;ll receive your funds soon.</p>
+                        </div>
+                        <div class="row">
+                           <a class="btn btn-tertiary col-12 col-md-10 col-lg-6 col-xxl-5 d-none d-sm-block" href="https://www.ticketmaster.com.au/user/orders"  aria-label="Sell your tickets through Ticketmaster">Sell Tickets</a>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="col-12 col-sm-6 offset-lg-1 overflow-visible align-items-center d-flex">
+                     <video class="video-sold object-fit-cover" autoplay muted loop playsinline aria-label="Video showing how Ticketmaster handles ticket sales" poster="https://s1.ticketm.net/tm/en-au/img/static/sell/Animation_TicketsSold_v2_fallback.png">
+                        <source src="https://s1.ticketm.net/tm/en-au/img/static/sell/Animation_TicketsSold_v2.mp4" type="video/mp4" />
+                     </video>
+                  </div>
+                  <div class="col-12 d-block d-sm-none pt-5">
+                     <a class="btn btn-tertiary col-12" href="https://www.ticketmaster.com.au/user/orders"  aria-label="Sell your tickets through Ticketmaster">Sell Tickets</a>
+                  </div>
+               </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- START DARK GREY BLOCK -->
+         <section id="darkgrey" class="darkgrey noPadding">
+            <div class="container pt-8 pt-xl-9 pb-8 ps-4 pe-4">
+               <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-5 d-none d-sm-block">
+                     <video class="object-fit-contain" autoplay muted loop playsinline aria-label="Video showing how to share ticket listings on social media" poster="https://s1.ticketm.net/tm/en-au/img/static/sell/SocialPopUpLocal_fallback.png">
+                        <source src="https://s1.ticketm.net/tm/en-au/img/static/sell/SocialPopUpLocal.mp4" type="video/mp4" />
+                     </video> 
+                  </div>
+				  
+				      <div class="col-12 col-sm-6 col-lg-7 pe-6 ps-sm-4 ps-lg-5">
+                     <h2 class="text-start pb-5">SHARE YOUR<br /> LISTING</h2>
+                     <p class="col-sm-12 col-lg-9 pb-5">Know friends or other fans looking for tickets? Share your listing directly over text or email or post it on social media with a secure link. Buyers will be taken right to your posting to purchase your tickets on Ticketmaster.</p>
+                     <a class="btn btn-tertiary col-12  col-lg-6 col-xl-6 col-xxl-5" href="https://help.ticketmaster.com.au/hc/en-au/articles/7228667432081-How-do-I-sell-tickets"  aria-label="Learn more about sharing your ticket listing">Learn More</a>
+                  </div>
+				  
+               </div>
+            </div>
+         </section>
+         <!-- END DARK GREY BLOCK -->
+
+         <!-- START FAQ LIST -->
+         <section id="faqs" >
+            <div class="container pt-8 pb-5 pb-xl-8 ps-7 pe-6">
+               <div class="row">
+                  <div class="col-12">
+                     <h2 class="noPadding noMargin">FAQs</h2>
+                     <hr/>
+                     <dl class="feature-dropdown-list" itemscope itemtype="https://schema.org/FAQPage">
+
+                        <!--START FAQ-->
+                        <div class="feature-dropdown open faq1" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                           <dt>
+                              <button aria-expanded="true" itemprop="name" class="question">
+                                 How do I list and sell my tickets with Ticketmaster?
+                                 <svg viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false">
+                                    <path d="M6.99 9.16a.6.6 0 00-.4-.16.6.6 0 00-.42.16.5.5 0 00-.17.37c0 .14.07.28.17.37l5.45 4.92c.04.06.09.1.15.15.14.05.3.05.44 0a.6.6 0 00.18-.11l5.45-4.92a.5.5 0 00.16-.37.5.5 0 00-.16-.37.6.6 0 00-.41-.16.6.6 0 00-.41.16l-5.03 4.46-5-4.5z"></path>
+                                 </svg>
+                              </button>
+                           </dt>
+                           <dd itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                              
+                              <ol class="">
+                                 <li>Sign in to My Account, click or tap My Tickets then select your event.</li>
+                                 <li>Click the Sell button*.</li>
+                                 <li>Select and price the ticket(s) you'd like to sell.</li>
+                                 <li>Tell us how you'd like to get paid.</li>
+                                 <li>Review your listing and you're all set.</li>
+                              </ol>
+                              <p >*Some events may not allow their tickets to be resold, or certain ticket types may not be resold &mdash; this decision is made by the Event Organiser.</p>
+                           </dd>
+                        </div>
+                        <!--END FAQ-->
+                        <!--START FAQ-->
+                        <div class="feature-dropdown open faq2" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                           <dt>
+                              <button aria-expanded="true" itemprop="name" class="question">
+                                 Why can&rsquo;t my ticket be sold/Why is resale unavailable?
+                                 <svg viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false">
+                                    <path d="M6.99 9.16a.6.6 0 00-.4-.16.6.6 0 00-.42.16.5.5 0 00-.17.37c0 .14.07.28.17.37l5.45 4.92c.04.06.09.1.15.15.14.05.3.05.44 0a.6.6 0 00.18-.11l5.45-4.92a.5.5 0 00.16-.37.5.5 0 00-.16-.37.6.6 0 00-.41-.16.6.6 0 00-.41.16l-5.03 4.46-5-4.5z"></path>
+                                 </svg>
+                              </button>
+                           </dt>
+                           <dd itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                              <p itemprop="text">Not all events or ticket types are approved for resale by the Event Organiser &mdash; they have the discretion to change resale options at any time. VIP tickets and collector tickets can't be resold. If resale is not available, you'll see a message detailing that the Event Organiser has not enabled resale for your event, and therefore selling your tickets on Ticketmaster is not an option. To maintain the authenticity and security of tickets, fans cannot resell tickets that have been previously purchased through resale.
+                           </dd>
+                        </div>
+                        <!--END FAQ-->
+
+                        <!--START FAQ-->
+                        <div class="feature-dropdown open faq3" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                           <dt>
+                              <button aria-expanded="true" itemprop="name" class="question">
+                                 How do I remove my listing? 
+                                 <svg viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false">
+                                    <path d="M6.99 9.16a.6.6 0 00-.4-.16.6.6 0 00-.42.16.5.5 0 00-.17.37c0 .14.07.28.17.37l5.45 4.92c.04.06.09.1.15.15.14.05.3.05.44 0a.6.6 0 00.18-.11l5.45-4.92a.5.5 0 00.16-.37.5.5 0 00-.16-.37.6.6 0 00-.41-.16.6.6 0 00-.41.16l-5.03 4.46-5-4.5z"></path>
+                                 </svg>
+                              </button>
+                           </dt>
+                           <dd itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                              <p itemprop="text">If you're removing a listing on Ticketmaster.com.au, follow these steps:</p>
+                              <ol class="">
+                                 <li>Sign in to My Account.</li>
+                                 <li>Tap My Tickets</li>
+                                 <li>Tap your event to view your tickets</li>
+                                 <li>Tap Cancel Listing</li>
+                                 <li>Confirm and complete</li>                                                                  
+                              </ol>
+                              <p itemprop="text">If you're removing a listing using the Ticketmaster App, follow these steps:</p>
+                               <ol class="">
+                                 <li>Sign in to My Account.</li>
+                                 <li>Tap My Tickets</li>
+                                 <li>Tap your event to view your tickets</li>
+                                 <li>Tap Cancel Listing</li>
+                                 <li>Confirm and complete</li>                                                                  
+                              </ol>                             
+
+                           </dd>
+                        </div>
+                        <!--END FAQ-->
+
+                        <!--START FAQ-->
+                        <div class="feature-dropdown open faq4" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                           <dt>
+                              <button aria-expanded="true" itemprop="name" class="question">
+                                 How do I edit a listing?
+                                 <svg viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false">
+                                    <path d="M6.99 9.16a.6.6 0 00-.4-.16.6.6 0 00-.42.16.5.5 0 00-.17.37c0 .14.07.28.17.37l5.45 4.92c.04.06.09.1.15.15.14.05.3.05.44 0a.6.6 0 00.18-.11l5.45-4.92a.5.5 0 00.16-.37.5.5 0 00-.16-.37.6.6 0 00-.41-.16.6.6 0 00-.41.16l-5.03 4.46-5-4.5z"></path>
+                                 </svg>
+                              </button>
+                           </dt>
+                           <dd itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                               <p itemprop="text">To edit a listing, you must cancel and re-list via the steps above.</p>
+                           </dd>
+                           <hr/>
+                        </div>
+                        <!--END FAQ-->
+
+                        <!--START FAQ-->
+                        <div class="feature-dropdown open faq5" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                           <dt>
+                              <button aria-expanded="true" itemprop="name" class="question">
+                                 How and when do I get paid after selling my tickets? 
+                                 <svg viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false">
+                                    <path d="M6.99 9.16a.6.6 0 00-.4-.16.6.6 0 00-.42.16.5.5 0 00-.17.37c0 .14.07.28.17.37l5.45 4.92c.04.06.09.1.15.15.14.05.3.05.44 0a.6.6 0 00.18-.11l5.45-4.92a.5.5 0 00.16-.37.5.5 0 00-.16-.37.6.6 0 00-.41-.16.6.6 0 00-.41.16l-5.03 4.46-5-4.5z"></path>
+                                 </svg>
+                              </button>
+                           </dt>
+                           <dd itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                              <p itemprop="text">To check on the status of your listed tickets, just sign in to My Account. To get paid for the tickets you sell make sure your account is up to date with a valid payment method. If you&rsquo;ve received notification your tickets have sold. Hyperwallet, our payment provider will process payment to your chosen payment in 10-12 business days. Please allow an additional 3-5 business days for funds to process through to your nominated payment method.</p>                       
+                           </dd>
+                           <hr/>
+                        </div>
+                        <!--END FAQ-->
+
+                        <!--START FAQ-->
+                        <div class="feature-dropdown open faq6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                           <dt>
+                              <button aria-expanded="true" itemprop="name" class="question">
+                                 Do I have to pay a fee to list my tickets?
+                                 <svg viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false">
+                                    <path d="M6.99 9.16a.6.6 0 00-.4-.16.6.6 0 00-.42.16.5.5 0 00-.17.37c0 .14.07.28.17.37l5.45 4.92c.04.06.09.1.15.15.14.05.3.05.44 0a.6.6 0 00.18-.11l5.45-4.92a.5.5 0 00.16-.37.5.5 0 00-.16-.37.6.6 0 00-.41-.16.6.6 0 00-.41.16l-5.03 4.46-5-4.5z"></path>
+                                 </svg>
+                              </button>
+                           </dt>
+                           <dd itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                              <p itemprop="text">Creating a listing to sell your tickets is always free. When your tickets are sold, a seller fee is collected from the total selling price of your tickets. During the listing process you'll be able to preview all listing details, including the seller fee.</p>                       
+                           </dd>
+                           <hr/>
+                        </div>
+                        <!--END FAQ-->
+
+                     </dl>
+                  </div>
+               </div>
+               
+
+         </section>
+         <!-- END FAQ LIST -->
+		 
+		 <!-- YOU PROBABLY HAVE A SYSTEM FOR MOVING THE NOTCH AROUND BUT IT WASN'T IMMEDIATELY OBVIOUS SO I JUST DUPLICATED IT BUT CHANGED THE NOTCH PLACEMENT, FEEL FREE TO FIX IF YOU HAD A SCHEME -->
+
+      </main>
+
+      </div>
+
+
+
+
+      
+   </div>
+
+[% PROCESS "layout/frame/bottom.tt" %]
