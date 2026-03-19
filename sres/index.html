@@ -2,8 +2,8 @@
 page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Tickets Official Ticketmaster site |" %]
 [% static_has_responsive_header_footer = 1; enable_leader_board = 0; %]
 [% PROCESS "layout/frame/top.tt" %]
-<!--cut for on sale----->
- <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />
+<!--cut for on sale--
+ <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />--->
  <!--delete for on sale-->
 <!--libs--->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -76,6 +76,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	.sresCalRow{width:calc(100% - 20px);height:auto;display:flex;justify-content: flex-start;align-items: center;flex-wrap: nowrap;text-align: center;margin:5px 10px 0px 15px;box-sizing:  border-box !important;}
 	.sresCalRow h3{height:auto;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:14px;line-height:14px;font-weight:bold;text-align:left;color:#000;margin:0px 0px 0px 0px;padding:0px 0px;box-sizing:  border-box !important;}
 	.sresEasterKey{width:20px;height:20px;background:var(--sres-yel);display:inline-block;margin:0px 10px;border-radius:20px;}
+	.sresCalDayPast{background:#D9D9D9;box-shadow: 2px 2px 0px 1px rgb(0 0 0 / 06%);color:#868686;user-select:none;cursor:default;}
 
 	.sresDropDown h4{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:14px;line-height:14px;font-weight:bold;text-align:left;color:#535353;margin:10px 0px 0px 10px;padding:0px 0px;box-sizing:  border-box !important;}
 	.sresDropDownBtn{width:calc(100% - 20px);height:auto;display:flex;white-space: nowrap;text-align: center;margin:10px 0px 0px 0px;padding:0px 10px 0px 10px;flex-wrap: nowrap;justify-content: space-between;flex-wrap: wrap;justify-content: flex-start;flex-direction: row;box-sizing: border-box !important;align-content: center;align-items: center;cursor:pointer;}
@@ -120,7 +121,8 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	.sresInfoBtn{width:120px;height:auto;margin:20px auto;font-family:"Averta","Open Sans",fallback;display:inline-block;border-bottom:4px solid var(--sres-purp);font-size:18px;line-height:18px;font-weight:900;text-align:center;color:var(--sres-purp);}
 	.sresTixBtn{width:100%;margin:0px 0px 10px 0px;padding:10px 20px;background:var(--sres-purp);border-radius:5px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:18px;line-height:18px;font-weight:900;text-align:center;color:#fff;box-sizing:  border-box !important;} 
 	.sresCardBot a{width:calc(100% - 20px);margin:0px auto;display: block;}
-
+	/*expire cards and calendar*/
+	.sresExpireCard{display:none;opacity: .3;}
 	/*upsells*/
 	#sresExtras{width:100%;height:auto;margin:0;padding:50px 0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/sres/2024/sres24_wave_top_w_ico.svg') top -2px center repeat-x , var(--sres-purp);background-size: 80px 20px;display:block;position:relative;z-index:13;box-sizing:  border-box !important;}
 	#sresExtras h3,#sresGroupsStream h3{font-family:"Averta","Open Sans",fallback;display:block;font-size:40px;line-height:40px;font-weight:900;text-align:center;color:var(--sres-cream);margin:0px 0px 0px 0px;padding:0px 40px;text-transform: uppercase;}
@@ -221,6 +223,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	.sresCalRow{width:calc(100% - 20px);height:auto;display:flex;justify-content: flex-start;align-items: center;flex-wrap: nowrap;text-align: center;margin:5px 10px 0px 15px;box-sizing:  border-box !important;}
 	.sresCalRow h3{height:auto;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:14px;line-height:14px;font-weight:bold;text-align:left;color:#000;margin:0px 0px 0px 0px;padding:0px 0px;box-sizing:  border-box !important;}
 	.sresEasterKey{width:20px;height:20px;background:var(--sres-yel);display:inline-block;margin:0px 10px;border-radius:20px;}
+	.sresCalDayPast{background:#D9D9D9;box-shadow: 2px 2px 0px 1px rgb(0 0 0 / 06%);color:#868686;user-select:none;cursor:default;}
 
 	.sresDropDown h4{font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:14px;line-height:14px;font-weight:bold;text-align:left;color:#535353;margin:10px 0px 0px 10px;padding:0px 0px;box-sizing:  border-box !important;}
 	.sresDropDownBtn{width:calc(100% - 20px);height:auto;display:flex;white-space: nowrap;text-align: center;margin:10px 0px 0px 0px;padding:0px 10px 0px 10px;flex-wrap: nowrap;justify-content: space-between;flex-wrap: wrap;justify-content: flex-start;flex-direction: row;box-sizing: border-box !important;align-content: center;align-items: center;cursor:pointer;}
@@ -264,7 +267,8 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 	.sresInfoBtn{width:120px;height:auto;margin:20px auto;font-family:"Averta","Open Sans",fallback;display:inline-block;border-bottom:4px solid var(--sres-purp);font-size:18px;line-height:18px;font-weight:900;text-align:center;color:var(--sres-purp);}
 	.sresTixBtn{width:100%;margin:0px 0px 10px 0px;padding:10px 20px;background:var(--sres-purp);border-radius:5px;font-family:"Averta","Open Sans",fallback;display:inline-block;font-size:18px;line-height:18px;font-weight:900;text-align:center;color:#fff;box-sizing:  border-box !important;} 
 	.sresCardBot a{width:calc(100% - 20px);margin:0px auto;display: block;}
-
+	/*expire cards and calendar*/
+	.sresExpireCard{display:none;opacity: .3;}
 	/*upsells*/
 	#sresExtras{width:100%;height:auto;margin:0;padding:50px 0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/sres/2024/sres24_wave_top_w_ico.svg') top -2px center repeat-x , var(--sres-purp);background-size: 80px 20px;display:block;position:relative;z-index:13;box-sizing:  border-box !important;}
 	#sresExtras h3 ,#sresGroupsStream h3{font-family:"Averta","Open Sans",fallback;display:block;font-size:40px;line-height:40px;font-weight:900;text-align:center;color:var(--sres-cream);margin:0px 0px 0px 0px;padding:0px 40px;text-transform: uppercase;}
@@ -355,7 +359,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 						<div class="sresDayWrap"><div class="sresDay">M</div><div class="sresDay">T</div><div class="sresDay">W</div><div class="sresDay">T</div><div class="sresDay">F</div><div class="sresDay">S</div><div class="sresDay">S</div></div>
 						<!--week 1-->
 						<div class="sresDayWrap">
-							<div class="noDay"></div><div class="noDay"></div><div class="noDay">01</div> <div data-calday="2026-04-02" class="sresCalDay calDayOff weekDay">02</div><div data-calday="2026-04-03" class="sresCalDay calDayOff easterDay">03</div><div data-calday="2026-04-04" class="sresCalDay calDayOff easterDay">04</div><div data-calday="2026-04-05" class="sresCalDay calDayOff easterDay">05</div>
+							<div class="noDay"></div><div class="noDay"></div><div class="noDay">01</div> <div data-calday="2026-03-20" class="sresCalDay calDayOff weekDay">02</div><div data-calday="2026-03-21" class="sresCalDay calDayOff easterDay">03</div><div data-calday="2026-04-04" class="sresCalDay calDayOff easterDay">04</div><div data-calday="2026-04-05" class="sresCalDay calDayOff easterDay">05</div>
 						</div>
 						<!--week 2-->
 						<div class="sresDayWrap">
@@ -698,7 +702,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 					<p> </p>
 				</div><!--card bot-->
 				<div class="sresExtrasCardBot">
-					<a href="https://www.ticketmaster.com.au/explore/sres-school-groups" target="_blank"><div class="sresExtrasBtn">MORE INFO</div></a>
+					<a href="https://shops.ticketmasterpartners.com/sres-groups" target="_blank"><div class="sresExtrasBtn">MORE INFO</div></a>
 				</div>			
 			</div>
 		<!--reg groups-->
@@ -711,7 +715,7 @@ page_title = "Sydney Royal Easter Show 2026 | 2nd - 13th April 2026 | Buy Ticket
 					<p></p>
 				</div><!--card bot-->
 				<div class="sresExtrasCardBot">
-					<a href="https://shops.ticketmasterpartners.com/sres-groups" target="_blank"><div class="sresExtrasBtn">MORE INFO</div></a>
+					<a href="https://www.ticketmaster.com.au/explore/sres-school-groups" target="_blank"><div class="sresExtrasBtn">MORE INFO</div></a>
 				</div>			
 			</div>
 	</div>
@@ -759,6 +763,7 @@ var $j = jQuery.noConflict();
 					//call on load functions
 					emptyFullListsOnLoad();
 					cardsToDisplay();
+					setTimeout(checkCardDate,200);
 					},
                     error: function (xhr, ajaxOptions, thrownError) { 
 
@@ -799,6 +804,7 @@ function cardsToDisplay(){
 				//document.getElementById(eventID).setAttribute("data-childnum","m"+eventCountPubMinus)
 		}		
 		});
+		//	checkCardDate();
 		eventCounter();
 
 }
@@ -1033,7 +1039,40 @@ $j(document).scroll(function() {
     } else {
 		$j("#sresMenuWrap").removeClass("sresMenuToggle");
     }
-});	
+});
+
+//expire event cards // calednar pips
+let checkCardDate = function(){
+	let getDate = new Date();
+	let options = { year: 'numeric', day: '2-digit', month: '2-digit', timeZone: "Australia/Sydney"};
+	let options2 = {  hour:'2-digit',hourCycle:'h24', timeZone: "Australia/Sydney"};
+	let formatDate = new Intl.DateTimeFormat('en-AU', options).format(getDate).split("/").reverse().join("/").replace("/","").replace("/",".");
+	let currentHour = new Intl.DateTimeFormat('en-AU', options2).format(getDate)
+	let currentDate = formatDate + currentHour
+	//let currentDate = "202604.0321"
+	$j('.sresEventCard').each(function () {
+		let cardDate = ($j(this).data('date').replace("-","").replace("-",".")+"20");
+		//console.log(currentDate+"/",cardDate)
+		if(currentDate >= cardDate){
+			//console.log("trigger")
+			$j(this).addClass("sresExpireCard");
+
+			} else {
+			return
+			}
+	});
+	$j('.sresCalDay').each(function () {
+		let calDate = ($j(this).data('calday').replace("-","").replace("-",".")+"20");
+		//console.log(currentDate+"/",calDate)
+		if(currentDate >= calDate){
+			//console.log("trigger")
+			$j(this).removeClass("easterDay").addClass("sresCalDayPast");
+			$j(this).removeClass("weekDay").addClass("sresCalDayPast");
+			} else {
+			return
+			}
+	});
+}
 //test data
 let localData = "";
 </script>
