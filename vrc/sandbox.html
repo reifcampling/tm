@@ -1,0 +1,2186 @@
+[% # text to be displayed within <title></title>
+page_title = "Victoria Racing Club | Flemington Racecourse | VRC. Buy Tickets Official Ticketmaster site." %]
+[% static_has_responsive_header_footer = 1; enable_leader_board = 0; %]
+[% PROCESS "layout/frame/top.tt" %]
+<!--cut for on sale----
+ <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />-->
+<!--libs--->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+<link href="https://s1.ticketm.net/tm/en-au/img/static/fonts/averta.css" type="text/css" rel="stylesheet" />
+<link href="https://s1.ticketm.net/tm/en-au/img/static/vrc/fonts/soehne_bk.css" type="text/css" rel="stylesheet" />
+<link href="https://s1.ticketm.net/tm/en-au/img/static/vrc/fonts/BigCaslon.css" type="text/css" rel="stylesheet" />
+
+<!--my js-->
+<script type="text/javascript" src="https://s1.ticketm.net/tm/en-au/img/static/vrc/2026/vrc_moreInfo.js"></script>
+<script type="text/javascript" src="https://s1.ticketm.net/tm/en-au/img/static/vrc/2026/vrc_image_mapper.js"></script>
+<style type="text/css">
+
+	/*css var*/
+	:root {
+		--vrc-dpurp:#201547;
+		--vrc-mpurp:#575076;
+		--vrc-lav:#c2a2cd;
+		--vrc-lpurp:#d9d5de;
+		--vrc-lpurpText:#8c879d;
+		--vrc-cream:#F5F3E8;
+		--vrc-dgrey:#585757;
+		--vrc-grey:#d8d8d8;
+		--vrc-lgrey:#efefef;
+		--vrc-light:#FAF9F3;
+	  }
+/*rem = 10px = html font-size:10px;*/
+@media only screen and (min-width: 0px) and (max-width: 1000px){	
+	.frame{width: 100% !important;background-color: #201547 !important} /*FIX FOR TM HEADER CODE*/ 
+	#mainContent {background-color:#201547!important;padding: 0px 0px 0px 0px !important}
+}
+@media only screen and (min-width: 1000px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE */ 
+	#mainContent {padding: 0px 0px 0px 0px !important;background-color:#201547 !important;}
+	body{background-color: #fff;}
+}	
+
+
+@media only screen and (min-width: 1000px){	
+
+	/*TM HEADER */
+	#tmHeader{width:100%;height:auto;background: #026cdf;padding:25px 20px 55px;margin:0px auto 0px;box-sizing:border-box;display:block;position: relative;z-index:5;}
+	#tmLogo{width:220px;height:auto;display:inline-block;float:left;}
+	#tmLogo img{width:100%;height:auto;padding:0;margin:0px auto;}
+	#tmSearch{width:450px;height:35px;margin:0px auto;padding:7px 0px 0px 0px;display:inline-block;float:right;background:#004da1;border-radius:20px;color:#fff;font-family:"Open Sans","Averta",  sans-serif ;font-size:16px;font-weight: 300;text-align: center;box-sizing:border-box;}
+	/*VRC CONTENT*/
+	#vrcContent{width:100%;height:auto;margin:0px;padding:0px;background:var(--vrc-light);overflow-x:hidden;}
+	#vrcHeaderWrap{width:100%;height:auto;margin:0px auto 111px;padding:0px;position: relative;background:var(--vrc-dpurp);}
+	#vrcHeader{width:100%;max-height:480px;height:30vh;margin:0px auto ;background:var(--vrc-dpurp);background-size:cover;overflow:hidden;text-align: center;position: relative;display:flex;flex-wrap: wrap;align-content: center;justify-content: center;box-sizing:border-box !important;}
+	#vrcHeader h1{font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:46px;text-align: center;margin:0px auto 0px;font-weight: normal;padding:0px;color:#fff;position: relative;}	
+	#vrcHeader h1 br{display:none;}	
+	#vrcHeader img{width:auto;display:inline-block;}
+	/*#vrcHeader video{width:100%;height:100%;object-fit: cover;z-index:10;  position: absolute;top: 0;left: 0;right: 0;top: 60%;transform: translateY(-50%);*/
+
+	/*feature events*/
+	#vrcFeatureWrap{width:100%;height:480px;margin:0px auto;background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc23_header.png") no-repeat center bottom,var(--vrc-dpurp);background-size:cover;padding:210px 0px 210px 0px;z-index: 85;position:relative;display:block;box-sizing:border-box !important;}
+	#vrcFeatureWrap h1{font-family:"Big Caslon","Open Sans", sans-serif;font-size:50px;text-align: center;color:#fff;text-shadow:0px 0px 4px rgba(0,0,0,.75);margin:0px auto 0px;font-weight: 500;padding:0px;position: relative;display:block;z-index:87 ;}
+	#vrcFeatureWrap h2{font-family:"soehne","Open Sans", sans-serif;font-size:18px;text-align: center;color:#fff;margin:0px auto 30px;font-weight: 500;padding:0px;}	
+	#vrcFeatureEvents{width:100%;max-width:1300px;height:auto;margin:0px auto;padding:0px 0px 0px 0px;text-align: center;z-index: 85;position:relative;white-space: nowrap;display:flex;flex-direction: row;flex-wrap: nowrap;justify-content: center;align-items: flex-start;column-gap: 25px;}
+	#vrcFeatureEvents a{text-decoration:none;display:contents;}
+	.vrcFeatureEventCard{width:20%;max-width:240px;height:215px;margin:0px 0px;padding:0px;border:1px solid var(--vrc-dpurp);box-sizing:border-box !important;cursor:pointer;}
+	.vrcFeatureEventCard:hover{border:1px solid #fff}
+	.vrcFeatEventWrap{width:auto;height:auto;margin:0;padding:0;display:flex;}
+	.vrcFeatureHero{width:100%;max-width:238px;min-height:148px;height:auto;margin:0px;display:block;position:relative;overflow:hidden;}
+	.vrcFeatureHero img{width:100%;height:100%;margin:0px auto;display:block;position:absolute;top:0;left:0;right:0;object-fit: cover;}
+	.vrcFeatureTitle{max-width:238px;height:auto;min-height:64px;margin:0px;background:rgba(255,255,255,0.1);display:block;position:relative;}
+	.vrcFeatureTitle h3{font-family:"soehne","Open Sans", sans-serif;color:#fff;font-size:15px;text-align: center;margin:0px auto 0px;font-weight: 400;padding:14px 0px 0px 0px;}
+	.vrcFeatureTitle h4{font-family:"soehne","Open Sans", sans-serif;color:#fff;font-size:12px;text-align: center;margin:0px auto 0px;font-weight: 600;padding:2px 0px 0px 0px;}
+	.vrcFeatureTitle h3 br{display:none;}
+	#vrcFeatureAllCard{width:20%;background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_logo_40_ico.svg") no-repeat center center,rgba(255,255,255,0.2);background-size:auto 70%;}
+	#vrcFeatureAllCard h5{height:100%;font-family:"soehne","Open Sans", sans-serif;color:#fff;font-size:18px;text-align: center;margin:0px auto 0px;font-weight: 500;padding:82px 0px;box-sizing:border-box !important;}
+	/*video*/
+	#vrcVideoHead{width:100%;height:100%;top:0;left:0;position: absolute;object-fit: cover;z-index:86}
+	/*drop down menu*/
+	#vrcMenuMobToggle, #vrcMenuHeaderBtn, #eventMenu{display:none;}
+	#vrcMenuWrap{width:100%;height:111px;margin:0px auto;padding:0px 0px;text-align: center;z-index: 89;position:absolute;bottom:-111px;left:0px;right:0px;background:var(--vrc-cream);box-sizing:border-box !important;}
+	#vrcMenu{width:100%;height:auto;margin:0px auto;padding:32px 10px;text-align: center;z-index: 89;position:relative;white-space: nowrap;display:flex;justify-content:center;column-gap: 20px;background:var(--vrc-cream);box-sizing:border-box !important;}
+	.vrcMenuToggle{top:0;left:0;right:0;position: fixed !important;}
+	.vrcDropDown{width:33%;max-width:420px;height:45px;display:inline-block;background:transparent;padding:0px 0px 0px 0px;margin:0px 0px;vertical-align: text-top;z-index:90;position: relative;}
+	.vrcDropDownActive{border:1px solid var(--vrc-dpurp);}
+	.vrcDropDownInActive{border:1px solid var(--vrc-lpurp);}	
+	.vrcDopDownLabel{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:18px;font-weight:400;text-align: left;padding:0px;margin:0px;box-sizing: border-box !important;letter-spacing: 1.8px;}
+	.vrcDropDownBtn{height:45px;color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:13px;font-weight:600;text-align: left;padding:10px 40px 10px 24px;margin:0px;background:#fff;box-sizing: border-box !important;cursor:pointer;user-select: none;}
+	.vrcDropDownBtn p{margin:0px;padding:0px;}
+	.vrcDropDownWrap{width:500px;height:auto;max-height:450px;display:none;padding:0px 0px 0px 0px; box-sizing:border-box !important;background:#fff;box-shadow: rgb(0 0 0 / 15%) 0px 0px 20px;left:0px;top:57px;position:absolute;overflow-x: hidden;overflow-y: auto;}
+	.vrcDropDownWrap::-webkit-scrollbar{width: 10px;margin:0px 2px 0px 0px;}
+	.vrcDropDownWrap::-webkit-scrollbar-track {background: var(--vrc-grey);}
+	.vrcDropDownWrap::-webkit-scrollbar-thumb, .vrcDropDownWrap::-webkit-scrollbar-thumb:hover{background: var(--vrc-dpurp);border-radius:5px;border-right: solid 1px var(--vrc-grey);border-left: solid 1px var(--vrc-grey);box-sizing: border-box !important;}
+	.vrcDropDownWrap {scrollbar-face-color: rgb(210,210,210); /* Firefox 63 compatibility */}
+    .vrcDropDownWrap {scrollbar-track-color: rgb(46,54,69); /* Firefox 63 compatibility */}
+	.vrcCheckBoxBtn, .vrcRadioBtn{width:100%;height:auto;color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:18px;font-weight:400;text-align: left;line-height:18px;padding:12px 20px;margin:0px auto;box-sizing: border-box !important;cursor:pointer;user-select: none;transition: ease-in-out .2s background-color;white-space: nowrap;text-overflow: ellipsis;position: relative;border-top:1px solid var(--vrc-lpurp);}
+	/*carnival colour tags*/
+	.vrcCheckBoxBtn[data-raceday='MelbourneCupCarnival'],.vrcCheckBoxBtn[data-raceday='HowdenVictoriaDerbyDay'],.vrcCheckBoxBtn[data-raceday='LexusMelbourneCupDay'],.vrcCheckBoxBtn[data-raceday='TABChampionsStakesDay'],.vrcCheckBoxBtn[data-raceday='CrownOaksDay']{background:var(--vrc-cream);}
+	.vrcCheckBoxBtn h1{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:18px;font-weight:400;text-align: left;padding:0px;margin:0;display:inline-block;vertical-align: top;}
+	.vrcCheckBoxBtn h2{width:150px;color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:14px;font-weight:600;text-align: left;padding:0px 0px 0px 0px;margin:0;display:inline-block;text-transform: uppercase;vertical-align: top;}
+	.vrcCheckBoxBtn h3{width:150px;color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:18px;font-weight:600;text-align: left;padding:0px 0px 0px 0px;margin:0;display:inline-block;vertical-align: top;}	
+	.vrcCheckBoxBtn h4{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:18px;font-weight:600;text-align: left;padding:0px 0px 0px 0px;margin:0;display:inline-block;vertical-align: top;}
+	.vrcCheckBox{width:20px;height:20px;margin:0px 10px 0px 0px;transition: ease-in-out .2s background-color;display:inline-block;box-sizing: border-box !important;}
+	.vrcCheckBoxOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/vrc/2023/vrc23_tick_w_ico.svg") center center, var(--vrc-dpurp);background-size:20px 20px}
+	.vrcCheckBoxOff{background:#fff;border:2px solid var(--vrc-dpurp);}
+	.vrcRadio{width:15px;height:15px;margin:0px 10px -3px 0px;border-radius:15px;transition: ease-in-out .2s;display:inline-block;}
+	.vrcRadioOn{background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_radio_img.svg" )no-repeat center center;background-size:15px 15px;border:2px solid var(--vrc-dpurp);}
+	.vrcRadioOff{border:2px solid var(--vrc-grey);}
+	#sortDropDown{left:-220px !important;}
+	.vrcDropDownMenu{width:100%;height:auto;font-family:"Open Sans","Averta",  sans-serif ;font-size:12px;font-weight:bold;text-align: left;padding:15px 20px 15px 20px;background:#fff;margin:0px auto;box-sizing: border-box !important;cursor:pointer;user-select: none;}
+	.vrcDropDownMenuBtn{display:inline-block;}
+	.vrcDropDownMenuAll{}
+	.vrcDropDownMenuClear{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:13px;font-weight:600;text-align: left;border-bottom:1px solid var(--vrc-lpurp);}
+	.vrcDropDownMenuClose{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:13px;font-weight:600;text-align: left;border-bottom:1px solid var(--vrc-lpurp);float:right;}
+	.vrcDrownDownGradient{width:100%;height:20px;display:block;position:absolute;left:0px;right:0px;top:48px;background:linear-gradient(180deg, rgba(0,0,0,.15) 0%, rgba(0,0,0,0) 100%);}
+	.vrcDropDownDiv{width:calc(100% - 40px);height:1px;background:var(--vrc-lpurp);margin:20px auto 0px}
+	.vrcBtnWrap{width:100%;display:block;margin:0px auto 0px;}
+	/*#vrcPriceBtn*/
+	#vrcResetAllBtn{width:155px;height:28px;margin:0px;padding:8px 0px;user-select: none;cursor:pointer;color:#fff;font-family:"soehne","Open Sans", sans-serif ;font-size:10px;font-weight:600;text-align: center;letter-spacing: 1.8px;background:var(--vrc-dpurp);box-sizing:border-box !important;position: absolute;right: 0;top: -17px;display:none;z-index:81;}
+	#vrcPriceBtn p, #vrcResetAllBtn p{font-family:"Open Sans","Averta",  sans-serif ;font-size:16px;font-weight:normal;text-align: left;color:#fff;display:inline-block;margin:0;padding:0;vertical-align: top;box-sizing: border-box !important;}
+	#vrcPriceBtn img{width:15px;height:auto;vertical-align: top;margin:7px 0px 0px 7px;transform: rotate(180deg);}	
+	#vrcResetAllBtn img{width:15px;height:auto;vertical-align: top;margin:5px 0px 0px 7px;transform: rotate(0deg);}
+	.vrcMobCloseBtn, .vrcMobClose{display:none;}
+	/*price slider*/
+	#vrcPriceWrap{width:33%;max-width:420px;height:45px;margin:0px 0px 0px 0px;background:#fff;display:inline-block;text-align: center;border:1px solid var(--vrc-lpurp);box-sizing: border-box !important;vertical-align: text-top;z-index:90;position: relative;}
+	#vrcPriceInnerWrap{width:100%;height:43px;position: relative;margin:0px;padding:0px;padding:13px 15px 13px 24px;display:block;box-sizing: border-box !important;text-align: left;}
+	.vrcPriceHeader{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:13px;font-weight:600;text-align: left;padding:0px;display:inline-block;margin:0px 25px 0px 0px;box-sizing: border-box !important;letter-spacing: 1.8px;vertical-align: top;}
+	#slider{height:4px !important;width:calc(100% - 195px);margin:7px auto 7px;vertical-align: bottom;background:var(--vrc-grey);border:0px !important;vertical-align: top;display:inline-block;}
+	/*#vrcSlideArrow{width:20px;height:10px;margin:0px auto;top:-10px;left:0;right:0;background:url("https://s1.ticketm.net/tm/en-au/img/static/vrc/2023/vrc23_arrow_b_ico.svg") no-repeat top center;display:block;position: absolute;box-sizing:border-box !important;}*/
+	#vrcPriceLabel{font-family:"soehne","Open Sans",sans-serif;color:var(--vrc-dpurp);font-weight:normal;margin:-2px 0px 0px 0px;text-align:center;padding:0px;display:inline-block;background:transparent;vertical-align: top;float:right;}
+	.vrcPriceBtnMob{display:none;}
+	#vrcPriceLabel input{font-family:"soehne","Open Sans", sans-serif;font-size:15px;color:var(--vrc-dpurp);font-weight:normal;margin:0px 0px 0px 0px;text-align:right;padding:0px;user-select: none;pointer-events:none;border:none;outline:none;background:transparent;}
+	#price{width:calc(13ch - 10px);}
+	.vrcPlus{font-family:"soehne","Open Sans", sans-serif;font-size:15px;color:var(--vrc-dpurp);font-weight:normal;margin:0px 0px 0px -1px;text-align:center;padding:0px;display:inline-block;}
+	.ui-slider {position: relative;text-align: left;background:#fff;}
+	.ui-slider-range{background:var(--vrc-dpurp) !important;}
+	.ui-slider .ui-slider-handle {background:#fff;position: absolute;z-index: 2;width: 15px !important;height: 15px !important;border-radius:20px !important;border:3px solid var(--vrc-dpurp) !important;}
+	.ui-slider .ui-slider-handle:hover{background:#fff;cursor: pointer !important;opacity: .9;}
+	.ui-slider .ui-slider-handle:focus,	.ui-slider .ui-slider-handle:active{outline:none;}	
+	.ui-slider .ui-slider-range {color:#fff;position: absolute;z-index: 1;font-size: .18px !important;font-family:'Source Sans Pro', 'Averta', sans-serif;display: block;border: 0 !important;background-position: 0 0 !important;}
+	.ui-slider.ui-state-disabled .ui-slider-handle,.ui-slider.ui-state-disabled .ui-slider-range {filter: inherit;}
+	.ui-slider-horizontal {height: 10px !important;border-radius:3px !important;}
+	.ui-slider-horizontal .ui-slider-handle {top: -9px !important;margin-left: -12px !important;}
+	.ui-slider-horizontal .ui-slider-range {height: 4px !important;}
+	.ui-slider-horizontal .ui-slider-range-min {left: 0!important;}
+	.ui-slider-horizontal .ui-slider-range-max {right: 0 !important;}
+	/*date picker*/
+	.ui-widget.ui-widget-content {border:none;width:350px;box-sizing:border-box !important;}
+	.ui-datepicker-title{font-family:"soehne","Open Sans", sans-serif;font-size:15px;color:var(--vrc-dpurp);font-weight:600;text-transform:uppercase;user-select:none;}
+	.ui-datepicker-header{background:none;border:none;border-bottom:1px solid var(--vrc-dpurp);border-radius:0px;}
+	.ui-datepicker-calendar td .ui-state-default{border:1px solid var(--vrc-dpurp);background:#fff;font-family:"soehne","Open Sans", sans-serif;font-size:13px;color:var(--vrc-dpurp);font-weight:600;text-transform:uppercase;user-select:none;}
+	.ui-datepicker-calendar thead tr{font-family:"soehne","Open Sans", sans-serif;font-size:13px;color:var(--vrc-dpurp);font-weight:600;text-transform:uppercase;user-select:none;}
+	.calDateSelected{background: red !important;}
+	/*.ui-datepicker-current-day a{background:var(--vrc-grey) !important;}*/
+	.ui-state-active{background:var(--vrc-dpurp) !important;color:#fff !important;}
+	.ui-datepicker .ui-datepicker-next span{background:url('https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_arrow_cal_btn.svg') no-repeat;background-size:cover;transition:.4s ease-in-out;cursor:pointer;}
+	.ui-datepicker .ui-datepicker-prev span{background:url('https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_arrow_cal_btn.svg') no-repeat;background-size:cover;transition:.4s ease-in-out;cursor:pointer;transform: rotate(180deg);}
+	.ui-datepicker-prev:hover{background:none !important;border:none !important;left:2px;top:2px;opacity:.8;}
+	.ui-datepicker-next:hover{background:none !important;border:none !important;right:2px;top:2px;opacity:.8;}
+	/*filter counter on drop down*/
+	.vrcDropDownCount{width:22px;height:22px;margin:0px 0px 0px 5px;padding:0px 0px 0px 0px;display:inline-block;position:absolute;right:15px;}
+	.vrcDropDownCount img{width:22px;height:22px;display:block;position:relative;z-index:102;}
+	.vrcDropDownNumber{width:22px;height:22px;margin:0px auto;padding:1px 0px 0px 2px;font-family:"soehne","Open Sans",sans-serif;color:#fff;font-weight:normal;font-size:14px;text-align:center;border-radius:15px;top:0px;right:0px;left:0px;background:var(--vrc-dpurp);display:none;position:absolute;z-index:103;box-sizing:border-box !important;}
+	.vrcDropDownMobCount{width:22px;height:22px;margin:0px 5px 0px -8px;padding:0px 0px 0px 0px;display:none;position:relative;z-index:50;}
+	/*event stream*/
+	#vrcEventMod{width:100%;height:auto;position:relative;margin:22px auto;padding:1px 0px 0px 1px;z-index: 88;}
+	/*#vrcEventMod h1{font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:44px;text-align: center;margin:20px auto 30px;font-weight: normal;padding:0px;position: relative;}*/
+	#vrcEventStream{width:100%;max-width:1300px;height:auto;position:relative;margin:0px auto;text-align: center;display: flex;flex-direction: row;flex-wrap: wrap;gap:33px;align-content: center;justify-content: flex-start;align-items: stretch;}
+	.vrcEventCard{width:300px;height:auto;margin:0px;padding:0px 0px 145px 0px;border:1px solid var(--vrc-grey);font-family:"Open Sans","Averta",  sans-serif ;box-sizing:border-box !important;text-align: left;background:#fff;position: relative;transition: ease-in-out .3s all;}
+	.vrcEventCard:hover{box-shadow:0px 0px 15px 0px rgba(0, 0, 0, 0.3);}
+	.vrcEventCard a{text-decoration:none;}
+	.vrcSoldOutCard .vrcEventHero{opacity:.5;}
+	.vrcEventHero{width:298px;height:159px;background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_hori_white_logo.svg") center center no-repeat, var(--vrc-dpurp);background-size:175px auto;position: relative;overflow:hidden;display:flex;justify-content: center;align-items: center;}
+	.vrcEventHero img{width:100%;height:auto;display:block;margin:0px auto;}
+	.vrcEventType{width:auto;height:auto;margin:0px;padding:4px 10px;display:inline-block;background:var(--vrc-dpurp);color:#fff;font-family:"soehne","Open Sans", sans-serif;box-sizing:border-box !important;font-size:11px;font-weight:600;text-transform:uppercase;bottom:10px;left:10px;position: absolute;}
+	.vrcTicketType{width:100%;height:auto;margin:0px;padding:0px 20px 10px 20px;display:inline-block;color:var(--vrc-mpurp);font-family:"soehne","Open Sans", sans-serif;box-sizing:border-box !important;font-size:13px;font-weight:600;text-transform:uppercase;}
+	.vrcTicketTypeVRCMember{width:100px;height:100px;position:absolute;top:0;left:0;background:url('https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_member_tag.svg') no-repeat top left;background-size:cover;display: block;}
+	/*sandbox info*/
+	.vrcSandBoxInfoWrap{width:auto;height:auto;display:flex;flex-wrap: wrap;justify-content: flex-start;position: absolute;top:5px;left:5px;row-gap:2px;}
+	.vrcSandBoxInfo{width:100%;height:auto;color:#fff;font-family:"soehne","Open Sans", sans-serif;font-size:15px;text-align: left;margin:0px auto;font-weight: 500;background:rgba(0,0,0,.5);}
+
+	.vrcEventWrap{width:100%;height:auto;margin:0px 0px;padding:0px 0px 20px 0px;}
+	.vrcEventName{color:var(--vrc-dpurp);font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:30px;text-align: left;margin:0px;font-weight: 400;padding:10px 20px 5px 20px;}
+	.vrcHoriDiv{width:30px;height:2px;background: var(--vrc-dpurp);margin:0px 0px 0px 20px;display:block;}
+    .vrcHoriDivSec{width:60px;height:2px;background: var(--vrc-lpurp);margin:0px 0px 0px 20px;display:block;}
+	.vrcRaceTitle{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif;font-size:15px;text-align: left;margin:0px auto;font-weight: 500;padding:20px 20px 0px 20px;box-sizing: border-box !important;}
+	.vrcEventDate{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif;font-size:13px;text-align: left;margin:0px;font-weight: 600;padding:10px 20px 10px 20px;text-transform: uppercase;}
+	.vrcEventBio{width:300px;height:auto;margin:10px auto;}
+	.vrcEventBio p{margin:0px 20px;color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif;font-size:16px;text-align: left;font-weight: normal;padding:20px 0px;border-top: 1px solid var(--vrc-grey);}
+	.vrcBotWrap{width:100%;height:140px;margin:0px 0px;padding:0px 0px 0px 0px;position:absolute;bottom:0px;right:0;left:0;text-align: center;display:flex;flex-wrap: wrap;align-content: flex-end;justify-content: center;align-items: center;}
+
+	.vrcMobEventPrice{display:none;}
+	.vrcEventPrice{width:calc(49% - 15px);height:auto;display:inline-block;margin:0px 0px 0px 0px;box-sizing: border-box !important;vertical-align: top;padding:1px 0px 0px 0px;}
+	.vrcEventPrice h2{font-family:"soehne","Open Sans", sans-serif;font-size:11px;text-align: left;margin:0px;font-weight: 600;padding:0px;color:var(--vrc-mpurp);}
+	.vrcEventPrice h3{font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:26px;text-align: left;margin:0px;font-weight: 400;padding:0px;color:var(--vrc-dpurp);}
+	.vrcPriceDiv{height:50px;width:1px;background:var(--vrc-lpurp);margin:0px 0px 0px 0px;display:inline-block;}
+	.vrcInfoBtn{width:calc(49% - 15px);text-align: center;margin:0px 0px 0px 0px;padding:0px 0px;display:inline-block;text-transform: uppercase;color:var(--vrc-dpurp);cursor:pointer;}
+	.vrcInfoBtn p{font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;line-height:13px;font-weight:600;text-align: center;margin:0px 0px 0px 0px;padding:0px 0px;}
+	.vrcinfoBtnDiv{width:70px;height:1px;background:var(--vrc-lpurp);margin:2px auto 0px;padding:0;}
+	/*dynamic buttons*/
+	.vrcBookBtn{width:260px;height:45px;font-family:"soehne","Open Sans", sans-serif;font-size:13px;font-weight:600;text-align: center;margin:20px 20px 20px 20px;padding:14px 0px;display:block;text-transform: uppercase;cursor:pointer;box-sizing:border-box !important}
+	.vrcGeneralPublicBtn{background:var(--vrc-dpurp);color:#fff;}
+	.vrcVRCMemberBtn{background:var(--vrc-lav);color:var(--vrc-dpurp);}
+	.vrcBuyTicketsBtn:after{content: "BUY TICKETS";}
+	.vrcSoldOutBtn{background:var(--vrc-grey) !important;color:var(--vrc-dpurp) !important;}
+	.vrcSoldOutBtn:after{content: "SOLD OUT";}
+	.vrcPendingBtn{background:var(--vrc-mpurp) !important;color:#fff!important;}
+	.vrcPendingBtn:after{content: "ON SALE SOON";}
+	/*more info pop up*/
+	.vrcInfoLightBox{width:100%;height:100%;position: fixed;top:0;left:0;right:0;background:rgba(0,0,0,.5);z-index:97;display:none;}
+	.vrcInfoLbContent{width:800px;height:auto;max-height:95vh;display:block;margin:0px auto;background:var(--vrc-light);box-shadow:rgb(0 0 0 / 5%) 0px 0px 4px 2px;top:50%;transform: translateY(-50%);left:0;right:0;position: absolute;z-index: 98;box-sizing:border-box !important;text-align: left;overflow-y:auto;overflow-x:hidden;}
+	.vrcInfoLbContent::-webkit-scrollbar{width: 10px;margin:0px 2px 0px 0px;}
+	.vrcInfoLbContent::-webkit-scrollbar-track {background: var(--vrc-light);}
+	.vrcInfoLbContent::-webkit-scrollbar-thumb,	::-webkit-scrollbar-thumb:hover  {background: var(--vrc-dpurp);border-radius:5px;border-right: solid 1px var(--vrc-cream);border-left: solid 1px var(--vrc-cream);box-sizing: border-box !important;}
+	.vrcLbClose{width:20px;height:20px;background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_close_btn.svg") no-repeat;background-size:cover; position: absolute;top:30px;right:30px; z-index: 99;cursor:pointer;box-sizing:border-box !important;}
+	.vrcLbEventHero{width:840px;height:420px;background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_hori_white_logo.svg") center center no-repeat, var(--vrc-dpurp);background-size:50% auto;overflow:hidden;margin:0px auto;}
+	.vrcLbEventHero img{width:100%;height:auto;display:block;margin:0px auto;}
+	.vrcLbInfoWrap{width:calc(100% - 395px);height:auto;margin:20px 0px 0px 25px;display:inline-block;vertical-align: top;box-sizing: border-box !important;}
+	.vrcLbBtnWrap{height:260px;width:320px;margin:20px 25px 25px 25px;display:inline-block;vertical-align: top;border-top:4px solid var(--vrc-dpurp);border-left:1px solid var(--vrc-lpurp);text-align:center;border-right:1px solid var(--vrc-lpurp);border-bottom:1px solid var(--vrc-lpurp);box-sizing: border-box !important;}
+	.vrcLbTicketType{width:auto;height:auto;margin:5px 0px 0px 0px;padding:0px;display:inline-block;color:var(--vrc-mpurp);font-family:"soehne","Open Sans", sans-serif;box-sizing:border-box !important;font-size:13px;font-weight:600;text-transform:uppercase;}
+	.vrcLbEventType{width:auto;height:auto;margin:20px 0px;padding:4px 10px;display:inline-block;background:var(--vrc-dpurp);color:#fff;font-family:"soehne","Open Sans", sans-serif;box-sizing:border-box !important;font-size:11px;font-weight:600;text-transform:uppercase;}
+	.vrcLbEventWrap{width:calc(100% - 20px);height:auto;margin:0px 10px;padding:10px 0px;background:#efefef;border-top:1px solid #dddddd;}
+	.vrcLbEventName{width:100%;color:var(--vrc-dpurp);font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:40px;text-align: center;margin:0px auto 0px;font-weight: 400;padding:15px 0px;}
+	.vrcLbEventDate{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif;font-size:13px;text-align: left;margin:20px 0px 20px 0px;font-weight: 600;padding:0px;text-transform: uppercase;}
+	.vrcLbRaceTitle{color:var(--vrc-dpurp);font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:32px;text-align: left;margin:20px 0px 20px 0px;font-weight: 400;padding:0px;}
+	.vrcLbHoriDiv{width:30px;height:2px;background: var(--vrc-dpurp);margin:0px 0px 0px 0px;display:block;}
+	.vrcLbEventBio{width:100%;height:auto;margin:10px auto 25px;box-sizing: border-box !important;}
+	.vrcLbEventBio p{margin:0px;color:var(--vrc-dgrey);font-family:"soehne","Averta",  sans-serif ;font-size:15px;text-align: left;font-weight: normal;padding:0px;box-sizing: border-box !important;}
+	.vrcLbEventBio ul{width:100%;text-align:left;margin:10px auto;padding:0px 0px 0px 25px;box-sizing: border-box !important;}
+	.vrcLbEventBio li{padding:0px;margin:0px;list-style:disc;}
+	.vrcLbEventBio h1{color:var(--vrc-dpurp);font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:18px;text-align: left;font-weight: normal;}
+	.vrcLbEventBio h2{color:var(--vrc-purp);font-family:"Open Sans","Averta",  sans-serif ;font-size:18px;text-align: left;font-weight:bold;}
+	.vrcLbEventBio h3{color:var(--vrc-dpurp);font-family:"Open Sans","Averta",  sans-serif ;font-size:16px;text-align: left;font-weight:bold;}
+	.vrcLbEventBio h4{color:var(#000);font-family:"Open Sans","Averta",  sans-serif ;font-size:16px;text-align: left;font-weight:bold;}
+
+	.vrcLbEventPrice{width:calc(100% - 40px);height:auto;display:block;margin:0px auto 20px;padding:1px 0px 0px 0px;box-sizing:border-box !important;text-align: right;}
+	.vrcLbEventPrice h2{font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;text-align: left;color:var(--vrc-mpurp);margin:5px 0px 0px 0px;font-weight: normal;padding:0px;display: inline-block;float:left;font-weight:600;vertical-align: top;}
+	.vrcLbEventPrice h3{font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:28px;text-align: left;color:var(--vrc-dpurp);margin:-4px 0px 0px 0px;font-weight: normal;padding:0px;display: inline-block;vertical-align: top;line-height:28px;}
+	.vrcLbPriceDiv{height:1px;width:275px;background:var(--vrc-lpurp);margin:0px auto 20px;}
+	.vrcLbBookBtn{width:calc(100% - 40px);height:40px;background:var(--vrc-dpurp);color:#fff;font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;font-weight:600;text-align: center;margin:0px auto 10px;padding:10px 0px;display:inline-block;text-transform: uppercase;box-sizing:border-box !important;}
+	.vrcLbInfoBtn{width:calc(100% - 40px);height:40px;font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;font-weight:600;text-align: center;margin:0px auto;padding:10px 0px 0px 0px;border:1px solid var(--vrc-lpurp);display:inline-block;text-transform: uppercase;vertical-align: top;color:var(--vrc-dpurp);background:transparent;box-sizing:border-box !important;}
+	.vrcLbInfoBtn img{width:12px;height:12px;margin:0px 0px -1px 5px;display:inline-block;}	
+
+	/*bread crumb*/
+	#vrcFilterList{width:100%;max-width:1300px;height:auto;position:relative;margin:25px auto;padding:0px 0px 0px 0px;text-align: center;display: flex;flex-direction: row;flex-wrap: wrap;align-content: center;justify-content: flex-start;align-items: stretch;box-sizing:border-box !important;}
+	#vrcFilterWrapRaceDay, #vrcFilterWrapTicketType, #vrcFilterWrapExperienceType, #vrcFilterWrapEventName{width:auto;height:auto;margin:0;padding:0;}
+	.vrcFilterTag{width:auto;height:38px;margin:0px 5px 5px 0px;padding:9px 35px 9px 20px;border-radius:25px;background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_close_btn.svg") no-repeat, var(--vrc-lpurp);background-size:10px 10px;background-position:top 14px right 15px;color:var(--vrc-dpurp);font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:15px;font-weight:400;text-align: center;display:none;box-sizing:border-box !important;cursor:pointer;}
+
+	/*dynamic headers*/
+	#vrcEventHeaderList{width:100%;height:auto;position:relative;margin:0px auto;padding:0px 0px 0px 0px;text-align: center;display:none;}
+	.vrcEventHeader{width:100%;height:auto;position:relative;margin:0px auto;padding:0px 0px 0px 0px;text-align: center;display:none;z-index:80;}
+	.vrcEventHeaderShow{display:block;}
+	.vrcEventHeaderHide{display:none;}
+	.vrcEventHeader h1{color:var(--vrc-dpurp);font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:46px;text-align: center;margin:0px;font-weight: 400;padding:0px;}
+	.vrcEventHeader h2{color:var(--vrc-dpurp);font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:25px;font-weight:600;text-align: center;margin:0px;padding:0px;}
+	#vrcPrevRaceDay{text-align:left;left:0px;top:22px;}
+	#vrcPrevRaceDay img{padding:7px 7px 7px 0px;}
+	#vrcNextRaceDay{text-align:right;right:0px;top:22px;}
+	#vrcNextRaceDay img{padding:7px 0px 7px 7px;}	
+	.vrcArrowBtn{height:40px;width:150px;display:flex;justify-content: center; align-items: center;flex-wrap: nowrap;position:absolute;box-sizing:border-box !important;z-index:81;cursor:pointer;}
+	.vrcArrowBtn img{width:auto;height:26px;display:inline-block;padding:0px;margin:0px;}
+	.vrcArrowBtn h3{color:var(--vrc-dpurp);font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:12px;font-weight:600;padding:0px;margin:0px;display:inline-block;user-select:none;}
+
+
+	/*error throws*/
+	#vrcErrorData, #vrcErrorEventCount{width:475px;height:auto;;border-bottom:1px solid var(--vrc-darkgrey);margin:50px auto;padding:0px 0px 20px 0px;display:none;}
+	#vrcErrorData h1, #vrcErrorEventCount h1{font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:44px;text-align: center;margin:0px auto 0px;font-weight: normal;padding:20px 0px 0px 0px;position: relative;color: var(--vrc-dpurp);}
+	#vrcErrorData p, #vrcErrorEventCount p{margin:20px auto;color:var(--vrc-dpurp);font-family:"Open Sans","Averta",  sans-serif ;font-size:16px;text-align: center;font-weight: normal;padding:0px;}
+	#vrcErrorData a, #vrcErrorEventCount a{text-decoration: none;}
+	#vrcErrorData img, #vrcErrorEventCount img{display:block;width:50px;height:50px;margin:0px auto 20px;}
+	.vrcErrorBtn{width:260px;height:45px;background:var(--vrc-dpurp);color:#fff;font-family:"soehne","Open Sans", sans-serif;font-size:16px;font-weight:400;text-align: center;margin:20px auto;padding:10px 0px;display:block;text-transform: uppercase;cursor:pointer;box-sizing:border-box !important}
+	/*avail tags*/
+	.vrcAvailTag{width:auto;display:none;margin:0px;padding:4px 10px;color:#fff;font-family:"soehne","Open Sans", sans-serif;box-sizing:border-box !important;font-size:11px;font-weight:600;text-transform:uppercase;bottom:20px;left:20px;position: absolute;text-transform: uppercase;}
+	.avail-TICKETS_AVAILABLE{}
+	.avail-TICKETS_NOT_AVAILABLE{}
+	.avail-FEW_TICKETS_LEFT{background:#CD2A3F;display:inline-block !important;}	
+	.avail-FEW_TICKETS_LEFT:after{content:"Tickets selling fast";}
+	.vrcAvailSpan{display:none !important;}
+	/*	.TICKETS_AVAILABLE:after{content:"";}
+	.TICKETS_AVAILABLE{background:#75cf7a;display:none !important;}	
+	.TICKETS_NOT_AVAILABLE:after{content:"NO AVAILABILITY";}
+	.TICKETS_NOT_AVAILABLE{background:#CD2A3F;display:inline-block !important;}
+	.FEW_TICKETS_LEFT:after{content:"LOW AVAILABILITY";}
+	.FEW_TICKETS_LEFT{background:#d18645;display:inline-block !important;}*/
+}
+/*mobile*/
+@media only screen and (max-width: 999.99px) {
+
+	/*TM HEADER
+	#tmHeader{width:100%;height:auto;background:#026cdf;padding:25px 0px 25px 20px;margin:0px auto 5px;box-sizing:border-box;display:block;position: relative;}
+	#tmLogo{width:200px;height:auto;display:block;}
+	#tmLogo img{width:100%;height:auto;padding:0;margin:0px auto;}
+	#tmSearch{display:none;} */
+	/*VRC CONTENT*/
+	#vrcContent{width:100%;height:auto;margin:0px;padding:0px;background:var(--vrc-light);}
+	#vrcHeaderWrap{width:100%;height:auto;margin:0px auto 0px;padding:0px;position: relative;}
+	#vrcHeader{width:100%;height:25vh;max-height:200px;background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc23_header.png") no-repeat center center,#fff;background-size:cover;overflow:hidden;text-align: center;position: relative;display:flex;flex-wrap: wrap;align-content: center;justify-content: center;}
+	#vrcHeader h1{font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:28px;text-align: center;margin:0px auto 0px;font-weight: 400;padding:0px;color:#fff;position: relative;}	
+	#vrcHeader img{width:auto;display:inline-block;}
+	#vrcHeader video{width:100%;height:100%;object-fit: cover;z-index:10;  position: absolute;top: 0;left: 0;right: 0;/*top: 60%;transform: translateY(-50%);*/}
+	/*feature events*/
+	#vrcFeatureWrap{width:100%;height:auto;margin:0px auto;background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc23_header.png") no-repeat center center,var(--vrc-dpurp);background-size:cover;padding:75px 20px 75px 20px;z-index: 85;position:relative;display:block;overflow: hidden;box-sizing: border-box !important;}
+	#vrcFeatureWrap h1{font-family:"Big Caslon","Open Sans", sans-serif;font-size:34px;text-align: center;color:#fff;text-shadow:0px 0px 4px rgba(0,0,0,.75);margin:0px 0px 0px;font-weight: 500;padding:0px;position: relative;display:block;z-index:87 ;}
+	#vrcFeatureWrap h2{font-family:"soehne","Open Sans", sans-serif;font-size:18px;text-align: center;color:#fff;margin:0px auto 30px;font-weight: 500;padding:0px;}
+	/*video*/
+	#vrcVideoHead{width:100%;height:100%;top:0;left:0;position: absolute;object-fit: cover;z-index:9}
+
+	#vrcFeatureEvents{width:100%;height:auto;margin:0px auto;padding:0px;text-align: left;z-index: 85;position:relative;display:block;box-sizing:border-box !important;}
+	#vrcFeatureEvents a{text-decoration:none;}
+	.vrcFeatureEventCard{width:100%;height:auto;margin:0px 0px 10px 0px;padding:0px 0px 0px 0px;border:0px solid var(--vrc-dpurp);background:rgba(255,255,255,0.1);display:flex;flex-wrap: nowrap;justify-content: flex-start;align-items: stretch;box-sizing:border-box !important;cursor:pointer;position: relative;}
+	.vrcFeatureHero{width:96px;min-width:96px;height:auto;margin:0px;display:block;overflow:hidden;position: relative;}
+	.vrcFeatureHero img{width:100%;height:100%;margin:0px;display:block;position:relative;object-fit: cover;position:absolute;top:0px;left:0px;}
+	.vrcFeatureTitle{width:auto;height:auto;margin:0px;padding:10px;display:block;position:relative;box-sizing:border-box !important;}
+	.vrcFeatureTitle h3{font-family:"soehne","Open Sans", sans-serif;color:#fff;font-size:15px;text-align: left;margin:0px auto 0px;font-weight: 400;padding:0px 0px 0px 0px;}
+	.vrcFeatureTitle h4{font-family:"soehne","Open Sans", sans-serif;color:#fff;font-size:12px;text-align: left;margin:0px auto 0px;font-weight: 600;padding:2px 0px 0px 0px;}
+	.vrcFeatureTitle h3 br{display:none;}
+	#vrcFeatureAllCard{background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_logo_ico.svg") no-repeat,rgba(255,255,255,0.1);background-position:top 5px left 30px;background-size:auto 50px ;}
+	#vrcFeatureAllCard h5{height:100%;font-family:"soehne","Open Sans", sans-serif;color:#fff;font-size:16px;text-align: left;margin:0px 0px;font-weight: 500;padding:10px 10px 10px 105px;box-sizing:border-box !important;}
+	#vrcFeatureEvents::-webkit-scrollbar{height: 10px;margin:0px 0px 0px 0px;}
+	#vrcFeatureEvents::-webkit-scrollbar-track {background: var(--vrc-dpurp);}
+	#vrcFeatureEvents::-webkit-scrollbar-thumb,	::-webkit-scrollbar-thumb:hover {background: var(--vrc-mpurp);border-radius:5px;border-bottom: solid 1px var(--vrc-dpurp);border-top: solid 1px var(--vrc-dpurp);box-sizing: border-box !important;}
+	/*drop down menu*/
+	#vrcMenuMobToggle{max-width:300px;width:94%;height:50px;margin:0px auto;padding:15px 0px;display:block;border:1px solid var(--vrc-lpurp);font-weight:600;background:#fff;box-sizing:border-box !important;}
+	#vrcMenuMobToggle p{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:13px;text-align: center;vertical-align: top;padding:0px;margin:0px;display:inline-block;}
+	#vrcMenuMobToggle img{display:inline-block;width:18px;height:18px;margin:0px 10px 0px 0px;vertical-align: top;}
+	#vrcMenuWrap{width:100%;height:auto;margin:0px auto;padding:20px 0px;text-align: center;z-index: 89;position:relative;background:var(--vrc-cream);box-sizing:border-box !important;}
+	#vrcMenu{width:100%;height:auto;margin:0px auto;background:transparent;padding:20px;text-align: center;z-index: 89;display:block;position:relative;overflow-y:auto;box-sizing: border-box !important;}
+	#vrcMenu::-webkit-scrollbar{width: 10px;margin:0px 2px 0px 0px;}
+	#vrcMenu::-webkit-scrollbar-track {background: #fff}
+	#vrcMenu::-webkit-scrollbar-thumb,	::-webkit-scrollbar-thumb:hover  {background: var(--vrc-dpurp);border-radius:5px;border-right: solid 1px #fff;border-left: solid 1px #fff;box-sizing: border-box !important;}
+	.vrcMenuToggle{}
+	.vrcDropDown{width:100%;height:auto;display:block;background:transparent;padding:0px 0px 0px 0px;margin:0px 0px 10px 0px;z-index:auto;position: relative;}
+	.vrcDopDownLabel{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:14px;font-weight:400;text-align: left;padding:0px;margin:0px 0px 0px 0px;box-sizing: border-box !important;letter-spacing: 1.8px;}
+	.vrcDropDownBtn{height:55px;color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:13px;font-weight:600;text-align: left;padding:17px 20px 15px 20px;margin:0px 0px 0px 0px;border:1px solid var(--vrc-lpurp);background: #fff;box-sizing: border-box !important;cursor:pointer;user-select: none;}
+	#vrcMenuHeaderBtn{height:65px;color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:13px;font-weight:600;text-align: left;padding:25px 40px 25px 24px;margin:0px;border-bottom:1px solid var(--vrc-lpurp);background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_close_btn.svg") no-repeat, #fff;background-position:top 27px right 20px;background-size:10px 10px;box-sizing: border-box !important;user-select: none;display:none;}
+	.vrcDropDownBtn p{margin:0px;padding:0px;}
+	.vrcDropDownWrap{width:100%;height:auto;display:none;padding:0px 0px 0px 0px; box-sizing:border-box !important;background:#fff;position:relative;}
+	.vrcCheckBoxBtn, .vrcRadioBtn{width:100%;height:auto;color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:16px;font-weight:400;text-align: left;padding:10px;margin:0px auto 0px auto;box-sizing: border-box !important;cursor:pointer;user-select: none;transition: ease-in-out .2s ;white-space: wrap;display: flex;align-items: center;justify-content: flex-start;flex-wrap: nowrap;overflow: hidden;border-left:1px solid var(--vrc-lpurp);border-right:1px solid var(--vrc-lpurp);border-bottom:1px solid var(--vrc-lpurp);}
+	.vrcCheckBoxBtn:hover{}	
+	.vrcCheckBoxBtn h4{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:14px;font-weight:600;text-align: left;padding:0px;margin:0;display:inline-block;vertical-align: top;}
+	.vrcCheckBoxBtn h1{width:calc(100% - 130px);color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:14px;font-weight:400;text-align: left;padding:0px;margin:0;display:inline-block;vertical-align: top;}
+	.vrcCheckBoxBtn h2{width:90px;color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:12px;font-weight:600;text-align: left;padding:0px 0px 0px 0px;margin:0;display:inline-block;text-transform: uppercase;vertical-align: top;}
+	.vrcCheckBoxBtn h3{width:90px;color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:12px;font-weight:600;text-align: left;padding:0px 0px 0px 0px;margin:0;display:inline-block;vertical-align: top;}	
+		/*carnival colour tags*/
+		.vrcCheckBoxBtn[data-raceday='MelbourneCupCarnival'],.vrcCheckBoxBtn[data-raceday='HowdenVictoriaDerbyDay'],.vrcCheckBoxBtn[data-raceday='LexusMelbourneCupDay'],.vrcCheckBoxBtn[data-raceday='TABChampionsStakesDay'],.vrcCheckBoxBtn[data-raceday='CrownOaksDay']{background:var(--vrc-cream);}
+	.vrcCheckBox{width:20px;height:20px;margin:0px 10px -3px 0px;transition: ease-in-out .2s background-color;display:inline-block;}
+	.vrcCheckBoxOn{background:url("https://s1.ticketm.net/tm/en-au/img/static/vrc/2023/vrc23_tick_w_ico.svg") center center, var(--vrc-dpurp);background-size:20px 20px;box-sizing:border-box !important;}
+	.vrcCheckBoxOff{background:#fff;border:3px solid var(--vrc-dpurp);box-sizing:border-box !important;}
+	.vrcRadio{width:15px;height:15px;margin:0px 10px -4px 0px;border-radius:15px;transition: ease-in-out .2s;display:inline-block;}
+	.vrcRadioOn{background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_radio_img.svg" )no-repeat center center;background-size:15px 15px;border:2px solid var(--vrc-dpurp);}
+	.vrcRadioOff{border:2px solid var(--vrc-grey);}
+
+	.vrcDropDownMenu{width:100%;height:auto;color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:16px;font-weight:400;text-align: left;padding:10px;margin:0px auto 0px auto;box-sizing: border-box !important;cursor:pointer;user-select: none;transition: ease-in-out .2s ;white-space: wrap;display: flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;overflow: hidden;border-left:1px solid var(--vrc-lpurp);border-right:1px solid var(--vrc-lpurp);border-bottom:1px solid var(--vrc-lpurp);}
+	.vrcDropDownMenuBtn{display:inline-block;}
+	.vrcDropDownMenuAll{}
+	.vrcDropDownMenuClear{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:11px;font-weight:600;text-align: left;border-bottom:1px solid var(--vrc-lpurp);}
+	.vrcDropDownMenuClose{color:var(--vrc-mpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:11px;font-weight:600;text-align: left;border-bottom:1px solid var(--vrc-lpurp);}
+	.vrcDrownDownGradient{display:none;}
+	.vrcDropDownDiv{width:calc(100% - 40px);height:1px;background:var(--vrc-lpurp);margin:20px auto 0px}
+	.vrcBtnWrap{width:100%;display:block;margin:0px auto 0px;}
+	#vrcPriceBtn, #vrcResetAllBtn{display:none;}
+	#vrcResetAllBtn{opacity:0;overflow:hidden;width:0;height:0;}
+	#vrcPriceBtn p, #vrcResetAllBtn p{font-family:"Open Sans","Averta",  sans-serif ;font-size:16px;font-weight:normal;text-align: left;color:#fff;display:inline-block;margin:0;padding:0;vertical-align: top;box-sizing: border-box !important;}
+	#vrcPriceBtn img{width:15px;height:auto;vertical-align: top;margin:7px 0px 0px 7px;transform: rotate(180deg);}	
+	#vrcResetAllBtn img{width:15px;height:auto;vertical-align: top;margin:5px 0px 0px 7px;transform: rotate(0deg);}	
+	.vrcMobClose{width:100%;height:auto;margin:0px;padding:20px;border-top:1px solid var(--vrc-lpurp);box-sizing:border-box !important;display:block;z-index:100;position:fixed;right:0px;left:0px;bottom:0px;background:#fff;}
+	.vrcMobCloseBtn{width:100%;color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:13px;font-weight:600;text-align: center;padding:15px 0px;margin:0px auto;border:1px solid var(--vrc-lpurp);box-sizing: border-box !important;letter-spacing: 1.8px;}	
+	#dayMenu .vrcMobClose, #eventMenu .vrcMobClose{display:none;}
+	#experienceTypeMenu .vrcDropDownMenu, #ticketTypeMenu .vrcDropDownMenu,  #eventMenu{display:none;}
+	/*price slider*/
+	#vrcPriceWrap{max-width:1000px;width:100%;height:auto;margin:0px 0px 0px 0px;background:#fff;border:1px solid var(--vrc-lpurp);display:block;text-align: center;box-sizing: border-box !important;z-index:90;position: relative;}
+	#vrcPriceInnerWrap{width:100%;height:auto;position: relative;margin:0px;padding:20px 10px 10px 10px;display:inline-block;box-sizing: border-box !important;}
+	.vrcPriceHeader{display:none;}
+	.vrcPriceBtnMob{height:65px;width:100%;color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif ;font-size:13px;font-weight:600;text-align: left;letter-spacing:1.8px;padding:25px 40px 25px 24px;margin:0px;border-bottom:1px solid var(--vrc-lpurp);background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_downArrow_sm_img .svg") no-repeat, #fff;background-position:top 15px right 7px;background-size:45px 45px;box-sizing: border-box !important;cursor:pointer;user-select: none;display:none;}
+	#slider{height:4px !important;max-width:950px;width:calc(100% - 20px);margin:0px auto 0px;vertical-align: bottom;background:var(--vrc-grey);border:0px !important;}
+	/*#vrcSlideArrow{width:20px;height:10px;margin:0px auto;top:-10px;left:0;right:0;background:url("https://s1.ticketm.net/tm/en-au/img/static/vrc/2023/vrc23_arrow_b_ico.svg") no-repeat top center;display:block;position: absolute;box-sizing:border-box !important;}*/
+	#vrcPriceLabel{font-family:"soehne","Open Sans",sans-serif;color:var(--vrc-dpurp);font-weight:normal;margin:10px auto 0px auto;text-align:center;padding:0px;display:block;background:transparent;}
+	#vrcPriceLabel input{font-family:"soehne","Open Sans", sans-serif;font-size:16px;color:var(--vrc-dpurp);font-weight:400;margin:0px 0px 0px 0px;text-align:center;padding:0px;user-select: none;pointer-events:none;border:none;outline:none;background:transparent;}
+	#price{width:calc(9ch - 10px);}
+	.vrcPlus{font-family:"soehne","Open Sans", sans-serif;font-size:15px;color:var(--vrc-dpurp);font-weight:normal;margin:0px 0px 0px -1px;text-align:center;padding:0px;display:inline-block;}
+	.ui-slider {position: relative;text-align: left;background:#fff;}
+	.ui-slider-range{background:var(--vrc-dpurp) !important;}
+	.ui-slider .ui-slider-handle {background:#fff;position: absolute;z-index: 2;width: 15px !important;height: 15px !important;border-radius:20px !important;border:3px solid var(--vrc-dpurp) !important;}
+	.ui-slider .ui-slider-handle:hover{background:#fff;cursor: pointer !important;opacity: .9;}
+	.ui-slider .ui-slider-handle:focus,	.ui-slider .ui-slider-handle:active{outline:none;}	
+	.ui-slider .ui-slider-range {color:#fff;position: absolute;z-index: 1;font-size: .18px !important;font-family:'Source Sans Pro', 'Averta', sans-serif;display: block;border: 0 !important;background-position: 0 0 !important;}
+	.ui-slider.ui-state-disabled .ui-slider-handle,.ui-slider.ui-state-disabled .ui-slider-range {filter: inherit;}
+	.ui-slider-horizontal {height: 10px !important;border-radius:3px !important;}
+	.ui-slider-horizontal .ui-slider-handle {top: -8px !important;margin-left: -12px !important;}
+	.ui-slider-horizontal .ui-slider-range {height: 4px !important;}
+	.ui-slider-horizontal .ui-slider-range-min {left: 0!important;}
+	.ui-slider-horizontal .ui-slider-range-max {right: 0 !important;}
+	/*filter counter on drop down*/
+	.vrcDropDownCount{width:22px;height:22px;margin:0px 5px 0px 5px;padding:0px 0px 0px 0px;right:16px;display:inline-block;position:absolute;}
+	.vrcDropDownCount img{width:22px;height:22px;display:block;position:relative;z-index:102;}
+	.vrcDropDownNumber{width:22px;height:22px;margin:0px auto;padding:1px 0px 0px 2px;font-family:"soehne","Open Sans",sans-serif;color:#fff;font-weight:normal;font-size:14px;text-align:center;border-radius:15px;top:0px;right:0px;left:0px;background:var(--vrc-dpurp);display:none;position:absolute;z-index:103;box-sizing:border-box !important;}
+	.vrcDropDownMobCount{width:22px;height:22px;margin:0px 5px 0px -8px;padding:0px 0px 0px 0px;display:none;position:relative;z-index:50;}
+	#vrcTotalTypeCounter{padding:2px 0px 0px 0px !important;}
+	/*event stream*/
+	#vrcEventMod{width:100%;height:auto;position:relative;margin:22px auto;z-index: 88;}
+	/*#vrcEventMod h1{font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:44px;text-align: center;margin:20px auto 30px;font-weight: normal;padding:0px;position: relative;}*/
+	#vrcEventStream{width:100%;max-width:1300px;height:auto;position:relative;margin:0px auto;text-align: center;display: flex;flex-direction: row;flex-wrap: wrap;align-content: center;justify-content: space-evenly;align-items: stretch;}
+	
+	/*more info pop up*/
+	.vrcInfoLightBox{width:100%;height:100%;position: fixed;top:0;left:0;right:0;background:rgba(0,0,0,.7);z-index:97;display:none;}
+	.vrcInfoLbContent{max-width:800px;width:calc(100% - 40px);height:auto;max-height:calc(100% - 40px);display:block;margin:0px auto;background:var(--vrc-light);box-shadow:rgb(0 0 0 / 5%) 0px 0px 4px 2px;top:50%;transform: translateY(-50%);left:0;right:0;position: absolute;z-index: 98;box-sizing:border-box !important;text-align: left;overflow-y:scroll;overflow-x:hidden;}
+	.vrcInfoLbContent::-webkit-scrollbar{width: 10px;margin:0px 2px 0px 0px;}
+	::-webkit-scrollbar-track {background: var(--vrc-light);}
+	::-webkit-scrollbar-thumb,	::-webkit-scrollbar-thumb:hover  {background: var(--vrc-dpurp);border-radius:5px;border-right: solid 1px var(--vrc-cream);border-left: solid 1px var(--vrc-cream);box-sizing: border-box !important;}
+	.vrcLbClose{width:15px;height:15px;background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_close_btn.svg") no-repeat;background-size:cover; position: absolute;top:5px;right:5px; z-index: 99;cursor:pointer;box-sizing:border-box !important;}
+	.vrcLbEventHero{max-width:840px;width:100%;height:auto;background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_hori_white_logo.svg")center center no-repeat, var(--vrc-dpurp);background-size:50% auto;overflow:hidden;margin:0px auto;}
+	.vrcLbEventHero img{width:100%;height:auto;display:block;margin:0px auto;}
+	.vrcLbInfoWrap{width:100%;height:auto;padding:20px 20px 0px 20px;margin:0px auto;box-sizing: border-box !important;}
+	.vrcLbBtnWrap{height:auto;max-width:320px;width:96%;padding:20px 25px 25px 25px;margin:0px auto 10px;border-top:4px solid var(--vrc-dpurp);border-left:1px solid var(--vrc-lpurp);text-align:center;border-right:1px solid var(--vrc-lpurp);border-bottom:1px solid var(--vrc-lpurp);box-sizing: border-box !important;}
+	.vrcLbTicketType{width:auto;height:auto;margin:5px 0px 0px 0px;padding:0px;display:inline-block;color:var(--vrc-mpurp);font-family:"soehne","Open Sans", sans-serif;box-sizing:border-box !important;font-size:13px;font-weight:600;text-transform:uppercase;}
+	.vrcLbEventType{width:auto;height:auto;margin:20px 0px;padding:4px 10px;display:inline-block;background:var(--vrc-dpurp);color:#fff;font-family:"soehne","Open Sans", sans-serif;box-sizing:border-box !important;font-size:11px;font-weight:600;text-transform:uppercase;}
+	.vrcLbEventWrap{width:calc(100% - 20px);height:auto;margin:0px 10px;padding:10px 0px;background:#efefef;border-top:1px solid #dddddd;}
+	.vrcLbEventName{width:100%;color:var(--vrc-dpurp);font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:24px;text-align: center;margin:0px auto 0px;font-weight: 400;padding:15px 30px 15px 30px;line-height: 24px;box-sizing: border-box !important;}
+	.vrcLbEventDate{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif;font-size:13px;text-align: left;margin:20px 0px 20px 0px;font-weight: 600;padding:0px;text-transform: uppercase;}
+	.vrcLbRaceTitle{color:var(--vrc-dpurp);font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:26px;text-align: left;margin:20px 0px 20px 0px;font-weight: 400;padding:0px;}
+	.vrcLbHoriDiv{width:30px;height:2px;background: var(--vrc-dpurp);margin:0px 0px 0px 0px;display:block;}
+	.vrcLbEventBio{width:100%;height:auto;margin:0px auto 20px;box-sizing: border-box !important;}
+	.vrcLbEventBio p{color:var(--vrc-dgrey);font-family:"soehne","Averta",  sans-serif ;font-size:15px;text-align: left;font-weight: normal;margin:0px;padding:0px;box-sizing: border-box !important;}
+	.vrcLbEventBio ul{width:100%;text-align:left;margin:10px auto;padding:0px 0px 0px 25px;box-sizing: border-box !important;}
+	.vrcLbEventBio li{padding:0px;margin:0px;list-style:disc;}
+	.vrcLbEventBio h1{color:var(--vrc-dpurp);font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:18px;text-align: left;font-weight: normal;}
+	.vrcLbEventBio h2{color:var(--vrc-purp);font-family:"Open Sans","Averta",  sans-serif ;font-size:18px;text-align: left;font-weight:bold;}
+	.vrcLbEventBio h3{color:var(--vrc-dpurp);font-family:"Open Sans","Averta",  sans-serif ;font-size:16px;text-align: left;font-weight:bold;}
+	.vrcLbEventBio h4{color:var(#000);font-family:"Open Sans","Averta",  sans-serif ;font-size:16px;text-align: left;font-weight:bold;}
+
+	.vrcLbEventPrice{width:calc(100% - 40px);height:auto;display:block;margin:0px auto 20px;padding:1px 0px 0px 0px;box-sizing:border-box !important;text-align: right;}
+	.vrcLbEventPrice h2{font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;text-align: left;color:var(--vrc-mpurp);margin:5px 0px 0px 0px;font-weight: normal;padding:0px;display: inline-block;float:left;font-weight:600;vertical-align: top;}
+	.vrcLbEventPrice h3{font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:28px;text-align: left;color:var(--vrc-dpurp);margin:-4px 0px 0px 0px;font-weight: normal;padding:0px;display: inline-block;vertical-align: top;line-height:28px;}
+	.vrcLbPriceDiv{height:1px;width:calc(100% - 40px);background:var(--vrc-lpurp);margin:0px auto 20px;}
+	.vrcLbBookBtn{width:calc(100% - 40px);min-width:170px;height:40px;background:var(--vrc-dpurp);color:#fff;font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;font-weight:600;text-align: center;margin:0px auto 10px;padding:10px 0px;display:inline-block;text-transform: uppercase;box-sizing:border-box !important;}
+	.vrcLbInfoBtn{width:calc(100% - 40px);min-width:170px;height:40px;font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;font-weight:600;text-align: center;margin:0px auto;padding:10px 0px 0px 0px;border:1px solid var(--vrc-lpurp);display:inline-block;text-transform: uppercase;vertical-align: top;color:var(--vrc-dpurp);background:transparent;box-sizing:border-box !important;}
+	.vrcLbInfoBtn img{width:12px;height:12px;margin:0px 0px -1px 5px;display:inline-block;}	
+
+	/*bread crumb*/
+	#vrcFilterList{width:100%;max-width:1000px;height:auto;position:relative;margin:25px auto;padding:0px 0px 0px 0px;text-align: center;display: flex;flex-direction: row;flex-wrap: wrap;align-content: center;justify-content: flex-start;align-items: stretch;box-sizing:border-box !important;}
+	#vrcFilterWrapRaceDay, #vrcFilterWrapTicketType, #vrcFilterWrapExperienceType, #vrcFilterWrapEventName{display:none;}
+	.vrcFilterTag{width:auto;height:38px;margin:0px 5px 5px 0px;padding:9px 35px 9px 20px;border-radius:25px;background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_close_btn.svg") no-repeat, var(--vrc-lpurp);background-size:10px 10px;background-position:top 14px right 15px;color:var(--vrc-dpurp);font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:15px;font-weight:400;text-align: center;display:none;box-sizing:border-box !important;}
+	/*dynamic headers*/
+	#vrcEventHeaderList{width:100%;height:auto;position:relative;margin:0px auto;padding:0px 0px 0px 0px;text-align: center;box-sizing: border-box !important;}
+	.vrcEventHeader{width:100%;height:auto;position:relative;margin:0px auto;padding:0px 20px 0px 20px;text-align: center;display:none;box-sizing: border-box !important;}
+	.vrcEventHeader h1{color:var(--vrc-dpurp);font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:26px;text-align: center;margin:0px;font-weight: 400;padding:0px;}
+	.vrcEventHeader h2{color:var(--vrc-dpurp);font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:18px;font-weight:600;text-align: center;margin:0px;padding:10px 0px;}
+	
+	/*dynamic headers*/
+	#vrcEventHeaderList{width:100%;height:auto;position:relative;margin:0px auto;padding:0px 0px 40px 0px;text-align: center;display:none;}
+	.vrcEventHeaderShow{display:block;}
+	.vrcEventHeaderHide{display:none;}
+	#vrcPrevRaceDay{text-align:left;left:0px;bottom:0px;}
+	#vrcPrevRaceDay img{padding:7px 7px 7px 0px;}
+	#vrcNextRaceDay{text-align:right;right:0px;bottom:0px;}
+	#vrcNextRaceDay img{padding:7px 0px 7px 7px;}	
+	.vrcArrowBtn{height:20px;width:150px;display:flex;justify-content: center; align-items: center;flex-wrap: nowrap;position:absolute;box-sizing:border-box !important;z-index:81;cursor:pointer;}
+	.vrcArrowBtn img{width:auto;height:14px;display:inline-block;padding:0px;margin:0px;}
+	.vrcArrowBtn h3{color:var(--vrc-dpurp);font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:12px;font-weight:600;padding:0px;margin:0px;display:inline-block;user-select:none;}
+
+	/*error throws*/
+	#vrcErrorData, #vrcErrorEventCount{max-width:475px;width:96%;height:auto;border-bottom:1px solid var(--vrc-darkgrey);margin:50px auto;padding:0px 0px 20px 0px;display:none;box-sizing: border-box !important;}
+	#vrcErrorData h1, #vrcErrorEventCount h1{font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:30px;text-align: center;margin:0px auto 0px;font-weight: normal;padding:20px 0px 0px 0px;position: relative;color:var(--vrc-dpurp);}
+	#vrcErrorData p, #vrcErrorEventCount p{margin:20px auto;color:var(--vrc-dpurp);font-family:"Open Sans","Averta",  sans-serif ;font-size:13px;text-align: center;font-weight: normal;padding:0px;}
+	#vrcErrorData a, #vrcErrorEventCount a{text-decoration: none;}
+	#vrcErrorData img, #vrcErrorEventCount img{display:block;width:50px;height:50px;margin:0px auto 20px;}
+	.vrcErrorBtn{max-width:260px;width:80%;height:45px;background:var(--vrc-dpurp);color:#fff;font-family:"soehne","Open Sans", sans-serif;font-size:16px;font-weight:400;text-align: center;margin:20px auto;padding:10px 0px;display:block;text-transform: uppercase;cursor:pointer;box-sizing:border-box !important}
+
+	/*.TICKETS_AVAILABLE:after{content:"";}
+	.TICKETS_AVAILABLE{background:#75cf7a;display:none !important;}	
+	.TICKETS_NOT_AVAILABLE:after{content:"NO AVAILABILITY";}
+	.TICKETS_NOT_AVAILABLE{background:#CD2A3F;display:inline-block !important;}
+	.FEW_TICKETS_LEFT:after{content:"LOW AVAILABILITY";}
+	.FEW_TICKETS_LEFT{background:#d18645;display:inline-block !important;}*/
+
+	}
+	/*fix flex spacing on desktop when cards drop to 3 or less*/
+	@media only screen and (min-width: 1000px) and (max-width: 1325px){	
+	#vrcEventStream{justify-content: space-evenly !important;}
+	}
+
+	/*@media only screen and (min-width: 150px) and (max-width: 325px){	
+	.vrcBookBtn{width:calc(100% - 20px);min-width:170px;padding:10px;margin:20px auto;}
+	} */
+
+	/*card layout for tablets etc*/
+	@media only screen and (min-width: 675px) and (max-width: 1000px){	
+	
+	.vrcEventCard{max-width:300px;width:98%;height:auto;margin:10px;padding:0px 0px 150px 0px;border:1px solid var(--vrc-grey);font-family:"Open Sans","Averta",  sans-serif ;box-sizing:border-box !important;text-align: left;background:#fff;position: relative;}
+	.vrcEventCard a{text-decoration:none;}
+	.vrcSoldOutCard .vrcEventHero{opacity:.5;}
+	.vrcEventHero{width:100%;max-width:298px;height:auto;background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_hori_white_logo.svg") center center no-repeat, var(--vrc-dpurp);background-size:175px auto;overflow:hidden;position: relative;}
+	.vrcEventHero img{width:100%;height:auto;display:block;margin:0px auto;}
+	.vrcEventType{width:auto;height:auto;margin:0px;padding:4px 10px;display:inline-block;background:var(--vrc-dpurp);color:#fff;font-family:"soehne","Open Sans", sans-serif;box-sizing:border-box !important;font-size:11px;font-weight:600;text-transform:uppercase;bottom:10px;left:10px;position: absolute;}
+	.vrcTicketType{width:auto;height:auto;margin:0px;padding:0px 20px 10px 20px;display:inline-block;color:var(--vrc-mpurp);font-family:"soehne","Open Sans", sans-serif;box-sizing:border-box !important;font-size:13px;font-weight:600;text-transform:uppercase;}
+	.vrcTicketTypeVRCMember{width:100px;height:100px;position:absolute;top:0;left:0;background:url('https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_member_tag.svg') no-repeat top left;background-size:cover;display: block;}
+
+	.vrcEventWrap{width:100%;height:auto;margin:0px 0px;padding:0px 0px;}
+	.vrcEventName{color:var(--vrc-dpurp);font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:30px;text-align: left;margin:0px;font-weight: 400;padding:10px 20px 5px 20px;}
+	.vrcHoriDiv{width:30px;height:2px;background: var(--vrc-dpurp);margin:0px 0px 0px 20px;display:block;}
+	.vrcRaceTitle{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif;font-size:15px;text-align: left;margin:0px auto;font-weight: 500;padding:20px 20px 0px 20px;box-sizing: border-box !important;}
+	.vrcEventDate{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif;font-size:13px;text-align: left;margin:0px;font-weight: 600;padding:10px 20px 10px 20px;text-transform: uppercase;}
+	.vrcEventBio{width:300px;height:auto;margin:10px auto;}
+	.vrcEventBio p{margin:0px 20px;color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif;font-size:16px;text-align: left;font-weight: normal;padding:20px 0px;border-top: 1px solid var(--vrc-grey);}
+	.vrcBotWrap{width:100%;height:140px;margin:0px 0px;padding:0px 0px;position:relative;text-align: center;display:flex;flex-wrap: wrap;align-content: flex-end;justify-content: center;align-items: center;position:absolute;bottom:0px;right:0px;left:0px;}
+
+	.vrcEventPrice{width:calc(49% - 15px);height:auto;display:inline-block;margin:0px 0px 0px 0px;box-sizing: border-box !important;vertical-align: top;padding:1px 0px 0px 0px;}
+	.vrcEventPrice h2{font-family:"soehne","Open Sans", sans-serif;font-size:11px;text-align: left;margin:0px;font-weight: 600;padding:0px;color:var(--vrc-mpurp);}
+	.vrcEventPrice h3{font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:26px;text-align: left;margin:0px;font-weight: 400;padding:0px;color:var(--vrc-dpurp);}
+	.vrcMobEventPrice{display:none;}
+	.vrcPriceDiv{height:50px;width:1px;background:var(--vrc-lpurp);margin:0px 0px 0px 0px;display:inline-block;}
+	.vrcPriceDivMob{display:none;}
+	.vrcInfoBtn{width:calc(49% - 15px);text-align: center;margin:0px 0px 0px 0px;padding:0px 0px;display:inline-block;text-transform: uppercase;color:var(--vrc-dpurp);cursor:pointer;}
+	.vrcInfoBtn p{font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;line-height:13px;font-weight:600;text-align: center;margin:0px 0px 0px 0px;padding:0px 0px;}
+	.vrcinfoBtnDiv{width:70px;height:1px;background:var(--vrc-lpurp);margin:2px auto 0px;padding:0;}
+	.vrcBookBtn{width:260px;height:45px;background:var(--vrc-dpurp);color:#fff;font-family:"soehne","Open Sans", sans-serif;font-size:16px;font-weight:400;text-align: center;margin:20px 20px 20px 20px;padding:10px 0px;display:block;text-transform: uppercase;cursor:pointer;box-sizing:border-box !important}
+	/*dynamic styles for buttons*/
+	.vrcGeneralPublicBtn{background:var(--vrc-dpurp);color:#fff;}
+	.vrcVRCMemberBtn{background:var(--vrc-lav);color:var(--vrc-dpurp);}
+	.vrcBuyTicketsBtn:after{content: "BUY TICKETS";}
+	.vrcSoldOutBtn{background:var(--vrc-grey) !important;color:var(--vrc-dpurp) !important;}
+	.vrcSoldOutBtn:after{content: "SOLD OUT";}
+	.vrcPendingBtn{background:var(--vrc-mpurp) !important;color:#fff!important;}
+	.vrcPendingBtn:after{content: "ON SALE SOON";}
+	/*avail tags*/
+	.vrcAvailTag{width:auto;display:none;margin:0px;padding:4px 10px;color:#fff;font-family:"soehne","Open Sans", sans-serif;box-sizing:border-box !important;font-size:11px;font-weight:600;text-transform:uppercase;bottom:10px;left:10px;position: absolute;}
+	.avail-FEW_TICKETS_LEFT{background:#CD2A3F;display:inline-block !important;}	
+	.avail-FEW_TICKETS_LEFT:after{content:"Tickets selling fast";}	
+	.vrcAvailSpan{display:none !important;}
+	}
+
+
+	
+	/*change card layout for single mobile layout*/
+    @media only screen and (min-width: 0px) and (max-width: 675px){	
+	#vrcEventStream{width:100%;max-width:1300px;height:auto;position:relative;margin:0px auto;text-align: center;display: flex;flex-direction: row;flex-wrap: wrap;align-content: center;justify-content: space-evenly;align-items: stretch;}
+	.vrcEventCard{width:100%;max-width:100%;height:auto;margin:0px 0px 10px 0px;padding:0px 0px 0px 0px;border-top:1px solid var(--vrc-grey);font-family:"Open Sans","Averta",  sans-serif ;box-sizing:border-box !important;text-align: left;background:#fff;position: relative;}
+	.vrcEventCard a{text-decoration:none;}
+	.vrcSoldOutCard .vrcEventHero{opacity:.5;}
+	.vrcEventHero{width:135px;max-width:135px;min-height:135px;height:calc(100% - 55px);background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_hori_white_logo.svg") center center no-repeat, var(--vrc-dpurp);background-size:100px auto;overflow:hidden;position: relative;display:inline-block;vertical-align: top;}
+	.vrcEventHero img{width:100%;height:100%;display:block;margin:0px auto;top:0;left:0;position:absolute;object-fit: cover;}
+	.vrcEventType{width:auto;height:auto;margin:0px;padding:4px 10px;display:inline-block;background:var(--vrc-dpurp);color:#fff;font-family:"soehne","Open Sans", sans-serif;box-sizing:border-box !important;font-size:11px;font-weight:600;text-transform:uppercase;bottom:10px;left:10px;position: absolute;}
+	.vrcTicketType{width:auto;height:auto;margin:0px;padding:0px 0px 0px 0px;display:inline-block;color:var(--vrc-mpurp);font-family:"soehne","Open Sans", sans-serif;box-sizing:border-box !important;font-size:11px;font-weight:600;text-transform:uppercase;}
+	.vrcTicketTypeVRCMember{width:65px;height:65px;position:absolute;top:0;left:0;background:url('https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_member_tag.svg') no-repeat top left;background-size:cover;display: block;z-index: 100;}
+
+	.vrcEventWrap{width:calc(100% - 135px);height:auto;margin:0px 0px;padding:20px 20px;display:inline-block;vertical-align: top;box-sizing: border-box !important}
+	.vrcEventName{color:var(--vrc-dpurp);font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:24px;text-align: left;margin:0px;font-weight: 400;padding:0px 0px 4px 0px;}
+	.vrcHoriDiv{display:none;}
+	.vrcRaceTitle{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif;font-size:14px;text-align: left;margin:0px auto;font-weight: 500;padding:0px 0px 4px 0px;box-sizing: border-box !important;}
+	.vrcEventDate{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif;font-size:11px;text-align: left;margin:0px;font-weight: 600;padding:0px 0px 2px 0px;text-transform: uppercase;}
+	.vrcEventBio{width:300px;height:auto;margin:10px auto;}
+	.vrcEventBio p{margin:0px 20px;color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif;font-size:16px;text-align: left;font-weight: normal;padding:20px 0px;border-top: 1px solid var(--vrc-grey);}
+	.vrcBotWrap{width:100%;height:55px;margin:0px 0px;padding:0px 0px;position:relative;text-align: center;display:flex;flex-wrap: nowrap;flex-direction:row-reverse;align-content:space-evenly;justify-content: space-between;align-items: center;}
+	.vrcInfoBtn{width:auto;height:auto;text-align: center;margin:0px 0px 0px 0px;padding:10px 20px;display:inline-block;text-transform: uppercase;cursor:pointer;}
+	.vrcInfoBtn p{font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:11px;line-height:13px;font-weight:600;text-align: center;margin:0px 0px 0px 0px;padding:12px 0px;display:inline-block;}
+	.vrcinfoBtnDiv{width:1px;height:45px;background:var(--vrc-lpurp);margin:5px auto 5px;padding:0;display:none;}
+	.vrcBookBtn{width:auto;height:auto;font-family:"soehne","Open Sans", sans-serif;font-size:13px;font-weight:600;text-align: center;margin:0px;padding:10px 20px;display:block;text-transform: uppercase;cursor:pointer;box-sizing:border-box !important;min-width: 0;}
+	/*mobile price swap*/
+	.vrcEventPrice{display:none}
+	.vrcEventPrice h2{}
+	.vrcEventPrice h3{}
+
+	.vrcMobEventPrice{width:auto;height:55px;display:inline-block;margin:0px 0px 0px 0px;box-sizing: border-box !important;vertical-align: top;padding:8px 0px 0px 0px;white-space: nowrap;}
+	.vrcMobEventPrice h2{font-family:"soehne","Open Sans", sans-serif;font-size:11px;text-align: left;margin:0px 5px 0px 0px;font-weight: 600;padding:0px;display:inline-block;}
+	.vrcMobEventPrice h3{font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:26px;text-align: left;margin:0px;font-weight: 400;padding:0px;display:inline-block;}
+	.vrcPriceDiv{height:50px;width:1px;background:var(--vrc-lpurp);margin:0px 0px 0px 0px;display:none;}
+	.vrcPriceDivMob{height:25px;width:1px;background:var(--vrc-lpurp);margin:0px 0px 0px 5px;display:inline-block;}
+	/*dynamic styles for bottom wrap*/
+	.vrcGeneralPublicBtmWrap{background:var(--vrc-dpurp);}
+	.vrcGeneralPublicBtmWrap .vrcBookBtn{color:#fff;}
+	.vrcGeneralPublicBtmWrap .vrcMobEventPrice h2, .vrcVRCMemberBtmWrap .vrcMobEventPrice h2{color:var(--vrc-lpurpText)}
+	.vrcGeneralPublicBtmWrap .vrcMobEventPrice h3, .vrcGeneralPublicBtmWrap .vrcInfoBtn, .vrcPendingBtmWrap .vrcMobEventPrice h3{color:#fff;}
+	.vrcGeneralPublicBtmWrap .vrcInfoBtn{color:#fff;/*border-left: 1px solid #fff;*/}
+	.vrcVRCMemberBtmWrap{background:var(--vrc-lav);}
+	.vrcVRCMemberBtmWrap .vrcBookBtn{color:var(--vrc-dpurp);}
+	.vrcVRCMemberBtmWrap .vrcInfoBtn{color:var(--vrc-mpurp);/*border-left: 1px solid var(--vrc-mpurp);*/}
+	.vrcSoldOutBtmWrap{background:var(--vrc-grey);}
+	.vrcSoldOutBtmWrap .vrcInfoBtn{color:var(--vrc-dpurp);/*border-left: 1px solid var(--vrc-dpurp);*/}
+	.vrcSoldOutBtmWrap .vrcMobEventPrice h3{color:var(--vrc-dpurp);}
+	.vrcPendingBtmWrap{background:var(--vrc-mpurp);}
+
+	/*dynamic styles for buttons*/
+	.vrcGeneralPublicBtn{color:#fff;}
+	.vrcVRCMemberBtn{color:var(--vrc-dpurp) !important;}
+	.vrcBuyTicketsBtn:after{content: "BUY TICKETS";}
+	.vrcSoldOutBtn{background:var(--vrc-grey) !important;color:var(--vrc-dpurp) !important;}
+	.vrcSoldOutBtn:after{content: "SOLD OUT";}
+	.vrcPendingBtn{background:var(--vrc-mpurp) !important;color:#fff!important;}
+	.vrcPendingBtn:after{content: "ON SALE SOON";}
+	.vrcPendingBtmWrap .vrcInfoBtn{color:var(--vrc-lpurp) !important;/*border-left: 1px solid var(--vrc-mpurp);*/}
+	
+	/*avail tags*/
+	.vrcAvailTag, .vrcAvailTag .avail-FEW_TICKETS_LEFT{width:auto;display:none;}
+	.vrcAvailSpan{width:100%;height:auto;display:none;margin:-20px 0px 0px 0px;padding:4px 10px;color:#fff;font-family:"soehne","Open Sans", sans-serif;box-sizing:border-box !important;font-size:11px;font-weight:600;text-align:center;text-transform:uppercase;position: relative;transform: translateY(5px);z-index: 100;}
+	.avail-FEW_TICKETS_LEFT{background:#CD2A3F;display:block !important;}	
+	.avail-FEW_TICKETS_LEFT:after{content:"Tickets selling fast";}	
+	}
+
+</style>
+
+
+<!--TM HEADER----
+<div id="tmHeader">
+	<div id="tmLogo"><img src="https://s1.ticketm.net/en-au/css/6087a0923498ed842bd93d95cd427cba/rebrand_smvp/tm/img/sys/alpha/discovery/header/ticketmaster-logo.svg"></div><div id="tmSearch">what are you looking for?</div>
+</div>--->
+<div id="vrcContent">
+
+	<div id="vrcHeaderWrap">
+	<!-- header for when there are no feature events
+	<div id="vrcHeader">
+
+		<h1>VRC Race Days<br /> and Events</h1>
+
+	</div> -->
+	<!--feature events-->
+	<div id="vrcFeatureWrap">
+		<h1>VRC Race Day and Event Tickets</h1>
+		<!--<h2>Selected Featured Race Day or Event:</h2>
+		<div id="vrcFeatureEvents">
+			<a href="?raceDay=BlackCaviarLightningRaceDayURL&HowdenAustralianGuineasDayURL&SuperSaturdayURL&TABAustralianCupDayURL" target="_self"><div class="vrcFeatureEventCard"><div class="vrcFeatureHero"><img src="https://s1.ticketm.net/en-au/img/static/vrc/2024/featureImages/vrc23_FlemingtonRacingSpectacular_360x225.jpg"></div><div class="vrcFeatureTitle"><h2>Flemington Racing<br /> Spectacular</h2></div></div></a>--->
+
+			<!--<div id="vrcFeatureAllCard" class="vrcFeatureEventCard"><h5>All Race Days And<br />Events</h5></div>--
+
+			<a href="?raceDay=HowdenVictoriaDerbyDayURL" target="_self"><div class="vrcFeatureEventCard">
+				<div class="vrcFeatureHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/vrc/2025/vrc25_DerbyDay_360x225.png"></div><div class="vrcFeatureTitle"><h3>Howden Victoria<br /> Derby Day</h3><h4>SAT, 1 NOV 2025</h4></div>
+			</div></a>
+			<a href="?raceDay=LexusMelbourneCupDayURL" target="_self"><div class="vrcFeatureEventCard">
+				<div class="vrcFeatureHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/vrc/2025/vrc25_CupDay_360x225.png"></div><div class="vrcFeatureTitle"><h3>Lexus Melbourne<br /> Cup Day</h3><h4>TUE, 4 NOV 2025</h4></div>
+			</div></a>
+			<a href="?raceDay=CrownOaksDayURL" target="_self"><div class="vrcFeatureEventCard">
+				<div class="vrcFeatureHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/vrc/2025/vrc25_OaksDay_360x225.png"></div><div class="vrcFeatureTitle"><h3>Crown Oaks Day</h3><h4>THU, 6 NOV 2025</h4></div>
+			</div></a>
+			<a href="?raceDay=TABChampionsStakesDayURL" target="_self"><div class="vrcFeatureEventCard">
+				<div class="vrcFeatureHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/vrc/2025/vrc25_StakesDay_360x225.png"></div><div class="vrcFeatureTitle"><h3>TAB Champions<br /> Stakes Day</h3><h4>SAT, 8 NOV 2025</h4></div>
+			</div></a>
+		</div>--->
+		<!--video header-->
+		<video playsinline autoplay muted loop poster="" id="vrcVideoHead">
+
+				<source src="https://s1.ticketm.net/tm/en-au/img/static/vrc/2026/vrc_header_video_desktop.mp4" type="video/mp4">
+				<!--<source src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc26_autumn_header_16x9.webm" type="video/webm">-->
+	  
+		</video>
+	</div>
+	<!--menu-->
+		<div id="vrcMenuWrap">
+			<!--<div id="vrcMenuMobToggle"><p>FILTER TICKETS</p></div>-->
+			<div class="vrcDropDownMobCount"><div id="vrcTotalTypeCounter" class="vrcDropDownNumber"></div><img src="https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_filters_img.svg"></div>
+		<div id="vrcMenu">
+			<div id="vrcMenuHeaderBtn">FILTERS</div>
+			<!--dates--
+			<div class="vrcDropDown" id="datesMenu">
+				<div class="vrcDropDownBtn vrcDropDownInActive"><div class="vrcDopDownLabel">DATES<div class="vrcDropDownCount"><div id="vrcTicketTypeCounter" class="vrcDropDownNumber"></div><img alt="arrow" src="https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_downArrow_sm_img.svg"></div></div></div>
+				<div class="vrcDropDownWrap"  id="datesDropDown"><div class="vrcDrownDownGradient"></div>
+						<div class="vrcDropDownMenu">
+							<div data-menuname="TicketType" class="vrcDropDownMenuBtn vrcDropDownMenuClear">CLEAR ALL</div>		
+							<div data-menuname="TicketType" class="vrcDropDownMenuBtn vrcDropDownMenuClose">APPLY</div>			
+						</div>
+						<div class="" id="vrcDatePicker"></div>
+				</div>
+				<div class="vrcMobClose"><div class="vrcMobCloseBtn">CLOSE</div></div>
+			</div>--->
+			<!--ticket type dropdown--
+			<div class="vrcDropDown" id="ticketTypeMenu">
+				<div class="vrcDropDownBtn vrcDropDownInActive"><div class="vrcDopDownLabel">CATEGORY<div class="vrcDropDownCount"><div id="vrcTicketTypeCounter" class="vrcDropDownNumber"></div><img alt="arrow" src="https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_downArrow_sm_img.svg"></div></div></div>
+				<div class="vrcDropDownWrap"  id="ticketTypeDropDown"><div class="vrcDrownDownGradient"></div>
+						<div class="vrcDropDownMenu">
+							<div data-menuname="TicketType" class="vrcDropDownMenuBtn vrcDropDownMenuClear">CLEAR ALL</div>		
+							<div data-menuname="TicketType" class="vrcDropDownMenuBtn vrcDropDownMenuClose">APPLY</div>			
+						</div>
+							<div data-tickettype="All" data-menuname="TicketType" class="vrcCheckBoxBtn vrcDropDownMenuAll"><div class="vrcCheckBox vrcCheckBoxOn"></div>All Categories</div>
+							<div class="vrcDropDownDiv"></div>
+				</div>
+				<div class="vrcMobClose"><div class="vrcMobCloseBtn">CLOSE</div></div>
+			</div> -->
+			<!--race day dropdown-->
+			<div class="vrcDropDown" id="dayMenu">
+				<div class="vrcDropDownBtn vrcDropDownInActive"><div class="vrcDopDownLabel">Select Date &amp; Event<div class="vrcDropDownCount"><div id="vrcRaceDayCounter"  class="vrcDropDownNumber"></div><img alt="arrow" src="https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_downArrow_sm_img.svg"></div></div></div>
+				<div class="vrcDropDownWrap" id="dayDropDown">
+					<div class="vrcDropDownMenu">
+						<div data-menuname="RaceDayName" class="vrcDropDownMenuBtn vrcDropDownMenuClear">Clear Selection</div>		
+						<div data-menuname="RaceDayName" class="vrcDropDownMenuBtn vrcDropDownMenuClose">Close</div>			
+					</div>
+						<div data-raceday="All" data-menuname="RaceDayName" data-racedate="000000" class="vrcCheckBoxBtn vrcDropDownMenuAll"><div class="vrcCheckBox vrcCheckBoxOn"></div><h4>All Events &amp; Dates</h4></div>					
+						<!--group MCC events	
+						<div data-raceday="MelbourneCupCarnival" data-racedate="20251030" class="vrcCheckBoxBtn vrcRaceSort"><div class="vrcCheckBox vrcCheckBoxOff"></div><h4>Melbourne Cup Carnival</h4></div>-->		
+				</div>
+			</div>
+			<!--ticket type dropdown-->
+			<div class="vrcDropDown" id="ticketTypeMenu">
+				<div class="vrcDropDownBtn vrcDropDownInActive"><div class="vrcDopDownLabel">Select Ticket Type<div class="vrcDropDownCount"><div id="vrcTicketTypeCounter" class="vrcDropDownNumber"></div><img alt="arrow" src="https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_downArrow_sm_img.svg"></div></div></div>
+				<div class="vrcDropDownWrap" id="ticketTypeDropDown">
+					<div class="vrcDropDownMenu">
+						<div data-menuname="TicketType" class="vrcDropDownMenuBtn vrcDropDownMenuClear">Clear Selection</div>		
+						<div data-menuname="TicketType" class="vrcDropDownMenuBtn vrcDropDownMenuClose">Close</div>			
+					</div>
+						<div data-TicketType="All"  data-menuname="TicketType" class="vrcCheckBoxBtn vrcDropDownMenuAll"><div class="vrcCheckBox vrcCheckBoxOn"></div><h4>All Ticket Types</h4></div>
+						<div data-TicketType="GeneralPublicTickets" class="vrcCheckBoxBtn"><div class="vrcCheckBox vrcCheckBoxOff"></div><h3>General Public</h3><h1>Tickets</h1></div>
+						<div data-TicketType="GeneralPublicDiningHospitality" class="vrcCheckBoxBtn"><div class="vrcCheckBox vrcCheckBoxOff"></div><h3>General Public</h3><h1>Dining &amp; Hospitality</h1></div>
+						<div data-TicketType="VRCMember" class="vrcCheckBoxBtn"><div class="vrcCheckBox vrcCheckBoxOff"></div><h3>VRC Member</h3><h1>All Tickets</h1></div>
+						<div data-TicketType="GeneralPublicEventsandExperiences" class="vrcCheckBoxBtn"><div class="vrcCheckBox vrcCheckBoxOff"></div><h3>General Public</h3><h1>Events &amp; Experiences</h1></div>
+				</div>
+				<!--<div class="vrcMobClose"><div class="vrcMobCloseBtn">CLOSE</div></div>-->
+			</div>
+			<!--event name dropdown----->
+			<div class="vrcDropDown"  id="eventMenu">
+				<div class="vrcDropDownBtn vrcDropDownInActive"><div class="vrcDopDownLabel">PRODUCT<div class="vrcDropDownCount"><div id="vrcEventNameCounter" class="vrcDropDownNumber"></div><img alt="arrow" src="https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_downArrow_sm_img.svg"></div></div></div>
+				<div class="vrcDropDownWrap" id="eventDropDown"><div class="vrcDrownDownGradient"></div>
+					<div class="vrcDropDownMenu">
+						<div data-menuname="EventName" class="vrcDropDownMenuBtn vrcDropDownMenuClear">Clear Selection</div>		
+						<div data-menuname="EventName" class="vrcDropDownMenuBtn vrcDropDownMenuClose">Close</div>			
+					</div>
+						<div data-eventname="All"  data-menuname="EventName" class="vrcCheckBoxBtn vrcDropDownMenuAll"><div class="vrcCheckBox vrcCheckBoxOn"></div>All Products</div>
+						<div class="vrcDropDownDiv"></div>
+				</div>
+			</div>
+			<!--price slider-->
+			<div id="vrcPriceWrap"><div class="vrcPriceBtnMob">PRICE</div><div id="vrcPriceInnerWrap"><div class="vrcPriceHeader">PRICE</div><div id="slider"></div><div id="vrcPriceLabel"><input type="text" id="price"><!--<div class="vrcPlus">+</div>--></div></div></div>
+			<!--sort dropdown-----
+			<div class="vrcDropDown"  id="sortMenu">
+				<div class="vrcDropDownBtn vrcDropDownInActive"><div class="vrcDopDownLabel">SORT BY<div class="vrcDropDownCount"><img alt="arrow" src="https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_downArrow_sm_img.svg"></div></div></div>
+				<div class="vrcDropDownWrap" id="sortDropDown">
+						<div data-sortname="recommended" class="vrcRadioBtn"><div class="vrcRadio vrcRadioOff"></div>Popular</div>
+						<div class="vrcDropDownDiv"></div>
+						<div data-sortname="price-high" class="vrcRadioBtn"><div class="vrcRadio vrcRadioOff"></div>Price (High to Low)</div>
+						<div data-sortname="price-low" class="vrcRadioBtn"><div class="vrcRadio vrcRadioOff"></div>Price (Low to High)</div>
+						<div class="vrcDropDownDiv"></div>
+						<div data-sortname="date-asc" class="vrcRadioBtn"><div class="vrcRadio vrcRadioOn"></div>Date (from most recent)</div>
+						<div data-sortname="date-desc" class="vrcRadioBtn"><div class="vrcRadio vrcRadioOff"></div>Date (from least recent)</div>
+				</div>
+			</div>-->
+		</div>
+		</div><!--end menu wrap-->
+	</div>
+<div id="vrcEventMod">
+	<!--dynamnic headers-->
+	<div id="vrcFilterList"><!---<div id="vrcFilterWrapRaceDay"></div><div id="vrcFilterWrapTicketType"></div><div id="vrcFilterWrapExperienceType"></div><div id="vrcFilterWrapEventName"></div>-->
+		<div id="vrcEventHeaderList">
+			<div class="vrcArrowBtn" id="vrcPrevRaceDay"><img src="https://s1.ticketm.net/tm/en-au/img/static/vrc/2025/vrc25_arrow_left.svg"><h3>PREVIOUS RACE DAY</h3></div>
+			<div class="vrcArrowBtn" id="vrcNextRaceDay"><h3>NEXT RACE DAY</h3><img src="https://s1.ticketm.net/tm/en-au/img/static/vrc/2025/vrc25_arrow_right.svg"></div>
+			<!--dynamic headers populate here-->
+
+
+		</div>
+	
+		<div id="vrcResetAllBtn">CLEAR ALL FILTERS</div>
+	</div>
+
+	<div id="vrcEventStream">
+
+		<!--error elements-->
+		<div id="vrcErrorData">
+			<img src="https://s1.ticketm.net/tm/en-au/img/static/vrc/2023/vrc23_error_w_ico.svg" alt="Error">
+			<h1>Connection Error</h1>
+			<p>We&rsquo;re unable to connect to our servers to fetch the event data, try refreshing this page or alternatively you can browser events directly on the VRC page below</p>
+			<a href="https://www.ticketmaster.com.au/victoria-racing-club-tickets/artist/2868002"><div class="vrcErrorBtn">SEE EVENTS</div></a>
+		</div>
+
+		<div id="vrcErrorEventCount">
+			<img src="https://s1.ticketm.net/tm/en-au/img/static/vrc/2023/vrc23_error_w_ico.svg" alt="Error">
+			<h1>Sorry, no events match your filters.</h1>
+			<p>We&rsquo;re unable to match any events to the filter criteria you have set. Try changing your filters, or you can start again by resetting all the filters by clicking below.</p>
+			<div id="vrcErrorReset" class="vrcErrorBtn">RESET FILTERS</div>
+		</div>
+		<!--event card--
+		<div class="vrcEventCard">
+			<div class="vrcEventHero"><img src="https://via.placeholder.com/300x180"></div>
+				<div class="vrcEventType">event_type_category</div>
+			<div class="vrcEventWrap">
+				<div class="vrcEventName">offer_desc</div>
+				<div class="vrcEventDate">event_date</div>
+				<div class="vrcRaceTitle">event_day_desc</div>
+			</div>
+			<div class="vrcEventBio"><p>+ event_info +</p></div>
+			<div class="vrcEventPrice"><h2>price from</h2><h3>$price_from</h3></div><div class="vrcInfoBtn">more info</div>
+			<div class="vrcBookBtn">button_text</div>
+		</div>--->
+
+		<!--<div class="vrcInfoLightBox">
+			<div class="vrcInfoLbContent">
+				<div class="vrcLbClose"></div>
+				<div class="vrcLbEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/vrc/2023/heroImages/vrc23_placeholderCard_AtriumFlat_01.jpg"><img src="https://s1.ticketm.net/tm/en-au/img/static/vrc/2023/heroImages/vrc23_placeholderCard_ThePeak_02.jpg"></div>
+				<div class="vrcLbEventType">event_type_category</div>	
+				<div class="vrcLbEventWrap">
+					<div class="vrcLbEventName">offer_desc</div>
+					<div class="vrcLbEventDate">event_date</div>
+					<div class="vrcLbRaceTitle">event_day_desc</div>
+				</div>
+
+				<div class="vrcLbEventBio">
+					<p>+ event_info +</p>
+				</div>
+			<div class="vrcLbEventPrice"><div class="vrcLbPriceDiv"></div>
+				<h2>price from</h2><h3>$+ price_from +</h3>
+				
+			</div>
+		<div class="vrcLbBookBtn">button_text</div>
+		</div>
+		</div>--->
+
+
+	</div>
+</div>
+
+</div>
+
+<script type="text/javascript">	
+
+	$j = jQuery.noConflict();
+	eventCount = 0;
+	minPrice = 0;
+	maxPrice = 1000;
+	vrcPrices = []
+	ticketTypeCount = 0;
+	raceDayCount  = 0;
+	experienceTypeCount = 0;
+	eventNameCount = 0;
+	currentHeaderCount = 0;
+	newHeaderCount = 0;
+	//globals - sets
+	raceDayNameList = new Set()
+	eventNameList = new Set()
+	ticketTypeList = new Set()
+	experienceTypeList = new Set()
+	urlRaceDayNameSet = new Set()
+	urlEventNameSet = new Set()
+	urlTicketTypeSet = new Set()
+	urlExperienceTypeSet = new Set()
+	universalIDSet = new Set()
+	dateRangeSet = new Set()
+	raceDaysAndDatesMap = new Map()
+
+	//globals - arrays
+	fullRaceDayNameList = [];
+	fullEventNameList = [];
+	fullTicketTypeList = [];
+	fullExperienceTypeList = [];
+	fullDateRangeList = [];
+	CupCarnivalList = ["HowdenVictoriaDerbyDay","LexusMelbourneCupDay","TABChampionsStakesDay","CrownOaksDay"];
+
+	const allUrlVars = getUrlVars();
+
+	$j(document).ready(function () {	
+			//load the container div
+            let eventCardListDiv = $j("#vrcEventStream");
+			raceDayListDiv = $j("#dayDropDown");
+			headerListDiv = $j("#vrcEventHeaderList");
+			//mccListDiv = $j("#mccCheckBoxGroup");			
+			ticketTypeListDiv = $j("#ticketTypeDropDown");
+			//experienceTypeListDiv = $j("#experienceDropDown");
+			eventNameListDiv = $j("#eventDropDown");
+			eventBio = "";
+			let epPublic = "https://d1qeon7qw4jcrw.cloudfront.net/vrc";
+			let epQa = "https://d1qeon7qw4jcrw.cloudfront.net/vrc_sandbox";
+			let epProd = "";
+			//get the data file
+             $j.ajax({
+               type: 'GET',
+               url: epQa,
+               dataType: 'html',
+				success: function(data) {
+					let raceDateList = [];
+					let raceDates = JSON.parse(data);
+
+					$j.each(raceDates, function (key, events) {
+
+						$j.each(events, function(key,value){
+							let eventName = value.offer_desc.replace(/\s/g, '');//removes spaces
+							let eventNameClean = value.offer_desc.replace(/[^\w\s]/gi, '');//removes special characters
+							let raceNameClean = value.event_day_desc.replace(/[^\w\s]/gi, '');//removes special characters
+							//build sets for URL filters
+							let raceNameNoSpace = raceNameClean.replace(/\s/g, '');//removes spaces
+							let eventNameNoSpace = eventNameClean.replace(/\s/g, '');//removes spaces
+							let ticketTypeNoSpace = value.event_type_category.replace(/\s/g, '');//removes spaces
+							let experienceTypeNoSpace = value.ticket_type_category.replace(/\s/g, '').replace(/[^\w\s]/gi, '');//removes spaces
+							let ticketTypeMapped = ticketTypeMapper(ticketTypeNoSpace+experienceTypeNoSpace)
+							urlRaceDayNameSet.add(raceNameNoSpace + "URL");
+							urlEventNameSet.add(eventNameNoSpace + "URL");
+							urlTicketTypeSet.add(ticketTypeMapped + "URL");
+							urlExperienceTypeSet.add(experienceTypeNoSpace + "URL");
+							universalIDSet.add(value.universalID);
+							//build sets for filters
+							raceDayNameList.add(value.event_day_desc)
+							//raceDayNameList.add("All Events") Adds All Events to the race day set
+							eventNameList.add(value.offer_desc)
+							ticketTypeList.add(ticketTypeMapped)
+							experienceTypeList.add(value.ticket_type_category)
+							dateRangeSet.add(value.event_date)
+							raceDaysAndDatesMap.set(raceNameNoSpace+"",""+value.event_date)
+							vrcPrices.push(value.price_from)						
+							//fix up the date for display
+							eventDateLong = new Date(value.event_date)
+							let options = { weekday: 'short', day: '2-digit', month: 'short', year: 'numeric',timeZone: "Australia/Melbourne" };
+							let eventDateShort = new Intl.DateTimeFormat('en-AU', options).format(eventDateLong);
+							//get the VRC more info link
+							moreInfoLink = value.event_day_desc.replace(/[^\w\s]/gi, '').replace(/\s/g, '');//removes spaces
+							//sort vars
+							let dateSort = value.event_date.replace('-','').replace('-','');
+							let OfferSort = value.event_type_sort_no;
+							let dateOfferSort = (dateSort + OfferSort);
+							let recSort = (OfferSort + dateSort);
+							//button text
+							let buttonText = vrcTextMapper(value.avail_status+"-"+value.onsale_status);
+							// avail + date + public / member + price
+							let availSort = vrcSortMapper(buttonText + "Sort") + dateSort + vrcSortMapper(ticketTypeNoSpace + "Sort");
+							//vrcConstructInfoLinks()
+
+							//build card
+							let newEvent = $j("<div data-racedayname='"
+							+ raceNameNoSpace +"' data-tickettype='"
+							+ ticketTypeMapped +"'  data-experiencetype='"
+							+ experienceTypeNoSpace + "' data-eventname='"
+							+ eventNameNoSpace + "' data-eventprice='"
+							+ value.price_from +"' data-eventcode='"
+							+ value.tm_event_name +"' data-datesort='"
+							+ dateOfferSort +"'  data-availsort='"
+							+ availSort +"' data-recsort='"
+							+ recSort +"' data-eventSort='"
+							+ value.event_type_sort_no +"' class='vrcEventCard vrc"
+							+ buttonText +"Card'><div class='vrcInfoLightBox'><div class='vrcInfoLbContent'><div class='vrcLbClose'></div><div class='vrcLbEventName'>"
+							+ value.offer_desc +"</div><div class='vrcLbEventHero'><img src='https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_FallBackHero_840x420.png' data-src='https://s1.ticketm.net/en-au/img/static/vrc/2026/heroImages/"
+							+ heroImgMapper(value.image_ref_link)+"_840x420.jpg'></div><div class='vrcLbInfoWrap'><div class='vrcLbTicketType'>"
+							+ value.ticket_type_category +"</div><div class='vrcLbRaceTitle'>"
+							+ value.event_day_desc +"</div><div class='vrcLbHoriDiv'></div><div class='vrcLbEventDate'>"
+							+ eventDateShort +"</div><div class='vrcLbEventBio'><p></p></div></div><div class='vrcLbBtnWrap'><div class='vrcLbEventType'>"
+							+ value.event_type_category +"</div><div class='vrcLbPriceDiv'></div><div class='vrcLbEventPrice'><h2>FROM</h2><h3>$"
+							+ value.price_from +"</h3></div><div class='vrcLbPriceDiv'></div><a href='"
+							+ value.buy_link +"'><div class='vrcLbBookBtn'>"
+							+ value.button_text +"</div></a><a id='"
+							+ eventNameNoSpace+raceNameNoSpace+"' href='https://vrc.com.au/?utm_source=ticketmaster.com.au&utm_medium=referral&utm_campaign=ticket_selector' target='_blank' data-eventlink='"
+							+ eventNameNoSpace+"' data-racelink='"
+							+ raceNameNoSpace+"' class='vrcInfoLink'><div class='vrcLbInfoBtn'>FULL EVENT INFO<img src='https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_more_btn.svg'></div></a></div></div></div><div class='vrcEventHero'><div class='vrcAvailTag avail-"
+							+ value.avail_status +"' data-eventAvailId='"
+							+ value.universalID +"'></div><div class='vrcTicketType"
+							+ value.event_type_category.replace(/\s/g, '') +"'></div><img src='https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_FallBackHero_470x250.png' data-src='https://s1.ticketm.net/en-au/img/static/vrc/2026/heroImages/"
+							+ heroImgMapper(value.image_ref_link)+"_470x250.jpg'><div class='vrcSandBoxInfoWrap'><div class='vrcSandBoxInfo'>event code "
+							+value.tm_event_name+"</div><div class='vrcSandBoxInfo'>img ref "
+							+value.image_ref_link+"</div><div class='vrcSandBoxInfo'>on sale status "
+							+value.onsale_status+"</div><div class='vrcSandBoxInfo'>disco status "
+							+value.discovery_status+"</div></div></div><div class='vrcEventWrap'><div class='vrcRaceTitle'>"
+							+ value.event_day_desc +"</div><div class='vrcEventName'>"
+							+ value.offer_desc +"</div><div class='vrcHoriDiv'></div><div class='vrcEventDate'>"
+							+ eventDateShort +"</div><div class='vrcTicketType'>"
+							+ value.ticket_type_category.replace("/", '&') +"</div></div><div class='vrcAvailSpan avail-"
+							+ value.avail_status +"'></div><div class='vrcBotWrap vrc"
+							+ value.event_type_category.replace(/\s/g, '') +"BtmWrap vrc"
+							+ buttonText +"BtmWrap'><div class='vrcEventPrice'><h2>FROM</h2><h3>$"
+							+ value.price_from +"</h3></div><div class='vrcPriceDiv'></div><div class='vrcInfoBtn'><p>more info</p><div class='vrcinfoBtnDiv'></div></div><div class='vrcPriceDivMob'></div><div class='vrcMobEventPrice'><h2>FROM</h2><h3>$"
+							+ value.price_from +"</h3></div><a href='"
+							+ value.buy_link +"'><div class='vrcBookBtn vrc"
+							+ value.event_type_category.replace(/\s/g, '') +"Btn vrc"
+							+ buttonText +"Btn '></div></a></div></div>");
+
+							//apends event data into an element
+							eventCardListDiv.append(newEvent);
+							eventCount ++
+							//console.log(raceDaysAndDatesMap)
+							});
+						//})	
+						
+					})
+					createRaceDayList();
+					createTickeTypeList();
+					//createExperienceTypeList();
+					createEventNameList();
+					vrcPriceSliderInit();
+					//vrcFetchEventBio();
+					totalEventCount = eventCount * -1
+					emptyFullListsOnLoad();//empty the list arrays at end of load so they populate the drop downs and events then go away
+					getUrlVars();
+					ParseUrl();
+					//setEventAvailTags();
+					defaultSort();
+					imageLoader();
+					setTimeout(loadEventDescription, 2000)
+					},
+                    error: function (xhr, ajaxOptions, thrownError) { 
+
+                       $j("#vrcErrorData").fadeIn(100);
+                    }
+					
+
+
+                });	
+				//end get
+
+//doc ready end
+		});
+
+//construct the list of race days and add them to the drop down.	
+function createRaceDayList(){
+	let buttonArray = Array.from(raceDayNameList);
+	//console.log(buttonArray)
+	//console.log(raceDayNameList)
+	fullRaceDayNameList = Array.from(raceDayNameList).join(',').replace(/,/g, '/').replace(/'/g, '').split("/");
+	fullCupCarnivalList = Array.from(CupCarnivalList);
+
+	let vrcTagDiv = $j("#vrcFilterList");
+	let options = { weekday: 'short', day: '2-digit', month: 'short',timeZone: "Australia/Melbourne" };
+	let optionsMedium = { weekday: 'short', day: '2-digit', month: 'short', year:'numeric',timeZone: "Australia/Melbourne" };
+	let optionsDataTag = { year: '2-digit', month: '2-digit',day: '2-digit',timeZone: "Australia/Melbourne" };
+
+	headerCount = 1;
+	//run through array and remove spaces
+	for (var iX = 0; iX < fullRaceDayNameList.length; iX++) {
+		fullRaceDayNameList[iX] = fullRaceDayNameList[iX].replace(/\s/g, '');
+	}
+	$j.each(buttonArray, function(index,value){
+		let raceNameClean = value.replace(/[^\w\s]/gi, '').replace(/\s/g, '');//removes special characters and spaces
+		let raceDateLong = new Date(raceDaysAndDatesMap.get(raceNameClean))
+		let raceDateShort = new Intl.DateTimeFormat('en-AU', options).format(raceDateLong);
+		let raceDateMedium = new Intl.DateTimeFormat('en-AU', optionsMedium).format(raceDateLong);
+		let raceDateData = raceDaysAndDatesMap.get(raceNameClean).replace('-','').replace('-','');//new Intl.DateTimeFormat('en-US', optionsDataTag).format(raceDateLong).replace("/","").replace("/","");
+		let newButton = $j("<div data-raceday='"+ raceNameClean +"' data-racedate='"+ raceDateData +"' data-buttoncount="+headerCount+" class='vrcCheckBoxBtn vrcRaceSort'><div class='vrcCheckBox vrcCheckBoxOff'></div><h2>"+ raceDateShort +"</h2><h1>"+ value +"</h1></div>");
+		let newHeader = $j("<div class='vrcEventHeader' data-headerraceday='"+ raceNameClean +"' data-headerracedate='"+ raceDateData +"' data-headercount='"+headerCount+"'><h1>"+ value +"</h1><h2>"+ raceDateMedium +"</h2></div>");
+		let newTag = $j("<div id='' data-tagname='"+ raceNameClean +"' class='vrcFilterTag vrcRaceNameFilterTag'>"+ value +"</div>");
+
+		//append to filter breadcrumb list
+		vrcTagDiv.append(newTag);
+		//appends button to dropdown
+		//moves MCC into the special wrapper. Will need similar for autumn carnival CupCarnivalList
+		/*if(jQuery.inArray(raceNameClean, CupCarnivalList) != -1){
+			mccListDiv.append(newButton);
+		} else {
+
+		}*/
+
+		//$j(newButton).addClass('vrcRaceSort')
+		raceDayListDiv.append(newButton);
+		headerListDiv.append(newHeader);
+		headerCount ++
+		sortButtonList()
+})
+function sortButtonList(){
+	$j('#dayDropDown').children('.vrcRaceSort').sort(function (a, b) {
+				return $j(a).data('racedate') - $j(b).data('racedate');				
+			}).appendTo('#dayDropDown');
+	}
+}
+function createTickeTypeList(){ //removed the button dynamic generation for v2.0, left breadcrumbs & array generation in.
+	let buttonArray = Array.from(ticketTypeList);
+	fullTicketTypeList = Array.from(ticketTypeList);
+	let vrcTagDiv = $j("#vrcFilterList");
+	//run through array and remove spaces >> removed loop, handled when the set is built not
+	/*for (var iX = 0; iX < fullTicketTypeList.length; iX++) {
+		fullTicketTypeList[iX] = fullTicketTypeList[iX].replace(/\s/g, '').replace(/[^\w\s]/gi, '');//removes special characters;
+	} */
+	$j.each(buttonArray, function(index,value){
+		
+		let eventNameClean = value//.replace(/[^\w\s]/gi, '').replace(/\s/g, '');//removes special characters and spaces
+		
+		//let newButton = $j("<div data-tickettype='"+ eventNameClean +"' class='vrcCheckBoxBtn'><div class='vrcCheckBox vrcCheckBoxOff'></div>"+ value +"</div>");
+		let newTag = $j("<div data-tagname='"+ eventNameClean +"' class='vrcFilterTag vrcTicketTypeFilterTag'>"+ value +"</div>");
+		//apends button to dropdown
+		//ticketTypeListDiv.append(newButton);
+		vrcTagDiv.append(newTag);
+})
+}
+function createExperienceTypeList(){
+	let buttonArray = Array.from(experienceTypeList);
+	fullExperienceTypeList = Array.from(experienceTypeList);
+
+	let vrcTagDiv = $j("#vrcFilterList");
+	//run through array and remove spaces
+	for (var iX = 0; iX < fullExperienceTypeList.length; iX++) {
+		fullExperienceTypeList[iX] = fullExperienceTypeList[iX].replace(/[^\w\s]/gi, '').replace(/\s/g, '');
+	}
+	$j.each(buttonArray, function(index,value){
+		let experienceTypeClean = value.replace(/[^\w\s]/gi, '').replace(/\s/g, '');//removes special characters and spaces
+		let newButton = $j("<div data-experiencetype='"+ experienceTypeClean +"' class='vrcCheckBoxBtn'><div class='vrcCheckBox vrcCheckBoxOff'></div>"+ value +"</div>");
+		let newTag = $j("<div data-tagname='"+ experienceTypeClean +"' class='vrcFilterTag vrcExperienceTypeFilterTag'>"+ value +"</div>");
+		//apends button to dropdown
+		experienceTypeListDiv.append(newButton);
+		vrcTagDiv.append(newTag);
+})
+}
+function createEventNameList(){
+	let buttonArray = Array.from(eventNameList).sort();
+	fullEventNameList = Array.from(eventNameList);
+	let vrcTagDiv = $j("#vrcFilterList");
+	//run through array and remove spaces
+	for (var iX = 0; iX < fullEventNameList.length; iX++) {
+		fullEventNameList[iX] = fullEventNameList[iX].replace(/\s/g, '');
+	}
+	$j.each(buttonArray, function(index,value){
+		let eventNameClean = value.replace(/[^\w\s]/gi, '').replace(/\s/g, '');//removes special characters and spaces
+		let newButton = $j("<div data-eventname='"+ eventNameClean +"' class='vrcCheckBoxBtn'><div class='vrcCheckBox vrcCheckBoxOff'></div>"+ value +"</div>");
+		let newTag = $j("<div data-tagname='"+ eventNameClean +"' class='vrcFilterTag vrcEventNameFilterTag'>"+ value +"</div>");
+		//apends button to dropdown
+		eventNameListDiv.append(newButton);
+		vrcTagDiv.append(newTag);
+})
+}
+//sticky menu
+$j(document).scroll(function() {
+    var pageTop = $j(document).scrollTop();
+    var scollTarget = $j("#vrcMenuWrap").offset().top;
+    if (pageTop > scollTarget) {
+		$j("#vrcMenu").addClass("vrcMenuToggle");		
+    } else {
+		$j("#vrcMenu").removeClass("vrcMenuToggle");
+    }
+});	
+//click functions
+//drop down
+$j(document).on('click', ".vrcDropDownBtn", function () {
+	$j(this).siblings(".vrcDropDownWrap").fadeToggle("150");
+})
+//checkbox btn toggle	
+$j(document).on('click', ".vrcCheckBoxBtn", function () {
+	$j(this).children(".vrcCheckBox").toggleClass("vrcCheckBoxOn");
+	$j(this).children(".vrcCheckBox").toggleClass("vrcCheckBoxOff");
+})
+//radio btn toggle 
+$j(document).on('click', ".vrcRadioBtn", function () {
+	$j(".vrcRadio").removeClass("vrcRadioOn").addClass("vrcRadioOff");
+	$j(this).children(".vrcRadio").removeClass("vrcRadioOff").addClass("vrcRadioOn");
+})
+
+// click anywhere on the body hides menu pop ups
+$j(document).on('click', 'body', function (e) {
+
+	if ($j(e.target).closest('.vrcDropDown').length !== 0 )
+		{return false;}
+		$j(".vrcDropDownWrap").fadeOut(50);		
+});	
+//#ticketTypeDropDown, #dayDropDown, #experienceDropDown, #eventDropDown
+$j(document).on('click','#ticketTypeMenu', function (){
+		$j("#dayDropDown, #experienceDropDown, #eventDropDown, #sortDropDown").fadeOut(0)
+})
+$j(document).on('click','#dayMenu', function (){
+		$j("#ticketTypeDropDown, #experienceDropDown, #eventDropDown, #sortDropDown").fadeOut(0)
+})
+$j(document).on('click','#experienceTypeMenu', function (){
+		$j("#ticketTypeDropDown, #dayDropDown, #eventDropDown, #sortDropDown").fadeOut(0)
+})
+$j(document).on('click','#eventMenu', function (){
+		$j("#ticketTypeDropDown, #dayDropDown, #experienceDropDown, #sortDropDown").fadeOut(0)
+})
+$j(document).on('click','#sortMenu', function (){
+		$j("#ticketTypeDropDown, #dayDropDown, #experienceDropDown").fadeOut(0)
+})
+
+
+
+//info light boxes
+$j(document).on('click', ".vrcInfoBtn", function () {
+	//vrcFetchEventBio()
+	$j(this).parent(".vrcBotWrap").siblings(".vrcInfoLightBox").fadeIn("250");
+	$j("#vrcMenuWrap").css("display","none");
+})
+$j(document).on('click', ".vrcLbClose", function () {
+	$j(this).parent(".vrcInfoLbContent").parent(".vrcInfoLightBox").fadeOut("50");
+	$j("#vrcMenuWrap").css("display","block");
+})
+$j(document).on('click', '.vrcInfoLightBox', function (e) {
+
+	if ($j(e.target).closest('.vrcLbBookBtn, .vrcLbInfoBtn').length !== 0 )
+	{return true}
+	else if ($j(e.target).closest('.vrcInfoLbContent').length !== 0 )
+	//$j(".vrcInfoLbContent").stopPropagation();
+	{return false;}
+	$j(".vrcInfoLightBox").fadeOut(50);
+	$j("#vrcMenuWrap").css("display","block");
+});
+//mobile menu fade in & out
+$j(document).on('click', "#vrcMenuMobToggle", function () {
+	$j("#vrcMenu").fadeIn(500);
+})
+$j(document).on('click', "#vrcMenuHeaderBtn, .vrcMobCloseBtn", function () {
+	$j("#vrcMenu").fadeOut(500);
+})
+$j(document).on('click', ".vrcPriceBtnMob", function () {
+	$j("#vrcPriceInnerWrap").fadeToggle(500);
+})	
+//add or remove from the array when clicking checkbox
+	//race day list
+	$j(document).on('click', "#dayDropDown .vrcCheckBoxBtn", function () {
+		var toggleRaceDay = $j(this).data('raceday');
+		if((jQuery.inArray(toggleRaceDay, fullRaceDayNameList) != -1)){
+			//unselect
+			fullRaceDayNameList.splice( $j.inArray(toggleRaceDay, fullRaceDayNameList), 1 );
+		} else {
+			//select
+			fullRaceDayNameList.push(toggleRaceDay)	
+			$j(this).siblings(".vrcDropDownMenuAll[data-raceday=All]").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff")
+		}					
+		cardsToDisplay();
+})
+	//ticket type list
+	$j(document).on('click', "#ticketTypeDropDown .vrcCheckBoxBtn", function () {
+		var toggleTicketType = $j(this).data('tickettype');
+			
+		if((jQuery.inArray(toggleTicketType, fullTicketTypeList) != -1)){
+			fullTicketTypeList.splice( $j.inArray(toggleTicketType, fullTicketTypeList), 1 );
+		} else {
+			fullTicketTypeList.push(toggleTicketType)
+			$j(this).siblings(".vrcDropDownMenuAll[data-tickettype=All]").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff")
+		}	
+		//console.log(toggleTicketType, fullTicketTypeList)			
+		cardsToDisplay();
+})
+	//experience type list
+	$j(document).on('click', "#experienceDropDown .vrcCheckBoxBtn", function () {
+		var toggleExperienceType = $j(this).data('experiencetype');
+			
+		if((jQuery.inArray(toggleExperienceType, fullExperienceTypeList) != -1)){
+			fullExperienceTypeList.splice( $j.inArray(toggleExperienceType, fullExperienceTypeList), 1 );
+		} else {
+			fullExperienceTypeList.push(toggleExperienceType)
+			$j(this).siblings(".vrcDropDownMenuAll[data-experiencetype=All]").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff")
+		}					
+		cardsToDisplay();
+})
+	//event name list
+	$j(document).on('click', "#eventDropDown .vrcCheckBoxBtn", function () {
+		var toggleEventName = $j(this).data('eventname');
+			
+		if((jQuery.inArray(toggleEventName, fullEventNameList) != -1)){
+			fullEventNameList.splice( $j.inArray(toggleEventName, fullEventNameList), 1 );
+		} else {
+			fullEventNameList.push(toggleEventName)
+			$j(this).siblings(".vrcDropDownMenuAll[data-eventname=All]").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff")
+		}					
+		cardsToDisplay();
+})
+//select all, clear all, close drop down buttons
+//race days
+$j(document).on('click', ".vrcDropDownMenuAll[data-raceday=All]", function () {
+	if($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOn")){		
+		fullRaceDayNameList.length = 0;
+		$j(this).siblings(".vrcCheckBoxBtn").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+		$j(".vrcRaceNameFilterTag").fadeOut(250);
+		raceDayCount = 0;
+		raceDayCounter();
+		vrcBreadCrumbs();
+		//turn off dynamic headers
+		$j(".vrcEventHeader").removeClass("vrcEventHeaderShow").addClass("vrcEventHeaderHide")
+		$j("#vrcEventHeaderList").fadeOut(0)
+	} else if ($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOff")){
+
+	}
+
+	cardsToDisplay();
+})
+//clear all
+$j(document).on('click', "#dayDropDown .vrcDropDownMenu .vrcDropDownMenuClear", function () {	
+	fullRaceDayNameList.length = 0;
+	$j(this).parent(".vrcDropDownMenu").siblings(".vrcCheckBoxBtn").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+	$j(".vrcRaceNameFilterTag").fadeOut(250);
+	raceDayCount = 0;
+	raceDayCounter();
+	vrcBreadCrumbs();
+	cardsToDisplay();
+})
+//grouped drop downs for race days (Cup Carnival / Autumn carnival)
+$j(document).on('click', ".vrcCheckBoxBtn[data-raceday=MelbourneCupCarnival]", function () {
+	//console.log(fullRaceDayNameList)
+	if($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOff")){	
+		//unselect	
+		//full race day arr gets filtered for the MCC events, some were being left when trying to splice under specific circumstances
+		fullRaceDayNameList = fullRaceDayNameList.filter(item => !fullCupCarnivalList.includes(item))
+		$j(".vrcCheckBoxBtn[data-raceday='HowdenVictoriaDerbyDay']").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+		$j(".vrcCheckBoxBtn[data-raceday='LexusMelbourneCupDay']").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+		$j(".vrcCheckBoxBtn[data-raceday='TABChampionsStakesDay']").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+		$j(".vrcCheckBoxBtn[data-raceday='CrownOaksDay']").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+		//$j(".vrcRaceNameFilterTag").fadeOut(250);
+		//raceDayCount = 0;
+		raceDayCounter();
+		vrcBreadCrumbs();
+	} else if ($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOn")){
+		//select    
+		//merg race day list with cup carnival list, filter for duplicates, then reset race day list to == this new arr
+
+		let mergeArr = fullRaceDayNameList.concat(fullCupCarnivalList.filter((item) => fullRaceDayNameList.indexOf(item) < 0));
+		fullRaceDayNameList = mergeArr;
+
+		$j(".vrcCheckBoxBtn[data-raceday='HowdenVictoriaDerbyDay']").children(".vrcCheckBox").removeClass("vrcCheckBoxOff").addClass("vrcCheckBoxOn");
+		$j(".vrcCheckBoxBtn[data-raceday='LexusMelbourneCupDay']").children(".vrcCheckBox").removeClass("vrcCheckBoxOff").addClass("vrcCheckBoxOn");
+		$j(".vrcCheckBoxBtn[data-raceday='TABChampionsStakesDay']").children(".vrcCheckBox").removeClass("vrcCheckBoxOff").addClass("vrcCheckBoxOn");
+		$j(".vrcCheckBoxBtn[data-raceday='CrownOaksDay']").children(".vrcCheckBox").removeClass("vrcCheckBoxOff").addClass("vrcCheckBoxOn");
+		raceDayCounter()
+	}
+
+	cardsToDisplay();
+})
+//removes the cup carnival checkbox if any of its days are selected 
+$j(document).on('click', ".vrcCheckBoxBtn[data-raceday='HowdenVictoriaDerbyDay'], .vrcCheckBoxBtn[data-raceday='LexusMelbourneCupDay'],.vrcCheckBoxBtn[data-raceday='TABChampionsStakesDay'],.vrcCheckBoxBtn[data-raceday='CrownOaksDay']", function () {
+
+	$j(".vrcCheckBoxBtn[data-raceday='MelbourneCupCarnival']").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+
+})
+//ticket type select all
+$j(document).on('click', ".vrcDropDownMenuAll[data-tickettype=All]", function () {
+	if($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOn")){		
+		fullTicketTypeList.length = 0;
+		$j(this).siblings(".vrcCheckBoxBtn").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+		$j(".vrcTicketTypeFilterTag").fadeOut(250);
+		ticketTypeCount = 0;
+		ticketTypeCounter();
+		vrcBreadCrumbs();
+	} else if ($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOff")){
+		
+	}
+	cardsToDisplay();
+})
+//clear all
+$j(document).on('click', "#ticketTypeDropDown .vrcDropDownMenu .vrcDropDownMenuClear", function () {
+	fullTicketTypeList.length = 0;
+	$j(this).parent(".vrcDropDownMenu").siblings(".vrcCheckBoxBtn").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+	$j(".vrcTicketTypeFilterTag").fadeOut(250);
+	ticketTypeCount = 0;
+	ticketTypeCounter();
+	vrcBreadCrumbs();
+	cardsToDisplay();
+})
+/*
+//experience type select all
+$j(document).on('click', ".vrcDropDownMenuAll[data-experiencetype=All]", function () {
+	if($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOn")){		
+		fullExperienceTypeList.length = 0;
+		$j(this).siblings(".vrcCheckBoxBtn").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+		$j(".vrcExperienceTypeFilterTag").fadeOut(250);
+		experienceTypeCount = 0;
+		experienceTypeCounter();
+		vrcBreadCrumbs();
+	} else if ($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOff")){
+		
+	}
+	cardsToDisplay();
+})
+//clear all
+$j(document).on('click', "#experienceDropDown .vrcDropDownMenu .vrcDropDownMenuClear", function () {
+	fullExperienceTypeList.length = 0;
+	$j(this).parent(".vrcDropDownMenu").siblings(".vrcCheckBoxBtn").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+	$j(".vrcExperienceTypeFilterTag").fadeOut(250);
+	experienceTypeCount = 0;
+	experienceTypeCounter();
+	vrcBreadCrumbs();
+	cardsToDisplay()
+}) */
+//event name
+$j(document).on('click', ".vrcDropDownMenuAll[data-eventname=All]", function () {
+	if($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOn")){		
+		fullEventNameList.length = 0;
+		$j(this).siblings(".vrcCheckBoxBtn").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+		$j(".vrcEventNameFilterTag").fadeOut(250);
+		eventNameCount = 0;
+		eventNameCounter();
+		vrcBreadCrumbs();
+	} else if ($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOff")){
+		
+	}
+	cardsToDisplay();
+})
+//clear all
+$j(document).on('click', "#eventDropDown .vrcDropDownMenu .vrcDropDownMenuClear", function () {
+	fullEventNameList.length = 0;
+	$j(this).parent(".vrcDropDownMenu").siblings(".vrcCheckBoxBtn").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+	$j(".vrcEventNameFilterTag").fadeOut(250);
+	eventNameCount = 0;
+	eventNameCounter();
+	vrcBreadCrumbs();
+	cardsToDisplay();
+})
+//close drop down
+$j(document).on('click', ".vrcDropDownMenuClose", function () {
+
+	$j(this).parent(".vrcDropDownMenu").parent(".vrcDropDownWrap").fadeOut(150);
+});
+//buttons + bread crumbs + counts + dynamic headers
+//race day
+$j(document).on('click', "#dayDropDown .vrcCheckBoxBtn", function () {
+	let vrcTagTxt = $j(this).data('raceday');
+	raceDayBtnCount = $j(this).attr('data-buttoncount');
+	
+	if($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOn") && (!$j(this).hasClass("vrcDropDownMenuAll"))){
+		//raceDayCount ++
+		//console.log(raceDayCount)
+		raceDayCount = fullRaceDayNameList.length	
+		newHeaderCount = raceDayBtnCount	
+		//$j(".vrcFilterTag[data-tagname='"+vrcTagTxt+"']").fadeIn();
+		$j(".vrcEventHeader[data-headerraceday='"+vrcTagTxt+"']").removeClass('vrcEventHeaderHide').addClass('vrcEventHeaderShow');
+	} else if($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOff") && (!$j(this).hasClass("vrcDropDownMenuAll"))){
+		raceDayCount = fullRaceDayNameList.length
+
+		//$j(".vrcFilterTag[data-tagname='"+vrcTagTxt+"']").fadeOut();
+		$j(".vrcEventHeader[data-headerraceday='"+vrcTagTxt+"']").removeClass('vrcEventHeaderShow').addClass('vrcEventHeaderHide');
+	}
+	vrcBreadCrumbs();
+	raceDayCounter();
+
+})
+//ticket type
+$j(document).on('click', "#ticketTypeDropDown .vrcCheckBoxBtn", function () {
+	let vrcTagTxt = $j(this).data('tickettype');
+	if($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOn") && (!$j(this).hasClass("vrcDropDownMenuAll"))){
+		ticketTypeCount ++
+		//$j(".vrcFilterTag[data-tagname='"+vrcTagTxt+"']").fadeIn();
+	} else if($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOff") && (!$j(this).hasClass("vrcDropDownMenuAll"))){
+		ticketTypeCount --
+		//$j(".vrcFilterTag[data-tagname='"+vrcTagTxt+"']").fadeOut();
+	}
+	vrcBreadCrumbs();
+	ticketTypeCounter()
+})
+
+//experience type
+/*$j(document).on('click', "#experienceDropDown .vrcCheckBoxBtn", function () {
+	let vrcTagTxt = $j(this).data('experiencetype');
+	if($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOn") && (!$j(this).hasClass("vrcDropDownMenuAll"))){
+		experienceTypeCount ++
+		$j(".vrcFilterTag[data-tagname='"+vrcTagTxt+"']").fadeIn();
+	} else if($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOff") && (!$j(this).hasClass("vrcDropDownMenuAll"))){
+		experienceTypeCount --
+		$j(".vrcFilterTag[data-tagname='"+vrcTagTxt+"']").fadeOut();
+	}
+	vrcBreadCrumbs();
+	experienceTypeCounter();
+}) */
+//event name
+$j(document).on('click', "#eventDropDown .vrcCheckBoxBtn", function () {
+	let vrcTagTxt = $j(this).data('eventname');
+	if($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOn") && (!$j(this).hasClass("vrcDropDownMenuAll"))){
+		eventNameCount ++
+		//$j(".vrcFilterTag[data-tagname='"+vrcTagTxt+"']").fadeIn();
+	} else if($j(this).children(".vrcCheckBox").hasClass("vrcCheckBoxOff") && (!$j(this).hasClass("vrcDropDownMenuAll"))){
+		eventNameCount --
+		//$j(".vrcFilterTag[data-tagname='"+vrcTagTxt+"']").fadeOut();
+	}
+	vrcBreadCrumbs();
+	eventNameCounter();
+})
+//remove tags via click
+$j(document).on('click', ".vrcTicketTypeFilterTag", function () {
+	let vrcTagName = $j(this).data('tagname');
+	$j(this).fadeOut(250)
+	$j(".vrcCheckBoxBtn[data-tickettype='"+vrcTagName+"']").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+	fullTicketTypeList.splice( $j.inArray(vrcTagName, fullTicketTypeList), 1 );
+	ticketTypeCount --
+	ticketTypeCounter();
+	cardsToDisplay();
+	vrcBreadCrumbs();
+})
+$j(document).on('click', ".vrcRaceNameFilterTag", function () {
+	let vrcTagName = $j(this).data('tagname');
+	$j(this).fadeOut(250)
+	$j(".vrcCheckBoxBtn[data-raceday='"+vrcTagName+"']").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+	fullRaceDayNameList.splice( $j.inArray(vrcTagName, fullRaceDayNameList), 1 );
+	raceDayCount --
+	raceDayCounter();
+	cardsToDisplay();
+	vrcBreadCrumbs();
+})
+/*$j(document).on('click', ".vrcExperienceTypeFilterTag", function () {
+	let vrcTagName = $j(this).data('tagname');
+	$j(this).fadeOut(250)
+	$j(".vrcCheckBoxBtn[data-experiencetype='"+vrcTagName+"']").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+	fullExperienceTypeList.splice( $j.inArray(vrcTagName, fullExperienceTypeList), 1 );
+	experienceTypeCount --
+	experienceTypeCounter();
+	cardsToDisplay();
+	vrcBreadCrumbs();
+})*/
+$j(document).on('click', ".vrcEventNameFilterTag", function () {
+	let vrcTagName = $j(this).data('tagname');
+	$j(this).fadeOut(250)
+	$j(".vrcCheckBoxBtn[data-eventname='"+vrcTagName+"']").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+	fullEventNameList.splice( $j.inArray(vrcTagName, fullEventNameList), 1 );
+	eventNameCount --
+	eventNameCounter();
+	cardsToDisplay();
+	vrcBreadCrumbs();
+})
+let vrcBreadCrumbs = function(){
+	let totalTypeCount = (ticketTypeCount + raceDayCount +  eventNameCount); //experienceTypeCount +
+
+	document.getElementById('vrcTotalTypeCounter').innerHTML = totalTypeCount.toString();
+	if((ticketTypeCount >= 1 || raceDayCount >= 1  || eventNameCount >= 1)){
+			$j("#vrcResetAllBtn").fadeIn(250);             
+			$j("#vrcTotalTypeCounter").fadeIn(250);
+	}else if((ticketTypeCount == 0 && raceDayCount == 0  && eventNameCount == 0)){
+			$j("#vrcResetAllBtn").fadeOut(250);
+			$j("#vrcTotalTypeCounter").fadeOut(250);
+	}
+}
+let ticketTypeCounter = function(){
+	document.getElementById('vrcTicketTypeCounter').innerHTML = ticketTypeCount.toString();
+	if((ticketTypeCount >= 1)){
+			$j("#vrcTicketTypeCounter").fadeIn(250);
+			$j("#ticketTypeMenu").children(".vrcDropDownBtn").removeClass("vrcDropDownInActive").addClass("vrcDropDownActive");
+	}else if((ticketTypeCount == 0)){
+			$j("#vrcTicketTypeCounter").fadeOut(250);
+			$j("#ticketTypeMenu").children(".vrcDropDownBtn").removeClass("vrcDropDownActive").addClass("vrcDropDownInActive");
+	}
+}
+let raceDayCounter = function(){
+	document.getElementById('vrcRaceDayCounter').innerHTML = raceDayCount.toString();
+	if((raceDayCount >= 1)){
+			$j("#vrcRaceDayCounter").fadeIn(250);
+			$j("#dayMenu").children(".vrcDropDownBtn").removeClass("vrcDropDownInActive").addClass("vrcDropDownActive");			
+	}else if((raceDayCount == 0)){
+			$j("#vrcRaceDayCounter").fadeOut(250);
+			$j("#dayMenu").children(".vrcDropDownBtn").removeClass("vrcDropDownActive").addClass("vrcDropDownInActive");
+	}
+	headerCountCheck();
+}
+/*let experienceTypeCounter = function(){
+	document.getElementById('vrcExperienceTypeCounter').innerHTML = experienceTypeCount.toString();
+	if((experienceTypeCount >= 1)){
+			$j("#vrcExperienceTypeCounter").fadeIn(250);
+			$j("#experienceTypeMenu").children(".vrcDropDownBtn").removeClass("vrcDropDownInActive").addClass("vrcDropDownActive");
+	}else if((experienceTypeCount == 0)){
+			$j("#vrcExperienceTypeCounter").fadeOut(250);
+			$j("#experienceTypeMenu").children(".vrcDropDownBtn").removeClass("vrcDropDownActive").addClass("vrcDropDownInActive");
+	}
+}*/
+let eventNameCounter = function(){
+	document.getElementById('vrcEventNameCounter').innerHTML = eventNameCount.toString();
+	if((eventNameCount >= 1)){
+			$j("#vrcEventNameCounter").fadeIn(250);
+			$j("#eventMenu").children(".vrcDropDownBtn").removeClass("vrcDropDownInActive").addClass("vrcDropDownActive");
+	}else if((eventNameCount == 0)){
+			$j("#vrcEventNameCounter").fadeOut(250);
+			$j("#eventMenu").children(".vrcDropDownBtn").removeClass("vrcDropDownActive").addClass("vrcDropDownInActive");
+	}
+}
+//dynamic header scrolling
+$j(document).on('click', "#vrcNextRaceDay", function () {
+let currentHeaderCount = parseInt($j(".vrcEventHeaderShow").attr('data-headercount'));
+let currentRaceDay = $j(".vrcEventHeaderShow").attr('data-headerraceday')
+
+		//console.log(currentRaceDay)
+		//if count is > 0 
+	if((currentHeaderCount > 0)){
+		//console.log("trigger")
+		//hide current header + remove name from array
+		$j(".vrcEventHeader[data-headercount="+currentHeaderCount+"]").removeClass("vrcEventHeaderShow").addClass("vrcEventHeaderHide");
+		fullRaceDayNameList.splice($j.inArray(currentRaceDay, fullRaceDayNameList), 1 );
+		//console.log(fullRaceDayNameList)
+		//show new header + add name to array
+		newHeaderCount = currentHeaderCount + 1
+		$j(".vrcEventHeader[data-headercount="+newHeaderCount+"]").removeClass("vrcEventHeaderHide").addClass("vrcEventHeaderShow");
+		let targetRaceDay = $j(".vrcEventHeaderShow").attr('data-headerraceday')
+		fullRaceDayNameList.push(targetRaceDay)
+		//console.log(fullRaceDayNameList)
+		//amend the drop down 
+		$j(".vrcCheckBoxBtn[data-raceday='"+currentRaceDay+"']").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+		$j(".vrcCheckBoxBtn[data-raceday='"+targetRaceDay+"']").children(".vrcCheckBox").removeClass("vrcCheckBoxOff").addClass("vrcCheckBoxOn");
+		//console.log(currentRaceDay, targetRaceDay)
+		//if new count == max count hide button
+	}
+	//console.log(currentHeaderCount, headerCount)
+	//
+
+	//console.log("current",currentHeaderCount,"new",newHeaderCount ,"max",headerCount)
+	raceDayCounter();
+	cardsToDisplay();
+
+})
+$j(document).on('click', "#vrcPrevRaceDay", function () {
+let currentHeaderCount = parseInt($j(".vrcEventHeaderShow").attr('data-headercount'));
+let currentRaceDay = $j(".vrcEventHeaderShow").attr('data-headerraceday')
+
+		//console.log(currentRaceDay)
+		//if count is > 0 
+	if((currentHeaderCount > 0)){
+		//console.log("trigger")
+		//hide current header + remove name from array
+		$j(".vrcEventHeader[data-headercount="+currentHeaderCount+"]").removeClass("vrcEventHeaderShow").addClass("vrcEventHeaderHide");
+		fullRaceDayNameList.splice($j.inArray(currentRaceDay, fullRaceDayNameList), 1 );
+		//console.log(fullRaceDayNameList)
+		//show new header + add name to array
+		newHeaderCount = currentHeaderCount - 1
+		$j(".vrcEventHeader[data-headercount="+newHeaderCount+"]").removeClass("vrcEventHeaderHide").addClass("vrcEventHeaderShow");
+		let targetRaceDay = $j(".vrcEventHeaderShow").attr('data-headerraceday')
+		fullRaceDayNameList.push(targetRaceDay)
+		//console.log(fullRaceDayNameList)
+		//amend the drop down 
+		$j(".vrcCheckBoxBtn[data-raceday='"+currentRaceDay+"']").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+		$j(".vrcCheckBoxBtn[data-raceday='"+targetRaceDay+"']").children(".vrcCheckBox").removeClass("vrcCheckBoxOff").addClass("vrcCheckBoxOn");
+		//console.log(currentRaceDay, targetRaceDay)
+		//if new count == max count hide button
+	}
+	//
+
+	//console.log("current",currentHeaderCount,"new",newHeaderCount ,"max",headerCount)
+	raceDayCounter();
+	cardsToDisplay();
+
+})
+let headerCountCheck = function(){
+//check values across counters to show / hide the prev & next buttons and wrapper.
+
+//fade in / fade out header wrapper when race day counter doesnt == 1
+	if((raceDayCount == 1)){
+		currentHeaderCount = parseInt($j(".vrcEventHeaderShow").attr('data-headercount'));
+		//make new haeadercount == current header count to alignt hem when only 1 item is visible????????????????
+			$j("#vrcEventHeaderList").fadeIn(250);
+	}if((raceDayCount >= 2) || (raceDayCount == 0)){
+			$j("#vrcEventHeaderList").fadeOut(0);
+	}
+
+//prev & next button visability when they hit the end	
+	if((newHeaderCount == (headerCount - 1))||(currentHeaderCount == (headerCount - 1))){
+		$j("#vrcNextRaceDay").fadeOut(0)
+	}
+	if((newHeaderCount >= 2)&&($j("#vrcPrevRaceDay").has("display","none"))){
+		//show buttons again when scrolling back and forth
+		$j("#vrcPrevRaceDay").fadeIn(0)
+	}
+	if((newHeaderCount == 1)||(currentHeaderCount == 1)){
+		$j("#vrcPrevRaceDay").fadeOut(0)
+	}
+	if((newHeaderCount <= headerCount - 2)&&($j("#vrcNextRaceDay").has("display","none"))){
+		//show buttons again when scrolling back and forth
+		$j("#vrcNextRaceDay").fadeIn(0)
+		}
+}
+
+let resetHeaders = function(){
+	$j("#vrcNextRaceDay").fadeOut(0);
+	$j("#vrcPrevRaceDay").fadeOut(0);
+	$j("#vrcEventHeaderList").fadeOut(0)
+	$j(".vrcEventHeader").removeClass("vrcEventHeaderShow").addClass("vrcEventHeaderHide");
+}
+//reset all filters 
+$j(document).on('click', "#vrcResetAllBtn, #vrcErrorReset, #vrcFeatureAllCard", function () {
+
+		//empty the arrays
+		fullEventNameList.length = 0;
+		// removed fullExperienceTypeList.length = 0;
+		fullTicketTypeList.length = 0;
+		fullRaceDayNameList.length = 0;
+		//rebuild arrays > not needed any more? 
+		//fullEventNameList = Array.from(eventNameList).join(',').replace(/,/g, '/').replace(/'/g, '').split("/");
+		// removed fullExperienceTypeList = Array.from(experienceTypeList);
+		//fullTicketTypeList = Array.from(ticketTypeList);
+		//fullRaceDayNameList = Array.from(raceDayNameList).join(',').replace(/,/g, '/').replace(/'/g, '').split("/");
+		//reset counters
+		ticketTypeCount = 0;
+		raceDayCount = 0;
+		// removed experienceTypeCount = 0;
+		eventNameCount = 0;
+ 		//reset buttons
+		$j(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+		$j(".vrcDropDownMenuAll").children(".vrcCheckBox").removeClass("vrcCheckBoxOff").addClass("vrcCheckBoxOn");
+		//reset filter tags & headers
+		$j(".vrcFilterTag").fadeOut(50);
+		$j(".vrcEventHeader").removeClass('vrcEventHeaderShow').addClass('vrcEventHeaderHide');
+		$j("#vrcEventHeaderList").fadeOut(0)
+		//add in "all" buttons ".vrcDropDownMenuAll[data-eventname=All]"
+		ticketTypeCounter();
+		raceDayCounter();
+		//experienceTypeCounter();
+		eventNameCounter();
+		vrcBreadCrumbs();
+		resetHeaders();
+		cardsToDisplay();
+});
+//////conditionals for event cards
+let cardsToDisplay	= function(){
+	eventCount = 0
+	//run through each card and check against filters
+	$j('.vrcEventCard').each(function () {
+		let raceDayName = $j(this).data('racedayname');
+		let ticketType = $j(this).data('tickettype');
+		let experienceType = $j(this).data('experiencetype');
+		let eventName = $j(this).data('eventname');	
+		let eventPrice = $j(this).data('eventprice');
+
+		/*if(((jQuery.inArray(raceDayName, fullRaceDayNameList) != -1 || $j(".vrcDropDownMenuAll[data-raceday=All]").children(".vrcCheckBox").hasClass("vrcCheckBoxOn")) && (jQuery.inArray(ticketType, fullTicketTypeList) != -1 || $j(".vrcDropDownMenuAll[data-tickettype=All]").children(".vrcCheckBox").hasClass("vrcCheckBoxOn")) && (jQuery.inArray(experienceType, fullExperienceTypeList) != -1 || $j(".vrcDropDownMenuAll[data-experiencetype=All]").children(".vrcCheckBox").hasClass("vrcCheckBoxOn")) && (jQuery.inArray(eventName, fullEventNameList) != -1 || $j(".vrcDropDownMenuAll[data-eventname=All]").children(".vrcCheckBox").hasClass("vrcCheckBoxOn")) &&*///original conditions, rewriting for the removal of experience type, leaving in eventName so we can use URL filters
+		if(((jQuery.inArray(raceDayName, fullRaceDayNameList) != -1 || $j(".vrcDropDownMenuAll[data-raceday=All]").children(".vrcCheckBox").hasClass("vrcCheckBoxOn")) && (jQuery.inArray(ticketType, fullTicketTypeList) != -1 || $j(".vrcDropDownMenuAll[data-tickettype=All]").children(".vrcCheckBox").hasClass("vrcCheckBoxOn")) && (jQuery.inArray(eventName, fullEventNameList) != -1 || $j(".vrcDropDownMenuAll[data-eventname=All]").children(".vrcCheckBox").hasClass("vrcCheckBoxOn")) &&
+		//price is > min set price and < max price or > max slider price
+		((eventPrice >= minPrice && eventPrice <= maxPrice) || (eventPrice >= minPrice && maxPrice == 1000 && eventPrice > 1000))	
+		)){
+				$j(this).fadeIn(500).css("display","inline-block");
+				eventCount = eventCount +1
+				vrcEventCount()
+		} else {
+				$j(this).fadeOut(250);
+				eventCount = eventCount -1
+				vrcEventCount()
+		}
+});
+
+}//end vrcEventFilter
+//check if the event count is == total event count we set on load
+let vrcEventCount = function(){
+	if(eventCount == totalEventCount){
+		$j("#vrcErrorEventCount").fadeIn(0);
+	} else {
+		$j("#vrcErrorEventCount").fadeOut(0);
+	}
+}
+let vrcPriceSliderInit = function(){
+	//set max price from array
+	setMaxPrice()
+
+
+		//Price Slider init
+		$j("#slider").slider({
+
+			range: true,
+			step: 25,
+			min: 0,
+			max: vrcTopPrice,
+			values: [0, vrcTopPrice],
+			slide: function (event, ui) {
+				minPrice = ui.values[0]
+				maxPrice = ui.values[1]
+				$j("#price").val("$" + minPrice + " - $" + maxPrice);
+				cardsToDisplay();
+				//checkPricePlus();
+				resizePriceInput();
+			}
+		});
+		//adds the values to the html label
+		$j("#price").val("$" + $j("#slider").slider("values", 0) +
+				" - $" + $j("#slider").slider("values", 1));
+		
+		//if price == max price show +
+		let checkPricePlus = function () {
+			if (maxPrice == 1000){
+				$j(".vrcPlus").fadeIn(250)
+			} else {
+				$j(".vrcPlus").fadeOut(250)
+			}
+		};
+		//resize input price width 
+		let resizePriceInput = function () {
+  			document.getElementById("price").style.width = (price.value.length) + 'ch';
+			$j(".vrcPlus").css("margin", "0px 0px 0px -22px")
+		}
+	}
+let setMaxPrice = function(){
+
+	vrcPrices.sort((a, b) => a - b)
+	vrcTopPrice = vrcPrices.slice(-1).pop()	
+
+}
+//fetch event bio for each card
+function loadEventDescription(){
+
+$j.ajax({
+		   type: 'GET',
+		   url: "https://s1.ticketm.net/tm/en-au/img/static/vrc/2026/vrc26_event_desc.json",
+		   dataType: 'html',
+			success: function(data) {
+				vrcEventDescriptionData = JSON.parse(data);
+				//store description data in variable to be called below
+			},
+			error: function (xhr, ajaxOptions, thrownError) { //
+
+			   
+			}
+		});
+
+
+}
+//fetch event description data on button click
+$j(document).on('click', ".vrcInfoBtn", vrcFetchEventBio = function () {
+
+let eventCardID = $j(this).parent(".vrcBotWrap").parent(".vrcEventCard").data('eventcode');
+let eventDescDiv = $j(this).parent(".vrcBotWrap").siblings(".vrcInfoLightBox").children(".vrcInfoLbContent").children(".vrcLbInfoWrap").children(".vrcLbEventBio").children("p");
+
+	if(eventDescDiv.hasClass('descAdded')){
+		return
+		} else { 
+			$j.each(vrcEventDescriptionData, function (key, value) {
+				//set values from json
+				let eventDescID = value.eventID.split(","); //split into
+				let eventDescText = value.desc;
+				//find the card ID in the split array
+				const findEventID = eventDescID.some(x => x.includes(eventCardID))
+				//if true append text to description div and add class to stop rerun
+				if(findEventID == true){
+					eventDescDiv.append(eventDescText);
+					eventDescDiv.addClass("descAdded")
+
+				}
+			})
+		}
+
+})
+//fetch info link for each card
+$j(document).on('click', ".vrcInfoBtn", vrcFetchInfoLink = function () {
+
+let eventLink =  $j(this).parent(".vrcBotWrap").siblings(".vrcInfoLightBox").children(".vrcInfoLbContent").children(".vrcLbBtnWrap").children(".vrcInfoLink").data('eventlink');
+let raceLink =  $j(this).parent(".vrcBotWrap").siblings(".vrcInfoLightBox").children(".vrcInfoLbContent").children(".vrcLbBtnWrap").children(".vrcInfoLink").data('racelink');
+//let targetLink = $j("#"+eventLink+raceLink)
+//console.log(eventLink,raceLink)
+
+
+		if($j(eventLink+raceLink).hasClass('linkAdded')){
+			return
+		} else {
+    
+		document.getElementById(eventLink+raceLink).setAttribute('href', 'https://vrc.com.au'+moreInfoMapper(eventLink)+moreInfoMapper(raceLink)+'&utm_source=ticketmaster.com.au&utm_medium=referral&utm_campaign=ticket_selector');
+		console.log(eventLink,raceLink)
+		$j(eventLink+raceLink).addClass("linkAdded");
+
+		}
+
+})
+//button text mapper
+function vrcTextMapper(data){
+				switch (data) {
+				default:return "BuyTickets"
+				case "TICKETS_AVAILABLE-ONSALE":return "BuyTickets";
+				case "FEW_TICKETS_LEFT-ONSALE":return "BuyTickets";
+				case "TICKETS_NOT_AVAILABLE-ONSALE":return "SoldOut";
+				case "TICKETS_NOT_AVAILABLE-PENDING":return "Pending";
+
+					//TICKETS_NOT_AVAILABLE-PENDING
+				
+				//case "":return "BuyTickets";					
+}}
+function vrcSortMapper(data){
+				switch (data) {
+				default :return "00";
+				case "BuyTicketsSort":return "00";
+				case "SoldOutSort":return "99";
+				case "VRCMemberSort":return "77";
+				case "GeneralPublicSort":return "66";
+				//case "Dining / Hospitality":return "Dining / Hospitality";
+				//case "Events and Experiences":return "Events & Experiences";
+				
+				//case "":return "BuyTickets";					
+}}
+//ticket type mapper to combine member events 3 into 1
+function ticketTypeMapper(data){
+	switch (data){
+			case "VRCMemberTickets":return "VRCMember";
+			case "VRCMemberEventsandExperiences":return "VRCMember";
+			case "VRCMemberDiningHospitality":return "VRCMember";
+			case "GeneralPublicTickets":return "GeneralPublicTickets";
+			case "GeneralPublicDiningHospitality":return "GeneralPublicDiningHospitality";
+			case "GeneralPublicEventsandExperiences":return "GeneralPublicEventsandExperiences";
+		
+	}
+}
+/*
+function moreInfoMapper(data){
+	switch (data){
+		//products
+
+			case "":return "";
+			case "AtriumFlat" :return "/products/2024-2025/hospitality-and-dining/the-atrium-flat/";
+			case "AtriumTiered" :return "/products/2024-2025/hospitality-and-dining/the-atrium-tiered/";
+			case "CarBootParty" :return "/products/2024-2025/general-admission/car-boot-party/";
+			case "ClubLawnReserved":return "/products/2024-2025/premium-public/club-lawn-reserved/";
+			case "BirdcageReserved" :return "/products/2024-2025/general-admission/birdcage-reserved/";
+			case "FurlongBarReservedTables" :return "/products/2024-2025/member-ticketing/furlong-bar/";
+			case "FurphyDeck":return "/products/2024-2025/general-admission/the-furphy-deck/";
+			case "GeneralAdmission":return "products/2024-2025/general-admission/general-admission/";			
+			case "HillStand":return "/products/2024-2025/general-admission/hill-stand-reserved-seat/";
+			case "LawnStand":return "/products/2024-2025/general-admission/lawn-stand-reserved-seat/";
+			case "Luckys":return "/products/2024-2025/hospitality-and-dining/luckys/";
+			case "MakybeDivaMarquee":return "/products/2024-2025/hospitality-and-dining/makybe-diva-marquee/";
+			case "MatesRates":return "/products/2024-2025/general-admission/mates-rates/";		
+			case "MatesRatesDeck":return "/products/2024-2025/general-admission/mates-rates-deck/";						
+			case "MembersEnclosureDailyGuest" :return "/products/2024-2025/member-ticketing/members-enclosure-daily-guest/";
+			case "MysteryTicket" :return "/products/2024-2025/general-admission/mystery-ticket/";
+			case "OaksClubLunch":return "/race-days-and-events/2024-2025/vrc-crown-oaks-club-lunch/";
+			case "StraightSix" :return "/products/2024-2025/hospitality-and-dining/straight-six/";
+			case "ParadeLounge":return "/products/2024-2025/hospitality-and-dining/parade-lounge/";
+			case "PicnicPods" :return "/products/2024-2025/general-admission/picnic-pods/";
+			case "SkylineDining":return "/products/2024-2025/hospitality-and-dining/skyline-dining/";
+			case "SkylineLounge":return "/products/2024-2025/hospitality-and-dining/skyline-lounge/";
+			case "SummerSoiree":return "/products/2024-2025/member-ticketing/summer-soiree/";
+			case "TerraceDining"  :return "/products/2024-2025/hospitality-and-dining/terrace-restaurant/";
+			case "TerraceGrazing" :return "/products/2024-2025/hospitality-and-dining/terrace-restaurant/";
+			case "TheAtriumTracksideReservedTables" :return "/products/2024-2025/member-ticketing/the-atrium-trackside/";
+			case "TheBirdcageReservedTables" :return "/products/2024-2025/member-ticketing/the-birdcage/";
+			case "TheBirdcagePedestrianPass" :return "/products/2024-2025/member-ticketing/birdcage-pedestrian-pass/";
+			case "TheBridle" :return "/products/2024-2025/hospitality-and-dining/the-bridle/";
+			case "TheByerley" :return "/products/2024-2025/hospitality-and-dining/the-byerley/";
+			case "TheDiningRoom" :return "/products/2024-2025/hospitality-and-dining/the-dining-room/";
+			case "TheFavourite":return "/products/2024-2025/hospitality-and-dining/the-favourite/";
+			case "TheForumReservedTables" :return "/products/2024-2025/member-ticketing/the-forum/";
+			case "TheGrandstandReservedSeating" :return "/products/2024-2025/member-ticketing/the-grandstand-reserved-seat/";
+			case "TheMembersLawnReservedTables" :return "/products/2024-2025/member-ticketing/members-lawn/";
+			case "TheNursery" :return "/products/2024-2025/member-ticketing/the-nursery/";
+			case "TheParkVIP" :return "/products/2024-2025/general-admission/the-park-vip/";
+			case "ThePeak" :return "/products/2024-2025/hospitality-and-dining/the-peak/";
+			case "TheRailsPromenade" :return "/products/2024-2025/member-ticketing/the-rails-promenade/";
+			case "TheRoseRoom":return "/products/2024-2025/hospitality-and-dining/the-rose-room/";
+			case "TheTerrace":return "/products/2024-2025/hospitality-and-dining/the-terrace-restaurant/";
+			case "2025FlemingtonRaceDayPass":return "/products/2024-2025/general-admission/flemington-race-day-pass/";
+
+		//one off events
+		case "PrivateScreening":return "/race-days-and-events/2024-2025/a-horse-named-winx/";
+		case "VRCSpringGala":return "/race-days-and-events/2024-2025/vrc-spring-gala/";
+			/*
+			case "":return "";
+
+		//race days		
+			case "MakybeDivaStakesDay":return "?eventId=102294";
+			case "TABTurnbullStakesDay":return "?eventId=102298";
+			case "SpringClassicsPreviewDay":return "?eventId=102296";
+			case "PenfoldsVictoriaDerbyDay":return "?eventId=71164";
+			case "LexusMelbourneCupDay":return "?eventId=71174";
+			case "CrownOaksDay":return "?eventId=71186";
+			case "VRCCrownOaksClubLunch":return "?";
+			case "TABChampionsStakesDay":return "?eventId=71197";
+			case "NewYearsDayRaceDay":return "?eventId=102300";
+			case "Standish Handicap":return "?eventId=102301";
+			case "VRCSummerFunRaceDay":return "?eventId=102306";
+			case "BlackCaviarLightningRaceDay":return "?eventId=75194";
+			case "HowdenAustralianGuineasDay":return "?eventId=75199";
+			case "SuperSaturday":return "?eventId=75204";
+			case "TABAustralianCupDay":return "?eventId=75208";
+			case "ANZACDayRaceDayMay":return "?eventId=752133";
+			case "AndrewRamsdenRaceDay":return "?eventId=75218";
+			case "VRCCountryRaceDay":return "?eventId=75223";
+			case "VRCCommunityRaceDay":return "?eventId=75228";
+			case "FlemingtonFinalsRaceDay":return "?eventId=75233";
+			case "VRCMembersRaceDay":return "?eventId=75238";
+
+		//
+		case "undefined":return "";
+		case "":return "";
+		default: return"";
+		//case "":return "";
+	}
+}
+*/
+//URL token filtering
+function getUrlVars(){	
+    urlVars = [];
+	vrcURLs = [];
+	vrcFilterList = ["URL","raceDay","ticketType","eventName",] //"expType"
+    //var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('=').map(hashes => hashes.split('&'))//.split('&');
+
+	// finally got the filtering to work and not slow down when tracking paramaters were present by restricting it to numbers (so as long as an event name doesnt include a number? we good)
+	var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split("=").join('&').split('&').filter(hashes => /[a-zA-Z]/.test(hashes));
+	//console.log(hashes)
+	//var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('=').join('&').split('&')
+	//var hashes = hashes.split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+
+	    hash = hashes[i].split('&').filter(hashes =>  hashes !== undefined);
+        urlVars.push(hash[0]);
+        urlVars[hash[0]] = hash[1];	
+    }
+
+	let search = (cleanURL) =>  cleanURL.filter(Boolean)
+	//.filter(item => item.description !== undefined)
+	vrcURLs = search(urlVars, 'URL');
+	//console.log(urlVars)
+	raceDayFound = search(urlVars, 'raceDay');
+	ticketTypeFound = search(urlVars, 'ticketType');
+	//expTypeFound = search(urlVars, 'expType');
+	eventNameFound = search(urlVars, 'eventName');
+}
+let ParseUrl = function(){
+
+	checkURLArray()
+	//parse array for triggers, run relevant function when trigger found
+	function checkURLArray(){
+		if(jQuery.inArray("raceDay", raceDayFound) != -1){
+			parseRaceDayURL()
+			}
+		if(jQuery.inArray("ticketType", ticketTypeFound) != -1){
+			parseTicketTypeURL()
+			}
+	/*	if(jQuery.inArray("expType", expTypeFound) != -1){
+			parseExperienceTypeURL()
+			}*/
+		if(jQuery.inArray("eventName", eventNameFound) != -1){
+			parseEventNameURL()
+			}
+	}; 
+
+}
+let parseRaceDayURL = function(){
+	var urlRaceDayNameFilter = []
+	urlRaceDayNameList = Array.from(urlRaceDayNameSet)//.replaceAll(/\s/g,'');
+
+	//reset buttons
+	$j("#dayDropDown").children(".vrcCheckBoxBtn").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+	//run through URL vars and match with the race day set
+	$j.grep(vrcURLs, function(urlFound){
+		if(jQuery.inArray( urlFound, urlRaceDayNameList) != -1){
+			//match arrays - remove URL from end of current found variable
+			urlRaceDayNameFound = urlFound.replace('URL','')
+			//push match to new array
+			urlRaceDayNameFilter.push(urlRaceDayNameFound);
+			//activate checkbox
+			$j(".vrcCheckBoxBtn[data-raceday="+ urlRaceDayNameFound +"]").children(".vrcCheckBox").removeClass("vrcCheckBoxOff").addClass("vrcCheckBoxOn");
+			newHeaderCount =  $j(".vrcCheckBoxBtn[data-raceday="+ urlRaceDayNameFound +"]").attr('data-buttoncount');
+			//$j(".vrcFilterTag[data-tagname='"+urlRaceDayNameFound+"']").fadeIn();
+			raceDayCount ++
+	}
+	});
+	//clear array, push found filter array into global array
+
+	$j(".vrcEventHeader[data-headercount="+newHeaderCount+"]").removeClass("vrcEventHeaderHide").addClass("vrcEventHeaderShow");
+	currentHeaderCount = newHeaderCount
+	//console.log(newHeaderCount)
+	fullRaceDayNameList.length = 0;
+	fullRaceDayNameList = urlRaceDayNameFilter
+	raceDayCounter();
+	vrcBreadCrumbs();
+	cardsToDisplay();
+	$j('html, body').animate({ scrollTop: $j("#vrcEventStream").offset().top}, 1000);	
+}
+let parseTicketTypeURL = function(){
+	var urlTicketTypeFilter = []
+	urlTicketTypeList = Array.from(urlTicketTypeSet)//.replaceAll(/\s/g,'');
+	//reset buttons
+	$j("#ticketTypeDropDown").children(".vrcCheckBoxBtn").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+	//run through URL vars and match with the race day set
+	$j.grep(vrcURLs, function(urlFound){
+		if(jQuery.inArray( urlFound, urlTicketTypeList) != -1){
+			//match arrays - remove URL from end of current found variable
+			urlTicketTypeFound = urlFound.replace('URL','')
+			//push match to new array
+			urlTicketTypeFilter.push(urlTicketTypeFound);
+			//activate checkbox
+			$j(".vrcCheckBoxBtn[data-tickettype="+ urlTicketTypeFound +"]").children(".vrcCheckBox").removeClass("vrcCheckBoxOff").addClass("vrcCheckBoxOn");
+			//$j(".vrcFilterTag[data-tagname='"+urlTicketTypeFound+"']").fadeIn();
+			ticketTypeCount ++
+	}
+	});
+	//clear array, push found filter array into global array
+	fullTicketTypeList.length = 0;
+	fullTicketTypeList = urlTicketTypeFilter
+	ticketTypeCounter();
+	vrcBreadCrumbs();
+	cardsToDisplay();
+}
+/*let parseExperienceTypeURL = function(){
+	var urlExperienceTypeFilter = []
+	urlExperienceTypeList = Array.from(urlExperienceTypeSet)//.replaceAll(/\s/g,'');
+	//reset buttons
+	$j("#experienceDropDown").children(".vrcCheckBoxBtn").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+	//run through URL vars and match with the race day set
+	$j.grep(vrcURLs, function(urlFound){
+		if(jQuery.inArray( urlFound, urlExperienceTypeList) != -1){
+			//match arrays - remove URL from end of current found variable
+			urlExperienceTypeFound = urlFound.replace('URL','')
+			//push match to new array
+			urlExperienceTypeFilter.push(urlExperienceTypeFound);
+			//activate checkbox
+			$j(".vrcCheckBoxBtn[data-experiencetype="+ urlExperienceTypeFound +"]").children(".vrcCheckBox").removeClass("vrcCheckBoxOff").addClass("vrcCheckBoxOn");
+			$j(".vrcFilterTag[data-tagname='"+urlExperienceTypeFound+"']").fadeIn();
+			experienceTypeCount ++
+	}
+	});
+	//clear array, push found filter array into global array
+	fullExperienceTypeList.length = 0;
+	fullExperienceTypeList = urlExperienceTypeFilter
+	experienceTypeCounter();
+	vrcBreadCrumbs();
+	cardsToDisplay();
+}*/
+let parseEventNameURL = function(){
+	var urlEventNameFilter = []
+	urlEventNameList = Array.from(urlEventNameSet)//.replaceAll(/\s/g,'');
+	//reset buttons
+	$j("#eventDropDown").children(".vrcCheckBoxBtn").children(".vrcCheckBox").removeClass("vrcCheckBoxOn").addClass("vrcCheckBoxOff");
+	//run through URL vars and match with the race day set
+	$j.grep(vrcURLs, function(urlFound){
+		if(jQuery.inArray( urlFound, urlEventNameList) != -1){
+			//match arrays - remove URL from end of current found variable
+			urlEventNameFound = urlFound.replace('URL','')
+			//push match to new array
+			urlEventNameFilter.push(urlEventNameFound);
+			//activate checkbox
+			$j(".vrcCheckBoxBtn[data-eventname="+ urlEventNameFound +"]").children(".vrcCheckBox").removeClass("vrcCheckBoxOff").addClass("vrcCheckBoxOn");
+			$j(".vrcFilterTag[data-tagname='"+urlEventNameFound+"']").fadeIn();
+			eventNameCount ++
+	}
+	});
+	//clear array, push found filter array into global array
+	fullEventNameList.length = 0;
+	fullEventNameList = urlEventNameFilter
+	eventNameCounter();
+	vrcBreadCrumbs();
+	cardsToDisplay();
+}
+//sorting algo's
+let defaultSort = function(){
+	
+	$j('#vrcEventStream .vrcEventCard').sort(function (a, b) {
+				return $j(a).data('availsort') - $j(b).data('availsort');
+				
+			}).appendTo('#vrcEventStream');
+			
+	/*
+	$j('#vrcEventStream .vrcEventCard').sort(function (a, b) {
+				return $j(a).data('datesort') - $j(b).data('datesort');
+			}).appendTo('#vrcEventStream');
+	*/
+}
+//recommended
+$j(".vrcRadioBtn[data-sortname='recommended']").click(
+				function(){
+			$j('#vrcEventStream .vrcEventCard').sort(function (a, b) {
+				return $j(a).data('recsort') - $j(b).data('recsort');
+			}).appendTo('#vrcEventStream');
+		});
+//price asc
+$j(".vrcRadioBtn[data-sortname='price-high']").click(
+				function(){
+			$j('#vrcEventStream .vrcEventCard').sort(function (a, b) {
+				return $j(b).data('eventprice') - $j(a).data('eventprice');
+			}).appendTo('#vrcEventStream');
+		});
+//price desc
+$j(".vrcRadioBtn[data-sortname='price-low']").click(
+				function(){
+			$j('#vrcEventStream .vrcEventCard').sort(function (a, b) {
+				return $j(a).data('eventprice') - $j(b).data('eventprice');
+			}).appendTo('#vrcEventStream');
+		});
+//date asc 
+$j(".vrcRadioBtn[data-sortname='date-asc']").click(
+				function(){
+			$j('#vrcEventStream .vrcEventCard').sort(function (a, b) {
+				return $j(a).data('datesort') - $j(b).data('datesort');
+			}).appendTo('#vrcEventStream');
+		});
+//date desc
+$j(".vrcRadioBtn[data-sortname='date-desc']").click(
+				function(){
+
+			$j('#vrcEventStream .vrcEventCard').sort(function (a, b) {
+				return $j(b).data('datesort') - $j(a).data('datesort');
+			}).appendTo('#vrcEventStream');
+		});
+//empty all the arrays for the 4 drop down filters
+let emptyFullListsOnLoad = function(){
+	fullExperienceTypeList.length = 0;
+	fullEventNameList.length = 0;
+	fullTicketTypeList.length = 0;
+	fullRaceDayNameList.length = 0;
+}
+//lazy image loading
+
+let imageLoader = function(){
+	//set targets
+	const lazyImagesLightBox = document.querySelectorAll(".vrcLbEventHero img")
+	const lazyImagesHero = document.querySelectorAll(".vrcEventHero img")
+
+	let options ={
+		root: null, //set viewport as root
+		rootMargin: '0px' //we can tweak this + or - if we want, i guess to preload before scroll etc if we want
+		
+	};
+
+
+	const handleIntersection = (entries, observer) => {
+ 		entries.forEach((entry) => {
+ 
+   		if (entry.isIntersecting) {
+      		const img = entry.target;
+      		const src = img.getAttribute("data-src");
+      		// Replace the placeholder with the actual image source
+      		img.src = src;
+      		// Stop observing the image
+      	observer.unobserve(img);
+   		 }
+ 	 });
+	};
+	//call the observer browser API
+	const observer = new IntersectionObserver(handleIntersection, options);
+	//interate through target(s) when obvserved
+	lazyImagesHero.forEach((image) => {
+ 		 observer.observe(image);
+	});
+	lazyImagesLightBox.forEach((image) => {
+ 		 observer.observe(image);
+	});
+} 
+
+
+
+</script>
+[% PROCESS "layout/frame/bottom.tt" %]
