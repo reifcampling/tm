@@ -199,14 +199,14 @@ page_title = "Australian Motorcycle Grand Prix 2026 | Philip Island, Australia |
 	.motoSubHead h1{font-family: "Gotham","Averta", Fallback, sans-serif;font-size: 40px;line-height:40px;font-weight:800;text-align:center;color:#fff;padding:0;margin:0;}
 	.motoSubHeadWrap{width:100%;max-width:1000px;height:auto;margin:0;padding:0;display:flex;justify-content: space-between;align-items: center;flex-wrap: wrap;position: relative;box-sizing: border-box !important;}
 	.motoMenuWrap{width:98%;height:auto;margin:0 auto;padding:0;overflow:visible;position: relative;display:flex;flex-wrap: wrap;justify-content: center;align-items: flex-start;column-gap:5px ;row-gap: 5px;box-sizing: border-box !important;}
-	.motoDropDownMenu{width:auto;height:auto;display:inline-block;margin:0;padding:0;overflow:visible;position: relative;z-index:22;}
-	.motoDropDownBtn{width:220px;height:36px;margin:0;padding:0 15px 0px 10px;border-radius:8px;background:var(--moto-dnavb);display:flex;flex-wrap:nowrap;justify-content: space-between;align-items: center;user-select:none;cursor:pointer;box-sizing: border-box !important;}
+	.motoDropDownMenu{width:100%;max-width:300px;height:auto;display:inline-block;margin:0;padding:0;overflow:visible;position: relative;z-index:22;}
+	.motoDropDownBtn{width:100%;max-width:300px;height:36px;margin:0;padding:0 15px 0px 10px;border-radius:8px;background:var(--moto-dnavb);display:flex;flex-wrap:nowrap;justify-content: space-between;align-items: center;user-select:none;cursor:pointer;box-sizing: border-box !important;}
 	.motoBtnIco{width:20px;height:20px;}
 	.motoBtnIco img,.motoBtnArrow img, .motoCheckboxIco img{width:100%;height:auto;}
 	.motoDropDownBtn h2{font-family: "Gotham","Averta", Fallback, sans-serif;font-size: 20px;line-height:20px;font-weight:bold;text-align:center;color:#fff;padding:0;margin:0;}
 	.motoBtnArrow{width:15px;height:auto;margin:0;padding:0;transition: ease-in-out .4s all;}
 	.motoRotate{transform: rotate(180deg);}
-	.motoDropDown{width:auto;height:auto;display:block;background:var(--moto-lnavb);border-radius:8px;padding:5px 5px 0px 5px;margin:0;border:1px solid #fff;position: absolute;top:41px;left:0px;right:0px;}
+	.motoDropDown{width:auto;height:auto;display:block;background:var(--moto-lnavb);border-radius:8px;padding:5px 5px 0px 5px;margin:0;border:1px solid #fff;position: relative;}
 	.motoDropDownOn{display:block;}
 	.motoDropDownOff{display:none;}
 	.motoDropDown h3{font-family: "Gotham","Averta", Fallback, sans-serif;font-size: 16px;line-height:16px;font-weight:400;text-align:left;color:#fff;padding:0;margin:5px 10px 5px 0px;box-sizing: border-box !important;}
@@ -255,19 +255,18 @@ page_title = "Australian Motorcycle Grand Prix 2026 | Philip Island, Australia |
 	.motoEventCard .motoCardBtn{width:calc(100% - 10px);height:44px;margin:0px 5px 5px 5px;border-radius:8px;padding:11px 0px;font-family: "Gotham","Averta", Fallback, sans-serif;font-size:24px;line-height:24px;font-weight:800;text-align:center;color:#fff;background:url('moto_button_pattern_bg.svg') no-repeat,linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(23, 76, 135, 1) 100%);background-size:250px 111px, 100% 100%;background-position:bottom -10px right -175px, center center;;overflow:hidden;cursor:pointer;position: absolute;bottom:0px;left:0px;right:5px;box-sizing:border-box !important;}
 	.motoExtraCard .motoCardBtn{width:calc(100% - 10px);height:44px;margin:0px 5px 5px 5px;border-radius:8px;padding:11px 0px;font-family: "Gotham","Averta", Fallback, sans-serif;font-size:24px;line-height:24px;font-weight:800;text-align:center;color:#fff;background:url('moto_button_pattern_bg.svg') no-repeat,#174C87;background-size:250px 111px, 100% 100%;background-position:bottom -10px right -175px, center center;;overflow:hidden;cursor:pointer;position: absolute;bottom:0px;left:0px;right:5px;box-sizing:border-box !important;}
 
-
 	/*grandstands*/
 	#motoGrandstands{width:100%;height:auto;margin:0px auto 0px;padding:0;display:block;position: relative;box-sizing: border-box !important;}
 	.motoGrandstandMod{width:100%;height:100%;background:rgba(0,0,0,0.4);position: fixed;top:0;left:0;margin:0;z-index: 100;display:none;align-items: center;justify-content: center;}
 	.motoGrandstandCover{width:100%;height:100%;background:none;position: absolute;top:0;left:0;margin:0;z-index: 101;}
-	.motoStandWrap{width:96%;height:auto;max-height:94vh;max-width:1350px;margin:3vh auto;background:#fff;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);border-radius:30px 0px 0px 30px;box-sizing:border-box !important;position: relative;display:flex;flex-wrap: wrap;justify-content: flex-end;align-items: flex-start;align-content: flex-start;overflow-y: auto;overflow-x: hidden;padding:0px 0px 0px 0px;z-index: 102;}
-	.motoStandClose{width:136px;height:24px;padding:0px 0px 0px 20px;background:var(--moto-lnavb);background-size:22px;top:10px;right:13px;border-radius:4px;position: absolute;cursor:pointer;box-sizing:border-box !important;z-index: 102;font-family: "Gotham","Averta", Fallback, sans-serif;font-size: 16px;line-height:16px;font-weight:800;text-align:center;color:#fff;display:flex;flex-wrap:nowrap;justify-content: space-between;align-items: center;box-sizing:border-box !important;}
+	.motoStandWrap{width:98%;height:98vh;max-width:1000px;margin:2vh auto;background:#fff;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);border-radius:30px 0px 0px 30px;box-sizing:border-box !important;position: relative;display:flex;flex-wrap: wrap;justify-content: flex-end;align-items: flex-start;align-content: flex-start;overflow-y: auto;overflow-x: hidden;padding:0px 0px 0px 0px;z-index: 102;}
+	.motoStandClose{width:136px;height:24px;padding:0px 0px 0px 20px;background:var(--moto-lnavb);background-size:22px;top:4px;right:13px;border-radius:4px;position: absolute;cursor:pointer;box-sizing:border-box !important;z-index: 102;font-family: "Gotham","Averta", Fallback, sans-serif;font-size: 16px;line-height:16px;font-weight:800;text-align:center;color:#fff;display:flex;flex-wrap:nowrap;justify-content: space-between;align-items: center;box-sizing:border-box !important;}
 	.motoCrossImg{width:26px;height:24px;background:var(--moto-dnavb);padding:4px;border-radius:0px 4px 4px 0px;display:inline-block;box-sizing:border-box !important;}
 	.motoCrossImg img{width:15px;height:15px;}
-	.motoStandTop{max-width:800px;width:64%;height:auto;padding:0px 20px 0px 20px;box-sizing:border-box !important;order: 1;}
-	.motoStandHeader{width:100%;max-width:1216px;height:86px;margin:20px auto 20px auto;padding:20px 0px;background:url('https://s1.ticketm.net/tm/en-au/img/static/motogp/2026/moto_card_pattern_bg.svg') no-repeat,#000;background-size:620px 278px, 100% 100%;background-position:top -25px center , center center;border-radius:16px;position: relative;box-sizing: border-box !important;}
-	.motoStandHeader h1{font-family: "Gotham","Averta", Fallback, sans-serif;font-size: 46px;line-height:46px;font-weight:800;text-align:center;color:#fff;padding:0;margin:0;}
-	.motoStandInfo{width:100%;max-width:700px;height:80px;margin:20px auto;padding:0px;display:flex;flex-wrap: nowrap;justify-content: space-between;align-items: center;box-sizing:border-box !important;}
+	.motoStandTop{max-width:1000px;width:100%;height:auto;padding:14px 20px 0px 20px;box-sizing:border-box !important;order: 1;}
+	.motoStandHeader{width:100%;max-width:1000px;height:auto;margin:20px auto 20px auto;padding:20px 10px;background:url('https://s1.ticketm.net/tm/en-au/img/static/motogp/2026/moto_card_pattern_bg.svg') no-repeat,#000;background-size:620px 278px, 100% 100%;background-position:top -25px center , center center;border-radius:16px;position: relative;box-sizing: border-box !important;}
+	.motoStandHeader h1{font-family: "Gotham","Averta", Fallback, sans-serif;font-size: 40px;line-height:40px;font-weight:800;text-align:center;color:#fff;padding:0;margin:0;}
+	.motoStandInfo{width:100%;max-width:1000px;height:auto;margin:20px auto;padding:0px;display:flex;flex-wrap: wrap;justify-content: space-between;row-gap:5px;align-items: center;box-sizing:border-box !important;}
 	.motoStandInfoSm{width:100%;max-width:340px;height:auto;margin:20px auto;padding:8px;background:#eeeeee;border-radius:8px;display:flex;flex-wrap: nowrap;justify-content: space-between;align-items: center;}
 	.motoStandTags{width:340px;height:64px;padding:5px;margin:0px auto;display:flex;justify-content:center;flex-wrap: wrap;column-gap: 5px;row-gap: 5px;align-items:center;background:#eeeeee;border-radius:8px;box-sizing:border-box !important;}
 	.motoStandLoc{width:340px;height:64px;padding:5px;margin:0px auto;padding:5px;display:flex;flex-wrap: nowrap;justify-content: space-between;align-items: center;background:#eeeeee;border-radius:8px;box-sizing:border-box !important;}
@@ -283,23 +282,23 @@ page_title = "Australian Motorcycle Grand Prix 2026 | Philip Island, Australia |
 	.motoStandMap img{width:120px;height:auto;display:block;margin:0px auto;}
 	.motoStandDesc{width:100%;max-width:700px;height:auto;margin:20px auto;padding:0px;}
 	.motoStandDesc p{width:100%;max-width:700px;font-family: "Gotham","Averta", Fallback, sans-serif;font-size: 18px;line-height:18px;font-weight:500;text-align:center;color:#2E2E2E;padding:0px 0px 0px 0px;margin:0;} 
-	.motoStandBot{width:36%;max-width:450px;height:100%;background:#E8E8E8;padding:40px 0px 0px 0px;border-radius:0px 0px 8px 8px;order: 3;box-sizing: border-box !important;}
-	.motoStandHero{width:425px;height:auto;margin:0px auto;padding:5px;border-radius:12px;background:linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(23, 76, 135, 1) 100%);box-sizing: border-box !important;}
+	.motoStandBot{width:100%;max-width:1000px;height:100%;background:#E8E8E8;padding:40px 0px 0px 0px;border-radius:0px 0px 8px 8px;order: 3;box-sizing: border-box !important;}
+	.motoStandHero{max-width:425px;width:96%;height:auto;margin:0px auto;padding:5px;border-radius:12px;background:linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(23, 76, 135, 1) 100%);box-sizing: border-box !important;}
 	.motoStandHero img{width:100%;height:auto;border-radius:8px;}
 	.motoBotInfo{width:100%;max-width:450px;height:auto;margin:0px auto;padding:20px;display:block;box-sizing: border-box !important;}
 	.motoBotInfo p{width:100%;font-family: "Gotham","Averta", Fallback, sans-serif;font-size: 18px;line-height:18px;font-weight:500;text-align:center;color:#2E2E2E;padding:0px 0px 0px 0px;margin:0;}
-	.motoStandMid{width:100%;max-width:700px;height:auto;margin:20px auto;padding:10px;background:#eeeeee;border-radius:8px;box-sizing: border-box !important;}
-	.motoTicketKeyWrap{width:auto;height:auto;display:flex;align-items: center;justify-content: flex-start;column-gap: 10px;margin:0px 0px 5px 0px;}
+	.motoStandMid{width:100%;max-width:350px;height:auto;margin:20px auto;padding:10px;background:#eeeeee;border-radius:8px;box-sizing: border-box !important;}
+	.motoTicketKeyWrap{width:auto;height:auto;display:flex;flex-wrap:wrap;align-items: center;justify-content: flex-start;column-gap: 10px;margin:0px 0px 5px 0px;}
 	.motoTicketKey{width:auto;height:auto;background:var(--moto-dnavb);display:flex;flex-wrap: nowrap;justify-content:center;        align-items: center;border-radius:4px;padding:3px 3px 3px 5px;}
 	.motoTicketKey h3{font-family: "Gotham","Averta", Fallback, sans-serif;font-size: 10px;line-height:10px;font-weight:500;text-align:center;color:#fff;padding:0px 7px 0px 0px;margin:0;display:inline-block;box-sizing: border-box !important;}
 	.motoTicketKeyFew{font-family: "Gotham","Averta", Fallback, sans-serif;font-size: 10px;line-height:10px;font-weight:600;text-align:center;color:var(--moto-dnavb);padding:3px 7px 3px 7px;margin:0;display:inline-block;background: var(--moto-avail-yel);border-radius:4px;}
 	.motoTicketKeyLimited{font-family: "Gotham","Averta", Fallback, sans-serif;font-size: 10px;line-height:10px;font-weight:600;text-align:center;color:var(--moto-dnavb);padding:3px 7px 3px 7px;margin:0;display:inline-block;background: var(--moto-avail-red);border-radius:4px;}
-	.motoTicketWrap{width:auto;height:auto;display:flex;align-items: center;justify-content: flex-start;column-gap: 2px;margin:0px 0px 0px 0px;}
-	.motoTicketWrap a{text-decoration: none;}	
-	.motoSelectDay{width:135px;height:auto;margin:0;padding:0;background:var(--moto-lnavb);overflow: hidden;}
-	.motoTicketTop{width:135px;height:auto;margin:0;padding:8px;background: var(--moto-dnavb);box-sizing: border-box !important;}
+	.motoTicketWrap{width:auto;height:auto;display:flex;flex-wrap:wrap;align-items: center;justify-content: flex-start;column-gap: 2px;row-gap:5px;margin:0px 0px 0px 0px;}
+	.motoTicketWrap a{text-decoration: none;width:100%;}	
+	.motoSelectDay{max-width:330px;height:auto;margin:0;padding:0;background:var(--moto-lnavb);overflow: hidden;border-radius:8px;}
+	.motoTicketTop{max-width:330px;height:auto;margin:0;padding:8px;background: var(--moto-dnavb);box-sizing: border-box !important;}
 	.motoTicketTop h1{font-family: "Gotham","Averta", Fallback, sans-serif;font-size: 14px;line-height:14px;font-weight:bold;text-align:left;color:#fff;padding:0px 0px 0px 0px;margin:0;}
-	.motoTicketBot{width:135px;height:auto;margin:0;padding:0px 8px 8px 8px;background: var(--moto-lnavb);box-sizing: border-box !important;}
+	.motoTicketBot{max-width:330px;height:auto;margin:0;padding:0px 8px 8px 8px;background:url("https://s1.ticketm.net/tm/en-au/img/static/motogp/2026/moto_right_arrow_img.svg") no-repeat,var(--moto-lnavb);background-size:auto 20px, 100%;background-position:right 15px top 10px, center center;box-sizing: border-box !important;}
 	.motoTicketBot h2{font-family: "Gotham","Averta", Fallback, sans-serif;font-size: 22px;line-height:22px;font-weight:800;text-align:left;color:#fff;padding:0px 5px 0px 0px;margin:0;display:inline-block;}
 	.motoTicketBot h3{font-family: "Gotham","Averta", Fallback, sans-serif;font-size: 16px;line-height:16px;font-weight:800;text-align:left;color:#fff;padding:0px 0px 0px 0px;margin:0;display:inline-block;}
 	.motoTicketAvail{width:auto;height:12px;margin:4px 0px 4px 0px;padding:2px 0px 2px 0px;border-radius:4px;font-family: "Gotham","Averta", Fallback, sans-serif;font-size: 12px;line-height:12px;font-weight:600;text-align:center;background:var(--moto-avail-red);color:var(--moto-lnavb);display:inline-block;}
@@ -308,10 +307,10 @@ page_title = "Australian Motorcycle Grand Prix 2026 | Philip Island, Australia |
 	.motoSelectSingle{width:330px;height:auto;margin:0;padding:0;background:var(--moto-lnavb);overflow: hidden;border-radius:8px;}
 	.motoSelectSingle .motoTicketTop{width:330px;height:auto;margin:0;padding:10px;background: var(--moto-dnavb);display:flex;flex-wrap:nowrap;align-items: center;justify-content: space-between;box-sizing: border-box !important;}
 	.motoSelectSingle .motoTicketTop h1{display:inline-block;}
-	.motoSelectSingle .motoTicketBot{width:330px;height:auto;margin:0;padding:10px;background:url("moto_right_arrow_img.svg") no-repeat, var(--moto-lnavb);background-size:auto 20px, 100%;background-position:right 15px top 10px, center center;box-sizing: border-box !important;}
+	.motoSelectSingle .motoTicketBot{width:330px;height:auto;margin:0;padding:10px;background:url("https://s1.ticketm.net/tm/en-au/img/static/motogp/2026/moto_right_arrow_img.svg") no-repeat, var(--moto-lnavb);background-size:auto 20px, 100%;background-position:right 15px top 10px, center center;box-sizing: border-box !important;}
 	.motoSelectSingle .motoTicketBot h3{font-family: "Gotham","Averta", Fallback, sans-serif;font-size: 22px;line-height:22px;font-weight:800;text-align:left;color:#fff;padding:0px 0px 0px 0px;margin:0;display:block;}
-	.motoLeftBrd{border-radius:8px 0px 0px 8px;}
-	.motoRightBrd{border-radius:0px 8px 8px 0px;}
+	/*.motoLeftBrd{border-radius:8px 0px 0px 8px;}
+	.motoRightBrd{border-radius:0px 8px 8px 0px;}*/
 	/*error*/
 	#motoErrorNoTickets{width:450px;height:auto;margin:50px auto;border-radius:10px 30px 10px 30px;background:var(--moto-dnavb);padding:20px;}
 	#motoErrorNoTickets h1{font-family: "Gotham", Fallback, sans-serif;font-size:26px;line-height:26px;font-weight:bold;color:#fff;text-align:center;margin:0;padding:0;}
