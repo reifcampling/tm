@@ -103,9 +103,9 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 		.criEventHeader h2{font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 30px;line-height:30px;font-weight:900;font-style:oblique;margin:0px 0px 0px 0px;padding:15px 0px 0px 0px;text-align:left;color:#fff;display:inline-block;box-sizing: border-box !important;position:relative;}
 		.criEventLeft{width:calc(100% - 400px);max-width:800px;height:auto;padding:40px 20px 0px 170px;box-sizing:border-box !important;order: 1;}
 		.criEventRight{width:400px;height:100%;background:#F0F0EE;margin:-20px 0px 0px 0px;padding:0px 0px 0px 0px;order: 2;box-sizing: border-box !important;}
-		.criEventTagWrap{width:100%;height:auto;display:flex;justify-content: flex-start;align-items: flex-start;flex-wrap: nowrap;column-gap:5px;box-sizing: border-box !important;}
-		.criEventTag{width:110px;height:50px;margin:0;padding:14px 0px 14px 30px;position:relative;display:block;font-family:"Averta", Fallback, sans-serif;font-size: 20px;line-height:20px;font-weight:900;text-align:center;color:#fff;box-sizing: border-box !important;z-index: 11;}
-		.criEventDate,.criEventLoc{width:235px;height:50px;margin:0px auto 25px;padding:6px 0px 7px 48px;position:relative;display:block;font-family: "Averta", Fallback, sans-serif;font-size: 20px;line-height:20px;font-weight:900;text-align:center;color:var(--cri-gre);box-sizing: border-box !important;z-index: 11;}
+		.criEventTagWrap{width:100%;height:auto;margin:0px 0px 24px 0px;display:flex;justify-content: flex-start;align-items: flex-start;flex-wrap: wrap;column-gap:5px;row-gap:5px;box-sizing: border-box !important;}
+		.criEventTag{width:110px;height:50px;margin:0px;padding:14px 0px 14px 30px;position:relative;display:block;font-family:"Averta", Fallback, sans-serif;font-size: 20px;line-height:20px;font-weight:900;text-align:center;color:#fff;box-sizing: border-box !important;z-index: 11;}
+		.criEventDate,.criEventLoc{width:235px;height:50px;margin:0px 0px 0px 0px;padding:6px 0px 7px 48px;position:relative;display:block;font-family: "Averta", Fallback, sans-serif;font-size: 20px;line-height:20px;font-weight:900;text-align:center;color:var(--cri-gre);box-sizing: border-box !important;z-index: 11;}
 		#criEvent-watest .criEventDate,#criEvent-waodi .criEventDate,#criEvent-nswt20 .criEventDate{background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_cal_gre_img.svg') no-repeat,var(--cri-lyel);background-size:auto 24px;background-position:left 14px top 12px;}
 		#criEvent-watest .criEventLoc,#criEvent-waodi .criEventLoc,#criEvent-nswt20 .criEventLoc{background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_pin_g_img.svg') no-repeat,var(--cri-lyel);background-size:20px auto;background-position:left 14px top 12px;}
 		#criEvent-nswtest .criEventDate{background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_cal_pnk_img.svg') no-repeat,var(--cri-pnk);background-size:auto 24px;background-position:left 14px top 12px;}
@@ -123,11 +123,20 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 		.criEventBtn h1, .criEventPinkBtn h1{font-family:"Averta", Fallback, sans-serif;font-size: 26px;line-height:26px;font-weight:900;margin:0px 0px 0px 0px;padding:16px 0px 16px 24px;text-align:left;color:#fff;display:block;}
 		.criEventBtn h2, .criEventPinkBtn h2{font-family:"Averta", Fallback, sans-serif;font-size: 24px;line-height:24px;font-weight:900;margin:0px 0px 0px 0px;padding:8px 0px 0px 24px;text-align:left;color:#fff;display:block;}
 		.criEventBtn h3, .criEventPinkBtn h3{font-family:"Averta", Fallback, sans-serif;font-size: 20px;line-height:20px;font-weight:500;margin:0px 0px 0px 0px;padding:0px 0px 8px 24px;text-align:left;color:#fff;display:block;}
+		/*Day 5 Pop Up*/
+		.criDayFiveMod{width:100%;height:100%;background:rgba(0,0,0,0.4);backdrop-filter: blur(10px);position: fixed;top:0;left:0;margin:0;z-index: 100;display:none;align-items: center;justify-content: center;z-index: 110;}
+		.criDayFiveCover{width:100%;height:100%;background:none;position: absolute;top:0;left:0;margin:0;z-index: 110;}
+		.criDayFiveWrap{width:100%;max-width:400px;height:230px;margin:60px 0px 0px 0px;padding:0;position:relative;display:block;text-align:center;box-sizing: border-box !important;z-index:111;user-select:none;cursor:pointer;}
+		.criDayFiveWrap h1{width:100%;height:auto;margin:10px auto 10px;padding:0;position:relative;display:block;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 40px;line-height:40px;font-weight:normal;font-style:oblique;text-align:center;color:#fff;box-sizing: border-box !important;z-index: 11;}
+		.criDayFiveWrap p{width:100%;height:auto;margin:10px auto 10px;padding:0px 10px;position:relative;display:block;font-family:"Averta", Fallback, sans-serif;font-size: 18px;line-height:18px;font-weight:normal;text-align:center;color:#fff;box-sizing: border-box !important;z-index: 11;}	
+		.criDayFiveBg{width:400px;/*300px*/height:230px;margin:0 auto;padding:0;position:absolute;top:0;right:0;left:0;display:block;box-sizing: border-box !important;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_pattern_5pc_img.svg')no-repeat center center,linear-gradient(0deg,#003335 0%, #075250 100%);background-size:300px auto;border:1px solid #fff;z-index: 10;clip-path: polygon(0 0,100% 0,100% calc(100% - 30px),calc(100% - 30px) 100%,0 100%);}
+		.criDayFiveCloseBtn{width:100px;height:24px;margin:0 auto;padding:0px 0px;position:absolute;top:-12px;right:5px;display:block;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_cross_g_img.svg') no-repeat, linear-gradient(90deg, var(--cri-lyel) 75%,var(--cri-dyel) 75%, var(--cri-dyel) 100%);background-size:11px auto, 100% 100%;background-position:center right 8px, center center;clip-path: polygon(0 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%);box-sizing: border-box !important;z-index: 11;cursor:pointer;user-select:none;}
+		.criDayFiveCloseBtn p{margin:0;padding:4px 27px 4px 0px;position:relative;display:block;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 16px;line-height:16px;font-weight:normal;font-style:oblique;text-align:center;color:var(--cri-gre);box-sizing: border-box !important;}
 		/*PX section*/
 		.criPremHeader{width:100%;height:80px;margin:0;padding:15px 20px;background:var(--cri-lyel);box-sizing: border-box !important;}
 		.criPremHeader h2{font-family:"Averta", Fallback, sans-serif;font-size: 20px;line-height:10px;font-weight:900;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;text-align:left;color:#000000;}
 		.criPremHeader h1{font-family:"Averta", Fallback, sans-serif;font-size: 44px;line-height:44px;font-weight:900;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;text-align:left;color:#000000;}
-		.criPremWrap{width:100%;height:auto;margin:0;padding:20px 24px;background:#F0F0EE;display:flex;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;column-gap:10px;row-gap:20px;box-sizing: border-box !important;}
+		.criPremWrap{width:100%;height:auto;margin:0;padding:20px 5px;background:#F0F0EE;display:flex;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;column-gap:10px;row-gap:20px;box-sizing: border-box !important;}
 		.criPremTile{width:170px;/*300px*/height:auto/*355px*/;margin:0px 0 0 0;padding:0;position:relative;box-sizing: border-box !important;z-index:9;user-select:none;}
 		.criPremHero{width:170px;/*300px*/height:auto/*355px*/;margin:0px 0 0 0;padding:0;}
 		.criPremHero img{width:100%;height:auto;}
@@ -197,14 +206,14 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 		.criEventMod{width:100%;height:100%;background:rgba(0,0,0,0.4);backdrop-filter: blur(10px);position: fixed;top:0;left:0;margin:0;z-index: 100;display:none;align-items: center;justify-content: center;z-index: 102;}
 		.criEventCover{width:100%;height:100%;background:none;position: absolute;top:0;left:0;margin:0;z-index: 101;}
 		.criEventWrap{width:94%;height:94vh;max-width:1000px;margin:3vh auto;background:#fff;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);box-sizing:border-box !important;position: relative;display:flex;flex-wrap: wrap;justify-content: flex-end;align-items: flex-start;align-content: flex-start;overflow-y: visible;overflow-x: hidden;padding:0px 0px 0px 0px;z-index: 102;}
-		.criEventCloseBtn{width:100px;height:24px;margin:0 auto;padding:0px 0px;position:absolute;top:2px;right:5px;display:block;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_cross_g_img.svg') no-repeat, linear-gradient(90deg, var(--cri-lyel) 75%,var(--cri-dyel) 75%, var(--cri-dyel) 100%);background-size:11px auto, 100% 100%;background-position:center right 8px, center center;clip-path: polygon(0 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%);box-sizing: border-box !important;z-index: 11;cursor:pointer;user-select:none;}
-		.criEventCloseBtn p{margin:0;padding:4px 27px 4px 0px;position:relative;display:block;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 16px;line-height:16px;font-weight:normal;font-style:oblique;text-align:center;color:var(--cri-gre);box-sizing: border-box !important;}
+		.criEventCloseBtn{width:130px;height:34px;margin:0 auto;padding:0px 0px;position:absolute;top:0px;right:0px;display:block;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_cross_g_img.svg') no-repeat, linear-gradient(90deg, var(--cri-lyel) 75%,var(--cri-dyel) 75%, var(--cri-dyel) 100%);background-size:13px auto, 100% 100%;background-position:center right 11px, center center;clip-path: polygon(0 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%);box-sizing: border-box !important;z-index: 11;cursor:pointer;user-select:none;}
+		.criEventCloseBtn p{margin:0;padding:7px 27px 7px 0px;position:relative;display:block;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 20px;line-height:20px;font-weight:normal;font-style:oblique;text-align:center;color:var(--cri-gre);box-sizing: border-box !important;}
 
 		.criEventHeader{width:100%;height:auto;margin:0;padding:40px 0px 20px 0px;display:flex;flex-wrap:wrap;justify-content: flex-start;align-items: flex-start;background:var(--cri-gre);overflow:visible;box-sizing:border-box !important;}
-		.criEventLogo{width:70px;height:auto;display:block;position: absolute;top:-2px;left:-2px;}
+		.criEventLogo{width:70px;height:auto;display:block;position: absolute;top:0px;left:0px;}
 		.criEventLogo img{width:100%;height:auto;}
 		.criEventHeader h1{width:100%;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 44px;line-height:44px;font-weight:900;font-style:oblique;margin:0px 0px 0px 0px;padding:0px;text-align:center;color:#fff;display:block;box-sizing: border-box !important;position:relative;}
-		.criEventHeader h2{width:100%;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 26px;line-height:26px;font-weight:900;font-style:oblique;margin:0px 0px 0px 0px;padding:05px 0px 0px 0px;text-align:center;color:#fff;display:block;box-sizing: border-box !important;position:relative;}
+		.criEventHeader h2{width:100%;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 26px;line-height:18px;font-weight:900;font-style:oblique;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;text-align:center;color:#fff;display:block;box-sizing: border-box !important;position:relative;}
 		.criEventLeft{width:100%;max-width:1000px;height:auto;padding:0px;margin:0px auto;box-sizing:border-box !important;order: 1;}
 		.criEventRight{width:100%;max-width:1000px;height:100%;background:#F0F0EE;margin:0px auto;padding:0px 0px 0px 0px;order: 2;box-sizing: border-box !important;}
 		.criEventTagWrap{width:100%;height:auto;margin:10px 0px 10px 0px;display:flex;justify-content: center;align-items: flex-start;flex-wrap: wrap;column-gap:5px;row-gap:5px;box-sizing: border-box !important;}
@@ -229,6 +238,7 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 		.criEventBtn h3, .criEventPinkBtn h3{font-family:"Averta", Fallback, sans-serif;font-size: 20px;line-height:20px;font-weight:500;margin:0px 0px 0px 0px;padding:0px 0px 8px 24px;text-align:left;color:#fff;display:block;}
 		/*Day 5 Pop Up*/
 		.criDayFiveMod{width:100%;height:100%;background:rgba(0,0,0,0.4);backdrop-filter: blur(10px);position: fixed;top:0;left:0;margin:0;z-index: 100;display:none;align-items: center;justify-content: center;z-index: 110;}
+		.criDayFiveCover{width:100%;height:100%;background:none;position: absolute;top:0;left:0;margin:0;z-index: 110;}
 		.criDayFiveWrap{width:100%;max-width:400px;height:230px;margin:60px 0px 0px 0px;padding:0;position:relative;display:block;text-align:center;box-sizing: border-box !important;z-index:9;user-select:none;cursor:pointer;}
 		.criDayFiveWrap h1{width:100%;height:auto;margin:10px auto 10px;padding:0;position:relative;display:block;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 40px;line-height:40px;font-weight:normal;font-style:oblique;text-align:center;color:#fff;box-sizing: border-box !important;z-index: 11;}
 		.criDayFiveWrap p{width:100%;height:auto;margin:10px auto 10px;padding:0px 10px;position:relative;display:block;font-family:"Averta", Fallback, sans-serif;font-size: 18px;line-height:18px;font-weight:normal;text-align:center;color:#fff;box-sizing: border-box !important;z-index: 11;}	
@@ -253,7 +263,11 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 		.criEventPolicyBtn{width:180px;height:44px;margin:0 auto;padding:0px 0px;position:absolute;bottom:-22px;left:15px;display:flex;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_arrow_right_g_img.svg') no-repeat, linear-gradient(90deg, var(--cri-lyel) 75%,var(--cri-dyel) 75%, var(--cri-dyel) 100%);background-size:13px auto, 100% 100%;background-position:center right 12px, center center;clip-path: polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%);box-sizing: border-box !important;z-index: 11;}
 		.criEventPolicyBtn h1{margin:0;padding:11px 0px 11px 18px;position:relative;display:block;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 22px;line-height:22px;font-weight:normal;font-style:oblique;text-align:center;color:var(--cri-gre);box-sizing: border-box !important;}
 }
-
+@media only screen and (min-width: 0px) and (max-width: 400px){
+		.criEventLogo{width:60px;height:auto;display:block;position: absolute;top:0px;left:0px;}
+		.criEventHeader h1{width:100%;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 38px;line-height:38px;font-weight:900;font-style:oblique;margin:0px 0px 0px 0px;padding:0px;text-align:center;color:#fff;display:block;box-sizing: border-box !important;position:relative;}
+		.criEventHeader h2{width:100%;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 20px;line-height:14px;font-weight:900;font-style:oblique;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;text-align:center;color:#fff;display:block;box-sizing: border-box !important;position:relative;}
+}
 /*tile colours*/
 .criOdi{background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_ball_w_img.svg')no-repeat,var(--cri-odi);background-size:23px auto;background-position:center left 10px;}
 .criTest{background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_ball_w_img.svg')no-repeat,var(--cri-test );background-size:23px auto;background-position:center left 10px;}
@@ -561,6 +575,7 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 				<em>*additional booking fee's & charges may apply.</em></p>
 				<div class="criDayFiveBg"></div>
 			</div>
+		<div class="criDayFiveCover"></div>
 		</div>
 		<div class="criEventCover"></div>
 	</div>
@@ -647,6 +662,7 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 				<em>*additional booking fee's & charges may apply.</em></p>
 				<div class="criDayFiveBg"></div>
 			</div>
+		<div class="criDayFiveCover"></div>
 		</div>
 		<div class="criEventCover"></div>
 	</div>
@@ -678,7 +694,7 @@ $j(document).on('click', "#criEvent-watest .criEventDayFiveBtn", function () {
 	$j('#criEvent-watest .criDayFiveMod').fadeIn(250).css("display","flex");
 })
 //close day 5
-$j(document).on('click', ".criDayFiveCloseBtn", function () {
+$j(document).on('click', ".criDayFiveCloseBtn,.criDayFiveCover", function () {
 	$j('.criDayFiveMod').fadeOut(250);
 })
 
