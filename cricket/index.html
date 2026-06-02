@@ -134,6 +134,15 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 		.criDayFiveBg{width:400px;/*300px*/height:230px;margin:0 auto;padding:0;position:absolute;top:0;right:0;left:0;display:block;box-sizing: border-box !important;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_pattern_5pc_img.svg')no-repeat center center,linear-gradient(0deg,#003335 0%, #075250 100%);background-size:300px auto;border:1px solid #fff;z-index: 10;clip-path: polygon(0 0,100% 0,100% calc(100% - 30px),calc(100% - 30px) 100%,0 100%);}
 		.criDayFiveCloseBtn{width:100px;height:24px;margin:0 auto;padding:0px 0px;position:absolute;top:-12px;right:5px;display:block;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_cross_g_img.svg') no-repeat, linear-gradient(90deg, var(--cri-lyel) 75%,var(--cri-dyel) 75%, var(--cri-dyel) 100%);background-size:11px auto, 100% 100%;background-position:center right 8px, center center;clip-path: polygon(0 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%);box-sizing: border-box !important;z-index: 11;cursor:pointer;user-select:none;}
 		.criDayFiveCloseBtn p{margin:0;padding:4px 27px 4px 0px;position:relative;display:block;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 16px;line-height:16px;font-weight:normal;font-style:oblique;text-align:center;color:var(--cri-gre);box-sizing: border-box !important;}
+		/*prem pop up*/
+		.criPremPopUp{width:100%;height:100%;background:rgba(0,0,0,0.4);backdrop-filter: blur(10px);position: fixed;top:0;left:0;margin:0;z-index: 100;display:none;align-items: center;justify-content: center;z-index: 115;}
+		.criPremPoPWrap{width:100%;max-width:400px;height:160px;margin:60px 0px 0px 0px;padding:0;position:relative;display:block;text-align:center;box-sizing: border-box !important;z-index:117;user-select:none;}
+		.criPremPopCloseBtn{width:100px;height:24px;margin:0 auto;padding:0px 0px;position:absolute;top:-12px;right:5px;display:block;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_cross_g_img.svg') no-repeat, linear-gradient(90deg, var(--cri-lyel) 75%,var(--cri-dyel) 75%, var(--cri-dyel) 100%);background-size:11px auto, 100% 100%;background-position:center right 8px, center center;clip-path: polygon(0 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%);box-sizing: border-box !important;z-index: 117;cursor:pointer;user-select:none;}
+		.criPremPopCloseBtn h1{margin:0;padding:4px 27px 4px 0px;position:relative;display:block;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 16px;line-height:16px;font-weight:normal;font-style:oblique;text-align:center;color:var(--cri-gre);box-sizing: border-box !important;}
+		.criPremPopUp p{width:100%;height:auto;margin:20px auto 20px;padding:0px 10px;position:relative;display:block;font-family:"Averta", Fallback, sans-serif;font-size: 22px;line-height:22px;font-weight:normal;text-align:center;color:#fff;box-sizing: border-box !important;z-index: 117;}
+		.criPremPopUp a{color:var(--cri-lyel)}
+		.criPremPopUpBg{width:400px;/*300px*/height:160px;margin:0 auto;padding:0;position:absolute;top:0;right:0;left:0;display:block;box-sizing: border-box !important;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_pattern_5pc_img.svg')no-repeat center center,linear-gradient(0deg,#003335 0%, #075250 100%);background-size:300px auto;border:1px solid #fff;z-index: 116;clip-path: polygon(0 0,100% 0,100% calc(100% - 30px),calc(100% - 30px) 100%,0 100%);}
+		.criPremPopCover{width:100%;height:100%;background:none;position: absolute;top:0;left:0;margin:0;z-index: 116;}
 		/*PX section*/
 		.criPremHeader{width:100%;height:80px;margin:0;padding:15px 20px;background:var(--cri-lyel);box-sizing: border-box !important;}
 		.criPremHeader h2{font-family:"Averta", Fallback, sans-serif;font-size: 20px;line-height:10px;font-weight:900;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;text-align:left;color:#000000;}
@@ -146,11 +155,18 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 		.criPremBtn{width:170px;height:auto;margin:0px auto;padding:5px 15px;background:#D9D9D9;font-family:"Averta", Fallback, sans-serif;font-size: 18px;line-height:18px;font-weight:600;text-align:center;color:#000;box-sizing: border-box !important}
 		.criPremTile p{font-family:"Averta", Fallback, sans-serif;font-size: 14px;line-height:16px;font-weight:400;margin:10px 0px 0px 0px;padding:0px 0px;text-align:left;color:#000;display:block;box-sizing: border-box !important}
 		.criPremTile a{text-decoration: none;}
-		/*policies*/
+		/*policies // pink test mod*/ 
+		.criEventFooterWrap{width:100%;max-width:800px;height:auto;padding:0px;display:flex;flex-wrap:nowrap;justify-content: space-between;align-items: flex-start;box-sizing:border-box !important;}
 		.criEventPolicy{width:280px;height:80px;margin:50px 0px 0px 0px;padding:15px;background:#F0F0EE;display:block;position:relative;box-sizing: border-box !important;}
 		.criEventPolicy p{font-family:"Averta", Fallback, sans-serif;font-size: 22px;line-height:22px;font-weight:400;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;text-align:left;color:#000000;}
-		.criEventPolicyBtn{width:180px;height:44px;margin:0 auto;padding:0px 0px;position:absolute;bottom:-22px;left:15px;display:flex;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_arrow_right_g_img.svg') no-repeat, linear-gradient(90deg, var(--cri-lyel) 75%,var(--cri-dyel) 75%, var(--cri-dyel) 100%);background-size:13px auto, 100% 100%;background-position:center right 12px, center center;clip-path: polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%);box-sizing: border-box !important;z-index: 11;cursor:pointer;user-select:none;}
+		.criEventPolicyBtn{width:180px;height:44px;margin:0 auto;padding:0px 0px;position:absolute;bottom:-22px;left:15px;display:flex;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_arrow_right_g_img.svg') no-repeat, linear-gradient(90deg, var(--cri-lyel) 80%,var(--cri-dyel) 80%, var(--cri-dyel) 100%);background-size:13px auto, 100% 100%;background-position:center right 12px, center center;clip-path: polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%);box-sizing: border-box !important;z-index: 11;cursor:pointer;user-select:none;}
 		.criEventPolicyBtn h1{margin:0;padding:11px 0px 11px 18px;position:relative;display:block;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 22px;line-height:22px;font-weight:normal;font-style:oblique;text-align:center;color:var(--cri-gre);box-sizing: border-box !important;}
+		.criPinkFooter{width:280px;height:80px;margin:50px 0px 0px 0px;padding:15px;background:#F0F0EE;display:block;position:relative;box-sizing: border-box !important;}
+		.criPinkFooter p{font-family:"Averta", Fallback, sans-serif;font-size: 22px;line-height:22px;font-weight:400;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;text-align:left;color:#000000;}
+		.criPinkFooterBtn{width:180px;height:44px;margin:0 auto;padding:0px 0px;position:absolute;bottom:-22px;left:15px;display:flex;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_arrow_right_w_img.svg') no-repeat, linear-gradient(90deg, var(--cri-pnk) 80%,var(--cri-dpnk) 80%, var(--cri-dpnk) 100%);background-size:13px auto, 100% 100%;background-position:center right 12px, center center;clip-path: polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%);box-sizing: border-box !important;z-index: 11;cursor:pointer;user-select:none;}
+		.criPinkFooterBtn h1{margin:0;padding:12px 0px 12px 18px;position:relative;display:block;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 20px;line-height:20px;font-weight:normal;font-style:oblique;text-align:center;color:#fff;box-sizing: border-box !important;}
+
+		
 	}
 /*mobile & tablet */
 @media only screen and (min-width: 0px) and (max-width: 999.9px){	
@@ -249,6 +265,15 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 		.criDayFiveBg{width:400px;/*300px*/height:230px;margin:0 auto;padding:0;position:absolute;top:0;right:0;left:0;display:block;box-sizing: border-box !important;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_pattern_5pc_img.svg')no-repeat center center,linear-gradient(0deg,#003335 0%, #075250 100%);background-size:300px auto;border:1px solid #fff;z-index: 10;clip-path: polygon(0 0,100% 0,100% calc(100% - 30px),calc(100% - 30px) 100%,0 100%);}
 		.criDayFiveCloseBtn{width:100px;height:24px;margin:0 auto;padding:0px 0px;position:absolute;top:-12px;right:5px;display:block;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_cross_g_img.svg') no-repeat, linear-gradient(90deg, var(--cri-lyel) 75%,var(--cri-dyel) 75%, var(--cri-dyel) 100%);background-size:11px auto, 100% 100%;background-position:center right 8px, center center;clip-path: polygon(0 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%);box-sizing: border-box !important;z-index: 11;cursor:pointer;user-select:none;}
 		.criDayFiveCloseBtn p{margin:0;padding:4px 27px 4px 0px;position:relative;display:block;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 16px;line-height:16px;font-weight:normal;font-style:oblique;text-align:center;color:var(--cri-gre);box-sizing: border-box !important;}
+		/*prem pop up*/
+		.criPremPopUp{width:100%;height:100%;background:rgba(0,0,0,0.4);backdrop-filter: blur(10px);position: fixed;top:0;left:0;margin:0;z-index: 100;display:none;align-items: center;justify-content: center;z-index: 115;}
+		.criPremPoPWrap{width:100%;max-width:400px;height:160px;margin:60px 0px 0px 0px;padding:0;position:relative;display:block;text-align:center;box-sizing: border-box !important;z-index:117;user-select:none;}
+		.criPremPopCloseBtn{width:100px;height:24px;margin:0 auto;padding:0px 0px;position:absolute;top:-12px;right:5px;display:block;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_cross_g_img.svg') no-repeat, linear-gradient(90deg, var(--cri-lyel) 75%,var(--cri-dyel) 75%, var(--cri-dyel) 100%);background-size:11px auto, 100% 100%;background-position:center right 8px, center center;clip-path: polygon(0 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%);box-sizing: border-box !important;z-index: 117;cursor:pointer;user-select:none;}
+		.criPremPopCloseBtn h1{margin:0;padding:4px 27px 4px 0px;position:relative;display:block;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 16px;line-height:16px;font-weight:normal;font-style:oblique;text-align:center;color:var(--cri-gre);box-sizing: border-box !important;}
+		.criPremPopUp p{width:100%;height:auto;margin:20px auto 20px;padding:0px 10px;position:relative;display:block;font-family:"Averta", Fallback, sans-serif;font-size: 22px;line-height:22px;font-weight:normal;text-align:center;color:#fff;box-sizing: border-box !important;z-index: 117;}
+		.criPremPopUp a{color:var(--cri-lyel)}
+		.criPremPopUpBg{width:400px;/*300px*/height:160px;margin:0 auto;padding:0;position:absolute;top:0;right:0;left:0;display:block;box-sizing: border-box !important;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_pattern_5pc_img.svg')no-repeat center center,linear-gradient(0deg,#003335 0%, #075250 100%);background-size:300px auto;border:1px solid #fff;z-index: 116;clip-path: polygon(0 0,100% 0,100% calc(100% - 30px),calc(100% - 30px) 100%,0 100%);}
+		.criPremPopCover{width:100%;height:100%;background:none;position: absolute;top:0;left:0;margin:0;z-index: 116;}
 		/*PX section*/
 		.criPremHeader{width:100%;height:auto;margin:0;padding:15px 20px;background:var(--cri-lyel);box-sizing: border-box !important;}
 		.criPremHeader h2{font-family:"Averta", Fallback, sans-serif;font-size: 20px;line-height:10px;font-weight:900;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;text-align:center;color:#000000;}
@@ -262,10 +287,15 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 		.criPremBtn{width:100%;height:auto;margin:0px auto;padding:5px 15px;background:#D9D9D9;font-family:"Averta", Fallback, sans-serif;font-size: 18px;line-height:18px;font-weight:600;text-align:center;color:#000;box-sizing: border-box !important}
 		.criPremTile p{font-family:"Averta", Fallback, sans-serif;font-size: 14px;line-height:16px;font-weight:400;margin:10px 0px 0px 0px;padding:0px 0px;text-align:left;color:#000;display:block;box-sizing: border-box !important}
 		/*policies*/
-		.criEventPolicy{width:280px;height:80px;margin:50px auto;padding:15px;background:#F0F0EE;display:block;position:relative;box-sizing: border-box !important;}
+		.criEventPolicy{width:280px;height:80px;margin:50px auto 10px;padding:15px;background:#F0F0EE;display:block;position:relative;box-sizing: border-box !important;}
 		.criEventPolicy p{font-family:"Averta", Fallback, sans-serif;font-size: 22px;line-height:22px;font-weight:400;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;text-align:left;color:#000000;}
 		.criEventPolicyBtn{width:180px;height:44px;margin:0 auto;padding:0px 0px;position:absolute;bottom:-22px;left:15px;display:flex;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_arrow_right_g_img.svg') no-repeat, linear-gradient(90deg, var(--cri-lyel) 75%,var(--cri-dyel) 75%, var(--cri-dyel) 100%);background-size:13px auto, 100% 100%;background-position:center right 12px, center center;clip-path: polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%);box-sizing: border-box !important;z-index: 11;}
 		.criEventPolicyBtn h1{margin:0;padding:11px 0px 11px 18px;position:relative;display:block;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 22px;line-height:22px;font-weight:normal;font-style:oblique;text-align:center;color:var(--cri-gre);box-sizing: border-box !important;}
+		.criPinkFooter{width:280px;height:80px;margin:0px auto;padding:15px;background:#F0F0EE;display:block;position:relative;box-sizing: border-box !important;}
+		.criPinkFooter p{font-family:"Averta", Fallback, sans-serif;font-size: 22px;line-height:22px;font-weight:400;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;text-align:left;color:#000000;}
+		.criPinkFooterBtn{width:180px;height:44px;margin:0 auto;padding:0px 0px;position:absolute;bottom:-22px;left:15px;display:flex;background:url('https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cri_arrow_right_w_img.svg') no-repeat, linear-gradient(90deg, var(--cri-pnk) 80%,var(--cri-dpnk) 80%, var(--cri-dpnk) 100%);background-size:13px auto, 100% 100%;background-position:center right 12px, center center;clip-path: polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%);box-sizing: border-box !important;z-index: 11;cursor:pointer;user-select:none;}
+		.criPinkFooterBtn h1{margin:0;padding:12px 0px 12px 18px;position:relative;display:block;font-family: "BTBrik","Averta", Fallback, sans-serif;font-size: 20px;line-height:20px;font-weight:normal;font-style:oblique;text-align:center;color:#fff;box-sizing: border-box !important;}
+		.criEventFooterWrap{width:100%;max-width:800px;height:auto;padding:0px;display:flex;flex-wrap:wrap;justify-content: center;align-items: flex-start;box-sizing:border-box !important;}
 }
 @media only screen and (min-width: 0px) and (max-width: 400px){
 		.criEventLogo{width:60px;height:auto;display:block;position: absolute;top:0px;left:0px;}
@@ -410,21 +440,21 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 					<div class="criPremTile">
 						<div class="criPremHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cricket_prem_per_TheLounge_hero.png" alt=""></div>
 						<h3>The Lounge</h3>
-						<a href="" target="_blank"><div class="criPremBtn">See More</div></a>
+						<div class="criPremBtn">See More</div>
 						<p>The Lounge is unrivalled fun at the cricket in a relaxed environment.  Enjoy the day with friends or clients with grazing menu, food stations, beverage package, indoor unreserved bar tables as well as outdoor seating.</p>
 					</div>
 					<!--Private Suites-->
 					<div class="criPremTile">
 						<div class="criPremHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cricket_prem_per_PrivateSuites_hero.png" alt=""></div>
 						<h3>Private Suites</h3>
-						<a href="" target="_blank"><div class="criPremBtn">See More</div></a>
+						<div class="criPremBtn">See More</div>
 						<p>Soak up the atmosphere in style with a private indoor pitch-facing suite to enjoy with clients, colleagues or friends. Max capacities vary.  Dedicated host for the duration of the match.<br />All inclusive food and beverage package.</p>
 					</div>
 					<!--Outdoor Boxes-->
 					<div class="criPremTile">
 						<div class="criPremHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cricket_prem_per_OutdoorBoxes_hero.png" alt=""></div>
 						<h3>Outdoor Boxes</h3>
-						<a href="" target="_blank"><div class="criPremBtn">See More</div></a>
+						<div class="criPremBtn">See More</div>
 						<p>The ultimate outdoor private seating experience to soak up the cricket atmosphere with clients, colleagues or friends. Max capacities vary.<br />All inclusive food and beverage package.</p>
 					</div>
 
@@ -452,7 +482,7 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 				</p></div>
 				<!--button wrap-->
 				<div class="criEventBtnWrap">
-					<a href="" target="_blank"><div class="criEventBtn"><h1>SEE TICKETS</h1></div></a>
+					<a href="https://www.ticketmaster.com.au/event/250064BCE50D9D53" target="_blank"><div class="criEventBtn"><h1>SEE TICKETS</h1></div></a>
 				</div>
 
 				<!--CA policy button desktop-->
@@ -469,21 +499,21 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 					<div class="criPremTile">
 						<div class="criPremHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cricket_prem_syd_TheLounge_hero.png" alt=""></div>
 						<h3>The Lounge</h3>
-						<a href="" target="_blank"><div class="criPremBtn">See More</div></a>
+						<div class="criPremBtn">See More</div>
 						<p>The Lounge is unrivalled fun at the cricket in a relaxed environment.  Enjoy the day with friends or clients with grazing menu, food stations, beverage package, indoor unreserved bar tables as well as outdoor seating.</p>
 					</div>
 					<!--Private Suites-->
 					<div class="criPremTile">
 						<div class="criPremHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cricket_prem_syd_PrivateSuites_hero.png" alt=""></div>
 						<h3>Private Suites</h3>
-						<a href="" target="_blank"><div class="criPremBtn">See More</div></a>
+						<div class="criPremBtn">See More</div>
 						<p>Soak up the atmosphere in style with a private indoor pitch-facing suite to enjoy with clients, colleagues or friends. Max capacities vary.  Dedicated host for the duration of the match.<br />All inclusive food and beverage package.</p>
 					</div>
 					<!--Outdoor Boxes-->
 					<div class="criPremTile">
 						<div class="criPremHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cricket_prem_syd_OutdoorBoxes_hero.png" alt=""></div>
 						<h3>Outdoor Boxes</h3>
-						<a href="" target="_blank"><div class="criPremBtn">See More</div></a>
+						<div class="criPremBtn">See More</div>
 						<p>The ultimate outdoor private seating experience to soak up the cricket atmosphere with clients, colleagues or friends. Max capacities vary.<br />All inclusive food and beverage package.</p>
 					</div>
 				</div>
@@ -530,35 +560,35 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 					<div class="criPremTile">
 						<div class="criPremHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cricket_prem_per_FirstXI_hero.png" alt=""></div>
 						<h3>The First XI</h3>
-						<a href="" target="_blank"><div class="criPremBtn">See More</div></a>
+						<div class="criPremBtn">See More</div>
 						<p><strong>Days 1 &#45; 3</strong><br />The First XI is the ultimate indulgence if attending a Test match is on your bucketlist. It is luxury and experience combined, and includes a custom designed menu, premium beverages, unrivalled views of the match, entertainment and at-match guest experience.</p>
 					</div>
 					<!--signature dining-->
 					<div class="criPremTile">
 						<div class="criPremHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cricket_prem_per_SignatureDining_hero.png" alt=""></div>
 						<h3>Signature Dining</h3>
-						<a href="" target="_blank"><div class="criPremBtn">See More</div></a>
+						<div class="criPremBtn">See More</div>
 						<p><strong>Days 1 &#45; 3</strong><br />Signature Dining delivers action and style in contemporary comfort, the perfect place to enjoy the cricket both on the pitch and off. Share the moment with curated dishes including a 2-course plated meal, beverage package, reserved table seating as well as pitch-facing seats.</p>
 					</div>
 					<!--the lounge-->
 					<div class="criPremTile">
 						<div class="criPremHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cricket_prem_per_TheLounge_hero.png" alt=""></div>
 						<h3>The Lounge</h3>
-						<a href="" target="_blank"><div class="criPremBtn">See More</div></a>
+						<div class="criPremBtn">See More</div>
 						<p><strong>Days 1 &#45; 3</strong><br />The Lounge is unrivalled fun at the cricket in a relaxed environment.  Enjoy the day with friends or clients with grazing menu, food stations, beverage package, indoor unreserved bar tables as well as outdoor seating.</p>
 					</div>
 					<!--Private Suites-->
 					<div class="criPremTile">
 						<div class="criPremHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cricket_prem_per_PrivateSuites_hero.png" alt=""></div>
 						<h3>Private Suites</h3>
-						<a href="" target="_blank"><div class="criPremBtn">See More</div></a>
+						<div class="criPremBtn">See More</div>
 						<p>Soak up the atmosphere in style with a private indoor pitch-facing suite to enjoy with clients, colleagues or friends. Max capacities vary.  Dedicated host for the duration of the match.<br />All inclusive food and beverage package.</p>
 					</div>
 					<!--Outdoor Boxes-->
 					<div class="criPremTile">
 						<div class="criPremHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cricket_prem_per_OutdoorBoxes_hero.png" alt=""></div>
 						<h3>Outdoor Boxes</h3>
-						<a href="" target="_blank"><div class="criPremBtn">See More</div></a>
+						<div class="criPremBtn">See More</div>
 						<p>The ultimate outdoor private seating experience to soak up the cricket atmosphere with clients, colleagues or friends. Max capacities vary.<br />All inclusive food and beverage package.</p>
 					</div>
 
@@ -596,18 +626,24 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 				<div class="criPinkTest"><p>The SCG turns pink during the fourth and final Test of the summer. All bets are off as Australia and New Zealand look to settle the age-old Trans-Tasman rivalry. Lock in your seats to the iconic NRMA Insurance Pink Test now! </p></div>
 				<!--button wrap-->
 				<div class="criEventBtnWrap">
-				<!--D1--><a href="" target="_blank"><div class="criEventPinkBtn"><h2>DAY 1 TICKETS</h2><h3>MON 4 JAN</h3></div></a>
-				<!--D2--><a href="" target="_blank"><div class="criEventPinkBtn"><h2>DAY 2 TICKETS</h2><h3>TUE 5 JAN</h3></div></a>
-				<!--D3--><a href="" target="_blank"><div class="criEventPinkBtn"><h2>DAY 3 TICKETS</h2><h3>WED 6 JAN</h3></div></a>
-				<!--D4--><a href="" target="_blank"><div class="criEventPinkBtn"><h2>DAY 4 TICKETS</h2><h3>THU 7 JAN</h3></div></a>
+				<!--D1--><a href="https://www.ticketmaster.com.au/event/250064B98B8E1D99" target="_blank"><div class="criEventPinkBtn"><h2>DAY 1 TICKETS</h2><h3>MON 4 JAN</h3></div></a>
+				<!--D2--><a href="https://www.ticketmaster.com.au/event/250064BAD5D1902A" target="_blank"><div class="criEventPinkBtn"><h2>DAY 2 TICKETS</h2><h3>TUE 5 JAN</h3></div></a>
+				<!--D3--><a href="https://www.ticketmaster.com.au/event/250064BAEB8DA3D0" target="_blank"><div class="criEventPinkBtn"><h2>DAY 3 TICKETS</h2><h3>WED 6 JAN</h3></div></a>
+				<!--D4--><a href="https://www.ticketmaster.com.au/event/250064BAEB8EA3D6" target="_blank"><div class="criEventPinkBtn"><h2>DAY 4 TICKETS</h2><h3>THU 7 JAN</h3></div></a>
 				<!--D5--><div class="criEventPinkBtn criEventDayFiveBtn"><h2>DAY 5 TICKETS</h2><h3>FRI 8 JAN</h3></div>
 				</div>
 
 				<!--CA policy button desktop-->
-				<div class="criEventPolicy hideMob">
-					<p>Cricket Australia Policies</p>
-					<div class="criEventPolicyBtn"><h1>MORE INFO</h1></div>
-				</div>		
+				<div class="criEventFooterWrap hideMob">
+					<div class="criEventPolicy ">
+						<p>Cricket Australia Policies</p>
+						<div class="criEventPolicyBtn"><h1>MORE INFO</h1></div>
+					</div>	
+					<div class="criPinkFooter">
+						<p>McGrath Foundation</p>
+						<div class="criPinkFooterBtn"><h1>LEARN MORE</h1></div> 
+					</div>
+				</div>	
 			</div>
 			<!--right / bot-->
 			<div class="criEventRight">
@@ -617,44 +653,50 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 					<div class="criPremTile">
 						<div class="criPremHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cricket_prem_syd_FirstXI_hero.png" alt=""></div>
 						<h3>The First XI</h3>
-						<a href="" target="_blank"><div class="criPremBtn">See More</div></a>
+						<div class="criPremBtn">See More</div>
 						<p><strong>Days 1 &#45; 3</strong><br />The First XI is the ultimate indulgence if attending a Test match is on your bucketlist. It is luxury and experience combined, and includes a custom designed menu, premium beverages, unrivalled views of the match, entertainment and at-match guest experience.</p>
 					</div>
 					<!--signature dining-->
 					<div class="criPremTile">
 						<div class="criPremHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cricket_prem_syd_SignatureDining_hero.png" alt=""></div>
 						<h3>Signature Dining</h3>
-						<a href="" target="_blank"><div class="criPremBtn">See More</div></a>
+						<div class="criPremBtn">See More</div>
 						<p><strong>Days 1 &#45; 3</strong><br />Signature Dining delivers action and style in contemporary comfort, the perfect place to enjoy the cricket both on the pitch and off. Share the moment with curated dishes including a 2-course plated meal, beverage package, reserved table seating as well as pitch-facing seats.</p>
 					</div>
 					<!--the lounge-->
 					<div class="criPremTile">
 						<div class="criPremHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cricket_prem_syd_TheLounge_hero.png" alt=""></div>
 						<h3>The Lounge</h3>
-						<a href="" target="_blank"><div class="criPremBtn">See More</div></a>
+						<div class="criPremBtn">See More</div>
 						<p><strong>Days 1 &#45; 3</strong><br />The Lounge is unrivalled fun at the cricket in a relaxed environment.  Enjoy the day with friends or clients with grazing menu, food stations, beverage package, indoor unreserved bar tables as well as outdoor seating.</p>
 					</div>
 					<!--Private Suites-->
 					<div class="criPremTile">
 						<div class="criPremHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cricket_prem_syd_PrivateSuites_hero.png" alt=""></div>
 						<h3>Private Suites</h3>
-						<a href="" target="_blank"><div class="criPremBtn">See More</div></a>
+						<div class="criPremBtn">See More</div>
 						<p>Soak up the atmosphere in style with a private indoor pitch-facing suite to enjoy with clients, colleagues or friends. Max capacities vary.  Dedicated host for the duration of the match.<br />All inclusive food and beverage package.</p>
 					</div>
 					<!--Outdoor Boxes-->
 					<div class="criPremTile">
 						<div class="criPremHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/cricket/2026/cricket_prem_syd_OutdoorBoxes_hero.png" alt=""></div>
 						<h3>Outdoor Boxes</h3>
-						<a href="" target="_blank"><div class="criPremBtn">See More</div></a>
+						<div class="criPremBtn">See More</div>
 						<p>The ultimate outdoor private seating experience to soak up the cricket atmosphere with clients, colleagues or friends. Max capacities vary.<br />All inclusive food and beverage package.</p>
 					</div>
 
 				</div>
-				<!--CA policy button desktop-->
-				<div class="criEventPolicy hideDesk">
-					<p>Cricket Australia Policies</p>
-					<div class="criEventPolicyBtn"><h1>MORE INFO</h1></div>
-				</div>	
+				<!--CA policy button mobile-->
+				<div class="criEventFooterWrap hideDesk">
+					<div class="criEventPolicy ">
+						<p>Cricket Australia Policies</p>
+						<div class="criEventPolicyBtn"><h1>MORE INFO</h1></div>
+					</div>	
+					<div class="criPinkFooter">
+						<p>McGrath Foundation</p>
+						<div class="criPinkFooterBtn"><h1>LEARN MORE</h1></div> 
+					</div>
+				</div>
 			</div>
 		</div>
 		<!--day five pop up-->
@@ -671,7 +713,15 @@ page_title = "International Cricket 2025 / 2026, Mens One Day International, NRM
 		<div class="criEventCover"></div>
 	</div>
 
-
+		<!--Premium Experience Pop Up-->
+		<div class="criPremPopUp">
+			<div class="criPremPoPWrap"><div class="criPremPopCloseBtn"><h1>GO BACK</h1></div>
+				<p>Premium Experiences will be on sale Monday 15 June.<br /><br /> 
+					For more information on packages please <a href="mailto:premiumsales@cricket.com.au">contact us</a>.</p>
+				<div class="criPremPopUpBg"></div>
+			</div>
+		<div class="criPremPopCover"></div>
+		</div>
 
 
 
@@ -700,6 +750,13 @@ $j(document).on('click', "#criEvent-watest .criEventDayFiveBtn", function () {
 //close day 5
 $j(document).on('click', ".criDayFiveCloseBtn,.criDayFiveCover", function () {
 	$j('.criDayFiveMod').fadeOut(250);
+})
+//prem experience pop up
+$j(document).on('click', ".criPremBtn", function () {
+	$j('.criPremPopUp').fadeIn(250).css("display","flex");
+})
+$j(document).on('click', ".criPremPopCloseBtn,.criPremPopCover", function () {
+	$j('.criPremPopUp').fadeOut(250);
 })
 
 //close grandstand
