@@ -107,7 +107,7 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 	/*Premium Search Bar*/
 	#aoPremSearchBar{width:100%;max-width:874px;height:116px;margin:0px auto 20px;text-align:center;position: relative;z-index:200;transition:ease-in-out all .4s;box-sizing: border-box !important;}
 	#aoPremSearchBar .aoTabWrap{width:100%;max-width:874px;height:60px;margin:0px;text-align:center;position: relative;z-index:200;box-sizing: border-box !important;text-align: left;user-select: none;}
-	#aoPremSearchBar .aoPubTab{height:60px;width:205px;display:none;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--px-blue);padding:21px 0px 24px 0px;margin:0px 16px 0px 0px;border-radius:4px 4px 0px 0px;background:#263968;box-sizing: border-box !important;cursor:pointer;position: relative;vertical-align: top;box-sizing: border-box !important;border-top:3px var(--px-blue) solid;}
+	#aoPremSearchBar .aoPubTab{height:60px;width:205px;display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--px-blue);padding:21px 0px 24px 0px;margin:0px 16px 0px 0px;border-radius:4px 4px 0px 0px;background:#263968;box-sizing: border-box !important;cursor:pointer;position: relative;vertical-align: top;box-sizing: border-box !important;border-top:3px var(--px-blue) solid;}
 	#aoPremSearchBar .aoPremTab{height:60px;width:auto;display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--px-dblue);padding:24px 24px 24px 24px;margin:0px 0px 0px 0px;border-radius:4px 4px 0px 0px;background:var(--px-blue);position: relative;vertical-align: top;box-sizing: border-box !important;}
 	#aoPremSearchBar .aoPremTab span{height:20px;background:var(--px-dblue);font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:900;color:var(--px-blue);padding:5px 10px;border-radius:12px;top:20px;right:24px;position:absolute;box-sizing: border-box !important;}
 	#aoPremSearchBar .aoSearchBarWrap{width:100%;max-width:874px;height:56px;margin:0px;text-align:center;background:var(--px-dblue);border-radius:0px 4px 4px 4px;border:2px solid var(--px-blue);position: relative;z-index:200;box-sizing: border-box !important;display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-evenly; align-content: center;align-items: center;}
@@ -1736,13 +1736,15 @@ function premCardsToDisplay(){
 
 	//run through each card and check against filters
 	$j('.ao-ticketshospitality, .ao-ticketssuite').each(function () {
-		eventDatePrem = $j(this).data('dateurl');
+		eventDatePrem = $j(this).data('datedisco').split(",");
 		experienceTypePrem = $j(this).data('expfilter');
 		let sessionType = $j(this).data('session');	
 		let eventPrice = $j(this).data('price');
 		let discoFilter = $j(this).data('discoveryfilter');
 		//	console.log(experienceTypePrem)
-		if((jQuery.inArray(eventDatePrem, premDateList) != -1 || (premDateList.length == 0)) //date
+		if(
+			//(jQuery.inArray(eventDatePrem, premDateList) != -1 || (premDateList.length == 0)) 
+		((matchDatePrem() === true) || (premDateList.length == 0)) //date multi
 		&& ((matchExperiencePrem() === true) || jQuery.inArray("Any", fullPremExperienceTypeList) != -1)  //exp filter type
 		&& (jQuery.inArray(sessionType, fullPremSessionTypeList) != -1 || jQuery.inArray("Any", fullPremSessionTypeList) != -1) //session type		
 
@@ -1759,6 +1761,13 @@ function premCardsToDisplay(){
 		});
 		
 		premEventCounter();
+}
+matchDatePrem = function(){
+		premDateFound = false;
+		premDateList.forEach(function(currentDate){ 
+				if(jQuery.inArray(currentDate, eventDatePrem) != -1){premDateFound = true;}			
+		})
+		return premDateFound;	
 }
 matchExperiencePrem = function(){
 		expPremFound = false;
