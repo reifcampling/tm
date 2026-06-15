@@ -37,8 +37,8 @@ page_title = "Marvel 365 Stadium Tours | Buy Tickets, Official Ticketmaster Site
 /*desk*/
 @media only screen and (min-width: 1000px){
 #mrvlContent{width:100%;height:auto;margin:0 auto;display:block;padding:1px;background:#fff;position:relative;box-sizing: border-box !important;}
-#mrvlHeader{width:100%;height:400px;margin:0px auto;padding:0px 0px;background:url('http://s1.ticketm.net/tm/en-au/img/static/marvel/2026/m365_Header_desk.png') center center,var(--mrvl-dgre);background-size:cover;position: relative;box-sizing: border-box !important;}
-#mrvlLogo{width:300px;height:auto;background:var(--mrvl-dgre);padding:20px;margin:0px auto;box-sizing: border-box !important;}
+#mrvlHeader{width:100%;height:400px;margin:0px auto;padding:1px 0px;background:url('http://s1.ticketm.net/tm/en-au/img/static/marvel/2026/m365_Header_desk.png') center center,var(--mrvl-dgre);background-size:cover;position: relative;box-sizing: border-box !important;}
+#mrvlLogo{width:300px;height:auto;background:var(--mrvl-dgre);padding:20px;margin:20px auto;box-sizing: border-box !important;}
 #mrvlLogo img{width:100%;height:auto;margin:0px auto;display:block;}
 
 #mrvlTagLine{width:100%;height:72px;padding:0;margin:0;}
@@ -57,6 +57,7 @@ page_title = "Marvel 365 Stadium Tours | Buy Tickets, Official Ticketmaster Site
 .mrvlEventMod h2{font-family:"Averta",sans-serif,fallback;font-size:18px;line-height:18px;font-style:normal;font-weight:normal;color:#000;text-align:center;padding:0px 0px;margin:30px 0px;display:block;z-index:21;position: relative;}
 .mrvlBtn{width:150px;height:35px;margin:0px auto;padding:0px 0px;background:url('http://s1.ticketm.net/tm/en-au/img/static/marvel/2026/mrvl_arrow_lgreen_img.svg') no-repeat,linear-gradient(90deg,var(--mrvl-lgre) 0%, var(--mrvl-lgre) 80%,var(--mrvl-dgre) 80%,var(--mrvl-dgre) 100%);background-position:right 9px top 10px, center center;background-size:10px auto, cover;z-index:21;position: relative;cursor:pointer;}
 .mrvlBtn p{font-family:"Averta",sans-serif,fallback;font-size:20px;line-height:20px;font-style:normal;font-weight:bold;color:var(--mrvl-dgre);text-align:left;padding:8px 12px;margin:0px 0px;display:block;user-select:none;}
+.mrvlEventMod a{text-decoration: none;}
 
 .mrvlEventBio{width:100%;height:auto;margin:0px auto;padding:100px 0px 0px 0px;position:relative;box-sizing: border-box !important;}
 .mrvlEventBio h1{font-family:"Averta",sans-serif,fallback;font-size:40px;line-height:40px;font-style:normal;font-weight:900;color:#fff;text-align:center;padding:0px 0px;margin:0px 0px;display:block;position: relative;}
@@ -74,6 +75,7 @@ page_title = "Marvel 365 Stadium Tours | Buy Tickets, Official Ticketmaster Site
 .mrvlGalleryThm img{width:100%;height:auto;display:block;position:relative;z-index: 22;}
 
 #mrvlVideo{width:800px;height:450px;margin:75px auto;padding:0px;display:block;position: relative;}
+#mrvlVideoWrap{width:100%;height:auto;margin:0;padding:0;}
 #mrvlVideo video-player{display:block;position: relative;z-index:20;}
 #mrvlVideo .media-default-skin--video{border-radius: 0 !important;outline:0;border:0;--media-video-border-radius:0 !important;}
 #mrvlVideo .media-default-skin{border-radius: 0 !important;outline:0;border:0;--media-video-border-radius:0;}
@@ -136,6 +138,106 @@ page_title = "Marvel 365 Stadium Tours | Buy Tickets, Official Ticketmaster Site
 }
 /*mobile & tablet */
 @media only screen and (min-width: 0px) and (max-width: 999.99px){	
+
+#mrvlContent{width:100%;height:auto;margin:0 auto;display:block;padding:1px;background:#fff;position:relative;box-sizing: border-box !important;}
+#mrvlHeader{width:100%;height:400px;margin:2px auto;padding:1px 0px;background:url('http://s1.ticketm.net/tm/en-au/img/static/marvel/2026/m365_Header_desk.png') center center,var(--mrvl-dgre);background-size:cover;position: relative;box-sizing: border-box !important;}
+#mrvlLogo{width:300px;height:auto;background:var(--mrvl-dgre);padding:20px;margin:0px auto;box-sizing: border-box !important;}
+#mrvlLogo img{width:100%;height:auto;margin:0px auto;display:block;}
+
+#mrvlTagLine{width:100%;min-height:72px;height:auto;padding:10px 20px;margin:0;box-sizing: border-box !important;}
+#mrvlTagLine h1{font-family:"Averta",sans-serif,fallback;font-size:26px;line-height:26px;font-style:normal;font-weight:normal;color:#fff;text-align:center;text-transform:uppercase;padding:18px 0px;margin:0px 0px;display:block;user-select: none;}
+
+.mrvlMod{width:100%;height:auto;margin:0px auto;padding:50px 0px;position:relative;box-sizing: border-box !important;}
+.greyMod{background:var(--mrvl-grey);}
+.whiteMod{background:#fff;}
+.blackMod{background:#000;}
+.gradMod{background:linear-gradient(90deg,var(--mrvl-dgre) 70%, var(--mrvl-lgre) 100%);}
+
+.mrvlEventMod{max-width:590px;width:80%;height:auto;padding:20px;margin:0px auto;display:block;position:relative;box-sizing: border-box !important;}
+.mrvlEventModBg{width:100%;height:100%;padding:0px;margin:0px;background:#fff;box-shadow:0px 0px 6px 4px rgb(0, 0, 0, 10%);display:block;position:absolute;top:0;left:0;right:0;z-index:20;}
+.mrvlEventLid{width:80%;height:8px;margin:0px auto;position: absolute;top:-4px;left:0px;right:0px;background:var(--mrvl-dgre);z-index:21;}
+.mrvlEventMod h1{font-family:"Averta",sans-serif,fallback;font-size:44px;line-height:44px;font-style:normal;font-weight:900;color:#000;text-align:center;padding:0px 0px;margin:0px 0px;display:block;z-index:21;position: relative;box-sizing: border-box !important;}
+.mrvlEventMod h2{font-family:"Averta",sans-serif,fallback;font-size:18px;line-height:18px;font-style:normal;font-weight:normal;color:#000;text-align:center;padding:0px 0px;margin:30px 0px;display:block;z-index:21;position: relative;box-sizing: border-box !important;}
+.mrvlBtn{width:150px;height:35px;margin:0px auto;padding:0px 0px;background:url('http://s1.ticketm.net/tm/en-au/img/static/marvel/2026/mrvl_arrow_lgreen_img.svg') no-repeat,linear-gradient(90deg,var(--mrvl-lgre) 0%, var(--mrvl-lgre) 80%,var(--mrvl-dgre) 80%,var(--mrvl-dgre) 100%);background-position:right 9px top 10px, center center;background-size:10px auto, cover;z-index:21;position: relative;cursor:pointer;}
+.mrvlBtn p{font-family:"Averta",sans-serif,fallback;font-size:20px;line-height:20px;font-style:normal;font-weight:bold;color:var(--mrvl-dgre);text-align:left;padding:8px 12px;margin:0px 0px;display:block;user-select:none;}
+.mrvlEventMod a{text-decoration: none;}
+
+.mrvlEventBio{width:100%;height:auto;margin:0px auto;padding:100px 0px 0px 0px;position:relative;box-sizing: border-box !important;}
+.mrvlEventBio h1{font-family:"Averta",sans-serif,fallback;font-size:34px;line-height:34px;font-style:normal;font-weight:900;color:#fff;text-align:center;padding:0px 10px;margin:0px 0px;display:block;position: relative;box-sizing: border-box !important;}
+.mrvlEventBio p{width:100%;max-width:850px;font-family:"Averta",sans-serif,fallback;font-size:22px;line-height:22px;font-style:normal;font-weight:normal;color:#fff;text-align:center;padding:20px 20px;margin:0px auto;display:block;position: relative;box-sizing: border-box !important;}
+
+.mrvlSubHeader{width:90%;max-width:1000px;height:auto;margin:0px auto 25px;padding:0;display:block;position: relative;}
+.mrvlSubHeader h1{font-family:"Averta",sans-serif,fallback;font-size:40px;line-height:40px;font-style:normal;font-weight:900;color:#000;text-align:center;padding:7px 10px;margin:0px 0px;display:block;z-index:22;position: relative;box-sizing: border-box !important;}
+.mrvlSubHeaderBg{width:100%;max-width:1050px;height:55px;position:absolute ;top:0;left:0;right:0;margin:0;padding:0;z-index: 20;}
+.mrvlSubHeadLidTop{width:170px;height:26px;position: absolute;top:-5px;left:-10px;display:block;z-index: 21;}
+.mrvlSubHeadLidBot{width:600px;height:26px;position: absolute;bottom:-5px;right:-10px;display:block;z-index: 19;}
+
+/*gallery*/
+#mrvlGallery{max-width:950px;width:90%;height:auto;margin:0px auto;padding:0px;display:flex;flex-wrap: wrap;justify-content: center;align-content: flex-start;row-gap:10px;column-gap:10px;}
+.mrvlGalleryThm{max-width:225px;width:48%;height:auto;display:block;position: relative;cursor:pointer;}
+.mrvlGalleryThm img{width:100%;height:auto;display:block;position:relative;z-index: 22;}
+
+#mrvlVideo{max-width:800px;width:90%;height:auto;margin:75px auto;padding:0px;display:block;position: relative;}
+#mrvlVideoWrap{width:100%;height: 0px;padding-top:56.25%;margin: auto; position:relative;display: block !important;position: relative;box-sizing: border-box !important;overflow: visible;}
+#mrvlVideo video-player{position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 0;display:block;z-index:20;}
+#mrvlVideo .media-default-skin--video{border-radius: 0 !important;outline:0;border:0;--media-video-border-radius:0 !important;}
+#mrvlVideo .media-default-skin{border-radius: 0 !important;outline:0;border:0;--media-video-border-radius:0;}
+/*FAQs*/
+.mrvlFAQ{max-width:800px;width:96%;height:auto;margin:0px auto 10px;padding:0px;display:block;position: relative;border-bottom:2px solid var(--mrvl-lgre);cursor:pointer;}
+.mrvlQuestion{width:100%;height:auto;margin:0px auto;padding:10px 40px 10px 10px;background:#262626;display:block;position: relative;box-sizing: border-box !important;}
+.mrvlQuestion p{font-family:"Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:normal;color:#fff;text-align:left;padding:0px 0px;margin:0px ;display:block;position: relative;}
+.mrvlAnswer{width:100%;height:auto;margin:0px auto;padding:10px;background:#1D1D1D;position: relative;box-sizing: border-box !important;transition: ease-in-out .5s all;}
+.mrvlAnswer p{font-family:"Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:normal;color:#fff;text-align:left;padding:0px 0px;margin:0px ;display:block;position: relative;}
+.mrvlFaqArrow{width:12px;height:18px;position: absolute;right:15px;top:15px;transform: rotate(90deg);transition: ease-in-out .3s all;}
+.mrvlFaqArrow img{width:100%;height:auto;}
+.mrvlArrowRot{transform: rotate(-90deg);}
+.mrvlFAQOff .mrvlAnswer{display:none;opacity: 0;}
+.mrvlFAQOn .mrvlAnswer{display:block;opacity: 1;}
+/*location*/
+.mrvlHalfWrap{width:100%;max-width:1000px;height:auto;margin:0px auto;padding:0px 0px;display:flex;flex-wrap:wrap;justify-content: center;align-items: flex-start;column-gap:20px;position: relative;box-sizing: border-box !important;}
+.mrvlHalfMod{width:96%;max-width:500px;height:auto;margin:0px auto;padding:0px 0px;display:block;position: relative;box-sizing: border-box !important;}
+.mrvlHalfMod iframe{width:100%;height:350px;display:block;position: relative;z-index:22;}
+.mrvlLocWrap{width:100%;height:auto;margin:20px auto;padding:0px 0px;display:flex;flex-wrap: nowrap;justify-content: flex-start;align-items: flex-start;position: relative;box-sizing: border-box !important;}
+.mrvlLocWrap img{width:22px;height:auto;margin:0px 10px 0px 0px;padding:0px 0px;display:inline-block;}
+.mrvlHalfMod h2{font-family:"Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:600;color:#fff;text-align:left;padding:0px 0px;margin:0px 0px 20px 0px;display:inline-block;}
+.mrvlHalfMod p{font-family:"Averta",sans-serif,fallback;font-size:20px;line-height:20px;font-style:normal;font-weight:300;color:#fff;text-align:left;padding:0px 0px 0px 30px;margin:0px 0px 20px 0px;display:block;}
+.mrvlHalfMod h3{font-family:"Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:600;color:var(--mrvl-lgre);text-align:left;padding:0px 0px 0px 30px;margin:0px 0px;display:block;}
+.mrvlHalfMod a{color:var(--mrvl-lgre);text-decoration: none;}
+/*footer*/
+#mrvlFooterSection{}
+#mrvlFooterSection p{font-family:"Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:bold;color:#fff;text-align:center;padding:0px 0px;margin:0px auto;display:block;position: relative;}
+.mrvlFooterWrap{width:100%;max-width:400px;height:auto;display:flex;flex-wrap: nowrap;justify-content: center;align-items: center;column-gap:20px;margin:20px auto 0px;}
+.mrvlFooterWrap img{width:42px;height:auto;}
+/*lightbox gallery*/
+ .mrvlLightBox{width:100%;height:100%;background:rgba(0,0,0,0.5);position: fixed;top:0;left:0;margin:0;z-index: 100;display:none;align-items: center;justify-content: center;flex-wrap: wrap;align-content: center;row-gap:10px;}
+ .mrlvGalleryWrap{width:100%;max-width: 800px;height:auto;margin:0 auto;padding:0;position: relative;display:block;z-index: 102;}
+ .mrvlGalCloseBtn{width:100px;height:25px;margin:0px auto;padding:0px 0px;background:url('http://s1.ticketm.net/tm/en-au/img/static/marvel/2026/mrvl_cross_lgreen_img.svg') no-repeat,linear-gradient(90deg,var(--mrvl-lgre) 0%, var(--mrvl-lgre) 75%,var(--mrvl-dgre) 75%,var(--mrvl-dgre) 100%);background-position:right 7px top 8px, center center;background-size:10px auto, cover;z-index:104;position: absolute;cursor:pointer;top:5px;right:5px;}
+ .mrvlGalCloseBtn p{font-family:"Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:bold;color:var(--mrvl-dgre);text-align:left;padding:5px 10px;margin:0px 0px;display:block;user-select:none;}
+ .mrlvGalleryImg{width:100%;max-width: 800px;display:block;z-index: 102;position: relative;}
+ .mrlvGalleryImg img{width:100%;height:auto;}
+ .mrlvGalleryOn{display:block;}
+ .mrlvGalleryOff{display:none;}
+ .mrlvGalleryThumbs{width:100%;position: relative;display:flex;flex-wrap: nowrap;justify-content: center;align-items: flex-start;column-gap:5px;}
+ .mrvlLbGalleryThm{height:auto;display:block;position: relative;cursor:pointer;z-index: 102;}
+ .mrvlLbGalleryThm img{width:100%;height:auto;}
+ .mrvlLbGalThmOff{border:1px solid var(--mrvl-dgre);width:80px;}
+ .mrvlLbGalThmOn{border:2px solid var(--mrvl-lgre);width:86px;}
+.mrvlLbGalThmOn img{opacity:.7}
+ .mrvlGalleryCover{width:100%;height:100%;background:none;position: absolute;top:0;left:0;margin:0;z-index: 101;backdrop-filter: blur(5px);}
+/**/
+.mrvlTopLid{width:100%;height:20%;position: absolute;top:-8%;right:-5%;z-index:19;}
+.mrvlBotLid{width:100%;height:20%;position: absolute;bottom:-8%;left:-5%;z-index:19;}
+.mrvlTopLidSm{width:100%;height:20%;position: absolute;top:-3%;right:-2%;z-index:19;}
+.mrvlBotLidSm{width:100%;height:20%;position: absolute;bottom:-3%;left:-2%;z-index:19;}
+.mrvlTopLidExSm{width:calc(100% + 4px);height:calc(100% + 4px);position: absolute;top:-2px;right:-2px;z-index:19;}
+.mrvlBotLidExSm{width:calc(100% + 4px);height:calc(100% + 4px);position: absolute;bottom:-2px;left:-2px;z-index:19;}
+.mrvlTransparent2LGreen{background:linear-gradient(90deg,var(--mrvl-lgre0) 0%, var(--mrvl-lgre) 100%);}
+.mrvlTransparent2DGreen{background:linear-gradient(90deg,var(--mrvl-lgre0) 0%, var(--mrvl-dgre) 100%);}
+.mrvlLGreen2Transparent{background:linear-gradient(90deg,var(--mrvl-lgre) 0%, var(--mrvl-lgre0) 100%);}
+.mrvlDGreen2Transparent{background:linear-gradient(90deg,var(--mrvl-dgre) 0%, var(--mrvl-dgre0) 100%);}
+.mrvlDGreen2LGreen{background:linear-gradient(90deg,var(--mrvl-dgre) 0%, var(--mrvl-lgre) 100%);}
+.mrvlLGreen2DGreen{background:linear-gradient(90deg,var(--mrvl-dgre) 0%, var(--mrvl-dgre) 100%);}
+
 }
 /*gallery pop up max widths*/
 @media only screen and (min-width: 1149.99px) and (max-width:1300px){
@@ -226,6 +328,7 @@ page_title = "Marvel 365 Stadium Tours | Buy Tickets, Official Ticketmaster Site
 
 
 		<div id="mrvlVideo">
+			<div id="mrvlVideoWrap">
 			<!--The PlayerProvider passes state between the UI components
 				and Media, and makes fully custom UIs possible.
 				It does not have layout by default (display:contents)-->
@@ -245,7 +348,7 @@ page_title = "Marvel 365 Stadium Tours | Buy Tickets, Official Ticketmaster Site
 			</video-player>
 			<div class="mrvlTopLidSm mrvlTransparent2LGreen"></div>
 			<div class="mrvlBotLidSm mrvlDGreen2Transparent"></div>
-
+			</div>
 		</div>
 	</section>
 	<!--FAQs section--> 
