@@ -1,0 +1,249 @@
+[% # text to be displayed within <title></title>
+page_title = "NRL & NRLW FINALS SEASON 2026, LET'S GO! | Buy NRL Tickets | Ticketmaster Australia, Official Tickets" %]
+[% static_has_responsive_header_footer = 1; enable_leader_board = 0; %]
+[% PROCESS "layout/frame/top.tt" %]
+<!--cut for on sale--
+ <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />--->
+<!--libs--->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link href="https://s1.ticketm.net/tm/en-au/img/static/fonts/averta.css" type="text/css" rel="stylesheet" />
+<link href="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/font/tp2_font.css" type="text/css" rel="stylesheet" />
+
+<style type="text/css">
+:root {
+		--nrl-blk:#111111;
+		--nrl-gree:#00CF5D;
+		--nrl-grey:#EFEFEF;
+		--nrl-lbron:#9E2B64;
+		--nrl-dbron:#6C1D45;
+		--nrl-lraid:#002856;
+		--nrl-draid:#00162F;
+		--nrl-lbull:#2026CB;
+		--nrl-dbull:#121570;
+		--nrl-lshar:#1F7EB2;
+		--nrl-dshar:#15679F;
+		--nrl-ldolp:#E0121A;
+		--nrl-ddolp:#BD0F16;
+		--nrl-ltita:#047DB0;
+		--nrl-dtita:#084970;
+		--nrl-lsea:#6C1D45;
+		--nrl-dsea:#500128;
+		--nrl-lstor:#592B8C;
+		--nrl-dstor:#4F1782;
+		--nrl-lknig:#003B73;
+		--nrl-dknig:#002B5D;
+		--nrl-lcow:#0C2340;
+		--nrl-dcow:#0C192F;
+		--nrl-leels:#002D72;
+		--nrl-deels:#001B46;
+		--nrl-lpant:#2C2F30;
+		--nrl-dpant:#1F2122;
+		--nrl-lrabb:#003B19;
+		--nrl-drabb:#002B11;
+		--nrl-ldrag:#CD232C;
+		--nrl-ddrag:#A6121C;
+		--nrl-lroos:#0B2D5B;
+		--nrl-droos:#072046;
+		--nrl-lwarr:#151F6D;
+		--nrl-dwarr:#0E1557;
+		--nrl-ltige:#262626;
+		--nrl-dtige:#161616;				
+	  }	
+#mainContent{padding: 0px 0px 0px 0px !important;background: var(--nrl-blk);}
+@media only screen and (min-width: 0px) and (max-width: 999.99px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE !!!! IMPORTANT*/ 
+	#mainContent{padding: 0px 0px 0px 0px !important;background: var(--nrl-blk);}
+}
+@media only screen and (min-width: 1000px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE */ 
+	#mainContent{padding: 0px 0px 0px 0px !important;background: var(--nrl-blk);}
+}	
+
+@media only screen and (min-width: 1000px) {	
+	#nrlContainer{width:100%;height:auto;margin:0 auto;display:block;padding:1px;background:var(--nrl-blk);position:relative;box-sizing: border-box !important;}
+
+	#nrlHeader{width:100%;height:400px;display:flex;justify-content: center;align-items: center;column-gap:30px;margin:0px auto;background:linear-gradient(180deg,rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 1) 100%),url('https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/NRL26_Finals_mHeader_3840x750.jpg') no-repeat top center, var(--nrl-blk);background-size:cover;}
+	#nrlHeader img{width:0px;height:auto;margin:0px; display:none;}
+
+	.nrlMenu{width:100%;height:30px;margin:0px auto;padding:0px;background:var(--nrl-gree);display:flex;flex-wrap:nowrap;justify-content: center;align-items: center;column-gap: 100px;z-index: 100;position:relative;} 
+	.nrlMenu button{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:900;color:#111;text-align:center;padding:0px 20px 0px 0px;margin:0px 0px;border:0;outline:0;background:url('https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_downArrow_black_img.svg') no-repeat;background-size:10px auto;background-position:center right;cursor:pointer;box-sizing: border-box !important;}
+
+	.nrlToggleSecBtn{width:150px;height:30px;margin:0px;padding:0px;display:flex;flex-wrap: nowrap;align-items: center;justify-content: flex-end;position: absolute;right:0px;top:0px;box-sizing: border-box !important;z-index: 100;cursor:pointer;}
+	.nrlToggleSecBtn p{font-family:"Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:400;color:var(--nrl-gree);text-align:left;text-transform:uppercase;padding:0px 10px 0px 0px;margin:0px;display:inline-block;}
+	.nrlHideSec p::after{content:"HIDE SECTION";}
+	.nrlShowSec p::after{content:"SHOW SECTION";}
+	.nrlHideSecArrow{width:27px;height:27px;margin:0px;padding:8px 7px;display:inline-block;border:1px solid var(--nrl-gree);border-radius:3px;position: relative;box-sizing: border-box !important;}
+	.nrlHideSecArrow img{width:12px;height:8px;}
+	.nrlArrowRot{transform: rotate(180deg);}
+
+	.nrlFinalsWrap{width:100%;max-width:1050px;height:auto;margin:0px auto;padding:0px 0px 50px 0px;display:block;position: relative;box-sizing: border-box !important;}
+	.nrlSubHeader{width:100%;height:auto;margin:50px auto 20px;padding:0px;display:flex;justify-content: center;align-items: flex-start;flex-wrap: wrap;position: relative;box-sizing: border-box !important;z-index: 50;}
+	.nrlSubHeader h1{width:auto;font-family:"TP2","Averta",sans-serif,fallback;font-size:30px;line-height:30px;font-style:normal;font-weight:800;color:#fff;text-align:center;text-transform:uppercase;padding:0px;margin:0px;display:inline-block;position: relative;}
+	.nrlSubHeadLid{width:100%;height:8px;margin:0px;padding:0px;display:block;position: absolute;bottom:-8px;left:0px;right:0px;background:var(--nrl-gree);box-sizing: border-box !important;}
+	
+	.nrlWeekWrap{width:100%;height:auto;margin:0px;padding:0px;display:block;position: relative;box-sizing: border-box !important;}
+	.nrlWeekWrap h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:26px;line-height:26px;font-style:normal;font-weight:normal;color:#d1d1d1;text-align:center;padding:0px;margin:40px auto;}
+	.nrlEventWrap{width:100%;height:auto;margin:0px;padding:0px;display:flex;justify-content: center;align-items: center;flex-wrap: wrap;row-gap:10px ;column-gap:10px ;position: relative;box-sizing: border-box !important;}
+	.nrlEvent{width:246px;height:auto;margin:0px;padding:0px;display:block;background:#2E2E2E;border-radius:10px;border-top: 10px solid var(--nrl-gree);position: relative;box-sizing: border-box !important;}
+	.nrlEventGF{width:502px;height:auto;margin:0px;padding:0px 5px;display:block;background:#2E2E2E;border-radius:10px;border-top: 10px solid var(--nrl-gree);position: relative;box-sizing: border-box !important;} 
+	.nrlFinalType{width:150px;height:18px;font-family:"TP2","Averta",sans-serif,fallback;font-size:12px;line-height:12px;font-style:normal;font-weight:900;color:var(--nrl-blk);text-align:center;padding:3px 0px 0px 0px;margin:0px auto;background:var(--nrl-gree);border-radius:5px;display:inline-block;position: absolute;top:-18px;left:0;right:0;box-sizing: border-box !important;}
+	.nrlLeagueType{width:50px;height:18px;font-family:"TP2","Averta",sans-serif,fallback;font-size:12px;line-height:12px;font-style:normal;font-weight:900;color:var(--nrl-blk);text-align:center;padding:3px 0px 0px 0px;margin:0px auto;background:var(--nrl-gree);border-radius:5px;display:inline-block;position: absolute;top:-9px;left:0;right:0;box-sizing: border-box !important;}
+	.nrlDateWrap,.nrlVenueWrap{width:100%;height:auto;margin:0px;padding:10px 0px;display:flex;justify-content: center;align-items: center;column-gap: 5px;position: relative;box-sizing: border-box !important;}
+	.nrlDateWrap p,.nrlVenueWrap p{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:bold;color:#d1d1d1;text-align:center;padding:0px;margin:0px;display:inline-block;}
+	.nrlDateWrap h1,.nrlVenueWrap h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:20px;line-height:20px;font-style:normal;font-weight:bold;color:var(--nrl-gree);text-align:center;padding:0px;margin:0px;display:inline-block;}
+	.nrlTeamWrapGF{width:100%;height:auto;margin:0px;padding:0px 0px;display:flex;align-items: space-between;flex-wrap: nowrap;column-gap:10px;position: relative;box-sizing: border-box !important;}
+	.nrlTeamWrap{width:246px;height:auto;margin:0px;padding:15px 0px;display:flex;align-items: center;flex-wrap: nowrap;background:#242424;position: relative;box-sizing: border-box !important;}
+	.nrlTeamWrap p{font-family:"TP2","Averta",sans-serif,fallback;font-size:18px;line-height:18px;font-style:normal;font-weight:normal;color:#d1d1d1;text-align:center;padding:0px;margin:0px;display:inline-block}
+	.nrlTeam{width:100%;height:auto;margin:0px;padding:0px;display:block;position: relative;box-sizing: border-box !important;}
+	.nrlTeam h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:18px;line-height:18px;font-style:normal;font-weight:normal;color:#d1d1d1;text-align:center;padding:0px;margin:0px auto;display:block}
+	.nrlTeamIco{width:50px;height:50px;margin:0px auto;padding:0px;display:block;position: relative;box-sizing: border-box !important;}
+	.nrlTeamIco img{width:100%;height:auto;}
+	.nrlFindTixBtn{width:130px;height:26;margin:0px auto 10px;padding:0px;display:block;border-radius:5px;background:url('https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_doubleChev_green_img.svg') no-repeat,var(--nrl-gree);background-size:16px 14px;background-position:center right 5px;position: relative;cursor:pointer;user-select:none;box-sizing: border-box !important;}
+	.nrlFindTixBtn p{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:900;color:#000;text-align:center;padding:7px 16px 7px 0px;margin:0px;box-sizing: border-box !important;} 
+	.nrlPendingBtn{width:130px;height:26;margin:0px auto 10px;padding:0px;display:block;border-radius:5px;background:url('https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_doubleChev_grey_img.svg') no-repeat,#545454;background-size:16px 14px;background-position:center right 5px;position: relative;cursor:pointer;user-select:none;box-sizing: border-box !important;}
+	.nrlPendingBtn p{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:900;color:#A2A2A2;text-align:center;padding:7px 16px 7px 0px;margin:0px;box-sizing: border-box !important;} 
+
+	.blnkBg{background: var(--nrl-blk);}
+
+}
+
+@media only screen and (max-width: 999.99px) {	
+#nrlContainer{width:100%;height:auto;margin:0 auto;display:block;padding:1px;background:var(--nrl-blk);position:relative;box-sizing: border-box !important;}
+
+	#nrlHeader{width:100%;height:auto;display:flex;flex-wrap:wrap;justify-content: center;align-items: center;column-gap:30px;margin:0px auto;background:url('NRL26_Finals_mHeader_1000x1000.jpg') no-repeat center center, var(--nrl-blk);background-size:cover;}
+	#nrlHeader img{width:100%;height:auto;margin:0px; display:block;}
+
+	.nrlMenu{width:100%;height:30px;margin:0px auto;padding:0px;background:var(--nrl-gree);display:flex;flex-wrap:nowrap;justify-content: center;align-items: center;column-gap: 20px;z-index: 100;position:relative;} 
+	.nrlMenu button{font-family:"TP2","Averta",sans-serif,fallback;font-size:12px;line-height:12px;font-style:normal;font-weight:900;color:#111;text-align:center;padding:0px 20px 0px 0px;margin:0px 0px;border:0;outline:0;background:url('https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_downArrow_black_img.svg') no-repeat;background-size:10px auto;background-position:center right;cursor:pointer;box-sizing: border-box !important;}
+
+	.nrlToggleSecBtn{width:150px;height:30px;margin:0px auto;padding:0px;display:flex;flex-wrap: nowrap;align-items: center;justify-content: flex-end;position: relative;box-sizing: border-box !important;z-index: 100;cursor:pointer;}
+	.nrlToggleSecBtn p{font-family:"Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:400;color:var(--nrl-gree);text-align:left;text-transform:uppercase;padding:0px 10px 0px 0px;margin:0px;display:inline-block;}
+	.nrlHideSec p::after{content:"HIDE SECTION";}
+	.nrlShowSec p::after{content:"SHOW SECTION";}
+	.nrlHideSecArrow{width:27px;height:27px;margin:0px;padding:8px 7px;display:inline-block;border:1px solid var(--nrl-gree);border-radius:3px;position: relative;box-sizing: border-box !important;}
+	.nrlHideSecArrow img{width:12px;height:8px;}
+	.nrlArrowRot{transform: rotate(180deg);}
+
+	.nrlFinalsWrap{width:100%;max-width:1050px;height:auto;margin:0px auto;padding:0px 0px 25px 0px;display:block;position: relative;box-sizing: border-box !important;}
+	.nrlSubHeader{width:100%;height:auto;margin:50px auto 20px;padding:0px;display:flex;justify-content: center;align-items: flex-start;flex-wrap: wrap;position: relative;box-sizing: border-box !important;z-index: 50;}
+	.nrlSubHeader h1{width:auto;font-family:"TP2","Averta",sans-serif,fallback;font-size:30px;line-height:30px;font-style:normal;font-weight:800;color:#fff;text-align:center;text-transform:uppercase;padding:0px 20px;margin:0px;display:inline-block;position: relative;box-sizing: border-box !important;}
+	.nrlSubHeadLid{width:80%;height:8px;margin:0px auto;padding:0px;display:block;position: absolute;bottom:-8px;left:0px;right:0px;background:var(--nrl-gree);box-sizing: border-box !important;}
+	
+	.nrlWeekWrap{width:100%;height:auto;margin:0px;padding:0px;display:block;position: relative;box-sizing: border-box !important;}
+	.nrlWeekWrap h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:26px;line-height:26px;font-style:normal;font-weight:normal;color:#d1d1d1;text-align:center;padding:0px;margin:40px auto;}
+	.nrlEventWrap{width:100%;height:auto;margin:0px;padding:0px;display:flex;justify-content: center;align-items: center;flex-wrap: wrap;row-gap:10px ;column-gap:10px ;position: relative;box-sizing: border-box !important;}
+	.nrlEvent{width:246px;height:auto;margin:0px;padding:0px;display:block;background:#2E2E2E;border-radius:10px;border-top: 10px solid var(--nrl-gree);position: relative;box-sizing: border-box !important;}
+	.nrlEventGF{width:94%;max-width:502px;height:auto;margin:0px auto;padding:0px 5px;display:block;background:#2E2E2E;border-radius:10px;border-top: 10px solid var(--nrl-gree);position: relative;box-sizing: border-box !important;} 
+	.nrlFinalType{width:150px;height:18px;font-family:"TP2","Averta",sans-serif,fallback;font-size:12px;line-height:12px;font-style:normal;font-weight:900;color:var(--nrl-blk);text-align:center;padding:3px 0px 0px 0px;margin:0px auto;background:var(--nrl-gree);border-radius:5px;display:inline-block;position: absolute;top:-18px;left:0;right:0;box-sizing: border-box !important;}
+	.nrlLeagueType{width:50px;height:18px;font-family:"TP2","Averta",sans-serif,fallback;font-size:12px;line-height:12px;font-style:normal;font-weight:900;color:var(--nrl-blk);text-align:center;padding:3px 0px 0px 0px;margin:0px auto;background:var(--nrl-gree);border-radius:5px;display:inline-block;position: absolute;top:-9px;left:0;right:0;box-sizing: border-box !important;}
+	.nrlDateWrap,.nrlVenueWrap{width:100%;height:auto;margin:0px;padding:10px 0px;display:flex;justify-content: center;align-items: center;column-gap: 5px;position: relative;box-sizing: border-box !important;}
+	.nrlDateWrap p,.nrlVenueWrap p{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:bold;color:#d1d1d1;text-align:center;padding:0px;margin:0px;display:inline-block;}
+	.nrlDateWrap h1,.nrlVenueWrap h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:20px;line-height:20px;font-style:normal;font-weight:bold;color:var(--nrl-gree);text-align:center;padding:0px;margin:0px;display:inline-block;}
+	.nrlTeamWrapGF{width:100%;height:auto;margin:10px 0px 0px 0px;padding:0px 0px;display:flex;justify-content: center;align-items: flex-start;flex-wrap: wrap;column-gap:10px;row-gap:15px;position: relative;box-sizing: border-box !important;}
+	.nrlTeamWrap{width:246px;height:auto;margin:0px;padding:15px 0px;display:flex;align-items: center;flex-wrap: nowrap;background:#242424;position: relative;box-sizing: border-box !important;}
+	.nrlTeamWrap p{font-family:"TP2","Averta",sans-serif,fallback;font-size:18px;line-height:18px;font-style:normal;font-weight:normal;color:#d1d1d1;text-align:center;padding:0px;margin:0px;display:inline-block}
+	.nrlTeam{width:100%;height:auto;margin:0px;padding:0px;display:block;position: relative;box-sizing: border-box !important;}
+	.nrlTeam h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:18px;line-height:18px;font-style:normal;font-weight:normal;color:#d1d1d1;text-align:center;padding:0px;margin:0px auto;display:block}
+	.nrlTeamIco{width:50px;height:50px;margin:0px auto;padding:0px;display:block;position: relative;box-sizing: border-box !important;}
+	.nrlTeamIco img{width:100%;height:auto;}
+	.nrlFindTixBtn{width:130px;height:26;margin:0px auto 10px;padding:0px;display:block;border-radius:5px;background:url('https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_doubleChev_green_img.svg') no-repeat,var(--nrl-gree);background-size:16px 14px;background-position:center right 5px;position: relative;cursor:pointer;user-select:none;box-sizing: border-box !important;}
+	.nrlFindTixBtn p{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:900;color:#000;text-align:center;padding:7px 16px 7px 0px;margin:0px;box-sizing: border-box !important;} 
+	.nrlPendingBtn{width:130px;height:26;margin:0px auto 10px;padding:0px;display:block;border-radius:5px;background:url('https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_doubleChev_grey_img.svg') no-repeat,#545454;background-size:16px 14px;background-position:center right 5px;position: relative;cursor:pointer;user-select:none;box-sizing: border-box !important;}
+	.nrlPendingBtn p{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:900;color:#A2A2A2;text-align:center;padding:7px 16px 7px 0px;margin:0px;box-sizing: border-box !important;} 
+
+	.blnkBg{background: var(--nrl-blk);}
+
+
+}
+/*team branding*/
+
+/*nrl_26_broncos_logo.svg nrl_26_raiders_logo.svg nrl_26_bulldogs_logo.svg nrl_26_sharks_logo.svg nrl_26_dolphins_logo.svg nrl_26_titans_logo.svg nrl_26_sea_eagles_logo.svg nrl_26_storm_logo.svg nrl_26_knights_logo.svg nrl_26_cowboys_logo.svg nrl_26_eels_logo.svg  nrl_26_panthers_logo.svg  nrl_26_rabbitohs_logo.svg nrl_26_stgeorge_logo.svg nrl_26_roosters_logo.svg nrl_26_warriors_logo.svg nrl_26_tigers_logo.svg*/
+</style>
+
+<!---BODY CONTENT ETC----->
+
+<div id="nrlContainer">
+
+	<!--header-->
+	<div id="nrlHeader">
+		<img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/NRL26_Finals_mHeader_1000x1000.jpg">
+		<!--<img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl26_secondary_logo.svg" alt="NRL">
+		<img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl26_secondary_logo.svg" alt="NRLW">-->
+	</div>
+	<div class="nrlMenu"><!--<button data-btn="NRL">NRL FINALS</button><button data-btn="NRLW">NRLW FINALS</button><button data-btn="GF">GRAND FINAL</button>---></div>
+	
+	<!--GRAND FINAL-->
+		<div id="GFmod" class="nrlFinalsWrap greyBg">
+		<div class="nrlSubHeader">
+			<h1>NRL & NRLW Telstra Premiership Grand Finals<div class="nrlSubHeadLid"></div></h1>
+		</div>
+		<div class="nrlToggleSecBtn nrlHideSec"><p></p><div class="nrlHideSecArrow"><img class="nrlArrowRot" src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_downArrow_green_img.svg"></div></div>
+		<div class="nrlWeekWrap"> 
+			<h1><strong>SUNDAY OCTOBER 4</strong></h1>
+			<div class="nrlEventWrap">
+				<!--event-->
+				<div class="nrlEventGF">
+					
+					<div class="nrlDateWrap"> 
+						<!--date time-->
+						<p>SUN OCT 04</p><h1>/</h1><p>4:00pm</p></div>
+					<div class="nrlTeamWrapGF">
+					<div class="nrlTeamWrap"><div class="nrlLeagueType">NRLW</div>
+						<!--home team-->
+						<div class="nrlTeam">
+							<div class="nrlTeamIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_tbcTeam_ico.svg" alt="TBC Team Icon"></div>
+							<h1>Home</h1>
+						</div>
+						<p>.vs</p>
+						<!--home team-->
+						<div class="nrlTeam">
+							<div class="nrlTeamIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_tbcTeam_ico.svg" alt="TBC Team Icon"></div>
+							<h1>Away</h1>
+						</div>
+					</div>
+					<div class="nrlTeamWrap"><div class="nrlLeagueType">NRL</div>
+						<!--home team-->
+						<div class="nrlTeam">
+							<div class="nrlTeamIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_tbcTeam_ico.svg" alt="TBC Team Icon"></div>
+							<h1>Home</h1>
+						</div>
+						<p>.vs</p>
+						<!--home team-->
+						<div class="nrlTeam">
+							<div class="nrlTeamIco"><img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_tbcTeam_ico.svg" alt="TBC Team Icon"></div>
+							<h1>Away</h1>
+						</div>
+					</div>
+					</div>	
+
+
+					<div class="nrlVenueWrap"><p>Accor Stadium</p><h1>/</h1><p>NSW</p></div>
+					<div class="nrlFindTixBtn"><p>FIND TICKETS</p></div>
+				</div>
+				
+			</div>
+		</div>
+
+
+
+	</div>
+</div>
+
+
+<script type="text/javascript">
+$j = jQuery.noConflict();
+
+//hide show sections
+$j(document).on('click', ".nrlToggleSecBtn", function () {
+	$j(this).toggleClass('nrlHideSec').toggleClass('nrlShowSec');
+	$j(this).children(".nrlHideSecArrow").children('img').toggleClass('nrlArrowRot');
+	$j(this).siblings(".nrlWeekWrap").fadeToggle(500);
+
+});
+//menu scrolls
+$j(document).on('click', '.nrlMenu button', function (e) {
+	let btnTarget = $j(this).data('btn')
+	$j('html, body').animate({ scrollTop: $j("#"+btnTarget+"mod").offset().top + -20}, 1000);
+});	
+</script>	
+[% PROCESS "layout/frame/bottom.tt" %]
