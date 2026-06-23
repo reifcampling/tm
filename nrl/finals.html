@@ -62,12 +62,11 @@ page_title = "NRL & NRLW FINALS SEASON 2026, LET'S GO! | Buy NRL Tickets | Ticke
 @media only screen and (min-width: 1000px) {	
 	#nrlContainer{width:100%;height:auto;margin:0 auto;display:block;padding:1px;background:var(--nrl-blk);position:relative;box-sizing: border-box !important;}
 
-	#nrlHeader{width:100%;height:400px;display:flex;justify-content: center;align-items: center;column-gap:30px;margin:0px auto;background:linear-gradient(180deg,rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 1) 100%),url('https://s1.ticketm.net/tm/en-au/img/static/rugby/rugby_header_desk.jpg') no-repeat center center, var(--nrl-blk);background-size:cover;}
-	#nrlHeader img{width:200px;height:auto;margin:50px auto; display:block;}
+	#nrlHeader{width:100%;height:400px;display:flex;justify-content: center;align-items: center;column-gap:30px;margin:0px auto;background:linear-gradient(180deg,rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 1) 100%),url('https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/NRL26_Finals_mHeader_3840x750.jpg') no-repeat center center, var(--nrl-blk);background-size:cover;}
+	#nrlHeader img{width:0px;height:auto;margin:0px; display:none;}
 
-	.nrlMenu{width:100%;height:30px;margin:0px auto;padding:0px;background:var(--nrl-gree);display:flex;flex-wrap:nowrap;} 
-	.nrlMenu button{border:0;outline:0;}
-	
+	.nrlMenu{width:100%;height:30px;margin:0px auto;padding:0px;background:var(--nrl-gree);display:flex;flex-wrap:nowrap;justify-content: center;align-items: center;column-gap: 100px;z-index: 100;position:relative;} 
+	.nrlMenu button{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:900;color:#111;text-align:center;padding:0px 20px 0px 0px;margin:0px 0px;border:0;outline:0;background:url('https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_downArrow_black_img.svg') no-repeat;background-size:10px auto;background-position:center right;cursor:pointer;box-sizing: border-box !important;}
 
 	.nrlToggleSecBtn{width:150px;height:30px;margin:0px;padding:0px;display:flex;flex-wrap: nowrap;align-items: center;justify-content: flex-end;position: absolute;right:0px;top:0px;box-sizing: border-box !important;z-index: 100;cursor:pointer;}
 	.nrlToggleSecBtn p{font-family:"Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:400;color:var(--nrl-gree);text-align:left;text-transform:uppercase;padding:0px 10px 0px 0px;margin:0px;display:inline-block;}
@@ -103,10 +102,56 @@ page_title = "NRL & NRLW FINALS SEASON 2026, LET'S GO! | Buy NRL Tickets | Ticke
 	.nrlFindTixBtn p{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:900;color:#000;text-align:center;padding:7px 16px 7px 0px;margin:0px;box-sizing: border-box !important;} 
 	.nrlPendingBtn{width:130px;height:26;margin:0px auto 10px;padding:0px;display:block;border-radius:5px;background:url('https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_doubleChev_grey_img.svg') no-repeat,#545454;background-size:16px 14px;background-position:center right 5px;position: relative;cursor:pointer;user-select:none;box-sizing: border-box !important;}
 	.nrlPendingBtn p{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:900;color:#A2A2A2;text-align:center;padding:7px 16px 7px 0px;margin:0px;box-sizing: border-box !important;} 
+
+	.blnkBg{background: var(--nrl-blk);}
+
 }
 
 @media only screen and (max-width: 999.99px) {	
-	#nrlContainer{width:100%;height:auto;margin:0 auto;display:block;padding:1px;background:var(--nrl-blk);position:relative;box-sizing: border-box !important;}
+#nrlContainer{width:100%;height:auto;margin:0 auto;display:block;padding:1px;background:var(--nrl-blk);position:relative;box-sizing: border-box !important;}
+
+	#nrlHeader{width:100%;height:auto;display:flex;flex-wrap:wrap;justify-content: center;align-items: center;column-gap:30px;margin:0px auto;background:url('NRL26_Finals_mHeader_1000x1000.jpg') no-repeat center center, var(--nrl-blk);background-size:cover;}
+	#nrlHeader img{width:100%;height:auto;margin:0px; display:block;}
+
+	.nrlMenu{width:100%;height:30px;margin:0px auto;padding:0px;background:var(--nrl-gree);display:flex;flex-wrap:nowrap;justify-content: center;align-items: center;column-gap: 20px;z-index: 100;position:relative;} 
+	.nrlMenu button{font-family:"TP2","Averta",sans-serif,fallback;font-size:12px;line-height:12px;font-style:normal;font-weight:900;color:#111;text-align:center;padding:0px 20px 0px 0px;margin:0px 0px;border:0;outline:0;background:url('https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_downArrow_black_img.svg') no-repeat;background-size:10px auto;background-position:center right;cursor:pointer;box-sizing: border-box !important;}
+
+	.nrlToggleSecBtn{width:150px;height:30px;margin:0px auto;padding:0px;display:flex;flex-wrap: nowrap;align-items: center;justify-content: flex-end;position: relative;box-sizing: border-box !important;z-index: 100;cursor:pointer;}
+	.nrlToggleSecBtn p{font-family:"Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:400;color:var(--nrl-gree);text-align:left;text-transform:uppercase;padding:0px 10px 0px 0px;margin:0px;display:inline-block;}
+	.nrlHideSec p::after{content:"HIDE SECTION";}
+	.nrlShowSec p::after{content:"SHOW SECTION";}
+	.nrlHideSecArrow{width:27px;height:27px;margin:0px;padding:8px 7px;display:inline-block;border:1px solid var(--nrl-gree);border-radius:3px;position: relative;box-sizing: border-box !important;}
+	.nrlHideSecArrow img{width:12px;height:8px;}
+	.nrlArrowRot{transform: rotate(180deg);}
+
+	.nrlFinalsWrap{width:100%;max-width:1050px;height:auto;margin:0px auto;padding:0px 0px 25px 0px;display:block;position: relative;box-sizing: border-box !important;}
+	.nrlSubHeader{width:100%;height:auto;margin:50px auto 20px;padding:0px;display:flex;justify-content: center;align-items: flex-start;flex-wrap: wrap;position: relative;box-sizing: border-box !important;z-index: 50;}
+	.nrlSubHeader h1{width:auto;font-family:"TP2","Averta",sans-serif,fallback;font-size:30px;line-height:30px;font-style:normal;font-weight:800;color:#fff;text-align:center;text-transform:uppercase;padding:0px 20px;margin:0px;display:inline-block;position: relative;box-sizing: border-box !important;}
+	.nrlSubHeadLid{width:80%;height:8px;margin:0px auto;padding:0px;display:block;position: absolute;bottom:-8px;left:0px;right:0px;background:var(--nrl-gree);box-sizing: border-box !important;}
+	
+	.nrlWeekWrap{width:100%;height:auto;margin:0px;padding:0px;display:block;position: relative;box-sizing: border-box !important;}
+	.nrlWeekWrap h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:26px;line-height:26px;font-style:normal;font-weight:normal;color:#d1d1d1;text-align:center;padding:0px;margin:40px auto;}
+	.nrlEventWrap{width:100%;height:auto;margin:0px;padding:0px;display:flex;justify-content: center;align-items: center;flex-wrap: wrap;row-gap:10px ;column-gap:10px ;position: relative;box-sizing: border-box !important;}
+	.nrlEvent{width:246px;height:auto;margin:0px;padding:0px;display:block;background:#2E2E2E;border-radius:10px;border-top: 10px solid var(--nrl-gree);position: relative;box-sizing: border-box !important;}
+	.nrlEventGF{width:94%;max-width:502px;height:auto;margin:0px auto;padding:0px 5px;display:block;background:#2E2E2E;border-radius:10px;border-top: 10px solid var(--nrl-gree);position: relative;box-sizing: border-box !important;} 
+	.nrlFinalType{width:150px;height:18px;font-family:"TP2","Averta",sans-serif,fallback;font-size:12px;line-height:12px;font-style:normal;font-weight:900;color:var(--nrl-blk);text-align:center;padding:3px 0px 0px 0px;margin:0px auto;background:var(--nrl-gree);border-radius:5px;display:inline-block;position: absolute;top:-18px;left:0;right:0;box-sizing: border-box !important;}
+	.nrlLeagueType{width:50px;height:18px;font-family:"TP2","Averta",sans-serif,fallback;font-size:12px;line-height:12px;font-style:normal;font-weight:900;color:var(--nrl-blk);text-align:center;padding:3px 0px 0px 0px;margin:0px auto;background:var(--nrl-gree);border-radius:5px;display:inline-block;position: absolute;top:-9px;left:0;right:0;box-sizing: border-box !important;}
+	.nrlDateWrap,.nrlVenueWrap{width:100%;height:auto;margin:0px;padding:10px 0px;display:flex;justify-content: center;align-items: center;column-gap: 5px;position: relative;box-sizing: border-box !important;}
+	.nrlDateWrap p,.nrlVenueWrap p{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:bold;color:#d1d1d1;text-align:center;padding:0px;margin:0px;display:inline-block;}
+	.nrlDateWrap h1,.nrlVenueWrap h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:20px;line-height:20px;font-style:normal;font-weight:bold;color:var(--nrl-gree);text-align:center;padding:0px;margin:0px;display:inline-block;}
+	.nrlTeamWrapGF{width:100%;height:auto;margin:10px 0px 0px 0px;padding:0px 0px;display:flex;justify-content: center;align-items: flex-start;flex-wrap: wrap;column-gap:10px;row-gap:15px;position: relative;box-sizing: border-box !important;}
+	.nrlTeamWrap{width:246px;height:auto;margin:0px;padding:15px 0px;display:flex;align-items: center;flex-wrap: nowrap;background:#242424;position: relative;box-sizing: border-box !important;}
+	.nrlTeamWrap p{font-family:"TP2","Averta",sans-serif,fallback;font-size:18px;line-height:18px;font-style:normal;font-weight:normal;color:#d1d1d1;text-align:center;padding:0px;margin:0px;display:inline-block}
+	.nrlTeam{width:100%;height:auto;margin:0px;padding:0px;display:block;position: relative;box-sizing: border-box !important;}
+	.nrlTeam h1{font-family:"TP2","Averta",sans-serif,fallback;font-size:18px;line-height:18px;font-style:normal;font-weight:normal;color:#d1d1d1;text-align:center;padding:0px;margin:0px auto;display:block}
+	.nrlTeamIco{width:50px;height:50px;margin:0px auto;padding:0px;display:block;position: relative;box-sizing: border-box !important;}
+	.nrlTeamIco img{width:100%;height:auto;}
+	.nrlFindTixBtn{width:130px;height:26;margin:0px auto 10px;padding:0px;display:block;border-radius:5px;background:url('https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_doubleChev_green_img.svg') no-repeat,var(--nrl-gree);background-size:16px 14px;background-position:center right 5px;position: relative;cursor:pointer;user-select:none;box-sizing: border-box !important;}
+	.nrlFindTixBtn p{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:900;color:#000;text-align:center;padding:7px 16px 7px 0px;margin:0px;box-sizing: border-box !important;} 
+	.nrlPendingBtn{width:130px;height:26;margin:0px auto 10px;padding:0px;display:block;border-radius:5px;background:url('https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_doubleChev_grey_img.svg') no-repeat,#545454;background-size:16px 14px;background-position:center right 5px;position: relative;cursor:pointer;user-select:none;box-sizing: border-box !important;}
+	.nrlPendingBtn p{font-family:"TP2","Averta",sans-serif,fallback;font-size:14px;line-height:14px;font-style:normal;font-weight:900;color:#A2A2A2;text-align:center;padding:7px 16px 7px 0px;margin:0px;box-sizing: border-box !important;} 
+
+	.blnkBg{background: var(--nrl-blk);}
 
 
 }
@@ -121,16 +166,17 @@ page_title = "NRL & NRLW FINALS SEASON 2026, LET'S GO! | Buy NRL Tickets | Ticke
 
 	<!--header-->
 	<div id="nrlHeader">
-		<img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl26_secondary_logo.svg" alt="NRL">
-		<img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl26_secondary_logo.svg" alt="NRLW">
+		<img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/NRL26_Finals_mHeader_1000x1000.jpg">
+		<!--<img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl26_secondary_logo.svg" alt="NRL">
+		<img src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl26_secondary_logo.svg" alt="NRLW">-->
 	</div>
-	<div class="nrlMenu"><button>NRL FINALS</button><button>NRLW FINALS</button><button>GRAND FINAL</button></div>
+	<div class="nrlMenu"><button data-btn="NRL">NRL FINALS</button><button data-btn="NRLW">NRLW FINALS</button><button data-btn="GF">GRAND FINAL</button></div>
 	<!--NRL FINALS-->
-	<div class="nrlFinalsWrap"><div class="nrlToggleSecBtn nrlHideSec"><p></p><div class="nrlHideSecArrow"><img class="nrlArrowRot" src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_downArrow_green_img.svg"></div></div>
+	<div id="NRLmod" class="nrlFinalsWrap">
 		<div class="nrlSubHeader">
 			<h1>NRL Telstra Premiership Finals Series<div class="nrlSubHeadLid"></div></h1>
-			
 		</div>
+		<div class="nrlToggleSecBtn nrlHideSec"><p></p><div class="nrlHideSecArrow"><img class="nrlArrowRot" src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_downArrow_green_img.svg"></div></div>
 		<div class="nrlWeekWrap"> 
 			<h1><strong>WEEK 1:</strong> SEP 04 - SEP 06</h1>
 			<div class="nrlEventWrap">
@@ -328,11 +374,12 @@ page_title = "NRL & NRLW FINALS SEASON 2026, LET'S GO! | Buy NRL Tickets | Ticke
 		</div><!--end week 3-->
 	</div>
 	<!--NRLW FINALS-->
-	<div class="nrlFinalsWrap"><div class="nrlToggleSecBtn  nrlHideSec"><p></p><div class="nrlHideSecArrow"><img class="nrlArrowRot" src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_downArrow_green_img.svg"></div></div>
+	<div id="NRLWmod" class="nrlFinalsWrap">
 		<div class="nrlSubHeader">
 			<h1>NRLW Telstra Premiership Finals Series<div class="nrlSubHeadLid"></div></h1>
 			
 		</div>
+		<div class="nrlToggleSecBtn  nrlHideSec"><p></p><div class="nrlHideSecArrow"><img class="nrlArrowRot" src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_downArrow_green_img.svg"></div></div>
 		<div class="nrlWeekWrap"> 
 			<h1><strong>WEEK 1:</strong> SEP 04 - SEP 06</h1>
 			<div class="nrlEventWrap">
@@ -530,11 +577,11 @@ page_title = "NRL & NRLW FINALS SEASON 2026, LET'S GO! | Buy NRL Tickets | Ticke
 		</div><!--end week 3-->
 	</div>
 	<!--GRAND FINAL-->
-		<div class="nrlFinalsWrap"><div class="nrlToggleSecBtn nrlHideSec"><p></p><div class="nrlHideSecArrow"><img class="nrlArrowRot" src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_downArrow_green_img.svg"></div></div>
+		<div id="GFmod" class="nrlFinalsWrap greyBg">
 		<div class="nrlSubHeader">
 			<h1>NRL & NRLW Telstra Premiership Grand Finals<div class="nrlSubHeadLid"></div></h1>
-			
 		</div>
+		<div class="nrlToggleSecBtn nrlHideSec"><p></p><div class="nrlHideSecArrow"><img class="nrlArrowRot" src="https://s1.ticketm.net/tm/en-au/img/static/nrl/2026/nrl_26_downArrow_green_img.svg"></div></div>
 		<div class="nrlWeekWrap"> 
 			<h1><strong>SUNDAY OCTOBER 4</strong></h1>
 			<div class="nrlEventWrap">
@@ -597,6 +644,10 @@ $j(document).on('click', ".nrlToggleSecBtn", function () {
 	$j(this).siblings(".nrlWeekWrap").fadeToggle(500);
 
 });
-	
+//menu scrolls
+$j(document).on('click', '.nrlMenu button', function (e) {
+	let btnTarget = $j(this).data('btn')
+	$j('html, body').animate({ scrollTop: $j("#"+btnTarget+"mod").offset().top + -20}, 1000);
+});	
 </script>	
 [% PROCESS "layout/frame/bottom.tt" %]
