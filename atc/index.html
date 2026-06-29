@@ -1,0 +1,739 @@
+[% # text to be displayed within <title></title>
+page_title = "Australian Turf Club, Sydney Racing | Royal Randwick & Rosehill Gardens | Buy Tickets Official Ticketmaster site." %]
+[% static_has_responsive_header_footer = 1; enable_leader_board = 0; %]
+[% PROCESS "layout/frame/top.tt" %]
+
+<!--libs--->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>var $j = jQuery.noConflict();</script>
+<link rel="stylesheet" href="https://use.typekit.net/esn4cdd.css">
+<link href="https://s1.ticketm.net/tm/en-au/img/static/fonts/averta.css" type="text/css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style type="text/css">
+
+@media only screen and (min-width: 0px) and (max-width: 999px){	
+	.frame{width: 100% !important;background-color: var(--atc-blue) !important} /*FIX FOR TM HEADER CODE*/ 
+	#mainContent {background-color:var(--atc-blue)!important;padding: 0px 0px 0px 0px !important}
+}
+@media only screen and (min-width: 1000px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE */ 
+	#mainContent {padding: 0px 0px 0px 0px !important;background-color:var(--atc-blue) !important;}
+	body{background-color: var(--atc-blue);}
+}	
+@font-face {
+  font-family: 'raisonne';
+  src: url("https://s1.ticketm.net/tm/en-au/img/static/turfclub/font/raisonne-demi-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+	
+:root {
+		--atc-blue:#002554;
+		--atc-purp:#c70065;
+		--atc-gold:#a08032;
+		--atc-cream:#ece7dc;
+		--atc-lgold:#ae965d;
+		--atc-autm:#774d87;
+		--atc-ever:#F6CA69;/*autumn F6CA69 everest A2BFE2*/
+		--atc-autmtxt:#D14D27;
+	  }
+	
+/*venues <1520px */	
+@media only screen and (min-width: 1000px) and (max-width: 1520px){		
+	.atcVenue{width:330px !important;height:420px !important;margin:14px auto;}
+	.atcVenueWrap{width:330px !important;}
+	.atcVenueWrap p{height:110px !important;}
+	.atcVenueHeader{width:100% !important;height:auto !important;}
+	.atcVenueHero,	.atcVenueHero img{width:100% !important;}
+	.atcVenueBtn{bottom:-90px !important;}
+	.atcVenueLogo img{width:96% !important;}
+	}
+	
+@media only screen and (min-width: 1000px){	
+	/*TM HEADER */
+	#tmHeader{width:100%;height:auto;background:#026cdf;padding:25px 20px 55px;margin:0px auto 20px;box-sizing:border-box;display:block;position: relative;}
+	#tmLogo{width:220px;height:auto;display:inline-block;float:left;}
+	#tmLogo img{width:100%;height:auto;padding:0;margin:0px auto;}
+	#tmSearch{width:450px;height:35px;margin:0px auto;padding:7px 0px 0px 0px;display:inline-block;float:right;background:#004da1;border-radius:20px;color:#fff;font-family:"Open Sans","Averta",  sans-serif ;font-size:16px;font-weight: 300;text-align: center;box-sizing:border-box;}
+	/*TC CONTENT*/
+	#atcContent{width:100%;height:auto;margin:0px auto;background:var(--atc-blue);position: relative;display:block;padding:1px 1px 50px 1px;box-sizing: border-box !important}
+	#atcHeader{width:100%;height:75vh;margin:0px auto 0px;display:block;position: relative;border-bottom:4px solid var(--atc-gold);}
+
+	#atcMenuWrap{width:100%;height:40px;display:block;margin:0;padding:0;z-index: 100;top:0;left:0;right:0;position: absolute;}
+	#atcMenu{width:100%;border-bottom:1px solid #fff;background:rgba(0,0,0,.3);height:auto;margin:0px;padding:10px;text-align: center;margin:0px auto;position: relative;z-index:12;box-sizing:border-box !important;}
+	#atcMenu button{text-align:center; color:#fff;font-family:"raisonne","Averta",  sans-serif ;font-size:22px;font-weight: bold;position:relative;background:none;border:0;margin:0px 10px;cursor:pointer;}
+	#atcMenu button img{width:auto;height:12px;}
+	.atcMenuArrow{display:none}
+	.atcLeftBtn{margin:0px 10px 0px 0px !important;}
+	.atcRightBtn{margin:0px 0px 0px 10px !important;}
+	.atcMenuToggle{top:0;left:0;right:0;position: fixed !important;}
+
+	#atcLogo{width:500px;height:auto;margin:150px auto 0;position: relative;z-index:12;}
+	#atcLogo img{width:100%;height:auto;}
+	.atcHeaderOverlay{width:100%;height:100%;margin:0px 0px;position:absolute;left:0px;right:0px;top:0px;z-index:10;background:rgba(0,0,0,.3);}
+	#atcVideoHead{width:100%;height:100%;top:0;left:0;position: absolute;object-fit: cover;z-index:9}
+	#atcVideoHeadMob{display:none;}
+	/*venue area*/
+	#atcVenueMod{width:100%;height:auto;position: relative;margin:50px auto 50px;padding:0 0 50px 0 ;box-sizing:border-box !important;text-align: center;}
+	#royalHero{background:#F58226;}
+	#rosehillHero{background:#80D5B6;}
+	#canterburyHero, #everestHero{background:var(--atc-purp);}
+	#autumnHero{background:#A2BFE2 ;}
+	.atcVenue{width:490px;height:480px;display:inline-block;background:#fff;vertical-align: top;position:relative;}
+	.atcVenueWrap{width:500px;height:auto;margin:0px;padding:1px 0px 0px 0px;display:block;background:transparent;box-sizing: border-box !important;position: relative;}
+	.atcVenueWrap p{height:130px;font-family:"tablet-gothic","Averta",  sans-serif ;font-size:15px;font-weight: 300;text-align: center; margin:0px;padding:15px; box-sizing: border-box !important}
+	.atcVenueHeader{width:100%;height:330px;margin:0px;padding:0px;}
+	.atcVenueLogo, .atcCarnivalLogo{width:100%;height:65px;margin:10px auto;box-sizing: border-box !important;}
+	.atcVenueLogo h1{font-family:"raisonne","Averta",  sans-serif ;font-size:26px;font-weight: bold;text-align: center; margin:0px auto;padding:0px 0px 0px 0px;color:#ffffff;text-transform: uppercase;}
+	.atcCarnivalLogo h1{font-family:"raisonne","Averta",  sans-serif ;font-size:26px;font-weight: bold;text-align: center; margin:0px auto;padding:0px 0px 0px 0px;color:#fff;text-transform: uppercase;}
+	.atcVenueLogo img, .atcCarnivalLogo img{width:auto;height:45px;margin:0px auto;}
+
+	.atcVenueHero,	.atcVenueHero img{width:450px;height:auto;margin:0 auto;padding:0;}
+	.atcVenueBtn{width:225px;height:auto;position: absolute;bottom:-41px;right:0px;left:0px;margin:0px auto;padding:10px 0px;transition: .8s ease-in-out all;cursor:pointer;font-family:"raisonne","Averta",  sans-serif ;font-size:19px;font-weight: bold;text-align: center;}
+	.atcVenueBtn img{width:20px;height:auto;margin:0px 0px 0px 0px;padding:2px 0px 0px 6px;display:inline-block;vertical-align: top;}	
+	.atcVenueWrap a{text-decoration:none;}
+	#royalBtn{background:#F58226;color:#fff;}
+	#royalBtn:hover{background:#cb6514;color:#efefef;box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15)}
+	#canterburyBtn, #everestBtn{background:var(--atc-purp);color:#fff;}
+	#canterburyBtn:hover, #everestBtn:hover{background:#efefef;box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15)}
+	#autumnBtn{background:#A2BFE2 ;color:#fff;}
+	#rosehillBtn{background:#80D5B6;color:#efefef;}
+	#rosehillBtn:hover{background:#50a385;box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15)}
+	/*main events*/
+	#atcMainEventMod{width:100%;height:auto;position: relative;margin:0;padding:0;box-sizing:border-box !important;}
+	#atcMainEventHeader{width:100%;height:auto;margin:100px auto 30px;}
+	#atcMainEventHeader h1{font-family:"raisonne","Averta",  sans-serif ;font-size:42px;font-weight: bold;text-align: center; margin:0px auto;padding:0px 0px 0px 0px;color:#fff;}
+	.atcMainEventWrap{width:100%;height:auto;background:var(--atc-cream);text-align: center;}
+	
+	.atcMainEvent{width:310px;height:auto;display:inline-block;background:var(--atc-cream);margin:80px 10px;box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.10);vertical-align: top; position: relative}
+	.atcMainEventHead{width:100%;height:85px;margin:0px;padding:0px;border-top:8px solid var(--atc-gold);background:var(--atc-blue);}
+	.atcMainEventHead h1, .atcMainEventHead h2{font-family:"tablet-gothic","Averta",  sans-serif ;font-size:20px;font-weight: bold;text-align: center; margin:0px auto;color:var(--atc-gold);}
+	.atcMainEventHead h3{font-family:"tablet-gothic","Averta",  sans-serif ;font-size:17px;font-weight: bold;text-align: center; margin:0px auto;color:var(--atc-gold);}
+	.atcMainEventHead h1{padding:12px 0px 0px 0px;}
+	.atcMainEventHead h2{padding:25px 0px 0px 0px;}
+	.atcMainEventHead h3{padding:12px 0px 0px 0px;}	
+	.atcMainEventDeets{width:100%;height:90px;padding:7px 0px 0px 0px ;background:transparent; box-sizing: border-box !important;}
+	.atcMainEventDeets p{font-family:"tablet-gothic","Averta",  sans-serif ;font-size:16px;font-weight: 300;text-align: center; margin:0px auto 0px;padding:0px;color:var(--atc-blue);}
+	.atcMainEventDeets p img{width:15px;height:15px;display:inline-block;margin:0px 5px -2px 0px;}
+	.atcMainEventBtn{width:225px;height:50px;bottom:-25px;left:0;right:0;margin:0px auto;position: absolute;background:#fff;cursor:pointer;transition: .8s ease-in-out all;}
+	.atcMainEventBtn:hover{background:#f5f5f5;box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05)}
+	/*expanded main events*/
+	.atcMainEventSelect{width:929px;height:auto;position:relative;margin:0px auto;background:var(--atc-cream);padding:25px;box-sizing: border-box !important;display:block;border-top:4px solid var(--atc-blue);display:none;}
+	.atcMainEventSelect h2{width:100%;font-family:"tablet-gothic","Averta",  sans-serif ;font-size:36px;font-weight: bold;text-align: center; margin:0px 0px 20px 0px;padding:0px;color:var(--atc-gold);text-transform: uppercase;}
+	.atcMainEventSelect p{width:500px;font-family:"tablet-gothic","Averta",  sans-serif ;font-size:16px;font-weight: 300;text-align: left; margin:10px 0px 20px 0px;padding:0px;color:var(--atc-blue);}	
+	.atcMainEventSelectBtn{width:310px;height:auto;position: relative;background:var(--atc-blue);margin:0px 0px 20px 0px;}
+	.atcMainEventSelectHero{width:450px;height:auto;margin:0px 0px;position: absolute;top: 130px;right: -60px;opacity:0;}
+	.atcMainEventSelectDeets{width:100%;height:90px;padding:7px 0px 0px 0px ;background:transparent; box-sizing: border-box !important;}
+	.atcMainEventSelectDeets p{font-family:"tablet-gothic","Averta",  sans-serif ;font-size:20px;font-weight: 300;text-align: left; margin:0px;padding:0px;color:var(--atc-blue);}
+	.atcMainEventSelectDeets p img{width:20px;height:20px;display:inline-block;margin:0px 5px -2px 0px;}
+	/*images generic*/.atcMainEventHero,.atcMainEventHero img, .atcMainEventBtn img, .atcEventBtn img, .atcEventSelectHero img, .atcEventSelectBtn img, .atcMainEventSelectHero img{width:100%;height:auto;}
+	
+	/*Season Pass*/
+
+	#atcSeasonPass{width:100%;max-width:1000px;height:auto;background:var(--atc-cream);box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.10);margin:0px auto 25px;box-sizing:border-box !important;padding:0px;border-radius:15px;display:flex;align-items: center;}
+	#atcSeasonPassWrap{width:auto;height:auto;margin:0px auto;padding:0px 0px;display:inline-block;vertical-align: top;}
+	.atcSeasonPassHero{width:399px;height:auto;margin:0px auto;padding:0px 0px;display:inline-block;border-radius:15px;vertical-align: top;}
+	.atcSeasonPassHero img{width:399px;height:auto;border-radius:15px;}
+	#atcSeasonPass h1{font-family:"raisonne","Averta",  sans-serif ;font-size:32px;font-weight: bold;text-align: center; margin:10px auto;padding:0px;color:var(--atc-blue);}
+	#atcSeasonPass p{font-family:"tablet-gothic","Averta",  sans-serif ;font-size:16px;font-weight: normal;text-align: center; margin:0px auto 10px;padding:0px 20px;color:var(--atc-blue);}
+	#atcSeasonPass em{font-size:16px;}
+	#atcSeasonPass a{text-decoration: none;}
+	.atcSeasonPassBtn{width:200px;height:auto;position: relative;background:var(--atc-blue);margin:10px auto 10px;padding:10px 20px;font-family:"raisonne","Averta",  sans-serif ;font-size:20px;font-weight: bold;text-align: center;color:#fff;}
+	.atcSeasonPassBtn img{width:20px;height:auto;display:inline-block;padding:0px 0px 0px 15px;margin:0px 0px -3px 0px;}
+	/*event stream*/
+	#atcAllRaceDaysMod{width:100%;height:auto;margin:0px auto;display:block;background:var(--atc-cream);padding:20px 0px 80px 0px;box-sizing:border-box !important;}
+	#atcEventStream{width:100%;max-width:1200px;height:auto;margin:0px auto;padding:50px 1px;display:block;background:var(--atc-blue);border-radius:15px;}
+	#atcEventStream h1{font-family:"raisonne","Averta",  sans-serif ;font-size:42px;font-weight: bold;text-align: center; margin:0px auto;padding:0px 0px 50px 0px;color:#fff;}
+
+	/*API Event styles*/
+	.atcEventDay{width:1000px;height:auto;display:block;margin:0px auto 20px;background:var(--atc-cream);text-align: left;box-sizing: border-box !important;}
+	.atcEventLid{width:1010px;height:4px;margin:0px 0px 0px -5px;background:var(--atc-gold);}
+	.atcEventHero{width:150px;height:84px;display:inline-block;margin:10px 5px 10px 30px;background:url("https://s1.ticketm.net/tm/en-au/img/static/vrc/img/atc_logo_white.svg") center center no-repeat, var(--atc-blue);background-size:70% auto;box-sizing: border-box !important;vertical-align: top;}
+	.atcEventHero img{width:100%;height:auto;display:block;margin:0;}
+	.atcEventWrap{width:calc(1000px - 425px);height:auto;min-height:106px;padding:0px 0px 5px 30px;display:inline-block;box-sizing: border-box !important;vertical-align: top;}
+	.atcEventTitle{width:100%;height:55px;margin:4px 0px 12px 0px;box-sizing: border-box !important;}
+	.atcEventTitle h2{font-family:"raisonne","Averta",  sans-serif ;font-size:26px;font-weight: bold;text-align: left; margin:0px auto;padding:0px;color:var(--atc-blue);}	
+	.atcEventDate{height:auto;margin:0px 10px 0px 0px;padding:0px 0px 0px 0px;display:flex;justify-content: flex-start;align-items: center;box-sizing: border-box !important;}
+	.atcEventDate h3{font-family:"raisonne","Averta",  sans-serif ;font-size:18px;font-weight: normal;text-align: left; margin:0px 0px;padding:0px;display:inline-block;color:var(--atc-blue);}	
+	.atcVenueTitle{height:auto;margin:0px auto;padding:0px 0px 0px 0px;display:flex;justify-content: flex-start;align-items: center;box-sizing: border-box !important;}
+	.atcVenueTitle h3{font-family:"raisonne","Averta",  sans-serif ;font-size:18px;font-weight: normal;text-align: left; margin:0px 0px;padding:0px;display:inline-block;color:var(--atc-blue);}
+	.atcDateIcon{width:15px;height:15px;display:inline-block;margin:0px 10px 0px 0px;mask:url("https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_clock_ico.svg") center center no-repeat;mask-size:15px 15px;background:var(--atc-gold);}
+	.atcVenueIcon{width:15px;height:15px;display:inline-block;margin:0px 10px 0px 0px;mask:url("https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_mapPin_ico.svg") center center no-repeat;mask-size:15px 15px;background:var(--atc-gold);}
+	.atvEventBtn{width:200px;height:50px;margin:27px 5px 10px 0px;padding:12px 0px 0px 20px;display:inline-block;background:url("https://s1.ticketm.net/tm/en-au/img/static/turfclub/tc_goldArrow_ico.svg") no-repeat, #A2BFE2;background-size:20px 19px;background-position:160px 15px;font-family:"raisonne","Averta",  sans-serif ;font-size:22px;font-weight: bold;text-align: left;color:var(--atc-blue);vertical-align: top;box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);box-sizing:border-box !important;float:right;}	
+	.atvEventBtn a{text-decoration: none;color:var(--atc-blue);font-family:"raisonne","Averta",  sans-serif ;}
+	
+	/*Filters*/
+	#atcRaceFilters{width:100%;max-width:1000px;height:100px;display:block;margin:0px auto;text-align: center;}
+	#atcVenueFilters, #atcDateSort{width:auto;max-width:1000px;height:auto;display:inline-block;margin:10px 60px;text-align: left;}
+	#atcVenueFilters h2, #atcDateSort h2{font-family:"Averta",  sans-serif ;font-size:16px;font-weight: bold;text-align: left; margin:0px auto 10px;padding:0px;color:var(--atc-cream);}
+	.atcCheckBoxBtn, .atcRadioBtn{width:auto;height:17px;padding:0;margin:0px 10px 0px 0px;display:inline-block;cursor:pointer;}
+	.atcCheckBoxBtn p, .atcRadioBtn p{font-family:"Averta",  sans-serif ;font-size:16px;font-weight: normal;text-align: left; margin:-2px 10px 0px 5px;padding:0px;color:var(--atc-cream);display:inline-block;vertical-align: top;user-select: none;}
+	.atcCheckBox{width:17px;height:17px;border-radius:3px;border:1px solid var(--atc-gold);background-size:15px;display:inline-block;padding:0;box-sizing: border-box !important;transition: .2s ease-in all;}
+	.atcCheckBoxOn{background: url('https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_checkbox_gold_btn.svg'), var(--atc-cream);}
+	.atcCheckBoxOff{background: var(--atc-blue);}
+	.atcRadio{width:17px;height:17px;border-radius:15px;border:1px solid var(--atc-gold);background-size:15px;display:inline-block;padding:0;box-sizing: border-box !important;transition: .2s ease-in all;}
+	.atcRadioOn{background: url('https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_radio_gold_btn.svg'), var(--atc-cream);}
+	
+	/*error and no events */
+	#atcEventsError, #atcEventsNone{width:100%;max-width:500px;height:auto;background:transparent;margin:50px auto;border: 1px solid var(--atc-cream);border-radius: 5px;display:none;}
+	#atcEventsError p, #atcEventsNone p{font-family:"Averta",  sans-serif ;font-size:16px;font-weight: normal;text-align: center; margin:20px auto;padding:0px;color:var(--atc-cream);}
+	#atcEventsError a, #atcEventsNone a{text-decoration: none;}
+	#atcEventsError img, #atcEventsNone img{width:40px;height:40px;display:block;margin:-20px auto 0px;}
+	.atvErrorBtn{width:200px;height:50px;margin:27px auto;padding:12px 0px 0px 20px;display:block;background:url("https://s1.ticketm.net/tm/en-au/img/static/turfclub/tc_goldArrow_ico.svg") no-repeat, #fff;background-size:20px 19px;background-position:160px 15px;font-family:"raisonne","Averta",  sans-serif ;font-size:22px;font-weight: bold;text-align: left;color:var(--atc-blue);box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);box-sizing:border-box !important;}	
+	
+}
+/*mobile*/
+@media only screen and (max-width: 999.99px) {	
+	/*TM HEADER */
+	#tmHeader{width:100%;height:auto;background:#026cdf;padding:25px 0px 25px 20px;margin:0px auto 5px;box-sizing:border-box;display:block;position: relative;}
+	#tmLogo{width:200px;height:auto;display:block;}
+	#tmLogo img{width:100%;height:auto;padding:0;margin:0px auto;}
+	#tmSearch{display:none;}
+	/*TC CONTENT*/
+	#atcContent{width:100%;height:auto;margin:0px auto;background:var(--atc-blue);position: relative;display:block;padding:1px;box-sizing: border-box !important}
+	#atcHeader{width:100%;height:95vh;margin:0px auto 0px;padding:0px 0px 40px 0px;display:block;position: relative;background:url("https://s1.ticketm.net/tm/en-au/img/static/turfclub/2024/atc24_headerloop_spring_9x16.jpg") center center;background-size: cover;}
+
+	#atcMenu{width:100%;height:40px;background:rgba(0,0,0,.3);padding:0px 20px;box-sizing:border-box !important;text-align: left;display:block;overflow:hidden;position: relative;z-index:10;white-space: nowrap;}
+	#atcMenu button{height:30px;cursor:pointer;border:0;background:transparent;color:#fff;font-family:"raisonne","Averta",  sans-serif ;font-size:16px;font-weight: 700;text-align: center;margin:5px 10px;text-transform: uppercase;font-kerning: none;}
+	.atcMenuArrow{height:40px;width:auto;margin:0px;display:block;position: absolute;z-index:11;background:linear-gradient(270deg, #00000095, transparent);}
+	.atcMenuArrow img{height:20px;width:10px;padding:10px 10px;}
+	.atcArrowRight{top:0;right:0;}
+	.atcArrowLeft{top:0;left:0;transform: rotate(180deg);}
+	#atcMenuWrap{width:100%;height:40px;display:block;margin:0 auto;padding:0;overflow:hidden;z-index:100;top:0;left:0;right:0;position: absolute; }
+	.atcMenuToggle{top:0;left:0;right:0;position: fixed !important;}
+
+
+	#atcLogo{max-width:335px;width:80%;height:auto;margin:65px auto 0px;position: relative;z-index:12;}
+	#atcLogo img{width:100%;height:auto;}
+	.atcHeaderOverlay{width:100%;height:100%;margin:0px 0px;position:absolute;left:0px;right:0px;top:0px;z-index:10;background:rgba(0,0,0,.3);}
+	#atcVideoHead{display:none;}
+	#atcVideoHeadMob{width:100%;height:100%;top:0;left:0;position: absolute;object-fit: cover;z-index:9}
+	
+	/*venue area*/
+	#atcVenueMod{width:100%;height:auto;position: relative;margin:0;padding:0;box-sizing:border-box !important;}
+	#royalHero{background:#F58226;}
+	#rosehillHero{background:#80D5B6;}
+	#canterburyHero, #everestHero{background:var(--atc-purp);}
+	#autumnHero{background:#A2BFE2 ;}
+	.atcVenue{width:100%;max-width:600px;height:auto;display:block;background:#fff;margin:0px auto;position:relative;padding:0px 0px 1px 0px;}
+	.atcVenueWrap{width:100%;height:auto;margin:0px;padding:1px 0px 0px 0px;display:block;background:transparent;box-sizing: border-box !important;position: relative;}
+	.atcVenueWrap p{height:auto;font-family:"tablet-gothic","Averta",  sans-serif ;font-size:14px;font-weight: 300;text-align: center; margin:0px;padding:5px 15px;}
+	.atcVenueWrap a{text-decoration:none;}
+	.atcVenueHeader{width:100%;height:auto;margin:0px;padding:0px;}
+	.atcVenueLogo, .atcCarnivalLogo{width:auto;height:auto;margin:10px auto;box-sizing: border-box !important;}
+	.atcVenueLogo h1{font-family:"raisonne","Averta",  sans-serif ;font-size:26px;font-weight: bold;text-align: center; margin:0px auto;padding:0px 0px 0px 0px;color:#ffffff;text-transform: uppercase;}
+	.atcCarnivalLogo h1{font-family:"raisonne","Averta",  sans-serif ;font-size:26px;font-weight: bold;text-align: center; margin:0px auto;padding:0px 0px 0px 0px;color:#fff;text-transform: uppercase;}
+	.atcVenueLogo img, .atcCarnivalLogo img{width:auto;height:45px;margin:0px auto;display:block;}
+	.atcVenueHero{max-width:450px;width:calc(100% - 10px);height:auto;margin:0 auto;padding:0 10px 10px 10px;box-sizing: border-box !important;}
+	.atcVenueHero img{width:100%;height:auto;margin:0;padding:0;}
+	.atcVenueBtn{max-width:225px;width:60%;height:auto;padding:10px 0px; position: relative;margin:20px auto;padding:10px 0px;text-align:center;font-family:"raisonne","Averta",  sans-serif ;font-size:19px;font-weight: bold;}
+	.atcVenueBtn img{width:20px;height:auto;margin:0px 0px 0px 0px;padding:2px 0px 0px 6px;display:inline-block;vertical-align: top;}	
+	#royalBtn{background:#F58226;color:#ffffff;}
+	#rosehillBtn{background:#80D5B6;color:#ffffff;}
+	#canterburyBtn, #everestBtn{background:var(--atc-purp);color:#fff;}
+	#autumnBtn{background:#295280;color:#fff;}
+	/*main events*/
+	#atcMainEventMod{width:100%;height:auto;position: relative;margin:0;padding:0;box-sizing:border-box !important;}
+	#atcMainEventHeader{width:auto;max-width:90%;margin:20px auto 20px;}
+	#atcMainEventHeader img{width:100%;height:auto;max-height:30px;margin:0px auto;display:block;}
+	#atcMainEventHeader h1{font-family:"raisonne","Averta",  sans-serif ;font-size:42px;font-weight: bold;text-align: center; margin:0px auto;padding:0px 0px 0px 0px;color:#fff;}
+	.atcMainEventWrap{width:100%;height:auto;background:var(--atc-cream);text-align: center;padding:1px 1px 30px 1px;}
+	
+	.atcMainEvent{max-width:310px;width:90%;height:auto;display:inline-block;background:var(--atc-cream);margin:20px auto;box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.10);vertical-align: top; position: relative}
+	.atcMainEventHead{width:100%;height:85px;margin:0px;padding:0px;border-top:8px solid var(--atc-gold);background:var(--atc-blue);}
+	.atcMainEventHead h1, .atcMainEventHead h2, .atcMainEventHead h3{font-family:"tablet-gothic","Averta",  sans-serif ;font-size:20px;font-weight: bold;text-align: center; margin:0px auto;color:var(--atc-gold);}
+	.atcMainEventHead h1{padding:12px 0px 0px 0px;}
+	.atcMainEventHead h2{padding:25px 0px 0px 0px;}
+	.atcMainEventDeets{width:100%;height:90px;padding:7px 0px 0px 0px ;background:transparent; box-sizing: border-box !important;}
+	.atcMainEventDeets p{font-family:"tablet-gothic","Averta",  sans-serif ;font-size:16px;font-weight: 300;text-align: center; margin:0px auto 0px;padding:0px;color:var(--atc-blue);}
+	.atcMainEventDeets p img{width:15px;height:15px;display:inline-block;margin:0px 5px -2px 0px;}
+	.atcMainEventBtn{width:225px;height:50px;bottom:-25px;left:0;right:0;margin:0px auto;position: absolute;background:#fff;cursor:pointer;transition: .8s ease-in-out all;}
+	.atcMainEventBtn:hover{background:#f5f5f5;box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);}
+	/*expanded main events*/
+	.atcMainEventSelect{width:98%;height:auto;position:relative;margin:50px auto 0px;background:var(--atc-cream);padding:25px;box-sizing: border-box !important;display:block;border-top:4px solid var(--atc-blue);display:none;}
+	.atcMainEventSelect h2{width:100%;font-family:"tablet-gothic","Averta",  sans-serif ;font-size:32px;font-weight: bold;text-align: center; margin:0px 0px 20px 0px;padding:0px;color:var(--atc-gold);text-transform: uppercase;}
+	.atcMainEventSelect p{width:100%;font-family:"tablet-gothic","Averta",  sans-serif ;font-size:16px;font-weight: 300;text-align: center; margin:10px 0px 20px 0px;padding:0px;color:var(--atc-blue);}	
+	.atcMainEventSelectBtn{max-width:310px;width:85%;height:auto;position: relative;background:var(--atc-blue);margin:20px auto;}
+	.atcMainEventSelectHero{max-width:450px;width:100%;height:auto;margin:0px auto;position: relative;margin:10px auto;opacity:0;}
+	.atcMainEventSelectDeets{width:100%;height:90px;padding:7px 0px 0px 0px ;background:transparent; box-sizing: border-box !important;}
+	.atcMainEventSelectDeets p{font-family:"tablet-gothic","Averta",  sans-serif ;font-size:20px;font-weight: 300;text-align: center; margin:0px;padding:0px;color:var(--atc-blue);}
+	.atcMainEventSelectDeets p img{width:20px;height:20px;display:inline-block;margin:0px 5px -2px 0px;}
+	/*images generic*/.atcMainEventHero,.atcMainEventHero img, .atcMainEventBtn img, .atcEventBtn img, .atcEventSelectHero img, .atcEventSelectBtn img, .atcMainEventSelectHero img{width:100%;height:auto;}
+
+	/*full race schedule*/
+	.atcSchedule{width:100%;height:auto;position: relative;margin:0;padding:0;box-sizing:border-box !important;}
+	.atcScheduleHeader{display:none;}
+	.atcScheduleHeaderMob{width:95%;height:auto;max-height:75px;margin:20px auto 20px;}
+	.atcScheduleHeaderMob img{width:100%;height:auto;max-height:75px;margin:0px auto;display:block;}
+
+	.atcEvent{width:98%;height:auto;margin:0px auto 20px;border-top:8px solid var(--atc-gold);position: relative;text-align: center;background:var(--atc-cream);padding:1px;box-sizing: border-box !important;}
+	.atcEventWrap{width:80%;height:auto;display:inline-block;margin:0px;padding:0px;box-sizing:border-box !important;vertical-align: top}
+	.atcEventWrap h1{font-family:"tablet-gothic","Averta",  sans-serif ;font-size:20px;font-weight: bold;text-align: left; margin:10px auto 0px 10px;padding:0px;color:var(--atc-blue);text-transform: uppercase;}
+	.atcEventWrap p{font-family:"tablet-gothic","Averta",  sans-serif ;font-size:16px;font-weight: 300;text-align: left; margin:10px auto 0px 10px;padding:0px;color:var(--atc-blue);}
+	.atcEventWrap p img{width:15px;height:15px;display:inline-block;margin:0px 5px -2px 0px;}
+	.atcEventBtn{width:175px;height:auto;position: relative;background:#fff;box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.10);z-index: 20;margin:10px auto;}
+	.atcLessBtn{width:175px;height:auto;position: relative;background:#fff;box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.10);z-index: 20;margin:10px auto;display:none;}
+	
+	/*expanded race day*/
+	.atcEventSelect{width:100%;height:auto;position:relative;margin:0px auto;background:var(--atc-cream);padding:25px;box-sizing: border-box !important;display:none;}
+	.atcEventSelect h2{width:100%;font-family:"tablet-gothic","Averta",  sans-serif ;font-size:32px;font-weight: bold;text-align: center; margin:0px auto;padding:0px;color:var(--atc-gold);text-transform: uppercase;}
+	.atcEventSelect p{width:100%;font-family:"tablet-gothic","Averta",  sans-serif ;font-size:16px;font-weight: 300;text-align: center; margin:0px auto;padding:0px;color:var(--atc-blue);}	
+	.atcEventSelectBtn{max-width:310px;width:95%;height:auto;position: relative;background:var(--atc-blue);margin:20px auto;}
+	.atcEventSelectHero{width:100%;height:auto;margin:10px auto;position: relative;opacity:0;}
+		/*secondary schedules eg winter and summer */
+	#atcWinterRaces{width:100%;height:auto;margin:50px auto 20px;text-align:center;}
+	.atcSecondaryHeader{width:90%;height:auto;margin:60px auto;border-bottom:2px solid #fff;}
+	.atcSecondaryHeader img{width:100%;max-height:35px;}
+	.atcSecondaryEvent{width:95%;max-width:950px;height:auto;margin:10px auto 20px;padding:5px 0px;text-align:center;border-bottom:2px solid #fff;box-sizing:border-box !important;position: relative}
+	.atcEventDate{width:100%;height:auto;display:inline-block;margin:0px 30px 0px 0px;vertical-align: middle;}
+	.atcEventDate h1, .atcEventDate h2, .atcEventDate h3{font-family:"tablet-gothic","Averta",  sans-serif ;text-align: center; padding:0px; color:#fff;font-weight: normal;font-size:20px;line-height: 18px;margin:0px 8px;display:inline-block;}	
+	.atcEventName{width:100%;height:auto;font-family:"tablet-gothic","Averta",  sans-serif ;font-size:30px;font-weight: normal;text-align: center; margin:0px 0px;padding:0px;color:#fff;display:block;vertical-align: middle;}
+	.atcVenueName{width:100%;height:auto;font-family:"tablet-gothic","Averta",  sans-serif ;font-size:22px;font-weight: 300;text-align: center; margin:0px 0px;padding:0px;color:#fff;display:block;vertical-align: middle;}
+	.atcSecdonaryBtn{width:60%;max-width:180px;height:auto;margin:10px auto;display:block;vertical-align: middle;}
+	.atcSecdonaryBtn img{width:100%;height:auto;}	
+	
+	/*Season Pass*/
+	#atcSeasonPass{width:100%;max-width:350px;height:auto;background:var(--atc-cream);box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.10);margin:40px auto 40px;box-sizing:border-box !important;padding:0px 0px 10px 0px;border-radius:15px;}
+	#atcSeasonPassWrap{width:100%;height:auto;margin:0px auto;padding:0px 0px;display:block;vertical-align: top;}
+	.atcSeasonPassHero{width:100%;height:auto;margin:0px auto;padding:0px 0px;display:inline-block;border-radius:15px;vertical-align: top;}
+	.atcSeasonPassHero img{width:100%;height:auto;border-radius:15px;}
+	#atcSeasonPass h1{font-family:"raisonne","Averta",  sans-serif ;font-size:26px;font-weight: bold;text-align: center; margin:10px auto;padding:10px;color:var(--atc-blue);box-sizing:border-box !important;}
+	#atcSeasonPass p{font-family:"tablet-gothic","Averta",  sans-serif ;font-size:14px;font-weight: normal;text-align: center; margin:0px auto 10px;padding:0px;color:var(--atc-blue);}
+	#atcSeasonPass em{font-size:16px;}
+	#atcSeasonPass a{text-decoration: none;}
+	.atcSeasonPassBtn{max-width:200px;width:90%;height:auto;position: relative;background:var(--atc-blue);margin:10px auto 10px;padding:10px 20px;font-family:"raisonne","Averta",  sans-serif ;font-size:20px;font-weight: bold;text-align: center;color:#fff;}
+	.atcSeasonPassBtn img{width:20px;height:auto;display:inline-block;padding:0px 0px 0px 15px;margin:0px 0px -3px 0px;}
+	
+	/*event stream*/
+	#atcAllRaceDaysMod{width:100%;height:auto;margin:0px auto;display:block;background:var(--atc-cream);padding:80px 0px;box-sizing:border-box !important;}
+	#atcEventStream{width:100%;max-width:1200px;height:auto;margin:0px auto;padding:50px 1px;display:block;background:var(--atc-blue);border-radius:15px;}
+	#atcEventStream h1{font-family:"raisonne","Averta",  sans-serif ;font-size:42px;font-weight: bold;text-align: center; margin:0px auto;padding:0px 0px 20px 0px;color:#fff;}
+
+	/*API Event styles*/
+	.atcEventDay{width:96%;max-width:340px;height:auto;display:block;margin:0px auto 20px;background:var(--atc-cream);text-align: left;box-sizing: border-box !important;position: relative;padding:0px 0px 1px 0px}
+	.atcEventLid{width:102%;max-width:1010px;height:4px;margin:0px -1% 0px -1%;background:var(--atc-gold);}
+	.atcEventHero{width:calc(100% - 20px);max-width:205px;height:auto;display:block;margin:10px auto;background:url("https://s1.ticketm.net/tm/en-au/img/static/vrc/img/atc_logo_white.svg") center center no-repeat, var(--atc-blue);background-size:70% auto;box-sizing: border-box !important;vertical-align: top;}
+	.atcEventHero img{width:100%;height:auto;display:block;margin:0;}
+	.atcEventWrap{width:100%;height:auto;padding:10px;display:block;box-sizing: border-box !important;vertical-align: top;text-align: center;}
+	.atcEventTitle{width:100%;height:auto;margin:20px auto 20px;box-sizing: border-box !important;}
+	.atcEventTitle h2{font-family:"raisonne","Averta",  sans-serif ;font-size:26px;font-weight: bold;text-align: center; margin:0px auto;padding:0px;color:var(--atc-blue);}	
+	.atcEventDate{height:auto;margin:0px 10px 0px 0px;padding:0px 0px 0px 0px;display:flex;justify-content: flex-start;align-items: center;box-sizing: border-box !important;}
+	.atcEventDate h3{font-family:"raisonne","Averta",  sans-serif ;font-size:18px;font-weight: normal;text-align: left; margin:0px 0px;padding:0px;display:inline-block;color:var(--atc-blue);}	
+	.atcVenueTitle{height:auto;margin:0px auto;padding:0px 0px 0px 0px;display:flex;justify-content: flex-start;align-items: center;box-sizing: border-box !important;}
+	.atcVenueTitle h3{font-family:"raisonne","Averta",  sans-serif ;font-size:18px;font-weight: normal;text-align: left; margin:0px 0px;padding:0px;display:inline-block;color:var(--atc-blue);}
+	.atcDateIcon{width:15px;height:15px;display:inline-block;margin:0px 10px 0px 0px;mask:url("https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_clock_ico.svg") center center no-repeat;mask-size:15px 15px;background:var(--atc-gold);}
+	.atcVenueIcon{width:15px;height:15px;display:inline-block;margin:0px 10px 0px 0px;mask:url("https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_mapPin_ico.svg") center center no-repeat;mask-size:15px 15px;background:var(--atc-gold);}
+	.atvEventBtn{width:200px;height:50px;margin:30px auto;padding:12px 0px 0px 20px;display:block;background:url("https://s1.ticketm.net/tm/en-au/img/static/turfclub/tc_goldArrow_ico.svg") no-repeat, #A2BFE2;background-size:20px 19px;background-position:160px 15px;font-family:"raisonne","Averta",  sans-serif ;font-size:22px;font-weight: bold;text-align: left;color:var(--atc-blue);vertical-align: top;box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);box-sizing:border-box !important;}	
+	.atvEventBtn a{text-decoration: none;color:var(--atc-blue);font-family:"raisonne","Averta",  sans-serif ;}
+	
+	/*.atcEventDate{width:calc(100% - 180px);height:auto;margin:0px auto;padding:0px 0px 0px 20px;display:block;box-sizing: border-box !important;background:url("https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_clock_ico.svg") left center no-repeat;background-size:15px 15px;position: absolute;top:14px;right:10px;}
+	.atcEventDate h3{font-family:"raisonne","Averta",  sans-serif ;font-size:14px;font-weight: normal;text-align: left; margin:0px auto;padding:0px;color:var(--atc-blue);line-height:14px;}	
+	.atcVenueTitle{width:calc(100% - 180px);height:auto;margin:0px auto;padding:0px 0px 0px 20px;display:block;box-sizing: border-box !important;background:url("https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_mapPin_ico.svg") left center no-repeat;background-size:15px 15px;position: absolute;top:54px;right:10px;}
+	.atcVenueTitle h3{font-family:"raisonne","Averta",  sans-serif ;font-size:14px;font-weight: normal;text-align: left; margin:0px auto;padding:0px;color:var(--atc-blue);line-height:14px;}*/
+	/*Filters*/
+	#atcRaceFilters{width:100%;max-width:1000px;height:auto;display:block;margin:0px auto 20px;text-align: center;}
+	#atcVenueFilters{width:170px;max-width:1000px;height:auto;display:inline-block;margin:10px;text-align: left;vertical-align: top;}
+	#atcDateSort{width:130px;max-width:1000px;height:auto;display:inline-block;margin:10px;text-align: left;vertical-align: top;}
+	#atcVenueFilters h2, #atcDateSort h2{font-family:"Averta",  sans-serif ;font-size:16px;font-weight: bold;text-align: left; margin:0px auto 10px;padding:0px;color:var(--atc-cream);}
+	.atcCheckBoxBtn, .atcRadioBtn{width:auto;height:17px;padding:0;margin:5px 10px 0px 0px;display:inline-block;cursor:pointer;}
+	.atcCheckBoxBtn p, .atcRadioBtn p{font-family:"Averta",  sans-serif ;font-size:16px;font-weight: normal;text-align: left; margin:-2px 10px 0px 5px;padding:0px;color:var(--atc-cream);display:inline-block;vertical-align: top;user-select: none;}
+	.atcCheckBox{width:17px;height:17px;border-radius:3px;border:1px solid var(--atc-gold);background-size:15px;display:inline-block;padding:0;box-sizing: border-box !important;transition: .2s ease-in background;}
+	.atcCheckBoxOn{background: url('https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_checkbox_gold_btn.svg'), var(--atc-cream);}
+	.atcCheckBoxOff{background: var(--atc-blue);}
+	.atcRadio{width:17px;height:17px;border-radius:15px;border:1px solid var(--atc-gold);background-size:15px;display:inline-block;padding:0;box-sizing: border-box !important;transition: .2s ease-in background;}
+	.atcRadioOn{background: url('https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_radio_gold_btn.svg'), var(--atc-cream);}
+	
+	/*error and no events */
+	#atcEventsError, #atcEventsNone{width:90%;max-width:500px;height:auto;background:transparent;margin:50px auto;border: 1px solid var(--atc-cream);border-radius: 5px;display:none;}
+	#atcEventsError p, #atcEventsNone p{font-family:"Averta",  sans-serif ;font-size:16px;font-weight: normal;text-align: center; margin:20px auto;padding:0px;color:var(--atc-cream);}
+	#atcEventsError a, #atcEventsNone a{text-decoration: none;}
+	#atcEventsError img, #atcEventsNone img{width:40px;height:40px;display:block;margin:-20px auto 0px;}
+	.atvErrorBtn{width:200px;height:50px;margin:27px auto;padding:12px 0px 0px 20px;display:block;background:url("https://s1.ticketm.net/tm/en-au/img/static/turfclub/tc_goldArrow_ico.svg") no-repeat, #fff;background-size:20px 19px;background-position:160px 15px;font-family:"raisonne","Averta",  sans-serif ;font-size:22px;font-weight: bold;text-align: left;color:var(--atc-blue);box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);box-sizing:border-box !important;}	
+	
+	
+	}	
+
+	/*race day branding*/
+	/*
+	.atcEventDay[data-racename=SydneySurftoTurfDay]{background:#CF6641 !important;}
+	.atcEventDay[data-racename=SydneySurftoTurfDay] .atcEventTitle h2,.atcEventDay[data-racename=SydneySurftoTurfDay] .atcEventDate h3,.atcEventDay[data-racename=SydneySurftoTurfDay] .atcVenueTitle h3{color:#6B1D39 !important;}
+
+	.atcEventDay[data-racename=YulongGoldenRoseDay]{background:#F6CA69 !important;}
+	.atcEventDay[data-racename=YulongGoldenRoseDay] .atcEventTitle h2,.atcEventDay[data-racename=YulongGoldenRoseDay] .atcEventDate h3,.atcEventDay[data-racename=YulongGoldenRoseDay] .atcVenueTitle h3{color:#d14d27 !important;}
+	.atcEventDay[data-racename=TABEpsomDay]{background:#C1D15F !important;}
+	.atcEventDay[data-racename=TABEpsomDay] .atcEventTitle h2,.atcEventDay[data-racename=TABEpsomDay] .atcEventDate h3,.atcEventDay[data-racename=TABEpsomDay] .atcVenueTitle h3{color:#244f3d !important;}	
+	.atcEventDay[data-racename=HillStakesDay]{background:#C1D15F !important;}
+	.atcEventDay[data-racename=HillStakesDay] .atcEventTitle h2,.atcEventDay[data-racename=HillStakesDay] .atcEventDate h3,.atcEventDay[data-racename=HillStakesDay] .atcVenueTitle h3{color:#244f3d !important;}
+	.atcEventDay[data-racename=TABEverestDay]{background:#A3BFE2 !important;}
+	.atcEventDay[data-racename=TABEverestDay] .atcEventTitle h2,.atcEventDay[data-racename=TABEverestDay] .atcEventDate h3,.atcEventDay[data-racename=TABEverestDay] .atcVenueTitle h3{color:#295280 !important;}
+	.atcEventDay[data-racename=MoetChandonSpringChampionStakesDay]{background:#DB8AAF !important;}
+	.atcEventDay[data-racename=MoetChandonSpringChampionStakesDay] .atcEventTitle h2,.atcEventDay[data-racename=MoetChandonSpringChampionStakesDay] .atcEventDate h3,.atcEventDay[data-racename=MoetChandonSpringChampionStakesDay] .atcVenueTitle h3{color:#6b1d39 !important;}
+	.atcEventDay[data-racename=GoldenEagleDay]{background:#F6CA69 !important;}
+	.atcEventDay[data-racename=GoldenEagleDay] .atcEventTitle h2,.atcEventDay[data-racename=GoldenEagleDay] .atcEventDate h3,.atcEventDay[data-racename=GoldenEagleDay] .atcVenueTitle h3{color:#d14d27 !important;}
+	.atcEventDay[data-racename=TheBigDanceonCupDay]{background:#CF664A !important;}
+	.atcEventDay[data-racename=TheBigDanceonCupDay] .atcEventTitle h2,.atcEventDay[data-racename=TheBigDanceonCupDay] .atcEventDate h3,.atcEventDay[data-racename=TheBigDanceonCupDay] .atcVenueTitle h3{color:#6b1d39 !important;}
+	.atcEventDay[data-racename=FiveDiamondsLadiesDay]{background:#DB8AAF !important;}
+	.atcEventDay[data-racename=FiveDiamondsLadiesDay] .atcEventTitle h2,.atcEventDay[data-racename=FiveDiamondsLadiesDay] .atcEventDate h3,.atcEventDay[data-racename=FiveDiamondsLadiesDay] .atcVenueTitle h3{color:#6b1d39 !important;}
+	
+	.atcEventDay[data-racename=ChandonLadiesDay]{background:#DB8AAF !important;}
+	.atcEventDay[data-racename=ChandonLadiesDay] .atcEventTitle h2,.atcEventDay[data-racename=ChandonLadiesDay] .atcEventDate h3,.atcEventDay[data-racename=ChandonLadiesDay] .atcVenueTitle h3{color:#D14D27 !important;}
+	.atcEventDay[data-racename=ChandonLadiesDay] .atcDateIcon, .atcEventDay[data-racename=ChandonLadiesDay] .atcVenueIcon{background-color:#D14D27;}
+
+	.atcEventDay[data-racename=TABGoldenSlipperDay]{background:#F6CA69 !important;}
+	.atcEventDay[data-racename=TABGoldenSlipperDay] .atcEventTitle h2,.atcEventDay[data-racename=TABGoldenSlipperDay] .atcEventDate h3,.atcEventDay[data-racename=TABGoldenSlipperDay] .atcVenueTitle h3{color:#6B1D39 !important;}
+	.atcEventDay[data-racename=TABGoldenSlipperDay] .atcDateIcon, .atcEventDay[data-racename=TABGoldenSlipperDay] .atcVenueIcon{background-color:#6B1D39;}
+
+	.atcEventDay[data-racename=StakesDay]{background:#244F3D !important;}
+	.atcEventDay[data-racename=StakesDay] .atcEventTitle h2,.atcEventDay[data-racename=StakesDay] .atcEventDate h3,.atcEventDay[data-racename=StakesDay] .atcVenueTitle h3{color:#C1D15F !important;}
+	.atcEventDay[data-racename=StakesDay] .atcDateIcon, .atcEventDay[data-racename=StakesDay] .atcVenueIcon{background-color:#C1D15F;}
+
+	.atcEventDay[data-racename=TheChampionshipsDay1]{background:#404041 !important;}
+	.atcEventDay[data-racename=TheChampionshipsDay1] .atcEventTitle h2,.atcEventDay[data-racename=TheChampionshipsDay1] .atcEventDate h3,.atcEventDay[data-racename=TheChampionshipsDay1] .atcVenueTitle h3{color:#e6e7e8 !important;}
+	.atcEventDay[data-racename=TheChampionshipsDay1] .atcDateIcon, .atcEventDay[data-racename=TheChampionshipsDay1] .atcVenueIcon{background-color:#e6e7e8;}
+
+	.atcEventDay[data-racename=TheChampionshipsDay2]{background:#6B1D39 !important;}
+	.atcEventDay[data-racename=TheChampionshipsDay2] .atcEventTitle h2,.atcEventDay[data-racename=TheChampionshipsDay2] .atcEventDate h3,.atcEventDay[data-racename=TheChampionshipsDay2] .atcVenueTitle h3{color:#cf664a !important;}
+	.atcEventDay[data-racename=TheChampionshipsDay2] .atcDateIcon, .atcEventDay[data-racename=TheChampionshipsDay2] .atcVenueIcon{background-color:#cf664a;}
+
+	.atcEventDay[data-racename=SchweppesAllAgedStakesDay]{background:#244F3D !important;}
+	.atcEventDay[data-racename=SchweppesAllAgedStakesDay] .atcEventTitle h2,.atcEventDay[data-racename=SchweppesAllAgedStakesDay] .atcEventDate h3,.atcEventDay[data-racename=SchweppesAllAgedStakesDay] .atcVenueTitle h3{color:#C1D15F !important;}
+	.atcEventDay[data-racename=SchweppesAllAgedStakesDay] .atcDateIcon, .atcEventDay[data-racename=SchweppesAllAgedStakesDay] .atcVenueIcon{background-color:#C1D15F;}
+
+	.atcEventDay[data-racename=FamilyStakesDay]{background:#244F3D !important;}
+	.atcEventDay[data-racename=FamilyStakesDay] .atcEventTitle h2,.atcEventDay[data-racename=FamilyStakesDay] .atcEventDate h3,.atcEventDay[data-racename=FamilyStakesDay] .atcVenueTitle h3{color:#C1D15F !important;}
+	.atcEventDay[data-racename=FamilyStakesDay] .atcDateIcon, .atcEventDay[data-racename=FamilyStakesDay] .atcVenueIcon{background-color:#C1D15F;}*/
+/*headers*/
+@media only screen and (min-width: 1000px){	
+	#atcHeader{width:100%;height:75vh;margin:0px auto 0px;display:block;position: relative;background:url("https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc26_autumn_poster_16x9.jpg") center center;background-size: cover;border-bottom:4px solid var(--atc-gold);}
+}
+@media only screen and (max-width: 999.99px) {
+	#atcHeader{width:100%;height:95vh;margin:0px auto 0px;padding:0px 0px 40px 0px;display:block;position: relative;background:url("https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc26_autumn_poster_9x16.jpg") center center;background-size: cover;}
+}
+	
+</style>
+<!--TM HEADER--
+<div id="tmHeader">
+	<div id="tmLogo"><img src="https://s1.ticketm.net/tm/en-au/css/6087a0923498ed842bd93d95cd427cba/rebrand_smvp/tm/img/sys/alpha/discovery/header/ticketmaster-logo.svg"></div><div id="tmSearch">what are you looking for?</div>
+</div>-->
+
+<div id="atcContent">
+	<div id="atcHeader">
+
+		<div id="atcMenuWrap">
+			<div class="atcMenuArrow atcArrowLeft"><img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/2025/atc25_arrow_right_img.svg"></div>
+			<div id="atcMenu"><button id="allRacedaysMenu" data-menubtn="AllRaceDays" class="atcMenuBtn">FULL RACE SCHEDULE</button><a href="https://www.australianturfclub.com.au/membership-services/" target="_blank"><button>MEMBERSHIPS</button></a><a href="https://www.australianturfclub.com.au/premium-experiences/" target="_blank"><button class="atcRightBtn">PREMIUM DINING EXPERIENCES</button></a></div>
+			<div class="atcMenuArrow atcArrowRight"><img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/2025/atc25_arrow_right_img.svg"></div>	
+		</div>
+
+
+		<!---<div id="atcLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/vrc/img/atc_logo_white.svg" alt="Australian Turf Club"></div>
+		<div class="atcHeaderOverlay"></div>--->
+		<!--video header-->
+		<video playsinline autoplay muted loop poster="https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc26_spring_poster_16x9.jpg" id="atcVideoHead">
+
+				<source src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc26_spring_header_16x9.mp4" type="video/mp4">
+				<source src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc26_spring_header_16x9.webm" type="video/webm">
+	  
+		</video>
+		<video playsinline autoplay muted loop poster="https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc26_spring_poster_9x16.jpg" id="atcVideoHeadMob">
+
+			<source src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc26_spring_header_9x16.mp4" type="video/mp4">
+			<source src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc26_spring_header_9x16.webm" type="video/webm">
+  
+		</video>
+		</div>
+
+
+
+<!--- hero venues --->
+	<div id="atcVenueMod"><!--- Carnival----><div class="atcVenue"><div id="autumnHero" class="atcVenueHeader">
+			<div class="atcVenueWrap atcLeft">
+				<div class="atcCarnivalLogo"><h1>Sydney Everest Carnival </h1></div>
+			<div class="atcVenueHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc26_everestHero_675x338.jpg" alt="Everest Carnival"></div>
+			</div></div>	
+		<div class="atcVenueWrap atcLeft">
+			<p>Eight weeks of high energy and atmosphere across nine standout race days. Be here for the Sydney Everest Carnival at Royal Randwick and Rosehill Gardens. An experience not to be missed.</p>
+			<a href="https://www.ticketmaster.com.au/artist/2770128?startDate=2026-09-18&endDate=2026-11-08&brand=turfclub"><div id="autumnBtn" class="atcVenueBtn">VIEW RACEDAYS<img src='https://s1.ticketm.net/tm/en-au/img/static/turfclub/2024/atc_right_arrow_img.svg'></div></a>
+		</div>
+		</div><!---royal randwick----><div class="atcVenue">
+		<div id="royalHero" class="atcVenueHeader">
+			<div class="atcVenueWrap atcRight">
+			<div class="atcVenueLogo"><!--<img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_logo_ico.svg" alt="Australian Turf Club">--><h1>ROYAL RANDWICK</h1></div>
+			<div class="atcVenueHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_randwickHero22_675x338.png" alt="Royal Randwick Action Shot"></div>
+			</div></div>
+		<div class="atcVenueWrap atcRight">
+			<p>The jewel in the crown of Sydney racing. Australia&rsquo;s longest standing racing venue has shaped and been a part of Australian culture since 1833.</p>
+			<a href="https://www.ticketmaster.com.au/royal-randwick/venue/304431?brand=turfclub" name="Royal Randwick"><div id="royalBtn" class="atcVenueBtn">VIEW RACEDAYS<img src='https://s1.ticketm.net/tm/en-au/img/static/turfclub/2024/atc_right_arrow_img.svg'></div></a>
+		</div>
+
+		</div><!---rosehill gardens----><div class="atcVenue">
+		<div id="rosehillHero" class="atcVenueHeader">
+			<div class="atcVenueWrap atcLeft">
+			<div class="atcVenueLogo"><!--<img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_logo_ico.svg" alt="Australian Turf Club">--><h1>ROSEHILL GARDENS</h1></div>
+			<div class="atcVenueHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_rosehillGardens_hero.png" alt="Rosehill Gardens Action Shot"></div>
+			</div></div>	
+		<div class="atcVenueWrap atcLeft">
+			<p>One of Western Sydney&rsquo;s premier entertainment hot spots and one of Australia&rsquo;s most engaging racing experiences.</p>
+			<a href="https://www.ticketmaster.com.au/rosehill-gardens/venue/304432?brand=turfclub" name="Rosehill Gardens"><div id="rosehillBtn" class="atcVenueBtn">VIEW RACEDAYS<img src='https://s1.ticketm.net/tm/en-au/img/static/turfclub/2024/atc_right_arrow_img.svg'></div></a>
+		</div></div><!---Autumn Carnival----<div class="atcVenue">
+		<div id="everestHero" class="atcVenueHeader">
+			<div class="atcVenueWrap atcLeft">
+			<div class="atcVenueLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_logo_ico.svg" alt="Australian Turf Club"><h1>SYDNEY AUTUMN RACING CARNIVAL</h1></div>
+			<div class="atcVenueHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_autumnHero23_675x338.png" alt="Autumn Carnival"></div>
+			</div></div>	
+		<div class="atcVenueWrap atcLeft">
+			<p>With six&#45;weeks of world&#45;class racing the 2023 Sydney Autumn Racing Carnival is set to be bigger than ever. It kicks&#45;off on 11 March at Rosehill Gardens before heading to Royal Randwick on 1 April for The Star Championships &#45; Day 1.</p>
+			<a href="https://www.ticketmaster.com.au/artist/2770128?datestart=2023-03-11" target="_blank"><div data-menubtn="AllRaceDays"  id="everestBtn" class="atcVenueBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_seeCarnival_btn.svg" alt="See Carnival"></div></a>
+		</div></div>--->
+		
+		
+		<!---Canterbury Park----<div class="atcVenue">
+		<div id="canterburyHero" class="atcVenueHeader">
+			<div class="atcVenueWrap atcLeft">
+			<div class="atcVenueLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_warwick_canterbury_logo.svg" alt="Canterbury Park Action Shot"></div>
+			<div class="atcVenueHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_canterburyHero_675x338.png" alt="Canterbury Park Action Shot"></div>
+			</div></div>	
+		<div class="atcVenueWrap atcLeft">
+			<p>General Admission entry to Canterbury Park and Warwick Farm is free on a walk&#45;up basis including at the Kia Friday Night series at Canterbury Park and Australia Day at Warwick Farm featuring free family activities, live music and entertainment.</p>
+			<a href="https://www.australianturfclub.com.au/our-venues/" name="Canterbury Park & Warwick Farm"><div id="canterburyBtn" class="atcVenueBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_seeRaceDays_btn.svg" alt="See Races"></div></a>
+		</div>
+
+		</div>--->
+	</div>
+
+<!--promo spot
+<div id="atcSeasonPass">
+	<div class="atcSeasonPassHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/2024/atc24_blackfriday_650x433.jpg" alt="Peacock Lounge"></div>
+	<div id="atcSeasonPassWrap">
+	
+	<h1>BLACK FRIDAY SALE</h1>
+		<p>Take 30% off selected products for the 2025 Sydney Autumn Racing Carnival for this four day only sale. <br /><br />
+			Expect it all this autumn at Rosehill Gardens and Royal Randwick with six weeks of top-class racing, fashion, food, and entertainment. This is one not to be missed.
+			</p>
+		<a href="https://shops.ticketmasterpartners.com/australian-turf-club-black-friday-offers-2" name=""><div class="atcSeasonPassBtn">VIEW OFFERS<img src='https://s1.ticketm.net/tm/en-au/img/static/turfclub/2024/atc_right_arrow_img.svg'></div></a>
+	</div>
+</div> 
+--->
+
+
+<!--atc event stream --->
+<div id="atcAllRaceDaysMod">	
+	<div id="atcEventStream">
+		
+		<h1>ALL RACE DAYS</h1>
+		<!---filters--->
+		<div id="atcRaceFilters">
+			<div id="atcVenueFilters">
+				<h2>Filter By Venue:</h2>
+				<div id="RoyalRandwickFilter" class="atcCheckBoxBtn"><div class="atcCheckBox atcCheckBoxOn"></div><p>Royal Randwick</p></div>
+				<div id="RosehillGardensFilter" class="atcCheckBoxBtn"><div class="atcCheckBox atcCheckBoxOn"></div><p>Rosehill Gardens</p></div>
+				<!--<div id="CanterburyParkFilter" class="atcCheckBoxBtn"><div class="atcCheckBox atcCheckBoxOn"></div><p>Canterbury Park</p></div>	--->		
+			</div>	
+			<div id="atcDateSort">
+				<h2>Sort By Date:</h2>
+				<div id="atcSortAsc" class="atcRadioBtn"><div class="atcRadio atcRadioOn"></div><p>Ascending</p></div>
+				<div id="atcSortDesc" class="atcRadioBtn"><div class="atcRadio atcRadioOff"></div><p>Descending</p></div>			
+			</div>
+		</div>
+
+		
+		<!---TEST DIV---<div class="atcEventDay"><div class="atcEventLid"></div><div class="atcEventHero"><img src="https://s1.ticketm.net/dbimages/412357a.jpg"></div><div class="atcEventWrap"><div class="atcEventTitle"><h1>Rosehill Gardens Raceday</h1></div><div class="atcEventDate"><h2>2022-07-16</h2></div><div class="atcVenueTitle"><h3>Rosehill Gardens Racecourse</h3></div></div><div class="atvEventBtn"><a href="https://www.ticketmaster.com.au/rosehill-gardens-raceday-rosehill-new-south-wales-07-16-2022/event/25005CA3CE662614">BUY TICKETS</a></div></div>--->	
+		
+		
+		<div id="atcEventsError"><img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_alert_ico.svg">
+			<p>Looks like we&rsquo;re having trouble loading the event data, a full list of events can be found on the Australian Turf Club page below.</p>
+			<a href="https://www.ticketmaster.com.au/australian-turf-club-tickets/artist/2770128" name="SEE TICKETS"><div class="atvErrorBtn">SEE TICKETS</div></a>
+		
+		</div>
+		<div id="atcEventsNone"><img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_alert_ico.svg">
+			<p>Looks like there&rsquo;s no events matching those criteria. Try adding more filters back in.</p>		
+		</div>
+	</div>	
+</div>	
+	
+	
+	
+</div>
+
+<script type="text/javascript">
+
+	$j = jQuery.noConflict();
+
+	$j(document).ready(function () {	
+			//load the container div
+            let eventListDiv = $j("#atcEventStream");
+			const tcFilterOn = "atcCheckBoxOn";
+			const tcFilterOff = "atcCheckBoxOff";
+			let eventCount = 0;
+			//remove specific events via UID
+			let removeEvent = [];
+			//end points 
+			//http://api.disco.intqa2.us-east-1.nonprod-tmaws.io:8080/
+			//http://api.disco.preprod1.us-east-1.prod-tmaws.io:8080/
+			//http://api.disco.preprod2.us-east-1.prod-tmaws.io:8080/
+			//http://api.disco.prod1.prod-tmaws.io:8080/
+			//http://api.disco.prod1.us-east-1.prod-tmaws.io:8080/
+			//http://api.disco.prod1.us-west-2.prod-tmaws.io:8080/
+			//http://api.disco.prod1.eu-west-1.prod-tmaws.io:8080/
+			let epPublic = "https://app.ticketmaster.com/discovery/v2/events?apikey=fsHHDDaHGLhPm2TW8YDCvubQL4f65Kts&attractionId=K8vZ917_6rf&locale=*&size=40"
+			let epQa = "http://api.disco.intqa2.us-east-1.nonprod-tmaws.io:8080/discovery/v2/events?attractionId=K8vZ917_6rf&apikey=fsHHDDaHGLhPm2TW8YDCvubQL4f65Kts"
+			let epProd = "http://api.disco.prod1.prod-tmaws.io:8080/discovery/v2/events?attractionId=K8vZ917_6rf&apikey=fsHHDDaHGLhPm2TW8YDCvubQL4f65Kts"
+			//get the data file
+             $j.ajax({
+               type: 'GET',
+               url: epPublic,
+               dataType: 'html',
+				success: function(data) {
+					let eventData = JSON.parse(data);
+					let eventList = eventData._embedded['events'];
+					
+					$j.each(eventList, function(key,value){
+						
+						//swap dates into pretty format	
+						let eventDate = new Date(value.dates.start.localDate);	
+						//set the options for date display
+						let options = { weekday: 'short', day: '2-digit', month: 'short', year: 'numeric' };
+						let raceDate = new Intl.DateTimeFormat('en-AU', options).format(eventDate);
+						//venue name						
+						let venueName = value._embedded.venues[0].name		
+						//fetch the image url with width of 205px
+						let imgList = value.images;
+						let imgURL = imgList.find(k=>k.width=='205').url;
+						//data tags
+						let venueTag = venueName.replace(/\s/g, '')
+						let dateTag = value.dates.start.localDate.replace('-','').replace('-','');	
+						let nameTag = value.name.replace(/\s/g, '').replace(/[^\w\s]/gi, '')
+						
+						let newEvent = $j("<div class='atcEventDay' data-venue="+ venueTag +" data-date="+ dateTag +" data-racename="+ nameTag +" data-eventid="+ value.id +"><div class='atcEventLid'></div><div class='atcEventHero'><img src='"+ imgURL +"'></div><div class='atcEventWrap'><div class='atcEventTitle'><h2>"+ value.name +"</h2></div><div class='atcEventDate'><div class='atcDateIcon'></div><h3>"+ raceDate +"</h3></div><div class='atcVenueTitle'><div class='atcVenueIcon'></div><h3>"+ venueName +"</h3></div></div><div class='atvEventBtn'><a href='"+ value.url +"?brand=turfclub'>BUY TICKETS</a></div></div>");
+						//apends event data into an element
+						eventListDiv.append(newEvent);
+
+						eventsToRemove();
+						eventCount = eventCount + 1;
+						})	
+					},
+                    error: function (xhr, ajaxOptions, thrownError) { 
+                        //fade in the error element
+                        $j("#atcEventsError").fadeIn(1500);
+                    }
+
+                });
+
+				//if event event ID === removeEvent
+				let eventsToRemove	= function(){	
+					if (removeEvent.length > 0){
+						$j('.atcEventDay').each(function () {	
+							$j('.atcEventDay[data-eventid=' + removeEvent + ']').remove();
+						})
+					}	
+				}//end events remove	
+
+		
+//filters
+let eventsToDisplay	= function(){				
+				let currentVenue = $j(event.currentTarget).attr('id').replace('Filter','');	
+				//if venue checkbox is off
+					if ($j("#" + currentVenue + "Filter").children().hasClass("atcCheckBoxOff")){
+						$j('.atcEventDay').each(function () {
+							let venueID = $j(this).data("venue")
+							//if event day div has venue tag = to filter id
+							if (venueID === currentVenue + "Racecourse") {
+								$j(this).fadeOut(300);
+								eventCount = eventCount - 1
+							}
+							})				
+					} else if ($j("#" + currentVenue + "Filter").children().hasClass("atcCheckBoxOn")){
+						$j('.atcEventDay').each(function () {
+							let venueID = $j(this).data("venue")
+							if (venueID === currentVenue + "Racecourse") {
+								$j(this).fadeIn(800);
+								eventCount = eventCount + 1
+							}
+							})
+					} 	
+					/*if ($j("#RoyalRandwickFilter").children().hasClass("atcCheckBoxOff") && $j("#RosehillGardensFilter").children().hasClass("atcCheckBoxOff")){
+					}//end if*/
+					//throw up the message if no events are displaying
+					if (eventCount === 0){
+							$j("#atcEventsNone").fadeIn(1500);
+					} else {
+							$j("#atcEventsNone").fadeOut(0);
+					}
+				
+}//end eventsToDisplay
+//checkbox
+$j(".atcCheckBoxBtn").click(
+				function(){
+					$j(this).children(".atcCheckBox").toggleClass("atcCheckBoxOn")
+					$j(this).children(".atcCheckBox").toggleClass("atcCheckBoxOff")
+					eventsToDisplay();
+})
+//radio btn	
+$j(".atcRadioBtn").click(
+				function(){
+					$j(".atcRadioBtn").children(".atcRadio").toggleClass("atcRadioOn")
+					$j(".atcRadioBtn").children(".atcRadio").toggleClass("atcRadioOff")
+					//sortEvents();
+})
+//asc
+$j("#atcSortAsc").click(
+				function(){
+			$j('#atcEventStream .atcEventDay').sort(function (a, b) {
+				return $j(a).data('date') - $j(b).data('date');
+			}).appendTo('#atcEventStream');
+		});
+//asc
+$j("#atcSortDesc").click(
+				function(){
+			$j('#atcEventStream .atcEventDay').sort(function (a, b) {
+				return $j(b).data('date') - $j(a).data('date');
+			}).appendTo('#atcEventStream');
+		});	
+
+
+});
+
+//event scroll and expand
+$j(".atcMainEventBtn").click(
+	function(){
+		var mainEventName = $j(this).data('event')
+				atcCloseAll()
+				$j("#"+ mainEventName +"Mod").delay(400).slideDown(1200);
+				$j("#"+ mainEventName +"Mod").delay(400).children(".atcMainEventSelectHero").delay(1200).animate({opacity: 1}, 1000);
+				aoScrollToEvent()
+		})
+//menu clicks
+$j(".atcMenuBtn").click(
+	function(){
+		var menuTarget = $j(this).data('menubtn')		
+			$j('html, body').animate({ scrollTop: $j("#atc"+ menuTarget +"Mod").offset().top}, 2000);	 
+		})	
+//close all mods
+function atcCloseAll(){
+		$j(".atcMainEventSelect").slideUp(400);
+		$j(".atcMainEventSelectHero").animate({opacity: 0}, 300)
+};		
+function aoScrollToEvent(){
+		$j('html, body').animate({ scrollTop: $j("#atcMainEvents").offset().top}, 2000);
+};	
+//mobile menu	
+$j(".atcArrowRight").click(
+	function(){
+		$j("#atcMenu").animate({scrollLeft:"+=250px"}, "slow");
+	});
+$j(".atcArrowLeft").click(
+	function(){
+		$j("#atcMenu").animate({scrollLeft:"-=250px"}, "slow");
+	});
+//sticky menu
+$j(document).scroll(function() {
+    var pageTop = $j(document).scrollTop();
+    var scollTarget = $j("#atcHeader").offset().top;
+    if (pageTop > scollTarget) {
+		$j("#atcMenuWrap").addClass("atcMenuToggle");		
+    } else {
+		$j("#atcMenuWrap").removeClass("atcMenuToggle");
+    }
+});	
+</script>
+[% PROCESS "layout/frame/bottom.tt" %]
