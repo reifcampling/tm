@@ -495,35 +495,40 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	#pub-date-list-div, #prem-date-list-div{width:100%;height:auto;margin:0px auto 10px;text-align: center;}
 	.datelist{width:35px;height:35px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:15px;line-height:15px;text-align: center;font-weight:900;display:inline-block;padding:12px 0px;border-radius:20px;text-transform: uppercase;user-select: none;transition:ease-in-out .2s all;position:relative;}
 
-	#pub-date-list-div .mainDay,#biPubSelectDate .biMainDate{color:var(--bi-dblue);background:var(--bi-lgrey);cursor:pointer;}
-	#prem-date-list-div .mainDay, #biPremSelectDate .biMainDate{color:var(--px-blue);box-shadow:inset 0px 0px 0px 2px var(--px-blue);cursor:pointer;}
+	#pub-date-list-div .mainDay,#biPubSelectDate .biMainDate{color:var(--bi-dblue);background:var(--bi-lgrey);}
+	#prem-date-list-div .mainDay, #biPremSelectDate .biMainDate{color:var(--bi-dblue);background:var(--bi-lgrey);}
 
 	.biCalNoDay{background:rgba(0,0,0,.06);color:var(--bi-grey);width:35px;height:35px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:15px;line-height:15px;text-align: center;font-weight:700;display:inline-block;padding:12px 0px;border-radius:20px;text-transform: uppercase;user-select: none;transition:ease-in-out .2s all;position:relative;}
 	.biCalNoDay.datelistActive{background:rgba(0,0,0,.06);color:var(--bi-dgrey);}
 	.datelistActive{width:35px;height:35px;margin:0px 0px 16px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:15px;line-height:15px;text-align: center;font-weight:700;display:inline-block;padding:12px 0px 0px 0px;border-radius:20px;text-transform: uppercase;user-select: none;background:var(--bi-blue);color:#fff;transition:ease-in-out .2s all;position: relative;}
-	.mainDay.datelistActive{box-shadow:inset 0px 0px 0px 2px var(--bi-dblue)}
-
+	#biPubCalendar .mainDay.datelistActive{box-shadow:inset 0px 0px 0px 2px var(--bi-dblue)}
+	#biPremCalendar .mainDay.datelistActive{box-shadow:inset 0px 0px 0px 2px var(--px-gold)}	
 	/*day markers*/
 	.biFinalKey{width:6px;height:6px;border-radius:10px;top:4px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
-	.biFinal01{border:2px solid var(--bi-gold);}
-	.biFinal02{border:2px solid var(--bi-dblue);}
-	.biFinal03{background:var(--bi-gold);}
-	.biFinal04{background:var(--bi-dblue);}
+	#biPubCalendar .biFinal01{border:2px solid var(--bi-gold);}
+	#biPubCalendar .biFinal02{border:2px solid var(--bi-dblue);}
+	#biPubCalendar .biFinal03{background:var(--bi-gold);}
+	#biPubCalendar .biFinal04{background:var(--bi-dblue);}
+
+	#biPremCalendar .biFinal01{border:2px solid var(--px-gold);}
+	#biPremCalendar .biFinal02{border:2px solid var(--bi-blue);}
+	#biPremCalendar .biFinal03{background:var(--px-gold);}
+	#biPremCalendar .biFinal04{background:var(--bi-blue);}
 
 	/*key*/
 	.biKeyWrap{width:auto;height:auto;margin:16px auto 0px;padding:0px;position:relative;display:inline-block;vertical-align: top;text-align: left;}
 	#biPubCalendar .biKeyEvent{font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: left;font-weight:500;color:var(--px-dblue);padding:16px 0px 0px 0px;margin:3px auto;display:flex;flex-wrap: nowrap;align-items: center;}
-	#biPremCalendar .biKeyEvent{font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: left;font-weight:500;color:#fff;padding:16px 0px 0px 0px;margin:3px auto;display:block;}                                                                                                                 
+	#biPremCalendar .biKeyEvent{font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: left;font-weight:500;color:#fff;padding:16px 0px 0px 0px;margin:3px auto;display:flex;flex-wrap: nowrap; align-items: center; }                                                                                                                 
 	.biKeyEventBullet{width:11px;height:11px;border-radius:15px;background:transparent;display:inline-block;margin:0px 3px 1px 0px;box-sizing: border-box !important;}
 	#biPubCalendar .final01Key{border:2px solid var(--bi-gold);}
 	#biPubCalendar .final02Key{border:2px solid var(--bi-dblue);}
 	#biPubCalendar .final03Key{background:var(--bi-gold);}
 	#biPubCalendar .final04Key{background:var(--bi-dblue);}
 	.biKeyEvent .biFinalKey{width:6px;height:6px;border-radius:10px;top:1px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
-	#biPremCalendar .final01Key{border:2px solid var(--bi-gold);}
-	#biPremCalendar .final02Key{border:2px solid var(--ao-green);}
-	#biPremCalendar .final03Key{background:var(--bi-gold);}
-	#biPremCalendar .final04Key{background:var(--ao-green);}
+	#biPremCalendar .final01Key{border:2px solid var(--px-gold);}
+	#biPremCalendar .final02Key{border:2px solid var(--bi-blue);}
+	#biPremCalendar .final03Key{background:var(--px-gold);}
+	#biPremCalendar .final04Key{background:var(--bi-blue);}
 	.biKeyDate{width:35px;height:35px;border-radius:20px;display:inline-block;margin:0px 5px 0px 5px;padding:12px 0px;box-sizing: border-box !important;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:900;text-transform: uppercase;user-select: none;position:relative;}
 	.biKeyEvent p{font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: left;font-weight:500;color:var(--px-dblue);padding: 0px 0px;margin:0px 0px;}
 
@@ -537,7 +542,7 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	#biPubSearchBar .biCheckBox{width:18px;height:18px;background:#fff;border-radius:3px;border:2px solid #ccc;display:inline-block;vertical-align: middle;box-sizing: border-box !important;}
 	#biPubSearchBar .biCheckBoxActive{width:18px;height:18px;background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2022/ao_tick_ico.svg"), var(--bi-blue);border-radius:3px;border:2px solid var(--bi-blue);display:inline-block;vertical-align: middle;box-sizing: border-box !important;}
 	#biPremSearchBar .biCheckBox{width:18px;height:18px;background:var(--px-dblue);border-radius:3px;border:2px solid #fff;display:inline-block;vertical-align: middle;box-sizing: border-box !important;}
-	#biPremSearchBar .biCheckBoxActive{width:18px;height:18px;background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_tick_prem_logo.svg"), var(--px-blue);border-radius:3px;border:2px solid var(--px-blue);display:inline-block;vertical-align: middle;box-sizing: border-box !important;}	
+	#biPremSearchBar .biCheckBoxActive{width:18px;height:18px;background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_tick_prem_logo.svg"), var(--px-gold);border-radius:3px;border:2px solid var(--px-lgold);display:inline-block;vertical-align: middle;box-sizing: border-box !important;}	
 	#biPubPriceMenu .biRadioBtn{width:18px;height:18px;background:#fff;border-radius:10px;border:2px solid #ccc;display:inline-block;vertical-align: middle;box-sizing: border-box !important;transition: .25s ease-in-out}
 	#biPubPriceMenu .biRadioBtnActive{width:18px;height:18px;background:url("bi27_radio_btn.svg"), #fff;border-radius:10px;border:2px solid var(--bi-blue);display:inline-block;vertical-align: middle;box-sizing: border-box !important;transition: .25s ease-in-out}	
 	#biPremPriceMenu .biRadioBtn{width:18px;height:18px;background:var(--px-dblue);border-radius:10px;border:2px solid #fff;display:inline-block;vertical-align: middle;box-sizing: border-box !important;transition: .25s ease-in-out}
@@ -563,7 +568,7 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	#biPubCount, #biPremCount{width:auto;height:auto;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:var(--bi-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;}
 	#biPubCounter p, #biPremCounter p{font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:500;color:var(--bi-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;}
 	#biPubSearchBar .biDropDownCount{width:22px;height:22px;margin:0px;padding:0px;background:var(--bi-blue);border-radius:20px;position:absolute;top:18px;left:14px;display:none;}
-	#biPremSearchBar .biDropDownCount{width:22px;height:22px;margin:0px;padding:0px;background:var(--px-blue);border-radius:20px;position:absolute;top:18px;left:14px;display:none;}
+	#biPremSearchBar .biDropDownCount{width:22px;height:22px;margin:0px;padding:0px;background:var(--px-gold);border-radius:20px;position:absolute;top:18px;left:14px;display:none;}
 	#biPubSearchBar .biDropDownNumber{width:22px;height:22px;margin:0px;padding:6.5px 0px 0px 0px;font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:800;color:#fff;box-sizing: border-box !important;}
 	#biPremSearchBar .biDropDownNumber{width:22px;height:22px;margin:0px;padding:6.5px 0px 0px 0px;font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:800;color:var(--px-dblue);box-sizing: border-box !important;}
 	/*date sort menu*/
