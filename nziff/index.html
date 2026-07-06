@@ -1,5 +1,5 @@
 [% # text to be displayed within <title></title>
-page_title = "NZIFF 2026 | Whanau Marama, New Zealand Interantional Film Festival | Buy Tickets Official Ticketmaster site." %]
+page_title = "NZIFF 2026 | Whānau Mārama, New Zealand Interantional Film Festival | Buy Tickets Official Ticketmaster site." %]
 [% static_has_responsive_header_footer = 1; enable_leader_board = 0; %]
 [% PROCESS "layout/frame/top.tt" %]
 
@@ -42,6 +42,15 @@ page_title = "NZIFF 2026 | Whanau Marama, New Zealand Interantional Film Festiva
 	.nziffFeatInfo h2{font-family:"Averta","Open Sans",  sans-serif;font-size:16px;line-height:16px;font-weight:normal; color:#fff;text-align:center;padding:0px 0px;margin:0px 0px 0px 0px;}
 	.nziffFeatHero{width:300px;height:150px;padding:0px;margin:0px 0px;display:block;position:relative;border-radius:12px;z-index:9;border:1px solid var(--nziff-gold);overflow:hidden;box-sizing: border-box !important;}
 	.nziffFeatHero img{width:100%;height:auto;}
+	/*drop downs*/
+	.nziffDropDownWrap{display:none;}
+	.nziffDropDownMenu{}
+	.nziffDropDownHeader{}
+	.nziffDropDownHeader h1{}
+	.nziffDropDown{}
+	.nziffDropDownBtn{}
+	.nziffCheckBox{}
+	.nziffCheckBoxOn{} 
 	/*event stream*/
 	#nziffEventStream{width:100%;max-width:1094px;height:auto;padding:0;margin:30px auto;display:flex;flex-wrap:wrap;justify-content: center;align-items: stretch;column-gap: 30px;row-gap:30px;box-sizing: border-box !important;}
 	#nziffEventStream a{text-decoration:none;height:auto;display: flex;align-content: stretch;align-items: stretch;justify-content: center;}
@@ -72,6 +81,15 @@ page_title = "NZIFF 2026 | Whanau Marama, New Zealand Interantional Film Festiva
 	#nziffHeader{width:94%;max-width:1000px;height:auto;margin:25px auto 25px;display:block;position: relative;background:var(--nziff-navy);border-radius:10px;overflow:hidden;}
 	#nziffHeader img{width:100%;height:auto;display:block;}
 	.nziffSubMenu{width:100%;max-width:1000px;height:auto;padding:0;margin:20px auto;display:flex;justify-content: center;align-items: center;column-gap: 10px;row-gap:10px;box-sizing: border-box !important;} 
+	/*drop downs*/
+	.nziffDropDownWrap{display:none;}
+	.nziffDropDownMenu{}
+	.nziffDropDownHeader{}
+	.nziffDropDownHeader h1{}
+	.nziffDropDown{}
+	.nziffDropDownBtn{}
+	.nziffCheckBox{}
+	.nziffCheckBoxOn{} 
 	/*featured cards*/
 	.nziffFeatWrap{width:100%;max-width:1000px;height:auto;padding:0;margin:30px auto;display:flex;flex-wrap:wrap;justify-content: center;align-items: center;column-gap: 10px;row-gap:10px;box-sizing: border-box !important;}
 	.nziffFeatCard{width:300px;height:150px;padding:0;margin:0px 0px;display:inline-block;overflow:hidden;box-sizing: border-box !important;cursor: pointer;user-select:none;}
@@ -97,7 +115,7 @@ page_title = "NZIFF 2026 | Whanau Marama, New Zealand Interantional Film Festiva
 	/*avail tags*/
 	.nziffAvailKeyWrap{width:auto;height:auto;margin:0px 0px;padding:4px 8px;display:flex;position: relative;box-sizing: border-box !important;border:1px solid var(--nziff-pink);border-radius:5px;column-gap: 10px;}
 	.nziffAvailKeyWrap p{font-family:"Averta","Open Sans",  sans-serif;font-size:14px;line-height:14px;font-weight:bold; color:#fff;text-align:left;padding:0px 0px;margin:0px 0px 0px 0px;display:inline-block;}
-	.nziffAvailKey{width:auto;height:auto;font-family:"Averta","Open Sans",  sans-serif;font-size:12px;line-height:12px;font-weight:bold; color:var(--nziff-navy);text-align:center;padding:2px 6px ;margin:0px 0px 0px 0px;border-radius:5px;display:inline-block;}
+	.nziffAvailKey{width:auto;height:16px;font-family:"Averta","Open Sans",  sans-serif;font-size:12px;line-height:12px;font-weight:bold; color:var(--nziff-navy);text-align:center;padding:2px 6px ;margin:0px 0px 0px 0px;border-radius:5px;display:inline-block;}
 
 	.nziffAvailTag{width:auto;height:auto;font-family:"Averta","Open Sans",  sans-serif;font-size:14px;line-height:14px;font-weight:bold; color:var(--nziff-navy);text-align:center;padding:2px 6px 4px 6px;margin:0px 0px 0px 0px;position: absolute;top:0px;left:20px;border-radius:0px 0px 5px 5px;box-sizing: border-box !important;}
 
@@ -144,8 +162,23 @@ page_title = "NZIFF 2026 | Whanau Marama, New Zealand Interantional Film Festiva
 	</div>
 	</div>
 	<div class="nziffSubMenu">
-		<div class="nziffAvailKeyWrap"><p>Few Tickets Left</p><div class="nziffAvailKey nziffTixFewAvail"></div><p>Limited / Tickets Left</p><div class="nziffAvailKey nziffTixNotAvail"></div></div>
+		<!---->
+		<div class="nziffDropDownWrap">
+			<!--movie names-->
+			<div class="nziffDropDownMenu">
+				<div class="nziffDropDownHeader"><h1>DATE</h1></div>
 
+				<div class="nziffDropDown">
+					<div class="nziffDropDownBtn"><div class="nziffCheckBox nziffCheckBoxOn"></div><h1>Movie Name Movie Name</h1></div>
+					<div class="nziffDropDownBtn"><div class="nziffCheckBox nziffCheckBoxOn"></div><h1>Movie Name Movie Name</h1></div>
+					<div class="nziffDropDownBtn"><div class="nziffCheckBox nziffCheckBoxOn"></div><h1>Movie Name Movie Name</h1></div>
+				</div>
+			</div>
+
+
+		</div>
+		<!---->
+		<div class="nziffAvailKeyWrap"><p>Few Tickets Left</p><div class="nziffAvailKey nziffTixFewAvail"></div><p>Limited / Tickets Left</p><div class="nziffAvailKey nziffTixNotAvail"></div></div>
 
 	</div>
 	<!--event stream-->
@@ -191,9 +224,9 @@ page_title = "NZIFF 2026 | Whanau Marama, New Zealand Interantional Film Festiva
 			//http://api.disco.prod1.us-east-1.prod-tmaws.io:8080/
 			//http://api.disco.prod1.us-west-2.prod-tmaws.io:8080/
 			//http://api.disco.prod1.eu-west-1.prod-tmaws.io:8080/
-			let epPublic = "https://app.ticketmaster.com/discovery/v2/events?apikey=9RKc4uFJzYBqvo4nFncV1KMApboBHUSA&attractionId=K8vZ9178ZB7&locale=*&size=200"
-			let epQa = "http://api.disco.intqa2.us-east-1.nonprod-tmaws.io:8080/discovery/v2/events?attractionId=K8vZ9178ZB7apikey=fsHHDDaHGLhPm2TW8YDCvubQL4f65Kts"
-			let epProd = "http://api.disco.prod1.prod-tmaws.io:8080/discovery/v2/events?attractionId=K8vZ9178ZB7apikey=fsHHDDaHGLhPm2TW8YDCvubQL4f65Kts"
+			let epPublic = "https://app.ticketmaster.com/discovery/v2/events?apikey=9RKc4uFJzYBqvo4nFncV1KMApboBHUSA&attractionId=K8vZpZA7FFIk&locale=*&size=200"
+			let epQa = "http://api.disco.intqa2.us-east-1.nonprod-tmaws.io:8080/discovery/v2/events?attractionId=K8vZpZA7FFIk&apikey=fsHHDDaHGLhPm2TW8YDCvubQL4f65Kts"
+			let epProd = "http://api.disco.prod1.prod-tmaws.io:8080/discovery/v2/events?attractionId=K8vZpZA7FFIk&apikey=fsHHDDaHGLhPm2TW8YDCvubQL4f65Kts"
 			//get the data file
              $j.ajax({
                type: 'GET',
@@ -214,18 +247,19 @@ page_title = "NZIFF 2026 | Whanau Marama, New Zealand Interantional Film Festiva
 						let venueName = value._embedded.venues[0].name		
 						//fetch the image url with width of 205px
 						let imgList = value.images;
-						let imgURL = imgList.find(k=>k.width=='640').url;
+						let imgURL = imgList.find(k=>k.width=='305').url;
 						//data tags
 						let venueTag = venueName.replace(/\s/g, '')
 						let dateTag = value.dates.start.localDate.replace('-','').replace('-','');	
 						let nameTag = value.name.replace(/\s/g, '').replace(/[^\w\s]/gi, '')
+						let eventTime =value.dates.start.localTime;
 						//making ID set
 						let uniID = value.id
 						availableIDs.push(value.id)				
 						//idSet.add(uniID)
 
-						//console.log(availableIDs)
-						let newEvent = $j("<a href='"+value.url+"' target='_blank'><div data-name='"+value.name+"' data-date='"+value.dates.start.localDate+"' data-uniid='"+uniID+"' data-venue='"+venueTag+"' class='nziffEventCard'><div class='nziffEventHero'><div data-uniid='"+uniID+"' class='nziffAvailTag'></div><img src='"+imgURL+"' alt=''></div><div class='nziffEventDate'><p><strong>"+movieDate+"</strong></p><p>&nbsp; &#45; "+value.dates.start.localTime.replace(':00','')+"</p></div><div class='nziffBotWrap'><div class='nziffEventInfo'><h1>"+value.name+"</h1><!--<h2>Director Name</h2>---></div><div class='nziffEventVenue'><h3>"+value._embedded.venues[0].name+"</h3></div></div></div></a>");
+						console.log(availableIDs)
+						let newEvent = $j("<a href='"+value.url+"' target='_blank'><div data-name='"+value.name+"' data-date='"+value.dates.start.localDate+"' data-uniid='"+uniID+"' data-venue='"+venueTag+"' class='nziffEventCard'><div class='nziffEventHero'><div data-uniid='"+uniID+"' class='nziffAvailTag'></div><img src='"+imgURL+"' alt=''></div><div class='nziffEventDate'><p><strong>"+movieDate+"</strong></p><p>&nbsp; &#45; "+eventTime+"</p></div><div class='nziffBotWrap'><div class='nziffEventInfo'><h1>"+value.name+"</h1><!--<h2>Director Name</h2>---></div><div class='nziffEventVenue'><h3>"+value._embedded.venues[0].name+"</h3></div></div></div></a>");
 						//apends event data into an element
 						eventListDiv.append(newEvent);
 
@@ -257,11 +291,11 @@ let nziffAvailCall = function(){
 	
   	$j.ajax({
                type: 'GET',
-               url: "https://953lrs6ve3.execute-api.us-east-1.amazonaws.com/prod/?events=vvG1YZ_GV6cqOF,vvG1YZ_GV6SuOz,vvG1YZ_GVFbWP3,vvG1YZ_GV6RqOK,vvG1YZ_GVFZWxJ,vvG1YZ_GVFdcxB,vvG1YZ_GV6UW-K,vvG1YZ_GV6gu-5,vvG1YZ_GV6yc-S,vvG1YZ_GV6Uu-C,vvG1YZ_GV6iqOd,vvG1YZ_GV6TWxL,vvG1YZ_GVFkqN3,vvG1YZ_GV6wuOw,vvG1YZ_GV6MW--,vvG1YZ_GV6YqO_,vvG1YZ_GV6mqOC,vvG1YZ_GVFQcPJ,vvG1YZ_GV6suON,vvG1YZ_GVF7cN7,vvG1YZ_GVF_cP_,vvG1YZ_GV6XuxK,vvG1YZ_GV6HqxA,vvG1YZ_GV6zW-I,vvG1YZ_GV6Tux_,vvG1YZ_GV6Vu-Z,vvG1YZ_GVFAqN1,vvG1YZ_GV6Bc-z,vvG1YZ_GV6Dq-X,vvG1YZ_GV6Wqx8,vvG1YZ_GVFvcxi,vvG1YZ_GVFecxV,vvG1YZ_GVF6qN_,vvG1YZ_GVFhcPn,vvG1YZ_GVFOqJq,vvG1YZ_GVFNuJM,vvG1YZ_GV6tcLg,vvG1YZ_GVFFqN-,vvG1YZ_GV6hqrr,vvG1YZ_GV6ocq6,vvG1YZ_GV6fqqn,vvG1YZ_GVFjcPz,vvG1YZ_GVFtqI5,vvG1YZ_GV6_qrF,vvG1YZ_GV64qqV,vvG1YZ_GV6rurB,vvG1YZ_GV6Qqrb,vvG1YZ_GVFLqJ9,vvG1YZ_GV63cq9,vvG1YZ_GV6KqqJ,vvG1YZ_GV6pqqD,vvG1YZ_GV69qrv,vvG1YZ_GV6bqrA,vvG1YZ_GV6jqrN,vvG1YZ_GV6LurX,vvG1YZ_GV6qqri,vvG1YZ_GVFqcJd,vvG1YZ_GVFrqJo,vvG1YZ_GVF-qJI,vvG1YZ_GVF0qEd,vvG1YZ_GVFxuJm,vvG1YZ_GVFEqEq,vvG1YZ_GVFIqEH,vvG1YZ_GVFJqEK,vvG1YZ_GVFPqEC,vvG1YZ_GV6lcOZ,vvG1YZ_GVFaqNR,vvG1YZ_GVFncIp,vvG1YZ_GV6ncLy",
+               url: "https://953lrs6ve3.execute-api.us-east-1.amazonaws.com/prod/?events=",
                dataType: 'html',
 				success: function(data) {
 					var availData = JSON.parse(data);
-					 console.log(data)
+					// console.log(data)
 					$j.each(availData, function(key,value){
 						var availID = value.eventId
 						var availClass = nziffAvailMapper(value.status);
