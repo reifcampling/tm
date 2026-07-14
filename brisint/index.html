@@ -235,7 +235,7 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	#biPubDateSort, #biPremDateSort{width:auto;height:auto;padding:0px 16px 0px 0px;margin:0px 0px 0px 0px;display:inline-block;background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/ao25_down_arrow_mgrey_img.svg') no-repeat;background-size:8px 8px;background-position:right 0px top 2px;cursor:pointer;position:relative;}
 	#biPubDateSort p, #biPremDateSort p{font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:500;color:var(--bi-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;}
 	#biPubSelectDateSort, #biPremSelectDateSort{font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:var(--bi-mgrey);display:inline-block;}
-	#biPubDateMenu, #biPremDateMenu{width:calc(100%);height:auto;margin:0px auto;padding:4px 16px 16px 16px;background:#fff;box-sizing: border-box !important;position: absolute;bottom:-90px;right:0px;text-align:left;border-radius:4px;display:none;z-index:100;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;cursor:default;}
+	#biPubDateMenu, #biPremDateMenu{width:calc(100%);min-width:170px;height:auto;margin:0px auto;padding:4px 16px 16px 16px;background:#fff;box-sizing: border-box !important;position: absolute;bottom:-90px;right:0px;text-align:left;border-radius:4px;display:none;z-index:100;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;cursor:default;}
 
 	/*accessible info*/
 	#aoAccessibleWrap{width:760px;height:auto;margin:0px auto;padding:0px;display:block;}
@@ -923,7 +923,7 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 			<!--sort by date-->
 			<div id="biPubDateMenu">			
 					<div data-filterbtnlab="Earliest Date" class="biFilterBtnOn sortRadioBtn" id="pubDateEarliestSortBtn"><div class="biRadioBtnActive"></div><h4>Earliest Date</h4></div>	
-					<div data-filterbtnlab="Latest Date" class="biFilterBtnOff sortRadioBtn" id="pubDateLatestSortBtn"><div class="biRadioBtn"></div><h4>Furthest Date</h4></div>
+					<div data-filterbtnlab="Furthest Date" class="biFilterBtnOff sortRadioBtn" id="pubDateLatestSortBtn"><div class="biRadioBtn"></div><h4>Furthest Date</h4></div>
 					<!--<div data-filterbtnlab="Low to High" class="biFilterBtnOff sortRadioBtn" id="pubPriceLowSortBtn"><div class="biRadioBtn"></div><h4>Low to High</h4></div>	-->
 					<!--<div data-filterbtnlab="High to Low" class="biFilterBtnOff sortRadioBtn" id="pubPriceHighSortBtn"><div class="biRadioBtn"></div><h4>High to Low</h4></div>-->
 			</div>	
@@ -1049,7 +1049,7 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 			<!--sort by date-->
 			<div id="biPremDateMenu">			
 					<div data-filterbtnlab="Earliest Date" class="biFilterBtnOn sortRadioBtn" id="PremDateEarliestSortBtn"><div class="biRadioBtnActive"></div><h4>Earliest Date</h4></div> 
-					<div data-filterbtnlab="Latest Date" class="biFilterBtnOff sortRadioBtn" id="PremDateLatestSortBtn"><div class="biRadioBtn"></div><h4>Furthest Date</h4></div>
+					<div data-filterbtnlab="Furthest Date" class="biFilterBtnOff sortRadioBtn" id="PremDateLatestSortBtn"><div class="biRadioBtn"></div><h4>Furthest Date</h4></div>
 			</div>	
 		</div>
 		</div>
@@ -1200,7 +1200,7 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 												+sessionType+"'>"
 												+event.session_type+"</div></div><div class='eventHero'><div class='eventOfferTag offerTag"
 												+offerTag+"'>"
-												+event.ticket_offer_desc+"</div><img data-src='https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/heroimages/"
+												+event.ticket_offer_desc+"</div><img data-src='https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/heroimg/"
 												+event.image_link+".png' src='https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/bi_placeholder_hero_304x110.png' alt='"
 												+event.offer_desc+"'></div><div class='eventInfo'><div class='eventName'>"
 												+event.offer_desc+"</div><div class='eventSubDesc'>"
@@ -1514,6 +1514,8 @@ $j(document).on('click', '.sortRadioBtn', function () {
 		});
 //earliest pub
 $j(document).on('click', '#pubDateEarliestSortBtn', function () {
+			let buttonTag = $j(this).data('filterbtnlab')
+			document.getElementById('biPubSelectDateSort').innerHTML = buttonTag//.toString();
 			$j('#biEventStreamGP .eventCard').sort(function (a, b) {
 				return $j(a).data('recsort') - $j(b).data('recsort');
 			})
@@ -1521,6 +1523,8 @@ $j(document).on('click', '#pubDateEarliestSortBtn', function () {
 		});
 //furthers pub		
 		$j(document).on('click', '#pubDateLatestSortBtn', function () {
+			let buttonTag = $j(this).data('filterbtnlab')
+			document.getElementById('biPubSelectDateSort').innerHTML = buttonTag//.toString();
 			$j('#biEventStreamGP .eventCard').sort(function (a, b) {
 				return $j(b).data('recsort') - $j(a).data('recsort');
 			})
@@ -1528,7 +1532,8 @@ $j(document).on('click', '#pubDateEarliestSortBtn', function () {
 		});		
 //earliest prem
 		$j(document).on('click', '#PremDateEarliestSortBtn', function () { 
-
+			let buttonTag = $j(this).data('filterbtnlab')
+			document.getElementById('biPremSelectDateSort').innerHTML = buttonTag//.toString();
 			$j('#biEventStreamPX .eventCard').sort(function (a, b) {
 				return $j(a).data('recsort') - $j(b).data('recsort');
 			})
@@ -1536,7 +1541,8 @@ $j(document).on('click', '#pubDateEarliestSortBtn', function () {
 		});
 //furthest prem	
 		$j(document).on('click', '#PremDateLatestSortBtn', function () {
-
+			let buttonTag = $j(this).data('filterbtnlab')
+			document.getElementById('biPremSelectDateSort').innerHTML = buttonTag//.toString();
 			$j('#biEventStreamPX .eventCard').sort(function (a, b) {
 				return $j(b).data('recsort') - $j(a).data('recsort');
 			})
