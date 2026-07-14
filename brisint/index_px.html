@@ -83,8 +83,8 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	#biFeatEventPips{display:none;}
 	/*Premium Header*/
 	#biPremHeader{width:100%;height:565px;margin:0px auto;padding:1px 0px 0px 0px;position: relative;box-sizing: border-box !important;}
-	
-	#biPremLogo{width:280px;height:auto;padding:10px;margin:190px auto 90px;display:block;z-index:20;position: relative;background:rgba(0,0,0,.5);border-radius:10px;box-sizing: border-box !important;}
+	.biHeaderCover{background:rgba(0,0,0,.3);width:100%;height:100%;display:block;position: absolute;top:0;left:0;right:0;z-index: 19;}	
+	#biPremLogo{width:280px;height:auto;padding:10px;margin:190px auto 90px;display:block;z-index:20;position: relative;/*background:rgba(0,0,0,.5)*/;border-radius:10px;box-sizing: border-box !important;}
 	#biPremLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
 	/*Public Search Bar*/ 
 	#biPubSearchBar{width:100%;max-width:874px;height:116px;margin:20px auto 30px;text-align:center;position: relative;z-index:200;transition:ease-in-out all .4s;box-sizing: border-box !important;}
@@ -424,11 +424,7 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	#biPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:/*url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_public_header_400x660px.png') center center,*/ var(--bi-dblue);background-size:cover;box-sizing: border-box !important}
 	#biPubLogo{width:280px;height:auto;padding:0px;margin:42px auto 42px;display:block;z-index:20;position: relative;}
 	#biPubLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
-	#aoLiveLogo{width:280px;height:auto;padding:0px;margin:42px auto 42px;display:none;z-index:20;position: relative;}
-	#aoLiveLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
-	#aoMcMobLogo{width:280px;height:auto;padding:0px;margin:25px auto 8px;display:block;z-index:20;position: relative;}
-	#aoMcMobLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
-	#aoMcLogo{display:none}
+	
 	#biFeatureEvents{width:100%;height:150px;display:flex;margin:0px 16px;padding:0px 0px 0px 0px;white-space:nowrap;flex-wrap: nowrap;flex-direction: row;align-items: center;justify-content:safe flex-start;column-gap: 8px;position:relative;}
 	#biFeatureScroller{width:auto;height:auto;margin:50px 0px 20px 0px;padding:0px 0px 10px 0px;overflow: hidden;position: relative;display:block;/*transform: translateX(25%);*/;box-sizing: border-box !important;overflow-x: scroll; overflow-y: hidden; white-space: nowrap;position:relative;}
 	#biFeatureScroller::-webkit-scrollbar { background: transparent; /* Chrome/Safari/Webkit */width: 0px;}
@@ -449,7 +445,8 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	.aoFeatPipOff{width:7px;height:7px;background:/*rgba(255,255,255,.5)*/transparent;border:1px solid #efefef;margin:6.5px 4.5px;}	
 	/*Premium Header*/
 	#biPremHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px 1px 0px;position: relative;box-sizing: border-box !important}
-	#biPremLogo{max-width:320px;width:90%;height:auto;padding:10px;margin:110px auto 110px;display:block;z-index:20;position: relative;background:rgba(0,0,0,.5);border-radius:10px;box-sizing: border-box !important;}
+	.biHeaderCover{background:rgba(0,0,0,.3);width:100%;height:100%;display:block;position: absolute;top:0;left:0;right:0;z-index: 19;}	
+	#biPremLogo{max-width:320px;width:90%;height:auto;padding:10px;margin:110px auto 110px;display:block;z-index:20;position: relative;/*background:rgba(0,0,0,.5)*/;border-radius:10px;box-sizing: border-box !important;}
 	#biPremLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
 	#biPremVideo{display:none;}
 	#biPremVideoMob{width:100%;height:100%; position: absolute;top: 0;left:0;right:0;display: flex;justify-content: center;flex-wrap: nowrap; flex-direction: column;align-items: center;}
@@ -764,11 +761,13 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 @media only screen and (min-width: 1440px){	/*1140 to 3840*/
     #biPubHeader{width:100%;height:475px;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_pubHeader_elements_img.svg') no-repeat center center,linear-gradient(124deg,rgba(0, 0, 70, 1) 0%,rgba(0, 0, 70, 0) 30%,rgba(0, 0, 70, 0) 70%, rgba(18, 18, 18, .8) 100%), var(--bi-blue);background-size:1400px auto,cover;box-sizing: border-box !important}
 	#biPremHeader{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_PremExp_Header.png') no-repeat, var(--px-dblue);background-size:cover;background-position: top  center;}	
+
 	}
 /*1000 - 1440*/		
 @media only screen and (min-width: 1000px) and (max-width: 1439.99px){	/*1000 to 1440*/
  	#biPubHeader{width:100%;height:475px;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_pubHeader_elements_img.svg') no-repeat center center,linear-gradient(124deg,rgba(0, 0, 70, 1) 0%,rgba(0, 0, 70, 0) 30%,rgba(0, 0, 70, 0) 70%, rgba(18, 18, 18, .8) 100%), var(--bi-blue);background-size:1260px auto,cover;box-sizing: border-box !important}
-	#biPremHeader{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_PremExp_Header.png') no-repeat, var(--px-dblue);background-size:1920px 564px;background-position: top  center;}	
+	#biPremHeader{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_PremExp_Header.png') no-repeat, var(--px-dblue);background-size:1920px 564px;background-position: top  center;}
+	
 	}
 /*tablet*/		
 @media only screen and (min-width: 450px) and (max-width: 1000px){	/*768 x 1024*/
@@ -959,6 +958,7 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 		<div id="biPremHeader">
 			<!--BI PX Logo-->
 			<div id="biPremLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_PremExp_logo.png" alt="Premium Experiences"></div>
+			<div class="biHeaderCover"></div>
 
 		<!---Search Bar--->
 		<div id="biPremSearchBar">
