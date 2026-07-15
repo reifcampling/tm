@@ -1,1 +1,622 @@
+[% # text to be displayed within <title></title>
+page_title = "NFL Melbourne Game, LA Rams vs San Francisco 49ers | MCG 11 SEPTEMBER 2026 | Buy Tickets, Official Ticketmaster Site" %]
+[% static_has_responsive_header_footer = 1; enable_leader_board = 0; force_disable_nav_paypal_branding = 1;%]
+[% PROCESS "layout/frame/top.tt" %]
+<!--cut for on sale->
+ <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />
+ <!--delete for on sale-->
+<!--libs--->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://s1.ticketm.net/tm/en-au/img/static/jqueryui/jquery-ui.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<link href="https://s1.ticketm.net/tm/en-au/img/static/fonts/averta.css" type="text/css" rel="stylesheet" />
+<link href="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/font/allpro.css" type="text/css" rel="stylesheet" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<style type="text/css">
+	:root{
+		--nfl-red:#DF1818;	
+		--nfl-blue:#013369;
+		--nfl-lgold:rgba(218, 183, 120, 1);
+		--nfl-dgold:rgba(192, 154, 87, 1);
+		--nfl-lsilv:rgba(104,122,143, 1);
+		--nfl-dsilv:rgba(144,158,174, 1);
+		--nfl-lbron:rgba(252, 169, 86, 1);
+		--nfl-dbron:rgba(206,137,70, 1);
+	}
+@media only screen and (min-width: 0px) and (max-width: 999.99px){	
+	.frame{width: 100% !important;background-color: #103cd8 !important} /*FIX FOR TM HEADER CODE*/ 
+	#mainContent {background-color:#103cd8 !important;padding: 0px 0px 0px 0px !important}
+	body{padding:0;}
+}
+@media only screen and (min-width: 1000px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE */ 
+	#mainContent {padding: 0px 0px 0px 0px !important;background-color:#103cd8 !important;}
+	body{background-color: #103cd8;margin:0;}
+}	
+/*desk*/
+#mainContent {background-color:#103cd8 !important;}
+
+@media only screen and (min-width: 1000px){
+#nflContent{width:100%;height:auto;margin:0 auto;display:block;padding:1px;background:#103cd8;position:relative;box-sizing: border-box !important;}
+#nflHeader{width:100%;height:400px;margin:0px auto;padding:0px 0px ;position: relative;box-sizing: border-box !important;}
+
+#nflMenu{width:840px;height:46px;display:flex;flex-wrap:nowrap;align-items: flex-start;align-content: center;justify-content: space-between;margin:0px auto;column-gap: 5px;}
+#nflMenu button{width:280px;height:46px;padding:0px;margin:-23px 0px 0px 0px;outline:0;font-family:"All Pro","Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:900;text-align:center;text-transform:uppercase;cursor:pointer;box-shadow:0px 0px 4px 2px rgba(1, 27, 45, .5);}
+#nflGeneralBtn{background:var(--nfl-red);color:#fff;border:0;}
+#nflHospitalityBtn{background:url('https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_gold_texture.jpg') no-repeat;background-position:top -70px center;background-size:500px auto;color:#011B2D;border:0;}
+#nflKickOffBtn{background:var(--nfl-blue);border:1px solid #fff;color:#fff;}
+
+.nflTitle{width:100%;max-width:1100px;height:auto;display:flex;flex-wrap:nowrap;justify-content: center;align-items: flex-start;margin:0px auto 0px;padding:100px 0px 0px 0px}
+.nflTitle h1{font-family:"All Pro","Averta",sans-serif,fallback;font-size:44px;line-height:28px;font-style:normal;font-weight:900;color:#fff;text-align:center;text-transform:uppercase;padding:0px;margin:0px 40px;display:inline-block;}
+.nflTitle img{width:150px;height:auto;display:inline-block;}
+.nflEventBio{width:100%;max-width:1000px;height:auto;margin:30px auto 50px;box-sizing: border-box !important;}
+.nflEventBio p{font-family:"All Pro","Averta",sans-serif,fallback;font-size:20px;line-height:24px;font-style:normal;font-weight:400;color:#fff;text-align:center;padding:0px 0px;margin:0px 0px;}
+.nflPresaleInfo{width:100%;max-width:600px;height:auto;margin:30px auto 30px;padding:5px;background:#fff;border-radius:5px;box-sizing: border-box !important;}
+.nflPresaleInfo p{font-family:"All Pro","Averta",sans-serif,fallback;font-size:20px;line-height:24px;font-style:normal;font-weight:400;color:#000;text-align:center;padding:0px 0px;margin:0px 0px;}
+
+#nflEvents{width:100%;height:auto;text-align: center;margin:0px auto;}
+#nflEventWrap,#nflSpecialWrap,#nflKickOffWrap {width:100%;max-width:1100px;height:auto;text-align: center;margin:0px auto;display:flex;flex-wrap: wrap;flex-direction: row;align-content: center;justify-content: center;align-items: stretch;column-gap: 30px;row-gap: 30px;position:relative;box-sizing: border-box !important;}
+#nflEventWrap .nflEventCard, #nflSpecialWrap .nflEventCard,#nflKickOffWrap .nflEventCard{width:320px;height:auto;margin:0;padding:0px;background: #103CD8;background-size:contain;border-width:2px ;border-style:solid; border-image: linear-gradient(to bottom, #DF1818 0%, #103CD8 50%) 1;display:flex;flex-wrap: nowrap;flex-direction: column;align-content: center;justify-content: space-between;align-items: center;position:relative;box-sizing: border-box !important;}
+.nflTopWrap{width:100%;height:auto;display:block;margin:0;padding:0;}
+.nflBotWrap{width:100%;height:auto;display:block;margin:0;padding:0;}
+.nflBotWrap a{text-decoration: none;}
+.nflEventHero{width:316px;height:148px;display:block;margin:0;padding:0;}
+.nflEventHero img{width:100%;height:auto;display:block;}
+#nflEventWrap .nflEventTitle, #nflSpecialWrap .nflEventTitle,#nflKickOffWrap .nflEventTitle{width:100%;height:auto;display:block;margin:0;padding:0px 30px;box-sizing: border-box !important;}
+.nflEventTitle h1{font-family:"All Pro","Averta",sans-serif,fallback;font-size:30px;line-height:30px;font-style:normal;font-weight:900;color:#fff;text-align:center;text-transform:uppercase;padding:0px 0px;margin:0px 0px;}
+.nflEventInfo{width:100%;height:auto;display:block;margin:0;padding:15px 30px;box-sizing: border-box !important;}
+.nflEventInfo p{font-family:"All Pro","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:300;color:#fff;text-align:center;padding:0px 0px;margin:0px 0px;}
+#nflEventWrap .nflEventBtn,#nflSpecialWrap .nflEventBtn,#nflKickOffWrap .nflEventBtn{width:calc(100% - 60px);height:auto;background:var(--nfl-red);font-family:"All Pro","Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:900;color:#fff;text-align:center;text-transform:uppercase;padding:10px 0px 12px;margin:15px 30px 30px 30px;}
+#nflEventWrap .nflEventPrice,#nflSpecialWrap .nflEventPrice,#nflKickOffWrap .nflEventPrice{width:auto;height:auto;margin:0px 0px;display:flex;flex-wrap: nowrap;justify-content: center;align-items: center;box-sizing: border-box !important;}
+#nflEventWrap .nflEventPriceLeft,#nflSpecialWrap .nflEventPriceLeft,#nflKickOffWrap .nflEventPriceLeft{width:auto;height:auto;display:inline-block;font-family:"All Pro","Averta",sans-serif,fallback;font-size:14px;line-height:18px;font-style:normal;font-weight:400;color:#fff;text-align:right;padding:3px 10px 5px 30px;background:linear-gradient(90deg,rgba(7, 42, 165, 0) 0%, rgba(7, 42, 165, 1) 20%, rgba(7, 42, 165, 1)100%);}
+#nflEventWrap .nflEventPriceRight,#nflSpecialWrap .nflEventPriceRight,#nflKickOffWrap .nflEventPriceRight{width:auto;height:auto;display:inline-block;font-family:"All Pro","Averta",sans-serif,fallback;font-size:18px;line-height:18px;font-style:normal;font-weight:600;color:#fff;text-align:left;padding:3px 30px 5px 10px;background:linear-gradient(90deg,rgba(5, 34, 140,  1) 0%, rgba(5, 34, 140,  1) 80%, rgba(5, 34, 140, 0) 100%);}
+
+/*hosp*/
+.nflHospWrap{width:100%;max-width:1100px;height:auto;text-align: center;margin:0px auto;display:flex;flex-wrap: wrap;flex-direction: row;align-content: center;justify-content: center;align-items: stretch;column-gap: 30px;row-gap: 30px;position:relative;box-sizing: border-box !important;}
+.nflHospWrap .nflEventCard{width:320px;height:auto;margin:0;padding:0px;background:#011B2D;border-width:2px ;border-style:solid; border-image: linear-gradient(to bottom, #DAB778 0%, #011B2D 50%) 1;display:flex;flex-wrap: nowrap;flex-direction: column;align-content: center;justify-content: space-between;align-items: center;position:relative;box-sizing: border-box !important;}
+.nflHospWrap .nflEventBtn{width:calc(100% - 60px);height:auto;background:url('https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_gold_texture.jpg') no-repeat;background-position:top -70px center;background-size:500px auto;color:#011B2D;font-family:"All Pro","Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:900;text-align:center;text-transform:uppercase;padding:10px 0px 12px;margin:30px 30px 30px 30px;}
+.nflHospWrap .nflEventTitle{width:100%;height:60px;display:flex;align-items: flex-start;justify-content: center;flex-wrap: nowrap;margin:0;padding:0px 30px;box-sizing: border-box !important;}
+.nflHospKey{width:100%;margin:0px auto 30px;padding:1px 0px;font-family:"All Pro","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:500;color:#fff;text-align:center;box-sizing: border-box !important;}
+.nflHospTagWrap{width:calc(100% - 30px);height:24px;margin:15px auto 0px;padding:0px 0px;display:flex;flex-wrap: nowrap;align-content: center;justify-content: center;box-sizing: border-box !important;}
+.nflHospTagPos{width:50%;height:auto;font-family:"All Pro","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:500;color:#fff;text-transform: uppercase;text-align:right;padding:4px 10px 4px 0px;margin:0px 0px;background:linear-gradient(90deg,rgba(218, 183, 120, 0) 0%, var(--nfl-lgold) 20%, var(--nfl-lgold)100%);}
+.nflHospTagType{width:50%;height:auto;font-family:"All Pro","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:500;color:#fff;text-transform: uppercase;text-align:left;padding:4px 0px 4px 10px;margin:0px 0px;background:linear-gradient(90deg,rgba(192, 154, 87, 1) 0%, rgba(192, 154, 87, 1) 80%, rgba(192, 154, 87, 0) 100%);}
+.nflHospWrap .nflEventPrice{width:auto;height:auto;margin:0px 0px;display:flex;flex-wrap: nowrap;justify-content: center;align-items: center;box-sizing: border-box !important;}
+.nflHospWrap .nflEventPriceLeft{width:auto;min-width:100px;height:26px;display:inline-block;font-family:"All Pro","Averta",sans-serif,fallback;font-size:14px;line-height:18px;font-style:normal;font-weight:400;color:#fff;text-align:right;padding:3px 10px 5px 30px;box-sizing: border-box !important;}
+.nflHospWrap .nflEventPriceRight{width:auto;min-width:100px;height:26px;display:inline-block;font-family:"All Pro","Averta",sans-serif,fallback;font-size:18px;line-height:18px;font-style:normal;font-weight:600;color:#fff;text-align:left;padding:3px 30px 5px 10px;box-sizing: border-box !important;}
+.nflGoldDTag{background:linear-gradient(90deg,var(--nfl-dgold) 0%, var(--nfl-dgold) 80%, rgba(192, 154, 87, 0) 100%);}
+.nflGoldLTag{background:linear-gradient(90deg,rgba(218, 183, 120, 0) 0%, var(--nfl-lgold) 20%, var(--nfl-lgold)100%);}
+.nflSilvDTag{background:linear-gradient(90deg,var(--nfl-dsilv) 0%, var(--nfl-dsilv) 80%, rgba(192, 154, 87, 0) 100%);}
+.nflSilvLTag{background:linear-gradient(90deg,rgba(218, 183, 120, 0) 0%, var(--nfl-lsilv) 20%, var(--nfl-lsilv)100%);}
+.nflBronzDTag{background:linear-gradient(90deg,var(--nfl-dbron) 0%, var(--nfl-dbron) 80%, rgba(192, 154, 87, 0) 100%);}
+.nflBronzLTag{background:linear-gradient(90deg,rgba(218, 183, 120, 0) 0%, var(--nfl-lbron) 20%, var(--nfl-lbron)100%);}
+/*FAQS*/
+#FAQsMod{width:100%;max-width:800px;height:auto;margin:50px auto 0px;padding:0px 0px 0px 0px;display:block;position:relative;box-sizing: border-box !important;}
+#nflFAQWrap{width:100%;max-width:800px;height:auto;margin:50px auto 0px;padding:1px 0px 50px 0px;display:block;position:relative;box-sizing: border-box !important;}
+.nflFAQ{width:100%;height:auto;margin:0px auto 10px;padding:0px;display:block;box-sizing: border-box !important;user-select: none;}
+.nflFAQOff .nflA{display:none;}
+.nflFAQOn .nflA{display:block;}
+.nflQ{width:100%;height:auto;margin:0px;padding:10px 40px 10px 20px;background:#164EAC;font-family:"All Pro","Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:600;color:#fff;text-align:left;position:relative;cursor:pointer;box-sizing: border-box !important;}
+.nflA{width:100%;height:auto;margin:0px;padding:10px 20px 10px 20px;background:#15479B;font-family:"All Pro","Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:300;color:#fff;text-align:left;box-sizing: border-box !important;}
+.nflA a{color:#efefef;}
+.nflFaqArrow{width:15px;height:auto;display:block;position:absolute;top:7px;right:20px;transition:ease-in-out .4s all;}
+.nflFaqArrow img{width:100%;height:auto;display:block;}
+.nflRotate{transform: rotate(90deg);}
+/*sponsors*/
+#nflSponsorSpan{width:100%;max-width:1000px;height:auto;margin:0px auto;padding:20px 0px 50px 0px;display:flex;justify-content: center;flex-wrap: nowrap;align-items: center;box-sizing: border-box !important;}
+#nflSponsorSpan img{height:50px;width:auto;}
+}
+/*mobile & tablet */
+@media only screen and (min-width: 0px) and (max-width: 999.99px){	
+#nflContent{width:100%;height:auto;margin:0 auto;display:block;padding:1px;background:#003896;position:relative;box-sizing: border-box !important;}
+#nflHeader{display:block;position: relative;box-sizing: border-box !important;}
+
+#nflMenu{width:100%;max-width:840px;height:46px;display:flex;flex-wrap:wrap;align-items: flex-start;align-content: center;justify-content: space-between;margin:0px auto;position: absolute;bottom:-46px;left:0;right:0;}
+#nflMenu button{width:33%;max-width:280px;height:46px;padding:0px;margin:0px 0px 0px 0px;outline:0;font-family:"All Pro","Averta",sans-serif,fallback;font-size:20px;line-height:20px;font-style:normal;font-weight:900;text-align:center;text-transform:uppercase;cursor:pointer;box-shadow:0px 0px 4px 2px rgba(1, 27, 45, .5);}
+#nflGeneralBtn{background:var(--nfl-red);color:#fff;border:0;}
+#nflHospitalityBtn{background:url('https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_gold_texture.jpg') no-repeat;background-position:top -70px center;background-size:500px auto;color:#011B2D;border:0;}
+#nflKickOffBtn{background:var(--nfl-blue);border:1px solid #fff;color:#fff;}
+
+.nflTitle{width:100%;max-width:1100px;height:auto;display:flex;flex-wrap:nowrap;justify-content: center;align-items: flex-start;margin:0px auto 0px;padding:50px 0px 0px 0px;}
+.nflTitle h1{font-family:"All Pro","Averta",sans-serif,fallback;font-size:34px;line-height:32px;font-style:normal;font-weight:900;color:#fff;text-align:center;text-transform:uppercase;padding:0px;margin:0px 20px;display:inline-block;}
+.nflTitle img{width:75px;height:auto;display:inline-block;}
+.nflEventBio{width:96%;max-width:1000px;height:auto;margin:30px auto 50px;box-sizing: border-box !important;}
+.nflEventBio p{font-family:"All Pro","Averta",sans-serif,fallback;font-size:20px;line-height:24px;font-style:normal;font-weight:400;color:#fff;text-align:center;padding:0px 5px;margin:0px 0px;}
+.nflPresaleInfo{width:96%;max-width:600px;height:auto;margin:30px auto 30px;padding:5px;background:#fff;border-radius:5px;box-sizing: border-box !important;}
+.nflPresaleInfo p{font-family:"All Pro","Averta",sans-serif,fallback;font-size:20px;line-height:24px;font-style:normal;font-weight:400;color:#000;text-align:center;padding:0px 0px;margin:0px 0px;}
+
+#nflEvents{width:100%;max-width:1100px;height:auto;text-align: center;margin:0px auto;}
+#nflEventWrap,#nflSpecialWrap,#nflKickOffWrap{width:100%;max-width:1100px;height:auto;text-align: center;margin:0px auto;display:flex;flex-wrap: wrap;flex-direction: row;align-content: center;justify-content: center;align-items: stretch;column-gap: 30px;row-gap: 30px;position:relative;box-sizing: border-box !important;}
+#nflEventWrap .nflEventCard,#nflSpecialWrap .nflEventCard,#nflKickOffWrap .nflEventCard{width:320px;height:auto;margin:0;padding:0px;background:#103CD8;border-width:2px ;border-style:solid; border-image: linear-gradient(to bottom, #DF1818 0%, #103CD8 50%) 1;display:flex;flex-wrap: nowrap;flex-direction: column;align-content: center;justify-content: space-between;align-items: center;position:relative;box-sizing: border-box !important;box-shadow: 0px 4px 6px 1px rgb(1 27 45 / 30%);}
+.nflTopWrap{width:100%;height:auto;display:block;margin:0;padding:0;}
+.nflBotWrap{width:100%;height:auto;display:block;margin:0;padding:0;}
+.nflBotWrap a{text-decoration: none;}
+.nflEventHero{width:316px;height:148px;display:block;margin:0;padding:0;}
+.nflEventHero img{width:100%;height:auto;display:block;}
+#nflEventWrap .nflEventTitle,#nflSpecialWrap .nflEventTitle,#nflKickOffWrap .nflEventTitle{width:100%;height:auto;display:block;margin:0;padding:0px 30px;box-sizing: border-box !important;}
+.nflEventTitle h1{font-family:"All Pro","Averta",sans-serif,fallback;font-size:30px;line-height:30px;font-style:normal;font-weight:900;color:#fff;text-align:center;text-transform:uppercase;padding:0px 0px;margin:0px 0px;}
+.nflEventInfo{width:100%;height:auto;display:block;margin:0;padding:15px 30px;box-sizing: border-box !important;}
+.nflEventInfo p{font-family:"All Pro","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:300;color:#fff;text-align:center;padding:0px 0px;margin:0px 0px;}
+#nflEventWrap .nflEventBtn,#nflSpecialWrap .nflEventBtn,#nflKickOffWrap .nflEventBtn{width:calc(100% - 60px);height:auto;background:var(--nfl-red);font-family:"All Pro","Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:900;color:#fff;text-align:center;text-transform:uppercase;padding:10px 0px 12px;margin:15px 30px 30px 30px;}
+#nflEventWrap .nflEventPrice,#nflSpecialWrap .nflEventPrice,#nflKickOffWrap .nflEventPrice{width:auto;height:auto;margin:0px 0px;display:flex;flex-wrap: nowrap;justify-content: center;align-items: center;box-sizing: border-box !important;}
+#nflEventWrap .nflEventPriceLeft,#nflSpecialWrap .nflEventPriceLeft,#nflKickOffWrap .nflEventPriceLeft{width:auto;height:auto;display:inline-block;font-family:"All Pro","Averta",sans-serif,fallback;font-size:14px;line-height:18px;font-style:normal;font-weight:400;color:#fff;text-align:right;padding:3px 10px 5px 30px;background:linear-gradient(90deg,rgba(7, 42, 165, 0) 0%, rgba(7, 42, 165, 1) 20%, rgba(7, 42, 165, 1)100%);}
+#nflEventWrap .nflEventPriceRight,#nflSpecialWrap .nflEventPriceRight,#nflKickOffWrap .nflEventPriceRight{width:auto;height:auto;display:inline-block;font-family:"All Pro","Averta",sans-serif,fallback;font-size:18px;line-height:18px;font-style:normal;font-weight:600;color:#fff;text-align:left;padding:3px 30px 5px 10px;background:linear-gradient(90deg,rgba(5, 34, 140,  1) 0%, rgba(5, 34, 140,  1) 80%, rgba(5, 34, 140, 0) 100%);}
+
+/*hosp*/
+.nflHospWrap{width:100%;max-width:1100px;height:auto;text-align: center;margin:0px auto;display:flex;flex-wrap: wrap;flex-direction: row;align-content: center;justify-content: center;align-items: stretch;column-gap: 30px;row-gap: 30px;position:relative;box-sizing: border-box !important;}
+.nflHospWrap .nflEventCard{width:320px;height:auto;margin:0;padding:0px;background:#011B2D;border-width:2px ;border-style:solid; border-image: linear-gradient(to bottom, #DAB778 0%, #011B2D 50%) 1;display:flex;flex-wrap: nowrap;flex-direction: column;align-content: center;justify-content: space-between;align-items: center;position:relative;box-sizing: border-box !important;}
+.nflHospWrap .nflEventBtn{width:calc(100% - 60px);height:auto;background:url('https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_gold_texture.jpg') no-repeat;background-position:top -70px center;background-size:500px auto;color:#011B2D;font-family:"All Pro","Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:900;text-align:center;text-transform:uppercase;padding:10px 0px 12px;margin:30px 30px 30px 30px;}
+.nflHospWrap .nflEventTitle{width:100%;height:60px;display:flex;align-items: flex-start;justify-content: center;flex-wrap: nowrap;margin:0;padding:0px 30px;box-sizing: border-box !important;}
+
+.nflHospKey{width:96%;margin:0px auto 30px;padding:1px 0px;font-family:"All Pro","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:500;color:#fff;text-align:center;box-sizing: border-box !important;}
+.nflHospTagWrap{width:calc(100% - 30px);height:24px;margin:15px auto 0px;padding:0px 0px;display:flex;flex-wrap: nowrap;align-content: center;justify-content: center;box-sizing: border-box !important;}
+.nflHospTagPos{width:50%;height:auto;font-family:"All Pro","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:500;color:#fff;text-transform: uppercase;text-align:right;padding:4px 10px 4px 0px;margin:0px 0px;background:linear-gradient(90deg,rgba(218, 183, 120, 0) 0%, var(--nfl-lgold) 20%, var(--nfl-lgold)100%);}
+.nflHospTagType{width:50%;height:auto;font-family:"All Pro","Averta",sans-serif,fallback;font-size:16px;line-height:16px;font-style:normal;font-weight:500;color:#fff;text-transform: uppercase;text-align:left;padding:4px 0px 4px 10px;margin:0px 0px;background:linear-gradient(90deg,rgba(192, 154, 87, 1) 0%, rgba(192, 154, 87, 1) 80%, rgba(192, 154, 87, 0) 100%);}
+.nflHospWrap .nflEventPrice{width:auto;height:auto;margin:0px 0px;display:flex;flex-wrap: nowrap;justify-content: center;align-items: center;box-sizing: border-box !important;}
+.nflHospWrap .nflEventPriceLeft{width:auto;min-width:100px;height:26px;display:inline-block;font-family:"All Pro","Averta",sans-serif,fallback;font-size:14px;line-height:18px;font-style:normal;font-weight:400;color:#fff;text-align:right;padding:3px 10px 5px 30px;box-sizing: border-box !important;}
+.nflHospWrap .nflEventPriceRight{width:auto;min-width:100px;height:26px;display:inline-block;font-family:"All Pro","Averta",sans-serif,fallback;font-size:18px;line-height:18px;font-style:normal;font-weight:600;color:#fff;text-align:left;padding:3px 30px 5px 10px;box-sizing: border-box !important;}
+.nflGoldDTag{background:linear-gradient(90deg,var(--nfl-dgold) 0%, var(--nfl-dgold) 80%, rgba(192, 154, 87, 0) 100%);}
+.nflGoldLTag{background:linear-gradient(90deg,rgba(218, 183, 120, 0) 0%, var(--nfl-lgold) 20%, var(--nfl-lgold)100%);}
+.nflSilvDTag{background:linear-gradient(90deg,var(--nfl-dsilv) 0%, var(--nfl-dsilv) 80%, rgba(192, 154, 87, 0) 100%);}
+.nflSilvLTag{background:linear-gradient(90deg,rgba(218, 183, 120, 0) 0%, var(--nfl-lsilv) 20%, var(--nfl-lsilv)100%);}
+.nflBronzDTag{background:linear-gradient(90deg,var(--nfl-dbron) 0%, var(--nfl-dbron) 80%, rgba(192, 154, 87, 0) 100%);}
+.nflBronzLTag{background:linear-gradient(90deg,rgba(218, 183, 120, 0) 0%, var(--nfl-lbron) 20%, var(--nfl-lbron)100%);}
+/*FAQS*/
+#FAQsMod{width:100%;max-width:800px;height:auto;margin:50px auto 0px;display:block;position:relative;box-sizing: border-box !important;}
+#nflFAQWrap{width:96%;max-width:800px;height:auto;margin:50px auto 50px;display:block;position:relative;box-sizing: border-box !important;}
+.nflFAQ{width:100%;height:auto;margin:0px auto 10px;padding:0px;display:block;box-sizing: border-box !important;user-select: none;}
+.nflFAQOff .nflA{display:none;}
+.nflFAQOn .nflA{display:block;}
+.nflQ{width:100%;height:auto;margin:0px;padding:10px 40px 10px 20px;background:#164EAC;font-family:"All Pro","Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:600;color:#fff;text-align:left;position:relative;cursor:pointer;box-sizing: border-box !important;}
+.nflA{width:100%;height:auto;margin:0px;padding:10px 20px 10px 20px;background:#15479B;font-family:"All Pro","Averta",sans-serif,fallback;font-size:24px;line-height:24px;font-style:normal;font-weight:300;color:#fff;text-align:left;box-sizing: border-box !important;}
+.nflA a{color:#efefef;}
+.nflFaqArrow{width:15px;height:auto;display:block;position:absolute;top:7px;right:20px;transition:ease-in-out .4s all;}
+.nflFaqArrow img{width:100%;height:auto;display:block;}
+.nflRotate{transform: rotate(90deg);}
+/*sponsors*/
+#nflSponsorSpan{width:100%;max-width:1000px;height:auto;margin:0px auto;padding:20px 0px 50px 0px;display:flex;justify-content: center;flex-wrap: nowrap;align-items: center;box-sizing: border-box !important;}
+#nflSponsorSpan img{height:50px;width:auto;}
+}
+
+/*desktop headers*/
+@media only screen and (min-width: 1000px){
+#nflHeader{width:100%;height:400px;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_players_desk.png') bottom center no-repeat, url("https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_header_bg_desk_2600x600.jpg") no-repeat center center, #003896;background-size:1600px auto,cover, 100% 100%;box-sizing: border-box !important;}
+#nflLogo{width:600px;height:auto;margin:20px auto;display:block;box-sizing: border-box !important;}
+#nflLogo img{width:100%;height:auto;display:block}
+}
+/*mobile & tablet */
+@media only screen and (min-width: 650px) and (max-width: 999.99px){	
+#nflHeader{width:100%;height:auto;margin:0px auto 48px;padding:1px 0px 200px 0px;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_players_mob.png') bottom center no-repeat, url("https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_header_bg_mob_1200x1000.jpg") no-repeat top center, #003896;background-size:auto 230px,cover, 100% 100%,cover, 100% 100%;box-sizing: border-box !important;}
+#nflLogo{width:80%;max-width:600px;height:auto;margin:20px auto;display:block;box-sizing: border-box !important;}
+#nflLogo img{width:100%;height:auto;display:block}
+}
+@media only screen and (min-width: 0px) and (max-width: 649.99px){	
+#nflHeader{width:100%;height:auto;margin:0px auto 48px;padding:1px 0px 200px 0px;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_players_mob.png') bottom center no-repeat, url("https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_header_bg_mob_1200x1000.jpg") no-repeat top center, #003896;background-size:110% auto,cover, 100% 100%;box-sizing: border-box !important;}
+#nflLogo{width:80%;max-width:600px;height:auto;margin:20px auto;display:block;box-sizing: border-box !important;}
+#nflLogo img{width:100%;height:auto;display:block}
+}
+@media only screen and (min-width: 0px) and (max-width: 499.99px){	
+.nflTitle img{display:none;}
+}
+/*backgrounds*/
+@media only screen and (min-width: 2240px) {	
+#nflEvents{background:url("https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_background_desk2.jpg") no-repeat top center, linear-gradient(180deg,rgba(16, 60, 216,  0) 0%, rgba(16, 60, 216,  0) 85%, rgba(1, 27, 45, 1) 100%),#103cd8 ;background-size:100% auto, 100% 100%;}
+}
+@media only screen and (min-width: 1000px) and (max-width: 2239.99px){	
+#nflEvents{background:url("https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_background_desk2.jpg") no-repeat top center, linear-gradient(180deg,rgba(16, 60, 216,  0) 0%, rgba(16, 60, 216,  0) 75%, rgba(1, 27, 45, 1) 100%),#103cd8 ;background-size:100% auto, 100% 100%;}
+}
+@media only screen and (min-width: 600px) and (max-width: 999.99px){	
+#nflEvents{background:url("https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_background_desk2.jpg") no-repeat top center, linear-gradient(180deg,rgba(16, 60, 216,  1) 0%, rgba(16, 60, 216,  1) 50%, rgba(1, 27, 45, 1) 100%),#003896 ;background-size:100% auto, 100% 100%;}
+}
+@media only screen and (min-width: 0px) and (max-width: 599.99px){	
+#nflEvents{background:url("https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_background_mob.jpg") no-repeat top center, linear-gradient(180deg,rgba(16, 60, 216,  1) 0%, rgba(16, 60, 216,  1) 20%, rgba(1, 27, 45, 1) 100%),#003896 ;background-size:100% auto, 100% 100%;}
+}
+</style>
+<!--card backgrounds, FAQs, -->
+<!--main content--->
+<div id="nflContent">
+<div id="nflHeader">
+		<div id="nflLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_header_logos.png" alt="NFL 2026 | MELBOURNE GAME"></div>
+
+		<div id="nflMenu"><button id="nflGeneralBtn" data-menubtn="General">GENERAL ACCESS</button><button id="nflKickOffBtn" data-menubtn="KickOff">NFL KICKOFF FESTIVAL</button><button id="nflHospitalityBtn" data-menubtn="Hospitality">HOSPITALITY PACKAGES</button></div>
+	</div>
+	<!--general event span-->
+	<div id="nflEvents">	
+		<div id="GeneralTicketsMod" class="nflTitle"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_fieldmark_left_img.svg"><h1>GENERAL TICKETS</h1><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_fieldmark_right_img.svg"></div>
+		<!--presale info-->
+		<div class="nflPresaleInfo"><p>Tickets now on sale</p></div>
+		<div class="nflEventBio"><p>Your seat at one of the world's great sporting venues. Choose from allocated seats across the MCG bowl from the lower grandstands to the upper deck or join the action from our dedicated standing zones. Every ticket puts you inside the first ever regular-season NFL game played in Australia. Standing room from $95, General Tickets from $140.</div>
+
+		<!--travel banner-->
+		<div class="nflPromoBanner"></div>
+
+		<div id="nflEventWrap">
+		<!--cards-->
+		<div class="nflEventCard"> 
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_GenAdmin_Hero.png" alt="General ACCESS"></div>
+				<div class="nflEventTitle"><h1>GENERAL ACCESS</h1></div>
+				<div class="nflEventInfo"><p>Allocated seats throughout the MCG from lower grandstands to the upper deck, with accessible seating^ and companion seats available.</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft">TICKETS FROM</div><div class="nflEventPriceRight">$140*</div></div>
+				<a href="https://www.ticketmaster.com.au/event/2500637D0274A92C" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+		<div class="nflEventCard">
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_StandingRoom_Hero.png" alt=""></div>
+				<div class="nflEventTitle"><h1>Standing Room</h1></div>
+				<div class="nflEventInfo"><p>Join the action from the MCG's dedicated standing zones.</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft">TICKETS FROM</div><div class="nflEventPriceRight">$95*</div></div>
+				<a href="https://www.ticketmaster.com.au/event/2500637D0274A92C" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+		<div class="nflEventCard">
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_SportsNet_Hero.png" alt="Ticket + Hotel"></div>
+				<div class="nflEventTitle"><h1>Ticket + Hotel</h1></div>
+				<div class="nflEventInfo"><p>Take care of your ticket and your stay in one booking. Ideal for interstate and international travellers.</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft">PACKAGES FROM</div><div class="nflEventPriceRight">$1149pp*</div></div>
+				<a href="https://sportsnetholidays.com/" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+
+		<!--<div class="nflEventCard">
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="nfl_Accessible_Hero.png" alt="Accessible Seating"></div>
+				<div class="nflEventTitle"><h1>Accessible Seating</h1></div>
+				<div class="nflEventInfo"><p>Accessible seating is available across multiple sections of the MCG, offering wheelchair positions with companion seats and clear sightlines to the field.</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft">TICKETS FROM</div><div class="nflEventPriceRight">$260*</div></div>
+				<a href="" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>-->
+	
+		</div>
+		<!--end public events-->
+		<!--NFL KICKOFF FEST-->
+		<div id="KickOffTicketsMod" class="nflTitle"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_fieldmark_left_img.svg"><h1>NFL KICKOFF FESTIVAL</h1><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_fieldmark_right_img.svg"></div>
+		<div class="nflEventBio"><p></p></div>
+		<div id="nflKickOffWrap">
+
+		<!--cards-->
+		<div class="nflEventCard"> 
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_FanFest_Hero.png" alt="NFL Kickoff Festival "></div>
+				<div class="nflEventTitle"><h1>NFL KICKOFF FESTIVAL </h1></div>
+				<div class="nflEventInfo"><p>The NFL is taking over Melbourne Park from 10-12 September with three days of football, live entertainment, food, NFL Shop, and fan experiences as game week arrives in Melbourne.</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft">Tickets on sale </div><div class="nflEventPriceRight">29th July</div></div>
+				<a href="" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+
+			
+		</div>
+		<!--special events-->
+		<div id="SpecialTicketsMod" class="nflTitle"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_fieldmark_left_img.svg"><h1>SPECIAL EVENTS</h1><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_fieldmark_right_img.svg"></div>
+		<div class="nflEventBio"><p></p></div>
+		<div id="nflSpecialWrap">
+
+		<!--cards-->
+		<div class="nflEventCard"> 
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_LegendsLunch_Hero.png" alt="NFL Legends and Leaders Lunch "></div>
+				<div class="nflEventTitle"><h1>NFL Legends and Leaders Lunch </h1></div>
+				<div class="nflEventInfo"><p>Be part of a defining moment in Melbourne's sporting history at the Official NFL Leaders & Legends Lunch, headlined by Commissioner Roger Goodell.</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft">TICKETS FROM</div><div class="nflEventPriceRight">$412.50*</div></div>
+				<a href="https://www.ticketmaster.com.au/event/250064CC96282A3A" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+
+			
+		</div>
+		<!--end special-->
+		<div id="HospitalityTicketsMod" class="nflTitle"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_fieldmark_left_img.svg"><h1>HOSPITALITY PACKAGES</h1><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_fieldmark_right_img.svg"></div>
+			<div class="nflPresaleInfo"><p>Tickets now on sale</p></div>
+		<div class="nflEventBio"><p>Elevate your game day from the moment you arrive. NFL Melbourne Game hospitality packages combine your premium seat with exceptional food and beverage experiences across some of the MCG's most iconic dining spaces, there is a package built for every group and every occasion. Packages from $1,750 per person.
+		</p></div>
+		<!--presale info-->
+	
+
+		<div class="nflHospKey">Premium Dining &#45; &Agrave; la carte menu | Premium Dining &#45; Restaurant menu | Social Dining &#45; Grazing</div>
+
+
+		<div class="nflHospWrap">
+			<!--<h2>PLATNIUM DINING &#45; A La Carte and Restaurant From $2800pp*</h2>--->
+			<!--Tom Wills Bistro-->	
+			<div class="nflEventCard">
+				<div class="nflTopWrap">
+					<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_TomWills_Hero.png" alt=""></div>
+					<div class="nflEventTitle"><h1>Tom Wills Bistro</h1></div>
+					<div class="nflHospTagWrap"><div class="nflHospTagPos nflGoldLTag">Platinum Dining</div><div class="nflHospTagType nflGoldDTag">Midfield Seat</div></div>
+					<div class="nflEventInfo"><p>Four-course &agrave; la carte dining with stunning field views off the 50-yard line, welcome drink on arrival, reserved table, inclusive beer, wine and soft drinks until 60 mins postgame.
+					</p></div>
+				</div>
+					<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft nflGoldLTag">TICKETS FROM</div><div class="nflEventPriceRight nflGoldDTag">$2800pp*</div></div>
+					<a href="https://www.ticketmaster.com.au/event/2500637D0274A92C" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+				</div>
+			</div>
+		<!--Pavillion-->	
+		<div class="nflEventCard">
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_Pavillion_Hero.png" alt=""></div>
+				<div class="nflEventTitle"><h1>Pavilion</h1></div>
+				<div class="nflHospTagWrap"><div class="nflHospTagPos nflSilvLTag">Premium Dining</div><div class="nflHospTagType nflSilvDTag">Midfield Seat</div></div>
+				<div class="nflEventInfo"><p>Three&#45;course set menu served in the restaurant with a reserved table. Inclusive beer, wine and soft drinks pregame, halftime and 60 mins postgame.</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft nflSilvLTag">TICKETS FROM</div><div class="nflEventPriceRight nflSilvDTag">$2800pp*</div></div>
+				<a href="https://www.ticketmaster.com.au/event/2500637D0274A92C" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+		<!--Keith Miller Room-->	
+		<div class="nflEventCard">
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_KeithMiller_Hero.png" alt=""></div>
+				<div class="nflEventTitle"><h1>Keith Miller Room</h1></div>
+				<div class="nflHospTagWrap"><div class="nflHospTagPos nflSilvLTag">Premium Dining</div><div class="nflHospTagType  nflSilvDTag">Sideline  Seat</div></div>
+				<div class="nflEventInfo"><p>High&#45;end interactive grazing stations with a reserved seat on shared tables. Inclusive beer, wine and soft drinks pregame, halftime and 60 mins postgame.</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft  nflSilvLTag">TICKETS FROM</div><div class="nflEventPriceRight nflSilvDTag">$2500pp*</div></div>
+				<a href="https://www.ticketmaster.com.au/event/2500637D0274A92C" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+		<!--Jack Ryder Room-->	
+		<div class="nflEventCard">
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_JackRyder_Hero.png" alt=""></div>
+				<div class="nflEventTitle"><h1>Jack Ryder Room</h1></div>
+				<div class="nflHospTagWrap"><div class="nflHospTagPos nflSilvLTag">Premium Dining</div><div class="nflHospTagType nflSilvDTag">Corner Seat</div></div>
+				<div class="nflEventInfo"><p>High&#45;end interactive grazing stations with a reserved seat on shared tables. Inclusive beer, wine and soft drinks pregame, halftime and 60 mins postgame.</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft nflSilvLTag">TICKETS FROM</div><div class="nflEventPriceRight nflSilvDTag">$2250pp*</div></div>
+				<a href="https://www.ticketmaster.com.au/event/2500637D0274A92C" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+		<!--Missymu by Shirley-->	
+		<div class="nflEventCard">
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_MissMu_Hero.png" alt=""></div>
+				<div class="nflEventTitle"><h1>Missymu by Shirley</h1></div>
+				<div class="nflHospTagWrap"><div class="nflHospTagPos nflSilvLTag">Premium Dining</div><div class="nflHospTagType nflSilvDTag">Endzone  Seat</div></div>
+				<div class="nflEventInfo"><p>Three&#45;course set menu served in the restaurant with a reserved table. Inclusive beer, wine and soft drinks pregame, halftime and 60 mins postgame.</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft nflSilvLTag">TICKETS FROM</div><div class="nflEventPriceRight nflSilvDTag">$2250pp*</div></div>
+				<a href="https://www.ticketmaster.com.au/event/2500637D0274A92C" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+		<!--1956 Restaurant-->	
+		<div class="nflEventCard">
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_1956_Hero.png" alt=""></div>
+				<div class="nflEventTitle"><h1>1956<br />Restaurant</h1></div>
+				<div class="nflHospTagWrap"><div class="nflHospTagPos nflSilvLTag">Premium Dining</div><div class="nflHospTagType nflSilvDTag">Endzone  Seat</div></div>
+				<div class="nflEventInfo"><p>Three&#45;course set menu served in the restaurant with a reserved table. Inclusive beer, wine and soft drinks pregame, halftime and 60 mins postgame.</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft nflSilvLTag">TICKETS FROM</div><div class="nflEventPriceRight nflSilvDTag">$2250pp*</div></div>
+				<a href="https://www.ticketmaster.com.au/event/2500637D0274A92C" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+		<!--Lindsey Hassett Room-->	
+		<div class="nflEventCard">
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_LindseyHassett_Hero.png" alt=""></div>
+				<div class="nflEventTitle"><h1>Lindsey Hassett Room</h1></div>
+				<div class="nflHospTagWrap"><div class="nflHospTagPos nflSilvLTag">Premium Dining</div><div class="nflHospTagType nflSilvDTag">Endzone Seat</div></div>
+				<div class="nflEventInfo"><p>High&#45;end interactive grazing stations, allocated seat on shared tables, inclusive beer, wine and soft drinks pregame, halftime and 60 mins postgame</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft nflSilvLTag">TICKETS FROM</div><div class="nflEventPriceRight nflSilvDTag">$1950pp*</div></div>
+				<a href="https://www.ticketmaster.com.au/event/2500637D0274A92C" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+
+		<!--Legends Room-->	
+		<div class="nflEventCard">
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_LegendsRoom_Hero.png" alt=""></div>
+				<div class="nflEventTitle"><h1>Legends Room</h1></div>
+				<div class="nflHospTagWrap"><div class="nflHospTagPos nflBronzLTag">Social Dining</div><div class="nflHospTagType nflBronzDTag">Endzone Seat</div></div>
+				<div class="nflEventInfo"><p>Premium shared hospitality with a high&#45;end grazing menu on shared tables. Inclusive beer, wine and soft drinks pregame, halftime and 60 mins postgame.</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft nflBronzLTag">TICKETS FROM</div><div class="nflEventPriceRight nflBronzDTag">$2500pp*</div></div>
+				<a href="https://www.ticketmaster.com.au/event/2500637D0274A92C" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+		<!--Olympic Room-->	
+		<div class="nflEventCard">
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_Olympic_Hero.png" alt=""></div>
+				<div class="nflEventTitle"><h1>Olympic Room</h1></div>
+				<div class="nflHospTagWrap"><div class="nflHospTagPos nflBronzLTag">Social Dining</div><div class="nflHospTagType nflBronzDTag">Midfield Seat</div></div>
+				<div class="nflEventInfo"><p>Premium shared hospitality with a high&#45;end grazing menu on shared tables. Inclusive beer, wine and soft drinks pregame, halftime and 60 mins postgame.</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft nflBronzLTag">TICKETS FROM</div><div class="nflEventPriceRight nflBronzDTag">$2500pp*</div></div>
+				<a href="https://www.ticketmaster.com.au/event/2500637D0274A92C" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+		<!--AFL Dining Room-->	
+		<div class="nflEventCard">
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_AFLDining_Hero.png" alt=""></div>
+				<div class="nflEventTitle"><h1>AFL Dining Room</h1></div>
+				<div class="nflHospTagWrap"><div class="nflHospTagPos nflBronzLTag">Social Dining</div><div class="nflHospTagType nflBronzDTag">Sideline Seat</div></div>
+				<div class="nflEventInfo"><p>Premium shared hospitality with a high&#45;end grazing menu on shared tables. Inclusive beer, wine and soft drinks pregame, halftime and 60 mins postgame.</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft nflBronzLTag">TICKETS FROM</div><div class="nflEventPriceRight nflBronzDTag">$2250pp*</div></div>
+				<a href="https://www.ticketmaster.com.au/event/2500637D0274A92C" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+		<!--Terrace Cafe-->	
+		<div class="nflEventCard">
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_TerraceCafe_Hero.png" alt=""></div>
+				<div class="nflEventTitle"><h1>Terrace Cafe</h1></div>
+				<div class="nflHospTagWrap"><div class="nflHospTagPos nflBronzLTag">Social Dining</div><div class="nflHospTagType nflBronzDTag">Sideline Seat</div></div>
+				<div class="nflEventInfo"><p>Premium shared hospitality with a high&#45;end grazing menu on shared tables. Inclusive beer, wine and soft drinks pregame, halftime and 60 mins postgame.</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft nflBronzLTag">TICKETS FROM</div><div class="nflEventPriceRight nflBronzDTag">$2250pp*</div></div>
+				<a href="https://www.ticketmaster.com.au/event/2500637D0274A92C" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+		<!--Members Dining Room-->	
+		<div class="nflEventCard">
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_MembersRoom_Hero.png" alt=""></div>
+				<div class="nflEventTitle"><h1>Members Dining Room</h1></div>
+				<div class="nflHospTagWrap"><div class="nflHospTagPos  nflBronzLTag">Social Dining</div><div class="nflHospTagType nflBronzDTag">Corner Seat</div></div>
+				<div class="nflEventInfo"><p>Premium shared hospitality with a high&#45;end grazing menu on shared tables. Inclusive beer, wine and soft drinks pregame, halftime and 60 mins postgame.</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft  nflBronzLTag">TICKETS FROM</div><div class="nflEventPriceRight nflBronzDTag">$1950pp*</div></div>
+				<a href="https://www.ticketmaster.com.au/event/2500637D0274A92C" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+		<!--Harrison Room-->	
+		<div class="nflEventCard">
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_Harrison_Hero.png" alt=""></div>
+				<div class="nflEventTitle"><h1>Harrison Room</h1></div>
+				<div class="nflHospTagWrap"><div class="nflHospTagPos nflBronzLTag">Social Dining</div><div class="nflHospTagType nflBronzDTag">Endzone Seat</div></div>
+				<div class="nflEventInfo"><p>Premium shared hospitality with a high&#45;end grazing menu on shared tables. Inclusive beer, wine and soft drinks pregame, halftime and 60 mins postgame. </p></div>
+			</div>
+				<div class="nflBotWrap">
+				<div class="nflEventPrice"><div class="nflEventPriceLeft  nflBronzLTag">TICKETS FROM</div><div class="nflEventPriceRight nflBronzDTag">$1750pp*</div></div>
+				<a href="https://www.ticketmaster.com.au/event/2500637D0274A92C" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+
+			<div class="nflEventBio"><p>*Additional fees and charges may apply at checkout depending on the ticket type or delivery options, all prices are listed in AUD. ^Accessible seating is available, the price includes both the accessible ticket and a companion seat.
+			</p></div>
+		</div>	
+
+		<div id="FAQsMod" class="nflTitle"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_fieldmark_left_img.svg"><h1>FAQ&rsquo;s</h1><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_fieldmark_right_img.svg"></div>
+		<div id="nflFAQWrap">
+
+
+			<div class="nflFAQ nflFAQOff"> 
+				<div class="nflQ">When do tickets general access and hospitality tickets go on sale?<div class="nflFaqArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_arrow_right_img.svg"></div></div>
+				<div class="nflA">Hospitality Public Sale: Tuesday 7 April at 10:00AM AEST, General Access Public Sale: Wednesday 8 April at 10:00AM AEST</div>
+			</div>
+			<div class="nflFAQ  nflFAQOff">
+				<div class="nflQ">Are there travel and accommodation packages?<div class="nflFaqArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_arrow_right_img.svg"></div></div>
+				<div class="nflA">Yes. Ticket + Hotel packages are available through Sportsnet Holidays, combining your game ticket with accommodation. Packages on sale Monday 6 of April at 10:00AM AEST. You can view Sportsnet options here <a href="https://sportsnetholidays.com/" target="_blank">sportsnetholidays.com</a>. If you are a fan travelling from the USA, On Location are the official hospitality partner of the NFL and you can view experience offerings here <a href="https://onlocationexp.com/nfl/nfl-australia-tickets" target="_blank">onlocationexp.com/nfl/nfl-australia-tickets</a></div>
+			</div>
+
+			<div class="nflFAQ  nflFAQOff">
+				<div class="nflQ">What is the difference between General Access and Hospitality?<div class="nflFaqArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_arrow_right_img.svg"></div></div>
+				<div class="nflA">General Access is an allocated seat only. Standing room from $95pp, General Tickets from $140.<br /><br />Hospitality includes a premium seat plus food and beverage at one of the MCG's iconic hospitality venues. Hospitality packages are from $1,750 per person</div>
+			</div>
+
+			<div class="nflFAQ  nflFAQOff">
+				<div class="nflQ">When and where is the game?<div class="nflFaqArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_arrow_right_img.svg"></div></div>
+				<div class="nflA">The NFL 2026 Melbourne Game will be on Friday 11 September 2026 for a 10.35AM kick-off. Melbourne Cricket Ground (MCG)</div>
+			</div>
+
+			<div class="nflFAQ  nflFAQOff">
+				<div class="nflQ">Which teams are playing?<div class="nflFaqArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_arrow_right_img.svg"></div></div>
+				<div class="nflA">San Francisco 49ers v Los Angeles Rams.</div>
+			</div>
+
+			<div class="nflFAQ  nflFAQOff">
+				<div class="nflQ">Are accessible tickets available?<div class="nflFaqArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_arrow_right_img.svg"></div></div>
+				<div class="nflA">Tickets can be purchased through the Ticketmaster Website, or by submitting a request through the <a href="https://help.ticketmaster.com.au/hc/en-au/requests/new?ticket_form_id=41829015896977" target="_blank">Ticketmaster Help Centre</a> following these steps:<br /><br />
+					1.	From the dropdown menu, select <strong>Accessible Bookings</strong> as the topic.<br />
+					2.	Then select <strong>Los Angeles Rams v San Francisco 49ers</strong> as the event name.<br /><br />
+					Alternatively, you can call our <strong>Accessible Booking Line on 1300 446 925</strong>, available Monday to Sunday, 9:00 am - 5:00 pm AEDT. Submitting a request doesn't guarantee a ticket, availability and type of accessible tickets will vary by venue. A Ticketmaster representative will be in touch if further information is required. <br /><br />
+					For more information, visit our help page<a href="https://help.ticketmaster.com.au/hc/en-au/articles/360006452354-Accessible-Tickets-Everything-you-need-to-know" target="_blank">Accessible Tickets</a>: Everything you need to know.</a> 
+					</div>
+			</div>
+
+			<div class="nflFAQ  nflFAQOff">
+				<div class="nflQ">What are the hospitality packages and where can I purchase them?<div class="nflFaqArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_arrow_right_img.svg"></div></div>
+				<div class="nflA">All hospitality packages are sold through Ticketmaster. Each room offers a different game day experience. Review the full hospitality guide on this page: <a href="https://www.ticketmaster.com.au/nfl">ticketmaster.com.au/NFL</a> to find the package that best suits your group.</div>
+			</div>
+
+			<div class="nflFAQ  nflFAQOff">
+				<div class="nflQ">How many tickets can I purchase per transaction?<div class="nflFaqArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_arrow_right_img.svg"></div></div>
+				<div class="nflA">General Access: up to 6 tickets per transaction. Hospitality: up to 10 tickets per transaction.</div>
+			</div>
+
+			<div class="nflFAQ  nflFAQOff">
+				<div class="nflQ">When will I receive my tickets?<div class="nflFaqArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_arrow_right_img.svg"></div></div>
+				<div class="nflA">After completing your purchase, your tickets will be available to manage via your Ticketmaster account. Please note that ticket barcodes will not be displayed until 30 days prior to the game.</div>
+			</div>
+
+			<div class="nflFAQ  nflFAQOff">
+				<div class="nflQ">Who are the official sellers?<div class="nflFaqArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_arrow_right_img.svg"></div></div>
+				<div class="nflA">All tickets are sold exclusively through Ticketmaster <a href="https://www.ticketmaster.com.au/nfl">ticketmaster.com.au/NFL</a>. Ticket + Hotel packages are available through official partner Sportsnet Holidays <a href="https://sportsnetholidays.com/" target="_blank">sportsnetholidays.com</a>. If you are a fan travelling from the USA, On Location are the official hospitality partner of the NFL and you can view experience offerings here <a href="https://onlocationexp.com/nfl/nfl-australia-tickets" target="_blank">onlocationexp.com/nfl/nfl-australia-tickets</a> Only purchase through official channels.</div>
+			</div>
+
+			<div class="nflFAQ  nflFAQOff">
+				<div class="nflQ">Will there be fan events?<div class="nflFaqArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_arrow_right_img.svg"></div></div>
+				<div class="nflA">Fan events and activations surrounding the NFL Melbourne game will be announced at a later date.</div>
+			</div>
+
+			<!--<div class="nflFAQ  nflFAQOff">
+				<div class="nflQ">Is there a presale?<div class="nflFaqArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_arrow_right_img.svg"></div></div>
+				<div class="nflA">Please see Ticketmaster Blog page <a href="https://www.discover.ticketmaster.com.au/"></a> for further info.</div>
+			</div>-->
+
+		</div>
+		<!--sponsor logos-->
+		<div id="nflSponsorSpan"><a href="https://www.visitmelbourne.com/" target="_blank"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/melbourne_logo.svg" alt="Melbourne Every Bit Different"></a></div>
+</div>
+	
+
+</div> 
+
+
+<!--END OF BODY-->
+
+
+<!---js scripts--->
+<script type="text/javascript">
+
+	$j = jQuery.noConflict();
+
+//FAQs
+$j(document).on('click', ".nflFAQOff", function () {
+	$j(this).removeClass('nflFAQOff').addClass('nflFAQOn');
+	$j(this).children(".nflQ").children(".nflFaqArrow").addClass('nflRotate');
+});
+$j(document).on('click', ".nflFAQOn", function () {
+	$j(this).removeClass('nflFAQOn').addClass('nflFAQOff');
+	$j(this).children(".nflQ").children(".nflFaqArrow").removeClass('nflRotate');
+});
+//Menu scroll
+$j("#nflMenu button").click(
+	function(){
+		var menuTarget = $j(this).data('menubtn')		
+			$j('html, body').animate({ scrollTop: $j("#"+ menuTarget +"TicketsMod").offset().top - 20},1000);	 
+		})	
+//sticky menu
+	
+</script>
+
+[% PROCESS "layout/frame/bottom.tt" %]
+
+
 
