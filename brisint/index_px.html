@@ -945,6 +945,13 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 					<br />Adjust your filters to see what else is on offer.</p>
 				<div class="biErrorResetBtn biErrorResetGP">RESET FILTERS</div>
 			</div>
+			<!--error message server connections-->
+			<div id="biConnectError" class="biErrorMessage">
+				<img src="https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_error_background.svg">
+				<h1>Oops, fault!</h1>
+				<p>We're unable to connect to our servers, please try refreshing the page or alternatively view events on the artist page.</p>
+				<a href='https://www.ticketmaster.com.au/artist/2683585' target="_blank"><div class="biErrorResetBtn">View Events</div></a>
+			</div>
 		</div>
       	<div id="biEventStreamGP">
 		<!--public cards-->
@@ -1056,13 +1063,20 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 
 		<!--error span-->
 		<div id="biEventErrorsPX">
-			<!--error message-->
-			<div class="biErrorMessage">
+			<!--error message filter mismatch-->
+			<div id="biFilterErrorPX" class="biErrorMessage">
 				<img src="https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_error_background.svg">
 				<h1>Oops, fault!</h1>
 				<p>Your search didn&rsquo;t land within the lines of our available tickets.
 					<br />Adjust your filters to see what else is on offer.</p>
 				<div class="biErrorResetBtn biErrorResetPX">RESET FILTERS</div>
+			</div>
+			<!--error message server connections-->
+			<div id="biConnectErrorPX" class="biErrorMessage">
+				<img src="https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_error_background.svg">
+				<h1>Oops, fault!</h1>
+				<p>We're unable to connect to our servers, please try refreshing the page or alternatively view events on the artist page.</p>
+				<a href='https://www.ticketmaster.com.au/artist/2683585' target="_blank"><div class="biErrorResetBtn">View Events</div></a>
 			</div>
 		</div>
 		<div id="biEventStreamPX"> 
@@ -1384,8 +1398,8 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 
 				},
 				error: function (xhr, ajaxOptions, thrownError) { //if the retrieve is unsuccessful then we need to handle that somehow
-					let errorMessage = "We're having trouble connecting to our servers. Please try reloading this page.";
-					displayError(errorMessage)
+					 $j("#biConnectError").fadeIn(1000);
+					 $j("#biConnectErrorPX").fadeIn(1000);
 				}
 			})
 		};
@@ -1736,10 +1750,10 @@ let premEventCounter = function(){
 
 	document.getElementById('biPremCount').innerHTML = premEventCountPlus.toString();
 	if((premEventCountPlus == 0)){
-		$j("#biEventErrorsPX .biErrorMessage").fadeIn(500)
+		$j("#biFilterErrorPX").fadeIn(500)
 	}
 	if((premEventCountPlus >= 1)){
-		$j("#biEventErrorsPX .biErrorMessage").fadeOut(0)		
+		$j("#biFilterErrorPX").fadeOut(0)		
 	}
 }
 //exp counters
