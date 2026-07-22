@@ -2704,8 +2704,8 @@ let parseSeshTypeURL = function(){
 	var urlSeshTypeFilter = []
 	urlPubSessionTypeList = urlSessionTypeList;
 	//reset buttons
-	$j('#aoPubSessionMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
-	$j('#aoPubSessionMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
+	$j('#aoPubSessionMenu').children('.sessionFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
+	$j('#aoPubSessionMenu').children('.sessionFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
 	//run through URL vars and match with the race day set
 	$j.grep(aoURLs, function(urlFound){
 		if(jQuery.inArray( urlFound, urlPubSessionTypeList) != -1){
@@ -2729,8 +2729,8 @@ let parseSeshTypePXURL = function(){
 	var urlSeshTypePXFilter = []
 	urlPremSessionTypeList = urlSessionTypeList;
 	//reset buttons
-	$j('#aoPremSessionMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
-	$j('#aoPremSessionMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
+	$j('#aoPremSessionMenu').children('.sessionFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
+	$j('#aoPremSessionMenu').children('.sessionFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
 	//run through URL vars and match with the race day set
 	$j.grep(aoURLs, function(urlFound){
 		if(jQuery.inArray( urlFound, urlPremSessionTypeList) != -1){
