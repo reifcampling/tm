@@ -880,11 +880,11 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 		<div id="biPubSessionMenu">
 			<h1>Select session type</h1>
 			
-			<div data-filterbtnlab="Any" class="biFilterListBtn biFilterBtnOn sessionFilterBtn" id="sessionPubAnyFilterBtn" ><div class="biCheckBoxActive"></div><h4>Show All</h4></div>
-			<div data-filterbtnlab="DAYSESSION" class="biFilterListBtn biFilterBtnOff sessionFilterBtn" id="sessionPubDayFilterBtn" ><div class="biCheckBox"></div><h4>Day Sessions</h4></div>
-			<div data-filterbtnlab="NIGHTSESSION" class="biFilterListBtn biFilterBtnOff sessionFilterBtn" id="sessionPubNightFilterBtn" ><div class="biCheckBox"></div><h4>Night Sessions</h4></div>			
-			<div data-filterbtnlab="ALLDAY" class="biFilterListBtn biFilterBtnOff sessionFilterBtn" id="sessionPubAllDayFilterBtn" ><div class="biCheckBox"></div><h4>All Day</h4></div>
-			<div data-filterbtnlab="biTWILIGHTSESSION" class="biFilterListBtn biFilterBtnOff sessionFilterBtn" id="sessionPubTwilightFilterBtn" ><div class="biCheckBox"></div><h4>Twilight Session</h4></div>
+			<div data-filterbtnlab="Any" class="biFilterListBtn biFilterBtnOn sessionFilterBtn" id="AnyFilterBtn" ><div class="biCheckBoxActive"></div><h4>Show All</h4></div>
+			<div data-filterbtnlab="DAYSESSION" class="biFilterListBtn biFilterBtnOff sessionFilterBtn" id="DAYSESSIONFilterBtn" ><div class="biCheckBox"></div><h4>Day Sessions</h4></div>
+			<div data-filterbtnlab="NIGHTSESSION" class="biFilterListBtn biFilterBtnOff sessionFilterBtn" id="NIGHTSESSIONFilterBtn" ><div class="biCheckBox"></div><h4>Night Sessions</h4></div>			
+			<div data-filterbtnlab="ALLDAY" class="biFilterListBtn biFilterBtnOff sessionFilterBtn" id="ALLDAYFilterBtn" ><div class="biCheckBox"></div><h4>All Day</h4></div>
+			<div data-filterbtnlab="TWILIGHTSESSION" class="biFilterListBtn biFilterBtnOff sessionFilterBtn" id="TWILIGHTSESSIONFilterBtn" ><div class="biCheckBox"></div><h4>Twilight Session</h4></div>
 		</div>	
 		</div>
 		<div class="biSearchVertDiv"></div>
@@ -1003,9 +1003,9 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 			<!--session menu--->
 			<div id="biPremSessionMenu">
 				<h1>Select session type</h1>
-				<div data-filterbtnlab="Any" class="biFilterListBtn biFilterBtnOn sessionFilterBtn" id="sessionPremAnyFilterBtn" ><div class="biCheckBoxActive"></div><h4>Show All</h4></div>
-				<div data-filterbtnlab="DAYSESSION" class="biFilterListBtn biFilterBtnOff sessionFilterBtn" id="sessionPremDayFilterBtn" ><div class="biCheckBox"></div><h4>Day Sessions</h4></div>
-				<div data-filterbtnlab="NIGHTSESSION" class="biFilterListBtn biFilterBtnOff sessionFilterBtn" id="sessionPremNightFilterBtn" ><div class="biCheckBox"></div><h4>Night Sessions</h4></div>			
+				<div data-filterbtnlab="Any" class="biFilterListBtn biFilterBtnOn sessionFilterBtn" id="AnyFilterBtnPX" ><div class="biCheckBoxActive"></div><h4>Show All</h4></div>
+				<div data-filterbtnlab="DAYSESSION" class="biFilterListBtn biFilterBtnOff sessionFilterBtn" id="DAYSESSIONFilterBtnPX" ><div class="biCheckBox"></div><h4>Day Sessions</h4></div>
+				<div data-filterbtnlab="NIGHTSESSION" class="biFilterListBtn biFilterBtnOff sessionFilterBtn" id="NIGHTSESSIONFilterBtnPX" ><div class="biCheckBox"></div><h4>Night Sessions</h4></div>			
 				<!--<div data-filterbtnlab="ALLDAY" class="biFilterListBtn biFilterBtnOff sessionFilterBtn" id="sessionPremAllDayFilterBtn" ><div class="biCheckBox"></div><h4>All Day</h4></div>-->
 			</div>	
 			</div>
@@ -2561,8 +2561,8 @@ let parseSeshTypeURL = function(){
 	var urlSeshTypeFilter = []
 	urlPubSessionTypeList = urlSessionTypeList;
 	//reset buttons
-	$j('#biPubSessionMenu').children('.ticketFilterBtn').removeClass('biFilterBtnOn').addClass('biFilterBtnOff') 
-	$j('#biPubSessionMenu').children('.ticketFilterBtn').children('.biCheckBoxActive').removeClass('biCheckBoxActive').addClass('biCheckBox')
+	$j('#biPubSessionMenu').children('.sessionFilterBtn').removeClass('biFilterBtnOn').addClass('biFilterBtnOff') 
+	$j('#biPubSessionMenu').children('.sessionFilterBtn').children('.biCheckBoxActive').removeClass('biCheckBoxActive').addClass('biCheckBox')
 	//run through URL vars and match with the race day set
 	$j.grep(aoURLs, function(urlFound){
 		if(jQuery.inArray( urlFound, urlPubSessionTypeList) != -1){
@@ -2586,8 +2586,8 @@ let parseSeshTypePXURL = function(){
 	var urlSeshTypePXFilter = []
 	urlPremSessionTypeList = urlSessionTypeList;
 	//reset buttons
-	$j('#biPremSessionMenu').children('.ticketFilterBtn').removeClass('biFilterBtnOn').addClass('biFilterBtnOff') 
-	$j('#biPremSessionMenu').children('.ticketFilterBtn').children('.biCheckBoxActive').removeClass('biCheckBoxActive').addClass('biCheckBox')
+	$j('#biPremSessionMenu').children('.sessionFilterBtn').removeClass('biFilterBtnOn').addClass('biFilterBtnOff') 
+	$j('#biPremSessionMenu').children('.sessionFilterBtn').children('.biCheckBoxActive').removeClass('biCheckBoxActive').addClass('biCheckBox')
 	//run through URL vars and match with the race day set
 	$j.grep(aoURLs, function(urlFound){
 		if(jQuery.inArray( urlFound, urlPremSessionTypeList) != -1){
@@ -2598,8 +2598,8 @@ let parseSeshTypePXURL = function(){
 			urlSeshTypePXFilter.push(urlSeshTypePXFound);
 			
 			//activate checkbox
-			$j("#"+urlSeshTypePXFound+"FilterBtn").removeClass('biFilterBtnOff').addClass('biFilterBtnOn');
-			$j("#"+urlSeshTypePXFound+"FilterBtn").children('.biCheckBox').removeClass('biCheckBox').addClass('biCheckBoxActive');
+			$j("#"+urlSeshTypePXFound+"FilterBtnPX").removeClass('biFilterBtnOff').addClass('biFilterBtnOn');
+			$j("#"+urlSeshTypePXFound+"FilterBtnPX").children('.biCheckBox').removeClass('biCheckBox').addClass('biCheckBoxActive');
 	}
 	});
 	//clear array, push found filter array into global array
