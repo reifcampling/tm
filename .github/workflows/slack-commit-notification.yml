@@ -1,0 +1,81 @@
+name: Notify Slack of commits
+
+on:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  notify-slack:
+    runs-on: ubuntu-latest
+
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      COMMITS_JSON: ${{ toJson(github.event.commits) }}
+
+    steps:
+      - name: Send one Slack message per commit
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ -z "${SLACK_WEBHOOK_URL:-}" ]; then
+            echo "SLACK_WEBHOOK_URL is not configured."
+            exit 1
+          fi
+
+          commit_count="$(jq 'length' <<< "$COMMITS_JSON")"
+
+          if [ "$commit_count" -eq 0 ]; then
+            echo "No commits found in this push event."
+            exit 0
+          fi
+
+          jq -c '.[]' <<< "$COMMITS_JSON" | while read -r commit; do
+            commit_id="$(jq -r '.id' <<< "$commit")"
+            short_id="${commit_id:0:7}"
+            commit_url="$(jq -r '.url' <<< "$commit")"
+            commit_message="$(jq -r '.message | split("\n")[0]' <<< "$commit")"
+            commit_author="$(jq -r '.author.username // .author.name // "Unknown author"' <<< "$commit")"
+
+            payload="$(
+              jq -n \
+                --arg repo "$GITHUB_REPOSITORY" \
+                --arg branch "$GITHUB_REF_NAME" \
+                --arg actor "$GITHUB_ACTOR" \
+                --arg author "$commit_author" \
+                --arg sha "$short_id" \
+                --arg url "$commit_url" \
+                --arg message "$commit_message" \
+                '{
+                  text: ("New commit in " + $repo),
+                  blocks: [
+                    {
+                      type: "section",
+                      text: {
+                        type: "mrkdwn",
+                        text: (
+                          "*New commit pushed*\n" +
+                          "*Repository:* `" + $repo + "`\n" +
+                          "*Branch:* `" + $branch + "`\n" +
+                          "*Commit:* <" + $url + "|" + $sha + ">\n" +
+                          "*Author:* " + $author + "\n" +
+                          "*Message:* " + $message + "\n" +
+                          "*Pushed by:* " + $actor
+                        )
+                      }
+                    }
+                  ]
+                }'
+            )"
+
+            curl \
+              --fail-with-body \
+              --silent \
+              --show-error \
+              --request POST \
+              --header "Content-Type: application/json" \
+              --data "$payload" \
+              "$SLACK_WEBHOOK_URL"
+          done
