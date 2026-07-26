@@ -2,8 +2,8 @@
 page_title = "NFL Melbourne Game, LA Rams vs San Francisco 49ers | MCG 11 SEPTEMBER 2026 | Buy Tickets, Official Ticketmaster Site" %]
 [% static_has_responsive_header_footer = 1; enable_leader_board = 0; force_disable_nav_paypal_branding = 1;%]
 [% PROCESS "layout/frame/top.tt" %]
-<!--cut for on sale----->
- <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />
+<!--cut for on sale-
+ <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />---->
  <!--delete for on sale-->
 <!--libs--->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -55,6 +55,7 @@ page_title = "NFL Melbourne Game, LA Rams vs San Francisco 49ers | MCG 11 SEPTEM
 .nflTitle img{width:150px;height:auto;display:inline-block;}
 .nflEventBio{width:100%;max-width:1000px;height:auto;margin:30px auto 50px;box-sizing: border-box !important;}
 .nflEventBio p{font-family:"All Pro","Averta",sans-serif,fallback;font-size:20px;line-height:24px;font-style:normal;font-weight:400;color:#fff;text-align:center;padding:0px 0px;margin:0px 0px;}
+.nflEventBio p a{text-decoration: underline;color:#fff;}
 .nflPresaleInfo{width:100%;max-width:600px;height:auto;margin:30px auto 30px;padding:5px;background:#fff;border-radius:5px;box-sizing: border-box !important;}
 .nflPresaleInfo p{font-family:"All Pro","Averta",sans-serif,fallback;font-size:20px;line-height:24px;font-style:normal;font-weight:400;color:#000;text-align:center;padding:0px 0px;margin:0px 0px;}
 
@@ -62,6 +63,7 @@ page_title = "NFL Melbourne Game, LA Rams vs San Francisco 49ers | MCG 11 SEPTEM
 #nflEventWrap,#nflSpecialWrap,#nflKickOffWrap {width:100%;max-width:1100px;height:auto;text-align: center;margin:0px auto;display:flex;flex-wrap: wrap;flex-direction: row;align-content: center;justify-content: center;align-items: stretch;column-gap: 30px;row-gap: 30px;position:relative;box-sizing: border-box !important;}
 #nflEventWrap .nflEventCard, #nflSpecialWrap .nflEventCard,#nflKickOffWrap .nflEventCard{width:320px;height:auto;margin:0;padding:0px;background: #103CD8;background-size:contain;border-width:2px ;border-style:solid; border-image: linear-gradient(to bottom, #DF1818 0%, #103CD8 50%) 1;display:flex;flex-wrap: nowrap;flex-direction: column;align-content: center;justify-content: space-between;align-items: center;position:relative;box-sizing: border-box !important;}
 .nflTopWrap{width:100%;height:auto;display:block;margin:0;padding:0;}
+#nflKickOffWrap .nflEventCard .nflEventTitle h1{margin:10px 0px 0px 0px !important;}
 .nflBotWrap{width:100%;height:auto;display:block;margin:0;padding:0;}
 .nflBotWrap a{text-decoration: none;}
 .nflEventHero{width:316px;height:148px;display:block;margin:0;padding:0;}
@@ -125,12 +127,14 @@ page_title = "NFL Melbourne Game, LA Rams vs San Francisco 49ers | MCG 11 SEPTEM
 .nflTitle img{width:75px;height:auto;display:inline-block;}
 .nflEventBio{width:96%;max-width:1000px;height:auto;margin:30px auto 50px;box-sizing: border-box !important;}
 .nflEventBio p{font-family:"All Pro","Averta",sans-serif,fallback;font-size:20px;line-height:24px;font-style:normal;font-weight:400;color:#fff;text-align:center;padding:0px 5px;margin:0px 0px;}
+.nflEventBio p a{text-decoration: underline;color:#fff;}
 .nflPresaleInfo{width:96%;max-width:600px;height:auto;margin:30px auto 30px;padding:5px;background:#fff;border-radius:5px;box-sizing: border-box !important;}
 .nflPresaleInfo p{font-family:"All Pro","Averta",sans-serif,fallback;font-size:20px;line-height:24px;font-style:normal;font-weight:400;color:#000;text-align:center;padding:0px 0px;margin:0px 0px;}
 
 #nflEvents{width:100%;max-width:1100px;height:auto;text-align: center;margin:0px auto;}
 #nflEventWrap,#nflSpecialWrap,#nflKickOffWrap{width:100%;max-width:1100px;height:auto;text-align: center;margin:0px auto;display:flex;flex-wrap: wrap;flex-direction: row;align-content: center;justify-content: center;align-items: stretch;column-gap: 30px;row-gap: 30px;position:relative;box-sizing: border-box !important;}
 #nflEventWrap .nflEventCard,#nflSpecialWrap .nflEventCard,#nflKickOffWrap .nflEventCard{width:320px;height:auto;margin:0;padding:0px;background:#103CD8;border-width:2px ;border-style:solid; border-image: linear-gradient(to bottom, #DF1818 0%, #103CD8 50%) 1;display:flex;flex-wrap: nowrap;flex-direction: column;align-content: center;justify-content: space-between;align-items: center;position:relative;box-sizing: border-box !important;box-shadow: 0px 4px 6px 1px rgb(1 27 45 / 30%);}
+#nflKickOffWrap .nflEventCard .nflEventTitle h1{margin:10px 0px 0px 0px !important;}
 .nflTopWrap{width:100%;height:auto;display:block;margin:0;padding:0;}
 .nflBotWrap{width:100%;height:auto;display:block;margin:0;padding:0;}
 .nflBotWrap a{text-decoration: none;}
@@ -285,22 +289,65 @@ page_title = "NFL Melbourne Game, LA Rams vs San Francisco 49ers | MCG 11 SEPTEM
 		<!--end public events-->
 		<!--NFL KICKOFF FEST-->
 		<div id="KickOffTicketsMod" class="nflTitle"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_fieldmark_left_img.svg"><h1>NFL KICKOFF FESTIVAL</h1><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_fieldmark_right_img.svg"></div>
-		<div class="nflEventBio"><p></p></div>
+		<div class="nflEventBio"><p>Get Ready! From September 10-12 the NFL Kickoff Festival presented by Amex is taking over Melbourne Park for three days of football, live entertainment, food, NFL Shop, and fan experiences as game week arrives in Melbourne.</a>
+				</p></div>
+		<div class="nflPresaleInfo"><p>Amex Presale, 10am (AEST) Monday 27th July* <br />While supplies last. T&Cs apply.<br />General Sale, 11am (AEST) Wednesday 29th July.</p></div>
 		<div id="nflKickOffWrap">
 
-		<!--cards-->
+		<!--announce card
 		<div class="nflEventCard"> 
 			<div class="nflTopWrap">
-				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_FanKickOff_Hero.png" alt="NFL Kickoff Festival "></div>
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_KickOffAmex_Hero.png" alt="NFL Kickoff Festival "></div>
 				<div class="nflEventTitle"><h1>NFL KICKOFF FESTIVAL </h1></div>
-				<div class="nflEventInfo"><p>The NFL is taking over Melbourne Park from 10-12 September with three days of football, live entertainment, food, NFL Shop, and fan experiences as game week arrives in Melbourne.</p></div>
+				<div class="nflEventInfo"><p>Get Ready! From September 10-12 the NFL Kickoff Festival presented by American Express is taking over Melbourne Park for three days of football, live entertainment, food, NFL Shop, and fan experiences as game week arrives in Melbourne
+				<br /><br /><strong>Amex Presale*:</strong> Monday 27 July, 10:00 AM AEST *T&Cs apply
+				<br /><br /><strong>General Public On Sale:</strong> Wednesday 29 July, 11:00 AM AEST
+				</p></div>
 			</div>
 				<div class="nflBotWrap">
-				<div class="nflEventPrice"><div class="nflEventPriceLeft">Tickets on sale </div><div class="nflEventPriceRight">29th July</div></div>
-				<a href="" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+				<!--<div class="nflEventPrice"><div class="nflEventPriceLeft">Tickets on sale </div><div class="nflEventPriceRight">29th July</div></div>--
+				<a href="https://www.nfl.com/news/nfl-kickoff-festival-is-coming-to-melbourne" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>-->
+		<!--thu card-->
+		<div class="nflEventCard"> 
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_kickoff_day1_Hero.jpg" alt="NFL Kickoff Festival "></div>
+				<div class="nflEventTitle"><h1>NFL KICKOFF FESTIVAL </h1></div>
+				<div class="nflEventInfo"><p>Kick off the 2026 NFL season with the official Patriots vs Seahawks watch party, NFL Live featuring Commissioner Roger Goodell and special guests, plus NFL activations, entertainment, food and more.
+				</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<!--<div class="nflEventPrice"><div class="nflEventPriceLeft">Tickets on sale </div><div class="nflEventPriceRight">29th July</div></div>--->
+				<a href="https://www.ticketmaster.com.au/nfl-kickoff-festival-melbourne-10-09-2026/event/250064F196183F63" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
 			</div>
 		</div>
-
+		<!--fri card-->
+		<div class="nflEventCard"> 
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_kickoff_day2_Hero.jpg" alt="NFL Kickoff Festival "></div>
+				<div class="nflEventTitle"><h1>NFL KICKOFF FESTIVAL </h1></div>
+				<div class="nflEventInfo"><p>Melbourne Game Day arrives. Be part of the official watch party for the NFL Melbourne game, followed by a post-game party, live entertainment, NFL experiences and more.
+				</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<!--<div class="nflEventPrice"><div class="nflEventPriceLeft">Tickets on sale </div><div class="nflEventPriceRight">29th July</div></div>--->
+				<a href="https://www.ticketmaster.com.au/nfl-kickoff-festival-melbourne-11-09-2026/event/250064F1AA5B599F" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
+		<!--sat card-->
+		<div class="nflEventCard"> 
+			<div class="nflTopWrap">
+				<div class="nflEventHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/nfl/2026/nfl_kickoff_day3_Hero.jpg" alt="NFL Kickoff Festival "></div>
+				<div class="nflEventTitle"><h1>NFL KICKOFF FESTIVAL </h1></div>
+				<div class="nflEventInfo"><p>Keep game week going with the NFL Flag Creator Cup, music and entertainment, Family friendly activities, food and more across the final day of the festival.
+				</p></div>
+			</div>
+				<div class="nflBotWrap">
+				<!--<div class="nflEventPrice"><div class="nflEventPriceLeft">Tickets on sale </div><div class="nflEventPriceRight">29th July</div></div>-->
+				<a href="https://www.ticketmaster.com.au/nfl-kickoff-festival-melbourne-12-09-2026/event/250064F1AA5B59A3" target="_blank"><div class="nflEventBtn">LEARN MORE</div></a>
+			</div>
+		</div>
 			
 		</div>
 		<!--special events-->
