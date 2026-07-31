@@ -1946,8 +1946,8 @@ let resetGP = function(){
 	$j('#biPubTicketMenu').children('.ticketFilterBtn').children('.biCheckBoxActive').removeClass('biCheckBoxActive').addClass('biCheckBox')
 	$j('#pub-date-list-div').children('.biCalWrap').children('.datelistActive').removeClass('datelistActive').addClass('datelist')
 	//turn on any buttons
-	$j('#sessionPubAnyFilterBtn').removeClass('biFilterBtnOff').addClass('biFilterBtnOn')
-	$j('#sessionPubAnyFilterBtn').children('.biCheckBox').removeClass('biCheckBox').addClass('biCheckBoxActive')	
+	$j('#AnyFilterBtn').removeClass('biFilterBtnOff').addClass('biFilterBtnOn')
+	$j('#AnyFilterBtn').children('.biCheckBox').removeClass('biCheckBox').addClass('biCheckBoxActive')	
 	$j('#ticketPubAnyFilterBtn').removeClass('biFilterBtnOff').addClass('biFilterBtnOn')
 	$j('#ticketPubAnyFilterBtn').children('.biCheckBox').removeClass('biCheckBox').addClass('biCheckBoxActive')	
 	pubCardsToDisplay()
@@ -1975,8 +1975,8 @@ let resetPX = function(){
 	$j('#biPremTicketMenu').children('.ticketFilterBtn').children('.biCheckBoxActive').removeClass('biCheckBoxActive').addClass('biCheckBox')
 	$j('#prem-date-list-div').children('.biCalWrap').children('.datelistActive').removeClass('datelistActive').addClass('datelist')
 	//turn on any buttons
-	$j('#sessionPremAnyFilterBtn').removeClass('biFilterBtnOff').addClass('biFilterBtnOn')
-	$j('#sessionPremAnyFilterBtn').children('.biCheckBox').removeClass('biCheckBox').addClass('biCheckBoxActive')	
+	$j('#AnyFilterBtnPX').removeClass('biFilterBtnOff').addClass('biFilterBtnOn')
+	$j('#AnyFilterBtnPX').children('.biCheckBox').removeClass('biCheckBox').addClass('biCheckBoxActive')	
 	$j('#ticketPremAnyFilterBtn').removeClass('biFilterBtnOff').addClass('biFilterBtnOn')
 	$j('#ticketPremAnyFilterBtn').children('.biCheckBox').removeClass('biCheckBox').addClass('biCheckBoxActive')	
 	premCardsToDisplay()
@@ -2138,8 +2138,8 @@ var toggleSession = $j(this).data('filterbtnlab');
 		} else {
 			//select
 			fullPubSessionTypeList.push(toggleSession)	
-			$j(this).siblings("#sessionPubAnyFilterBtn").children(".biCheckBoxActive").removeClass("biCheckBoxActive").addClass("biCheckBox");
-			$j(this).siblings("#sessionPubAnyFilterBtn").removeClass("biFilterBtnOn").addClass("biFilterBtnOff");
+			$j(this).siblings("#AnyFilterBtn").children(".biCheckBoxActive").removeClass("biCheckBoxActive").addClass("biCheckBox");
+			$j(this).siblings("#AnyFilterBtn").removeClass("biFilterBtnOn").addClass("biFilterBtnOff");
 		}					
 		pubCardsToDisplay();
 		pubSessionCounter();
@@ -2150,7 +2150,7 @@ var toggleSession = $j(this).data('filterbtnlab');
 $j(document).on('click', "#biPubSessionMenu .sessionFilterBtn", function () {
 			let btnTarget = $j(this).data('filterbtnlab');
 			//select
-				if(btnTarget == "Any" && $j("#sessionPubAnyFilterBtn").hasClass('biFilterBtnOff')){
+				if(btnTarget == "Any" && $j("#AnyFilterBtn").hasClass('biFilterBtnOff')){
 					$j(this).siblings(".sessionFilterBtn").removeClass('biFilterBtnOn').addClass('biFilterBtnOff');
 					$j(this).siblings(".sessionFilterBtn").children('.biCheckBoxActive').removeClass('biCheckBoxActive').addClass('biCheckBox');
 					fullPubSessionTypeList.length = 0;
@@ -2158,8 +2158,8 @@ $j(document).on('click', "#biPubSessionMenu .sessionFilterBtn", function () {
 				}
 				//unselect
 				else if ((btnTarget != "Any")){
-					$j("#sessionPubAnyFilterBtn").removeClass('biFilterBtnOn').addClass('biFilterBtnOff');
-					$j("#sessionPubAnyFilterBtn").children('.biCheckBox').removeClass('biCheckBox').addClass('biCheckBox');
+					$j("#AnyFilterBtn").removeClass('biFilterBtnOn').addClass('biFilterBtnOff');
+					$j("#AnyFilterBtn").children('.biCheckBox').removeClass('biCheckBox').addClass('biCheckBox');
 
 					fullPubSessionTypeList = jQuery.grep(fullPubSessionTypeList, function(value) {
 						return value != "Any";
@@ -2251,8 +2251,8 @@ var toggleSession = $j(this).data('filterbtnlab');
 		} else {
 			//select
 			fullPremSessionTypeList.push(toggleSession)	
-			$j(this).siblings("#sessionPremAnyFilterBtn").children(".biCheckBoxActive").removeClass("biCheckBoxActive").addClass("biCheckBox");
-			$j(this).siblings("#sessionPremAnyFilterBtn").removeClass("biFilterBtnOn").addClass("biFilterBtnOff");
+			$j(this).siblings("#AnyFilterBtnPX").children(".biCheckBoxActive").removeClass("biCheckBoxActive").addClass("biCheckBox");
+			$j(this).siblings("#AnyFilterBtnPX").removeClass("biFilterBtnOn").addClass("biFilterBtnOff");
 		}					
 		premCardsToDisplay();
 		premSessionCounter();
@@ -2261,7 +2261,7 @@ var toggleSession = $j(this).data('filterbtnlab');
 $j(document).on('click', "#biPremSessionMenu .sessionFilterBtn", function () {
 			let btnTarget = $j(this).data('filterbtnlab');
 			//select
-				if(btnTarget == "Any" && $j("#sessionPremAnyFilterBtn").hasClass('biFilterBtnOff')){
+				if(btnTarget == "Any" && $j("#AnyFilterBtnPX").hasClass('biFilterBtnOff')){
 					$j(this).siblings(".sessionFilterBtn").removeClass('biFilterBtnOn').addClass('biFilterBtnOff');
 					$j(this).siblings(".sessionFilterBtn").children('.biCheckBoxActive').removeClass('biCheckBoxActive').addClass('biCheckBox');
 					fullPremSessionTypeList.length = 0;
@@ -2269,8 +2269,8 @@ $j(document).on('click', "#biPremSessionMenu .sessionFilterBtn", function () {
 				}
 				//unselect
 				else if ((btnTarget != "Any")){
-					$j("#sessionPremAnyFilterBtn").removeClass('biFilterBtnOn').addClass('biFilterBtnOff');
-					$j("#sessionPremAnyFilterBtn").children('.biCheckBox').removeClass('biCheckBox').addClass('biCheckBox');
+					$j("#AnyFilterBtnPX").removeClass('biFilterBtnOn').addClass('biFilterBtnOff');
+					$j("#AnyFilterBtnPX").children('.biCheckBox').removeClass('biCheckBox').addClass('biCheckBox');
 
 					fullPremSessionTypeList = jQuery.grep(fullPremSessionTypeList, function(value) {
 						return value != "Any";
