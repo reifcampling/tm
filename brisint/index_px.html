@@ -1115,8 +1115,8 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 	experienceTypeList = [];
 	fullPubExperienceTypeList = [];
 	fullPremExperienceTypeList = [];	
-	sessionTypeList = ["DAYSESSION","NIGHTSESSION","ALLDAY", "ANY"];
-	sessionTypePremList = ["DAYSESSION","NIGHTSESSION","ANY"];//"ALLDAY",
+	sessionTypeList = ["DAYSESSION","NIGHTSESSION","ALLDAY", "Any"];
+	sessionTypePremList = ["DAYSESSION","NIGHTSESSION","Any"];//"ALLDAY",
 	urlSessionTypeList = ["DAYSESSIONURL","NIGHTSESSIONURL","ALLDAYURL", "ANYURL"];
 	dateNameList = ["jan03","jan04","jan05","jan06","jan07","jan08","jan09","jan10"];
 	fullPubSessionTypeList = [];
@@ -2013,8 +2013,8 @@ let resetPX = function(){
 	$j('#biPremTicketMenu').children('.ticketFilterBtn').children('.biCheckBoxActive').removeClass('biCheckBoxActive').addClass('biCheckBox')
 	$j('#prem-date-list-div').children('.biCalWrap').children('.datelistActive').removeClass('datelistActive').addClass('datelist')
 	//turn on any buttons
-	$j('#sessionPremAnyFilterBtn').removeClass('biFilterBtnOff').addClass('biFilterBtnOn')
-	$j('#sessionPremAnyFilterBtn').children('.biCheckBox').removeClass('biCheckBox').addClass('biCheckBoxActive')	
+	$j('#AnyFilterBtnPX').removeClass('biFilterBtnOff').addClass('biFilterBtnOn')
+	$j('#AnyFilterBtnPX').children('.biCheckBox').removeClass('biCheckBox').addClass('biCheckBoxActive')	
 	$j('#ticketPremAnyFilterBtn').removeClass('biFilterBtnOff').addClass('biFilterBtnOn')
 	$j('#ticketPremAnyFilterBtn').children('.biCheckBox').removeClass('biCheckBox').addClass('biCheckBoxActive')	
 	premCardsToDisplay()
@@ -2344,8 +2344,8 @@ var toggleSession = $j(this).data('filterbtnlab');
 		} else {
 			//select
 			fullPremSessionTypeList.push(toggleSession)	
-			$j(this).siblings("#sessionPremAnyFilterBtn").children(".biCheckBoxActive").removeClass("biCheckBoxActive").addClass("biCheckBox");
-			$j(this).siblings("#sessionPremAnyFilterBtn").removeClass("biFilterBtnOn").addClass("biFilterBtnOff");
+			$j(this).siblings("#AnyFilterBtnPX").children(".biCheckBoxActive").removeClass("biCheckBoxActive").addClass("biCheckBox");
+			$j(this).siblings("#AnyFilterBtnPX").removeClass("biFilterBtnOn").addClass("biFilterBtnOff");
 		}					
 		premCardsToDisplay();
 		premSessionCounter();
@@ -2354,7 +2354,7 @@ var toggleSession = $j(this).data('filterbtnlab');
 $j(document).on('click', "#biPremSessionMenu .sessionFilterBtn", function () {
 			let btnTarget = $j(this).data('filterbtnlab');
 			//select
-				if(btnTarget == "Any" && $j("#sessionPremAnyFilterBtn").hasClass('biFilterBtnOff')){
+				if(btnTarget == "Any" && $j("#AnyFilterBtnPX").hasClass('biFilterBtnOff')){
 					$j(this).siblings(".sessionFilterBtn").removeClass('biFilterBtnOn').addClass('biFilterBtnOff');
 					$j(this).siblings(".sessionFilterBtn").children('.biCheckBoxActive').removeClass('biCheckBoxActive').addClass('biCheckBox');
 					fullPremSessionTypeList.length = 0;
@@ -2362,8 +2362,8 @@ $j(document).on('click', "#biPremSessionMenu .sessionFilterBtn", function () {
 				}
 				//unselect
 				else if ((btnTarget != "Any")){
-					$j("#sessionPremAnyFilterBtn").removeClass('biFilterBtnOn').addClass('biFilterBtnOff');
-					$j("#sessionPremAnyFilterBtn").children('.biCheckBox').removeClass('biCheckBox').addClass('biCheckBox');
+					$j("#AnyFilterBtnPX").removeClass('biFilterBtnOn').addClass('biFilterBtnOff');
+					$j("#AnyFilterBtnPX").children('.biCheckBox').removeClass('biCheckBox').addClass('biCheckBox');
 
 					fullPremSessionTypeList = jQuery.grep(fullPremSessionTypeList, function(value) {
 						return value != "Any";
