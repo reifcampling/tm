@@ -1218,9 +1218,9 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 	experienceTypeList = [];
 	fullPubExperienceTypeList = [];
 	fullPremExperienceTypeList = [];	
-	sessionTypeList = ["DAYSESSION","NIGHTSESSION","ALLDAY", "ANY"];
-	sessionTypePremList = ["DAYSESSION","NIGHTSESSION","ANY"];//"ALLDAY",
-	urlSessionTypeList = ["DAYSESSIONURL","NIGHTSESSIONURL","ALLDAYURL", "ANYURL"];
+	sessionTypeList = ["DAYSESSION","NIGHTSESSION","ALLDAY", "Any"];
+	sessionTypePremList = ["DAYSESSION","NIGHTSESSION","Any"];//"ALLDAY",
+	urlSessionTypeList = ["DAYSESSIONURL","NIGHTSESSIONURL","ALLDAYURL", "AnyURL"];
 	dateNameList = ["jan11","jan12","jan13","jan14","jan15","jan16","jan17","jan18","jan19","jan20","jan21","jan22","jan23","jan24","jan25","jan26","jan27","jan28","jan29","jan30","jan31"];
 	fullPubSessionTypeList = [];
 	fullPremSessionTypeList = [];	
@@ -2098,8 +2098,8 @@ let resetGP = function(){
 	$j('#aoPubTicketMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
 	$j('#pub-date-list-div').children('.aoCalWrap').children('.datelistActive').removeClass('datelistActive').addClass('datelist')
 	//turn on any buttons
-	$j('#sessionPubAnyFilterBtn').removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn')
-	$j('#sessionPubAnyFilterBtn').children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive')	
+	$j('#aoPubSessionMenu #AnyFilterBtn').removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn')
+	$j('#aoPubSessionMenu #AnyFilterBtn').children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive')	
 	$j('#ticketPubAnyFilterBtn').removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn')
 	$j('#ticketPubAnyFilterBtn').children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive')	
 	pubCardsToDisplay()
@@ -2127,8 +2127,8 @@ let resetPX = function(){
 	$j('#aoPremTicketMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
 	$j('#prem-date-list-div').children('.aoCalWrap').children('.datelistActive').removeClass('datelistActive').addClass('datelist')
 	//turn on any buttons
-	$j('#sessionPremAnyFilterBtn').removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn')
-	$j('#sessionPremAnyFilterBtn').children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive')	
+	$j('#aoPremSessionMenu #AnyFilterBtnPX').removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn')
+	$j('#aoPremSessionMenu #AnyFilterBtnPX').children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive')	
 	$j('#ticketPremAnyFilterBtn').removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn')
 	$j('#ticketPremAnyFilterBtn').children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive')	
 	premCardsToDisplay()
@@ -2343,8 +2343,8 @@ var toggleSession = $j(this).data('filterbtnlab');
 		} else {
 			//select
 			fullPubSessionTypeList.push(toggleSession)	
-			$j(this).siblings("#sessionPubAnyFilterBtn").children(".aoCheckBoxActive").removeClass("aoCheckBoxActive").addClass("aoCheckBox");
-			$j(this).siblings("#sessionPubAnyFilterBtn").removeClass("aoFilterBtnOn").addClass("aoFilterBtnOff");
+			$j(this).siblings("#aoPubSelectSession #AnyFilterBtn").children(".aoCheckBoxActive").removeClass("aoCheckBoxActive").addClass("aoCheckBox");
+			$j(this).siblings("#aoPubSelectSession #AnyFilterBtn").removeClass("aoFilterBtnOn").addClass("aoFilterBtnOff");
 		}					
 		pubCardsToDisplay();
 		pubSessionCounter();
@@ -2354,13 +2354,13 @@ var toggleSession = $j(this).data('filterbtnlab');
 //pub sessions any/all
 $j(document).on('click', ".sessionFilterBtn", function () {
 
-				console.log(sessionTypeList)
+				//console.log(sessionTypeList)
 		});
 //pub sessions any/all
 $j(document).on('click', "#aoPubSessionMenu .sessionFilterBtn", function () {
 			let btnTarget = $j(this).data('filterbtnlab');
 			//select
-				if(btnTarget == "Any" && $j("#sessionPubAnyFilterBtn").hasClass('aoFilterBtnOff')){
+				if(btnTarget == "Any" && $j("#aoPubSelectSession #AnyFilterBtn").hasClass('aoFilterBtnOff')){
 					$j(this).siblings(".sessionFilterBtn").removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff');
 					$j(this).siblings(".sessionFilterBtn").children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox');
 					fullPubSessionTypeList.length = 0;
@@ -2368,8 +2368,8 @@ $j(document).on('click', "#aoPubSessionMenu .sessionFilterBtn", function () {
 				}
 				//unselect
 				else if ((btnTarget != "Any")){
-					$j("#sessionPubAnyFilterBtn").removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff');
-					$j("#sessionPubAnyFilterBtn").children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBox');
+					$j("#aoPubSelectSession #AnyFilterBtn").removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff');
+					$j("#aoPubSelectSession #AnyFilterBtn").children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBox');
 
 					fullPubSessionTypeList = jQuery.grep(fullPubSessionTypeList, function(value) {
 						return value != "Any";
@@ -2461,8 +2461,8 @@ var toggleSession = $j(this).data('filterbtnlab');
 		} else {
 			//select
 			fullPremSessionTypeList.push(toggleSession)	
-			$j(this).siblings("#sessionPremAnyFilterBtn").children(".aoCheckBoxActive").removeClass("aoCheckBoxActive").addClass("aoCheckBox");
-			$j(this).siblings("#sessionPremAnyFilterBtn").removeClass("aoFilterBtnOn").addClass("aoFilterBtnOff");
+			$j(this).siblings("#aoPremSelectSession #AnyFilterBtnPX").children(".aoCheckBoxActive").removeClass("aoCheckBoxActive").addClass("aoCheckBox");
+			$j(this).siblings("#aoPremSelectSession #AnyFilterBtnPX").removeClass("aoFilterBtnOn").addClass("aoFilterBtnOff");
 		}					
 		premCardsToDisplay();
 		premSessionCounter();
@@ -2471,7 +2471,7 @@ var toggleSession = $j(this).data('filterbtnlab');
 $j(document).on('click', "#aoPremSessionMenu .sessionFilterBtn", function () {
 			let btnTarget = $j(this).data('filterbtnlab');
 			//select
-				if(btnTarget == "Any" && $j("#sessionPremAnyFilterBtn").hasClass('aoFilterBtnOff')){
+				if(btnTarget == "Any" && $j("#aoPremSelectSession #AnyFilterBtnPX").hasClass('aoFilterBtnOff')){
 					$j(this).siblings(".sessionFilterBtn").removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff');
 					$j(this).siblings(".sessionFilterBtn").children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox');
 					fullPremSessionTypeList.length = 0;
@@ -2479,8 +2479,8 @@ $j(document).on('click', "#aoPremSessionMenu .sessionFilterBtn", function () {
 				}
 				//unselect
 				else if ((btnTarget != "Any")){
-					$j("#sessionPremAnyFilterBtn").removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff');
-					$j("#sessionPremAnyFilterBtn").children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBox');
+					$j("#aoPremSelectSession #AnyFilterBtnPX").removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff');
+					$j("#aoPremSelectSession #AnyFilterBtnPX").children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBox');
 
 					fullPremSessionTypeList = jQuery.grep(fullPremSessionTypeList, function(value) {
 						return value != "Any";
