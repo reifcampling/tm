@@ -1,5 +1,5 @@
 [% # text to be displayed within <title></title>
-page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Australian Open | AO Tennis | Buy Tickets, Hospitality and Dining. Official Ticketmaster Site" %]
+page_title = "Australian Open 2027, 11 - 31 JAN | AO Reserve | Melbourne | Australian Open | AO Tennis | Buy Tickets, Hospitality and Dining. Official Ticketmaster Site" %]
 [% static_has_responsive_header_footer = 1; enable_leader_board = 0; force_disable_nav_paypal_branding = 1;%]
 [% PROCESS "layout/frame/top.tt" %]
 <!--cut for on sale--
@@ -66,9 +66,8 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 	#aoPubLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
 	#aoLiveLogo{width:320px;height:auto;padding:0px;margin:80px auto 80px;display:none;z-index:20;position: relative;}
 	#aoLiveLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
-	#aoMcLogo{width:620px;height:auto;padding:0px;margin:35px auto 25px;display:block;z-index:20;position: relative;}
-	#aoMcLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
-	#aoMcMobLogo{display:none;}
+	.hideDesk{display:none !important;}
+
 	#aoFeatureEvents{width:100%;height:150px;display:flex;margin:0px auto;white-space:nowrap;flex-wrap: nowrap;flex-direction: row;align-items:safe center;justify-content:safe center;column-gap: 16px;position:relative;}
 	.aoFeatureEvent{width:235px;height:150px;background:var(--ao-bblue);border-radius:4px;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;position:relative;overflow:hidden;cursor:pointer;user-drag: none; -webkit-user-drag: none;user-select: none;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
 	.aoFeatureEvent a{user-drag: none; -webkit-user-drag: none;user-select: none;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
@@ -234,7 +233,7 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 	#aoPubDateSort, #aoPremDateSort{width:auto;height:auto;padding:0px 16px 0px 0px;margin:0px 0px 0px 0px;display:inline-block;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_down_arrow_mgrey_img.svg') no-repeat;background-size:8px 8px;background-position:right 0px top 2px;cursor:pointer;position:relative;}
 	#aoPubDateSort p, #aoPremDateSort p{font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:500;color:var(--ao-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;}
 	#aoPubSelectDateSort, #aoPremSelectDateSort{font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:var(--ao-mgrey);display:inline-block;}
-	#aoPubDateMenu, #aoPremDateMenu{width:calc(100%);height:auto;margin:0px auto;padding:4px 16px 16px 16px;background:#fff;box-sizing: border-box !important;position: absolute;bottom:-90px;right:0px;text-align:left;border-radius:4px;display:none;z-index:100;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;cursor:default;}
+	#aoPubDateMenu, #aoPremDateMenu{width:calc(100%);min-width:170px;height:auto;margin:0px auto;padding:4px 16px 16px 16px;background:#fff;box-sizing: border-box !important;position: absolute;bottom:-90px;right:0px;text-align:left;border-radius:4px;display:none;z-index:100;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;cursor:default;}
 
 	#aoSelectDiscovery{background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2024/ao_sort_ico.svg") no-repeat, #efefef;background-size:25px 25px;background-position:20px 20px;margin:10px auto;border:1px solid red;box-sizing: border-box !important ;}
 	#aoSelectDiscovery:hover{background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2024/ao_sort_ico.svg") no-repeat, var(--ao-grey);background-size:25px 25px;background-position:20px 20px;}	
@@ -433,22 +432,27 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 	#tmfooter p{font-family:'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:400;color:#fff;padding:2px;margin:2px auto;display:block;}
 	#aoMasterCardLogo{width:100%;height:auto;position: relative;display:block;font-family:'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:400;color:#fff;padding:2px;margin:2px auto;}
 	#aoMasterCardLogo img{width:25px;height:auto;margin:0px;padding:0px 5px 5px 0px;vertical-align: top}
+	/*presale banner*/
+	.aoPresaleBanner{width:100%;max-width:874px;height:280px;margin:20px auto;padding:20px;border-radius:10px;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/ao27_summerSignUp_desk.jpg') top center no-repeat;background-size:cover;display:flex;flex-wrap: wrap;justify-content: flex-end;align-items: center;flex-direction: column;box-sizing: border-box !important;}
+	.aoPresaleBanner a{text-decoration: none;}
+	.aoPresaleBanner h1{font-family:"poppins","Averta", sans-serif, fallback;font-size:30px;line-height:30px;font-weight:700;text-align:center;display:block;color:#fff;padding:0px 0px 20px 0px;margin:0px;}	
+	.aoPresaleBtn{width:214px;height:auto;background:#fff;font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:400;text-align:center;color:var(--ao-blue);padding:10px 0px 8px;margin:0px;border-radius:3px;display:block;cursor:pointer;box-sizing: border-box !important;} 
 }
 	
 /*mobile & tablet */
 @media only screen and (min-width: 0px) and (max-width: 999.9px){	
 	/*AO CONTENT*/
 	#aoContent, #aoPubWrapper, #aoPremWrapper{width:100%; position:relative;text-align: center; background:#f9f9f9;margin:0px auto 0px ;display:block;box-sizing: border-box !important;overflow-x:hidden;}
-	#aoPubWrapper{display:none;}
+	#aoPremWrapper{display:none;}
 	/*Public Header    */
 	#aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:/*url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_public_header_400x660px.png') center center,*/ var(--ao-dblue);background-size:cover;box-sizing: border-box !important}
 	#aoPubLogo{width:280px;height:auto;padding:0px;margin:42px auto 42px;display:block;z-index:20;position: relative;}
 	#aoPubLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
 	#aoLiveLogo{width:280px;height:auto;padding:0px;margin:42px auto 42px;display:none;z-index:20;position: relative;}
 	#aoLiveLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
-	#aoMcMobLogo{width:280px;height:auto;padding:0px;margin:25px auto 8px;display:block;z-index:20;position: relative;}
-	#aoMcMobLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
-	#aoMcLogo{display:none}
+
+	.hideMob{display:none !important;}
+
 	#aoFeatureEvents{width:100%;height:150px;display:flex;margin:0px 16px;padding:0px 0px 0px 0px;white-space:nowrap;flex-wrap: nowrap;flex-direction: row;align-items: center;justify-content:safe flex-start;column-gap: 8px;position:relative;}
 	#aoFeatureScroller{width:auto;height:auto;margin:50px 0px 20px 0px;padding:0px 0px 10px 0px;overflow: hidden;position: relative;display:block;/*transform: translateX(25%);*/;box-sizing: border-box !important;overflow-x: scroll; overflow-y: hidden; white-space: nowrap;position:relative;}
 	#aoFeatureScroller::-webkit-scrollbar { background: transparent; /* Chrome/Safari/Webkit */width: 0px;}
@@ -494,7 +498,7 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 	#aoPremSearchBar{width:100%;max-width:358px;height:auto;margin:0px auto 16px;padding:0px 16px;text-align:center;position: relative;z-index:200;transition:ease-in-out all .4s;box-sizing: border-box !important;}
 	#aoPremSearchBar .aoTabWrap{width:100%;max-width:358px;height:60px;margin:0px;position: relative;z-index:200;box-sizing: border-box !important;text-align: left;user-select: none;}
 	#aoPremSearchBar .aoTabWrap .aoClearMenuBtn{display:none;}
-	#aoPremSearchBar .aoPubTab{height:60px;max-width:92px;display:none;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--px-blue);padding:22px 14px;margin:0px 8px 0px 0px;border-radius:4px 4px 0px 0px;background:#263968;box-sizing: border-box !important;cursor:pointer;position: relative;vertical-align: top;box-sizing: border-box !important;border-top:3px var(--px-blue) solid;}
+	#aoPremSearchBar .aoPubTab{height:60px;max-width:92px;display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--px-blue);padding:22px 14px;margin:0px 8px 0px 0px;border-radius:4px 4px 0px 0px;background:#263968;box-sizing: border-box !important;cursor:pointer;position: relative;vertical-align: top;box-sizing: border-box !important;border-top:3px var(--px-blue) solid;}
 	#aoPremSearchBar .aoPremTab{height:60px;width:calc(100% - 100px);display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--px-dblue);padding:25px 14px;margin:0px 0px 0px 0px;border-radius:4px 4px 0px 0px;background:var(--px-blue);position: relative;vertical-align: top;box-sizing: border-box !important;}
 	#aoPremSearchBar .aoPremTab span{height:20px;background:var(--px-dblue);font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:900;color:var(--px-blue);padding:5px 10px;border-radius:12px;top:20px;right:8px;position:absolute;box-sizing: border-box !important;}
 	#aoPremSearchBar .aoSearchBarWrap{width:100%;max-width:358px;height:auto;margin:0px;text-align:left;background:var(--px-dblue);border-radius:0px 0px 4px 4px;border:2px solid var(--px-blue);box-sizing: border-box !important;display: flex;flex-direction: column;flex-wrap: wrap;justify-content: center;align-content: center; align-items: flex-start}
@@ -648,7 +652,7 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 	#aoEventStreamGP .eventCard{width:100%;max-width:304px;height:auto;background:#fff;box-shadow:0px 1px 8px rgba(0,0,0,.25);padding:0px 0px 0px;border-radius:2px;box-sizing: border-box !important;user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;}
 	#aoEventStreamGP .eventDateWrap{width:100%;height:31px;margin:0px;padding:0px;font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:800;display:block;text-align: left;text-transform:uppercase;flex-grow: 0;}
 	#aoEventStreamGP .eventDate{padding:10px 16px 10px 16px;height:31px;color:var(--ao-blue);display:inline-block;box-sizing: border-box !important;font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:800;text-align: left;text-transform:uppercase;}
-	#aoEventStreamGP .eventSession{height:31px;padding:10px 16px 10px 32px;display:inline-block;border-radius:10px 0px 0px 0px;text-align: right;box-sizing: border-box !important;font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:800;text-transform:uppercase;}
+	#aoEventStreamGP .eventSession{height:31px;padding:10px 16px 10px 32px;display:inline-block;border-radius:10px 0px 0px 0px;text-align: right;float:right;box-sizing: border-box !important;font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:800;text-transform:uppercase;}
 	#aoEventStreamGP .aoALLDAY{color:#fff;background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_alldaySession_ico.svg") no-repeat, var(--ao-bblue);background-size:12px 12px;background-position:top 10px left 15px;}
 	#aoEventStreamGP .aoDAYSESSION{color:var(--ao-dgrey);background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_daySession_ico.svg") no-repeat, var(--ao-gold);background-size:12px 12px;background-position:top 10px left 15px;}
 	#aoEventStreamGP .aoNIGHTSESSION{color:#fff;background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_nightSession_ico.svg") no-repeat, var(--ao-dblue);background-size:12px 12px;background-position:top 10px left 15px;}
@@ -805,24 +809,41 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 	#aoMasterCardLogo{width:100%;height:auto;position: relative;display:block;font-family:'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:400;color:#fff;padding:2px;margin:2px auto;}
 	#aoMasterCardLogo img{width:25px;height:auto;margin:0px;padding:0px 5px 5px 0px;vertical-align: top}
 
+	/*presale banner*/
+	.aoPresaleBanner{width:100%;max-width:500px;min-height:280px;height:auto;margin:20px auto;padding:20px;border-radius:10px;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/ao27_summerSignUp_mob.jpg') top center no-repeat, #0278ff;background-size:100% auto;display:flex;flex-wrap: wrap;justify-content: flex-end;align-items: center;flex-direction: column;box-sizing: border-box !important;}
+	.aoPresaleBanner a{text-decoration: none;}
+	.aoPresaleBanner h1{font-family:"poppins","Averta", sans-serif, fallback;font-size:30px;line-height:30px;font-weight:700;text-align:center;display:block;color:#fff;padding:0px 0px 20px 0px;margin:92% auto 0px}	
+	.aoPresaleBtn{width:214px;height:auto;background:#fff;font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:400;text-align:center;color:var(--ao-blue);padding:10px 0px 8px;margin:0px;border-radius:3px;display:block;cursor:pointer;box-sizing: border-box !important;} 
 
 }
 /*headers aoPubBrand*/
 /*1440 - 4k*/	
 @media only screen and (min-width: 1440px){	/*1140 to 3840*/
-    #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_Onsale_Header_1920x564px.jpg') top center no-repeat, var(--ao-dblue);background-size:cover;box-sizing: border-box !important}			
+	/* partner presale #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_partner_bg_1920x564px.png') top center no-repeat, #0078ff;background-size:cover;box-sizing: border-box !important} */
+    #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_presale_bg_1920x564px.png') top center no-repeat, #0078ff;background-size:cover;box-sizing: border-box !important}
+	#aoPresaleLogo{width:360px;height:auto;padding:0px;margin:30px auto 30px;display:block;z-index:20;position: relative;}
+	#aoPresaleLogo img{width:360px;height:auto;padding:0px;margin:auto;display:block}
 	}
 /*1000 - 1440*/		
 @media only screen and (min-width: 1000px) and (max-width: 1439.99px){	/*1000 to 1440*/
- 	#aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_Onsale_Header_1400x564px.jpg') top center no-repeat, var(--ao-dblue);background-size:cover;box-sizing: border-box !important}	
+ 	/* partner presale #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_partner_bg_1400x564px.png') top center no-repeat, #0078ff;background-size:cover;box-sizing: border-box !important}*/
+ 	#aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_presale_bg_1400x564px.png') top center no-repeat, #0078ff;background-size:cover;box-sizing: border-box !important}
+	#aoPresaleLogo{width:360px;height:auto;padding:0px;margin:30px auto 30px;display:block;z-index:20;position: relative;}
+	#aoPresaleLogo img{width:360px;height:auto;padding:0px;margin:auto;display:block}
 	}
 /*tablet*/		
-@media only screen and (min-width: 450px) and (max-width: 1000px){	/*768 x 1024*/
-    #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_Onsale_Header_768x700px.jpg') bottom center no-repeat, var(--ao-dblue);background-size:cover;box-sizing: border-box !important}	
+@media only screen and (min-width: 550px) and (max-width: 1000px){	/*768 x 1024*/
+    /* partner presale #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_partner_bg_768x700px.png') top center no-repeat, #0078ff;background-size:cover;box-sizing: border-box !important}	*/
+    #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_presale_bg_768x700px.png') top center no-repeat, #0078ff;background-size:cover;box-sizing: border-box !important}	
+	#aoPresaleLogo{width:360px;height:auto;padding:0px;margin:30px auto 30px;display:block;z-index:20;position: relative;}
+	#aoPresaleLogo img{width:360px;height:auto;padding:0px;margin:auto;display:block}
 	}
 /*mobile*/		
-@media only screen and (min-width:0px) and (max-width: 449.99px){	/*400 x 650*/
-    #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_Onsale_Header_400x660px.jpg') bottom center no-repeat, var(--ao-dblue);background-size:cover;box-sizing: border-box !important}	
+@media only screen and (min-width:0px) and (max-width: 549.99px){	/*400 x 650*/
+   /* partner presale #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_partner_bg_400x660px.png') top center no-repeat, #0078ff;background-size:cover;box-sizing: border-box !important}	*/
+	#aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_presale_bg_400x660px.png') bottom center no-repeat, #0179ff;background-size:100% auto;box-sizing: border-box !important}	
+	#aoPresaleLogo{width:360px;height:auto;padding:0px;margin:30px auto 30px;display:block;z-index:20;position: relative;}
+	#aoPresaleLogo img{width:360px;height:auto;padding:0px;margin:auto;display:block}
 	}
 /*mobile cal*/
 @media only screen and (min-width:250px ) and (max-width: 375px){	
@@ -872,8 +893,34 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 <div id="aoPubWrapper">
 	
 	<div id="aoPubHeader">
-		<div id="aoPubLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_hitsDiff_Logo_desktop.png" alt="AO Hits Different"></div>
-		<div id="aoLiveLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_aoLive_Logo_desktop.png" alt="AO LIVE"></div>
+		<!--ONSALE--
+		<div id="aoPubLogo" class="hideDesk"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027" alt="AO Hits Different"></div>
+		<div id="aoPubLogo" class="hideMob"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/" alt="AO Hits Different"></div>
+		<!--PRESALE-->
+		<div id="aoPresaleLogo" class="hideDesk"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_accessible_presale_logo.png" alt="AO Hits Different"></div>
+		<div id="aoPresaleLogo" class="hideMob"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_accessible_presale_logo.png" alt="AO Hits Different"></div>
+
+		<!--ANZ--
+		<div id="aoPresaleLogo" class="hideDesk"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_anz_logo_mob.png" alt=""></div>
+		<div id="aoPresaleLogo" class="hideMob"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_anz_logo_desk.png" alt=""></div>
+		<!--CHUBB--
+		<div id="aoPresaleLogo" class="hideDesk"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_chubb_logo_mob.png" alt=""></div>
+		<div id="aoPresaleLogo" class="hideMob"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_chubb_logo_desk.png" alt=""></div>
+		<!--KIA--
+		<div id="aoPresaleLogo" class="hideDesk"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_kia_logo_mob.png" alt=""></div>
+		<div id="aoPresaleLogo" class="hideMob"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_kia_logo_desk.png" alt=""></div>
+		<!--MARRIOT--
+		<div id="aoPresaleLogo" class="hideDesk"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_marriot_logo_mob.png" alt=""></div>
+		<div id="aoPresaleLogo" class="hideMob"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_marriot_logo_desk.png" alt=""></div>
+		<!--MASTERCARD--
+		<div id="aoPresaleLogo" class="hideDesk"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_mastercard_logo_mob.png" alt=""></div>
+		<div id="aoPresaleLogo" class="hideMob"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_mastercard_logo_desk.png" alt=""></div>
+		<!--MASTERCARD STAFF--
+		<div id="aoPresaleLogo" class="hideDesk"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_mcstaff_logo_mob.png" alt=""></div>
+		<div id="aoPresaleLogo" class="hideMob"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_mcstaff_presale_logo_desk.png" alt=""></div>
+		<!----->
+
+		<!--<div id="aoLiveLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_aoLive_Logo_desktop.png" alt="AO LIVE"></div>-->
 
 		<!--intersect <div id="aoFeatIntersect"></div>-->
 		<!--featured events-->
@@ -904,22 +951,22 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 				<h2>January 2027</h2>				
 			</div><!--cal date list---><div id="pub-date-list-div">
 				<div class="aoCalWrapKey"><div class="aoCalDay">M</div><div class="aoCalDay">T</div><div class="aoCalDay">W</div><div class="aoCalDay">T</div><div class="aoCalDay">F</div><div class="aoCalDay">S</div><div class="aoCalDay">S</div></div>
-				<!--week 1-->
-				<div class="aoCalWrap aoCalWeek1"><div id="2027-01-12" class="datelist week0Day d2027-01-12">12</div><div id="2027-01-13" class="datelist week0Day d2027-01-13">13</div><div id="2027-01-14" class="datelist week0Day d2027-01-14">14</div><div id="2027-01-15" class="datelist week0Day d2027-01-15">15</div><div id="2027-01-16" class=" datelist week0Day d2027-01-16">16</div><div id="2027-01-17" class="  datelist week0Day d2027-01-17">17</div><div id="2027-01-18" class="datelist mainDay d2027-01-18">18</div></div>
+				<!--week 1 datelist week0Day-->
+				<div class="aoCalWrap aoCalWeek1"><div id="2027-01-11" class="week0Day datelist d2027-01-11">11</div><div id="2027-01-12" class="week0Day datelist d2027-01-12">12</div><div id="2027-01-13" class="week0Day datelist d2027-01-13">13</div><div id="2027-01-14" class="week0Day datelist d2027-01-14">14</div><div id="2027-01-15" class=" week0Day datelist d2027-01-15">15</div><div id="2027-01-16" class=" week0Day datelist d2027-01-16">16</div><div id="2027-01-17" class="datelist mainDay d2027-01-17">17</div></div>
 				<!--week 2-->
-				<div class="aoCalWrap aoCalWeek2"><div id="2027-01-19" class="datelist mainDay d2027-01-19">19</div><div id="2027-01-20" class="datelist mainDay d2027-01-20">20</div><div id="2027-01-21" class="datelist mainDay d2027-01-21">21</div><div id="2027-01-22" class="datelist mainDay d2027-01-22">22</div><div id="2027-01-23" class="datelist mainDay d2027-01-23">23</div><div id="2027-01-24" class="datelist mainDay d2027-01-24">24</div><div id="2027-01-25" class="datelist mainDay d2027-01-25">25</div></div>
+				<div class="aoCalWrap aoCalWeek2"><div id="2027-01-18" class="datelist mainDay d2027-01-18">18</div><div id="2027-01-19" class="datelist mainDay d2027-01-19">19</div><div id="2027-01-20" class="datelist mainDay d2027-01-20">20</div><div id="2027-01-21" class="datelist mainDay d2027-01-21">21</div><div id="2027-01-22" class="datelist mainDay d2027-01-22">22</div><div id="2027-01-23" class="datelist mainDay d2027-01-23">23</div><div id="2027-01-24" class="datelist mainDay d2027-01-24">24</div></div>
 				<!--week 3-->
-				<div class="aoCalWrap aoCalWeek3"><div id="2027-01-26" class="datelist mainDay d2027-01-26">26</div><div id="2027-01-27" class="datelist mainDay d2027-01-27">27</div><div id="2027-01-28" class="datelist mainDay d2027-01-28">28</div><div id="2027-01-29" class="datelist mainDay d2027-01-29"><div class="aoFinalKey aoFinal01"></div>29</div><div id="2027-01-30" class="datelist mainDay d2027-01-30"><div class="aoFinalKey aoFinal02"></div>30</div><div id="2027-01-31" class="datelist mainDay d2027-01-31"><div class="aoFinalKey aoFinal03"></div>31</div><div id="2027-02-01" class="datelist mainDay d2027-02-01"><div class="aoFinalKey aoFinal04"></div>01</div></div>
-			</div><div class="aoHoriDiv"></div>
-				<div class="aoCalWrap"><div class="aoKeyWrap"><h2>Key Events</h2>
-						<div class="aoKeyEvent"><div class="aoKeyEventBullet final01Key"></div>Women&rsquo;s Semifinal</div>
-						<div class="aoKeyEvent"><div class="aoKeyEventBullet final02Key"></div>Men&rsquo;s Semifinal</div>
-						<div class="aoKeyEvent"><div class="aoKeyEventBullet final03Key"></div>Women&rsquo;s Final</div>
-						<div class="aoKeyEvent"><div class="aoKeyEventBullet final04Key"></div>Men&rsquo;s Final</div>
-					</div><div class="aoKeyWrap"><h2>Tournament Dates</h2>
-						<div class="aoKeyEvent">Opening Week<br /><div class="aoKeyDate aoIntroDate">12</div> &#45; <div class="aoKeyDate aoIntroDate">15</div></div>
-						<div class="aoKeyEvent">Main Draw (Week 1 &amp; 2)<br /><div class="aoKeyDate aoMainDate">18</div> &#45; <div class="aoKeyDate aoMainDate">01</div></div>
-					</div></div>
+				<div class="aoCalWrap aoCalWeek3"><div id="2027-01-25" class="datelist mainDay d2027-01-25">25</div><div id="2027-01-26" class="datelist mainDay d2027-01-26">26</div><div id="2027-01-27" class="datelist mainDay d2027-01-27">27</div><div id="2027-01-28" class="datelist mainDay d2027-01-28"><div class="aoFinalKey aoFinal01"></div>28</div><div id="2027-01-29" class="datelist mainDay d2027-01-29"><div class="aoFinalKey aoFinal02"></div>29</div><div id="2027-01-30" class="datelist mainDay d2027-01-30"><div class="aoFinalKey aoFinal03"></div>30</div><div id="2027-01-31" class="datelist mainDay d2027-01-31"><div class="aoFinalKey aoFinal04"></div>31</div></div>
+				</div><div class="aoHoriDiv"></div>
+					<div class="aoCalWrap"><div class="aoKeyWrap"><h2>Key Events</h2>
+							<div class="aoKeyEvent"><div class="aoKeyEventBullet final01Key"></div>Women&rsquo;s Semifinal</div>
+							<div class="aoKeyEvent"><div class="aoKeyEventBullet final02Key"></div>Men&rsquo;s Semifinal</div>
+							<div class="aoKeyEvent"><div class="aoKeyEventBullet final03Key"></div>Women&rsquo;s Final</div> 
+							<div class="aoKeyEvent"><div class="aoKeyEventBullet final04Key"></div>Men&rsquo;s Final</div>
+						</div><div class="aoKeyWrap"><h2>Tournament</h2>
+							<div class="aoKeyEvent">Opening Week<br /><div class="aoKeyDate aoIntroDate">11</div> &#45; <div class="aoKeyDate aoIntroDate">16</div></div>
+							<div class="aoKeyEvent">Australian Open 2027<br /><div class="aoKeyDate aoMainDate">17</div> &#45; <div class="aoKeyDate aoMainDate">31</div></div>
+						</div></div>
 		</div>
 		</div>
 		<div class="aoSearchVertDiv"></div>
@@ -930,11 +977,11 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 		<div id="aoPubSessionMenu">
 			<h1>Select session type</h1><!--<div class="aoDoneBtn">Done</div>-->
 			
-			<div data-filterbtnlab="Any" class="aoFilterListBtn aoFilterBtnOn sessionFilterBtn" id="sessionPubAnyFilterBtn" ><div class="aoCheckBoxActive"></div><h4>Show All</h4></div>
-			<div data-filterbtnlab="DAYSESSION" class="aoFilterListBtn aoFilterBtnOff sessionFilterBtn" id="sessionPubDayFilterBtn" ><div class="aoCheckBox"></div><h4>Day Sessions</h4></div>
-			<div data-filterbtnlab="NIGHTSESSION" class="aoFilterListBtn aoFilterBtnOff sessionFilterBtn" id="sessionPubNightFilterBtn" ><div class="aoCheckBox"></div><h4>Night Sessions</h4></div>			
+			<div data-filterbtnlab="Any" class="aoFilterListBtn aoFilterBtnOn sessionFilterBtn" id="AnyFilterBtn" ><div class="aoCheckBoxActive"></div><h4>Show All</h4></div>
+			<div data-filterbtnlab="DAYSESSION" class="aoFilterListBtn aoFilterBtnOff sessionFilterBtn" id="DAYSESSIONFilterBtn" ><div class="aoCheckBox"></div><h4>Day Sessions</h4></div>
+			<div data-filterbtnlab="NIGHTSESSION" class="aoFilterListBtn aoFilterBtnOff sessionFilterBtn" id="NIGHTSESSIONFilterBtn" ><div class="aoCheckBox"></div><h4>Night Sessions</h4></div>			
 			<!--<div data-filterbtnlab="Twilight Sessions" class="aoFilterListBtn aoFilterBtnOff sessionFilterBtn" id="sessionTwilightFilterBtn" ><div class="aoCheckBox"></div><h4>Twilight Sessions</h4></div>-->
-			<div data-filterbtnlab="ALLDAY" class="aoFilterListBtn aoFilterBtnOff sessionFilterBtn" id="sessionPubAllDayFilterBtn" ><div class="aoCheckBox"></div><h4>All Day</h4></div>
+			<div data-filterbtnlab="ALLDAY" class="aoFilterListBtn aoFilterBtnOff sessionFilterBtn" id="ALLDAYFilterBtn" ><div class="aoCheckBox"></div><h4>All Day</h4></div>
 		</div>	
 		</div>
 		<div class="aoSearchVertDiv"></div>
@@ -965,13 +1012,20 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 	</div><!---end header--->
 	<!---GP sessions---->
 	<div id="aoPubSessions">
-		<!--accessible cover
-		<div class="aoAcessibleLb"> 
-			<div class="aoAcessibleLbContent">
-					<p>To view events please make a selection on the  &lsquo;Seat Category&rsquo; filter near the top of this page.</p>
-					<div class="aoAccessibleBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_accessible_ico.svg"><h3>GO TO SEAT CATEGORY</h3></div>
-			</div>		
-		</div>-->
+			<!--accessible cover
+			<div class="aoAcessibleLb"> 
+				<div class="aoAcessibleLbContent">
+						<p>To view events please make a selection on the  &lsquo;Seat Category&rsquo; filter near the top of this page.</p>
+						<div class="aoAccessibleBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_accessible_ico.svg"><h3>GO TO SEAT CATEGORY</h3></div>
+				</div>		
+			</div>-->
+			<!--presale banner-->
+			<div class="aoPresaleBanner">
+
+				<h1>AO 2027 Pre&#45;Sale is live</h1>
+				<a href="https://ausopen.com/ao-extras" target="_blank"><div class="aoPresaleBtn">UNLOCK YOUR ACCESS</div></a>
+			</div>
+
 		<!--counter and date sort-->
 		<div id="aoPubCounterWrap">
 			<div id="aoPubCounter"><div id="aoPubCount"></div><p>&nbsp; results</p></div>
@@ -979,7 +1033,7 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 			<!--sort by date-->
 			<div id="aoPubDateMenu">			
 					<div data-filterbtnlab="Earliest Date" class="aoFilterBtnOn sortRadioBtn" id="pubDateEarliestSortBtn"><div class="aoRadioBtnActive"></div><h4>Earliest Date</h4></div>	
-					<div data-filterbtnlab="Latest Date" class="aoFilterBtnOff sortRadioBtn" id="pubDateLatestSortBtn"><div class="aoRadioBtn"></div><h4>Furthest Date</h4></div>
+					<div data-filterbtnlab="Furthest Date" class="aoFilterBtnOff sortRadioBtn" id="pubDateLatestSortBtn"><div class="aoRadioBtn"></div><h4>Furthest Date</h4></div>
 					<!--<div data-filterbtnlab="Low to High" class="aoFilterBtnOff sortRadioBtn" id="pubPriceLowSortBtn"><div class="aoRadioBtn"></div><h4>Low to High</h4></div>	-->
 					<!--<div data-filterbtnlab="High to Low" class="aoFilterBtnOff sortRadioBtn" id="pubPriceHighSortBtn"><div class="aoRadioBtn"></div><h4>High to Low</h4></div>-->
 			</div>	
@@ -989,7 +1043,7 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 		<div id="aoEventErrorsGP">
 			<!--prem exp ad card-->
 			<div id="aoPxPromoCard">				
-				<div id="aoPxPromoCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_aoRes_promoTile.jpg"></div>
+				<div id="aoPxPromoCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/ao27_AOReserve_Promo_358x492px.jpg"></div>
 				<!--<div class="aoPxPromoCardBtn">ViEW TICKETS + HOSPITALITY</div>-->
 				<!--<div id="aoPxPromoCardLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_AOReserve_white_logo.svg" alt="AO RESERVE PREMIUM EXPERIENCE"></div>-->
 			</div>
@@ -1027,8 +1081,8 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 			<!---session selected--->
 			<!--cal--><div id="aoPremCalendar">
 				<div id="aoPremCalHeader">
-					<!--<h1>Select one or multiple</h1>--><div id="clearPremDayFilters" class="aoClearBtn">CLEAR</div><!--<div class="aoDoneBtn">Done</div>-->				
-					<h2>January 2027</h2>					
+				<!--<h1>Select one or multiple</h1>--><div id="clearPremDayFilters" class="aoClearBtn">CLEAR</div><!--<div class="aoDoneBtn">Done</div>-->				
+				<h2>January 2027</h2>					
 				</div><!--cal date list---><div id="prem-date-list-div">
 					<div class="aoCalWrap"><div class="aoCalDay">M</div><div class="aoCalDay">T</div><div class="aoCalDay">W</div><div class="aoCalDay">T</div><div class="aoCalDay">F</div><div class="aoCalDay">S</div><div class="aoCalDay">S</div></div>
 				<!--week 1 datelist week0Day-->
@@ -1041,7 +1095,7 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 					<div class="aoCalWrap"><div class="aoKeyWrap"><h2>Key Events</h2>
 							<div class="aoKeyEvent"><div class="aoKeyEventBullet final01Key"></div>Women&rsquo;s Semifinal</div>
 							<div class="aoKeyEvent"><div class="aoKeyEventBullet final02Key"></div>Men&rsquo;s Semifinal</div>
-							<div class="aoKeyEvent"><div class="aoKeyEventBullet final03Key"></div>Women&rsquo;s Final</div>
+							<div class="aoKeyEvent"><div class="aoKeyEventBullet final03Key"></div>Women&rsquo;s Final</div> 
 							<div class="aoKeyEvent"><div class="aoKeyEventBullet final04Key"></div>Men&rsquo;s Final</div>
 						</div><div class="aoKeyWrap"><h2>Tournament</h2>
 							<div class="aoKeyEvent">Opening Week<br /><div class="aoKeyDate aoIntroDate">11</div> &#45; <div class="aoKeyDate aoIntroDate">16</div></div>
@@ -1056,9 +1110,9 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 			<!--session menu--->
 			<div id="aoPremSessionMenu">
 				<h1>Select session type</h1><!--<div class="aoDoneBtn">Done</div>-->
-				<div data-filterbtnlab="Any" class="aoFilterListBtn aoFilterBtnOn sessionFilterBtn" id="sessionPremAnyFilterBtn" ><div class="aoCheckBoxActive"></div><h4>Show All</h4></div>
-				<div data-filterbtnlab="DAYSESSION" class="aoFilterListBtn aoFilterBtnOff sessionFilterBtn" id="sessionPremDayFilterBtn" ><div class="aoCheckBox"></div><h4>Day Sessions</h4></div>
-				<div data-filterbtnlab="NIGHTSESSION" class="aoFilterListBtn aoFilterBtnOff sessionFilterBtn" id="sessionPremNightFilterBtn" ><div class="aoCheckBox"></div><h4>Night Sessions</h4></div>			
+				<div data-filterbtnlab="Any" class="aoFilterListBtn aoFilterBtnOn sessionFilterBtn" id="AnyFilterBtnPX" ><div class="aoCheckBoxActive"></div><h4>Show All</h4></div>
+				<div data-filterbtnlab="DAYSESSION" class="aoFilterListBtn aoFilterBtnOff sessionFilterBtn" id="DAYSESSIONFilterBtnPX" ><div class="aoCheckBox"></div><h4>Day Sessions</h4></div>
+				<div data-filterbtnlab="NIGHTSESSION" class="aoFilterListBtn aoFilterBtnOff sessionFilterBtn" id="NIGHTSESSIONFilterBtnPX" ><div class="aoCheckBox"></div><h4>Night Sessions</h4></div>			
 				<!--<div data-filterbtnlab="ALLDAY" class="aoFilterListBtn aoFilterBtnOff sessionFilterBtn" id="sessionPremAllDayFilterBtn" ><div class="aoCheckBox"></div><h4>All Day</h4></div>-->
 			</div>	
 			</div>
@@ -1109,7 +1163,7 @@ page_title = "Australian Open 2027, 17 - 31 JAN | AO Reserve | Melbourne | Austr
 			<!--sort by date-->
 			<div id="aoPremDateMenu">			
 					<div data-filterbtnlab="Earliest Date" class="aoFilterBtnOn sortRadioBtn" id="PremDateEarliestSortBtn"><div class="aoRadioBtnActive"></div><h4>Earliest Date</h4></div> 
-					<div data-filterbtnlab="Latest Date" class="aoFilterBtnOff sortRadioBtn" id="PremDateLatestSortBtn"><div class="aoRadioBtn"></div><h4>Furthest Date</h4></div>
+					<div data-filterbtnlab="Furthest Date" class="aoFilterBtnOff sortRadioBtn" id="PremDateLatestSortBtn"><div class="aoRadioBtn"></div><h4>Furthest Date</h4></div>
 			</div>	
 		</div>
 		</div>
@@ -1150,7 +1204,7 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 	//notes: date filtering and counters next, 
 	$j = jQuery.noConflict();
 	//the server name could change so I put it here so it was easy to find
-	let availLocation = "https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/ao_data_multi_exp_test_updated.json";
+	let availLocation = "https://d1qeon7qw4jcrw.cloudfront.net/ao";
 	//TM only link >>> https://dixntprqcqdcg.cloudfront.net/ao_tm
 	//sandbox link >>> https://d1qeon7qw4jcrw.cloudfront.net/ao_sandbox
 	//prod link    >>> https://d1qeon7qw4jcrw.cloudfront.net/ao
@@ -1257,7 +1311,7 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 												+sessionType+"' data-ticketype='"
 												+ticketType+"' data-dateurl='"
 												+event.event_date+"'data-datedisco='"
-												+event.disco_dates+"' data-datesort='"
+												+event.event_date_listing+"' data-datesort='"
 												+dateSort+"' data-universalid='"
 												+event.universalID+"' data-childnum='' id='"
 												+event.event_name_archtics+"' data-arcid='"
@@ -1267,7 +1321,7 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 												+event.session_type+"</div></div><div class='eventHero'><div class='eventOfferTag offerTag"
 												+offerTag+"'>"
 												+event.ticket_offer_desc+"</div><img data-src='https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/heroimages/"
-												+event.image_link+".png' src='https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/heroimages/AO27_AORES_PH.png' alt='"
+												+event.image_link+".png' src='https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_placeholder_hero.jpg' alt='"
 												+event.offer_desc+"'></div><div class='eventInfo'><div class='eventName'>"
 												+event.offer_desc+"</div><div class='eventSubDesc'>"
 												+event.offer_desc_sub+"</div><div class='eventLoc eventPin'>"
@@ -1449,7 +1503,7 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 	premCardsToDisplay();
 	setTimeout(getUrlVars,500)
 	setTimeout(parseUrl,1000)
- //	setTimeout(loadFeatureTiles, 1000);
+ 	setTimeout(loadFeatureTiles, 1000);
 	imageLoader()
 
 				},
@@ -1554,6 +1608,7 @@ $j(document).on('click', '.sortRadioBtn', function () {
 		})
 //high to low pub
 		$j(document).on('click', '#pubPriceHighSortBtn', function () {
+			
 			$j('#aoEventStreamGP .eventCard').sort(function (a, b) {
 				return $j(b).data('price') - $j(a).data('price');
 			})
@@ -1584,6 +1639,8 @@ $j(document).on('click', '.sortRadioBtn', function () {
 		});
 //earliest pub
 $j(document).on('click', '#pubDateEarliestSortBtn', function () {
+			let buttonTag = $j(this).data('filterbtnlab')
+			document.getElementById('aoPubSelectDateSort').innerHTML = buttonTag//.toString();
 			$j('#aoEventStreamGP .eventCard').sort(function (a, b) {
 				return $j(a).data('recsort') - $j(b).data('recsort');
 			})
@@ -1591,6 +1648,8 @@ $j(document).on('click', '#pubDateEarliestSortBtn', function () {
 		});
 //furthers pub		
 		$j(document).on('click', '#pubDateLatestSortBtn', function () {
+			let buttonTag = $j(this).data('filterbtnlab')
+			document.getElementById('aoPubSelectDateSort').innerHTML = buttonTag//.toString();
 			$j('#aoEventStreamGP .eventCard').sort(function (a, b) {
 				return $j(b).data('recsort') - $j(a).data('recsort');
 			})
@@ -1598,7 +1657,8 @@ $j(document).on('click', '#pubDateEarliestSortBtn', function () {
 		});		
 //earliest prem
 		$j(document).on('click', '#PremDateEarliestSortBtn', function () { 
-
+			let buttonTag = $j(this).data('filterbtnlab')
+			document.getElementById('aoPubSelectDateSort').innerHTML = buttonTag//.toString();
 			$j('#aoEventStreamPX .eventCard').sort(function (a, b) {
 				return $j(a).data('recsort') - $j(b).data('recsort');
 			})
@@ -1606,7 +1666,8 @@ $j(document).on('click', '#pubDateEarliestSortBtn', function () {
 		});
 //furthest prem	
 		$j(document).on('click', '#PremDateLatestSortBtn', function () {
-
+			let buttonTag = $j(this).data('filterbtnlab')
+			document.getElementById('aoPubSelectDateSort').innerHTML = buttonTag//.toString();
 			$j('#aoEventStreamPX .eventCard').sort(function (a, b) {
 				return $j(b).data('recsort') - $j(a).data('recsort');
 			})
@@ -1822,7 +1883,7 @@ let pubExperienceCounter = function(){
 			$j("#aoPubExpCounter").parent(".aoDropDownCount").fadeOut(0);			
 	}
 	if((pubExpCount == 1) && (jQuery.inArray("AOLIVE", fullPubExperienceTypeList) != -1)){
-		aoLiveBrand();
+		//aoLiveBrand();
 	}
 	if((pubExpCount !== 1)){
 		aoPubBrand();
@@ -2246,7 +2307,7 @@ let updateCardDID = function(){
 
 	//run through the cards
 	$j('.ao-tickets').each(function (){
-		let mainBtnLink = $j(this).children('.eventBtnWrap').children('a').attr("href").replace("&did=ease","").replace("&did=vision","").replace("&did=hearing","").replace("&did=wheel","").replace("&did=accessible","");;
+		let mainBtnLink = $j(this).children('.eventBtnWrap').children('a').attr("href").replace("&did=ease","").replace("&did=vision","").replace("&did=hearing","").replace("&did=wheel","").replace("&did=accessible","");
 		let mainBtnDiv = $j(this).children('.eventBtnWrap').children('a');	
 		let lbBtnDiv = $j(this).children('.aoEventLightBox').children('.aoEventLbContent').children('.aoLbBtnWrap').children('a');
 		let eventType = $j(this).data('expfilter')
@@ -2600,7 +2661,7 @@ let parseUrl = function(){
 			parseDateIncPXURL()
 			}
 		if(jQuery.inArray("aoLiveBrand", aoLiveFound) != -1){
-			aoLiveBrand()
+			//aoLiveBrand()
 			}
 	}; 
 
@@ -2660,8 +2721,8 @@ let parseSeshTypeURL = function(){
 	var urlSeshTypeFilter = []
 	urlPubSessionTypeList = urlSessionTypeList;
 	//reset buttons
-	$j('#aoPubSessionMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
-	$j('#aoPubSessionMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
+	$j('#aoPubSessionMenu').children('.sessionFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
+	$j('#aoPubSessionMenu').children('.sessionFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
 	//run through URL vars and match with the race day set
 	$j.grep(aoURLs, function(urlFound){
 		if(jQuery.inArray( urlFound, urlPubSessionTypeList) != -1){
@@ -2685,8 +2746,8 @@ let parseSeshTypePXURL = function(){
 	var urlSeshTypePXFilter = []
 	urlPremSessionTypeList = urlSessionTypeList;
 	//reset buttons
-	$j('#aoPremSessionMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
-	$j('#aoPremSessionMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
+	$j('#aoPremSessionMenu').children('.sessionFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
+	$j('#aoPremSessionMenu').children('.sessionFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
 	//run through URL vars and match with the race day set
 	$j.grep(aoURLs, function(urlFound){
 		if(jQuery.inArray( urlFound, urlPremSessionTypeList) != -1){
@@ -2695,10 +2756,10 @@ let parseSeshTypePXURL = function(){
 			//console.log(urlFound)
 			//push match to new array
 			urlSeshTypePXFilter.push(urlSeshTypePXFound);
-			
+			console.log(urlSeshTypePXFound)
 			//activate checkbox
-			$j("#"+urlSeshTypePXFound+"FilterBtn").removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn');
-			$j("#"+urlSeshTypePXFound+"FilterBtn").children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive');
+			$j("#"+urlSeshTypePXFound+"FilterBtnPX").removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn');
+			$j("#"+urlSeshTypePXFound+"FilterBtnPX").children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive');
 	}
 	});
 	//clear array, push found filter array into global array
@@ -2901,69 +2962,69 @@ let loadFeatureTiles = function(){
 	let options = {  day: '2-digit', month: '2-digit', year: 'numeric', timeZone: "Australia/Melbourne"};
 	let currentDate = new Intl.DateTimeFormat('en-AU', options).format(currentDatePull).split("/").reverse().join("/");
 	let currentDateNum = currentDate.replace("/","").replace("/",".")
-/*
-	let testData =     [
-    {
-      "name": "Tuesday Showdown",
-      "date_start": "11-12-2025",
-      "date_end": "11-22-2025",
+
+	let testFeatTiles =     [
+      {
+      "name": "Mens Final",
+      "date_start": "01-07-2026",
+      "date_end": "01-02-2027",
       "order": 1,
-      "img_d": "https://ausopen.com/sites/default/files/202512/11/card-carousel-tuesday-showdown-235-x-150-2x.png",
-      "img_m": "https://ausopen.com/sites/default/files/202512/11/card-carousel-tuesday-showdown-180-x-180-2x.png",
-      "tag": "13 JAN",
-      "exp_filter": "?dateInc=jan13&?expType=OpeningWeekURL"
+      "img_d": "http://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/featuretiles/ao27_mens_finals_235x150.png",
+      "img_m": "http://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/featuretiles/ao27_mens_finals_180x180.png",
+      "tag": "29 JAN",
+      "exp_filter": "?dateInc=jan31"
     },
-    {
-      "name": "Wednesday Showdown",
-      "date_start": "11-12-2025",
-      "date_end": "11-22-2025",
+        {
+      "name": "Womens Final",
+      "date_start": "01-07-2026",
+      "date_end": "01-02-2027",
       "order": 2,
-      "img_d": "https://ausopen.com/sites/default/files/202512/11/card-carousel-1-point-slam-235-x-150-2x.png",
-      "img_m": "https://ausopen.com/sites/default/files/202512/11/card-carousel-1-point-slam-180-x-180-2x_0.png",
-      "tag": "14 JAN",
-      "exp_filter": "?dateInc=jan14&?expType=OpeningWeekURL"
-    },
+      "img_d": "http://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/featuretiles/ao27_womens_finals_235x150.png",
+      "img_m": "http://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/featuretiles/ao27_womens_finals_180x180.png",
+      "tag": "30 Jan",
+      "exp_filter": "?dateInc=jan30"
+     },
     {
-      "name": "AO LIVE: Cassian",
-      "date_start": "11-12-2025",
-      "date_end": "11-22-2025",
-      "order": 3,
-      "img_d": "https://ausopen.com/sites/default/files/202511/17/card-carousel-ao-live-cassian-235-x-150-2x.png",
-      "img_m": "https://ausopen.com/sites/default/files/202511/17/card-carousel-ao-live-cassian-180-x-180-2x.png",
-      "tag": "15 JAN",
-      "exp_filter": "?dateInc=jan15&expType=AOLIVEURL&aoLiveBrand"
+      "name": "Mens Semi",
+      "date_start": "01-07-2026",
+      "date_end": "01-02-2027",
+      "order":3,
+      "img_d": "http://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/featuretiles/ao27_mens_semifinals_235x150.png",
+      "img_m": "http://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/featuretiles/ao27_mens_semifinals_235x150.png",
+      "tag": "01 FEB",
+      "exp_filter": "?dateInc=jan29"
     },
-    {
-      "name": "Friday Showdown",
-      "date_start": "11-12-2025",
-      "date_end": "11-22-2025",
+        {
+      "name": "Womens Semi",
+      "date_start": "01-07-2026",
+      "date_end": "01-02-2027",
       "order": 4,
-      "img_d": "https://ausopen.com/sites/default/files/202512/11/card-carousel-friday-showdown-235-x-150-2x.png",
-      "img_m": "https://ausopen.com/sites/default/files/202512/11/card-carousel-friday-showdown-180-x-180-2x.png",
-      "tag": "16 JAN",
-      "exp_filter": "?dateInc=jan16&?expType=OpeningWeekURL"
+      "img_d": "http://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/featuretiles/ao27_womens_semi_finals_235x150.png",
+      "img_m": "http://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/featuretiles/ao27_womens_semi_finals_180x180.png",
+      "tag": "31 JAN",
+      "exp_filter": "?dateInc=jan28"
     },
     {
-      "name": "Kids Tennis Day",
-      "date_start": "11-12-2025",
-      "date_end": "11-22-2025",
+      "name": "AO Reserve",
+      "date_start": "01-07-2026",
+      "date_end": "01-02-2027",
       "order": 5,
-      "img_d": "https://ausopen.com/sites/default/files/202512/11/card-carousel-ktd-235-x-150-2x.png",
-      "img_m": "https://ausopen.com/sites/default/files/202512/11/card-carousel-ktd-180-x-180-2x.png",
-      "tag": "17 JAN",
-      "exp_filter": "?dateInc=jan14&?expType=OpeningWeekURL"
+      "img_d": "http://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/featuretiles/ao27_AOReserve_235x150.png",
+      "img_m": "http://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/featuretiles/ao27_AOReserve_180x180.png",
+      "tag": "17 &#45; 31 JAN",
+      "exp_filter": "?buyFlowPremium"
     }
-   ]*/
+   ]
 
 
 	cardCounter = 0;
 	$j.ajax({
                type: 'GET',
-               url: 'https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_featureTiles.json',//https://www.ticketmaster.com.au/ausopen/ao26_featureTiles.json  // https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_featureTiles.json
+               url: 'https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/featuretiles/ao27_featureTiles.json',//https://www.ticketmaster.com.au/ausopen/ao26_featureTiles.json  // https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_featureTiles.json
                dataType: 'html',
 				success: function(data) {
 					let tilesData = JSON.parse(data);
-					let featTileList = tilesData//testData;//;tilesData
+					let featTileList = tilesData//testFeatTiles;//;tilesData
 
 					$j.each(featTileList, function(key,value){
 						let startDate = value.date_start.replace("-","/").replace("-","/").split("/").reverse().join("/").replace("/","").replace("/",".");
