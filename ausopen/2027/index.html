@@ -276,12 +276,16 @@ page_title = "Australian Open 2027, 11 - 31 JAN | AO Reserve | Melbourne | Austr
 
 	#aoEventStreamGP .eventHero{width:304px;height:110px;padding:0px;margin:0px;display:block;box-sizing: border-box !important;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_placeholder_hero.jpg") center center;background-size:cover;position: relative;flex-grow: 0;}
 	.eventHero img{width:304px;height:110px;display:block;border:0;outline:0;}
-	/*offer tags*/
+	/*tags*/
 	#aoEventStreamGP .eventOfferTag{font-family:"poppins","Averta", sans-serif, fallback;font-size:12px;line-height:12px;font-weight:bold;color:#fff;background:#000;position:absolute;bottom:8px;left:8px;padding:6px 10px 4px;display:inline-block;margin:0px 0px ;box-sizing: border-box !important;border-radius:3px;}
 	#aoEventStreamPX .eventOfferTag{font-family:"poppins","Averta", sans-serif, fallback;font-size:12px;line-height:12px;font-weight:bold;color:var(--px-dblue);background:var(--px-blue);position:absolute;bottom:4px;left:4px;padding:6px 10px 4px;display:inline-block;margin:0px 0px ;box-sizing: border-box !important;border-radius:3px;border:1px solid #0f124273;/*box-shadow:0px 2px var(--px-dblue);*/}
 	.offerTag{display:none !important;}
-	
+	.evenResaleTag{width:22px;height:22px;border-radius:22px;position: absolute;top:4px;right:4px;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/tmau_resale_ico.svg') no-repeat center center, #fff;background-size:18px;display:block;opacity: 0;}
+	.resaleAvail{display:none;opacity: 0;}
+	.resaleNotAvail{display:block;opacity: 1;}
+	.fade2{transition: ease-in-out 1.5s all;}
 	.eventInfo{width:100%;height:auto;padding:16px;margin:0px auto;text-align:left;display:block;box-sizing: border-box !important;flex-grow: 1;}
+
 	#aoEventStreamGP .eventName{font-family:"poppins","Averta", sans-serif, fallback;font-size:22px;line-height:22px;font-weight:700;color:var(--ao-dblue);padding:0px 0px 8px 0px;margin:0px;}
 	#aoEventStreamGP .eventSubDesc{font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:700;color:var(--ao-blue);padding:0px 0px 8px 0px;margin:0px;}
 	#aoEventStreamGP .eventLoc{font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:500;color:var(--ao-dgrey);padding:0px 0px 0px 24px;margin:0px 0px 12px 0px;box-sizing: border-box !important;}
@@ -668,7 +672,10 @@ page_title = "Australian Open 2027, 11 - 31 JAN | AO Reserve | Melbourne | Austr
 	#aoEventStreamGP .eventOfferTag{font-family:"poppins","Averta", sans-serif, fallback;font-size:12px;line-height:12px;font-weight:bold;color:#fff;background:#000;position:absolute;bottom:8px;left:8px;padding:6px 10px 4px;display:inline-block;margin:0px 0px ;box-sizing: border-box !important;border-radius:3px;}
 	#aoEventStreamPX .eventOfferTag{font-family:"poppins","Averta", sans-serif, fallback;font-size:12px;line-height:12px;font-weight:bold;color:var(--px-dblue);background:var(--px-blue);position:absolute;bottom:4px;left:4px;padding:6px 10px 4px;display:inline-block;margin:0px 0px ;box-sizing: border-box !important;border-radius:3px;border:1px solid #0f124273;/*box-shadow:0px 2px var(--px-dblue);*/}
 	.offerTag{display:none !important;}
-
+	.evenResaleTag{width:22px;height:22px;border-radius:22px;position: absolute;top:4px;right:4px;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/tmau_resale_ico.svg') no-repeat center center, #fff;background-size:18px;display:none;}
+	.resaleAvail{display:none;}
+	.resaleNotAvail{display:block;}
+	.fade2{transition: ease-in-out 1.5s all;}
 	.eventInfo{width:100%;height:auto;padding:16px;margin:0px auto;text-align:left;display:block;box-sizing: border-box !important;flex-grow: 1;}
 	#aoEventStreamGP .eventName{font-family:"poppins","Averta", sans-serif, fallback;font-size:22px;line-height:22px;font-weight:700;color:var(--ao-dblue);padding:0px 0px 8px 0px;margin:0px;}
 	#aoEventStreamGP .eventSubDesc{font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;line-height:14px;font-weight:700;color:var(--ao-blue);padding:0px 0px 8px 0px;margin:0px;}
@@ -1329,7 +1336,8 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 												+sessionType+"'>"
 												+event.session_type+"</div></div><div class='eventHero'><div class='eventOfferTag offerTag"
 												+offerTag+"'>"
-												+event.ticket_offer_desc+"</div><img data-src='https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/heroimages/"
+												+event.ticket_offer_desc+"</div><div class='evenResaleTag fade2' data-uniID='"
+												+idMapper(event.event_name_archtics)+"'></div><img data-src='https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/heroimages/"
 												+event.image_link+".png' src='https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_placeholder_hero.jpg' alt='"
 												+event.offer_desc+"'></div><div class='eventInfo'><div class='eventName'>"
 												+event.offer_desc+"</div><div class='eventSubDesc'>"
@@ -1513,6 +1521,7 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 	setTimeout(getUrlVars,500)
 	setTimeout(parseUrl,1000)
  	setTimeout(loadFeatureTiles, 1000);
+	setTimeout(AOAvailCall,1300)
 	imageLoader()
 
 				},
@@ -2936,6 +2945,135 @@ function aoSortMapper(data){
 			case "NIGHTSESSION":return "2";
 			case "ALLDAY":return "3";		
 	}};
+//map event IDs from archtics to universal ID for resale indicator
+function idMapper(data){
+	switch (data){
+			default:return ""
+			//general admission
+			case "27GRDP1D":return "17a8v0G6ulpGJpn";
+			case "27GRDP2D":return "17a8v0G6uBF_vbV";
+			case "27GRDP3D":return "17a8v0G6uBF_obU";
+			case "27GRDP4D":return "17a8v0G6uBF_obz";
+			case "27GRDP5D":return "17a8v0G6uBF_-bX";		
+			case "27GRD01D":return "17a8v0G6uBEdxtw";
+			case "27GRD02D":return "17a8v0G6uBEdwtV";
+			case "27GRD03D":return "17a8v0G6uBEdwtM";
+			case "27GRD04D":return "17a8v0G6uBE7ety";
+			case "27GRD05D":return "17a8v0G6uBE7etD";
+			case "27GRD06D":return "17a8v0G6uDFRV5x";
+			case "27GRD07D":return "17a8v0G6uDa9VGR";
+			case "27GRD08D":return "17a8v0G6uDaX0uE";
+			case "27GRD09D":return "17a8v0G6uDaX0uc";
+			case "27GRD10D":return "17a8v0G6uDGZ73F";		
+			case "27GRD11D":return "17a8v0G6uD2dVbo";
+			case "27GRD12D":return "17a8v0G6uD2U7_x";
+			case "27GRD13D":return "17a8v0G6uD2U7_P";
+			case "27GRD14D":return "17a8v0G6uD2Uf_t";
+			case "27GRD15D":return "17a8v0G6uD2Uf_l";
+			case "27GR7DAY":return "17a8v0G6uD4wVt3";
+			//john cain
+			case "27JCA01D":return "17a8v0G6utDQsqZ";
+			case "27JCA01N":return "17a8v0G6unhgN2s";
+			case "27JCA02D":return "17a8v0G6unhgS2U";
+			case "27JCA02N":return "17a8v0G6unhgS2y";
+			case "27JCA03D":return "17a8v0G6unhgS2H";
+			case "27JCA03N":return "17a8v0G6unhUd8Z";
+			case "27JCA04D":return "17a8v0G6unhUd8d";
+			case "27JCA04N":return "17a8v0G6unhUK8A";
+			case "27JCA05D":return "17a8v0G6unhUK81";
+			case "27JCA05N":return "17a8v0G6unhUN8G";
+			case "27JCA06D":return "17a8v0G6unhUN82";
+			case "27JCA06N":return "17a8v0G6unhUS8p";
+			case "27JCA07D":return "17a8v0G6unhUS8b";
+			case "27JCA07N":return "17a8v0G6unhMd8Q";
+			case "27JCA08D":return "17a8v0G6unhMd8q";
+			case "27JCA09D":return "17a8v0G6unhMK8L";
+			//marg court
+			case "27MCA01D":return "17a8v0G6utUesKQ";
+			case "27MCA01N":return "17a8v0G6unfq3mZ";
+			case "27MCA02D":return "17a8v0G6unfqxme";
+			case "27MCA02N":return "17a8v0G6unfqwmA";
+			case "27MCA03D":return "17a8v0G6unfqwma";
+			case "27MCA03N":return "17a8v0G6unfremG";
+			case "27MCA04D":return "17a8v0G6unfr3mC";
+			case "27MCA04N":return "17a8v0G6unfr3m8";
+			case "27MCA05D":return "17a8v0G6unfrxm4";
+			case "27MCA05N":return "17a8v0G6unfrwm_";
+			case "27MCA06D":return "17a8v0G6unfrwmh";
+			case "27MCA06N":return "17a8v0G6unfLemL";
+			case "27MCA07D":return "17a8v0G6unfL3m-";
+			case "27MCA07N":return "17a8v0G6unfLxmN";
+			case "27MCA08D":return "17a8v0G6unfLxmP";
+			case "27MCA09D":return "17a8v0G6unfLwmE";
+			//rod laver
+			case "27RLA01D":return "17a8v0G6uE_8JgS";
+			case "27RLA01N":return "17a8v0G6unZgsIB";
+			case "27RLA02D":return "17a8v0G6unZUvtv";
+			case "27RLA02N":return "17a8v0G6unZUot7";
+			case "27RLA03D":return "17a8v0G6unZU-tF";
+			case "27RLA03N":return "17a8v0G6unZUst8";
+			case "27RLA04D":return "17a8v0G6unZMvt9";
+			case "27RLA04N":return "17a8v0G6unZMot_";
+			case "27RLA05D":return "17a8v0G6unZM-tj";
+			case "27RLA05N":return "17a8v0G6unZMst-";
+			case "27RLA06D":return "17a8v0G6unZzvtJ";
+			case "27RLA06N":return "17a8v0G6unZzvtN";
+			case "27RLA07D":return "17a8v0G6unZD-ts";
+			case "27RLA07N":return "17a8v0G6unZD-tz";
+			case "27RLA08D":return "17a8v0G6unZDstB";
+			case "27RLA08N":return "17a8v0G6unZHvtH";
+			case "27RLA09D":return "17a8v0G6unZHotT";
+			case "27RLA09N":return "17a8v0G6unZH-n1";
+			case "27RLA10D":return "17a8v0G6unZHsn8";
+			case "27RLA10N":return "17a8v0G6unZWvnf";
+			case "27GRD11D":return "17a8v0G6unZWonq";
+			case "27RLA11N":return "17a8v0G6unZW-nt";
+			case "27RLA12N":return "17a8v0G6unZWsnc";
+			case "27RLA13D":return "17a8v0G6unZXvnR";
+			case "27RLA13N":return "17a8v0G6unZXonS";
+			case "27RLA14N":return "17a8v0G6unZX-nz";
+			case "27RLA15N":return "17a8v0G6unZXsnD";
+
+	}
+}
+//availability tags
+function aoAvailMapper(data){
+	switch (data){		
+			case "TICKETS_AVAILABLE":return "resaleAvail" 
+			case "TICKETS_NOT_AVAILABLE":return "resaleNotAvail";
+			default:return "unknown" 
+	}
+}
+let AOAvailCall = function(){
+
+  	$j.ajax({
+               type: 'GET',
+               url: "https://953lrs6ve3.execute-api.us-east-1.amazonaws.com/prod/?events=17a8v0G6ulpGJpn,17a8v0G6uBF_vbV,17a8v0G6uBF_obU,17a8v0G6uBF_obz,17a8v0G6uBF_-bX,17a8v0G6uBEdxtw,17a8v0G6uBEdwtV,17a8v0G6uBEdwtM,17a8v0G6uBE7ety,17a8v0G6uBE7etD,17a8v0G6uDFRV5x,17a8v0G6uDa9VGR,17a8v0G6uDaX0uE,17a8v0G6uDaX0uc,17a8v0G6uDGZ73F,17a8v0G6uD2dVbo,17a8v0G6uD2U7_x,17a8v0G6uD2U7_P,17a8v0G6uD2Uf_t,17a8v0G6uD2Uf_l,17a8v0G6uD4wVt3,17a8v0G6utDQsqZ,17a8v0G6unhgN2s,17a8v0G6unhgS2U,17a8v0G6unhgS2y,17a8v0G6unhgS2H,17a8v0G6unhUd8Z,17a8v0G6unhUd8d,17a8v0G6unhUK8A,17a8v0G6unhUK81,17a8v0G6unhUN8G,17a8v0G6unhUN82,17a8v0G6unhUS8p,17a8v0G6unhUS8b,17a8v0G6unhMd8Q,17a8v0G6unhMd8q,17a8v0G6unhMK8L,17a8v0G6utUesKQ,17a8v0G6unfq3mZ,17a8v0G6unfqxme,17a8v0G6unfqwmA,17a8v0G6unfqwma,17a8v0G6unfremG,17a8v0G6unfr3mC,17a8v0G6unfr3m8,17a8v0G6unfrxm4,17a8v0G6unfrwm_,17a8v0G6unfrwmh,17a8v0G6unfLemL,17a8v0G6unfL3m-,17a8v0G6unfLxmN,17a8v0G6unfLxmP,17a8v0G6unfLwmE,17a8v0G6uE_8JgS,17a8v0G6unZgsIB,17a8v0G6unZUvtv,17a8v0G6unZUot7,17a8v0G6unZU-tF,17a8v0G6unZUst8,17a8v0G6unZMvt9,17a8v0G6unZMot_,17a8v0G6unZM-tj,17a8v0G6unZMst-,17a8v0G6unZzvtJ,17a8v0G6unZzvtN,17a8v0G6unZD-ts,17a8v0G6unZD-tz,17a8v0G6unZDstB,17a8v0G6unZHvtH,17a8v0G6unZHotT,17a8v0G6unZH-n1,17a8v0G6unZHsn8,17a8v0G6unZWvnf,17a8v0G6unZWonq,17a8v0G6unZW-nt,17a8v0G6unZWsnc,17a8v0G6unZXvnR,17a8v0G6unZXonS,17a8v0G6unZX-nz,17a8v0G6unZXsnD",
+               dataType: 'html',
+				success: function(data) {
+					var availData = JSON.parse(data);
+					//console.log(data)
+					$j.each(availData, function(key,value){
+						var availID = value.eventId
+						var availClass = aoAvailMapper(value.resaleStatus);
+							
+						 $j('#aoEventStreamGP .eventCard .evenResaleTag').each(function () {
+							 var eventID = $j(this).attr('data-uniid');
+								console.log(eventID,availID)
+							 	if (eventID == availID) {
+
+									$j(this).addClass(availClass)
+									}
+								});
+						})	
+					},
+                    error: function (xhr, ajaxOptions, thrownError) { 
+                       // console.log("error cant read data");
+                    }
+                });	
+
+
+}
 //lazy image loading
 let imageLoader = function(){
 	//set targets
