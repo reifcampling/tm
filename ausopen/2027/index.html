@@ -2,8 +2,8 @@
 page_title = "Australian Open 2027, 11 - 31 JAN | AO Reserve | Melbourne | Australian Open | AO Tennis | Buy Tickets, Hospitality and Dining. Official Ticketmaster Site" %]
 [% static_has_responsive_header_footer = 1; enable_leader_board = 0; force_disable_nav_paypal_branding = 1;%]
 [% PROCESS "layout/frame/top.tt" %]
-<!--cut for on sale----->
- <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />
+<!--cut for on sale--
+ <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />--->
  <!--delete for on sale-->
 <!--libs--->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -220,7 +220,7 @@ page_title = "Australian Open 2027, 11 - 31 JAN | AO Reserve | Melbourne | Austr
 	#aoPubSortMenu{width:333px;height:/*130px*/90px;margin:0px auto;padding:0px 10px 10px 10px;background:#fff;box-sizing: border-box !important;position: absolute;top:82px;left:0px;text-align:left;border-radius:0px 0px 3px 3px;border:3px solid var(--ao-grey);display:none;z-index:100;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px}
 	#aoPremPriceMenu{background:var(--px-dblue);}
 	/*counters*/
-	#aoPubCounterWrap, #aoPremCounterWrap{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;padding:16px 0px 0px 0px;position: relative; box-sizing:border-box !important;display:flex;flex-wrap: nowrap;justify-content: space-between;flex-direction: row;}
+	#aoPubCounterWrap, #aoPremCounterWrap{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;padding:16px 0px 0px 0px;position: relative; box-sizing:border-box !important;display:flex;flex-wrap: nowrap;justify-content: space-between;flex-direction: row;align-items: center;}
 	#aoPubCounter, #aoPremCounter{width:auto;height:auto;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:var(--ao-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;}
 	#aoPubCount, #aoPremCount{width:auto;height:auto;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:var(--ao-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;}
 	#aoPubCounter p, #aoPremCounter p{font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:500;color:var(--ao-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;}
@@ -437,6 +437,10 @@ page_title = "Australian Open 2027, 11 - 31 JAN | AO Reserve | Melbourne | Austr
 	.aoPresaleBanner a{text-decoration: none;}
 	.aoPresaleBanner h1{font-family:"poppins","Averta", sans-serif, fallback;font-size:40px;line-height:40px;font-weight:700;text-align:center;display:block;color:#fff;padding:0px 0px 20px 0px;margin:0px;}	
 	.aoPresaleBtn{width:214px;height:auto;background:#fff;font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:400;text-align:center;color:var(--ao-blue);padding:10px 0px 8px;margin:0px;border-radius:3px;display:block;cursor:pointer;box-sizing: border-box !important;} 
+	/*resale indicators*/
+	#aoResaleKey{width:315px;height:auto;padding:4px;margin:0px auto;display:flex;flex-wrap: nowrap;justify-content: flex-start;align-items: center;background:#fff;border:1px solid var(--ao-mdgrey);border-radius:30px;}
+	#aoResaleKey p{font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:600;text-align:center;display:block;color:var(--ao-dgrey);padding:4px 0px 0px 10px;margin:0px;}
+	#aoResaleKey img{width:22px;height:22px;}
 }
 	
 /*mobile & tablet */
@@ -613,8 +617,8 @@ page_title = "Australian Open 2027, 11 - 31 JAN | AO Reserve | Melbourne | Austr
 	#aoPubSortMenu{width:333px;height:/*130px*/90px;margin:0px auto;padding:0px 10px 10px 10px;background:#fff;box-sizing: border-box !important;position: absolute;top:82px;left:0px;text-align:left;border-radius:0px 0px 3px 3px;border:3px solid var(--ao-grey);display:none;z-index:100;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;}
 
 	/*counter*/
-	#aoPubCounterWrap, #aoPremCounterWrap{width:100%;max-width:304px;height:auto;margin:0px auto 0px;padding:16px 0px 0px 0px;position: relative; box-sizing:border-box !important;display:flex;flex-wrap: nowrap;justify-content: space-between;flex-direction: row;}
-	#aoPubCounter, #aoPremCounter{width:auto;height:auto;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:var(--ao-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;}
+	#aoPubCounterWrap, #aoPremCounterWrap{width:100%;max-width:550px;height:auto;margin:0px auto 0px;padding:16px 0px 0px 0px;position: relative; box-sizing:border-box !important;display:flex;flex-wrap: wrap;justify-content: space-between;flex-direction: row;}
+	#aoPubCounter, #aoPremCounter{width:auto;height:auto;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:var(--ao-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;order:1;}
 	#aoPubCount, #aoPremCount{width:auto;height:auto;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:var(--ao-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;}
 	#aoPubCounter p, #aoPremCounter p{font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:500;color:var(--ao-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;}
 	#aoPubSearchBar .aoDropDownCount{width:22px;height:22px;margin:0px;padding:0px;background:var(--ao-dblue);border-radius:20px;position:absolute;top:18px;left:14px;display:none;}
@@ -622,7 +626,7 @@ page_title = "Australian Open 2027, 11 - 31 JAN | AO Reserve | Melbourne | Austr
 	#aoPubSearchBar .aoDropDownNumber{width:22px;height:22px;margin:0px;padding:6.5px 0px 0px 0px;font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:800;color:#fff;box-sizing: border-box !important;}
 	#aoPremSearchBar .aoDropDownNumber{width:22px;height:22px;margin:0px;padding:6.5px 0px 0px 0px;font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:800;color:var(--px-dblue);box-sizing: border-box !important;}
 	/*date sort menu*/
-	#aoPubDateSort, #aoPremDateSort{width:auto;height:auto;padding:0px 16px 0px 0px;margin:0px 0px 0px 0px;display:inline-block;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_down_arrow_mgrey_img.svg') no-repeat;background-size:8px 8px;background-position:right 0px top 2px;cursor:pointer;position:relative;}
+	#aoPubDateSort, #aoPremDateSort{width:auto;height:auto;padding:0px 16px 0px 0px;margin:0px 0px 0px 0px;display:inline-block;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_down_arrow_mgrey_img.svg') no-repeat;background-size:8px 8px;background-position:right 0px top 2px;cursor:pointer;position:relative;order:2;}
 	#aoPubDateSort p, #aoPremDateSort p{font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:500;color:var(--ao-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;}
 	#aoPubSelectDateSort, #aoPremSelectDateSort{font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:var(--ao-mgrey);display:inline-block;}
 	#aoPubDateMenu, #aoPremDateMenu{width:175px;height:auto;margin:0px auto;padding:4px 16px 16px 16px;background:#fff;box-sizing: border-box !important;position: absolute;bottom:-90px;right:0px;text-align:left;border-radius:4px;display:none;z-index:100;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;cursor:default;}
@@ -814,34 +818,37 @@ page_title = "Australian Open 2027, 11 - 31 JAN | AO Reserve | Melbourne | Austr
 	.aoPresaleBanner a{text-decoration: none;}
 	.aoPresaleBanner h1{font-family:"poppins","Averta", sans-serif, fallback;font-size:30px;line-height:30px;font-weight:700;text-align:center;display:block;color:#fff;padding:0px 0px 20px 0px;margin:92% auto 0px}	
 	.aoPresaleBtn{width:214px;height:auto;background:#fff;font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:400;text-align:center;color:var(--ao-blue);padding:10px 0px 8px;margin:0px;border-radius:3px;display:block;cursor:pointer;box-sizing: border-box !important;} 
-
+	/*resale indicators*/
+	#aoResaleKey{width:315px;height:auto;padding:4px;margin:20px auto 0px;display:flex;flex-wrap: nowrap;justify-content: flex-start;align-items: center;background:#fff;border:1px solid var(--ao-mdgrey);border-radius:30px;order:3;}
+	#aoResaleKey p{font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:600;text-align:center;display:block;color:var(--ao-dgrey);padding:4px 0px 0px 10px;margin:0px;}
+	#aoResaleKey img{width:22px;height:22px;}
 }
 /*headers aoPubBrand*/
 /*1440 - 4k*/	
 @media only screen and (min-width: 1440px){	/*1140 to 3840*/
 	/* partner presale #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_partner_bg_1920x564px.png') top center no-repeat, #0078ff;background-size:cover;box-sizing: border-box !important} */
-    #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_presale_bg_1920x564px.png') top center no-repeat, #0078ff;background-size:cover;box-sizing: border-box !important}
+    #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/ao27_onsale_header_2850x837.jpg') center center no-repeat, #0078ff;background-size:cover;box-sizing: border-box !important}
 	#aoPresaleLogo{width:360px;height:auto;padding:0px;margin:30px auto 30px;display:block;z-index:20;position: relative;}
 	#aoPresaleLogo img{width:360px;height:auto;padding:0px;margin:auto;display:block}
 	}
 /*1000 - 1440*/		
 @media only screen and (min-width: 1000px) and (max-width: 1439.99px){	/*1000 to 1440*/
  	/* partner presale #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_partner_bg_1400x564px.png') top center no-repeat, #0078ff;background-size:cover;box-sizing: border-box !important}*/
- 	#aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_presale_bg_1400x564px.png') top center no-repeat, #0078ff;background-size:cover;box-sizing: border-box !important}
+ 	#aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/ao27_onsale_header_2850x837.jpg') top center no-repeat, #0078ff;background-size:cover;box-sizing: border-box !important}
 	#aoPresaleLogo{width:360px;height:auto;padding:0px;margin:30px auto 30px;display:block;z-index:20;position: relative;}
 	#aoPresaleLogo img{width:360px;height:auto;padding:0px;margin:auto;display:block}
 	}
 /*tablet*/		
 @media only screen and (min-width: 550px) and (max-width: 1000px){	/*768 x 1024*/
     /* partner presale #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_partner_bg_768x700px.png') top center no-repeat, #0078ff;background-size:cover;box-sizing: border-box !important}	*/
-    #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_presale_bg_768x700px.png') top center no-repeat, #0078ff;background-size:cover;box-sizing: border-box !important}	
+    #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/ao27_onsale_header_1000x911.jpg') bottom center no-repeat, #0078ff;background-size:cover;box-sizing: border-box !important}	
 	#aoPresaleLogo{width:360px;height:auto;padding:0px;margin:30px auto 30px;display:block;z-index:20;position: relative;}
 	#aoPresaleLogo img{width:360px;height:auto;padding:0px;margin:auto;display:block}
 	}
 /*mobile*/		
 @media only screen and (min-width:0px) and (max-width: 549.99px){	/*400 x 650*/
    /* partner presale #aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_partner_bg_400x660px.png') top center no-repeat, #0078ff;background-size:cover;box-sizing: border-box !important}	*/
-	#aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/presale/ao27_presale_bg_400x660px.png') bottom center no-repeat, #0179ff;background-size:100% auto;box-sizing: border-box !important}	
+	#aoPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/ao27_onsale_header_800x1312.jpg') top center no-repeat, #0179ff;background-size: auto 1312px;box-sizing: border-box !important}	
 	#aoPresaleLogo{width:360px;height:auto;padding:0px;margin:30px auto 30px;display:block;z-index:20;position: relative;}
 	#aoPresaleLogo img{width:360px;height:auto;padding:0px;margin:auto;display:block}
 	}
@@ -1019,16 +1026,18 @@ page_title = "Australian Open 2027, 11 - 31 JAN | AO Reserve | Melbourne | Austr
 						<div class="aoAccessibleBtn"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2026/ao26_accessible_ico.svg"><h3>GO TO SEAT CATEGORY</h3></div>
 				</div>		
 			</div>-->
-			<!--presale banner-->
+			<!--presale banner
 			<div class="aoPresaleBanner">
 
 				<h1>AO 2027 Pre&#45;Sale is live</h1>
 				<a href="https://ausopen.com/ao-extras" target="_blank"><div class="aoPresaleBtn">UNLOCK YOUR ACCESS</div></a>
-			</div>
+			</div>-->
 
 		<!--counter and date sort-->
 		<div id="aoPubCounterWrap">
 			<div id="aoPubCounter"><div id="aoPubCount"></div><p>&nbsp; results</p></div>
+			<div id="aoResaleKey"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/tmau_resale_ico.svg" alt="resale icon"><p>Indicates Resale Tickets Are Available</p></div>
+
 			<div id="aoPubDateSort"><p>Sort By &nbsp;</p><div id="aoPubSelectDateSort">Earliest Date</div>
 			<!--sort by date-->
 			<div id="aoPubDateMenu">			
@@ -1886,7 +1895,7 @@ let pubExperienceCounter = function(){
 		//aoLiveBrand();
 	}
 	if((pubExpCount !== 1)){
-		aoPubBrand();
+		//aoPubBrand();
 	}
 }
 let premExperienceCounter = function(){
@@ -2817,6 +2826,7 @@ let parseDateIncPXURL = function(){
 	premDateCounter();
 }
 //apply AO Live brand
+/*
 let aoLiveBrand = function(){
 	//set headers
 	//1440 - 4k	
@@ -2876,7 +2886,7 @@ let aoPubBrand = function(){
 		$j("#aoLiveLogo").fadeOut(0)
 		$j("#aoPubLogo").fadeIn(0)
 	} 
-}
+}*/
 //end parse url function
 //empty all the arrays for the 4 drop down filters
 let emptyFullListsOnLoad = function(){
