@@ -621,7 +621,7 @@ page_title = "Australian Open 2027, 11 - 31 JAN | AO Reserve | Melbourne | Austr
 	#aoPubSortMenu{width:333px;height:/*130px*/90px;margin:0px auto;padding:0px 10px 10px 10px;background:#fff;box-sizing: border-box !important;position: absolute;top:82px;left:0px;text-align:left;border-radius:0px 0px 3px 3px;border:3px solid var(--ao-grey);display:none;z-index:100;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;}
 
 	/*counter*/
-	#aoPubCounterWrap, #aoPremCounterWrap{width:100%;max-width:550px;height:auto;margin:0px auto 0px;padding:16px 0px 0px 0px;position: relative; box-sizing:border-box !important;display:flex;flex-wrap: wrap;justify-content: space-between;flex-direction: row;}
+	#aoPubCounterWrap, #aoPremCounterWrap{width:100%;max-width:400px;height:auto;margin:0px auto 0px;padding:16px 0px 0px 0px;position: relative; box-sizing:border-box !important;display:flex;flex-wrap: wrap;justify-content: space-between;flex-direction: row;}
 	#aoPubCounter, #aoPremCounter{width:auto;height:auto;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:var(--ao-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;order:1;}
 	#aoPubCount, #aoPremCount{width:auto;height:auto;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:var(--ao-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;}
 	#aoPubCounter p, #aoPremCounter p{font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:500;color:var(--ao-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;}
@@ -3059,7 +3059,7 @@ let AOAvailCall = function(){
 							
 						 $j('#aoEventStreamGP .eventCard .evenResaleTag').each(function () {
 							 var eventID = $j(this).attr('data-uniid');
-								console.log(eventID,availID)
+							//	console.log(eventID,availID)
 							 	if (eventID == availID) {
 
 									$j(this).addClass(availClass)
