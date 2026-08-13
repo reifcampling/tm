@@ -99,7 +99,12 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	.brcRadioBtnOff{background:#fff;box-shadow:inset 0px 0px 0px 3px #585858;}
 
 	#brcResetAllFeat{width:auto;height:28px;text-align: center;margin:4px auto 0px;padding:6px 10px 6px 10px;font-family:"Figtree","Averta",fallback;font-size:16px;line-height:16px;font-weight:400;color:#000;background:#fff;display:inline-block;position: relative;box-sizing: border-box !important;text-transform: uppercase;cursor:pointer;border:1px solid #000;}
+
 	#brcResetAllFeatMob{display:none;}
+	/**image script etc**/
+	#brcImageScript,#brcSortScript{width:auto;height:28px;text-align: center;margin:4px auto 0px;padding:6px 10px 6px 10px;font-family:"Figtree","Averta",fallback;font-size:16px;line-height:16px;font-weight:400;color:#fff;background:#000;display:inline-block;position: relative;box-sizing: border-box !important;text-transform: uppercase;cursor:pointer;border:1px solid #000;}
+	.imageOutput{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;padding:0px;position: relative; box-sizing:border-box !important;display:block;}
+	.imageOutput div{font-family:"Figtree","Averta", sans-serif, fallback;text-align:center;font-size:16px;font-weight:400;color:#000;padding:0px 10px 0px 10px;margin:0px 0px 10px 0px ;box-sizing:border-box !important;line-height: 24px;}
 	/*event stream styles*/
 	#brcEvents{width:100%;height:auto;max-width:1300px;margin:0px auto 0px;background:#fff;padding:1px ;position: relative; box-sizing:border-box !important;}
 	#brcEventStream{margin:0px auto;padding:16px 0px;position:relative;display:flex;flex-wrap: wrap;flex-direction: row;align-content: flex-start;justify-content: space-around;column-gap: 24px;row-gap: 24px;}
@@ -123,7 +128,7 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 	#brcCounter p{display:inline-block;font-family:"Figtree","Averta",fallback;font-size:16px;line-height:16px;font-weight:400;text-align:center;color:#000;margin:0;padding:0px 10px 0px 0px;}
 
 	/*event card*/
-	.brcEventCard{width:300px;height:auto;background:#fff;padding:0px 0px 0px;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;justify-content: space-between;border:1px solid #000;box-sizing: border-box !important;overflow:visible;}
+	.brcEventCard{width:300px;height:auto;background:#fff;padding:0px 0px 0px;user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;justify-content: space-between;border:1px solid #000;box-sizing: border-box !important;overflow:visible;}
 	.brcCardTop {width:100%;max-width:300px;height:auto;display:block;margin:0;padding:0;position:relative;border-top:2px solid #000;}
 	.brcEventHero {width:299px;height:150px;max-height:150px;background:url('https://s1.ticketm.net/tm/en-au/img/static/brc/brc_secondaryLogo_img.svg') no-repeat center center, #000;background-size:auto 70%;border-bottom:2px solid #000;position:relative;}
 	.brcEventHero img {width:100%;height:auto;display:block;margin:0 auto;}
@@ -356,7 +361,7 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 		<!--counter and date sort---->
 		<div id="brcSubHeader">
 			<div id="brcCounter"><div class="brcCounterWrap"><div id="brcEventCount"></div><p> / </p><div id="brcEventCountTotal"></div></div><p>&nbsp; EVENTS SHOWN</p></div>	
-			<div id="brcResetAllFeat">RESET SELECTION</div>	
+			<div id="brcResetAllFeat">RESET SELECTION</div>	<div id="brcImageScript">RUN IMAGE SCRIPT</div>	<div id="brcSortScript">SORT SCRIPT</div>	
 			<!--sort menu---->
 			<div id="brcSortMenu">
 					<div class="brcSortBtn">SORT EVENTS:</div> 
@@ -385,7 +390,7 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 				<a href="https://www.ticketmaster.com.au/brisbane-racing-club-tickets/artist/4051374" target="_blank"><div class="brcErrorAltBtn">View Events On Artist Page</div></a>
 			</div>
 		</div>
-
+		<div class="imageOutput"></div>
       	<div id="brcEventStream"> 
 
 			<!--event card--<div class='brcEventCard' data-eventcode='' data-raceday='' data-venue='' data-tickettype='' data-eventname=''>
@@ -471,7 +476,7 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 							let eventdate = new Date(event.event_date)
 							//console.log(event.event_date)
 							//console.log(eventdate)
-							let options = { weekday: 'short', day: '2-digit', month: 'short', timeZone: "Australia/Melbourne"};
+							let options = { weekday: 'short', day: '2-digit', month: 'short', timeZone: "Australia/Brisbane"};
 							let eventDateShort = new Intl.DateTimeFormat('en-AU', options).format(eventdate).replace(',', '');
 							let ticketType = event.event_type_category.replace(/\s/g, '');//removes spaces
 							let sortDate = event.event_date.replace("-","").replace("-","");
@@ -487,7 +492,7 @@ page_title = "Brisbane Racing Club | Race Day Tickets | Eagle Farm & Doomben Rac
 							//build card
 							//top span
 								//"+event.image_ref_link+"
-							let  newEvent = $j("<!--event card--><div class='brcEventCard' data-eventcode='"+event.tm_event_name+"' data-date='"+event.event_date+"' data-raceday='"+event.event_day_desc+"' data-venue='"+event.venue_name_desc+"' data-tickettype='"+ticketType+"' data-eventname='"+event.offer_desc+"' data-sortdate='"+sortDate+"'><!--card top--><div class='brcCardTop'><div class='brcEventHero'><div class='brcCardDebugg'><div>tm event name : "+event.tm_event_name+"</div><div>img ref : "+heroImgMapper(event.image_ref_link)+"</div><div>avail status : "+event.avail_status+"</div><div>onsale status : "+event.onsale_status+"</div></div><img src='https://s1.ticketm.net/tm/en-au/img/static/brc/heroimg/"+heroImgMapper(event.image_ref_link)+".jpg' alt='"+event.event_desc+"'></div><div class='brcTicketTypeWrap brc"+ticketType+"Wrap'><div class='brcTicketType'>"+event.event_type_category+"</div></div></div><!--card mid--><div class='brcCardMid'><div class='brcRaceDay'><h1>"+event.event_day_desc+"</h1></div><div class='brcEventName'><h2>"+event.offer_desc+"</h2></div></div><!--card bot--><div class='brcCardBot'><div class='brcCardDiv'></div><div class='brcCardDate'><h1>"+eventDateShort+"</h1></div><div class='brcCardVenue'><h1>"+event.venue_name_desc+"</h1></div><div class='brcCardPrice'><h3>FROM:</h3><h1>"+event.price_from+"</h1><h2>"+event.unit+"</h2></div><div class='brcCardHalfDiv'></div><div class='brcCardHalfDiv'></div><a href='"+event.buy_link+"' target='_blank'><div class='brcCardBtn'>"+event.button_text+"</div></div></a></div>");	
+							let  newEvent = $j("<!--event card--><div class='brcEventCard' data-eventcode='"+event.tm_event_name+"' data-imgref='"+event.image_ref_link+"' data-date='"+event.event_date+"' data-raceday='"+event.event_day_desc+"' data-venue='"+event.venue_name_desc+"' data-tickettype='"+ticketType+"' data-eventname='"+event.offer_desc+"' data-sortdate='"+sortDate+"'><!--card top--><div class='brcCardTop'><div class='brcEventHero'><div class='brcCardDebugg'><div>tm event name : "+event.tm_event_name+"</div><div>img ref : "+heroImgMapper(event.image_ref_link)+"</div><div>avail status : "+event.avail_status+"</div><div>onsale status : "+event.onsale_status+"</div></div><img src='https://s1.ticketm.net/tm/en-au/img/static/brc/heroimg/"+heroImgMapper(event.image_ref_link)+".jpg' alt='"+event.event_desc+"'></div><div class='brcTicketTypeWrap brc"+ticketType+"Wrap'><div class='brcTicketType'>"+event.event_type_category+"</div></div></div><!--card mid--><div class='brcCardMid'><div class='brcRaceDay'><h1>"+event.event_day_desc+"</h1></div><div class='brcEventName'><h2>"+event.offer_desc+"</h2></div></div><!--card bot--><div class='brcCardBot'><div class='brcCardDiv'></div><div class='brcCardDate'><h1>"+eventDateShort+"</h1></div><div class='brcCardVenue'><h1>"+event.venue_name_desc+"</h1></div><div class='brcCardPrice'><h3>FROM:</h3><h1>"+event.price_from+"</h1><h2>"+event.unit+"</h2></div><div class='brcCardHalfDiv'></div><div class='brcCardHalfDiv'></div><a href='"+event.buy_link+"' target='_blank'><div class='brcCardBtn'>"+event.button_text+"</div></div></a></div>");	
 								
 							//append to div
 
@@ -529,9 +534,9 @@ function createRaceDayList(){
 	let raceDayListDiv = $j("#brcRacedayMenu");
 	raceDayList = Array.from(raceDayNameSet)
 	dateList = Array.from(dateSet)
-	let options = { weekday: 'short', day: '2-digit', month: 'short',timeZone: "Australia/Melbourne" };
-	//let optionsMedium = { weekday: 'short', day: '2-digit', month: 'short', year:'numeric',timeZone: "Australia/Melbourne" };
-	//let optionsDataTag = { year: '2-digit', month: '2-digit',day: '2-digit',timeZone: "Australia/Melbourne" };
+	let options = { weekday: 'short', day: '2-digit', month: 'short',timeZone: "Australia/Brisbane" };
+	//let optionsMedium = { weekday: 'short', day: '2-digit', month: 'short', year:'numeric',timeZone: "Australia/Brisbane" };
+	//let optionsDataTag = { year: '2-digit', month: '2-digit',day: '2-digit',timeZone: "Australia/Brisbane" };
 
 	$j.each(buttonArray, function(index,value){
 		let raceName = value//.replace(/[^\w\s]/gi, '').replace(/\s/g, '');//removes special characters and spaces\
@@ -1317,7 +1322,41 @@ function heroImgMapperTest(data){
 			default:return "brc_BRC"
 	}
 }
+//check sandbox page for missing images
+$j("#brcImageScript").click(
+	function(){
+	imageOutputDiv = $j(".imageOutput");
+	let missingImgLink = []
+	$j('.brcEventCard').each(function () {
+		//run through each card and check image src
+		let imgSrc = $j(this).children('.brcCardTop').children('.brcEventHero').children('img').attr('src')
+		let missingImg = "https://s1.ticketm.net/tm/en-au/img/static/brc/heroimg/brc_BRC.jpg"
+		let eventCode = $j(this).data('imgref');
+		let eventName = $j(this).data('eventname');
+		let imgRow = $j("<p>'"+eventName,eventCode+"'</p>")
 
+				if(imgSrc == missingImg){
+					//console.log(eventName,'\n','case "'+eventCode+'":')
+					//missingImgLink.push(eventName,'case "'+eventCode+'":')
+
+					imageOutputDiv.append('<div class="imgRow" data-name="'+eventName+'">'+eventName+' case "'+eventCode+'":</div>');
+					//console.log(missingImgLink)
+				}
+	}) 
+
+
+
+
+	});
+$j("#brcSortScript").click(
+	function(){
+
+		$j('.imageOutput .imgRow').sort(function (a, b) {
+				return $j(a).data('name') - $j(b).data('name');
+				
+	})
+	.appendTo('.imageOutput');
+});
 </script>
 
 [% PROCESS "layout/frame/bottom.tt" %]
