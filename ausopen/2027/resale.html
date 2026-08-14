@@ -280,9 +280,14 @@ page_title = "Australian Open 2027, 11 - 31 JAN | AO Reserve | Melbourne | Austr
 	#aoEventStreamGP .eventOfferTag{font-family:"poppins","Averta", sans-serif, fallback;font-size:12px;line-height:12px;font-weight:bold;color:#fff;background:#000;position:absolute;bottom:8px;left:8px;padding:6px 10px 4px;display:inline-block;margin:0px 0px ;box-sizing: border-box !important;border-radius:3px;}
 	#aoEventStreamPX .eventOfferTag{font-family:"poppins","Averta", sans-serif, fallback;font-size:12px;line-height:12px;font-weight:bold;color:var(--px-dblue);background:var(--px-blue);position:absolute;bottom:4px;left:4px;padding:6px 10px 4px;display:inline-block;margin:0px 0px ;box-sizing: border-box !important;border-radius:3px;border:1px solid #0f124273;/*box-shadow:0px 2px var(--px-dblue);*/}
 	.offerTag{display:none !important;}
-	.evenResaleTag{width:22px;height:22px;border-radius:22px;position: absolute;top:4px;right:4px;background:url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/tmau_resale_ico.svg') no-repeat center center, #fff;background-size:18px;display:block;opacity: 0;}
+	.evenResaleTag{width:auto;height:22px;border-radius:22px;position: absolute;top:4px;left:4px;display:inline;opacity: 0;padding:5px 10px 5px 10px;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:16px;text-align: center;font-weight:700;color:var(--ao-dgrey);box-sizing: border-box !important;}
+	.TicketsAvail{display:none;opacity:0;}
+	.FewTicketsAvail{display:inline;opacity:1;background:var(--ao-green);}
+	.FewTicketsAvail:after{content:"SELLING FAST";}
+	.TicketsNotAvail{display:inline;opacity:1;background:var(--ao-gold);}
+	.TicketsNotAvail:after{content:"LIMITED";}
 	.resaleAvail{display:none;opacity: 0;}
-	.resaleNotAvail{display:block;opacity: 1;}
+	.resaleNotAvail{display:none;opacity: 10;}
 	.fade2{transition: ease-in-out 1.5s all;}
 	.eventInfo{width:100%;height:auto;padding:16px;margin:0px auto;text-align:left;display:block;box-sizing: border-box !important;flex-grow: 1;}
 
@@ -1043,7 +1048,7 @@ page_title = "Australian Open 2027, 11 - 31 JAN | AO Reserve | Melbourne | Austr
 		<!--counter and date sort-->
 		<div id="aoPubCounterWrap">
 			<div id="aoPubCounter"><div id="aoPubCount"></div><p>&nbsp; results</p></div>
-			<div id="aoResaleKey"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/tmau_resale_ico.svg" alt="resale icon"><p>Indicates Resale Tickets Are Available</p></div>
+			<!--<div id="aoResaleKey"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2027/tmau_resale_ico.svg" alt="resale icon"><p>Indicates Resale Tickets Are Available</p></div>-->
 
 			<div id="aoPubDateSort"><p>Sort By &nbsp;</p><div id="aoPubSelectDateSort">Earliest Date</div>
 			<!--sort by date-->
@@ -1816,7 +1821,7 @@ function premCardsToDisplay(){
 	//run through each card and check against filters
 	$j('.ao-ticketshospitality, .ao-ticketssuite').each(function () {
 		eventDatePrem = $j(this).data('datedisco').split(",");
-		experienceTypePrem = $j(this).data('expfilter');
+		experienceTypePrem = $j(this).data('expfilter').split(",");
 		let sessionType = $j(this).data('session');	
 		let eventPrice = $j(this).data('price');
 		let discoFilter = $j(this).data('discoveryfilter');
@@ -1871,11 +1876,14 @@ let pubEventCounter = function(){
 	if(pubEventCountPlus <=3 || pubEventCountTotal !== pubEventCountPlus){
 		$j("#aoPxPromoCard").fadeOut(0);	
 	}
-	if(pubEventCountPlus >=3 ){
+	if(pubEventCountPlus ==3 ){
+		$j(aoPXCard).insertAfter('.ao-tickets[data-childnum=3]')
+		$j("#aoPxPromoCard").fadeIn(0).css("display","flex");	
+	}
+	if(pubEventCountPlus >=4 ){
 		$j(aoPXCard).insertAfter('.ao-tickets[data-childnum=4]')
 		$j("#aoPxPromoCard").fadeIn(0).css("display","flex");	
 	}
-
 }
 let premEventCounter = function(){
 	premEventCountTotal = premEventCountPlus - premEventCountMinus;
@@ -2575,51 +2583,6 @@ $j(document).on('click', '#prem-date-list-div .datelistActive', function () {
 			premDateCounter();
 		});
 
-//create discovery filters -- legacy
-function createDiscoveryFilterList(){
-	let buttonArray = Array.from(discoveryFilterSet);
-	let discoveryFilterList = Array.from(discoveryFilterSet)
-
-	$j.each(buttonArray, function(index,value){
-		let filterNameClean = value.replace(/[^\w\s]/gi, '').replace(/\s/g, '');//removes special characters and spaces
-		let newButton = $j("<div data-filterbtnlab='" + filterNameClean + "' class='aoFilterListBtn aoFilterBtnOff discoveryFilterBtn' id='disco"+filterNameClean+"FilterBtn'><div class='aoCheckBox'></div><h4> "+filterNameClean+" </h4></div>");
-		//appends button to dropdown
-		$j('#aoDiscoveryMenu').append(newButton);
-})
-}
-
-//sticky menu and search bar behavior
-$j(document).scroll(function() {
-    var pageTop = $j(document).scrollTop();
-    var scollTarget = $j("#aoPubSessions").offset().top;
-    if ((pageTop > scollTarget) && (!$j("#aoSearchBar").hasClass("aoSeachBarToggle"))) {
-		$j("#aoMiniSearchBar").removeClass("aoSeachBarHide").addClass("aoSeachBarShow");
-    } else if ((pageTop < scollTarget) && $j("#aoSearchBar").hasClass("aoSeachBarToggle")){
-		$j("#aoMiniSearchBar").removeClass("aoSeachBarShow").addClass("aoSeachBarHide");
-		$j("#aoSearchBar").removeClass("aoSeachBarToggle");
-		$j("#aoMiniSearchContBtn").fadeOut(100);
-    } else {
-		$j("#aoMiniSearchBar").removeClass("aoSeachBarShow").addClass("aoSeachBarHide");
-
-	}
-});	
-$j(document).on('click', "#aoMiniSearchBar", function () {
-	if (window.matchMedia('(max-width:1000px)').matches) {
-				$j('html, body').animate({ scrollTop: $j("#aoSearchBar").offset().top}, 1000);
-			} else {
-				$j(this).removeClass("aoSeachBarShow").addClass("aoSeachBarHide");
-				$j("#aoSearchBar").addClass("aoSeachBarToggle")
-				$j("#aoMiniSearchContBtn").fadeIn(100);
-			}
-	})
-$j(document).on('click', "#aoMiniSearchContBtn", function () {
-
-				$j("#aoMiniSearchBar").removeClass("aoSeachBarHide").addClass("aoSeachBarShow");
-				$j("#aoSearchBar").removeClass("aoSeachBarToggle")
-				$j("#aoMiniSearchContBtn").fadeOut(100);
-
-	})
-
 
 //URL token filtering
 function getUrlVars(){	
@@ -2687,7 +2650,7 @@ let parseUrl = function(){
 let parseExpTypeURL = function(){
 	var urlExpTypeFilter = []
 	urlPubExperienceTypeList = Array.from(urlExperienceTypeSet);
-    console.log(urlPubExperienceTypeList)
+   // console.log(urlPubExperienceTypeList)
 	//reset buttons
 	$j('#aoPubTicketMenu').children('.ticketFilterBtn').removeClass('aoFilterBtnOn').addClass('aoFilterBtnOff') 
 	$j('#aoPubTicketMenu').children('.ticketFilterBtn').children('.aoCheckBoxActive').removeClass('aoCheckBoxActive').addClass('aoCheckBox')
@@ -2774,7 +2737,7 @@ let parseSeshTypePXURL = function(){
 			//console.log(urlFound)
 			//push match to new array
 			urlSeshTypePXFilter.push(urlSeshTypePXFound);
-			console.log(urlSeshTypePXFound)
+			//console.log(urlSeshTypePXFound)
 			//activate checkbox
 			$j("#"+urlSeshTypePXFound+"FilterBtnPX").removeClass('aoFilterBtnOff').addClass('aoFilterBtnOn');
 			$j("#"+urlSeshTypePXFound+"FilterBtnPX").children('.aoCheckBox').removeClass('aoCheckBox').addClass('aoCheckBoxActive');
@@ -3039,8 +3002,9 @@ function idMapper(data){
 //availability tags
 function aoAvailMapper(data){
 	switch (data){		
-			case "TICKETS_AVAILABLE":return "resaleAvail" 
-			case "TICKETS_NOT_AVAILABLE":return "resaleNotAvail";
+			case "TICKETS_AVAILABLE":return "TicketsAvail" 
+			case "FEW_TICKETS_LEFT":return "FewTicketsAvail" 
+			case "TICKETS_NOT_AVAILABLE":return "TicketsNotAvail";
 			default:return "unknown" 
 	}
 }
@@ -3055,13 +3019,14 @@ let AOAvailCall = function(){
 					//console.log(data)
 					$j.each(availData, function(key,value){
 						var availID = value.eventId
-						var availClass = aoAvailMapper(value.resaleStatus);
-							
+						var availClass = aoAvailMapper(value.status);
+						//var availResaleClass = aoAvailMapper(value.resaleStatus);
+						// $j('#aoEventStreamGP .eventCard .evenResaleTag').each(function () {	
 						 $j('#aoEventStreamGP .eventCard .evenResaleTag').each(function () {
 							 var eventID = $j(this).attr('data-uniid');
 							//	console.log(eventID,availID)
 							 	if (eventID == availID) {
-
+									console.log(availClass)
 									$j(this).addClass(availClass)
 									}
 								});
@@ -3104,6 +3069,20 @@ let imageLoader = function(){
  		 observer.observe(image);
 	});
 } 
+
+//Feature Tiles
+$j(document).on('click', ".aoFeatureEvent", function () {
+	let featFilter = $j(this).data('filter');
+	//window.history.pushState("object or string", "Title", "new url");
+
+	var refreshURL = window.location.protocol + "//" + window.location.host + window.location.pathname + featFilter;    
+	window.history.pushState({ path: refreshURL }, '', refreshURL);
+	getUrlVars();
+	parseUrl();
+	//console.log(fullPremExperienceTypeList,fullPremSessionTypeList)
+
+});
+
 let loadFeatureTiles = function(){
 	let featTileDiv = ("#aoFeatureEvents")
 	let currentDatePull = new Date()
@@ -3179,9 +3158,10 @@ let loadFeatureTiles = function(){
 						let endDate = value.date_end.replace("-","/").replace("-","/").split("/").reverse().join("/").replace("/","").replace("/",".");
 
 						
-						//build card
+						//build card 
 						let newFeatTile = $j("<div class='aoFeatureEvent' id='featCard0"
-						+value.order+"' data-name='"
+						+value.order+"' data-filter='"
+						+value.exp_filter+"' data-name='"
 						+value.name+"' data-start='"
 						+value.date_start+"' data-end='"
 						+value.date_end+"' data-order='"
@@ -3189,8 +3169,7 @@ let loadFeatureTiles = function(){
 						+value.img_m+"' data-imgd='"
 						+value.img_d+"'><div class='aoOrderTag'>"
 						+value.order+"</div><div class='aoFeatTag'>"
-						+value.tag+"</div><a href='"
-						+value.exp_filter+"'><div class='aoFeatHeroD'><img src='"
+						+value.tag+"</div><div class='aoFeatHeroD'><img src='"
 						+value.img_d+"'></div><div class='aoFeatHeroM'><img src='"
 						+value.img_m+"'></a></div></div></div>");
 						let newPip = $j("<div class='aoFeatPip aoFeatPipOff' data-featorder='"+value.order+"'></div>")
@@ -3248,32 +3227,13 @@ $j(document).on('click', ".aoFeatPip", function () {
 			let scrollerWidth = $j("#aoFeatureEvents").width();
 			let cardWidth = 164;
 			let contentWidth =  $j("#aoContent").width();
-			//let targetOffset = $j("#featCard0"+featTarget).offset().left
-			//let calcOffset = (targetOffset-contentWidth/2) -16
-			//scroller width dividied by number of cards = % fraction (4 cards = 25%)(5 cards = 20%)
-			//let scrollerPercent = (scrollerWidth / cardCounter)
-			//take target number, times by above?
-			//let targetScroll = (scrollerPercent * featTarget)
-			//so card 1 1 x X=25, card 2 2 x X=50%, card 3 3 x X=75%, card 4 4 x X=100%, 
-/*
-			//100 / number of cards = %'s'
-			let percentOfCards = 100/cardCounter
-			console.log(percentOfCards)
-			//get width of scroller, div by 100 to get 1%
-			let percentageOfScroller = scrollerWidth / 100
-			console.log(percentageOfScroller)
-			//get target card number (eg 3) and turn to a percent (eg 3xpercentOfCards=75%)
-			let scrollTargetPercent = featTarget*percentOfCards
-			//times the above percent by the 1% value of scroller width = target from left in px
-			let scrollTarget = percentageOfScroller*scrollTargetPercent
-			console.log(scrollTarget)
-*/
+
 			var left = $j("#featCard0"+featTarget).offset().left
 			var width = contentWidth
 			var diff = left - width/2
 			//select
 				if($j(this).hasClass("aoFeatPipOn")){
-					//console.log("im already active")
+
 				}
 				//unselect
 				else if ($j(this).hasClass("aoFeatPipOff")){
@@ -3369,3 +3329,8 @@ window.addEventListener("load", (event) => {
 });
 
 </script>
+
+
+
+
+
