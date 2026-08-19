@@ -240,10 +240,21 @@ page_title = "Victoria Racing Club | Flemington Racecourse | VRC. Buy Tickets Of
 	.vrcLbEventPrice h2{font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;text-align: left;color:var(--vrc-mpurp);margin:5px 0px 0px 0px;font-weight: normal;padding:0px;display: inline-block;float:left;font-weight:600;vertical-align: top;}
 	.vrcLbEventPrice h3{font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:28px;text-align: left;color:var(--vrc-dpurp);margin:-4px 0px 0px 0px;font-weight: normal;padding:0px;display: inline-block;vertical-align: top;line-height:28px;}
 	.vrcLbPriceDiv{height:1px;width:275px;background:var(--vrc-lpurp);margin:0px auto 20px;}
-	.vrcLbBookBtn{width:calc(100% - 40px);height:40px;background:var(--vrc-dpurp);color:#fff;font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;font-weight:600;text-align: center;margin:0px auto 10px;padding:10px 0px;display:inline-block;text-transform: uppercase;box-sizing:border-box !important;}
+	.vrcLbBookBtn,.vrcLbTableBtn{width:calc(100% - 40px);height:40px;background:var(--vrc-dpurp);color:#fff;font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;font-weight:600;text-align: center;margin:0px auto 10px;padding:10px 0px;display:inline-block;text-transform: uppercase;box-sizing:border-box !important;}
 	.vrcLbInfoBtn{width:calc(100% - 40px);height:40px;font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;font-weight:600;text-align: center;margin:0px auto;padding:10px 0px 0px 0px;border:1px solid var(--vrc-lpurp);display:inline-block;text-transform: uppercase;vertical-align: top;color:var(--vrc-dpurp);background:transparent;box-sizing:border-box !important;}
 	.vrcLbInfoBtn img{width:12px;height:12px;margin:0px 0px -1px 5px;display:inline-block;}	
-
+	/*table pop up*/
+	.vrcLbTableLb{width:100%;height:100%;position: fixed;top:0;left:0;right:0;background:rgba(0,0,0,.5);z-index:100;display:none;justify-content: center;align-items: center;align-content: flex-start;flex-wrap: nowrap;}
+	.vrcLbTableWrap{height: auto;width: 320px;margin: 0px 0px;display:block;background:var(--vrc-light);border-top: 4px solid var(--vrc-dpurp);border-left: 1px solid var(--vrc-lpurp);text-align: center;border-right: 1px solid var(--vrc-lpurp);border-bottom: 1px solid var(--vrc-lpurp);box-sizing: border-box !important;position:relative;}
+	.vrcLbTableHeader{width:100%;height:auto;margin:0px auto;padding:10px 10px;display:block;box-sizing:border-box !important;}
+	.vrcLbTableHeader h1{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif;font-size:18px;line-height:18px;font-weight:500;text-align: center;margin:0px 0px;padding:10px 0px 0px 0px;box-sizing:border-box !important;text-transform:uppercase;}
+	.vrcLbTableHeader h2{color:var(--vrc-dpurp);font-family:"Big Caslon","Open Sans", sans-serif;font-size:30px;line-height:30px;font-weight:400;text-align: center;margin:0px 0px;padding:10px 0px;box-sizing:border-box !important;text-transform:uppercase;}
+	.vrcLbTableHeader p{color:var(--vrc-mpurp);font-family:"soehne","Open Sans", sans-serif;font-size:16px;line-height:16px;font-weight:400;text-align: center;margin:0px 0px;padding:10px 0px 0px 0px;box-sizing:border-box !important;}
+	.vrcTableBtnWrap{width:100%;height:auto;display:flex;flex-wrap: wrap;align-content: flex-start;justify-content: center;margin:0px 0px;padding:0px 0px;box-sizing:border-box !important;}
+	.vrcTableBtnWrap a{width:100%;height:auto;}
+	.vrcTableBookBtn{width:calc(100% - 40px);height:40px;background:var(--vrc-dpurp);color:#fff;font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;font-weight:600;text-align: center;margin:0px auto 10px;padding:10px 0px;display:inline-block;text-transform: uppercase;box-sizing:border-box !important;}
+	.vrcTableBookBtn[data-link="undefined"]{display:none;}
+	.vrcTableClose{width:30px;height:30px;background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_close_btn.svg") no-repeat center center, var(--vrc-cream);background-size:20px 20px; position: absolute;top:-32px;right:0px;padding:0px; z-index:101;cursor:pointer;box-sizing:border-box !important;}
 	/*bread crumb*/
 	#vrcFilterList{width:100%;max-width:1300px;height:auto;position:relative;margin:25px auto;padding:0px 0px 0px 0px;text-align: center;display: flex;flex-direction: row;flex-wrap: wrap;align-content: center;justify-content: flex-start;align-items: stretch;box-sizing:border-box !important;}
 	#vrcFilterWrapRaceDay, #vrcFilterWrapTicketType, #vrcFilterWrapExperienceType, #vrcFilterWrapEventName{width:auto;height:auto;margin:0;padding:0;}
@@ -285,6 +296,7 @@ page_title = "Victoria Racing Club | Flemington Racecourse | VRC. Buy Tickets Of
 	.TICKETS_NOT_AVAILABLE{background:#CD2A3F;display:inline-block !important;}
 	.FEW_TICKETS_LEFT:after{content:"LOW AVAILABILITY";}
 	.FEW_TICKETS_LEFT{background:#d18645;display:inline-block !important;}*/
+	.vrcImageCheck{width: 260px;height: 45px;font-family: "soehne", "Open Sans", sans-serif;font-size: 13px;font-weight: 600;text-align: center;margin: 20px 20px 20px 20px;padding: 14px 0px;display: block;text-transform: uppercase;cursor: pointer;box-sizing: border-box !important;background: var(--vrc-dpurp);color: #fff;}
 }
 /*mobile*/
 @media only screen and (max-width: 999.99px) {
@@ -435,10 +447,21 @@ page_title = "Victoria Racing Club | Flemington Racecourse | VRC. Buy Tickets Of
 	.vrcLbEventPrice h2{font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;text-align: left;color:var(--vrc-mpurp);margin:5px 0px 0px 0px;font-weight: normal;padding:0px;display: inline-block;float:left;font-weight:600;vertical-align: top;}
 	.vrcLbEventPrice h3{font-family:"Big Caslon","Open Sans","Averta",  sans-serif ;font-size:28px;text-align: left;color:var(--vrc-dpurp);margin:-4px 0px 0px 0px;font-weight: normal;padding:0px;display: inline-block;vertical-align: top;line-height:28px;}
 	.vrcLbPriceDiv{height:1px;width:calc(100% - 40px);background:var(--vrc-lpurp);margin:0px auto 20px;}
-	.vrcLbBookBtn{width:calc(100% - 40px);min-width:170px;height:40px;background:var(--vrc-dpurp);color:#fff;font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;font-weight:600;text-align: center;margin:0px auto 10px;padding:10px 0px;display:inline-block;text-transform: uppercase;box-sizing:border-box !important;}
+	.vrcLbBookBtn,.vrcLbTableBtn{width:calc(100% - 40px);min-width:170px;height:40px;background:var(--vrc-dpurp);color:#fff;font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;font-weight:600;text-align: center;margin:0px auto 10px;padding:10px 0px;display:inline-block;text-transform: uppercase;box-sizing:border-box !important;}
 	.vrcLbInfoBtn{width:calc(100% - 40px);min-width:170px;height:40px;font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;font-weight:600;text-align: center;margin:0px auto;padding:10px 0px 0px 0px;border:1px solid var(--vrc-lpurp);display:inline-block;text-transform: uppercase;vertical-align: top;color:var(--vrc-dpurp);background:transparent;box-sizing:border-box !important;}
 	.vrcLbInfoBtn img{width:12px;height:12px;margin:0px 0px -1px 5px;display:inline-block;}	
-
+	/*table pop up*/
+	.vrcLbTableLb{width:100%;height:100%;position: fixed;top:0;left:0;right:0;background:rgba(0,0,0,.5);z-index:100;display:none;justify-content: center;align-items: center;align-content: flex-start;flex-wrap: nowrap;}
+	.vrcLbTableWrap{height: auto;width:100%;max-width: 320px;margin: 0px 0px;display:block;background:var(--vrc-light);border-top: 4px solid var(--vrc-dpurp);border-left: 1px solid var(--vrc-lpurp);text-align: center;border-right: 1px solid var(--vrc-lpurp);border-bottom: 1px solid var(--vrc-lpurp);box-sizing: border-box !important;position:relative;}
+	.vrcLbTableHeader{width:100%;height:auto;margin:0px auto;padding:10px 10px;display:block;box-sizing:border-box !important;}
+	.vrcLbTableHeader h1{color:var(--vrc-dpurp);font-family:"soehne","Open Sans", sans-serif;font-size:18px;line-height:18px;font-weight:500;text-align: center;margin:0px 0px;padding:10px 0px 0px 0px;box-sizing:border-box !important;text-transform:uppercase;}
+	.vrcLbTableHeader h2{color:var(--vrc-dpurp);font-family:"Big Caslon","Open Sans", sans-serif;font-size:30px;line-height:30px;font-weight:400;text-align: center;margin:0px 0px;padding:10px 0px;box-sizing:border-box !important;text-transform:uppercase;}
+	.vrcLbTableHeader p{color:var(--vrc-mpurp);font-family:"soehne","Open Sans", sans-serif;font-size:16px;line-height:16px;font-weight:400;text-align: center;margin:0px 0px;padding:10px 0px 0px 0px;box-sizing:border-box !important;}
+	.vrcTableBtnWrap{width:100%;height:auto;display:flex;flex-wrap: wrap;align-content: flex-start;justify-content: center;margin:0px 0px;padding:0px 0px;box-sizing:border-box !important;}
+	.vrcTableBtnWrap a{width:100%;height:auto;}
+	.vrcTableBookBtn{width:calc(100% - 40px);height:40px;background:var(--vrc-dpurp);color:#fff;font-family:"soehne","Open Sans","Averta",  sans-serif ;font-size:13px;font-weight:600;text-align: center;margin:0px auto 10px;padding:10px 0px;display:inline-block;text-transform: uppercase;box-sizing:border-box !important;}
+	.vrcTableBookBtn[data-link="undefined"]{display:none;}
+	.vrcTableClose{width:30px;height:30px;background:url("https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_close_btn.svg") no-repeat center center, var(--vrc-cream);background-size:20px 20px; position: absolute;top:-32px;right:0px;padding:0px; z-index:101;cursor:pointer;box-sizing:border-box !important;}
 	/*bread crumb*/
 	#vrcFilterList{width:100%;max-width:1000px;height:auto;position:relative;margin:25px auto;padding:0px 0px 0px 0px;text-align: center;display: flex;flex-direction: row;flex-wrap: wrap;align-content: center;justify-content: flex-start;align-items: stretch;box-sizing:border-box !important;}
 	#vrcFilterWrapRaceDay, #vrcFilterWrapTicketType, #vrcFilterWrapExperienceType, #vrcFilterWrapEventName{display:none;}
@@ -747,9 +770,12 @@ page_title = "Victoria Racing Club | Flemington Racecourse | VRC. Buy Tickets Of
 		</div>
 	
 		<div id="vrcResetAllBtn">CLEAR ALL FILTERS</div>
+		<div class="vrcImageCheck">RUN IMAGE SCRIPT</div>
 	</div>
 
 	<div id="vrcEventStream">
+		<!--image on sale check-->	
+		
 
 		<!--error elements-->
 		<div id="vrcErrorData">
@@ -908,19 +934,34 @@ page_title = "Victoria Racing Club | Flemington Racecourse | VRC. Buy Tickets Of
 							let availSort = vrcSortMapper(buttonText + "Sort") + dateSort + vrcSortMapper(ticketTypeNoSpace + "Sort");
 							//vrcConstructInfoLinks()
 
+							let vrcBuyLink = value.buy_link;
+							let eventFlow = "vrc-"+value.purchase_type.replace(/[^\w\s]/gi, '').toLowerCase();//removes special characters
+							//table options
+							let tableLinkn02 = value.table_options.Table_of_2?.buy_link;
+							let tableLinkn04 = value.table_options.Table_of_4?.buy_link;
+							let tableLinkn06 = value.table_options.Table_of_6?.buy_link;
+							let tableLinkn08 = value.table_options.Table_of_8?.buy_link;
+							let tableLinkn10 = value.table_options.Table_of_10?.buy_link;
+							let tableLinkn12 = value.table_options.Table_of_12?.buy_link;
+							let tableLinkn14 = value.table_options.Table_of_14?.buy_link;
+							let tableLinkn16 = value.table_options.Table_of_16?.buy_link;
 							//build card
-							let newEvent = $j("<div data-racedayname='"
+							if(vrcBuyLink != (null || "none" || "")){
+
+							newEvent = $j("<div data-racedayname='"
 							+ raceNameNoSpace +"' data-tickettype='"
 							+ ticketTypeMapped +"'  data-experiencetype='"
 							+ experienceTypeNoSpace + "' data-eventname='"
 							+ eventNameNoSpace + "' data-eventprice='"
 							+ value.price_from +"' data-eventcode='"
-							+ value.tm_event_name +"' data-datesort='"
+							+ value.tm_event_name +"' data-imgref='" 
+							+ value.image_ref_link +"'data-datesort='"
 							+ dateOfferSort +"'  data-availsort='"
 							+ availSort +"' data-recsort='"
 							+ recSort +"' data-eventSort='"
 							+ value.event_type_sort_no +"' class='vrcEventCard vrc"
-							+ buttonText +"Card'><div class='vrcInfoLightBox'><div class='vrcInfoLbContent'><div class='vrcLbClose'></div><div class='vrcLbEventName'>"
+							+ buttonText +"Card"
+							+ eventFlow +"Card'><div class='vrcInfoLightBox'><div class='vrcInfoLbContent'><div class='vrcLbClose'></div><div class='vrcLbEventName'>"
 							+ value.offer_desc +"</div><div class='vrcLbEventHero'><img src='https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_FallBackHero_840x420.png' data-src='https://s1.ticketm.net/en-au/img/static/vrc/2026/heroImages/"
 							+ heroImgMapper(value.image_ref_link)+"_840x420.jpg'></div><div class='vrcLbInfoWrap'><div class='vrcLbTicketType'>"
 							+ value.ticket_type_category +"</div><div class='vrcLbRaceTitle'>"
@@ -953,6 +994,61 @@ page_title = "Victoria Racing Club | Flemington Racecourse | VRC. Buy Tickets Of
 							+ value.buy_link +"'><div class='vrcBookBtn vrc"
 							+ value.event_type_category.replace(/\s/g, '') +"Btn vrc"
 							+ buttonText +"Btn '></div></a></div></div>");
+
+							} else if( vrcBuyLink == (null || "none" || "")){//tables card
+							newEvent = $j("<div data-racedayname='"
+							+ raceNameNoSpace +"' data-tickettype='"
+							+ ticketTypeMapped +"'  data-experiencetype='"
+							+ experienceTypeNoSpace + "' data-eventname='"
+							+ eventNameNoSpace + "' data-eventprice='"
+							+ value.price_from +"' data-eventcode='" 
+							+ value.tm_event_name +"' data-imgref='" 
+							+ value.image_ref_link +"' data-datesort='"
+							+ dateOfferSort +"'  data-availsort='"
+							+ availSort +"' data-recsort='"
+							+ recSort +"' data-eventSort='"
+							+ value.event_type_sort_no +"' class='vrcEventCard vrc"
+							+ buttonText +"Card"
+							+ eventFlow +"Card'><!--table selection--><div class='vrcLbTableLb'><div class='vrcLbTableWrap'><div class='vrcTableClose'></div><div class='vrcLbTableHeader'><h1>Howden Victoria Derby Day</h1><h2>The Rose Room</h2><p>Tables can only be booked in the sizes below. No singles or odd bookings.</p></div><div class='vrcLbPriceDiv'></div><div class='vrcTableBtnWrap'><a href='"
+								+ tableLinkn02 + "' target='_blank'><div class='vrcTableBookBtn' data-link='" + tableLinkn02 + "'>TABLE OF 2</div></a><a href='"				 
+								+ tableLinkn04 + "' target='_blank'><div class='vrcTableBookBtn' data-link='" + tableLinkn04 + "'>TABLE OF 4</div></a><a href='"
+								+ tableLinkn06 + "' target='_blank'><div class='vrcTableBookBtn' data-link='" + tableLinkn06 + "'>TABLE OF 6</div></a><a href='"
+								+ tableLinkn08 + "' target='_blank'><div class='vrcTableBookBtn' data-link='" + tableLinkn08 + "'>TABLE OF 8</div></a><a href='"
+								+ tableLinkn10 + "' target='_blank'><div class='vrcTableBookBtn' data-link='" + tableLinkn10 + "'>TABLE OF 10</div></a><a href='"
+								+ tableLinkn12 + "' target='_blank'><div class='vrcTableBookBtn' data-link='" + tableLinkn12 + "'>TABLE OF 12</div></a><a href='"
+								+ tableLinkn14 + "' target='_blank'><div class='vrcTableBookBtn' data-link='" + tableLinkn14 + "'>TABLE OF 16</div></a></div></div></div><div class='vrcInfoLightBox'><div class='vrcInfoLbContent'><div class='vrcLbClose'></div><div class='vrcLbEventName'>"
+							+ value.offer_desc +"</div><div class='vrcLbEventHero'><img src='https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_FallBackHero_840x420.png' data-src='https://s1.ticketm.net/en-au/img/static/vrc/2026/heroImages/"
+							+ heroImgMapper(value.image_ref_link)+"_840x420.jpg'></div><div class='vrcLbInfoWrap'><div class='vrcLbTicketType'>"
+							+ value.ticket_type_category +"</div><div class='vrcLbRaceTitle'>"
+							+ value.event_day_desc +"</div><div class='vrcLbHoriDiv'></div><div class='vrcLbEventDate'>"
+							+ eventDateShort +"</div><div class='vrcLbEventBio'><p></p></div></div><div class='vrcLbBtnWrap'><div class='vrcLbEventType'>"
+							+ value.event_type_category +"</div><div class='vrcLbPriceDiv'></div><div class='vrcLbEventPrice'><h2>FROM</h2><h3>$"
+							+ value.price_from +"</h3></div><div class='vrcLbPriceDiv'></div><div class='vrcLbTableBtn'>"
+							+ value.button_text+"</div><a id='"
+							+ eventNameNoSpace+raceNameNoSpace+"' href='https://vrc.com.au/?utm_source=ticketmaster.com.au&utm_medium=referral&utm_campaign=ticket_selector' target='_blank' data-eventlink='"
+							+ eventNameNoSpace+"' data-racelink='"
+							+ raceNameNoSpace+"' class='vrcInfoLink'><div class='vrcLbInfoBtn'>FULL EVENT INFO<img src='https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_more_btn.svg'></div></a></div></div></div><div class='vrcEventHero'><div class='vrcAvailTag avail-"
+							+ value.avail_status +"' data-eventAvailId='"
+							+ value.universalID +"'></div><div class='vrcTicketType"
+							+ value.event_type_category.replace(/\s/g, '') +"'></div><img src='https://s1.ticketm.net/en-au/img/static/vrc/2024/vrc_FallBackHero_470x250.png' data-src='https://s1.ticketm.net/en-au/img/static/vrc/2026/heroImages/"
+							+ heroImgMapper(value.image_ref_link)+"_470x250.jpg'><div class='vrcSandBoxInfoWrap'><div class='vrcSandBoxInfo'>event code "
+							+value.tm_event_name+"</div><div class='vrcSandBoxInfo'>img ref "
+							+value.image_ref_link+"</div><div class='vrcSandBoxInfo'>on sale status "
+							+value.onsale_status+"</div><div class='vrcSandBoxInfo'>disco status "
+							+value.discovery_status+"</div></div></div><div class='vrcEventWrap'><div class='vrcRaceTitle'>"
+							+ value.event_day_desc +"</div><div class='vrcEventName'>"
+							+ value.offer_desc +"</div><div class='vrcHoriDiv'></div><div class='vrcEventDate'>"
+							+ eventDateShort +"</div><div class='vrcTicketType'>"
+							+ value.ticket_type_category.replace("/", '&') +"</div></div><div class='vrcAvailSpan avail-"
+							+ value.avail_status +"'></div><div class='vrcBotWrap vrc"
+							+ value.event_type_category.replace(/\s/g, '') +"BtmWrap vrc"
+							+ buttonText +"BtmWrap'><div class='vrcEventPrice'><h2>FROM</h2><h3>$"
+							+ value.price_from +"</h3></div><div class='vrcPriceDiv'></div><div class='vrcInfoBtn'><p>more info</p><div class='vrcinfoBtnDiv'></div></div><div class='vrcPriceDivMob'></div><div class='vrcMobEventPrice'><h2>FROM</h2><h3>$"
+							+ value.price_from +"</h3></div><div class='vrcBookBtn vrc"
+							+ value.event_type_category.replace(/\s/g,'') +"Btn vrc"
+							+ value.button_text.replace(/\s/g,'') +"Btn'>"+value.button_text+"</div></div></div>");
+							}
+
 
 							//apends event data into an element
 							eventCardListDiv.append(newEvent);
@@ -1144,8 +1240,6 @@ $j(document).on('click','#sortMenu', function (){
 		$j("#ticketTypeDropDown, #dayDropDown, #experienceDropDown").fadeOut(0)
 })
 
-
-
 //info light boxes
 $j(document).on('click', ".vrcInfoBtn", function () {
 	//vrcFetchEventBio()
@@ -1164,6 +1258,31 @@ $j(document).on('click', '.vrcInfoLightBox', function (e) {
 	//$j(".vrcInfoLbContent").stopPropagation();
 	{return false;}
 	$j(".vrcInfoLightBox").fadeOut(50);
+	$j("#vrcMenuWrap").css("display","block");
+});
+//table selection
+$j(document).on('click', ".vrcSelectTableSizeBtn", function () {
+	$j(this).parent(".vrcBotWrap").siblings(".vrcLbTableLb").fadeIn("250").css("display","flex");
+	$j("#vrcMenuWrap").css("display","none");
+})
+$j(document).on('click', ".vrcTableClose", function () {
+	$j(this).parent(".vrcLbTableWrap").parent(".vrcLbTableLb").fadeOut("50");
+	$j("#vrcMenuWrap").css("display","block");
+})
+$j(document).on('click', ".vrcLbTableBtn", function () {
+	$j(this).parent(".vrcLbBtnWrap").parent(".vrcInfoLbContent").parent(".vrcInfoLightBox").fadeOut(0);
+	$j(this).parent(".vrcLbBtnWrap").parent(".vrcInfoLbContent").parent(".vrcInfoLightBox").siblings(".vrcLbTableLb").fadeIn("250").css("display","flex");
+	$j("#vrcMenuWrap").css("display","none");
+})
+
+$j(document).on('click', '.vrcLbTableLb', function (e) {
+
+	if ($j(e.target).closest('.vrcTableBookBtn').length !== 0 )
+	{return true}
+	else if ($j(e.target).closest('.vrcInfoLbContent').length !== 0 )
+	//$j(".vrcInfoLbContent").stopPropagation();
+	{return false;}
+	$j(".vrcLbTableLb").fadeOut(50);
 	$j("#vrcMenuWrap").css("display","block");
 });
 //mobile menu fade in & out
@@ -2180,6 +2299,24 @@ let imageLoader = function(){
 	});
 } 
 
+//check sandbox page for missing images
+$j(".vrcImageCheck").click(
+	function(){
+
+	$j('.vrcEventCard').each(function () {
+		//run through each card and check image src
+		let imgSrc = $j(this).children('.vrcEventHero').children('img').attr('src')
+		let missingImg = "https://s1.ticketm.net/en-au/img/static/vrc/2026/heroImages/vrc_VRC_470x250.jpg"
+		let eventCode = $j(this).data('imgref');
+		let eventName = $j(this).data('eventname');
+		
+
+				if(imgSrc == missingImg){
+					console.log(eventName,'\n','case "'+eventCode+'":')
+
+				}
+	})
+	});
 
 
 </script>
