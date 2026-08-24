@@ -1,0 +1,673 @@
+[% # text to be displayed within <title></title>
+page_title = "Wundrful World Of Christmas | Buy Tickets Official Ticketmaster site." %]
+[% static_has_responsive_header_footer = 1; enable_leader_board = 0; %]
+[% PROCESS "layout/frame/top.tt" %]
+
+<!--libs--->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://s1.ticketm.net/tm/en-au/img/static/fonts/averta.css" type="text/css" rel="stylesheet" />
+<link href="https://s1.ticketm.net/en-au/img/static/wundr/wundr_fonts.css" type="text/css" rel="stylesheet" />
+
+<style type="text/css">
+
+@media only screen and (min-width: 0px) and (max-width: 999px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE !!!! IMPORTANT*/ 
+	#mainContent {padding:0px !important;}
+}
+@media only screen and (min-width: 1000px){	
+	.frame{width: 100% !important;} /*FIX FOR TM HEADER CODE */ 
+	#mainContent {padding:0px !important;}
+
+}
+:root {
+		--wun-blue:#1d005f;
+		--wun-gree:#234433;
+		--wun-cre:#e3dac6;
+		--wun-yel:#f9a94b;
+		--wun-pink:#f68dd1;
+		--wun-purp:#7f26ba;
+		--wun-orn:#e54b50;
+		--wun-burg:#b21b5b;
+		--wun-:#;
+
+	  }	
+@media only screen and (min-width: 1000px) {	
+	/*TM HEADER */
+	#tmHeader{width:100%;height:auto;background:#026cdf;padding:25px 20px 55px;margin:0px auto 0px;box-sizing:border-box;display:block;position: relative;}
+	#tmLogo{width:220px;height:auto;display:inline-block;float:left;}
+	#tmLogo img{width:100%;height:auto;padding:0;margin:0px auto;}
+	#tmSearch{width:450px;height:35px;margin:0px auto;padding:7px 0px 0px 0px;display:inline-block;float:right;background:#004da1;border-radius:20px;color:#fff;font-family:"Open Sans","Averta",  sans-serif ;font-size:16px;font-weight: 300;text-align: center;box-sizing:border-box;}
+	/*wundr content*/
+	#wunContent{width:100%;height:auto;background:#fff;position: relative;z-index:9;padding:1px 0px 1px 0px;overflow:hidden}
+	#wunHeader{width:100%;height:100vh;background:url('https://s1.ticketm.net/en-au/img/static/wundr/2025/wundr_header_poster.png') bottom center no-repeat;background-size:cover;position: relative;padding:0px 0px 1px 0px;overflow:hidden;border-bottom:0px solid #fff;}
+	#wunHeader video{width:100%;height:100%;object-fit: cover;z-index:10;  position: absolute;top: 0;left:0;right:0/*transform: translateY(-50%);*/}
+	#wunHeader h1{color:#fff;font-family:"Decotura","Averta","Open Sans",sans-serif ;font-size:60px;font-weight: 300;text-align: center;padding:0;margin:50px auto 0px;position: relative;z-index:11;}
+	#wunLogo{width:350px;height:auto;margin:25px auto 40px;position: relative;z-index:11;}
+	#wunLogo img{width:100%;height:auto;display:block;position: relative;z-index:11;}
+	.wunheaderBtn{width:300px;height:auto;margin:20px auto;padding:15px 30px;color:var(--wun-blue);font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:40px;font-weight: 700;text-align: center;background:#fff;border-radius:50px;cursor:pointer;position:absolute;bottom:50px;left:0;right:0;z-index:11}
+
+	#wunMenu{width:auto;height:50px;background:#fff;padding:0px 0px;box-sizing:border-box !important;text-align: center;border-radius:30px;margin:0px auto;display:inline-block;box-shadow:0px 0px 4px 2px rgba(29, 0, 95, 0.2);}
+	#wunMenu img{width:auto;height:30px;display:inline-block;margin:0px 0px 0px 0px;padding:10px 15px;vertical-align: top;}
+	#wunMenu button{height:50px;cursor:pointer;border:0;background:transparent;color:var(--wun-blue);font-family:"Recoleta","Averta","Open Sans",  sans-serif ;font-size:20px;font-weight: normal;text-align: center;margin:0px 20px;padding:3px 0px 0px 0px;text-transform: uppercase;vertical-align: top;}
+	.wunMenuArrow{display:none;}
+	#wunMenuWrap{width:auto;height:50px;display:block;margin:0 auto;padding:0;z-index: 100;top:10px;left:0;right:0;position: absolute;text-align:center;}
+	.wunMenuToggle{top:0;left:0;right:0;position: fixed !important;}
+
+	.wunWrap{width:1100px;height:auto;margin:0px auto;padding:50px 0px;position: relative;z-index:11;}
+	.wunWrap h1, .wunWrap h1{color:#fff;font-family:"Wundr","Averta","Open Sans",sans-serif ;font-size:50px;font-weight: normal;text-align: center;margin:0;padding:0;}
+	.wunWrap h2, .wunWrap h2{color:#fff;font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:60px;font-weight: 700;text-align: center;margin:0;padding:0;text-transform: uppercase;}
+	.wunWrap h3, .wunWrap h3{color:#fff;font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:32px;font-weight: 700;text-align: center;margin:10px auto;padding:0;text-transform: uppercase;}
+	.wunWrap h4, .wunWrap h4{color:#fff;font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:22px;font-weight: 700;text-align: center;margin:0px 0px 0px 0px;padding:0;text-transform: uppercase;}
+	.wunWrap h3 sup, .wunWrap h3 sup{font-size:15px;}	
+	.wunWrap p, .wunWrap p{color:#fff;font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:24px;font-weight: normal;text-align: center;}
+	.wunWrap a, .wunHalfWrap a{color:#fff;}
+
+	.wunHalfWrap{width:500px;height:500px;display:inline-block;vertical-align: top;overflow:hidden;box-sizing:border-box !important;}
+	.wunLeftMod{border-radius:20px 0px 0px 20px;padding:10px;}
+	.wunRightMod{border-radius:0px 20px 20px 0px;}
+	.wunBlueBg{background:var(--wun-blue);}
+	/*waitlist*/		
+	#wunWaitlistMod{width:650px;height:auto;background:var(--wun-blue);border-radius:20px;padding:20px;margin:50px auto;box-sizing:border-box !important;}
+	.wunBlub{width:850px;height:auto;background:var(--wun-blue);border-radius:20px;padding:20px;margin:50px auto;box-sizing:border-box !important;}
+	#wunWaitlistMod p{}
+	#wunWaitlistMod a{text-decoration:none;}
+	.wunBtn{width:70%;height:auto;padding:5px 0px;background:var(--wun-blue);color:#fff;margin:20px auto 0px;font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:24px;font-weight: normal;text-align: center;border-radius:20px;}
+
+	/*video mod*/
+	#wunVideoWrap{width:852px;margin:0px auto;padding:0px;display:block;border:8px solid var(--wun-blue);background: var(--wun-blue);border-radius:20px;overflow:hidden;}
+	#wunVideoMod{width:852px;height:480px;margin:0px auto;overflow: hidden;background:#fff;}
+	#wunVideoMod iframe{width:852px;height:480px;border:0;outline:0;}
+	/*wun tickets*/
+	#wunTicketMod{width:100%;height:auto;margin:0px auto;padding:0px 0px 100px;background:#fff;background-size:cover;position: relative;z-index:11;}
+	#wunTicketMod a{text-decoration:none;}
+	.wunTicketsBtn{width:300px;height:auto;margin:40px auto;padding:15px 30px;color:#fff;font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:40px;font-weight: 700;text-align: center;background:var(--wun-blue);border-radius:50px;cursor:pointer;}
+
+	#wunTicketMod h1{color:var(--wun-blue) !important;}
+	#wunTicketMod h3{color:var(--wun-blue) !important;}
+	#wunWaitlistMod h1{color: #fff !important;}
+	/*wun experience*/
+	#wunExperienceMod{width:100%;height:auto;margin:0px auto;padding:50px 1px;background:var(--wun-blue);background-size:cover;position: relative;z-index:11;}
+	#wunExperienceMod h1{color:#fff;font-family:"Wundr","Averta","Open Sans",sans-serif ;font-size:50px;font-weight: normal;text-align: center;margin:0;padding:0;}
+	#wunExperienceWrap{width:auto;height:500px;margin:50px auto;overflow: visible;position: relative;display:block;/*transform: translateX(25%);*/}
+	#wunExperienceScroller{width:100%;height:500px;margin:0px 0px;padding:0px 0px 0px 25px;display:block;position:absolute;top:0;left:0;right:0;text-align: center;white-space: nowrap;overflow:hidden;display:flex;flex-direction: row;flex-wrap: nowrap; justify-content: flex-start;column-gap: 25px;}	
+	.wunExpCard{width:1000px;min-width:1000px;height:500px;border-radius:20px;overflow:hidden;white-space:nowrap;position: relative;}
+	.wunExpCard h2{color:#fff;font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:42px;font-weight: 500;text-align: center;margin:0px 0px 20px 0px;padding:0;}	
+	.wunExpCard p{color:#fff;font-family:"Averta","Open Sans",sans-serif ;font-size:16px;font-weight: normal;text-align: center;margin:0;padding:0;white-space: wrap;}	
+	.wunExpLeft{width:500px;min-width:500px;height:500px;display:inline-block;background:#fff;vertical-align: top;overflow:hidden;position: relative;}
+	.wunExpLeft video{width:100%;height:100%;object-fit: cover;z-index:10;  position: absolute;top: 0;left:0;right:0/*transform: translateY(-50%);*/; z-index:19;}	
+
+	.wunExpRight{width:500px;min-width:500px;height:500px;background:url('https://s1.ticketm.net/en-au/img/static/wundr/wun_pattern_dburg_img.svg')no-repeat center center, var(--wun-burg);background-size:200%;display:inline-block;vertical-align: top;padding:40px;box-sizing:border-box !important;}
+	.wunExpFlexWrap{display:flex;flex-wrap:nowrap;flex-direction: column; transform: translateY(-50%);margin: 50% 0px 0px 0px;place-content: center;}
+	.wunExpArrow{width:40px;height:40px;border-radius:50px;background:url("https://s1.ticketm.net/en-au/img/static/wundr/wun_arrow_blue_img.svg") center center no-repeat, #fff;background-size: 20px 20px;}
+	.wunExpArrowRight{right:5px;top:255px;position: absolute; z-index: 20;}
+	.wunExpArrowLeft{left:5px;top:255px;position: absolute; z-index: 20;transform: rotate(180deg);}
+	.wunExpCardBlank{background:transparent !important;opacity: 0;}
+	/*location*/
+	#wunLocationMod{width:100%;height:auto;margin:0px auto;text-align: center;background:#fff;position: relative;z-index:11;background:#fff;}
+	#wunLocationMod h1{color: #fff !important;}
+	#wunLocationMod iframe{width:500px;height:500px;margin:0px;padding:0px;}
+
+	/*FAQs*/
+	#wunFaqMod{width:100%;height:auto;margin:0px auto;background:var(--wun-burg);position: relative;z-index:11;}
+	.wunFaq{width:900px;height:auto;margin:10px auto 20px;border-radius:10px;background:#fff;padding:20px 20px; box-sizing:border-box !important;position: relative;}
+	.wunFaqQ{color:var(--wun-blue);font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:24px;font-weight: 700;text-align: left;cursor:pointer;box-sizing:border-box !important;position: relative;}
+	.wunFaqQ img{width:12px;height:auto;margin:0px 10px 0px 0px;transition:ease-in-out .5s all;position:absolute;top:11px;right:5px}
+	.wunRotate{transform: rotate(90deg);}
+	.wunFaqA{color:var(--wun-blue);font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:20px;font-weight: 500;text-align: left;margin:10px auto 0px;padding:0px 0px 0px 0px;display:none;box-sizing:border-box !important;}
+	.wunFaqA a{color:var(--wun-blue);text-decoration: underline;}
+	/*Footer*/
+	#wunFooter{width:100%;max-width:800px;height:auto;margin:50px auto;background:var(--wun-blue);position: relative;z-index:11;border-radius:20px;padding:20px;box-sizing:border-box !important;display:flex;flex-wrap: nowrap;justify-content: space-around;align-items: center;}
+	#wunFooter a{text-decoration: none;color:#fff;font-family:"Wundr","Averta","Open Sans",sans-serif ;font-size:30px;}
+	#wunFooterLogo{width:200px;height:auto;vertical-align:top;display:inline-block;margin:0px;padding:0px;}
+	#wunFooterLogo img{width:100%;height:auto;margin:0px auto;display:block;}
+	.wunFooterWrap{width:auto;height:auto;margin:0;display:inline-block;text-align: center;}
+	.wunFooterWrap h1, #wunFooter h1{color:#fff;font-family:"Wundr","Averta","Open Sans",sans-serif ;font-size:30px;font-weight: normal;text-align: center;margin:0;padding:0;}
+	.wunFooterWrap img{width:35px;height:35px;margin:20px auto;display:inline-block;}	
+
+
+}
+
+/*mobile*/
+@media only screen and (max-width: 1000px) {	
+/*wundr content*/
+	#wunContent{width:100%;max-width:1000px;height:auto;background:#fff;position: relative;z-index:9;padding:1px 0px 1px 0px;}
+	#wunHeader{width:100%;height:100vh;background:url('https://s1.ticketm.net/en-au/img/static/wundr/2025/wundr_header_poster.png') bottom center no-repeat;background-size:cover;position: relative;padding:0px 0px 1px 0px;overflow:hidden;border-bottom:0px solid #fff;}
+	#wunHeader video{width:100%;height:100%;object-fit: cover;z-index:10;  position: absolute;top: 0;left:0;right:0/*transform: translateY(-50%);*/}
+	#wunHeader h1{color:#fff;font-family:"Decotura","Averta","Open Sans",sans-serif ;font-size:60px;font-weight: 300;text-align: center;padding:0;margin:50px auto 0px;position: relative;z-index:11;}
+	#wunLogo{max-width:450px;width:90%;height:auto;margin:30px auto 50px;z-index:11;}
+	#wunLogo img{width:100%;height:auto;display:block;position: relative;z-index:11;}
+	.wunheaderBtn{width:90%;max-width:300px;height:auto;margin:20px auto;padding:15px 30px;color:var(--wun-blue);font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:26px;font-weight: 700;text-align: center;background:#fff;border-radius:50px;cursor:pointer;position:absolute;bottom:50px;left:0;right:0;z-index:11;        box-sizing: border-box !important; }
+
+	#wunMenuWrap{width:90%;height:50px;margin:0px auto 0;text-align: left;display:block;overflow:hidden;z-index:200;top:10px;left:0;right:0;position: absolute;}
+	#wunMenu{width:100%;height:50px;margin:0px 0px;padding:0px 20px;display:block;position:absolute;top:0;left:0;right:0;z-index:201;background:#fff;text-align: center;white-space: nowrap;overflow:hidden;box-sizing:border-box !important;border-radius:30px;box-shadow:0px 0px 4px 2px rgba(29, 0, 95, 0.2);}
+	#wunMenu img{display:none;}
+	#wunMenu button{height:50px;cursor:pointer;border:0;background:transparent;color:var(--wun-blue);font-family:"Recoleta","Averta","Open Sans",  sans-serif ;font-size:16px;font-weight: normal;text-align: center;margin:0px 10px;padding:3px 0px 0px 0px;text-transform: uppercase;vertical-align: top;}
+	.wunMenuArrow{height:40px;width:auto;margin:5px 0px;display:block;position: absolute;z-index:202;border-radius:20px;}
+	.wunMenuArrow img{height:auto;width:8px !important;padding:14px 10px;}
+	.wunArrowRight{top:0;right:3px;background:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);}
+	.wunArrowLeft{top:0;left:3px;transform:rotate(180deg);background:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);}
+	.wunMenuToggle{top:0;left:0;right:0;position: fixed !important;}
+
+	.wunWrap{max-width:1100px;width:94%;height:auto;margin:0px auto;padding:30px 0px;position: relative;z-index:11;}
+	.wunWrap h1, .wunWrap h1{color:#fff;font-family:"Wundr","Averta","Open Sans",sans-serif ;font-size:40px;font-weight: normal;text-align: center;margin:0;padding:0;}
+	.wunWrap h2, .wunWrap h2{color:#fff;font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:50px;font-weight: 700;text-align: center;margin:0;padding:0;text-transform: uppercase;}
+	.wunWrap h3, .wunWrap h3{color:#fff;font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:22px;font-weight: 700;text-align: center;margin:10px auto;padding:0;text-transform: uppercase;}
+	.wunWrap h4, .wunWrap h4{color:#fff;font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:16px;font-weight: 700;text-align: center;margin:0px 0px 0px 0px;padding:0;text-transform: uppercase;}
+	.wunWrap h3 sup, .wunWrap h3 sup{font-size:15px;}	
+	.wunWrap p, .wunWrap p{color:#fff;font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:20px;font-weight: normal;text-align: center;}
+	.wunWrap a, .wunHalfWrap a{color:#fff;}
+
+	.wunHalfWrap{max-width:500px;width:100%;height:auto;display:block;;overflow:hidden;box-sizing:border-box !important;}
+	.wunLeftMod{border-radius:20px 20px 0px 0px;padding:10px;}
+	.wunRightMod{border-radius:0px 0px 20px 20px;}
+	.wunBlueBg{background:var(--wun-blue);}
+	/*waitlist*/		
+	#wunWaitlistMod{max-width:650px;width:100%;height:auto;background:var(--wun-blue);border-radius:20px;padding:20px;margin:50px auto;box-sizing:border-box !important;}
+	.wunBlub{max-width:650px;width:100%;height:auto;background:var(--wun-blue);border-radius:20px;padding:20px;margin:50px auto;box-sizing:border-box !important;}
+	#wunWaitlistMod h1{}
+	#wunWaitlistMod p{}
+	#wunWaitlistMod a{text-decoration:none;}
+	.wunTicketsBtn{max-width:300px;width:70%;height:auto;padding:5px 0px;background:var(--wun-blue);color:#fff;margin:30px auto 30px;font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:24px;font-weight: normal;text-align: center;border-radius:20px;}
+
+	/*video*/	
+	#wunVideoWrap{width:90%;margin:0px auto 25px;display:block;border:8px solid var(--wun-blue);border-radius:20px}
+	#wunVideoMod{width:100%;height: 0px;padding-top:56.25%;margin: auto; position:relative;display: block !important;box-sizing: border-box !important;border:3px solid var(--nls-red);border-radius:3px;overflow: hidden;}
+	#wunVideoMod iframe{position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 0;}	
+	/*wun tickets*/
+	#wunTicketMod{width:100%;height:auto;margin:0px auto;background: #fff;background-size:cover;position: relative;z-index:11;}
+	#wunTicketMod a{text-decoration:none;}
+
+	#wunTicketMod h1{color:var(--wun-blue) !important;}
+	#wunTicketMod h3{color:var(--wun-blue) !important;}
+	#wunWaitlistMod h1{color: #fff !important;}
+	/*wun experience*/
+	#wunExperienceMod{width:100%;height:auto;margin:0px auto;padding:50px 1px;background:var(--wun-blue);background-size:cover;position: relative;z-index:11;}
+	#wunExperienceMod h1{color:#fff;font-family:"Wundr","Averta","Open Sans",sans-serif ;font-size:50px;font-weight: normal;text-align: center;margin:0;padding:0;}
+	#wunExperienceWrap{width:auto;height:auto;margin:50px auto;overflow: visible;position: relative;display:block;/*transform: translateX(25%);*/;box-sizing: border-box !important;}
+	#wunExperienceScroller{width:calc(100% - 30px);height:auto;margin:0px 15px;padding:0px 0px 0px 0px;text-align: center;white-space: nowrap;overflow:hidden;display:flex;flex-direction: row;flex-wrap: nowrap; justify-content: flex-start;column-gap: 25px;box-sizing: border-box !important;}	
+	.wunExpCard{width:90%;height:auto;border-radius:20px;overflow:hidden;white-space:nowrap;position: relative;flex: 0 0 100%;box-sizing: border-box !important;}
+	.wunExpCard h2{color:#fff;font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:28px;font-weight: 500;text-align: center;margin:0px 0px 20px 0px;padding:0;white-space: normal;}	
+	.wunExpCard p{color:#fff;font-family:"Averta","Open Sans",sans-serif ;font-size:16px;font-weight: normal;text-align: center;margin:0;padding:0;white-space: wrap;}	
+	.wunExpLeft{width:100%;height:250px;display:block;background:#fff;overflow:hidden;position: relative;}
+	.wunExpLeft video{width:100%;height:100%;object-fit: cover;z-index:10;  position: absolute;top: 0;left:0;right:0/*transform: translateY(-50%);*/; z-index:19;}	
+
+	.wunExpRight{width:100%;height:auto;background:url('https://s1.ticketm.net/en-au/img/static/wundr/wun_pattern_dburg_img.svg')no-repeat center center, var(--wun-burg);background-size:200%;display:block;vertical-align: top;padding:40px;box-sizing:border-box !important;border-radius:0px 0px 20px 20px;}
+	.wunExpFlexWrap{display:flex;flex-wrap:nowrap;flex-direction: column;place-content: center;}
+	.wunExpArrow{width:40px;height:40px;border-radius:50px;background:url("https://s1.ticketm.net/en-au/img/static/wundr/wun_arrow_blue_img.svg") center center no-repeat, #fff;background-size: 20px 20px;}
+	.wunExpArrowRight{right:5px;top:5px;position: absolute; z-index: 20;}
+	.wunExpArrowLeft{left:5px;top:5px;position: absolute; z-index: 20;transform: rotate(180deg);}
+	.wunExpCardBlank{background:transparent !important;opacity: 0;}
+	/*location*/
+	#wunLocationMod{width:100%;height:auto;margin:0px auto;text-align: center;background:#fff;position: relative;z-index:11;background:#fff;}
+	#wunLocationMod iframe{width:100%;height:auto;min-height:250px;margin:0px;padding:0px;}
+
+	/*FAQs*/
+	#wunFaqMod{width:100%;max-width:1000px;height:auto;margin:0px auto;background:var(--wun-burg);position: relative;z-index:11;}
+	.wunFaq{max-width:900px;width:100%;height:auto;margin:10px auto 20px;border-radius:10px;background:#fff;padding:15px 15px; box-sizing:border-box !important;position: relative;}
+	.wunFaqQ{color:var(--wun-blue);font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:16px;font-weight: 700;text-align: left;cursor:pointer;box-sizing:border-box !important;position: relative;}
+	.wunFaqQ img{width:12px;height:auto;margin:0px 0px 0px 0px;transition:ease-in-out .5s all;position:absolute;top:5px;right:-10px}
+	.wunRotate{transform: rotate(90deg);}
+	.wunFaqA{color:var(--wun-blue);font-family:"Recoleta","Averta","Open Sans",sans-serif ;font-size:14px;font-weight: 500;text-align: left;margin:10px auto 0px;padding:0px 5px 0px 0px;display:none;box-sizing:border-box !important;}
+	.wunFaqA a{color:var(--wun-blue);text-decoration: underline;}
+	/*Footer*/
+	#wunFooter{width:90%;max-width:800px;height:auto;margin:50px auto;background:var(--wun-blue);position: relative;z-index:11;border-radius:20px;padding:20px;box-sizing:border-box !important;display:flex;flex-wrap: wrap;justify-content: space-around;align-items: center;align-content: center;}
+	#wunFooter a{text-decoration: none;color:#fff;font-family:"Wundr","Averta","Open Sans",sans-serif ;font-size:30px;font-weight: normal;text-align: center;margin:0;padding:0;}
+	#wunFooterLogo{width:200px;height:auto;vertical-align:top;display:block;margin:0px;padding:0px;}
+	#wunFooterLogo img{width:100%;height:auto;margin:0px auto;display:block;}
+	.wunFooterWrap{width:auto;height:auto;margin:30px auto 0px;display:block;text-align: center;}
+	.wunFooterWrap h1{color:#fff;font-family:"Wundr","Averta","Open Sans",sans-serif ;font-size:30px;font-weight: normal;text-align: center;margin:0;padding:0;}
+	.wunFooterWrap img{width:35px;height:35px;margin:20px;display:inline-block;}	
+
+	}
+
+</style>
+<!--TM HEADER---
+<div id="tmHeader">
+	<div id="tmLogo"><img src="https://s1.ticketm.net/en-au/css/6087a0923498ed842bd93d95cd427cba/rebrand_smvp/tm/img/sys/alpha/discovery/header/ticketmaster-logo.svg"></div><div id="tmSearch">what are you looking for?</div>
+</div>--->
+
+<div id="wunContent">
+	<!--header content--->
+	<div id="wunMenuWrap">
+		<div class="wunMenuArrow wunArrowLeft"><img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_arrow_blue_img.svg"></div>
+			<div id="wunMenu"><img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_wunder_xmas_hori_blue_logo.svg"><button data-menubtn="Ticket">GET TICKETS</button><button data-menubtn="Experience">The Experience</button><button data-menubtn="Location">FIND US</button><button data-menubtn="Faq">FAQs</button><a href="https://www.wundr.live/" target="_blank"><button>OFFICIAL SITE</button></a>
+			</div>	
+		<div class="wunMenuArrow wunArrowRight"><img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_arrow_blue_img.svg"></div>	
+	</div>
+	
+	
+	<div id="wunHeader">
+		<a href="https://www.ticketmaster.com.au/artist/3184129"><div class="wunheaderBtn">Get Tickets Now</div></a>
+		<!--background video ----->
+		<video playsinline autoplay muted loop poster="https://s1.ticketm.net/en-au/img/static/wundr/2025/wundr_header_poster.png" id="">
+					<source src="https://s1.ticketm.net/en-au/img/static/wundr/wundr_header_hero.mp4" type="video/mp4">
+					<source src="https://s1.ticketm.net/en-au/img/static/wundr/wundr_header_hero.webm" type="video/webm">	
+		</video>
+	
+	</div>
+
+
+	<!---tickets--->
+	<div id="wunTicketMod">
+		<div class="wunWrap">
+	
+			<!--<div id="wunWaitlistMod">
+				<h1>Sign up to the WUNDR list now!</h1>
+				<p>And get exclusive presale access to tickets and all the latest Wundrful updates.</p>
+				<a href="https://m.cmpgn.page/Z0C7xJ" target="_blank"><div class="wunBtn">Sign up</div></a>
+			</div> -->
+			<div id="wunLogo"><img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_wunder_xmas_vert_blue_logo.svg" alt="Wundrful World of Christmas"></div>
+
+			<h1>An immersive animated adventure to the North Pole.</h1>
+			<a href="https://www.ticketmaster.com.au/artist/3184129"><div class="wunTicketsBtn">Get Tickets Now</div></a>
+			<h3>DOORS OPEN 6TH NOVEMBER TO 24TH DECEMBER</h3>
+			<h3>Wundr, 31 MARKET STREET, SYDNEY (OPPOSITE QVB)</h3>
+			<div class="wunBlub">
+				<p>Wundr's acclaimed Christmas experience returns to Sydney in 2026!
+					<br /><br />
+				New scenes.  New characters. Even more fun!
+					<br /><br />
+				Last year's experience was a sell&#45;out so book early to avoid disappointment!
+				<br /><br />
+				Have your photo taken with Santa!
+				<!--	<br /><br />
+				Complimentary Santa letter packs and 1 x group photo with Santa included with each purchase!-->
+				</p>
+			</div>
+		</div>
+
+	<div id="wunVideoWrap">
+		<div id="wunVideoMod">
+			<iframe src="https://www.youtube.com/embed/XSfLlMoiwgw?si=X41raygxmdJ8a7fQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+		
+
+	</div>
+	</div>
+	<!--about---
+	<div id="wunAboutMod">
+
+			<div class="wunWrap">
+				<h2>ABOUT THE EXHIBITION</h2>
+
+				<p>Get closer to dinosaurs than ever before in Jurassic World: The Exhibition!  Based on one of the biggest blockbusters in cinema history, the exhibition immerses audiences of all ages in scenes inspired by the beloved movies.  Now, the park that was only a promise comes to life... right before your eyes. Walk through the Jurassic World iconic gates as an honoured guest and gaze in wonder at a towering Brachiosaurus; come face&#45;to&#45;face with a Velociraptor; and get a rare up&#45;close look at the most vicious dinosaur of them all, Tyrannosaurus Rex. Don&rsquo;t miss the awe&#45;inspiring journey and remember, if something chases you... run! Get your tickets now for Jurassic World: The Exhibition in Sydney!</p>
+			
+				<div id="wunVideoMod">
+					<iframe src="" allowfullscreen="" allow="encrypted-media" width="700" height="393.75"></iframe>
+				</div>
+		
+
+			</div>
+			
+	</div> --->
+	<div id="wunExperienceMod">
+		<h1>THE EXPERIENCE</h1>
+
+		<div id="wunExperienceWrap">
+			<div id="wunExperienceScroller">
+			<!--card 1-->
+			<div id="card1" data-card="1" class="wunExpCard">
+				<div class="wunExpLeft">
+					
+					<video playsinline autoplay muted loop poster="https://s1.ticketm.net/en-au/img/static/wundr/wun_step02.jpg" id="">
+						<source src="https://s1.ticketm.net/en-au/img/static/wundr/wun_step02.mp4" type="video/mp4">
+						<source src="https://s1.ticketm.net/en-au/img/static/wundr/wun_step02.webm" type="video/webm">	
+						</video>
+
+				</div><div class="wunExpRight"><div class="wunExpFlexWrap">
+					<h2>The Wundr&trade; Lift</h2>
+					<p>Begin your journey to the North Pole powered by the magic of Santa's elves. Listen carefully to Elf Conductor Noel's instructions as Captain Pinecone zooms you through the clouds to the North Pole.
+					</p>
+				</div></div><div class="wunExpArrow wunExpArrowRight"></div>
+			</div>
+			<!--card 2-->
+			<div id="card2" data-card="2" class="wunExpCard"><div class="wunExpArrow wunExpArrowLeft"></div>
+				<div class="wunExpLeft">
+					
+						<video playsinline autoplay muted loop poster="https://s1.ticketm.net/en-au/img/static/wundr/2025/wun_step03.jpg" id="">
+						<source src="https://s1.ticketm.net/en-au/img/static/wundr/2025/wun_step03.mp4" type="video/mp4">
+						<source src="https://s1.ticketm.net/en-au/img/static/wundr/2025/wun_step03.webm" type="video/webm">	
+						</video>	
+				
+				</div><div class="wunExpRight"><div class="wunExpFlexWrap">
+					<h2>Enchanted Forest</h2>
+					<p>Step through the Wundr Door into the snow-covered North Pole and wander past the Wishing Well to the Elves' Workshop.
+					</p>
+				</div></div><div class="wunExpArrow wunExpArrowRight"></div>
+			</div>
+			<!--card 3-->
+			<div id="card3" data-card="3" class="wunExpCard"><div class="wunExpArrow wunExpArrowLeft"></div>
+				<div class="wunExpLeft">
+					
+					<video playsinline autoplay muted loop poster="https://s1.ticketm.net/en-au/img/static/wundr/wun_step04.jpg" id="">
+						<source src="https://s1.ticketm.net/en-au/img/static/wundr/wun_step04.mp4" type="video/mp4">
+						<source src="https://s1.ticketm.net/en-au/img/static/wundr/wun_step04.webm" type="video/webm">	
+						</video>	
+
+				</div><div class="wunExpRight"><div class="wunExpFlexWrap">
+					<h2>The Elves' Workshop</h2>
+					<p>Master Builder Elf Jock McChisel and his apprentice Holly are ready to show you how the toy-making line works. Watch closely so you're ready for your shift at the Toy Sorting Station.
+					</p>
+				</div></div><div class="wunExpArrow wunExpArrowRight"></div>
+			</div>
+			<!--card 4-->
+			<div id="card4" data-card="4"class="wunExpCard"><div class="wunExpArrow wunExpArrowLeft"></div>
+				<div class="wunExpLeft">
+					
+					<video playsinline autoplay muted loop poster="https://s1.ticketm.net/en-au/img/static/wundr/2025/wun_step05.jpg" id="">
+						<source src="https://s1.ticketm.net/en-au/img/static/wundr/2025/wun_step05.mp4" type="video/mp4">
+						<source src="https://s1.ticketm.net/en-au/img/static/wundr/2025/wun_step05.webm" type="video/webm">	
+						</video>	
+
+				</div><div class="wunExpRight"><div class="wunExpFlexWrap">
+					<h2>Toy Sorting Station</h2>
+					<p>All little trainee Elves welcome here! Santa's helper will show you where to pick up a letter and go to find the right toy. Once you've found it, drop it off at the wrapping station and you're on your way to becoming an Elf.
+					</p>
+				</div></div><div class="wunExpArrow wunExpArrowRight"></div>
+			</div>
+			<!--card 5-->
+			<div id="card5" data-card="5"class="wunExpCard"><div class="wunExpArrow wunExpArrowLeft"></div>
+				<div class="wunExpLeft">
+					
+					<video playsinline autoplay muted loop poster="https://s1.ticketm.net/en-au/img/static/wundr/wun_step06.jpg" id="">
+						<source src="https://s1.ticketm.net/en-au/img/static/wundr/wun_step06.mp4" type="video/mp4">
+						<source src="https://s1.ticketm.net/en-au/img/static/wundr/wun_step06.webm" type="video/webm">	
+						</video>	
+
+				</div><div class="wunExpRight"><div class="wunExpFlexWrap">
+					<h2>Mrs Claus's Kitchen</h2>
+					<p>Ah that smells delicious! Meet Mrs Claus in her kitchen and she'll demonstrate how to make those special treats that her dear hubbie loves so much!
+						<br /><br />
+						Listen carefully so you can leave the right snack out for the Big Man on the night before Christmas.
+					</p>
+				</div></div><div class="wunExpArrow wunExpArrowRight"></div>
+			</div>
+			<!--card 6-->
+			<div id="card6" data-card="6"class="wunExpCard"><div class="wunExpArrow wunExpArrowLeft"></div>
+				<div class="wunExpLeft">
+					
+					<video playsinline autoplay muted loop poster="https://s1.ticketm.net/en-au/img/static/wundr/wun_step07.jpg" id="">
+						<source src="https://s1.ticketm.net/en-au/img/static/wundr/wun_step07.mp4" type="video/mp4">
+						<source src="https://s1.ticketm.net/en-au/img/static/wundr/wun_step07.webm" type="video/webm">	
+						</video>	
+
+				</div><div class="wunExpRight"><div class="wunExpFlexWrap">
+					<h2>Santa's Cottage</h2>
+					<p>Listen to Santa's story of how he ended up at the North Pole and see where Santa likes to relax.
+					</p>
+				</div></div><div class="wunExpArrow wunExpArrowRight"></div>
+			</div>
+			<!--card 7-->
+			<div id="card7" data-card="7" class="wunExpCard"><div class="wunExpArrow wunExpArrowLeft"></div>
+				<div class="wunExpLeft">
+					
+					<video playsinline autoplay muted loop poster="https://s1.ticketm.net/en-au/img/static/wundr/2025/wun_step01.jpg" id="">
+					<source src="https://s1.ticketm.net/en-au/img/static/wundr/2025/wun_step01.mp4" type="video/mp4">
+					<source src="https://s1.ticketm.net/en-au/img/static/wundr/2025/wun_step01.webm" type="video/webm">	
+					</video>
+
+				</div><div class="wunExpRight"><div class="wunExpFlexWrap">
+					<h2>North Pole Post Office</h2>
+					<p>Finish up your adventure by having your group photo taken with Santa and don't forget to write your letter to him before you leave!
+					</p>
+				</div></div>
+			</div>
+			<!--card 8 blank-->
+			<div class="wunExpCard wunExpCardBlank">
+				<div class="wunExpLeft">
+					
+	
+
+				</div><div class="wunExpRight"><div class="wunExpFlexWrap">
+
+				</div></div>
+			</div>
+
+		</div>
+		</div>
+
+	</div>
+
+	<!--location-->
+	<div id="wunLocationMod">
+		<div class="wunWrap">
+		<div class="wunHalfWrap wunBlueBg wunLeftMod">
+			<h1>Find Us</h1> 
+			<p><strong>Wundr, 31 Market Street, Sydney </strong><em>(Opposite QVB)</em></p>
+			<p>Set in the heart of Sydney&rsquo;s CBD on the corner of Market Street and York Street, Wundr is located opposite the QVB.<br /><br /><a href="https://citymapper.com/go/of9sxfrq5d" target="_blank">Get directions via Citymapper</a></p>
+
+		</div><div class="wunHalfWrap wunRightMod">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13250.878665996186!2d151.18777513504025!3d-33.87111483819306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12af24bd73a1e9%3A0x6711454b905f8c8a!2sWundr!5e0!3m2!1sen!2sau!4v1725936867496!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" outline="none"></iframe>
+
+		</div>
+		</div>
+
+	</div> 
+
+	<!--FAQs-->
+	<div id="wunFaqMod" class="">
+
+			<div class="wunWrap">
+	
+				<h1>Frequently Asked Questions</h1>
+				<!--<h4>SUB HEADER</h4>-->
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">What is Wundrful World Of Christmas?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">Wundrful World of Christmas is a magical, mixed reality walk through experience perfect for 3 to 8 year olds and their grown ups.  You will be guided by a cast of animated characters combined with real life actors and interactive theatrical set and scenery on an unforgettable Christmas adventure.
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">What is The North Pole Post Office?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">The North Pole Post Office is a branch of Elf Mail&rsquo;s Postal Service in the heart of Sydney. Pick up your wish list letter and envelope pack &#45; free with every ticket &#45; and post it in store in the Elf Mailbox.  Simply scan the QR code to track your letter on its journey to the North Pole.  Santa will be there too, so finish your experience by having your photo taken with the man himself! You&rsquo;ll also find Christmas gifts, decorations and a delicious selection of lollies at Candy Cane Lane.
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">How do I get my free Santa letter pack?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">The North Pole Post Office is a branch of Elf Mail&rsquo;s Postal Service in the heart of Sydney.  Write your wish list letter to Santa and track it on its way to the North Pole &#45; free with every ticket.  Santa will be there too so once you've been through the Experience, have your photo taken with the Man himself!  You can also purchase Christmas gifts, decorations and choose from a range of delicious lollies at Candy Cane Lane!
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">How do I get my free Santa letter pack?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">To claim your complimentary Santa letter and Elf Mail envelope, simply go to the counter after you've picked up your photo and our friendly staff will assist.  Don't forget to scan the QR code on your envelope before you post it in the Elf Mailbox so that you get updates from your Delivery Elf as your letter makes its way to the North Pole!
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">Will I get to have my photo taken with Santa?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">Yes, each group of ticket purchasers will have their photo taken with Santa in the North Pole Post Office at the conclusion of the Experience.  Each group is entitled to one free print of their photo with Santa in a specially designed cardboard frame.   Additional Santa photo prints with your choice of background as well as a digital package are available to purchase at the North Pole Post Office.
+						<br /><br />
+						To claim your free group photo, simply head to the photo terminal in the North Pole Post Office and scan the QR code on the card you’ll be given by your photographer.  Then collect your group photo from our friendly staff at the retail desk.
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">Where is Wundrful World Of Christmas located?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">Wundr Store, 31 Market Street, Sydney, NSW 2000 located at the corner of Market Street and York Street opposite the QVB.
+					<br /><br />
+					The North Pole Post Office is located two doors down from the entrance to the Experience on York Street.
+
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">When is the Wundrful World Of Christmas open?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">Selected days between 1st November and 24th December 2025.
+					<br /><br />
+					Please click on Get Tickets on our website at <a href="https://www.wundr.live">www.wundr.live</a>, at <a href="https://www.ticketmaster.com.au/wundr">www.ticketmaster.com.au/wundr</a> to see available times and dates.
+
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">How Much Are Tickets?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">Tickets are sold by session time and prices vary depending on the day and time of your visit. 
+						<br /><br />
+					Peak pricing:<br />
+					&bull; Adults: $41.50<br />
+					&bull; Children (ages 3-16): $31.50<br />
+					&bull; Family Pass (Up to 5 tickets with no more than 2 adults): $31.50 per person
+					<br /><br />
+					Off peak pricing:<br />
+					&bull; Adults: $37.50<br />
+					&bull; Children (ages 3-16): $27.50<br />
+					&bull; Family Pass (Up to 5 tickets with no more than 2 adults): $27.50 per person
+					<br /><br />		
+					Each ticket includes one group Santa photo print taken in the North Pole Post Office.
+					<br /><br />
+					Pricing may change.  Consult our website at <a href="https://www.wundr.live">www.wundr.live</a>, at <a href="https://www.ticketmaster.com.au/wundr">www.ticketmaster.com.au/wundr</a> for latest pricing.
+
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">Do I need a ticket for my child under 2?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">No ticket needed.  Children under 2 go free.
+				</div>
+				</div>
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">How can I purchase tickets?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">Tickets can be purchased online through Ticketmaster via our website at <a href="https://www.wundr.live">www.wundr.live</a>, at <a href="https://www.ticketmaster.com.au/wundr">www.ticketmaster.com.au/wundr</a> or at the Box Office located in The North Pole Post Office next door. We strongly recommend booking in advance for your best chance of securing you preferred date and time.
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">Is Wundrful World Of Christmas suitable for children?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">Absolutely! Wundrful World Of Christmas is designed for young Santa believing children aged between 3 and 8 years old.  
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ"> Is there parking available?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">Yes, there is paid parking available nearby. We recommend using the secure parking facilities at the QVB at 111 York Street or Wilson Parking at 190 - 202 Clarence Street. Public transportation is also highly encouraged due to the central location.
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">Can I bring my own food and drinks?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">Outside food and beverages are not permitted within the experience space. However, there are several caf&eacute;s nearby offering a variety of snacks and drinks and you can buy some delicious lollies and Christmas treats in the North Pole Post Office.
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">Is the event accessible for individuals with wheelchairs?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">Yes, the experience is fully wheelchair accessible. 
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">What should I wear?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">We recommend wearing comfortable clothing and shoes suitable for walking.  
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">Is there Pram/Stroller Parking?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">Yes, there is a designated space for strollers and prams.  Strollers and prams are not permitted within the Experience space for safety reasons.
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">Can I take photos and videos?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">Yes, photography and videography for personal use are encouraged. Capture the magic of Wundrful World Of Christmas and share your experience with friends and family! However, please be mindful of other guests and avoid using flash in performance areas.
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">How long is Wundrful World of Christmas and how long should I plan to stay?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">Approximately 50 minutes but we recommend allowing additional time in the North Pole Post Office to write and post your wish letters to Santa and browse the goodies on offer.  Plan to spend at least 1 hour at Wundrful World Of Christmas to fully enjoy all the activities.
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">When should I arrive?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">Make sure you arrive at least 5 minutes prior to your allotted session time.  Demand is expected to be very high so if you miss your session time, we may not be able to accommodate you.
+				</div>
+				</div>	
+				<!---question--->
+				<div class="wunFaq">
+					<div class="wunFaqQ">Who can I contact for more information?<img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_cross_img.svg"></div>
+					<div class="wunFaqA">For any additional questions or inquiries, please contact our customer service team at <a href="mailto:hello@wundr.live">hello@wundr.live</a>. We're happy to assist with any questions you may have.
+				</div>
+				</div>	
+
+	</div>
+	</div>
+
+
+
+	<!--footer-- -->
+	<div id="wunFooter">
+			<div id="wunFooterLogo"><img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_wunder_xmas_vert_white_logo.svg" alt="Wundrful World of Christmas"></div>
+
+			<div class="wunFooterWrap">
+				<h1><a href="https://www.wundr.live/" target="_blank">www.wundr.live</a></h1>
+				<a href="https://www.facebook.com/wundrlive" target="_blank"><img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_fb_ico.svg" alt="Facebook"></a>
+				<a href="https://www.instagram.com/wundr_Sydney" target="_blank"><img src="https://s1.ticketm.net/en-au/img/static/wundr/wun_ig_ico.svg" alt="Instagram"></a>
+			</div>
+
+	</div>
+</div>
+
+
+
+<script type="text/javascript">	
+var $j = jQuery.noConflict();	
+galleryTarget = 0
+//menu scrolls	 .offset().top },
+$j("#wunMenu button").click(
+	function(){
+		var scrollTarget = $j(this).attr("data-menubtn")
+
+		 $j('html, body').animate({ scrollTop: $j("#wun" + scrollTarget + "Mod").offset().top + -20}, 2000);	
+})
+//FAQ
+$j(".wunFaqQ").click(
+	function(){
+		$j(this).siblings(".wunFaqA").slideToggle(500);
+		$j(this).children("img").toggleClass("wunRotate")
+	});
+//mobile menu	
+$j(".wunArrowRight").click(
+	function(){
+		$j("#wunMenu").animate({scrollLeft:"+=250px"}, "slow");
+	});
+$j(".wunArrowLeft").click(
+	function(){
+		$j("#wunMenu").animate({scrollLeft:"-=250px"}, "slow");
+	});
+//sticky menu
+$j(document).scroll(function() {
+    var pageTop = $j(document).scrollTop();
+    var scollTarget = $j("#wunHeader").offset().top;
+    if (pageTop > scollTarget) {
+		$j("#wunMenuWrap").addClass("wunMenuToggle");		
+    } else {
+		$j("#wunMenuWrap").removeClass("wunMenuToggle");
+    }
+});	
+//exp gallery menu	
+$j(".wunExpArrowRight").click(
+	function(){
+		//let currentTarget = $j(this).parent('.wunExpCard').data('card');
+		//let nextTarget = currentTarget + 1;
+		//$j(this).parent('.wunExpCard').children('.wunExpArrow').fadeOut(50);
+		//$j("#card"+nextTarget).children('.wunExpArrow').fadeIn(50);
+
+		let cardWidth = $j(this).parent('.wunExpCard').width()
+		scrollWidth = cardWidth + 25
+		$j("#wunExperienceScroller").animate({scrollLeft:"+="+scrollWidth+"px"}, "slow");
+	});
+$j(".wunExpArrowLeft").click(
+	function(){
+		let cardWidth = $j(this).parent('.wunExpCard').width()
+		scrollWidth = cardWidth + 25
+		$j("#wunExperienceScroller").animate({scrollLeft:"-="+scrollWidth+"px"}, "slow");
+	});
+
+</script>	
+[% PROCESS "layout/frame/bottom.tt" %]
