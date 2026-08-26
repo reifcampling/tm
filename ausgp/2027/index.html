@@ -284,7 +284,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2027 | Melbourne Aus
 		/*menu */
 		 #ausgpMenuWrap{width:98%;height:auto;background:var(--gp-dpur);margin:0px auto;}
 		 #ausgpMenu{width:100%;height:auto;margin:0;padding:0px;display:flex;align-items: center;flex-wrap: nowrap;justify-content: center;}
-		 #ausgpMenu button{font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:14px;font-weight:bold;color:#fff;background:transparent;text-align:center;margin:0;padding:4px 10px;border:0;outline:0;cursor:pointer;box-sizing:border-box!important;}
+		 #ausgpMenu button{width:33.33%;font-family: "F1 Display", Fallback, sans-serif;font-size:12px;line-height:14px;font-weight:bold;color:#fff;background:transparent;text-align:center;margin:0;padding:4px 10px;border:0;outline:0;cursor:pointer;box-sizing:border-box!important;}
 		 #ausgpMenu button a{text-decoration: none;}
 		 
 		#ausgpFiltersWrap{width:100%;height:auto;display: flex;position: relative;margin:0px;padding:0;justify-content: center;align-items: center;flex-wrap: wrap;flex-direction: row;}
@@ -531,7 +531,7 @@ page_title = "FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2027 | Melbourne Aus
 <div id="ausgpContent">
 	<div id="ausgpMenuWrap">
 		<div id="ausgpMenu">
-			<button data-menubtn="EventStream">GENERAL TICKETS</button><button>ACCESSIBLE NEEDS TICKETS</button><button>ALBERT PARK CIRCUIT CLUB</button>
+			<button data-menubtn="Filters">GENERAL TICKETS</button><button>ACCESSIBLE TICKETS</button><button>ALBERT PARK CIRCUIT CLUB</button>
 		</div>
 	</div>
 	<div id="ausgpHeader">
@@ -3378,7 +3378,13 @@ $j(document).on('click', ".ausgpProdCard", function () {
 	 $j('html, body').animate({ scrollTop: $j("#ausgpFaq" + btnTarget ).offset().top + -20}, 1000);	
 
 })
+//scroll from menu menubtn="EventStream"
+$j(document).on('click', "#ausgpMenu button", function () {
+	let btnTarget = $j(this).data('menubtn');
 
+	 $j('html, body').animate({ scrollTop: $j("#ausgp" + btnTarget ).offset().top + -20}, 1000);	
+
+})
 
 
 //sticky button wrap
