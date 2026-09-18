@@ -1,0 +1,1993 @@
+[% # text to be displayed within <title></title>
+page_title = "Ticketmaster App | Ticketmaster Australia | Buy Tickets Official Ticketmaster site." %]
+[% static_has_responsive_header_footer = 1; enable_leader_board = 0; %]
+[% PROCESS "layout/frame/top.tt" %]
+<style>
+  /*HOST overrides*/
+  #mainContent {padding: 0 !important;}
+  html {font-size: 16px!important;}
+  .frame {width: 100% !important;max-width: 100%;}
+  .search-full-input {font-weight: normal;}
+  .search-button {top: 9px;}
+  #mainContent *:not(.box-sizing) {box-sizing: border-box;}
+  .frame p:last-child{margin-bottom: 15px;}
+  .blue-search-input {font-size: 1.13rem!important;}
+
+  .footer__secondary-linkgroup {font-size: 0.875rem;}
+
+  .footer__copyright {font-size: 0.875rem;}
+
+  @media (min-width: 46.25em) {
+      .footer__primary {font-size: 1rem;}
+
+  .footer__tou {font-size: 1rem;}
+  }
+  @media (min-width: 23.4375em) {
+      .footer__mobile {font-size: 0.875rem}
+      .footer__list-mini-copyright-text {font-size: 0.875rem}
+      .blue-search-input {font-size: 1rem!important;}
+      .page__content-header {font-size: 1rem;}
+      .footer__toumob {font-size: 0.875rem;}
+  }
+
+</style>
+
+
+<div class="staticpage">
+   <div class="frame">
+
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link rel="preconnect" href="https://s1.ticketm.net" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+     <script>
+
+    $(document).ready(function($){
+
+        /*FAQs dropdowns*/
+        resetDropdownHeight();
+
+        $( window ).on( "resize",function() {
+            resetDropdownHeight();
+        });
+
+        $('.feature-dropdown').removeClass('open');
+
+        $('.feature-dropdown').on('click', function() {
+            resetDropdownHeight();
+           if (  $(this).closest( ".feature-dropdown" ).hasClass('open') ){
+                $('.feature-dropdown').removeClass('open');
+            } else {
+                $(this).css('max-height', calcREM($(this).children( 'dd' ).outerHeight() + $(this).children( 'dt' ).outerHeight()) );
+                $('.feature-dropdown').removeClass('open');
+                $(this).closest( ".feature-dropdown" ).addClass('open');
+            }
+        });
+
+        // Add adwords banner if awtrc=true
+        let query = window.query || window.location.search;
+        if (query.indexOf('awtrc=true') >= 0) {
+            $('.main-nav').before('<div class="adwords-banner-bespoke-container">Our marketplace includes resale tickets. Prices are set by the ticket seller, and may be above or below face value.</div>');
+            $('.main-nav').addClass('adwords-text-visible');
+            $('.header .container').addClass('pt-12').addClass('pt-lg-10');
+        }
+
+    });
+
+    function resetDropdownHeight() {
+        $('.feature-dropdown').each(function(){
+            const heightTransitionRatio = 1000;
+            let dtOuterHeight = $(this).children('dt').outerHeight();
+            let ddOuterHeight = $(this).children('dd').outerHeight();
+            
+            $(this).css('max-height', calcREM(dtOuterHeight) );
+            $(this).css('transition', 'max-height ' +  (dtOuterHeight + ddOuterHeight) / heightTransitionRatio + 's linear, border-bottom 0.3s ease-out, background-color 0.6s ease-out');
+        });
+    }
+
+    function calcREM(px) {
+        if( !isNaN(px) ){
+            var remInPx = parseFloat($('html').css('font-size'));
+            return (parseFloat(px) / remInPx).toString() + 'rem';
+        }
+    }
+
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I view my tickets in the Ticketmaster App?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Download our app on your Apple or Android device. Sign in to My Account Tap My Events Select your event to view your seat locations, access, transfer or sell your tickets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I transfer tickets within the Ticketmaster App?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's easy - just follow these steps: Sign in to My Account Select My Events, then tap the event you'd like to transfer tickets for If available, select Transfer, choose the ticket(s) you'd like to send and either select from contacts or manually enter the recipient's details We'll send an email or text to your recipient to accept their tickets"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I'm worried about my phone service when trying to access my ticket. What should I do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Once you view your ticket in the Ticketmaster App, it's automatically saved - so it's always ready to be scanned, even if your phone is in offline mode. You can also save your ticket to your phone's mobile wallet before arriving at the event."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "It says there is a delivery delay on my tickets. What does that mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Don't worry - your tickets are all set. If the order is referencing a delivery delay, that just means that the option to add to wallet, sell or transfer your tickets may not be available until closer to the event."
+      }
+    }
+  ]
+}
+</script>
+
+
+<style>
+
+  /* EMBEDDING AVERTA */
+  @font-face {
+    font-family: 'AvertaBlack';
+    src: url("https://s1.ticketm.net/en-us/img/static/fonts/Averta-Black.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'AvertaBold';
+    src: url("https://s1.ticketm.net/en-us/img/static/fonts/Averta-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'AvertaSemiBold';
+    src: url("https://s1.ticketm.net/en-us/img/static/fonts/Averta-Semibold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'AvertaRegular';
+    src: url("https://s1.ticketm.net/en-us/img/static/fonts/Averta-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+
+  :root {
+    --smallTextRatio: 3;
+    --mediumTextRatio: 1.5;
+  }
+
+  body {
+    scroll-behavior: smooth;
+    font-family: 'AvertaRegular', helvetica, arial, sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    overflow-x: hidden;
+    color: #121212;
+    box-sizing: border-box;
+  }
+
+  * {
+      margin: 0;
+      font-family: 'AvertaRegular', helvetica, arial, sans-serif;
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .row>* {
+    padding-right: calc(var(--bs-gutter-x) * .675);
+    padding-left: calc(var(--bs-gutter-x) * .675);
+  }
+
+  .noPadding {
+    padding: 0px!important;
+  }
+
+  .noMargin {
+    margin: 0px!important;
+  }
+
+  .noHeight {
+    height: 0px!important;
+  }
+
+  #mainContent img {
+    max-width: inherit;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .w-160 {
+    width: 160%;
+  }
+
+  .underline {
+    font-family: inherit;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem; 
+    text-decoration-color: #024DDF;
+  }
+
+  #contentWrap, .staticpage {
+    background-color: #ffffff;
+    color: #121212;
+  }
+
+  p {
+    margin: 0 0 2rem;
+  }
+
+  a{
+    color:#024DDF;
+    font-weight: 600;
+  }
+
+  hr {
+    width: 150vw;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    border-top: 1px solid #121212;
+    margin-left: -50vw;
+  }
+
+  section {
+    position: relative;
+  }
+
+  /* Full width page */
+  .frame {
+    width: 100% !important;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  /* pills */
+  .pill {
+    font-family: 'AvertaSemiBold', helvetica, arial, sans-serif;
+    white-space: normal;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border-radius: 1.5rem;
+    padding: 0.75rem 0.75rem;
+    color: #ffffff;
+    background-color: #121212;
+    display: inline-block;
+    margin-right: 0.25rem;
+    margin-bottom: 0rem;
+  }
+
+  .pill.earth {
+    background-color: #048851;
+  }
+
+  .pill.jupiter {
+    background-color: #FFB939;
+    color: #121212;
+  }
+
+  .pill.callisto {
+    background-color: #A733FF;
+  }
+
+  .pill.granite {
+    background-color: #646464;
+  }
+
+  /* buttons */
+  .btn {
+    white-space: normal;
+    margin-bottom: 0.25rem;
+    text-shadow: none;
+    font-family: 'AvertaSemiBold', helvetica, arial, sans-serif;
+    font-size: 1.25rem !important;
+    line-height: 1.5rem !important;
+    border-radius: 0.25rem;
+    padding: 1rem 3rem;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: all 0.3s;
+  }
+
+  .btn:hover, .btn:active, .btn:focus {
+    background-color: #024DDF;
+    border: 1px solid #ffffff !important;
+    outline: none !important;
+    color: #fff !important;
+  }
+
+
+  /* COMMON CONTENT CSS */
+  .why-choose, .darkgrey {
+    z-index: 1;
+  }
+
+  .flexible {
+    position: relative;
+  }
+
+  .staticpage .header h1, 
+  .staticpage .why-choose h2, 
+  .staticpage .why-choose h3, 
+  .staticpage .flexible h2, 
+  .staticpage .darkgrey h2, 
+  .staticpage h1, 
+  .staticpage h2, 
+  .staticpage h3, 
+  .staticpage .darkgrey .callout p, 
+  .staticpage .sub-header p {
+    font-family:'AvertaBlack', helvetica, arial, sans-serif;
+    text-transform:uppercase;
+    display: inline-block;
+    padding-bottom: 1rem;
+    position: relative;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: left;
+    font-size: 2.065rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.05rem;
+    text-wrap: wrap;
+  }
+
+  .darkgrey h2, .why-choose h3 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    letter-spacing: 0rem;
+  }
+
+  .tmaccount {
+    width: 100vw;
+    margin-bottom: 0;
+    border-top: 1px solid #d6d6d6;
+    margin-left: 0vw;
+  }
+
+  .tmaccount a {
+    float: right;
+  }
+
+  .tmaccount h2 {
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    letter-spacing: 0rem;
+  }
+
+  .darkgrey .callout p {
+    font-family: 'AvertaBlack', helvetica, arial, sans-serif;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .header::after, .box-black-bottom-right::after {
+    content: '';
+    position: absolute;
+    display: block;
+    float: right;
+    bottom: 0;
+    right: 0;
+    max-width: 3.5rem;
+    width: 3.5rem;
+    height: 6rem;
+    z-index: -1;
+  }
+
+  .header::after {
+    background-color: #FFFFFF;
+  }
+
+  .box-black-bottom-right::after {
+    background-color: #121212;
+    z-index: 0;
+  }
+
+  .flexible::before{
+    content: '';
+  /*  background-color: #121212; */
+    position: absolute;
+    display: block;
+    float: left;
+    top: 0;
+    left: 0;
+    max-width: 3.5rem;
+    width: 3.5rem;
+    height: 6rem;
+  }
+
+  /* why-choose SECTION CSS */
+  .staticpage .big-event h2, 
+  .staticpage .why-choose h2 {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+  }
+
+  .staticpage .sell-easily h2 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+
+  .staticpage .big-event h3 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+
+  .why-choose .question {
+    font-size: 1rem;
+    line-height: 1.125rem;
+    font-weight: bold;
+  }
+
+  .why-choose .answer {
+    font-size: 1rem;
+    line-height: 1.125rem;
+  }
+
+  .feature-dropdown.why1 {
+    max-height: 7.75rem;
+  }
+
+  .feature-dropdown.why2 {
+    max-height: 7.75rem;
+  }
+
+  .feature-dropdown.why3 {
+    max-height: 7.75rem;
+  }
+
+  .feature-dropdown.why4 {
+    max-height: 7.75rem; 
+  }
+
+  .why-expanded-text {
+    position: relative;
+    left: -1.25rem;
+  }
+
+
+  .staticpage .how-it-works p {
+    font-weight: bold;
+  }
+
+  .staticpage .how-it-works p.small {
+    font-weight: normal;
+  }
+
+  .staticpage .how-it-works .carousel-item .row div:first-child {
+    min-height: 15rem;
+  }
+
+  .staticpage .how-it-works h3 {
+    font-weight: bold;
+  }
+
+
+  /* DARK GREY SECTION CSS */
+  .darkgrey {
+    background: #121212;
+    color: #fff;
+  }
+
+  .darkgrey .callout p {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    letter-spacing: 0rem;
+    white-space: nowrap;
+  }
+  
+  
+  /* NEW ADDITIONS 7/24/2025 */
+  
+/* BLUE SECTIONS CSS */
+
+.blue .btn{
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.blue {
+  background: #024DDF;
+  color: #fff;
+  position: relative;
+}
+.blue a{
+  color: #fff;
+}
+.blue h2 {
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  letter-spacing: 0rem;
+}
+.blue p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+}
+
+.blue::before{
+  content: '';
+  background-color: #121212;
+  position: absolute;
+  display: block;
+  float: left;
+  bottom: 0;
+  right: 0;
+  max-width: 3.5rem;
+  width: 3.5rem;
+  height: 5rem;
+}
+
+@media (min-width: 1200px) {
+ .blue::before{
+    max-width: 14rem;
+    width: 14rem;
+    height: 10rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .blue h2 {
+    font-size: 5.2rem;
+    line-height: 4.1rem;
+    letter-spacing: -0.1rem;
+    max-width: 50rem;
+  }
+
+  .blue::before{
+    max-width: 14rem;
+    width: 14rem;
+    height: 10rem;
+  }
+
+}
+
+
+.blue-top-left .btn{
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.blue-top-left {
+  background: #024DDF;
+  color: #fff;
+  position: relative;
+}
+.blue-top-left a{
+  color: #fff;
+}
+.blue-top-left h2 {
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  letter-spacing: 0rem;
+}
+.blue-top-left p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+}
+
+.blue-top-left::before{
+  content: '';
+  background-color: #ffffff;
+  position: absolute;
+  display: block;
+  float: left;
+  top: 0;
+  left: 0;
+  max-width: 3.5rem;
+  width: 3.5rem;
+  height: 5rem;
+}
+
+@media (min-width: 1200px) {
+ .blue-top-left::before{
+    max-width: 14rem;
+    width: 14rem;
+    height: 10rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .blue-top-left h2 {
+    font-size: 5.2rem;
+    line-height: 4.1rem;
+    letter-spacing: -0.1rem;
+    max-width: 50rem;
+  }
+
+  .blue-top-left::before{
+    max-width: 14rem;
+    width: 14rem;
+    height: 10rem;
+  }
+
+}
+
+
+
+  /* FAQs SECTION CSS */
+  #faqs {
+    overflow-x: hidden;
+  }
+
+  #faqs h2 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    letter-spacing: 0rem;
+  }
+
+  .feature-dropdown:last-child {
+    border-bottom: none;
+  }
+
+  .staticpage .img-big-event {
+    position: relative;
+    top: 0rem;
+    max-width: 100%;
+  }
+
+  .staticpage .img-slide {
+    position: relative;
+    top: 0rem;
+    max-width: 100%;
+  }
+
+
+
+  /*Dropdowns*/
+  .feature-dropdown-list{
+    margin:0 0 2rem;
+  }
+
+  .feature-dropdown-list .feature-dropdown{
+    z-index: 1;
+  }
+
+  .feature-dropdown {
+    box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    cursor: pointer;
+    max-height: 9rem;
+    transition: max-height 0.6s linear, border-bottom 0.3s ease-out, background-color 0.6s ease-out;
+    border-bottom: 1px solid rgba(214, 214, 214, 1);
+    overflow: hidden;
+    margin: 0 calc(50% - 75vw);
+    padding: 0 calc(-50% + 75vw);
+  }
+
+  .feature-dropdown.open {
+    background-color: #f6f6f6;
+    margin-top: -1px;
+    padding-top: 1px;
+    border-bottom: 1px solid rgba(214, 214, 214, 0);
+  }
+
+  .feature-dropdown button {
+      font-family: 'AvertaSemiBold', helvetica, arial, sans-serif;
+      -webkit-appearance: button;
+      appearance: button;
+      -webkit-writing-mode: horizontal-tb !important;
+      writing-mode: horizontal-tb !important;
+      text-rendering: auto;
+      word-spacing: normal;
+      text-indent: 0px;
+      text-shadow: none;
+      display: inline-block;
+      text-align: center;
+      align-items: flex-start;
+      cursor: default;
+      box-sizing: border-box;
+      color: inherit;
+      font-weight: normal;
+      font-size: 1.75rem;
+      line-height: 2rem;
+      letter-spacing: inherit;
+      text-align: inherit;
+      text-transform: inherit;
+      background-color: transparent;
+      position: relative;
+      width: 100%;
+      margin: initial;
+      border-width: 0px;
+      border-style: initial;
+      border-color: initial;
+      border-image: initial;
+      padding: 1rem 2.5em 1rem 0;
+      cursor: pointer;
+  }
+
+  .feature-dropdown .question p {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .feature-dropdown svg {
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      top: 1rem;
+      right: -0.5rem;
+      margin-left: auto;
+      transform: none;
+      fill: #121212;
+      transition: transform 0.2s ease-out 0s;
+  }
+
+  .feature-dropdown dt {
+    padding-top: 1.5rem;
+    padding-bottom: calc(1.5rem - 1px);
+    border-bottom: none;
+    transition: border-bottom 0.3s linear;
+  }
+
+  .feature-dropdown.open dt {
+    border-bottom: none;
+  }
+
+  .feature-dropdown dd {
+    display: none;
+    margin: 0;
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+    display: block;
+    padding-bottom: 2rem;
+  }
+
+  .feature-dropdown dd p {
+    margin-bottom: 1rem;
+  }
+
+  .feature-dropdown dd h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-family: 'AvertaSemiBold', helvetica, arial, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .feature-dropdown.open svg {
+      transform: rotate(180deg);
+  }
+
+
+  .how-to-sell video {
+    width: 166%;
+    height: auto;
+    max-height: 500px;
+    overflow: visible;
+  }
+
+  .how-to-sell video.video-sell {padding-left: 12%;width: 133%; }
+
+  .how-to-sell video.video-chart {padding-left: 0%;}
+
+  .how-to-sell video.video-sold {padding-left: 12%;width: 133%;}
+
+
+  /* ADDITIONAL BOOTSTRAP PADDING */
+  .pe-6 {padding-right: 1em !important; }
+
+  .pe-lg-6 {padding-right: 1em !important;}
+  .pb-7 {padding-bottom: 5em !important; }
+
+  .pt-hero {padding-top: 4rem !important;}
+
+  @media (min-width: 992px) {
+    .pb-lg-hero {padding-bottom: 3rem !important;}
+  }
+
+  .pt-manage {padding-top: 7.2rem !important;}
+
+  .pt-made {padding-top: 5rem !important;}
+
+  .pb-made {padding-bottom: 8rem !important;}
+
+  .pb-manage-heading {padding-bottom: 4rem !important;}
+  .pb-8 {padding-bottom: 8em !important;}
+  .pb-12 {padding-bottom: 12em !important;}
+  .pt-7 {padding-top: 4em !important;}
+  .pt-8 {padding-top: 6em !important; }
+  .pt-12 {padding-top: 8em !important;}
+  .ps-7 {padding-left: 1em !important;}
+
+
+
+
+  /*Media queries*/
+
+  /*576px*/
+  /* SM SMALL */
+  @media (min-width: 576px) {
+
+    .why-expanded-text {
+      left: -0.75rem;
+    }
+
+    .how-to-sell video {
+      width: auto;
+      height: 62%;
+      max-height: 390px;
+    }
+
+    .how-to-sell video.video-sell {
+        padding-left: 23%;
+        width: auto;
+    }
+
+    .how-to-sell video.video-chart {
+        padding-left: 0%;
+        width: auto;
+    }
+
+    .how-to-sell video.video-sold {
+        padding-left: 23%;
+        width: auto;
+    }
+
+  }
+
+
+  /*768px*/
+  /* MD MEDIUM */
+  @media (min-width: 768px) {
+
+    .pb-md-7 {
+      padding-bottom: 6rem !important;
+    }
+
+    .pb-md-0 {
+      padding-bottom: 0 !important;
+    }
+
+    .ps-7 {
+      padding-left: 1.5em !important;
+    }
+
+    .pe-6 {
+      padding-right: 1.5em !important;
+    }
+
+
+    .white h2, .white h3, .why-choose h2, .darkgrey .callout p {
+      font-size: 3.38rem;
+      line-height: 2.75rem;
+      letter-spacing: 0rem;
+      white-space: nowrap;
+    }
+
+    .why-choose .question {
+      font-size: 1rem;
+      line-height: 1.125rem;
+      font-weight: bold;
+    }
+
+    .how-to-sell video {
+      width: auto;
+      height: 90%;
+      max-height: 350px;
+    }
+
+
+    .how-to-sell video.video-sell {
+        padding-left: 25%;
+    }
+
+    .how-to-sell video.video-chart {
+        padding-left: 0%;
+    }
+
+    .how-to-sell video.video-sold {
+        padding-left: 25%;
+    }
+
+  }
+
+
+  /*992px*/
+  /* LG LARGE */
+  @media (min-width: 992px) {
+
+    .pb-md-0 {
+      padding-bottom: 0 !important;
+    }
+
+    .ps-7 {
+      padding-left: 2em !important;
+    }
+    .pe-6 {
+      padding-right: 4rem !important;
+    }
+    .pe-lg-6 {
+      padding-right: 8.2rem !important;
+    }
+    .pb-7 {
+      padding-bottom: 5em !important;
+    }
+    .pb-8 {
+      padding-bottom: 8em !important;
+    }
+    .pt-8 {
+      padding-top: 6em !important;
+    }
+    .pt-12 {
+      padding-top: 12em !important;
+    }
+    .pb-lg-8 {
+      padding-bottom: 8em !important;
+    }
+
+    .header::after, .box-black-bottom-right::after {
+      max-width: 8.62rem;
+      width: 8.62rem;
+      height: 5rem;
+    }
+
+    .flexible::before{
+      max-width: 8.62rem;
+      width: 8.62rem;
+      height: 5rem;
+    }
+
+    .white h2, .darkgrey .callout p {
+      font-size: 5.2rem;
+      line-height: 4.1rem;
+      letter-spacing: -0.1rem;
+      white-space: nowrap;
+    }
+
+    .darkgrey h2, .why-choose h2, .why-choose h3 {
+      font-size: 3.4rem;
+      line-height: 2.7rem;
+      letter-spacing: 0rem;
+    }
+
+    #faqs h2 {
+      font-size: 1.75rem;
+      line-height: 1.75rem;
+      letter-spacing: 0rem;
+    }
+
+    .feature-dropdown dt {
+      border-bottom: 1px solid rgba(214, 214, 214, 1);
+      transition: border-bottom 0.5s linear;
+      transition-delay: 0.6s;
+    }
+    
+    .feature-dropdown.open dt {
+      transition: border-bottom 0.1s linear;
+    }
+
+
+    .feature-dropdown.open dt {
+      border-bottom: 1px solid rgba(214, 214, 214, 0);
+    }
+
+    .feature-dropdown {
+      border-bottom: none;
+    }
+
+    .feature-dropdown.open {
+      border-bottom: none;
+    }
+    
+    .staticpage .header h1, 
+    .staticpage .why-choose h2,
+    .staticpage .why-choose h3, 
+    .staticpage .how-it-works h2, 
+    .staticpage .flexible h2, 
+    .staticpage .darkgrey h2,
+    .staticpage .darkgrey .callout p, 
+    .staticpage .sub-header p {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      font-size: 5.2rem;
+      line-height: 4.5rem;
+      letter-spacing: -0.1rem;
+    }
+
+    .staticpage .big-event h2, 
+    .staticpage .why-choose h2,
+    .staticpage .how-to-sell h3 {
+      font-size: 3.25rem;
+      line-height: 2.75rem;
+    }
+
+    .staticpage .how-to-sell h2  {
+      font-size: 5.25rem;
+      line-height: 4.125rem;
+    }
+
+    .how-to-sell video {
+      width: auto;
+      height: 85%;
+      max-height: 500px;
+    }
+
+
+
+    .pt-lg-10 {
+      padding-top: 10rem !important;
+    }
+
+  }
+
+
+  /*1200px*/
+  /* XL EXTRA LARGE */
+  @media (min-width: 1200px) {
+
+    .header::after, .box-black-bottom-right::after {
+      max-width: 14rem;
+      width: 14rem;
+      height: 10rem;
+    }
+    
+    .flexible::before{
+      max-width: 14rem;
+      width: 14rem;
+      height: 10rem;
+    }
+
+    .btn {
+      white-space: normal;
+      margin-bottom: 0.25rem;
+      text-shadow: none;
+      font-size: 1.25rem !important;
+      border-radius: 0.25rem;
+      padding: 1rem 3rem;
+      background-color: transparent;
+      color: #ffffff;
+      transition: all 0.3s;
+    }
+
+    .tmaccount h2 {
+      font-size: 4rem;
+      line-height: 3.38rem;
+      letter-spacing: 0rem;
+    }
+
+    .how-to-sell video {
+      width: auto;
+      height: 93%;
+      max-height: 500px;
+    }
+
+    .how-to-sell video.video-sell {
+        padding-left: 23%;
+    }
+
+    .how-to-sell video.video-chart {
+        padding-left: 0%;
+    }
+
+    .how-to-sell video.video-sold {
+        padding-left: 23%;
+    }
+
+    .pt-xl-7 {
+      padding-top: 5rem !important;
+    }
+
+    .pt-xl-8 {
+      padding-top: 6rem !important;
+    }
+
+    .pt-xl-9 {
+      padding-top: 8rem !important;
+    }
+    
+    .pb-xl-8 {
+      padding-bottom: 6rem !important;
+    }
+
+
+  }
+
+
+  /*1400px*/
+  /* XXL EXTRA EXTRA LARGE */
+  @media (min-width: 1400px){
+
+    .sticker {
+      left: -4rem;
+      bottom: -2rem;
+      position: relative;
+    }
+
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1248px;
+    }
+
+    .ps-7 {
+      padding-left: 5em !important;
+    }
+    .pe-6 {
+      padding-right: 6rem !important;
+    }
+
+  }
+
+
+
+
+  /* BLUE HEADER */
+  .blue {
+    background: #024DDF;
+    color: #fff;
+    position: relative;
+  }
+
+  .blue h1,
+  .blue h2 {
+    color: #fff;
+  }
+
+  .staticpage .blue h1 {
+    font-size: 2.5rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.1rem;
+  }
+
+  @media (min-width: 576px) {
+    .staticpage .blue h1 {
+      font-size: 3.5rem;
+      line-height: 3rem;
+      letter-spacing: -0.169rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .staticpage .blue h1 {
+      font-size: 5rem;
+      line-height: 4.281rem;
+      letter-spacing: -0.15rem;
+    }
+  }
+
+  .blue::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    max-width: 3.5rem;
+    width: 3.5rem;
+    height: 6rem;
+    background-color: #121212;
+  }
+
+  @media (min-width: 992px) {
+    .blue::after {
+      max-width: 14rem;
+      width: 14rem;
+      height: 10rem;
+    }
+  }
+
+  /* HERO HEADING — matches h1 size at all breakpoints */
+  .staticpage h2.hero-heading {
+    font-size: 2.5rem !important;
+    line-height: 2.25rem !important;
+    letter-spacing: -0.1rem !important;
+  }
+
+  @media (min-width: 576px) {
+    .staticpage h2.hero-heading {
+      font-size: 3.5rem !important;
+      line-height: 3rem !important;
+      letter-spacing: -0.169rem !important;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .staticpage h2.hero-heading {
+      font-size: 4.375rem !important;
+      line-height: 3.875rem !important;
+      letter-spacing: -0.131rem !important;
+    }
+  }
+
+  /* FEATURE ROWS */
+  .staticpage .feature-row h2 {
+    font-size: 2.25rem;
+    line-height: 2rem;
+    letter-spacing: -0.05rem;
+  }
+
+  .feature-row p {
+    color: #fff;
+  }
+
+  .feature-row .tag {
+    font-family: 'AvertaSemiBold', helvetica, arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    letter-spacing: -0.03rem;
+    color: #ffffff;
+    margin-top: 1.5rem;
+  }
+
+  @media (min-width: 992px) {
+    .staticpage .feature-row h2 {
+      font-size: 3.375rem;
+      line-height: 2.75rem;
+      letter-spacing: -0.101rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .staticpage .feature-row h2 {
+      font-size: 3.375rem;
+      line-height: 2.75rem;
+      letter-spacing: -0.101rem;
+    }
+  }
+
+  /* FEATURE IMAGES */
+  .feature-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+    margin-top: 2rem;
+  }
+
+  @media (min-width: 576px) {
+    .feature-image {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .feature-image {
+      width: auto;
+      max-width: 600px;
+      margin-left: auto;
+    }
+  }
+
+  /* MANAGE TICKETS IMAGES */
+  .manage-image {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+  }
+
+  /* VISUAL PLACEHOLDER */
+  .visual-placeholder {
+    background-color: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 0.5rem;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    min-height: 200px;
+  }
+
+  /* MANAGE TICKETS — constrain body text width to match Figma (~305px in 480px col) */
+  @media (min-width: 768px) {
+    .staticpage .darkgrey:not(.feature-row):not(.made-for-you) .col-md-4 p {
+      max-width: 19rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  /* MANAGE YOUR TICKETS heading — match h1 size on mobile */
+  .staticpage .darkgrey:not(.feature-row):not(.made-for-you) h2.text-center {
+    font-size: 2.5rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.1rem;
+  }
+
+  @media (min-width: 576px) {
+    .staticpage .darkgrey:not(.feature-row):not(.made-for-you) h2.text-center {
+      font-size: 3.5rem;
+      line-height: 3rem;
+      letter-spacing: -0.169rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .staticpage .darkgrey:not(.feature-row):not(.made-for-you) h2.text-center {
+      font-size: 5.625rem;
+      line-height: 4.5rem;
+      letter-spacing: -0.169rem;
+    }
+  }
+
+  /* MANAGE TICKETS — h3 headings (ACCESS / TRANSFER / SELL) */
+  .staticpage .darkgrey h3 {
+    font-family: 'AvertaBlack', helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.1rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+
+  .darkgrey p {
+    color: #fff;
+  }
+
+  @media (min-width: 992px) {
+    .staticpage .darkgrey h3 {
+      font-size: 3.375rem;
+      line-height: 2.75rem;
+      letter-spacing: -0.101rem;
+    }
+  }
+
+  /* MADE FOR YOU — decorative SVGs */
+  .made-for-you {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .mfy-decor {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .mfy-decor--center {
+    left: 34.9%;
+    top: 9%;
+    width: 5%;
+    opacity: 0.85;
+    filter: blur(4.5px);
+    transform: rotate(53.59deg);
+  }
+
+  .mfy-decor--left {
+    left: 3.27%;
+    top: 42.3%;
+    width: 6%;
+    transform: rotate(16deg);
+  }
+
+  .mfy-decor--right {
+    left: 57.5%;
+    top: 30%;
+    width: 12%;
+    transform: rotate(70deg);
+  }
+
+  @media (min-width: 1441px) {
+    .mfy-decor--center {
+      left: calc(50% - 217px);
+      top: calc(5% + 15px);
+      width: 72px;
+    }
+    .mfy-decor--left {
+      left: calc(50% - 673px);
+      top: calc(35% + 25px);
+      width: 86px;
+    }
+    .mfy-decor--right {
+      left: calc(50% + 108px);
+      width: 173px;
+    }
+  }
+
+  /* MADE FOR YOU CTA */
+  .made-for-you .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .staticpage .made-for-you h2 {
+    font-size: 3rem;
+    line-height: 2.75rem;
+    letter-spacing: -0.157rem;
+    color: #fff;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: 992px) {
+    .staticpage .made-for-you h2 {
+      font-size: 4rem;
+      line-height: 3.5rem;
+      letter-spacing: -0.13rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .staticpage .made-for-you h2 {
+      font-size: 5.25rem;
+      line-height: 4.5625rem;
+      letter-spacing: -0.1575rem;
+    }
+  }
+
+  .tm-icon {
+    width: 3.5rem;
+    height: auto;
+  }
+
+  @media (min-width: 992px) {
+    .tm-icon {
+      width: 3.6875rem;
+    }
+  }
+
+  .store-badge {
+    height: 3.5rem;
+    width: auto;
+  }
+
+  @media (min-width: 992px) and (max-width: 1399px) {
+    .store-badge {
+      height: 2.75rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .col-md-4.pb-md-0 {
+      padding-bottom: 0 !important;
+    }
+  }
+
+  /* ADWORDS */
+  .adwords-banner-bespoke-container {
+    background: #262626;
+    color: #fff;
+    font-size: 12px;
+    padding: 8px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+@media (min-width: 300px){
+  .adwords-text-visible {
+      top: 82px;
+  }
+}
+
+@media (min-width: 329px){
+  .adwords-text-visible {
+      top: 62px;
+  }
+}
+
+@media (min-width: 637px){
+  .adwords-text-visible {
+      top: 35px;
+  }
+}
+
+  
+
+</style>
+
+      <!-- HEADER -->
+      <section class="blue noPadding header">
+         <div class="container pt-8 pt-xl-8 pb-5 pb-lg-hero pb-xxl-5">
+            <div class="row">
+               <div class="col-12 col-xl-10">
+                  <h1 aria-label="Ticketmaster App">AN ALL-NEW <br>TICKETMASTER APP</h1>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- END HEADER -->
+
+      <main>
+
+      <!-- HERO -->
+      <section class="darkgrey noPadding">
+         <div class="container pt-hero pb-5 pt-lg-8 pb-lg-8">
+            <div class="row">
+               <div class="col-12 col-lg-11 text-end">
+                  <h2 class="text-end hero-heading">PERSONALIZED FOR YOU, BY YOU.<br>MADE FOR FANS.</h2>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- END HERO -->
+
+      <!-- FEATURE: YOUR NEW HOMEPAGE -->
+      <section class="darkgrey feature-row noPadding">
+         <div class="container pt-7 pb-7">
+            <div class="row align-items-end">
+               <div class="col-12 col-sm-6 col-lg-5 pe-lg-6">
+                  <h2>Your new home.</h2>
+                  <p>It's time we made things personal &#45; especially when it comes to you and your interests. Now, it's never been easier to find events based on what you love and where you are.</p>
+                  <p>Find last-minute tickets, trending events, just-announced shows and curated picks across music, sports, theater and entertainment &#45; all in one place.</p>
+                  <p>Heading somewhere? Switch your location and see what's happening wherever you're going.</p>
+                  <p class="tag">MADE FOR YOU. MADE FOR FANS.</p>
+               </div>
+               <div class="col-12 col-sm-6 col-lg-7 align-items-center d-flex justify-content-end">
+                  <img src="http://s1.ticketm.net/tm/en-au/img/static/app/2026/homepage-visual.png" alt="Ticketmaster app showing personalised event discovery homepage" class="feature-image" />
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- END FEATURE: YOUR NEW HOMEPAGE -->
+
+      <!-- FEATURE: FOLLOW WHAT YOU LOVE -->
+      <section class="darkgrey feature-row noPadding">
+         <div class="container pt-7 pb-7">
+            <div class="row align-items-end">
+               <div class="col-12 col-sm-6 col-lg-5 pe-lg-6">
+                  <h2>Follow WHAT you love.</h2>
+                  <p>We've all got our favorites. That's especially true when it comes to artists, teams, performers and venues. With <strong>Favorites</strong>, you'll get your own personalized view of the upcoming events that matter to you most.</p>
+                  <p>The more you favorite, the more your app becomes tailored to you.</p>
+                  <p class="tag">MADE FOR YOU. MADE FOR FANS.</p>
+               </div>
+               <div class="col-12 col-sm-6 col-lg-7 align-items-center d-flex justify-content-end">
+                  <img src="http://s1.ticketm.net/tm/en-au/img/static/app/2026/favorites-visual.png" alt="Ticketmaster app showing Favorites feature with followed artists and upcoming events" class="feature-image" />
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- END FEATURE: FOLLOW WHAT YOU LOVE -->
+
+      <!-- FEATURE: NEVER MISS WHAT'S NEXT -->
+      <section class="darkgrey feature-row noPadding">
+         <div class="container pt-7 pb-7">
+            <div class="row align-items-end">
+               <div class="col-12 col-sm-6 col-lg-5 pe-lg-6">
+                  <h2>Never miss what's next.</h2>
+                  <p>Save the shows you're excited about, and we'll send you reminders and other important info so you don't miss out. That's the beauty of <strong>Watchlist</strong>.</p>
+                  <p>You'll get alerts about tickets going on sale and when presales start, and reminders as the day gets closer. Whether you're planning ahead or just keeping track of a show you want to buy tickets for, Watchlist makes sure you're in the know.</p>
+                  <p class="tag">MADE FOR YOU. MADE FOR FANS.</p>
+               </div>
+               <div class="col-12 col-sm-6 col-lg-7 align-items-center d-flex justify-content-end">
+                  <img src="http://s1.ticketm.net/tm/en-au/img/static/app/2026/watchlist-visual.png" alt="Ticketmaster app showing Watchlist feature with upcoming events and reminders" class="feature-image" />
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- END FEATURE: NEVER MISS WHAT'S NEXT -->
+
+      <!-- MANAGE YOUR TICKETS -->
+      <section class="darkgrey noPadding">
+         <div class="container pt-manage pb-8">
+            <div class="row pb-manage-heading">
+               <div class="col-12">
+                  <h2 class="text-center">MANAGE YOUR TICKETS DIRECTLY IN THE APP</h2>
+               </div>
+            </div>
+            <div class="row align-items-stretch">
+
+               <div class="col-12 col-md-4 text-center pb-7 pb-md-0 d-flex flex-column align-items-center">
+                  <img src="http://s1.ticketm.net/tm/en-au/img/static/app/2026/access-visual.png" alt="Ticketmaster app showing ticket access screen" class="manage-image mb-5" />
+                  <h3>ACCESS</h3>
+                  <p>Access your tickets and all event details directly in the app, so you get into your event smoothly.</p>
+                  <a class="btn mt-auto" href="https://help.ticketmaster.com.au/hc/en-au/articles/13780639585937-How-do-I-use-Mobile-Entry-tickets" aria-label="Find out more about accessing your tickets">Find Out More</a>
+               </div>
+
+               <div class="col-12 col-md-4 text-center pb-7 pb-md-0 d-flex flex-column align-items-center">
+                  <img src="http://s1.ticketm.net/tm/en-au/img/static/app/2026/transfer-visual.png" alt="Ticketmaster app showing ticket transfer screen" class="manage-image mb-5" />
+                  <h3>TRANSFER</h3>
+                  <p>Easily transfer your tickets to family or friends before the show starts, giving everyone the freedom to enter when they want.</p>
+                  <a class="btn mt-auto" href="https://help.ticketmaster.com.au/hc/en-au/categories/20172776784145-Transfer-Tickets" aria-label="Find out how to transfer your tickets">Find Out How</a>
+               </div>
+
+               <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center">
+                  <img src="http://s1.ticketm.net/tm/en-au/img/static/app/2026/sell-visual.png" alt="Ticketmaster app showing ticket resale screen" class="manage-image mb-5" />
+                  <h3>SELL</h3>
+                  <p>When life happens and plans change, you've got options. Safely and securely resell your tickets to fellow fans if you can't go.</p>
+                  <a class="btn mt-auto" href="https://www.ticketmaster.com.au/sell" aria-label="Find out more about selling your tickets">Find Out More</a>
+               </div>
+
+            </div>
+         </div>
+      </section>
+      <!-- END MANAGE YOUR TICKETS -->
+
+      <!-- CTA: MADE FOR YOU -->
+      <section class="darkgrey noPadding made-for-you">
+         <svg preserveAspectRatio="none" overflow="visible" style="display:block;"
+              width="60.1004" height="128.826" viewBox="0 0 60.1004 128.826"
+              fill="none" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" class="mfy-decor mfy-decor--center">
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="#FF47A9"
+                  d="M46.4413 0L60.1004 24.5382V67.4802L30.0502 128.826
+                     L0 67.4802V24.5382L13.6592 0L30.0502 24.5382L46.4413 0Z"/>
+         </svg>
+         <svg preserveAspectRatio="none" overflow="visible" style="display:block;"
+              width="98.215" height="137.486" viewBox="0 0 98.215 137.486"
+              fill="none" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" class="mfy-decor mfy-decor--left">
+            <g filter="url(#mfy-left-filter)">
+               <path fill="#BD66FF"
+                     d="M79.215 26.8541V118.486H71.3609L49.1075 94.9233
+                        L26.8541 118.486H19V26.8541L26.8541 19H71.3609L79.215 26.8541Z"/>
+            </g>
+            <defs>
+               <filter id="mfy-left-filter" x="0" y="0"
+                       width="98.215" height="137.486"
+                       filterUnits="userSpaceOnUse"
+                       color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feBlend mode="normal" in="SourceGraphic"
+                           in2="BackgroundImageFix" result="shape"/>
+                  <feGaussianBlur stdDeviation="9.5"
+                                  result="effect1_foregroundBlur_0_4"/>
+               </filter>
+            </defs>
+         </svg>
+         <svg preserveAspectRatio="none" overflow="visible" style="display:block;"
+              width="143.205" height="168" viewBox="0 0 143.205 168"
+              fill="none" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" class="mfy-decor mfy-decor--right">
+            <g filter="url(#mfy-right-filter)">
+               <path fill="white"
+                     d="M71.6023 14L91.0473 60.37L129.205 84L91.0473 107.63
+                        L71.6023 154L52.1573 107.63L14 84L52.1573 60.37L71.6023 14Z"/>
+            </g>
+            <defs>
+               <filter id="mfy-right-filter" x="0" y="0"
+                       width="143.205" height="168"
+                       filterUnits="userSpaceOnUse"
+                       color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feBlend mode="normal" in="SourceGraphic"
+                           in2="BackgroundImageFix" result="shape"/>
+                  <feGaussianBlur stdDeviation="7"
+                                  result="effect1_foregroundBlur_0_4"/>
+               </filter>
+            </defs>
+         </svg>
+         <div class="container pt-made pb-made">
+            <div class="row align-items-center">
+               <div class="col-10 col-lg-7 col-xl-8">
+                  <h2>MADE FOR YOU.</h2>
+                  <h2>MADE FOR FANS.</h2>
+               </div>
+               <!-- Icon inline with text on mobile only -->
+               <div class="col-2 d-flex d-lg-none justify-content-end align-items-start">
+                  <svg preserveAspectRatio="none" overflow="visible"
+                       style="display:block;" width="59" height="59"
+                       viewBox="0 0 59 59" fill="none"
+                       xmlns="http://www.w3.org/2000/svg"
+                       aria-hidden="true" class="tm-icon">
+                     <g>
+                        <path fill="#024DDF"
+                              d="M59 29.5C59 45.7924 45.7924 59 29.5 59
+                                 C13.2076 59 0 45.7924 0 29.5
+                                 C0 13.2076 13.2076 0 29.5 0
+                                 C45.7924 0 59 13.2076 59 29.5Z"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                              d="M29.0363 38.9093C29.0363 37.8982 29.1773 36.9855
+                                 29.3149 36.3777L31.5788 24.9936H37.1291
+                                 L38.1042 20.0348H32.552L34.0824 12.2917
+                                 L27.4212 14.6727L26.3545 20.0348H21.8744
+                                 L20.8958 24.9936H25.3866L23.6305 33.7999
+                                 C23.2144 35.8722 22.8388 37.8461 22.8388 39.8702
+                                 C22.8388 44.8849 25.7992 46.7083 30.0078 46.7083
+                                 C31.0745 46.7083 32.2734 46.3494 33.3419 46.0967
+                                 L34.4051 40.831C33.6134 41.188 32.5115 41.4388
+                                 31.3954 41.4388C30.0078 41.4388
+                                 29.0363 40.4779 29.0363 38.9093Z"/>
+                        <path fill="white"
+                              d="M50.1606 0.992621L52.7757 6.12443L57.9075 8.73958
+                                 L52.7757 11.3547L50.1606 16.4865L47.5454 11.3547
+                                 L42.4136 8.73958L47.5454 6.12443L50.1606 0.992621Z"/>
+                     </g>
+                  </svg>
+               </div>
+               <!-- Icon above badges on desktop only -->
+               <div class="col-lg-5 col-xl-4 d-none d-lg-flex flex-column align-items-end gap-3">
+                  <svg preserveAspectRatio="none" overflow="visible"
+                       style="display:block;" width="59" height="59"
+                       viewBox="0 0 59 59" fill="none"
+                       xmlns="http://www.w3.org/2000/svg"
+                       aria-hidden="true" class="tm-icon">
+                     <g>
+                        <path fill="#024DDF"
+                              d="M59 29.5C59 45.7924 45.7924 59 29.5 59
+                                 C13.2076 59 0 45.7924 0 29.5
+                                 C0 13.2076 13.2076 0 29.5 0
+                                 C45.7924 0 59 13.2076 59 29.5Z"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                              d="M29.0363 38.9093C29.0363 37.8982 29.1773 36.9855
+                                 29.3149 36.3777L31.5788 24.9936H37.1291
+                                 L38.1042 20.0348H32.552L34.0824 12.2917
+                                 L27.4212 14.6727L26.3545 20.0348H21.8744
+                                 L20.8958 24.9936H25.3866L23.6305 33.7999
+                                 C23.2144 35.8722 22.8388 37.8461 22.8388 39.8702
+                                 C22.8388 44.8849 25.7992 46.7083 30.0078 46.7083
+                                 C31.0745 46.7083 32.2734 46.3494 33.3419 46.0967
+                                 L34.4051 40.831C33.6134 41.188 32.5115 41.4388
+                                 31.3954 41.4388C30.0078 41.4388
+                                 29.0363 40.4779 29.0363 38.9093Z"/>
+                        <path fill="white"
+                              d="M50.1606 0.992621L52.7757 6.12443L57.9075 8.73958
+                                 L52.7757 11.3547L50.1606 16.4865L47.5454 11.3547
+                                 L42.4136 8.73958L47.5454 6.12443L50.1606 0.992621Z"/>
+                     </g>
+                  </svg>
+                  <div class="d-flex gap-3 justify-content-end">
+                     <a href="https://apps.apple.com/app/ticketmaster/id500003565" aria-label="Download the Ticketmaster app on the App Store">
+                        <img src="http://s1.ticketm.net/tm/en-au/img/static/app/2026/appbadge.png" alt="Download on the App Store" class="store-badge" />
+                     </a>
+                     <a href="https://play.google.com/store/apps/details?id=com.ticketmaster.mobile.android.na" aria-label="Get the Ticketmaster app on Google Play">
+                        <img src="http://s1.ticketm.net/tm/en-au/img/static/app/2026/googlebadge.png" alt="Get it on Google Play" class="store-badge" />
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <!-- Badges below text on mobile only -->
+            <div class="row pt-4 d-flex d-lg-none">
+               <div class="col-12 d-flex gap-3">
+                  <a href="https://apps.apple.com/app/ticketmaster/id500003565" aria-label="Download the Ticketmaster app on the App Store">
+                     <img src="http://s1.ticketm.net/tm/en-au/img/static/app/2026/appbadge.png" alt="Download on the App Store" class="store-badge" />
+                  </a>
+                  <a href="https://play.google.com/store/apps/details?id=com.ticketmaster.mobile.android.na" aria-label="Get the Ticketmaster app on Google Play">
+                     <img src="http://s1.ticketm.net/tm/en-au/img/static/app/2026/googlebadge.png" alt="Get it on Google Play" class="store-badge" />
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- END CTA: MADE FOR YOU -->
+
+      <!-- FAQS -->
+      <section id="faqs">
+         <div class="container pt-8 pb-5 pb-xl-8 ps-7 pe-6">
+            <div class="row">
+               <div class="col-12">
+                  <h2 class="noPadding noMargin">FAQs</h2>
+                  <hr/>
+                  <dl class="feature-dropdown-list">
+
+                     <!--START FAQ-->
+                     <div class="feature-dropdown open faq1">
+                        <dt>
+                           <button aria-expanded="true" class="question">
+                              How do I download the Ticketmaster App?
+                              <svg viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false">
+                                 <path d="M6.99 9.16a.6.6 0 00-.4-.16.6.6 0 00-.42.16.5.5 0 00-.17.37c0 .14.07.28.17.37l5.45 4.92c.04.06.09.1.15.15.14.05.3.05.44 0a.6.6 0 00.18-.11l5.45-4.92a.5.5 0 00.16-.37.5.5 0 00-.16-.37.6.6 0 00-.41-.16.6.6 0 00-.41.16l-5.03 4.46-5-4.5z"></path>
+                              </svg>
+                           </button>
+                        </dt>
+                        <dd>
+                           <p>Download the Ticketmaster App for <a href="https://apps.apple.com/us/app/ticketmaster-buy-sell-tickets/id500003565">Apple</a> or <a href="https://play.google.com/store/apps/details?id=com.ticketmaster.mobile.android.na">Android</a>. It's free to download, and provides a safe and secure ticket-buying experience.</p>
+                           <h4>What devices and operating systems does the Ticketmaster App support?</h4>
+                           <p>The Ticketmaster App is available to download on both Apple and Android devices. You can download the app on your Apple device running iOS 17.0 or later, or on Android devices running Android 9 or later.</p>
+                           <p>If your device doesn't meet these requirements, update your operating system, then reinstall or update the app. Devices that can't be updated to a supported version won't be able to run the latest app — in that case, you can access your account and tickets through your mobile browser at Ticketmaster.com.</p>
+                           <h4>How is the Ticketmaster App different from the Ticketmaster website?</h4>
+                           <p>The Ticketmaster App has everything you'd find on the website, like personalized recommendations based on your favorite artists and teams, and full control over your tickets. The app also has a few additional features:</p>
+                           <ul>
+                              <li>Watchlist, where your favorite upcoming events are saved in one place</li>
+                              <li>Push notifications when tickets go on sale for artists you follow, so you don't miss the chance to score tickets</li>
+                              <li>Faster entry at the venue, with your tickets ready in the app instead of a browser tab.</li>
+                           </ul>
+                           <p>If you prefer the website, you're not missing anything essential, but the app makes it easier to discover and purchase tickets to live events anywhere in the world.</p>
+                        </dd>
+                     </div>
+                     <!--END FAQ-->
+
+                     <!--START FAQ-->
+                     <div class="feature-dropdown open faq2">
+                        <dt>
+                           <button aria-expanded="true" class="question">
+                              Can I access my Ticketmaster account in the app?
+                              <svg viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false">
+                                 <path d="M6.99 9.16a.6.6 0 00-.4-.16.6.6 0 00-.42.16.5.5 0 00-.17.37c0 .14.07.28.17.37l5.45 4.92c.04.06.09.1.15.15.14.05.3.05.44 0a.6.6 0 00.18-.11l5.45-4.92a.5.5 0 00.16-.37.5.5 0 00-.16-.37.6.6 0 00-.41-.16.6.6 0 00-.41.16l-5.03 4.46-5-4.5z"></path>
+                              </svg>
+                           </button>
+                        </dt>
+                        <dd>
+                           <p>Here's everything you need to know about accessing your Ticketmaster account in the app.</p>
+                           <h4>How do I create an account or sign in to my account with the Ticketmaster App?</h4>
+                           <p>To sign in or create an account in the Ticketmaster App, follow these steps:</p>
+                           <ol>
+                              <li>Download the Ticketmaster App for Apple or Android</li>
+                              <li>Select Account in the lower right-hand corner, and then tap Sign In.</li>
+                              <li>Enter the email address associated with your Ticketmaster account, or select Sign In With A Passkey if you've created one.</li>
+                              <li>If you don't have an account yet, you'll be prompted to create one. Then, just follow the steps to verify your email and phone number.</li>
+                           </ol>
+                           <h4>Can I use the Ticketmaster App if I bought tickets on the website?</h4>
+                           <p>Yes, if you purchased tickets on Ticketmaster.com, and you sign in with the same account in the Ticketmaster App, your tickets will appear under My Tickets.</p>
+                        </dd>
+                     </div>
+                     <!--END FAQ-->
+
+                     <!--START FAQ-->
+                     <div class="feature-dropdown open faq3">
+                        <dt>
+                           <button aria-expanded="true" class="question">
+                              How do I view my tickets in the Ticketmaster App?
+                              <svg viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false">
+                                 <path d="M6.99 9.16a.6.6 0 00-.4-.16.6.6 0 00-.42.16.5.5 0 00-.17.37c0 .14.07.28.17.37l5.45 4.92c.04.06.09.1.15.15.14.05.3.05.44 0a.6.6 0 00.18-.11l5.45-4.92a.5.5 0 00.16-.37.5.5 0 00-.16-.37.6.6 0 00-.41-.16.6.6 0 00-.41.16l-5.03 4.46-5-4.5z"></path>
+                              </svg>
+                           </button>
+                        </dt>
+                        <dd>
+                           <p>To view your tickets, download the Ticketmaster App for Apple or Android. You'll be able to access the ticket barcodes typically within 3 days before your event.</p>
+                           <ol>
+                              <li>Sign into your Ticketmaster Account.</li>
+                              <li>Tap My Tickets.</li>
+                              <li>Select your event to view your seat locations, access, transfer or sell your tickets.</li>
+                           </ol>
+                           <p><strong>Tip:</strong> Always make sure you're using the latest version of the app on your Android or Apple device. If you still experience issues with the app, update your device to the latest OS.</p>
+                        </dd>
+                     </div>
+                     <!--END FAQ-->
+
+                     <!--START FAQ-->
+                     <div class="feature-dropdown open faq4">
+                        <dt>
+                           <button aria-expanded="true" class="question">
+                              How do I buy tickets in the Ticketmaster App?
+                              <svg viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false">
+                                 <path d="M6.99 9.16a.6.6 0 00-.4-.16.6.6 0 00-.42.16.5.5 0 00-.17.37c0 .14.07.28.17.37l5.45 4.92c.04.06.09.1.15.15.14.05.3.05.44 0a.6.6 0 00.18-.11l5.45-4.92a.5.5 0 00.16-.37.5.5 0 00-.16-.37.6.6 0 00-.41-.16.6.6 0 00-.41.16l-5.03 4.46-5-4.5z"></path>
+                              </svg>
+                           </button>
+                        </dt>
+                        <dd>
+                           <p>Here's everything you need to know about buying tickets in the Ticketmaster App.</p>
+                           <h4>How can I purchase tickets in the Ticketmaster App?</h4>
+                           <p>To purchase tickets in the Ticketmaster App, follow these steps:</p>
+                           <ol>
+                              <li>Open the app and sign in to your Ticketmaster account</li>
+                              <li>Search for an artist, team, event or venue using the search bar at the top. Or, you can browse the recommendations on your home screen.</li>
+                              <li>Tap the event you want, then select your date.</li>
+                              <li>Choose your ticket quantity and pick your seats using the interactive map, or filter seat selections based on best available or best for your budget.</li>
+                              <li>Review your order and tap Reserve Tickets, then select your payment method and confirm your purchase.</li>
+                           </ol>
+                           <h4>What are accepted methods of payment when purchasing tickets through the Ticketmaster App?</h4>
+                           <p>To purchase tickets through the Ticketmaster App, you can use a stored payment method, add a credit card (like Visa, MasterCard, Discover, American Express, and Diners Club) or debit card with a major credit card logo, or use a payment platform like PayPal, Apple Pay, Google Pay, Venmo or Klarna. You can also purchase tickets using a Ticketmaster gift card.</p>
+                           <p>However, Apple Pay, Google Pay, Diners Club and Ticketmaster Gift Cards can't be used to buy Verified Resale Tickets.</p>
+                           <h4>Can I purchase tickets for events happening today or tomorrow through the Ticketmaster App?</h4>
+                           <p>Yes, you can purchase last-minute tickets to events happening near you via the Ticketmaster App. The Ticketmaster App makes it easy to purchase tickets on-the-go, from wherever you are. Your app homepage is custom-tailored to your preferences, so you can easily and quickly discover events you're interested in that are happening today or tomorrow.</p>
+                        </dd>
+                     </div>
+                     <!--END FAQ-->
+
+                     <!--START FAQ-->
+                     <div class="feature-dropdown open faq5">
+                        <dt>
+                           <button aria-expanded="true" class="question">
+                              How do I transfer tickets within the Ticketmaster App?
+                              <svg viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false">
+                                 <path d="M6.99 9.16a.6.6 0 00-.4-.16.6.6 0 00-.42.16.5.5 0 00-.17.37c0 .14.07.28.17.37l5.45 4.92c.04.06.09.1.15.15.14.05.3.05.44 0a.6.6 0 00.18-.11l5.45-4.92a.5.5 0 00.16-.37.5.5 0 00-.16-.37.6.6 0 00-.41-.16.6.6 0 00-.41.16l-5.03 4.46-5-4.5z"></path>
+                              </svg>
+                           </button>
+                        </dt>
+                        <dd>
+                           <p>If the Event Organizer has made transfer available, follow these steps:</p>
+                           <ol>
+                              <li>Sign into your Ticketmaster Account.</li>
+                              <li>Select My Tickets, then tap the event.</li>
+                              <li>Select Transfer, choose the ticket(s) you'd like to send, and either select from contacts or manually enter the recipient's details.</li>
+                              <li>We'll send an invite to your recipient to accept their tickets.</li>
+                           </ol>
+                        </dd>
+                     </div>
+                     <!--END FAQ-->
+
+                     <!--START FAQ-->
+                     <div class="feature-dropdown open faq6">
+                        <dt>
+                           <button aria-expanded="true" class="question">
+                              How do I sell tickets within the Ticketmaster App?
+                              <svg viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false">
+                                 <path d="M6.99 9.16a.6.6 0 00-.4-.16.6.6 0 00-.42.16.5.5 0 00-.17.37c0 .14.07.28.17.37l5.45 4.92c.04.06.09.1.15.15.14.05.3.05.44 0a.6.6 0 00.18-.11l5.45-4.92a.5.5 0 00.16-.37.5.5 0 00-.16-.37.6.6 0 00-.41-.16.6.6 0 00-.41.16l-5.03 4.46-5-4.5z"></path>
+                              </svg>
+                           </button>
+                        </dt>
+                        <dd>
+                           <p>If the Event Organizer has made resale available, follow these steps:</p>
+                           <ol>
+                              <li>Sign into your Ticketmaster Account.</li>
+                              <li>Select My Tickets, then tap the event.</li>
+                              <li>Select Sell and enter your information.</li>
+                              <li>Review your listing, and you're all set.</li>
+                           </ol>
+                           <p><a href="https://help.ticketmaster.com/hc/en-us/articles/9612708273425-How-and-when-do-I-get-paid-for-tickets-I-sell">Visit our help page</a> to learn more about how and when you'll get paid for tickets you sell in the app.</p>
+                        </dd>
+                     </div>
+                     <!--END FAQ-->
+
+                  </dl>
+               </div>
+            </div>
+         </div>
+      </section>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I download the Ticketmaster App?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Download the Ticketmaster App for Apple or Android. It's free to download, and provides a safe and secure ticket-buying experience. The app is available on Apple devices running iOS 17.0 or later, or Android devices running Android 9 or later."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I access my Ticketmaster account in the app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To sign in or create an account in the Ticketmaster App: 1. Download the Ticketmaster App for Apple or Android. 2. Select Account in the lower right-hand corner, and then tap Sign In. 3. Enter the email address associated with your Ticketmaster account, or select Sign In With A Passkey if you've created one. 4. If you don't have an account yet, you'll be prompted to create one. If you purchased tickets on Ticketmaster.com, sign in with the same account and your tickets will appear under My Tickets."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I view my tickets in the Ticketmaster App?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To view your tickets, download the Ticketmaster App for Apple or Android. You'll be able to access the ticket barcodes typically within 3 days before your event. 1. Sign into your Ticketmaster Account. 2. Tap My Tickets. 3. Select your event to view your seat locations, access, transfer or sell your tickets."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I buy tickets in the Ticketmaster App?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To purchase tickets in the Ticketmaster App: 1. Open the app and sign in to your Ticketmaster account. 2. Search for an artist, team, event or venue using the search bar at the top. 3. Tap the event you want, then select your date. 4. Choose your ticket quantity and pick your seats using the interactive map, or filter seat selections based on best available or best for your budget. 5. Review your order and tap Reserve Tickets, then select your payment method and confirm your purchase. You can pay with a stored payment method, credit or debit card, PayPal, Apple Pay, Google Pay, Venmo, Klarna, or a Ticketmaster gift card."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I transfer tickets within the Ticketmaster App?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If the Event Organizer has made transfer available, follow these steps: 1. Sign into your Ticketmaster Account. 2. Select My Tickets, then tap the event. 3. Select Transfer, choose the ticket(s) you'd like to send, and either select from contacts or manually enter the recipient's details. 4. We'll send an invite to your recipient to accept their tickets."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I sell tickets within the Ticketmaster App?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If the Event Organizer has made resale available, follow these steps: 1. Sign into your Ticketmaster Account. 2. Select My Tickets, then tap the event. 3. Select Sell and enter your information. 4. Review your listing, and you're all set. Visit our help page to learn more about how and when you'll get paid for tickets you sell in the app."
+            }
+          }
+        ]
+      }
+      </script>
+      <!-- END FAQS -->
+
+      </main>
+
+   </div>
+</div>
+
