@@ -143,12 +143,20 @@ page_title = "Australian Turf Club, Sydney Racing | Royal Randwick & Rosehill Ga
 	.atcEventDate,.atcEventVenue{width:calc(100% - 20px);height:auto;margin:10px auto;padding:0px 0px 0px 0px;display:flex;align-items: center;align-content: center;flex-wrap: nowrap;justify-content: center;box-sizing:border-box !important;}
 	.atcEventDate h2,.atcEventVenue h2{width:auto;height:auto;margin:0px;padding:0px 0px 0px 0px;display:inline-block;color:#272727;font-size:16px;line-height:20px;font-family:"Averta",  sans-serif ;text-align:left; font-weight: 500;box-sizing:border-box !important;}
 	.atcEventDate img,.atcEventVenue img{width:18px;height:18px;margin:0px 10px 0px 0px;padding:0;display:inline-block;}
-	.atcEventBtn{width:100%;height:46px;margin:20px auto 0px auto;padding:13px 0px 14px 0px;display:block;color:#fff;font-size:20px;line-height:20px;font-family:"raisonne","Averta",  sans-serif ;text-align:center; font-weight: normal;background:url('https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc_rightArrow_w_img.svg') no-repeat,var(--atc-gold);background-size:7px 15px;background-position:right 50px center;cursor:pointer;box-sizing:border-box !important;}
+	.atcEventBtn{width:100%;height:46px;margin:20px auto 0px auto;padding:13px 0px 14px 0px;display:block;color:#fff;font-size:20px;line-height:20px;font-family:"raisonne","Averta",  sans-serif ;text-align:center; font-weight: normal;background:url('https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc_rightArrow_w_img.svg') no-repeat,var(--atc-gold);background-size:7px 15px;background-position:right 50px center;cursor:pointer;position:relative;box-sizing:border-box !important;}
 	.atcEventCard a{width:100%; text-decoration: none;}
 	.atcRoyalRandwickRacecourse{background:var(--atc-randwick);}
 	.atcRoyalRandwickRacecourse:after{content:"RR";}
 	.atcRosehillGardensRacecourse{background:var(--atc-rosehill);}
 	.atcRosehillGardensRacecourse:after{content:"RH";}
+	/*avail tags*/
+	.eventAvailTag{width:100%;height:23px;position: absolute;top:-23px;right:0px;left:0;display:none;opacity: 1;padding:4px 10px 4px 10px;font-family: 'Averta', sans-serif;font-size:14px;line-height:16px;text-align: center;font-weight:700;box-sizing: border-box !important;}
+
+	.atcTicketsAvail{display:none !important;}
+	.atcFewTicketsAvail{background:var(--atc-cream);color:var(--atc-gold);opacity: 1;display:inline-block !important;}
+	.atcFewTicketsAvail:after{content: "SELLING FAST";text-transform: uppercase;}
+	.atcTicketsNotAvail{background:var(--atc-blue);color:#fff;opacity: 1;display:inline-block !important;}
+	.atcTicketsNotAvail:after{content: "ALLOCATION EXHAUSTED";text-transform: uppercase;}
 	/*error and no events */
 	#atcEventsError, #atcEventsNone{width:100%;max-width:500px;height:auto;background:var(--atc-blue);margin:50px auto;border: 1px solid var(--atc-cream);border-radius: 5px;display:none;}
 	#atcEventsError p, #atcEventsNone p{font-family:"Averta",  sans-serif ;font-size:16px;font-weight: normal;text-align: center; margin:20px auto;padding:0px;color:var(--atc-cream);}
@@ -176,7 +184,7 @@ page_title = "Australian Turf Club, Sydney Racing | Royal Randwick & Rosehill Ga
 	#atcMenuWrap{width:100%;height:40px;display:block;margin:0 auto;padding:0;overflow:hidden;z-index:100;top:0;left:0;right:0;position: absolute; }
 	.atcMenuToggle{top:0;left:0;right:0;position: fixed !important;}
 
-	.atcBuyTicketsBtn{width:80%;max-width:350px;height:50px;background:url('https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_whiteArrow_ico.svg') no-repeat,var(--atc-gold);background-position:center right 15px;background-size:26px auto;margin:0px auto;padding:12px 20px 12px 0px;color:#fff;font-family:"raisonne","Averta",  sans-serif ;text-align:center; font-size:26px;line-height:26px;font-weight: bold;text-transform:uppercase;border-radius:3px;position: absolute;bottom:25px;left:0;right:0;;cursor:pointer;box-shadow:0px 0px 4px 5px rgb(0 0 0 / 10%);box-sizing: border-box !important;z-index:103;}
+	.atcBuyTicketsBtn{width:80%;max-width:350px;height:50px;background:url('https://s1.ticketm.net/tm/en-au/img/static/turfclub/atc_whiteArrow_ico.svg') no-repeat,var(--atc-gold);background-position:center right 15px;background-size:26px auto;margin:0px auto;padding:12px 20px 12px 0px;color:#fff;font-family:"raisonne","Averta",  sans-serif ;text-align:center; font-size:26px;line-height:26px;font-weight: bold;text-transform:uppercase;border-radius:3px;position: absolute;bottom:25px;left:0;right:0;;cursor:pointer;box-shadow:0px 0px 4px 5px rgb(0 0 0 / 10%);box-sizing: border-box !important;z-index:103;user-select:none;}
 	.atcButtonToggle{bottom:10px;left:0;right:0;position: fixed !important;}
 
 	#atcLogo{max-width:335px;width:80%;height:auto;margin:65px auto 0px;position: relative;z-index:12;}
@@ -264,12 +272,20 @@ page_title = "Australian Turf Club, Sydney Racing | Royal Randwick & Rosehill Ga
 	.atcEventDate,.atcEventVenue{width:calc(100% - 20px);height:auto;margin:0px auto;padding:0px 0px 0px 0px;display:flex;align-items: center;align-content: center;flex-wrap: nowrap;justify-content: flex-start;box-sizing:border-box !important;}
 	.atcEventDate h2,.atcEventVenue h2{width:auto;height:auto;margin:0px;padding:0px 0px 5px 0px;display:inline-block;color:#272727;font-size:16px;line-height:20px;font-family:"Averta",  sans-serif ;text-align:left; font-weight: 500;box-sizing:border-box !important;}
 	.atcEventDate img,.atcEventVenue img{width:18px;height:18px;margin:0px 10px 0px 0px;padding:0;display:inline-block;}
-	.atcEventBtn{width:100%;height:46px;margin:0px auto 0px auto;padding:13px 0px 14px 0px;display:block;color:#fff;font-size:20px;line-height:20px;font-family:"raisonne","Averta",  sans-serif ;text-align:center; font-weight: normal;background:url('https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc_rightArrow_w_img.svg') no-repeat,var(--atc-gold);background-size:7px 15px;background-position:right 50px center;cursor:pointer;box-sizing:border-box !important;}
+	.atcEventBtn{width:100%;height:46px;margin:0px auto 0px auto;padding:13px 30px 14px 0px;display:block;color:#fff;font-size:20px;line-height:20px;font-family:"raisonne","Averta",  sans-serif ;text-align:right; font-weight: normal;background:url('https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc_rightArrow_w_img.svg') no-repeat,var(--atc-gold);background-size:7px 15px;background-position:right 10px center;cursor:pointer;position:relative;box-sizing:border-box !important;}
 	.atcEventCard a{width:100%; text-decoration: none;}
 	.atcRoyalRandwickRacecourse{background:var(--atc-randwick);}
 	.atcRoyalRandwickRacecourse:after{content:"RR";}
 	.atcRosehillGardensRacecourse{background:var(--atc-rosehill);}
 	.atcRosehillGardensRacecourse:after{content:"RH";}
+	/*avail tags*/
+	.eventAvailTag{margin:0px 0px;display:none;opacity: 1;padding:4px 10px 4px 10px;font-family: 'Averta', sans-serif;font-size:14px;text-align: center;font-weight:700;box-sizing: border-box !important;}
+
+	.atcTicketsAvail{display:none !important;}
+	.atcFewTicketsAvail{width:140px;height:23px;position: absolute;top:11px;left:10px;line-height:16px;background:var(--atc-cream);color:var(--atc-gold);opacity: 1;display:inline-block !important;}
+	.atcFewTicketsAvail:after{content: "SELLING FAST";text-transform: uppercase;}
+	.atcTicketsNotAvail{width:140px;height:36px;position: absolute;top:5px;left:5px;line-height:14px;background:var(--atc-blue);color:#fff;opacity: 1;display:inline-block !important;}
+	.atcTicketsNotAvail:after{content: "ALLOCATION EXHAUSTED";text-transform: uppercase;}
 	/*error and no events */
 	#atcEventsError, #atcEventsNone{width:100%;max-width:500px;height:auto;background:var(--atc-blue);margin:50px auto;border: 1px solid var(--atc-cream);border-radius: 5px;display:none;}
 	#atcEventsError p, #atcEventsNone p{font-family:"Averta",  sans-serif ;font-size:16px;font-weight: normal;text-align: center; margin:20px auto;padding:0px;color:var(--atc-cream);}
@@ -407,20 +423,20 @@ page_title = "Australian Turf Club, Sydney Racing | Royal Randwick & Rosehill Ga
 							<div data-filterbtn="RosehillGardensRacecourse" class="atcDropDownBtn"><div class="atcCheckBox atcCheckBoxOff"></div><h3>Rosehill Gardens</h3></div>
 					</div>	
 				</div>
-			<!--by day-->
+			<!--by day--
 				<div id="atcDayMenu" class="atcFilterMenu">
 					<div class="atcDropDownHeader"><h1>MONTH:</h1><div class="atcFilterArrow"><div id="dateCounter" class='atcMenuCounter'></div><img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc_downArrow_img.svg"></div></div>
 					<div class="atcDropDown atcDropDownOff">
 						<div class="atcDropDownSubHead"><h2>show events in:</h2><div class='atcMenuClearBtn'>clear</div></div>
 						<div class="atcCalWrap">
-							<!--<div class="atcCalDay">JUL</div>--->
+							<!--<div class="atcCalDay">JUL</div>---
 							<div class="atcNoCalDay"></div>
 							<div class="atcNoCalDay"></div>
 							<div class="atcNoCalDay"></div>
 							<div class="atcNoCalDay"></div>
 						</div>
 					</div>	
-				</div>
+				</div> -->
 			<!--by sort-->
 				<div id="atcSortMenu" class="atcFilterMenu">
 					<div class="atcDropDownHeader"><h1>SORT BY:</h1><div class="atcFilterArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc_downArrow_img.svg"></div></div>
@@ -516,7 +532,7 @@ page_title = "Australian Turf Club, Sydney Racing | Royal Randwick & Rosehill Ga
 						raceDaySet.add(value.name)
 						//console.log(raceDaysAndDatesMap)
 
-						let newEvent = $j("<div class='atcEventCard' data-month='"+monthTag+"' data-venue='"+venueTag+"' data-id='"+value.id+"' data-date='"+raceDate+"' data-raceday='"+nameTag+"'><div class='atcTopMod'><div class='atcEventHero'><div class='atcVenueTag atc"+venueTag+"'></div><img src='https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/heroimg/"+atcImageMapper(nameTag)+"_420x158.png' alt='"+value.name+"'></div><div class='atcEventTitle'><h1>"+value.name+"</h1></div><div class='atcEventDiv'></div><div class='atcMidMod'><div class='atcEventDate'><img src='https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc_date_img.svg'><h2>"+raceDate+"</h2></div><div class='atcEventVenue'><img src='https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc_location_img.svg'><h2>"+venueName+"</h2></div></div></div><a href='"+value.url+"' target='_blank'><div class='atcEventBtn'>BUY TICKETS</div></a></div>");
+						let newEvent = $j("<div class='atcEventCard' data-month='"+monthTag+"' data-venue='"+venueTag+"' data-id='"+value.id+"' data-date='"+raceDate+"' data-raceday='"+nameTag+"'><div class='atcTopMod'><div class='atcEventHero'><div class='atcVenueTag atc"+venueTag+"'></div><img src='https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/heroimg/"+atcImageMapper(nameTag)+"_420x158.png' alt='"+value.name+"'></div><div class='atcEventTitle'><h1>"+value.name+"</h1></div><div class='atcEventDiv'></div><div class='atcMidMod'><div class='atcEventDate'><img src='https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc_date_img.svg'><h2>"+raceDate+"</h2></div><div class='atcEventVenue'><img src='https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc_location_img.svg'><h2>"+venueName+"</h2></div></div></div><a href='"+value.url+"' target='_blank'><div class='atcEventBtn'><div class='eventAvailTag' data-uniid='"+value.id+"'></div>BUY TICKETS</div></a></div>");
 						//apends event data into an element
 						eventListDiv.append(newEvent);
 						
@@ -524,11 +540,12 @@ page_title = "Australian Turf Club, Sydney Racing | Royal Randwick & Rosehill Ga
 						eventCount = eventCount + 1;
 						})	
 
-					setTimeout(createCalendarList, 200);
+				//	setTimeout(createCalendarList, 200);
 					setTimeout(createRaceDayList, 200);
 					setTimeout(emptyFullListsOnLoad, 400); 
 					setTimeout(getUrlVars,500)
 					setTimeout(parseUrl,800)
+					setTimeout(turfAvailCall,1000)
 					},
                     error: function (xhr, ajaxOptions, thrownError) { 
                         //fade in the error element
@@ -585,8 +602,8 @@ let eventsToDisplay	= function(){
     	//  console.log(eventVenue,eventName)
 
 		if((jQuery.inArray(eventVenue,venueList) != -1 || jQuery.inArray("All",venueList) != -1) && //venue
-			(jQuery.inArray(eventName,raceDayList) != -1 || jQuery.inArray("All",raceDayList) != -1) &&//Race Date 
-     		(jQuery.inArray(eventMonth,monthList) != -1 || monthList.length == 0)
+			(jQuery.inArray(eventName,raceDayList) != -1 || jQuery.inArray("All",raceDayList) != -1)//  &&Race Date 
+     		//(jQuery.inArray(eventMonth,monthList) != -1 || monthList.length == 0)
 		){			
 			$j(this).fadeIn(500).css("display","flex");
 				eventCountPlus ++;
@@ -978,5 +995,44 @@ $j(document).scroll(function() {
 		$j(".atcBuyTicketsBtn").removeClass("atcButtonToggle");
     }
 });	
+//availability tags
+function turfAvailMapper(data){
+	switch (data){		
+			case "TICKETS_AVAILABLE":return "atcTicketsAvail" 
+			case "FEW_TICKETS_LEFT":return "atcFewTicketsAvail" 
+			case "TICKETS_NOT_AVAILABLE":return "atcTicketsNotAvail";
+			default:return "unknown" 
+	}
+}
+let turfAvailCall = function(){
+
+  	$j.ajax({
+               type: 'GET',
+               url: "https://953lrs6ve3.execute-api.us-east-1.amazonaws.com/prod/?events=17a8v0G6uLuP0_b,17a8v0G6urnkeHG,17a8v0G6uLoj7xQ,17a8v0G6urUgN-J,17a8v0G6urH5KcF,17a8v0G6urXMNwP,17a8v0G6uLdafvJ,17a8v0G6uLo-7xE",
+               dataType: 'html',
+				success: function(data) {
+					var availData = JSON.parse(data);
+					//console.log(data)
+					$j.each(availData, function(key,value){
+						var availID = value.eventId
+						var availClass = turfAvailMapper(value.status);
+
+						//var availResaleClass = aoAvailMapper(value.resaleStatus);
+						// $j('#aoEventStreamGP .eventCard .evenResaleTag').each(function () {	
+						 $j('.atcEventCard .eventAvailTag').each(function () {
+							 var eventID = $j(this).attr('data-uniid');
+							//	console.log(eventID,availID)
+							 	if (eventID == availID) {
+									console.log(availClass)
+									$j(this).addClass(availClass)
+									}
+								});
+						})	
+					},
+                    error: function (xhr, ajaxOptions, thrownError) { 
+                       // console.log("error cant read data");
+                    }
+                });	
+}
 </script>
 [% PROCESS "layout/frame/bottom.tt" %]
