@@ -442,8 +442,8 @@ page_title = "Australian Turf Club, Sydney Racing | Royal Randwick & Rosehill Ga
 					<div class="atcDropDownHeader"><h1>SORT BY:</h1><div class="atcFilterArrow"><img src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc_downArrow_img.svg"></div></div>
 					<div class="atcDropDown atcDropDownOff">
 						<div class="atcDropDownSubHead"><h2>from:</h2></div>
-							<div data-filterbtn="" class="atcRadioBtn"><div class="atcRadio atcRadioOn"></div><h3>Soonest</h3></div>
-							<div data-filterbtn="" class="atcRadioBtn"><div class="atcRadio"></div><h3>Furthest</h3></div>
+							<div id="atcSortAsc" data-filterbtn="Asc" class="atcRadioBtn"><div class="atcRadio atcRadioOn"></div><h3>Soonest</h3></div>
+							<div id="atcSortDesc" data-filterbtn="Desc" class="atcRadioBtn"><div class="atcRadio atcRadioOff"></div><h3>Furthest</h3></div>
 					</div>	
 				</div>
 		</div>
@@ -471,7 +471,7 @@ page_title = "Australian Turf Club, Sydney Racing | Royal Randwick & Rosehill Ga
 </div>
 
 <script type="text/javascript">
-//menu, sorting/radio buttons, clear buttons, mobile menu
+//menu clear buttons, mobile menu
 	$j = jQuery.noConflict();
 
 	$j(document).ready(function () {	
@@ -508,6 +508,7 @@ page_title = "Australian Turf Club, Sydney Racing | Royal Randwick & Rosehill Ga
 						
 						//swap dates into pretty format	
 						let eventDate = new Date(value.dates.start.localDate);	
+						let dateNum = value.dates.start.localDate.replace('-','').replace('-','');
 						//set the options for date display
 						let options = { weekday: 'short', day: '2-digit', month: 'short', year: 'numeric' };
 						let optionsMedium = { weekday: 'short', day: '2-digit', month: 'short' };
@@ -532,7 +533,7 @@ page_title = "Australian Turf Club, Sydney Racing | Royal Randwick & Rosehill Ga
 						raceDaySet.add(value.name)
 						//console.log(raceDaysAndDatesMap)
 
-						let newEvent = $j("<div class='atcEventCard' data-month='"+monthTag+"' data-venue='"+venueTag+"' data-id='"+value.id+"' data-date='"+raceDate+"' data-raceday='"+nameTag+"'><div class='atcTopMod'><div class='atcEventHero'><div class='atcVenueTag atc"+venueTag+"'></div><img src='https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/heroimg/"+atcImageMapper(nameTag)+"_420x158.png' alt='"+value.name+"'></div><div class='atcEventTitle'><h1>"+value.name+"</h1></div><div class='atcEventDiv'></div><div class='atcMidMod'><div class='atcEventDate'><img src='https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc_date_img.svg'><h2>"+raceDate+"</h2></div><div class='atcEventVenue'><img src='https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc_location_img.svg'><h2>"+venueName+"</h2></div></div></div><a href='"+value.url+"' target='_blank'><div class='atcEventBtn'><div class='eventAvailTag' data-uniid='"+value.id+"'></div>BUY TICKETS</div></a></div>");
+						let newEvent = $j("<div class='atcEventCard' data-month='"+monthTag+"' data-venue='"+venueTag+"' data-id='"+value.id+"' data-date='"+raceDate+"' data-raceday='"+nameTag+"' data-datenum='"+dateNum+"'><div class='atcTopMod'><div class='atcEventHero'><div class='atcVenueTag atc"+venueTag+"'></div><img src='https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/heroimg/"+atcImageMapper(nameTag)+"_420x158.png' alt='"+value.name+"'></div><div class='atcEventTitle'><h1>"+value.name+"</h1></div><div class='atcEventDiv'></div><div class='atcMidMod'><div class='atcEventDate'><img src='https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc_date_img.svg'><h2>"+raceDate+"</h2></div><div class='atcEventVenue'><img src='https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc_location_img.svg'><h2>"+venueName+"</h2></div></div></div><a href='"+value.url+"' target='_blank'><div class='atcEventBtn'><div class='eventAvailTag' data-uniid='"+value.id+"'></div>BUY TICKETS</div></a></div>");
 						//apends event data into an element
 						eventListDiv.append(newEvent);
 						
@@ -737,6 +738,33 @@ $j(document).on('click', "#atcVenueMenu .atcDropDownBtn", function () {
 				}
 				eventsToDisplay();
 });
+//radio btn	
+$j(".atcRadioBtn").click(
+				function(){
+					if($j(this).children(".atcRadio").hasClass("atcRadioOn")){ 	
+						//nothing
+					}
+					if($j(this).children(".atcRadio").hasClass("atcRadioOff")){ 	
+						$j(this).children(".atcRadio").toggleClass("atcRadioOn").toggleClass("atcRadioOff")
+						$j(this).siblings(".atcRadioBtn").children(".atcRadio").toggleClass("atcRadioOn").toggleClass("atcRadioOff")
+					//sortEvents();
+					}
+})
+//asc
+$j("#atcSortAsc").click(
+				function(){
+			$j('#atcEventStream .atcEventCard').sort(function (a, b) {
+				return $j(a).data('datenum') - $j(b).data('datenum');
+			}).appendTo('#atcEventStream');
+		});
+//asc
+$j("#atcSortDesc").click(
+				function(){
+			$j('#atcEventStream .atcEventCard').sort(function (a, b) {
+				return $j(b).data('datenum') - $j(a).data('datenum');
+			}).appendTo('#atcEventStream');
+		});
+
 //counters and error throw
 let eventCount = function(){
 
