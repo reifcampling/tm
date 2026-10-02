@@ -31,13 +31,15 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	:root{
 		--bi-blue:#0082e4;
 		--bi-dblue:#000046; 
+		--bi-bblue:#33D9FF;
 		--bi-dgrey:#333333;
         --bi-lgrey:#f2f2f2;
         --bi-grey:#cbcbcb;
 		--bi-gold:#ffc200;
         --bi-mgrey:#808080;
 		--bi-mdgrey:#4d4d4d;
-        --bi-lblue:rgba(222, 241, 255, 1);
+        --bi-lblue:rgba(0, 130, 228, .1);
+		--bi-orng:#FF8B0D;
 		--px-blue:#80d9ff;
 		--px-gold:#B2882E;
 		--px-lgold:#D7C289;
@@ -71,34 +73,35 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	#biPubLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
 
 	#biFeatureEvents{width:100%;height:150px;display:flex;margin:0px auto;white-space:nowrap;flex-wrap: nowrap;flex-direction: row;align-items:safe center;justify-content:safe center;column-gap: 16px;position:relative;}
-	.biFeatureEvent{width:235px;height:150px;background:var(--ao-bblue);border-radius:4px;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;position:relative;overflow:hidden;cursor:pointer;user-drag: none; -webkit-user-drag: none;user-select: none;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
+	.biFeatureEvent{width:235px;height:150px;background:var(--bi-dblue);border-radius:0px;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;position:relative;overflow:hidden;cursor:pointer;user-drag: none; -webkit-user-drag: none;user-select: none;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
 	.biFeatureEvent a{user-drag: none; -webkit-user-drag: none;user-select: none;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
 	.biFeatureEvent:hover{box-shadow:rgb(0 0 0 / 30%) 0px 4px 6px 2px;opacity:.95;}
 	.aoFeatTag{height:auto;width:auto;font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:900;color:var(--bi-dblue);text-transform:uppercase;padding:5px 10px 3px 10px;margin:0px ;border-radius:20px;background:#fff;position:absolute;bottom:8px;right:5px;z-index:111;}
 	.biFeaturePh{background:rgba(0,0,0,.2);}
-	.biOrderTag{height:auto;width:auto;font-family:'poppins', 'Averta', sans-serif;font-size:12px;text-align: center;font-weight:900;color:red;text-transform:uppercase;padding:5px 10px 3px 10px;margin:0px ;border-radius:20px;background:#fff;position:absolute;top:8px;left:5px;z-index:111;display:none;}
+	.biOrderTag{height:auto;width:auto;font-family:'poppins', 'Averta', sans-serif;font-size:12px;text-align: center;font-weight:900;color:red;text-transform:uppercase;padding:4px 10px 3px 10px;margin:0px ;border-radius:20px;background:#fff;position:absolute;top:8px;left:5px;z-index:111;display:none;}
 	.biFeatHeroD{position: relative;width:100%; height: 150px; margin: 0px;z-index:110;overflow:hidden;user-drag: none; -webkit-user-drag: none;user-select: none;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
 	.biFeatHeroD img{width: 100%; height: 100%; display: block; margin: 0px auto; top: 0; left: 0;position: absolute;object-fit: cover;object-position: top right;user-drag: none; -webkit-user-drag: none;user-select: none;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
 	.aoFeatHeroM{display:none;}
 	#biFeatEventPips{display:none;}
 	/*Premium Header*/
 	#biPremHeader{width:100%;height:565px;margin:0px auto;padding:1px 0px 0px 0px;position: relative;box-sizing: border-box !important;}
-		.biHeaderCover{background:rgba(0,0,0,.3);width:100%;height:100%;display:block;position: absolute;top:0;left:0;right:0;z-index: 19;}	
-	#biPremLogo{width:280px;height:auto;padding:10px;margin:190px auto 90px;display:block;z-index:20;position: relative;/*background:rgba(0,0,0,.5)*/;border-radius:10px;box-sizing: border-box !important;}
-	#biPremLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
+	.biHeaderCover{background:rgba(0,0,0,.3);width:100%;height:100%;display:block;position: absolute;top:0;left:0;right:0;z-index: 19;}	
+	#biPremLogo{width:280px;height:auto;padding:10px;margin:80px auto 70px;display:block;z-index:20;position: relative;/*background:rgba(0,0,0,.5)*/;border-radius:10px;box-sizing: border-box !important;}
+	#biPremLogo img{width:100%;height:auto;padding:0px;margin:0px auto 0px;display:block}
+	#biPremLogo img:first-of-type{margin:0px auto 20px !important;}
 	/*Public Search Bar*/ 
 	#biPubSearchBar{width:100%;max-width:874px;height:116px;margin:20px auto 30px;text-align:center;position: relative;z-index:200;transition:ease-in-out all .4s;box-sizing: border-box !important;}
 	#biPubSearchBar .biTabWrap{width:100%;max-width:874px;height:60px;margin:0px;position: relative;z-index:200;box-sizing: border-box !important;text-align: left;user-select: none;display:flex;flex-wrap: nowrap;}
-	.biClearMenuBtn{/*background:rgba(0,0,0,0.6);*/border-radius:4px;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:#fff;padding:8px 12px 6px 12px;margin:0px 0px;right:16px;top:16px;position:absolute;box-sizing: border-box !important;text-decoration: underline;cursor:pointer;}
+	.biClearMenuBtn{background:rgba(255,255,255,0.33);border-radius:10px;font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:700;color:#fff;padding:5px 14px 3px 14px;margin:0px 20px 0px 0px;right:16px;top:16px;position:absolute;box-sizing: border-box !important;text-decoration: underline;cursor:pointer;}
 	#biClearMenuMobPub, #biClearMenuMobPrem{display:none;}
-	#biPubSearchBar .biPubTab{height:60px;width:205px;display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:#fff;padding:24px 0px;margin:0px 16px 0px 0px;border-radius:4px 4px 0px 0px;background:var(--bi-blue);box-shadow:rgb(0 0 0 / 30%) 0px 0px 5px 1px;position: relative;vertical-align: top;box-sizing: border-box !important;}
-	#biPubSearchBar .biPremTab{height:60px;width:auto;display:flex;flex-wrap:nowrap;justify-content: center;align-items: center;padding:0px 24px;margin:0px 0px 0px 0px;border-radius:4px 4px 0px 0px;background:rgba(51,51,51,.7);position: relative;vertical-align: top;box-sizing: border-box !important;cursor:pointer;}
-	#biPubSearchBar .biPremTab h1{font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: left;font-weight:700;color:#fff;margin:0px 0px 0px 0px;padding:0px 0px;}
-	#biPubSearchBar .biPremTab span{height:20px;background:#fff;font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:900;color:var(--bi-dblue);padding:5px 10px;margin:0px 0px 4px 10px;border-radius:12px;box-sizing: border-box !important;}
+	#biPubSearchBar .biPubTab{height:60px;width:205px;display:inline-block;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:#fff;padding:24px 0px;margin:0px 16px 0px 0px;border-radius:4px 4px 0px 0px;background:#33336B;box-shadow:rgb(0 0 0 / 30%) 0px 0px 5px 1px;position: relative;vertical-align: top;box-sizing: border-box !important;}
+	#biPubSearchBar .biPremTab{height:60px;width:auto;display:flex;flex-wrap:nowrap;justify-content: center;align-items: center;padding:0px 24px;margin:0px 0px 0px 0px;border-radius:4px 4px 0px 0px;background:var(--bi-orng);position: relative;vertical-align: top;box-sizing: border-box !important;cursor:pointer;}
+	#biPubSearchBar .biPremTab h1{font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: left;font-weight:700;color:var(--bi-dblue);margin:0px 0px 0px 0px;padding:0px 0px;}
+	#biPubSearchBar .biPremTab span{height:20px;background:var(--bi-dblue);font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:900;color:#fff;padding:5px 10px;margin:0px 0px 4px 10px;border-radius:12px;box-sizing: border-box !important;}
 	#biPubSearchBar .biSearchBarWrap{width:100%;max-width:874px;height:56px;margin:0px;text-align:center;background:#fff;border-radius:0px 4px 4px 4px;box-shadow:rgb(0 0 0 / 30%) 0px 0px 5px 1px;position: relative;z-index:200;box-sizing: border-box !important;display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-evenly; align-content: center;align-items: center;}
 	#biPubSearchBar .biSearchVertDiv{width:2px;height:32px;margin:12px 0px; background:var(--bi-grey);display:inline-block;border-radius:2px;}
 	#biPubSearchBar .biSelectBtn{width:auto;height:56px;padding:16px 40px;margin:0px 0px;background:transparent;display:inline-block;box-sizing:border-box !important;overflow:visible;position: relative;vertical-align: top;transition:.5s ease-in-out;cursor:pointer;}
-	#biPubSearchBar .biSelectBtn h3{height:24px;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--bi-blue);padding:6px 0px 6px 26px;margin:0px 0px 0px 0px;display:inline-block;vertical-align: top;user-select: none;box-sizing:border-box !important;text-transform:uppercase;white-space:nowrap;text-overflow:ellipsis;overflow: hidden;width: 100%;}
+	#biPubSearchBar .biSelectBtn h3{height:24px;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:var(--bi-dblue);padding:6px 0px 6px 26px;margin:0px 0px 0px 0px;display:inline-block;vertical-align: top;user-select: none;box-sizing:border-box !important;text-transform:uppercase;white-space:nowrap;text-overflow:ellipsis;overflow: hidden;width: 100%;}
 	#biPubSelectAccess{width:250px !important;max-width:250px !important;}
 	.biSelectArrow{display:none;}
 	.aoRotateArrow{transform:rotate(180deg);}
@@ -114,17 +117,17 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	#biPremSearchBar .biSelectBtn{width:auto;height:56px;padding:16px 40px;margin:0px 0px;background:transparent;display:inline-block;box-sizing:border-box !important;overflow:visible;position: relative;vertical-align: top;transition:.5s ease-in-out;cursor:pointer;}
 	#biPremSearchBar .biSelectBtn h3{height:24px;font-family:'poppins', 'Averta', sans-serif;font-size:16px;line-height:16px;text-align: center;font-weight:700;color:#fff;padding:6px 0px 6px 26px;margin:0px 0px 0px 0px;display:inline-block;vertical-align: top;user-select: none;box-sizing:border-box !important;}
 		
-	#biPubSelectDate h3{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_cal_pub_blue_img.svg') no-repeat;background-size:16px 16px;background-position:left 0px top 3px;}
-	#biPubSelectSession h3{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_sess_pub_blue_img.svg') no-repeat;background-size:18px 18px;background-position:left 0px top 3px;}
-	#biPubSelectType h3{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_exp_pub_blue_img.svg') no-repeat;background-size:18px 18px;background-position:left 0px top 3px;}
-	#biPubSelectPrice h3{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_price_pub_blue_img.svg') no-repeat;background-size:16px 16px;background-position:left 0px top 3px;}
+	#biPubSelectDate h3{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_cal_pub_dblue_img.svg') no-repeat;background-size:16px 16px;background-position:left 0px top 3px;}
+	#biPubSelectSession h3{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_sess_pub_dblue_img.svg') no-repeat;background-size:18px 18px;background-position:left 0px top 3px;}
+	#biPubSelectType h3{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_exp_pub_dblue_img.svg') no-repeat;background-size:18px 18px;background-position:left 0px top 3px;}
+	#biPubSelectPrice h3{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_price_pub_dblue_img.svg') no-repeat;background-size:16px 16px;background-position:left 0px top 3px;}
 
 	#biPremSelectDate h3{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_cal_prem_white_img.svg') no-repeat;background-size:16px 16px;background-position:left 0px top 3px;}
 	#biPremSelectSession h3{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_sess_prem_white_img.svg') no-repeat;background-size:18px 18px;background-position:left 0px top 3px;}
 	#biPremSelectType h3{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_exp_prem_white_img.svg') no-repeat;background-size:18px 18px;background-position:left 0px top 3px;}
 	#biPremSelectPrice h3{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_price_prem_white_img.svg') no-repeat;background-size:18px 18px;background-position:left 0px top 3px;}
 	
-	#biPubCalendar .biClearBtn{font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: left;font-weight:bold;color:var(--bi-blue);padding:3px 6px 0px 0px;margin:0px 0px 0px 0;display:inline-block;text-decoration:underline;cursor:pointer;}
+	#biPubCalendar .biClearBtn{font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: left;font-weight:bold;color:var(--bi-dblue);padding:3px 6px 0px 0px;margin:0px 0px 0px 0;display:inline-block;text-decoration:underline;cursor:pointer;}
 	#biPremCalendar .biClearBtn{font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: left;font-weight:bold;color:#fff;padding:3px 6px 0px 0px;margin:0px 0px 0px 0;display:inline-block;text-decoration:underline;cursor:pointer;}
 	/*calendar*/
 	#biPubCalendar{width:358px;height:auto;margin:0px auto;padding:16px;background:#fff;box-sizing: border-box !important ;position: absolute;top:60px;left:-2px;text-align:center;border-radius:4px;display:none;z-index:100;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;cursor:default;user-select:none;}
@@ -160,9 +163,9 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 
 	/*day markers*/
 	.biFinalKey{width:6px;height:6px;border-radius:10px;top:4px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
-	#biPubCalendar .biFinal01{border:2px solid var(--bi-gold);}
+	#biPubCalendar .biFinal01{border:2px solid var(--bi-orng);}
 	#biPubCalendar .biFinal02{border:2px solid var(--bi-dblue);}
-	#biPubCalendar .biFinal03{background:var(--bi-gold);}
+	#biPubCalendar .biFinal03{background:var(--bi-orng);}
 	#biPubCalendar .biFinal04{background:var(--bi-dblue);}
 
 	#biPremCalendar .biFinal01{border:2px solid var(--px-gold);}
@@ -176,9 +179,9 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
  	#biPremCalendar .biKeyEvent{font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: left;font-weight:500;color:#fff;padding:16px 0px 0px 0px;margin:3px auto;display:flex;flex-wrap: nowrap;align-items: center;}
 
 	.biKeyEventBullet{width:11px;height:11px;border-radius:15px;background:transparent;display:inline-block;margin:0px 3px 1px 0px;box-sizing: border-box !important;}
-	#biPubCalendar .final01Key{border:2px solid var(--bi-gold);}
+	#biPubCalendar .final01Key{border:2px solid var(--bi-orng);}
 	#biPubCalendar .final02Key{border:2px solid var(--bi-dblue);}
-	#biPubCalendar .final03Key{background:var(--bi-gold);}
+	#biPubCalendar .final03Key{background:var(--bi-orng);}
 	#biPubCalendar .final04Key{background:var(--bi-dblue);}
 	.biKeyEvent .biFinalKey{width:6px;height:6px;border-radius:10px;top:1px;right:0px;left:0px;margin:0px auto;position:absolute;box-sizing:border-box !important;}
 	#biPremCalendar .final01Key{border:2px solid var(--px-gold);}
@@ -195,12 +198,12 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	#biPremSearchBar .biFilterListBtn h4,#biPremSearchBar .biFilterRadioBtn h4,#biPremSearchBar .sortRadioBtn h4{padding:0px; margin:0px 0px -2px 8px;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: left;font-weight:600;color:#fff;display:inline-block;vertical-align: middle;user-select: none;}
 
 	#biPubSearchBar .biCheckBox{width:18px;height:18px;background:#fff;border-radius:3px;border:2px solid #ccc;display:inline-block;vertical-align: middle;box-sizing: border-box !important;}
-	#biPubSearchBar .biCheckBoxActive{width:18px;height:18px;background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2022/ao_tick_ico.svg"), var(--bi-blue);border-radius:3px;border:2px solid var(--bi-blue);display:inline-block;vertical-align: middle;box-sizing: border-box !important;}
+	#biPubSearchBar .biCheckBoxActive{width:18px;height:18px;background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2022/ao_tick_ico.svg"), var(--bi-dblue);border-radius:3px;border:2px solid var(--bi-dblue);display:inline-block;vertical-align: middle;box-sizing: border-box !important;}
 	#biPremSearchBar .biCheckBox{width:18px;height:18px;background:var(--px-dblue);border-radius:3px;border:2px solid #fff;display:inline-block;vertical-align: middle;box-sizing: border-box !important;}
 	#biPremSearchBar .biCheckBoxActive{width:18px;height:18px;background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_tick_prem_logo.svg"), var(--px-gold);border-radius:3px;border:2px solid var(--px-lgold);display:inline-block;vertical-align: middle;box-sizing: border-box !important;}	
 
 	#biPubSearchBar .biRadioBtn, #biPubDateMenu .biRadioBtn, #biPremDateMenu .biRadioBtn{width:18px;height:18px;background:transparent;border-radius:10px;border:2px solid var(--bi-grey);display:inline-block;vertical-align: middle;box-sizing: border-box !important;transition: .25s ease-in-out}
-	#biPubSearchBar .biRadioBtnActive,#biPubDateMenu .biRadioBtnActive,#biPremDateMenu .biRadioBtnActive {width:18px;height:18px;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_radio_btn.svg"), #fff;border-radius:10px;border:2px solid var(--px-blue);display:inline-block;vertical-align: middle;box-sizing: border-box !important;transition: .25s ease-in-out}	
+	#biPubSearchBar .biRadioBtnActive,#biPubDateMenu .biRadioBtnActive,#biPremDateMenu .biRadioBtnActive {width:18px;height:18px;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_radio_dblue_btn.svg"), #fff;border-radius:10px;border:2px solid var(--bi-dblue);display:inline-block;vertical-align: middle;box-sizing: border-box !important;transition: .25s ease-in-out}	
 	#biPremSearchBar .biRadioBtn{width:18px;height:18px;background:transparent;border-radius:10px;border:2px solid var(--px-lgold);display:inline-block;vertical-align: middle;box-sizing: border-box !important;transition: .25s ease-in-out}
 	#biPremSearchBar .biRadioBtnActive{width:18px;height:18px;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_px_radio_btn.svg");border-radius:10px;border:2px solid var(--px-gold);display:inline-block;vertical-align: middle;box-sizing: border-box !important;transition: .25s ease-in-out}	
 
@@ -228,7 +231,7 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	#biPubCounter p, #biPremCounter p{font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:500;color:var(--bi-mgrey);padding:0px;margin:0px 0px 0px 0px;display:inline-block;}
 	.biDropDownCount{width:22px;height:22px;margin:0px;padding:0px;border-radius:20px;position:absolute;top:17px;left:36px;display:none;}
 	.biDropDownNumber{width:22px;height:22px;margin:0px;padding:6.5px 0px 0px 0px;font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:800;color:#fff;box-sizing: border-box !important;}
-	#biPubSearchBar .biDropDownCount{background:var(--bi-blue)}
+	#biPubSearchBar .biDropDownCount{background:var(--bi-dblue)}
 	#biPremSearchBar .biDropDownCount{background:var(--px-gold)}
 
 	/*date sort menu*/
@@ -245,14 +248,14 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	/*2025 card styles general public*/
 	#biEventStreamGP .eventCard{width:304px;height:auto;background:#fff;box-shadow:0px 1px 8px rgba(0,0,0,.25);padding:0px 0px 0px;border-radius:2px;box-sizing: border-box !important;user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;}
 	#biEventStreamGP .eventDateWrap{width:100%;height:31px;margin:0px;padding:0px;font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:800;display:flex;flex-wrap:nowrap;justify-content: space-between;align-items: center;text-transform:uppercase;flex-grow: 0;}
-	#biEventStreamGP .eventDate{padding:10px 16px 10px 16px;height:31px;color:var(--bi-blue);display:inline-block;box-sizing: border-box !important;font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:800;text-align: left;text-transform:uppercase;}
+	#biEventStreamGP .eventDate{padding:10px 16px 10px 16px;height:31px;color:var(--bi-dblue);display:inline-block;box-sizing: border-box !important;font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:800;text-align: left;text-transform:uppercase;}
 	#biEventStreamGP .eventSession{height:31px;padding:10px 16px 10px 32px;display:inline-block;border-radius:10px 0px 0px 0px;float: right;text-align: right;box-sizing: border-box !important;font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:800;text-align: left;text-transform:uppercase;}
-	#biEventStreamGP .biALLDAY{color:#fff;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_allday_white_img.svg") no-repeat, var(--bi-blue);background-size:12px 12px;background-position:top 10px left 15px;}
-	#biEventStreamGP .biDAYSESSION{color:var(--bi-dgrey);background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_day_grey_img.svg") no-repeat, var(--bi-gold);background-size:12px 12px;background-position:top 10px left 15px;}
+	#biEventStreamGP .biALLDAY{color:var(--bi-dblue);background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_allday_dblue_img.svg") no-repeat, var(--bi-bblue);background-size:12px 12px;background-position:top 10px left 15px;}
+	#biEventStreamGP .biDAYSESSION{color:var(--bi-dgrey);background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_day_grey_img.svg") no-repeat, var(--bi-orng);background-size:12px 12px;background-position:top 10px left 15px;}
 	#biEventStreamGP .biNIGHTSESSION{color:#fff;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_night_white_img.svg") no-repeat, var(--bi-dblue);background-size:12px 12px;background-position:top 10px left 15px;}
 	#biEventStreamGP .biTWILIGHTSESSION{color:#fff;background:var(--bi-gold);}
 
-	#biEventStreamGP .eventHero{width:304px;height:110px;padding:0px;margin:0px;display:block;box-sizing: border-box !important;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/bi_placeholder_hero_304x110.png") center center;background-size:cover;position: relative;flex-grow: 0;}
+	#biEventStreamGP .eventHero{width:304px;height:110px;padding:0px;margin:0px;display:block;box-sizing: border-box !important;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/bi27_placeholder_hero_304x110.png") center center;background-size:cover;position: relative;flex-grow: 0;}
 	.eventHero img{width:304px;height:110px;display:block;border:0;outline:0;}
 	/*offer tags*/
 	#biEventStreamGP .eventOfferTag{font-family:"poppins","Averta", sans-serif, fallback;font-size:12px;line-height:12px;font-weight:bold;color:var(--bi-dgrey);background:rgba(255,255,255,.7);position:absolute;bottom:8px;left:8px;padding:6px 10px 4px;display:inline-block;margin:0px 0px ;box-sizing: border-box !important;border-radius:3px;}
@@ -261,19 +264,19 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	
 	.eventInfo{width:100%;height:auto;padding:16px;margin:0px auto;text-align:left;display:block;box-sizing: border-box !important;flex-grow: 1;}
 	#biEventStreamGP .eventName{font-family:"poppins","Averta", sans-serif, fallback;font-size:22px;line-height:22px;font-weight:800;color:var(--bi-dblue);padding:0px 0px 8px 0px;margin:0px;}
-	#biEventStreamGP .eventSubDesc{font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:800;color:var(--bi-blue);padding:0px 0px 8px 0px;margin:0px;}
+	#biEventStreamGP .eventSubDesc{font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:800;color:var(--bi-dblue);padding:0px 0px 8px 0px;margin:0px;}
 	#biEventStreamGP .eventLoc{font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:500;color:var(--bi-dgrey);padding:0px 0px 0px 24px;margin:0px 0px 12px 0px;box-sizing: border-box !important;}
-	#biEventStreamGP .eventPin{background:url("bi27_locPin_blue_img.svg") no-repeat;background-position:top 0px left 0px;background-size:13px 13px;}
+	#biEventStreamGP .eventPin{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_locPin_dblue_img.svg") no-repeat;background-position:top 0px left 0px;background-size:13px 13px;}
 	#biEventStreamGP .eventTime{font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:18px;font-weight:500;color:var(--bi-dgrey);padding:1px 0px 0px 24px;margin:0px 0px 0px 0px;box-sizing: border-box !important;}
-	#biEventStreamGP .eventClock{background:url("bi27_clock_blue_img.svg") no-repeat;background-position:top 0px left 0px;background-size:13px 13px;}
+	#biEventStreamGP .eventClock{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_clock_dblue_img.svg") no-repeat;background-position:top 0px left 0px;background-size:13px 13px;}
 
 	.eventBtnWrap{width:100%;height:205;padding:15px 16px 16px 16px;margin:0px auto;text-align:left;display:block;background:var(--bi-lgrey);box-sizing: border-box !important;flex-grow: 0;}
 	.eventBtnWrap a{text-decoration:none;}
 	#biEventStreamGP .eventBtnWrap p{font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:500;text-align:left;color:var(--bi-mgrey);padding:0px 0px;margin:0px 0px;display:inline-block;}
 	#biEventStreamGP .eventPrice{font-family:"poppins","Averta", sans-serif, fallback;font-size:24px;line-height:24px;font-weight:700;text-align:left;color:var(--bi-dblue);padding:11px 0px 20px 0px;margin:0px 0px;}
 	#biEventStreamGP .eventPrice p{margin:0px 0px 0px 0px;}	
-	#biEventStreamGP .eventTicketsBtn{width:100%;height:48px;margin:0px auto;padding:18px 0px;display:block;background:var(--bi-blue);font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:700;color:#fff;text-align: center;border-radius:4px;box-sizing: border-box !important;user-select: none;cursor:pointer;text-transform:uppercase;}
-	#biEventStreamGP .eventIncBtn{width:100%;height:48px;margin:8px auto 0px;padding:16px 0px;display:block;background:var(--bi-lgrey);font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:700;color:var(--bi-blue);text-align: center;border:2px solid var(--bi-blue);border-radius:4px;box-sizing: border-box !important;user-select: none;cursor:pointer;text-transform:uppercase;}
+	#biEventStreamGP .eventTicketsBtn{width:100%;height:48px;margin:0px auto;padding:18px 0px;display:block;background:var(--bi-dblue);font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:700;color:#fff;text-align: center;border-radius:4px;box-sizing: border-box !important;user-select: none;cursor:pointer;text-transform:uppercase;}
+	#biEventStreamGP .eventIncBtn{width:100%;height:48px;margin:8px auto 0px;padding:16px 0px;display:block;background:var(--bi-lgrey);font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:700;color:var(--bi-dblue);text-align: center;border:2px solid var(--bi-dblue);border-radius:4px;box-sizing: border-box !important;user-select: none;cursor:pointer;text-transform:uppercase;}
 	/*Px ad Card*/
 	#biPxPromoCard{width:304px;height:auto;background:var(--px-dblue);box-shadow:0px 1px 8px rgba(0,0,0,.25);padding:0px;border-radius:2px;box-sizing: border-box !important;user-select: none;display: none;flex-direction:column;flex-wrap:wrap;align-content:flex-start;align-content: space-between; 
  	justify-content: flex-start;cursor:pointer;position:relative;min-height: 400px;background:#c3a65d;}
@@ -302,7 +305,7 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	#biEventStreamPX .biNIGHTSESSION{color:#fff;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_night_white_img.svg") no-repeat, var(--bi-dblue);background-size:12px 12px;background-position:top 10px left 15px;}
 	#biEventStreamPX .biTWILIGHTSESSION{color:#fff;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_twilight_white_img.svg") no-repeat, var(--bi-dblue);background-size:12px 12px;background-position:top 10px left 15px;}
 
-	#biEventStreamPX .eventHero{width:304px;height:110px;padding:0px;margin:0px;display:block;box-sizing: border-box !important;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/bi_placeholder_hero_304x110.png") center center;background-size:cover;position: relative;flex-grow: 0;}
+	#biEventStreamPX .eventHero{width:304px;height:110px;padding:0px;margin:0px;display:block;box-sizing: border-box !important;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/bi27_placeholder_hero_304x110.png") center center;background-size:cover;position: relative;flex-grow: 0;}
 
 	.eventInfo{width:100%;height:auto;padding:16px;margin:0px auto;text-align:left;display:block;box-sizing: border-box !important;flex-grow: 1;}
 	#biEventStreamPX .eventName{font-family:"poppins","Averta", sans-serif, fallback;font-size:22px;line-height:22px;font-weight:800;color:var(--bi-dblue);padding:0px 0px 8px 0px;margin:0px;}
@@ -334,24 +337,24 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
     .aoLbBtnWrap p{font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:500;text-align:left;color:var(--bi-mgrey);padding:8px 0px;margin:0px 0px;display:inline-block;}  
 	.aoLbBtnWrap a{text-decoration: none;}	  
 	#biEventStreamPX .aoLbPrice{font-family:"poppins","Averta", sans-serif, fallback;font-size:24px;line-height:24px;font-weight:700;text-align:left;color:var(--bi-dblue);padding:0px 0px 16px 0px;margin:0px 0px;}    
-	#biEventStreamGP .aoLbPrice{font-family:"poppins","Averta", sans-serif, fallback;font-size:24px;line-height:24px;font-weight:700;text-align:left;color:var(--bi-blue);padding:0px 0px 16px 0px;margin:0px 0px;}    
+	#biEventStreamGP .aoLbPrice{font-family:"poppins","Averta", sans-serif, fallback;font-size:24px;line-height:24px;font-weight:700;text-align:left;color:var(--bi-dblue);padding:0px 0px 16px 0px;margin:0px 0px;}    
     
 	/*2025 lightbox styles Pub*/
     .ao-ticketsLb .aoLbTopWrap{width:100%;height:auto;margin:0px auto;padding:16px;background:var(--bi-lgrey);border-radius:4px;display:block;box-sizing:border-box !important;position: relative;}
-	.ao-ticketsLb .biLbClose{width:32px;height:32px;margin:0px;padding:0px;display:block;top:8px;right:8px;position:absolute;cursor:pointer;background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_close_btn.svg');background-size:cover;}
+	.ao-ticketsLb .biLbClose{width:32px;height:32px;margin:0px;padding:0px;display:block;top:8px;right:8px;position:absolute;cursor:pointer;background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_close_dblue_btn.svg');background-size:cover;}
     .ao-ticketsLb .aoLbTopWrap h1{font-family:"poppins","Averta", sans-serif, fallback;font-size:24px;line-height:24px;font-weight:700;text-align:left;color:var(--bi-dblue);padding:8px 0px 16px 0px;margin:0px;}
 	.ao-ticketsLb .biLbdetailWrap div{height:20px;font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:700;text-align:left;color:var(--bi-dgrey);padding:1px 0px 0px 25px;margin:0px;display:inline-block;}
-    .ao-ticketsLb .aoLbDate{width:150px;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_cal_pub_blue_img.svg") no-repeat;background-size:13px 13px;background-position:left 0px top 0px;}
-    .ao-ticketsLb .aoLbVenue{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_locPin_blue_img.svg") no-repeat;background-size:13px 13px;background-position:left 0px top 0px;}
-    .ao-ticketsLb .aoLbDAYSESSION{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_day_blue_img.svg") no-repeat;background-size:15px 15px;background-position:left 0px top 0px;}
-	.ao-ticketsLb .aoLbNIGHTSESSION{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_night_blue_img.svg") no-repeat;background-size:15px 15px;background-position:left 0px top 0px;}
-	.ao-ticketsLb .aoLbALLDAY{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_allday_blue_img.svg") no-repeat;background-size:15px 15px;background-position:left 0px top 0px;}	
-    .ao-ticketsLb .aoLbAccessTime{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_clock_blue_img.svg") no-repeat;background-size:12px 12px;background-position:left 0px top 0px;}   
+    .ao-ticketsLb .aoLbDate{width:150px;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_cal_pub_dblue_img.svg") no-repeat;background-size:13px 13px;background-position:left 0px top 0px;}
+    .ao-ticketsLb .aoLbVenue{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_locPin_dblue_img.svg") no-repeat;background-size:13px 13px;background-position:left 0px top 0px;}
+    .ao-ticketsLb .aoLbDAYSESSION{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_day_dblue_img.svg") no-repeat;background-size:15px 15px;background-position:left 0px top 0px;}
+	.ao-ticketsLb .aoLbNIGHTSESSION{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_night_dblue_img.svg") no-repeat;background-size:15px 15px;background-position:left 0px top 0px;}
+	.ao-ticketsLb .aoLbALLDAY{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_allday_dblue_img.svg") no-repeat;background-size:15px 15px;background-position:left 0px top 0px;}	
+    .ao-ticketsLb .aoLbAccessTime{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_clock_dblue_img.svg") no-repeat;background-size:12px 12px;background-position:left 0px top 0px;}   
     .ao-ticketsLb .biLbInclusionWrap{width:100%;height:auto;margin:8px auto;padding:16px;background:var(--bi-lblue);border-radius:4px;font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:500;text-align:left;color:var(--bi-dgrey);display:block;box-sizing:border-box !important;}      
-    .ao-ticketsLb .biLbInclusionWrap h1, .ao-ticketsLb .biLbInclusionWrap h2{font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:700;text-align:left;color:var(--bi-blue);margin:0px;}   
-    .ao-ticketsLb .biLbInclusionWrap h1 {background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_tick_blue_img.svg") no-repeat;background-size:13px 13px;background-position:left 0px top 5px;overflow:visible;padding:5px 0px 5px 25px;} 
-    .ao-ticketsLb .biLbInclusionWrap h2 {background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_cross_blue_img.svg") no-repeat;background-size:12px 12px;background-position:left 0px top 15px;overflow:visible;padding:15px 0px 5px 25px;}     
-    .ao-ticketsLb .aoLbBtn{width:100%;height:48px;margin:0px auto;padding:18px 0px;display:block;background:var(--bi-blue);font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:700;text-align:center;color:#fff;border-radius:4px;text-transform: uppercase;box-sizing:border-box !important;}
+    .ao-ticketsLb .biLbInclusionWrap h1, .ao-ticketsLb .biLbInclusionWrap h2{font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:700;text-align:left;color:var(--bi-dblue);margin:0px;}   
+    .ao-ticketsLb .biLbInclusionWrap h1 {background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_tick_dblue_img.svg") no-repeat;background-size:13px 13px;background-position:left 0px top 5px;overflow:visible;padding:5px 0px 5px 25px;} 
+    .ao-ticketsLb .biLbInclusionWrap h2 {background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_cross_dblue_img.svg") no-repeat;background-size:12px 12px;background-position:left 0px top 15px;overflow:visible;padding:15px 0px 5px 25px;}     
+    .ao-ticketsLb .aoLbBtn{width:100%;height:48px;margin:0px auto;padding:18px 0px;display:block;background:var(--bi-dblue);font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:700;text-align:center;color:#fff;border-radius:4px;text-transform: uppercase;box-sizing:border-box !important;}
 	.ao-ticketsLb .aoLbPremLink{display:none;}
 	/*2025 lightbox styles Prem*/  
 	.ao-ticketshospitalityLb .aoLbTopWrap, .ao-ticketssuiteLb .aoLbTopWrap{width:100%;height:auto;margin:0px auto;padding:16px;background:var(--px-lgold);border-radius:4px;display:block;box-sizing:border-box !important;position: relative;}
@@ -403,7 +406,7 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	#biContent, #biPubWrapper, #biPremWrapper{width:100%; position:relative;text-align: center; background:#f9f9f9;margin:0px auto 0px ;display:block;box-sizing: border-box !important;overflow-x:hidden;}
 	#biPremWrapper{display:none;}
 	/*Public Header    */
-	#biPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:/*url('https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_public_header_400x660px.png') center center,*/ var(--bi-dblue);background-size:cover;box-sizing: border-box !important}
+	#biPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;box-sizing: border-box !important}
 	#biPubLogo{width:280px;height:auto;padding:0px;margin:42px auto 42px;display:block;z-index:20;position: relative;}
 	#biPubLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
 	#aoLiveLogo{width:280px;height:auto;padding:0px;margin:42px auto 42px;display:none;z-index:20;position: relative;}
@@ -416,7 +419,7 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	#biFeatureScroller::-webkit-scrollbar { background: transparent; /* Chrome/Safari/Webkit */width: 0px;}
 	#biFeatureScroller{ /*scrollbar-width: none; Firefox */-ms-overflow-style: none;  /* IE 10+ */}
 
-	.biFeatureEvent{width:150;min-width:150px;height:150px;background:var(--ao-bblue);border-radius:4px;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;position:relative;overflow:hidden;user-select:none;}
+	.biFeatureEvent{width:150;min-width:150px;height:150px;background:var(--ao-bblue);border-radius:0px;box-shadow:rgb(0 0 0 / 20%) 0px 4px 5px 1px;position:relative;overflow:hidden;user-select:none;}
 	.biFeatureEvent:hover{box-shadow:rgb(0 0 0 / 30%) 0px 4px 6px 2px;opacity:.95;}
 	.aoFeatTag{height:auto;width:auto;font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: center;font-weight:900;color:var(--bi-dblue);text-transform:uppercase;padding:5px 10px 3px 10px;margin:0px ;border-radius:20px;background:#fff;position:absolute;bottom:8px;right:5px;z-index:111;}
 	.biFeaturePh{background:rgba(0,0,0,.2);}
@@ -431,9 +434,10 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	.aoFeatPipOff{width:7px;height:7px;background:/*rgba(255,255,255,.5)*/transparent;border:1px solid #efefef;margin:6.5px 4.5px;}	
 	/*Premium Header*/
 	#biPremHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px 1px 0px;position: relative;box-sizing: border-box !important}
-		.biHeaderCover{background:rgba(0,0,0,.3);width:100%;height:100%;display:block;position: absolute;top:0;left:0;right:0;z-index: 19;}	
-	#biPremLogo{max-width:320px;width:90%;height:auto;padding:10px;margin:110px auto 110px;display:block;z-index:20;position: relative;/*background:rgba(0,0,0,.5)*/;border-radius:10px;box-sizing: border-box !important;}
-	#biPremLogo img{width:100%;height:auto;padding:0px;margin:auto;display:block}
+	.biHeaderCover{background:rgba(0,0,0,.3);width:100%;height:100%;display:block;position: absolute;top:0;left:0;right:0;z-index: 19;}	
+	#biPremLogo{max-width:320px;width:90%;height:auto;padding:10px;margin:80px auto 50px;display:block;z-index:20;position: relative;/*background:rgba(0,0,0,.5)*/;border-radius:10px;box-sizing: border-box !important;}
+	#biPremLogo img{width:100%;height:auto;padding:0px;margin:0px auto 0px;display:block}
+	#biPremLogo img:first-of-type{margin:0px auto 20px !important;}
 	#biPremVideo{display:none;}
 	#biPremVideoMob{width:100%;height:100%; position: absolute;top: 0;left:0;right:0;display: flex;justify-content: center;flex-wrap: nowrap; flex-direction: column;align-items: center;}
 	#biPremVideoMob video{width:auto;height:100%;object-fit:cover;z-index:10; /*transform: translateY(-50%);*/;}
@@ -479,9 +483,9 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	#biPremSelectType h3{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_exp_prem_white_img.svg') no-repeat;background-size:18px 18px;background-position:left 0px top 3px;}
 	#biPremSelectPrice h3{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_price_prem_white_img.svg') no-repeat;background-size:18px 18px;background-position:left 0px top 3px;}
 
-	#biPubCalendar .biClearBtn{font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: left;font-weight:bold;color:var(--bi-blue);padding:3px 6px 0px 0px;margin:0px 0px 0px 0px;display:inline-block;text-decoration:underline;cursor:pointer;}
+	#biPubCalendar .biClearBtn{font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: left;font-weight:bold;color:var(--bi-dblue);padding:3px 6px 0px 0px;margin:0px 0px 0px 0px;display:inline-block;text-decoration:underline;cursor:pointer;}
 	#biPremCalendar .biClearBtn{font-family:'poppins', 'Averta', sans-serif;font-size:12px;line-height:12px;text-align: left;font-weight:bold;color:#fff;padding:3px 6px 0px 0px;margin:0px 0px 0px 0px;display:inline-block;text-decoration:underline;cursor:pointer;}
-	#biClearMenuMobPub, #biClearMenuMobPrem{width:125px;background:transparent;border-radius:4px;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:#fff;padding:8px 16px 6px 16px;margin:16px auto 0px auto;position:relative;box-sizing: border-box !important;text-decoration: underline;user-select: none;}
+	#biClearMenuMobPub, #biClearMenuMobPrem{width:125px;background:transparent;border-radius:4px;font-family:'poppins', 'Averta', sans-serif;font-size:14px;line-height:14px;text-align: center;font-weight:700;color:#fff;padding:8px 16px 6px 16px;margin:16px auto 0px auto;position:relative;box-sizing: border-box !important;text-decoration: underline;user-select: none;background:rgba(0,0,0,0.33);border-radius:10px;}
 
 	/*calendar*/
 	#biPubCalendar{width:100%;max-width:358px;height:auto;margin:16px auto 0px;padding:16px 0px 0px 0px;background:#fff;box-sizing: border-box !important ;position: relative;text-align:center;display:none;z-index:100;user-select:none;border-top:2px solid var(--bi-grey);}
@@ -556,7 +560,7 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	#biPremSearchBar .biCheckBox{width:18px;height:18px;background:var(--px-dblue);border-radius:3px;border:2px solid #fff;display:inline-block;vertical-align: middle;box-sizing: border-box !important;}
 	#biPremSearchBar .biCheckBoxActive{width:18px;height:18px;background:url("https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_tick_prem_logo.svg"), var(--px-gold);border-radius:3px;border:2px solid var(--px-lgold);display:inline-block;vertical-align: middle;box-sizing: border-box !important;}	
 	#biPubSearchBar .biRadioBtn, #biPubDateMenu .biRadioBtn, #biPremDateMenu .biRadioBtn{width:18px;height:18px;background:transparent;border-radius:10px;border:2px solid var(--bi-grey);display:inline-block;vertical-align: middle;box-sizing: border-box !important;transition: .25s ease-in-out}
-	#biPubSearchBar .biRadioBtnActive,#biPubDateMenu .biRadioBtnActive,#biPremDateMenu .biRadioBtnActive {width:18px;height:18px;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_radio_btn.svg"), #fff;border-radius:10px;border:2px solid var(--px-blue);display:inline-block;vertical-align: middle;box-sizing: border-box !important;transition: .25s ease-in-out}	
+	#biPubSearchBar .biRadioBtnActive,#biPubDateMenu .biRadioBtnActive,#biPremDateMenu .biRadioBtnActive {width:18px;height:18px;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_radio_dblue_btn.svg"), #fff;border-radius:10px;border:2px solid var(--px-dblue);display:inline-block;vertical-align: middle;box-sizing: border-box !important;transition: .25s ease-in-out}	
 	#biPremSearchBar .biRadioBtn{width:18px;height:18px;background:transparent;border-radius:10px;border:2px solid var(--px-lgold);display:inline-block;vertical-align: middle;box-sizing: border-box !important;transition: .25s ease-in-out}
 	#biPremSearchBar .biRadioBtnActive{width:18px;height:18px;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_px_radio_btn.svg");border-radius:10px;border:2px solid var(--px-gold);display:inline-block;vertical-align: middle;box-sizing: border-box !important;transition: .25s ease-in-out}	
 	/*ticket menu*/
@@ -594,14 +598,14 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	/*2025 card styles general public*/
 	#biEventStreamGP .eventCard{width:100%;max-width:304px;height:auto;background:#fff;box-shadow:0px 1px 8px rgba(0,0,0,.25);padding:0px 0px 0px;border-radius:2px;box-sizing: border-box !important;user-select: none;display: flex;flex-direction:column;flex-wrap:wrap;align-content:flex-start;}
 	#biEventStreamGP .eventDateWrap{width:100%;height:31px;margin:0px;padding:0px;font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:800;display:flex;flex-wrap:nowrap;justify-content: space-between;align-items: center;;text-transform:uppercase;flex-grow: 0;}
-	#biEventStreamGP .eventDate{padding:10px 16px 10px 16px;height:31px;color:var(--bi-blue);display:inline-block;box-sizing: border-box !important;font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:800;text-align: left;text-transform:uppercase;}
+	#biEventStreamGP .eventDate{padding:10px 16px 10px 16px;height:31px;color:var(--bi-dblue);display:inline-block;box-sizing: border-box !important;font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:800;text-align: left;text-transform:uppercase;}
 	#biEventStreamGP .eventSession{height:31px;padding:10px 16px 10px 32px;display:inline-block;border-radius:10px 0px 0px 0px;text-align: right;box-sizing: border-box !important;font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:800;text-transform:uppercase;}
-	#biEventStreamGP .biALLDAY{color:#fff;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_allday_white_img.svg") no-repeat, var(--bi-blue);background-size:12px 12px;background-position:top 10px left 15px;}
-	#biEventStreamGP .biDAYSESSION{color:var(--bi-dgrey);background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_day_grey_img.svg") no-repeat, var(--bi-gold);background-size:12px 12px;background-position:top 10px left 15px;}
+	#biEventStreamGP .biALLDAY{color:#fff;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_allday_dblue_img.svg") no-repeat, var(--bi-blue);background-size:12px 12px;background-position:top 10px left 15px;}
+	#biEventStreamGP .biDAYSESSION{color:var(--bi-dgrey);background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_day_grey_img.svg") no-repeat, var(--bi-orng);background-size:12px 12px;background-position:top 10px left 15px;}
 	#biEventStreamGP .biNIGHTSESSION{color:#fff;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_night_white_img.svg") no-repeat, var(--bi-dblue);background-size:12px 12px;background-position:top 10px left 15px;}
 	#biEventStreamGP .biTWILIGHTSESSION{color:#fff;background:var(--bi-gold);}
 
-	#biEventStreamGP .eventHero{width:100%;max-width:304px;height:auto;max-height:110px;padding:0px;margin:0px;display:block;box-sizing: border-box !important;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/bi_placeholder_hero_304x110.png") center center;background-size:cover;position: relative;flex-grow: 0;}
+	#biEventStreamGP .eventHero{width:100%;max-width:304px;height:auto;max-height:110px;padding:0px;margin:0px;display:block;box-sizing: border-box !important;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/bi27_placeholder_hero_304x110.png") center center;background-size:cover;position: relative;flex-grow: 0;}
 	.eventHero img{width:100%;max-width:304px;height:110px;display:block;border:0;outline:0;}
 	/*offer tags*/
 	#biEventStreamGP .eventOfferTag{font-family:"poppins","Averta", sans-serif, fallback;font-size:12px;line-height:12px;font-weight:bold;color:var(--bi-dgrey);background:rgba(255,255,255,.7);position:absolute;bottom:8px;left:8px;padding:6px 10px 4px;display:inline-block;margin:0px 0px ;box-sizing: border-box !important;border-radius:3px;}
@@ -651,7 +655,7 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	#biEventStreamPX .biNIGHTSESSION{color:#fff;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_night_white_img.svg") no-repeat, var(--bi-dblue);background-size:12px 12px;background-position:top 10px left 15px;}
 	#biEventStreamPX .biTWILIGHTSESSION{color:#fff;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_twilight_white_img.svg") no-repeat, var(--bi-dblue);background-size:12px 12px;background-position:top 10px left 15px;}
 
-	#biEventStreamPX .eventHero{width:100%;max-width:304px;height:auto;max-height:110px;padding:0px;margin:0px;display:block;box-sizing: border-box !important;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/bi_placeholder_hero_304x110.png") center center;background-size:cover;position: relative;flex-grow: 0;}
+	#biEventStreamPX .eventHero{width:100%;max-width:304px;height:auto;max-height:110px;padding:0px;margin:0px;display:block;box-sizing: border-box !important;overflow:hidden;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/bi27_placeholder_hero_304x110.png") center center;background-size:cover;position: relative;flex-grow: 0;}
 
 	.eventInfo{width:100%;height:auto;padding:16px;margin:0px auto;text-align:left;display:block;box-sizing: border-box !important;flex-grow: 1;}
 	#biEventStreamPX .eventName{font-family:"poppins","Averta", sans-serif, fallback;font-size:22px;line-height:22px;font-weight:800;color:var(--bi-dblue);padding:0px 0px 8px 0px;margin:0px;}
@@ -683,19 +687,19 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
     .aoLbBtnWrap p{font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:500;text-align:left;color:var(--bi-mgrey);padding:8px 0px;margin:0px 0px;display:inline-block;}   
     .aoLbBtnWrap a{text-decoration: none;}	 
 	#biEventStreamPX .aoLbPrice{font-family:"poppins","Averta", sans-serif, fallback;font-size:24px;line-height:24px;font-weight:700;text-align:left;color:var(--bi-dblue);padding:0px 0px 16px 0px;margin:0px 0px;}    
-	#biEventStreamGP .aoLbPrice{font-family:"poppins","Averta", sans-serif, fallback;font-size:24px;line-height:24px;font-weight:700;text-align:left;color:var(--bi-blue);padding:0px 0px 16px 0px;margin:0px 0px;}    
+	#biEventStreamGP .aoLbPrice{font-family:"poppins","Averta", sans-serif, fallback;font-size:24px;line-height:24px;font-weight:700;text-align:left;color:var(--bi-dblue);padding:0px 0px 16px 0px;margin:0px 0px;}    
    
 	/*2025 lightbox styles Pub*/
     .ao-ticketsLb .aoLbTopWrap{width:100%;height:auto;margin:0px auto;padding:16px;background:var(--bi-lgrey);border-radius:4px;display:block;box-sizing:border-box !important;position: relative;}
-	.ao-ticketsLb .biLbClose{width:32px;height:32px;margin:0px;padding:0px;display:block;top:8px;right:8px;position:absolute;cursor:pointer;background:url('bi27_close_btn.svg');background-size:cover;}
+	.ao-ticketsLb .biLbClose{width:32px;height:32px;margin:0px;padding:0px;display:block;top:8px;right:8px;position:absolute;cursor:pointer;background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_close_dblue_btn.svg');background-size:cover;}
     .ao-ticketsLb .aoLbTopWrap h1{font-family:"poppins","Averta", sans-serif, fallback;font-size:22px;line-height:22px;font-weight:700;text-align:left;color:var(--bi-blue);padding:8px 0px 16px 0px;margin:0px;}
 	.ao-ticketsLb .biLbdetailWrap div{width:100%;height:20px;font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:700;text-align:left;color:var(--bi-dgrey);padding:1px 0px 0px 25px;margin:0px;display:inline-block;}
-    .ao-ticketsLb .aoLbDate{width:140px;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_cal_pub_blue_img.svg") no-repeat;background-size:13px 13px;background-position:left 0px top 0px;box-sizing: border-box !important;}
-    .ao-ticketsLb .aoLbVenue{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_locPin_blue_img.svg") no-repeat;background-size:13px 13px;background-position:left 0px top 0px;}
-    .ao-ticketsLb .aoLbDAYSESSION{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_day_blue_img.svg") no-repeat;background-size:15px 15px;background-position:left 0px top 0px;}
-	.ao-ticketsLb .aoLbNIGHTSESSION{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_night_blue_img.svg") no-repeat;background-size:15px 15px;background-position:left 0px top 0px;}
-	.ao-ticketsLb .aoLbALLDAY{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_allday_blue_img.svg") no-repeat;background-size:15px 15px;background-position:left 0px top 0px;}	
-    .ao-ticketsLb .aoLbAccessTime{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_clock_blue_img.svg") no-repeat;background-size:12px 12px;background-position:left 0px top 0px;}   
+    .ao-ticketsLb .aoLbDate{width:140px;background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_cal_pub_dblue_img.svg") no-repeat;background-size:13px 13px;background-position:left 0px top 0px;box-sizing: border-box !important;}
+    .ao-ticketsLb .aoLbVenue{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_locPin_dblue_img.svg") no-repeat;background-size:13px 13px;background-position:left 0px top 0px;}
+    .ao-ticketsLb .aoLbDAYSESSION{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_day_dblue_img.svg") no-repeat;background-size:15px 15px;background-position:left 0px top 0px;}
+	.ao-ticketsLb .aoLbNIGHTSESSION{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_night_dblue_img.svg") no-repeat;background-size:15px 15px;background-position:left 0px top 0px;}
+	.ao-ticketsLb .aoLbALLDAY{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_allday_dblue_img.svg") no-repeat;background-size:15px 15px;background-position:left 0px top 0px;}	
+    .ao-ticketsLb .aoLbAccessTime{background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_clock_dblue_img.svg") no-repeat;background-size:12px 12px;background-position:left 0px top 0px;}   
     .ao-ticketsLb .biLbInclusionWrap{width:100%;height:auto;margin:8px auto;padding:16px;background:var(--bi-lblue);border-radius:4px;font-family:"poppins","Averta", sans-serif, fallback;font-size:14px;line-height:14px;font-weight:500;text-align:left;color:var(--bi-dgrey);display:block;box-sizing:border-box !important;}      
     .ao-ticketsLb .biLbInclusionWrap h1, .ao-ticketsLb .biLbInclusionWrap h2{font-family:"poppins","Averta", sans-serif, fallback;font-size:16px;line-height:16px;font-weight:700;text-align:left;color:var(--bi-blue);margin:0px;}   
     .ao-ticketsLb .biLbInclusionWrap h1 {background:url("https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_tick_blue_img.svg") no-repeat;background-size:13px 13px;background-position:left 0px top 5px;overflow:visible;padding:5px 0px 5px 25px;} 
@@ -745,23 +749,25 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 /*headers biPubBrand*/
 /*1440 - 4k*/	
 @media only screen and (min-width: 1440px){	/*1140 to 3840*/
-    #biPubHeader{width:100%;height:475px;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_pubHeader_elements_img.svg') no-repeat center center,linear-gradient(124deg,rgba(0, 0, 70, 1) 0%,rgba(0, 0, 70, 0) 30%,rgba(0, 0, 70, 0) 70%, rgba(18, 18, 18, .8) 100%), var(--bi-blue);background-size:1400px auto,cover;box-sizing: border-box !important}
-	#biPremHeader{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_PremExp_Header.png') no-repeat, var(--px-dblue);background-size:cover;background-position: top  center;}	
+    #biPubHeader{width:100%;height:475px;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_pub_dHeader_1920x564x1.5.jpg') no-repeat center bottom,var(--bi-dblue);background-size:1610px auto,cover;box-sizing: border-box !important}
+	#biPremHeader{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_px_dHeader_aug.png') no-repeat, var(--px-dblue);background-size:cover;background-position: bottom  center;}	
+
 	}
 /*1000 - 1440*/		
 @media only screen and (min-width: 1000px) and (max-width: 1439.99px){	/*1000 to 1440*/
- 	#biPubHeader{width:100%;height:475px;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_pubHeader_elements_img.svg') no-repeat center center,linear-gradient(124deg,rgba(0, 0, 70, 1) 0%,rgba(0, 0, 70, 0) 30%,rgba(0, 0, 70, 0) 70%, rgba(18, 18, 18, .8) 100%), var(--bi-blue);background-size:1260px auto,cover;box-sizing: border-box !important}
-	#biPremHeader{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_PremExp_Header.png') no-repeat, var(--px-dblue);background-size:1920px 564px;background-position: top  center;}	
+ 	#biPubHeader{width:100%;height:475px;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_pub_dHeader_1400x564x1.5.jpg') no-repeat center bottom,var(--bi-dblue);background-size:1600px auto,cover;box-sizing: border-box !important}
+	#biPremHeader{background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_px_dHeader_aug.png') no-repeat, var(--px-dblue);background-size:1920px 564px;background-position: bottom  center;}
+	
 	}
 /*tablet*/		
 @media only screen and (min-width: 450px) and (max-width: 1000px){	/*768 x 1024*/
-    #biPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:linear-gradient(124deg,rgba(0, 0, 70, 1) 0%,rgba(0, 0, 70, 0) 30%,rgba(0, 0, 70, 0) 70%, rgba(18, 18, 18, .8) 100%), var(--bi-blue);background-size:cover;box-sizing: border-box !important}
-	#biPremHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px 1px 0px;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_px_mHeader.png') no-repeat, var(--bi-dblue);background-size:100% auto;background-position:center top;box-sizing: border-box !important}
+    #biPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_pub_mHeader_768x700.png') no-repeat center bottom,var(--bi-dblue);background-size:100% auto;box-sizing: border-box !important}
+	#biPremHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px 1px 0px;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_px_mHeader_aug.png') no-repeat, var(--bi-dblue);background-size:100% auto;background-position:center top;box-sizing: border-box !important}
 	}
 /*mobile*/		
 @media only screen and (min-width:0px) and (max-width: 449.99px){	/*400 x 650*/
-    #biPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:linear-gradient(124deg,rgba(0, 0, 70, 1) 0%,rgba(0, 0, 70, 0) 30%,rgba(0, 0, 70, 0) 70%, rgba(18, 18, 18, .8) 100%), var(--bi-blue);background-size:cover;box-sizing: border-box !important}	
-	#biPremHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px 1px 0px;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_px_mHeader.png') no-repeat, var(--bi-dblue);background-size:100% auto;background-position:center top;box-sizing: border-box !important}
+    #biPubHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px ;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_pub_mHeader_400x660.png') no-repeat center bottom,var(--bi-dblue);background-size:100% auto;box-sizing: border-box !important}	
+	#biPremHeader{width:100%;height:auto;margin:0px auto;padding:1px 0px 1px 0px;position: relative;background:url('https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_px_mHeader_aug.png') no-repeat, var(--bi-dblue);background-size:100% auto;background-position:center top;box-sizing: border-box !important}
 	}
 /*mobile cal*/
 @media only screen and (min-width:250px ) and (max-width: 375px){	
@@ -888,8 +894,8 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 		<div id="biEventErrorsGP">
 			<!--prem exp ad card-->
 			<div id="biPxPromoCard">				
-				<div id="biPxPromoCardHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi27_PremiumExp_Card.png"></div>
-				<div class="biPxPromoCardBtn">VIEW TICKETS + HOSPITALITY</div>
+				<div id="biPxPromoCardHero"><img src="bi27_PremiumExp_Desk_2x_Card.png"></div>
+				<!--<div class="biPxPromoCardBtn">VIEW TICKETS + HOSPITALITY</div>-->
 				<!--<div id="biPxPromoCardLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/ausopen/2025/ao25_AOReserve_white_logo.svg" alt="AO RESERVE PREMIUM EXPERIENCE"></div>-->
 			</div>
 			<!--end card-->
@@ -920,7 +926,9 @@ page_title = "Brisbane International 2027, 03 - 10 JAN | Queensland Tennis Centr
 	
 		<div id="biPremHeader">
 			<!--BI PX Logo-->
-			<div id="biPremLogo"><img src="https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_PremExp_logo.png" alt="Premium Experiences"></div>
+			<div id="biPremLogo">
+				<img src="https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_BrisInt_gold_logo2.png" alt="Brisbane International">
+				<img src="https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/bi_PremExp_gold_logo.svg" alt="Premium Experiences"></div>
 			<div class="biHeaderCover"></div>
 		<!---Search Bar--->
 		<div id="biPremSearchBar">
@@ -1171,7 +1179,7 @@ Mastercard is a registered trademark, and the circles design is a trademark of M
 												+event.session_type+"</div></div><div class='eventHero'><div class='eventOfferTag offerTag"
 												+offerTag+"'>"
 												+event.ticket_offer_desc+"</div><img data-src='https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/heroimg/"
-												+event.image_link+".png' src='https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/bi_placeholder_hero_304x110.png' alt='"
+												+event.image_link+".png' src='https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/bi27_placeholder_hero_304x110.png' alt='"
 												+event.offer_desc+"'></div><div class='eventInfo'><div class='eventName'>"
 												+event.offer_desc+"</div><div class='eventSubDesc'>"
 												+event.offer_desc_sub+"</div><div class='eventLoc eventPin'>"
@@ -2583,13 +2591,13 @@ let emptyFullListsOnLoad = function(){
 function dayMapper(data){
 	switch (data){
 			default:return ""
-			case "jan3":return "2027-01-03";
-			case "jan4":return "2027-01-04";
-			case "jan5":return "2027-01-05";
-			case "jan6":return "2027-01-06";
-			case "jan7":return "2027-01-07";
-			case "jan8":return "2027-01-08";
-			case "jan9":return "2027-01-09";
+			case "jan03":return "2027-01-03";
+			case "jan04":return "2027-01-04";
+			case "jan05":return "2027-01-05";
+			case "jan06":return "2027-01-06";
+			case "jan07":return "2027-01-07";
+			case "jan08":return "2027-01-08";
+			case "jan09":return "2027-01-09";
 			case "jan10":return "2027-01-10";
 	}
 }
@@ -2640,7 +2648,7 @@ $j(document).on('click', ".biFeatureEvent", function () {
 	window.history.pushState({ path: refreshURL }, '', refreshURL);
 	getUrlVars();
 	parseUrl();
-	console.log(fullPremExperienceTypeList,fullPremSessionTypeList)
+	//console.log(fullPremExperienceTypeList,fullPremSessionTypeList)
 
 });
 
@@ -2654,46 +2662,46 @@ let loadFeatureTiles = function(){
 	let currentDateNum = currentDate.replace("/","").replace("/",".")
 /*
 */
- let  testData = [
+ let  localData = [
       {
-      "name": "Spacey Jane",
+      "name": "Family Fun Day",
       "date_start": "22-01-2026",
-      "date_end": "11-01-2027",
+      "date_end": "04-01-2027",
       "order": 1,
-      "img_d": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/featuretiles/bi_FeatTile_desk_01.png",
-      "img_m": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/featuretiles/bi_FeatTile_mob_01.png",
-      "tag": "test sesh",
-      "exp_filter": "?seshTypePX=NIGHTSESSIONURL&buyFlowPremium"
+      "img_d": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/featuretile/bi27_featTile_FamilyFunDay_235x150.png",
+      "img_m": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/featuretile/bi27_featTile_FamilyFunDay_180x180.png",
+      "tag": "JAN 03",
+      "exp_filter": "?dateInc=jan03"
     },
         {
-      "name": "The Veronicas/Sophie Tucker",
+      "name": "Semi finals",
       "date_start": "22-01-2026",
-      "date_end": "11-01-2027",
+      "date_end": "11-10-2027",
       "order": 2,
-      "img_d": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/featuretiles/bi_FeatTile_desk_01.png",
-      "img_m": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/featuretiles/bi_FeatTile_mob_01.png",
-      "tag": "test exp",
-      "exp_filter": "?buyFlowPremium&seshTypePX=NIGHTSESSIONURL&expTypePX=TheGalleryURL"
+      "img_d": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/featuretile/bi27_featTile_SemiFinals_235x150.png",
+      "img_m": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/featuretile/bi27_featTile_SemiFinals_180x180.png",
+      "tag": "JAN 09",
+      "exp_filter": "?dateInc=jan09"
      },
     {
-      "name": "AO LIVE: Peggy Gou",
+      "name": "finals",
       "date_start": "22-01-2026",
       "date_end": "11-01-2027",
       "order":3,
-      "img_d": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/featuretiles/bi_FeatTile_desk_01.png",
-      "img_m": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/featuretiles/bi_FeatTile_mob_01.png",
-      "tag": "ANY TEST",
-      "exp_filter": "?buyFlowPremium&seshTypePX=AnyURL"
+      "img_d": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/featuretile/bi27_featTile_Finals_235x150.png",
+      "img_m": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/featuretile/bi27_featTile_Finals_180x180.png",
+      "tag": "JAN 10",
+      "exp_filter": "?dateInc=jan10"
     },
         {
-      "name": "Women's Final GP",
+      "name": "PX",
       "date_start": "31-01-2026",
       "date_end": "11-01-2027",
       "order": 4,
-      "img_d": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/featuretiles/bi_FeatTile_desk_01.png",
-      "img_m": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/featuretiles/bi_FeatTile_mob_01.png",
-      "tag": "31 JAN",
-      "exp_filter": "?dateInc=jan10"
+      "img_d": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/featuretile/bi27_featTile_PremiumExperiences_235x150.png",
+      "img_m": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/featuretile/bi27_featTile_PremiumExperiences_180x180.png",
+      "tag": "JAN 03 - 10",
+      "exp_filter": "?buyFlowPremium"
     }
    ]
 
@@ -2704,7 +2712,7 @@ let loadFeatureTiles = function(){
                dataType: 'html',
 				success: function(data) {
 					let tilesData = JSON.parse(data);
-					let featTileList = testData//testData;//;tilesData
+					let featTileList = localData//testData;//;tilesData
 
 					$j.each(featTileList, function(key,value){
 						let startDate = value.date_start.replace("-","/").replace("-","/").split("/").reverse().join("/").replace("/","").replace("/",".");
