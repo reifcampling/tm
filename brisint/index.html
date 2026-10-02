@@ -2387,7 +2387,7 @@ function getUrlVars(){
 	seshTypePXFound = search(urlVars, 'seshTypePX');
 	dateIncludePXFound = search(urlVars, 'dateIncPX');	
 	buyFlowFound = search(urlVars, 'buyFlowPremium');	
-	aoLiveFound = search(urlVars, 'aoLiveBrand');		
+//	aoLiveFound = search(urlVars, 'aoLiveBrand');		
 }
 let parseUrl = function(){
 
@@ -2415,9 +2415,9 @@ let parseUrl = function(){
 		if(jQuery.inArray("dateIncPX", dateIncludePXFound) != -1){
 			parseDateIncPXURL()
 			}
-		if(jQuery.inArray("aoLiveBrand", aoLiveFound) != -1){
+		/*if(jQuery.inArray("aoLiveBrand", aoLiveFound) != -1){
 			aoLiveBrand()
-			}
+			}*/
 	}; 
 
 }
@@ -2670,7 +2670,7 @@ let loadFeatureTiles = function(){
       "order": 1,
       "img_d": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/featuretile/bi27_featTile_FamilyFunDay_235x150.png",
       "img_m": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/featuretile/bi27_featTile_FamilyFunDay_180x180.png",
-      "tag": "JAN 03",
+      "tag": "3 JAN",
       "exp_filter": "?dateInc=jan03"
     },
         {
@@ -2680,7 +2680,7 @@ let loadFeatureTiles = function(){
       "order": 2,
       "img_d": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/featuretile/bi27_featTile_SemiFinals_235x150.png",
       "img_m": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/featuretile/bi27_featTile_SemiFinals_180x180.png",
-      "tag": "JAN 09",
+      "tag": "9 JAN",
       "exp_filter": "?dateInc=jan09"
      },
     {
@@ -2690,7 +2690,7 @@ let loadFeatureTiles = function(){
       "order":3,
       "img_d": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/featuretile/bi27_featTile_Finals_235x150.png",
       "img_m": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/featuretile/bi27_featTile_Finals_180x180.png",
-      "tag": "JAN 10",
+      "tag": "10 JAN",
       "exp_filter": "?dateInc=jan10"
     },
         {
@@ -2700,7 +2700,7 @@ let loadFeatureTiles = function(){
       "order": 4,
       "img_d": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/featuretile/bi27_featTile_PremiumExperiences_235x150.png",
       "img_m": "https://s1.ticketm.net/tm/en-au/img/static/brisbaneinternational/2026/featuretile/bi27_featTile_PremiumExperiences_180x180.png",
-      "tag": "JAN 03 - 10",
+      "tag": "03 - 10 JAN",
       "exp_filter": "?buyFlowPremium"
     }
    ]
