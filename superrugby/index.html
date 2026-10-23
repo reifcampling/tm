@@ -1,10 +1,7 @@
 [% # text to be displayed within <title></title>
-page_title = NRL Super Round 2026 - Christchurch | 24, 25 & 26 April 2026, One New Zealand Stadium | Buy Tickets Official Ticketmaster site." %]
+page_title = "Super Rugby Pacific: Super Round 2027 - Christchurch | 2,3 & 4 April 2027, One New Zealand Stadium | Buy Tickets Official Ticketmaster site." %]
 [% static_has_responsive_header_footer = 1; enable_leader_board = 0; %]
 [% PROCESS "layout/frame/top.tt" %]
-<!--cut for on sale-->
- <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="" /><meta name="rating" content="general" />
- <!--delete for on sale-->
 	
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.typekit.net/ogg8bnl.css">
@@ -31,33 +28,33 @@ page_title = NRL Super Round 2026 - Christchurch | 24, 25 & 26 April 2026, One N
 @media only screen and (min-width: 1000px){
 	#srrContent{background-color: #fff;width:100%;height:auto;overflow:hidden;padding:1px 0px;margin:0px auto;position: relative;display:block;}
 	
-	#srrMenuWrap{width:100%;height:auto;margin:0px auto 0px;display:block;position:relative;z-index:200;}
+	#srrMenuWrap{width:100%;height:auto;margin:0px auto 0px;display:none;position:relative;z-index:200;}
 	#srrMenu{width:100%;height:50px;margin:0px auto;padding:0px;display:block;position:absolute;top:0;left:0;right:0;z-index:201;font-family:"acumin-pro-condensed", sans-serif,fallback;text-align: center;background:#fff;}
 	#srrMenu button{width:auto;height:auto;margin:0px 15px 0px 15px;padding:12px 26px 12px 0px;display:inline-block;font-family:"acumin-pro-condensed", sans-serif,fallback;font-weight:normal;text-transform:uppercase;color:#000;font-size:20px;border:0;outline:0;cursor:pointer;box-sizing:border-box !important;background:url("https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg") no-repeat;background-size:auto 20px;background-position:right 0px top 14px;}
 	.srrMenuArrow{display:none;}
 	.srrMenuToggle{position:fixed !important;top:0px;left:0px;right:0px;margin:0px auto;}
-	.srrSubMenuLogo{width:auto;height:25px;display:inline-block;margin:0px 20px 10px 0px;box-sizing: border-box !important;vertical-align: bottom;}
+	.srrSubMenuLogo{width:auto;height:25px;display:block;margin:0px 20px 10px 0px;box-sizing: border-box !important;vertical-align: bottom;}
 	.srrSubMenuLogo img{width:auto;height:25px;}
 
-	#srrHeader{width:100%;height:550px;background:url('https://s1.ticketm.net/tm/en-au/img/static/superrugby/pattern_default.svg') center center repeat-x, #fff;border-bottom:5px solid var(--srr-lblue);background-size:auto 750px;position: relative;margin:0px auto 0px;padding:1px 1px 0px 1px;box-sizing:border-box!important;text-align: center;display:block;overflow:hidden;}
-	#srrHeader img{width:auto;height:550px;display:block;margin:70px auto 0px;}
+	#srrHeader{width:100%;height:450px;background:url('https://s1.ticketm.net/tm/en-au/img/static/superrugby/sr26_header_1440x440.png') center center no-repeat, #fff;border-bottom:5px solid var(--srr-lblue);border-top:5px solid var(--srr-blue);background-size:cover;position: relative;margin:0px auto 0px;padding:1px 1px 0px 1px;box-sizing:border-box!important;text-align: center;display:block;overflow:hidden;}
+	#srrHeader img{width:auto;height:auto;display:none;margin:70px auto 0px;}
 
 	#srrLogo{width:1100px;height:auto;display:block;margin:20px auto 20px;text-align:left;}
 	#srrLogo img{width:300px;height:auto;display:block;margin:0px;}
 	/**/
 	#srrEventMod{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:0px auto;}
-	#srrSubMenu{width:auto;height:auto;display:flex;justify-content: center;align-items: center;padding:50px 0px 0px 0px;margin:0px auto;text-align: left;}
+	#srrSubMenu{width:auto;height:auto;display:block;justify-content: center;align-items: center;padding:50px 0px 0px 0px;margin:0px auto;text-align: left;}
 	.srrSubMenuBtn{width:auto;height:auto;display:inline-block;padding:10px;margin:5px 30px 5px 0px;border-bottom:2px solid var(--srr-blue);border-top:2px solid var(--srr-blue);background:url("https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_right_arrow_img.svg") no-repeat, rgba(250,250,250,.0);background-size:auto 25px;background-position:right 5px bottom 15px;cursor:pointer;user-select:none;transition:ease-in-out .3s all;vertical-align: top;}
 	.srrSubMenuBtn:hover{background:url("https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_right_arrow_img.svg") no-repeat, rgba(250,250,250,.1);background-position:right 0px bottom 15px;background-size:auto 22px;}
 	.srrSubMenuBtn h1{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:44px;font-weight:700;color:#000;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}
 	.srrSubMenuBtn h2{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:28px;font-weight:normal;color:var(--srr-blue);text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}
-	.srrEventInfoLogo{width:auto;height:95px;display:inline-block;margin:-10px 35px 0px 0px;box-sizing: border-box !important;vertical-align: top;}
+	.srrEventInfoLogo{width:auto;height:95px;display:none;margin:-10px 35px 0px 0px;box-sizing: border-box !important;vertical-align: top;}
 	.srrEventInfoLogo img{width:auto;height:100%;}
 
 	#srrEventInfo{width:100%;height:auto;margin:50px auto;display:flex;flex-wrap: wrap;align-content: flex-start;justify-content: space-between;align-items: flex-start;}
-	#srrEventInfo h1{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:60px;font-weight:700;color:var(--srr-blue);text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;text-transform: uppercase;display:inline-block;}
-	#srrEventInfo h2{width:100%;font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:90px;font-weight:700;color:#000;text-align:left;margin:-70px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;display:inline-block;text-transform: uppercase;}
-	#srrEventInfo h3{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:50px;font-weight:normal;color:#000;text-align:right;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;display:inline-block;}		
+	#srrEventInfo h1{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:60px;line-height:55px;font-weight:700;color:var(--srr-blue);text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;text-transform: uppercase;display:inline-block;}
+	#srrEventInfo h2{width:100%;font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:45px;font-weight:700;color:#000;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;text-transform: uppercase;}
+	#srrEventInfo h3{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:50px;font-weight:normal;color:#000;text-align:right;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}		
 	#srrEventInfo p{width:100%;font-family:"Averta", sans-serif,fallback;font-size:22px;font-weight:normal;color:#000;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}
 	#srrEventInfo a{color:#000;}	
 	.srrHoriDiv{width:100%;height:2px; margin:0px auto;background:var(--srr-blue);}
@@ -68,21 +65,31 @@ page_title = NRL Super Round 2026 - Christchurch | 24, 25 & 26 April 2026, One N
 	#srrTicketsMod{width:100%;max-width:1100px;height:auto;display:flex;position: relative;margin:0px auto 50px;flex-wrap: nowrap;justify-content: space-between;align-items: flex-start;}
 	.srrTicketWrap{width:530px;max-width:550px;height:auto;display:inline-block;position: relative;margin:25px auto; }
 	#srrTicketsMod .srrTicketWrap h3{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:46px;font-weight:700;color:var(--srr-blue);text-align:left;margin:10px 0px 40px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;} 
-	.srrTicketWrap p{font-family:"Averta", sans-serif,fallback;font-size:16px;font-weight:normal;color:#000;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;} 
+	.srrTicketWrap p{font-family:"Averta", sans-serif,fallback;font-size:22px;font-weight:normal;color:#000;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;} 
 	.srrTicketBtn{width:100%;height:auto;display:block;margin:10px auto;padding:10px;border-bottom:2px solid #000;background:url("https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_right_arrow_img.svg") no-repeat;background-size:auto 25px;background-position:right 5px bottom 15px;cursor:pointer;user-select:none;transition:ease-in-out .3s all;box-sizing: border-box !important;} 
 	.srrTicketBtn:hover{background:url("https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_right_arrow_img.svg") no-repeat, rgba(250,250,250,.1);background-position:right 0px bottom 15px;background-size:auto 22px;}
 	.srrTicketBtn h1{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:40px;font-weight:700;color:#000;text-align:left;margin:0px 0px 15px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
 	.srrTicketBtn sup{font-size:20px;}
 	.srrTicketBtn h2{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:28px;font-weight:normal;color:#000;text-align:left;margin:0px 0px 10px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
-	.srrTicketWrap a{text-decoration: none;color:#000;}
+	.srrTicketWrap a{text-decoration: none;color:var(--srr-blue);}
+	/*fixture table*/
+	.srFixture{width:100%;max-width:800px;height:auto;margin:0px 0px 50px 0px;padding:0px;border-top:1px solid #000;border-left:1px solid #000;border-right:1px solid #000;box-sizing: border-box !important;}
+	.srFixtureRow{width:100%;max-width:800px;height:auto;margin:0px auto;padding:0px;display:flex;justify-content: space-between;align-content: center;align-items: flex-start;flex-wrap: nowrap;border-bottom:1px solid #000;}
+	.srFixtureRow span{font-family:"Averta", sans-serif,fallback;font-size:22px;font-weight:normal;color:#000;text-align:left;margin:0px 0px 0px 0px;padding:10px;display:inline-block;box-sizing: border-box !important;}
+	.srFixtureHeader{font-weight:bold !important;}
+	.srFixtureRow span:nth-child(1){width:150px;}
+	.srFixtureRow span:nth-child(2){width:250px;}
+	.srFixtureRow span:nth-child(3),.srFixtureRow span:nth-child(4){width:150px;}
+
+	.srFixtureRow span em{font-family:"Averta", sans-serif,fallback;font-size:16px;font-weight:normal;font-style:normal;color:#000;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;display:inline-block;box-sizing: border-box !important;}
 	/*Next Level Experiences*/
 	.srrExpBanner{width:100%;height:150px;background:url('https://s1.ticketm.net/tm/en-au/img/static/superrugby/pattern_default.svg') center center repeat-x, #fff;background-size:auto 750px;display:flex;flex-wrap: nowrap;align-items: center;justify-content: center;}
 	.srrExpBanner h3{width:100%;max-width:1100px;font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:56px;font-weight:600;color:#000;text-align:left;margin:0px auto;padding:0px 0px 0px 0px;display:block;box-sizing: border-box !important;} 
-	#srrExpMod{width:100%;height:auto;position: relative;margin:0px auto;}
+	#srrExpMod{width:100%;height:auto;position: relative;margin:0px auto;display:block;}
 	#srrExpMod .srrTicketWrap h3{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:46px;font-weight:normal;color:#fff;text-align:left;margin:10px 0px 10px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;text-transform: uppercase;} 
 	.srrExpWrap{width:100%;max-width:1100px;height:auto;display:flex;position: relative;margin:0px auto;flex-wrap: wrap;justify-content: space-between;align-items: flex-start;}
 	.srrExpHero{width:100%;height:auto;margin:0px auto;padding:20px 0px 0px 0px;}
-	.srrExpHero img{width:100%;height:auto;border-right:2px solid #fff;border-bottom:2px solid #fff;}
+	.srrExpHero img{width:100%;height:auto;border-right:2px solid #fff;border-bottom:2px solid #fff;display:none;}
 	.srrTable{width:100%;height:auto;display:block;margin:20px 0px 0px 0px;padding:0px;border-top:2px solid #fff;border-left:2px solid #fff;border-right:2px solid #fff;box-sizing:border-box !important;}
 	.srrTable h4{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:20px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
 	.srrRow{width:100%;height:auto;margin:0px;padding:10px;display:block;border-bottom:2px solid #fff;box-sizing:border-box !important;}
@@ -112,7 +119,7 @@ page_title = NRL Super Round 2026 - Christchurch | 24, 25 & 26 April 2026, One N
 	.srrSubMenuLogo{width:auto;height:25px;display:none;margin:0px 20px 10px 0px;box-sizing: border-box !important;}
 	.srrSubMenuLogo img{width:auto;height:25px;}
 
-	#srrMenuWrap{width:100%;height:50px;margin:0px auto 0;text-align: left;display:block;overflow:hidden;z-index:200;top:0;left:0;right:0;position: absolute;}
+	#srrMenuWrap{width:100%;height:50px;margin:0px auto 0;text-align: left;display:none;overflow:hidden;z-index:200;top:0;left:0;right:0;position: absolute;}
 	#srrMenu{width:100%;height:50px;margin:0px 0px;padding:0px 20px;display:block;position:absolute;top:0;left:0;right:0;z-index:201;background:#fff;font-family:"ClashDisplay-Medium", sans-serif,fallback;text-align: center;white-space: nowrap;overflow:hidden;box-sizing:border-box !important;}
 	#srrMenu button{width:auto;height:50px;margin:0px 5px;padding:12px 20px 12px 0px;display:inline-block;font-family:"acumin-pro-condensed", sans-serif,fallback;font-weight:normal;text-transform:uppercase;color:#000;font-size:16px;border:0;outline:0;cursor:pointer;box-sizing:border-box !important;background:url("https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg") no-repeat, rgba(250,250,250,.0);background-size:auto 10px;background-position:right 4px top 19px;}
 	.srrMenuArrow{height:50px;width:auto;margin:0px 0px;display:block;position: absolute;z-index:202;}
@@ -122,8 +129,8 @@ page_title = NRL Super Round 2026 - Christchurch | 24, 25 & 26 April 2026, One N
 
 	#srrContent{background-color: #fff;width:100%;height:auto;overflow:hidden;padding:1px 0px;margin:0px auto;position: relative;display:block;}
 
-	#srrHeader{width:100%;height:auto;background:url('https://s1.ticketm.net/tm/en-au/img/static/superrugby/pattern_default.svg') center center repeat-x, #fff;border-bottom:5px solid var(--srr-lblue);background-size:auto 750px;position: relative;margin:0px auto 0px;padding:1px 1px 0px 1px;box-sizing:border-box!important;text-align: center;display:block;overflow:hidden;}
-	#srrHeader img{width:100%;height:auto;display:block;margin:70px auto 0px;}
+	#srrHeader{width:100%;height:auto;background:#fff;border-bottom:5px solid var(--srr-lblue);border-top:5px solid var(--srr-blue);background-size:cover;position: relative;margin:0px auto 0px;padding:1px 1px 0px 1px;box-sizing:border-box!important;text-align: center;display:block;overflow:hidden;}
+	#srrHeader img{width:100%;height:auto;display:block;margin:0px auto 0px;}
 
 	/**/
 	#srrEventMod{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:0px auto;}
@@ -131,7 +138,7 @@ page_title = NRL Super Round 2026 - Christchurch | 24, 25 & 26 April 2026, One N
 	.srrSubMenuBtn{width:100%;height:auto;display:inline-block;padding:10px 25px 10px 10px;margin:5px 30px 5px 0px;border-bottom:2px solid var(--srr-blue);border-top:2px solid var(--srr-blue);background:url("https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_right_arrow_img.svg") no-repeat, rgba(250,250,250,.0);background-size:auto 25px;background-position:right 5px bottom 5px;cursor:pointer;user-select:none;vertical-align: top;box-sizing: border-box !important;}
 	.srrSubMenuBtn h1{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:36px;line-height:32px;font-weight:700;color:#000;text-align:left;margin:0px 0px 10px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}
 	.srrSubMenuBtn h2{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:26px;line-height:22px;font-weight:normal;color:var(--srr-blue);text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;}
-	.srrEventInfoLogo{width:auto;height:95px;display:block;margin:0px auto;box-sizing: border-box !important;}
+	.srrEventInfoLogo{width:auto;height:95px;display:none;margin:0px auto;box-sizing: border-box !important;}
 	.srrEventInfoLogo img{width:auto;height:100%;display:block;margin:0px auto;}
 
 	#srrEventInfo{width:100%;height:auto;margin:50px auto;display:flex;flex-wrap: wrap;align-content: flex-start;justify-content: center;align-items: flex-start;}
@@ -154,14 +161,24 @@ page_title = NRL Super Round 2026 - Christchurch | 24, 25 & 26 April 2026, One N
 	.srrTicketBtn sup{font-size:20px;}
 	.srrTicketBtn h2{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:28px;font-weight:normal;color:#000;text-align:left;margin:0px 0px 10px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
 	.srrTicketWrap a{text-decoration: none;color:#000;}
+	/*fixture table*/
+	.srFixture{width:100%;max-width:800px;height:auto;margin:0px 0px 50px 0px;padding:0px;border-top:1px solid #000;border-left:1px solid #000;border-right:1px solid #000;box-sizing: border-box !important;}
+	.srFixtureRow{width:100%;max-width:800px;height:auto;margin:0px auto;padding:0px;display:flex;justify-content: space-between;align-content: center;align-items: flex-start;flex-wrap: nowrap;border-bottom:1px solid #000;}
+	.srFixtureRow span{font-family:"Averta", sans-serif,fallback;font-size:16px;font-weight:normal;color:#000;text-align:left;margin:0px 0px 0px 0px;padding:10px;display:inline-block;box-sizing: border-box !important;}
+	.srFixtureHeader{font-weight:bold !important;}
+	.srFixtureRow span:nth-child(1){width:150px;}
+	.srFixtureRow span:nth-child(2){width:250px;}
+	.srFixtureRow span:nth-child(3),.srFixtureRow span:nth-child(4){width:150px;}
+
+	.srFixtureRow span em{font-family:"Averta", sans-serif,fallback;font-size:16px;font-weight:normal;font-style:normal;color:#000;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;display:inline-block;box-sizing: border-box !important;}
 	/*Next Level Experiences*/
 	.srrExpBanner{width:100%;min-height:150px;height:auto;background:url('https://s1.ticketm.net/tm/en-au/img/static/superrugby/pattern_default.svg') center center repeat-x, #fff;background-size:auto 750px;margin:0px 0px 50px 0px;display:flex;flex-wrap: nowrap;align-items: center;justify-content: center;}
 	.srrExpBanner h3{width:100%;max-width:1100px;font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:50px;line-height:46px;font-weight:600;color:#000;text-align:center;margin:0px auto;padding:20px;display:block;box-sizing: border-box !important;} 
-	#srrExpMod{width:100%;height:auto;position: relative;margin:0px auto;}
+	#srrExpMod{width:100%;height:auto;position: relative;margin:0px auto;display:block;}
 	#srrExpMod .srrTicketWrap h3{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:46px;font-weight:normal;color:#fff;text-align:left;margin:10px 0px 10px 0px;padding:0px 0px 0px 0px;box-sizing: border-box !important;text-transform: uppercase;} 
 	.srrExpWrap{width:100%;max-width:1100px;height:auto;display:flex;position: relative;margin:0px auto;flex-wrap: wrap;justify-content: space-between;align-items: flex-start;}
 	.srrExpHero{width:100%;height:auto;margin:0px auto;padding:20px 0px 0px 0px;}
-	.srrExpHero img{width:100%;height:auto;border-right:2px solid #fff;border-bottom:2px solid #fff;}
+	.srrExpHero img{width:100%;height:auto;border-right:2px solid #fff;border-bottom:2px solid #fff;display:none;}
 	.srrTable{width:100%;height:auto;display:block;margin:20px 0px 0px 0px;padding:0px;border-top:2px solid #fff;border-left:2px solid #fff;border-right:2px solid #fff;box-sizing:border-box !important;}
 	.srrTable h4{font-family:"acumin-pro-condensed", sans-serif,fallback;font-size:20px;font-weight:normal;color:#fff;text-align:left;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;text-transform: uppercase;}
 	.srrRow{width:100%;height:auto;margin:0px;padding:10px;display:block;border-bottom:2px solid #fff;box-sizing:border-box !important;}
@@ -201,7 +218,7 @@ page_title = NRL Super Round 2026 - Christchurch | 24, 25 & 26 April 2026, One N
 		<!--header-->
 		<div id="srrHeader">
 
-			<img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/2025/svns26_header_players.png">
+		<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/sr26_header_1440x810.jpg">
 
 		</div>
 	<div id="srrEventMod"> 
@@ -212,13 +229,27 @@ page_title = NRL Super Round 2026 - Christchurch | 24, 25 & 26 April 2026, One N
 		</div>
 		<div id="srrEventInfo">
 			
-			<h1>One NZ Stadium</h1>			<h3>FRI 25, SAT 26 &amp; <br />SUN 27 APR 2026</h3>
-			<h2>Christchurch</h2>
+			<h1>Super Rugby Pacific: Super Round &#332;tautahi Christchurch 2027</h1>
+		
+			<h2>One New Zealand Stadium</h2>
+			<h3>FRI 2, SAT 3 &amp; SUN 4 APR 2027</h3>
 
-			<p>Super Round 2026 brings three days of world-class rugby and family-friendly fun to &#332;tautahi Christchurch. Fans from across New Zealand, Australia, Fiji, and the Pacific come together to celebrate at the brand-new One NZ Stadium.
-					<br /><br />
-			From 24&#45;26 April, 10 teams play five high-stakes matches across one blockbuster weekend under the brand new One NZ Stadium's 25,000-seat fixed roof in the heart of the city.		
-			</p>
+			<p>Super Round is back. Three days of Super Rugby Pacific, five matches and ten teams under the roof at One New Zealand Stadium.
+			<br /><br />
+			Fans from across New Zealand, Australia, Fiji and the Pacific take over &#332;tautahi Christchurch for one big weekend. 2026 sold out, so get in early.
+
+			<br /><br />
+			<strong>The Fixture</strong></p>
+
+			<div class="srFixture">
+				<div class="srFixtureRow srFixtureHeader"><span>Day</span>			<span>Match</span>						<span>Kickoff <em>(NZT)</em></span>	<span>Kickoff <em>(AU)</em></span></div>
+				<div class="srFixtureRow"><span>Friday 2 April</span>		<span>Crusaders v ACT Brumbies</span>	<span>7.35pm</span>			<span>5.35pm <em>AEDT</em></span></div>
+				<div class="srFixtureRow"><span>Saturday 3 April</span>	<span>Chiefs v Western Force</span>		<span>5.05pm</span>			<span>3.05pm <em>AEDT</em></span></div>
+				<div class="srFixtureRow"><span>Saturday 3 April</span>	<span>Blues v NSW Waratahs</span>		<span>7.35pm</span>			<span>5.35pm <em>AEDT</em></span></div>
+				<div class="srFixtureRow"><span>Sunday 4 April</span>		<span>Highlanders v Fijian Drua</span>	<span>2.00pm</span>			<span>12.00pm <em>AEST</em></span></div>
+				<div class="srFixtureRow"><span>Sunday 4 April</span>		<span>Hurricanes v Queensland Reds</span><span>4.30pm</span>		<span>2.30pm <em>AEST</em></span></div>
+			</div>
+			
 		</div>
 
 	</div>
@@ -230,29 +261,26 @@ page_title = NRL Super Round 2026 - Christchurch | 24, 25 & 26 April 2026, One N
 		<!--single day-->
 		<div class="srrTicketWrap">
 			<h3>SINGLE DAY PASS</h3>
-			<a href="" target="_blank"><div class="srrTicketBtn">
-				<h1>FRIDAY 25<sup>th</sup></h1>
+			<p>Available in the club pre-sales and General Public Phase 2 </p>
+			<a href="https://www.ticketmaster.co.nz/dhl-super-rugby-pacific-super-round-christchurch-02-04-2027/event/24006545CF7E39F8" target="_blank"><div class="srrTicketBtn">
+				<h1>FRIDAY 2<sup>nd</sup></h1>
 				<h2>Find Tickets</h2>
 			</div></a>
-			<a href="" target="_blank"><div class="srrTicketBtn">
-				<h1>SATURDAY 26<sup>th</sup></h1>
+			<a href="https://www.ticketmaster.co.nz/dhl-super-rugby-pacific-super-round-christchurch-03-04-2027/event/240065468D201AD1" target="_blank"><div class="srrTicketBtn">
+				<h1>SATURDAY 3<sup>rd</sup></h1>
 				<h2>Find Tickets</h2>
 			</div></a>
-			<a href="" target="_blank"><div class="srrTicketBtn">
-				<h1>SUNDAY 27<sup>th</sup></h1>
+			<a href="https://www.ticketmaster.co.nz/dhl-super-rugby-pacific-super-round-christchurch-03-04-2027/event/240065468D201AD1" target="_blank"><div class="srrTicketBtn">
+				<h1>SUNDAY 4<sup>th</sup></h1>
 				<h2>Find Tickets</h2>
 			</div></a>			
 		</div>
 		<!--multi day-->
 		<div class="srrTicketWrap">
-			<h3>MULTI&#45;DAY PASS</h3>
-
-			<a href="" target="_blank"><div class="srrTicketBtn">
-				<h1>2 Day Pass (SAT &amp; SUN)</h1>
-				<h2>Find Tickets</h2>
-			</div></a>
-			<a href="" target="_blank"><div class="srrTicketBtn">
-				<h1>3 Day Pass</h1>
+			<h3>3 DAY PASS</h3>
+			<p>The full Super Round. All five matches, all weekend. </p>
+	
+			<a href="https://www.ticketmaster.co.nz/dhl-super-rugby-pacific-super-round-christchurch-02-04-2027/event/24006546F1264877" target="_blank"><div class="srrTicketBtn">
 				<h2>Find Tickets</h2>
 			</div></a>
 		</div>
@@ -262,83 +290,46 @@ page_title = NRL Super Round 2026 - Christchurch | 24, 25 & 26 April 2026, One N
 
 
 	<!--Corp Box-->
-	<div class="srrExpBanner"><h3>HOSPITALITY &amp; PREMIUM OPTIONS</h3></div>
+	<div class="srrExpBanner"><h3>HOSPITALITY &amp; TRAVEL</h3></div>
 	<div  id="srrExpMod" class="srrExpWrap">
 			<div class="srrTicketWrap">
 
-				<p>Wolf succulents chartreuse hexagon PBR&B. +1 iPhone adaptogen YOLO aesthetic. Butcher normcore gorpcore, franzen hell of pitchfork lumbersexual paleo gatekeep put a bird on it poutine food truck meggings organic literally. Tilde banh mi PBR&B af, kitsch distillery subway tile forage.
+				<p>Corporate suites, hospitality and travel packages are available through Sports Travel and Hospitality (STH), the official travel and hospitality supplier of Super Round &#332;tautahi Christchurch. See <a href="https://allblackstravelandhospitality.com/dhl-super-rugby-pacific/super-round-2027/" target="_blank">Super Round &#332;tautahi Christchurch experiences</a>.
 				<br /><br />
-				Typewriter cred echo park Brooklyn, neutral milk hotel wayfarers bodega boys raw denim same 3 wolf moon thundercats salvia. Shoreditch cred jean shorts etsy distillery, pok pok bespoke.
-				</p>
+				<strong>Supported by</strong>
+				<br /><br />
+				Super Round &#332;tautahi Christchurch is proudly supported by the New Zealand Government's Event Attraction Package and ChristchurchNZ.
 
-				<a href="" target="_blank"><div class="srrExpBtn">
-					<h1>Explore Options</h1>
-					<h2>SEE OPTIONS</h2>
-				</div></a>
-		
+				</p>	
 			</div>
-			<!--hero img-->
+
+			<!--hero img
 			<div class="srrTicketWrap">
-				<div class="srrExpHero"><img src="https://placehold.co/532x355"></div>
-			</div>
+				<div class="srrExpHero"><img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/pattern_default.svg"></div>
+			</div>-->
 	</div>
 
 	<!--FAQs-->
 	<div id="srrFAQsMod">
 
 		<h3>FREQUENTLY ASKED QUESTIONS</h3>
-		<h2>EVENT INFORMATION</h2>
 		<!--Q-->
 		<div class="srrFAQ">
-			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
-			<div class="srrA">Answer</div>
+			<div class="srrQ">How do I book hospitality or travel packages?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
+			<div class="srrA">Through Sports Travel and Hospitality (STH), the official travel and hospitality supplier. See <a href="https://allblackstravelandhospitality.com/dhl-super-rugby-pacific/super-round-2027/" target="_blank">Super Round &#332;tautahi Christchurch experiences</a>.</div>
 		</div>
 		<!--Q-->
 		<div class="srrFAQ">
-			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
-			<div class="srrA">Answer</div>
-		</div>
-		<h2>PRICES &amp; INFORMATION</h2>
-		<!--Q-->
-		<div class="srrFAQ">
-			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
-			<div class="srrA">Answer</div>
-		</div>
-		<!--Q-->
-		<div class="srrFAQ">
-			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
-			<div class="srrA">Answer</div>
-		</div>	
-		<!--Q-->
-		<div class="srrFAQ">
-			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
-			<div class="srrA">Answer</div>
-		</div>
-		<!--Q-->
-		<div class="srrFAQ">
-			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
-			<div class="srrA">Answer</div>
-		</div>
-		<!--Q-->
-		<div class="srrFAQ">
-			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
-			<div class="srrA">Answer</div>
-		</div>
-		<!--Q-->
-		<div class="srrFAQ">
-			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
-			<div class="srrA">Answer</div>
-		</div>
-		<!--Q-->
-		<div class="srrFAQ">
-			<div class="srrQ">Question?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
-			<div class="srrA">Answer</div>
-		</div>
+			<div class="srrQ">Where can I find more information?<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_down_arrow_img.svg"></div>
+			<div class="srrA">Visit <a href="https://super.rugby/" target="_blank">super.rugby</a> for the latest on Super Round, including kickoff times, entertainment and pre-sale updates.</div>
+		</div>		
+
+
 	</div>
-	<!--footer--> 
+	<!--footer
 	<div id="srrFooter">
 		<div class="socialWrap"><a href="" target="_blank"><img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_fb_ico.svg" alt="Facebook"></a><a href="" target="_blank"><img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/srr_ig_ico.svg" alt="instagram"></a></div>
-	</div>
+	</div>--> 
 
 </div>
 
