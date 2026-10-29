@@ -10,7 +10,10 @@ page_title = "Australian Turf Club, Sydney Racing | Royal Randwick & Rosehill Ga
 <link rel="stylesheet" href="https://use.typekit.net/esn4cdd.css">
 <link href="https://s1.ticketm.net/tm/en-au/img/static/fonts/averta.css" type="text/css" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!--img mapper--->
+<script type="text/javascript" src="https://s1.ticketm.net/tm/en-au/img/static/turfclub/2026/atc_image_mapper.js"></script>
 <style type="text/css">
+
 
 @media only screen and (min-width: 0px) and (max-width: 999px){	
 	.frame{width: 100% !important;background-color: var(--atc-blue) !important} /*FIX FOR TM HEADER CODE*/ 
@@ -844,34 +847,7 @@ let emptyFullListsOnLoad = function(){
 }
 
 
-//image mapper
-function atcImageMapper(data){
-	switch (data){
-			//list events by name for custom image
-			//case "":
-			//return "atc26_";
-			case "SydneySurftoTurfDay":
-			return "atc26_SydneySurftoTurfDay"
-			case "YulongGoldenRoseDay":
-			return "atc26_YulongGoldenRoseDay";
-			case "TABEpsomDay":
-			return "atc26_TABEpsomDay";
-			case "HillStakesDay":
-			return "atc26_HillStakesDay";
-			case "MotChandonSpringChampionStakesDay":
-			return "atc26_MotChandonSpringChampionStakesDay";
-			case "GoldenEagleDay":
-			return "atc26_GoldenEagleDay";
-			case "TheBigDanceonCupDay":
-			return "atc26_TheBigDanceonCupDay";
-			case "FiveDiamondsLadiesDay":
-			return "atc26_FiveDiamondsLadiesDay";
-			case "TABEverestDay":
-			return "atc26_TABEverestDay";
-			//FALLBACK DEFAULT
-			default:return "atc26_placeHolder_hero"
-	}
-}
+
 
 //URL token filtering
 function getUrlVars(){	
