@@ -38,8 +38,7 @@ page_title = "Super Rugby Pacific: Super Round 2027 - Christchurch | 2,3 & 4 Apr
 	.srrSubMenuLogo{width:auto;height:25px;display:block;margin:0px 20px 10px 0px;box-sizing: border-box !important;vertical-align: bottom;}
 	.srrSubMenuLogo img{width:auto;height:25px;}
 
-	#srrHeader{width:100%;height:450px;background:url('https://s1.ticketm.net/tm/en-au/img/static/superrugby/sr26_header_1440x440.png') center center no-repeat, #fff;border-bottom:5px solid var(--srr-lblue);border-top:5px solid var(--srr-blue);background-size:cover;position: relative;margin:0px auto 0px;padding:1px 1px 0px 1px;box-sizing:border-box!important;text-align: center;display:block;overflow:hidden;}
-	#srrHeader img{width:auto;height:auto;display:none;margin:70px auto 0px;}
+
 
 	#srrLogo{width:1100px;height:auto;display:block;margin:20px auto 20px;text-align:left;}
 	#srrLogo img{width:300px;height:auto;display:block;margin:0px;}
@@ -117,7 +116,7 @@ page_title = "Super Rugby Pacific: Super Round 2027 - Christchurch | 2,3 & 4 Apr
 
 	}
 /*mobile -----------------*/
-	@media only screen and (min-width: 0px) and (max-width: 1000px){	
+	@media only screen and (min-width: 0px) and (max-width: 999.9px){	
 	.srrSubMenuLogo{width:auto;height:25px;display:none;margin:0px 20px 10px 0px;box-sizing: border-box !important;}
 	.srrSubMenuLogo img{width:auto;height:25px;}
 
@@ -132,7 +131,7 @@ page_title = "Super Rugby Pacific: Super Round 2027 - Christchurch | 2,3 & 4 Apr
 	#srrContent{background-color: #fff;width:100%;height:auto;overflow:hidden;padding:1px 0px;margin:0px auto;position: relative;display:block;}
 
 	#srrHeader{width:100%;height:auto;background:#fff;border-bottom:5px solid var(--srr-lblue);border-top:5px solid var(--srr-blue);background-size:cover;position: relative;margin:0px auto 0px;padding:1px 1px 0px 1px;box-sizing:border-box!important;text-align: center;display:block;overflow:hidden;}
-	#srrHeader img{width:100%;height:auto;display:block;margin:0px auto 0px;}
+	#srrHeader img{width:100%;height:auto;display:block;margin:-1px auto 0px;}
 
 	/**/
 	#srrEventMod{width:100%;max-width:1100px;height:auto;display:block;position: relative;margin:0px auto;}
@@ -204,7 +203,17 @@ page_title = "Super Rugby Pacific: Super Round 2027 - Christchurch | 2,3 & 4 Apr
 	.srrPartners img{width:450px;height:auto;display:block;margin:0px auto;}
 
 	}
+/*headers*/
+	@media only screen and (min-width:1400px){	
 
+	#srrHeader{width:100%;height:550px;background:url('https://s1.ticketm.net/tm/en-au/img/static/superrugby/sr26_header_h650.jpg') center center no-repeat, #511cce;border-bottom:5px solid var(--srr-lblue);border-top:5px solid var(--srr-blue);background-size:auto 550px;position: relative;margin:0px auto 0px;padding:1px 1px 0px 1px;box-sizing:border-box!important;text-align: center;display:block;overflow:hidden;}
+	#srrHeader img{width:auto;height:auto;display:none;margin:70px auto 0px;}
+	}
+	@media only screen and (min-width: 999.9px) and (max-width: 1399.9px){	
+
+	#srrHeader{width:100%;height:450px;background:url('https://s1.ticketm.net/tm/en-au/img/static/superrugby/sr26_header_h650.jpg') center center no-repeat, #fff;border-bottom:5px solid var(--srr-lblue);border-top:5px solid var(--srr-blue);background-size:cover;position: relative;margin:0px auto 0px;padding:1px 1px 0px 1px;box-sizing:border-box!important;text-align: center;display:block;overflow:hidden;}
+	#srrHeader img{width:auto;height:auto;display:none;margin:70px auto 0px;}
+	}
 </style>
 
 
@@ -213,19 +222,18 @@ page_title = "Super Rugby Pacific: Super Round 2027 - Christchurch | 2,3 & 4 Apr
 
 	<div id="srrMenuWrap">
 		<div class="srrMenuArrow srrArrowLeft"><img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_menu_arrow_wht_img.svg"></div>		
-		<div id="srrMenu"><div class="srrSubMenuLogo"><img src="https://placehold.co/335x25"></div><button data-btn="Tickets">GENERAL TICKETS</button><button data-btn="Exp">HOSPITALITY &amp; PREMIUM</button><button data-btn="FAQs">FAQ&rsquo;s</button></div>
+		<div id="srrMenu"><button data-btn="Tickets">GENERAL TICKETS</button><button data-btn="Exp">HOSPITALITY &amp; PREMIUM</button><button data-btn="FAQs">FAQ&rsquo;s</button></div>
 		<div class="srrMenuArrow srrArrowRight"><img src="https://s1.ticketm.net/en-au/img/static/rugbysvns/svns_menu_arrow_wht_img.svg"></div>
 	</div>
 
 		<!--header-->
 		<div id="srrHeader">
 
-		<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/sr26_header_1440x810.jpg">
+		<img src="https://s1.ticketm.net/tm/en-au/img/static/superrugby/sr26_header_w1440.jpg">
 
 		</div>
 	<div id="srrEventMod"> 
 		<div id="srrSubMenu">
-			<div class="srrEventInfoLogo"><img src="https://placehold.co/200x95"></div>
 			<div class="srrSubMenuBtn" data-btn="Tickets"><h1>GENERAL TICKETS</h1><h2>SEE OPTIONS</h2></div>
 			<div class="srrSubMenuBtn" data-btn="Exp"><h1>HOSPITALITY TICKETS</h1><h2>SEE OPTIONS</h2></div>
 		</div>
